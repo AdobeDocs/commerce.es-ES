@@ -1,14 +1,17 @@
 ---
-cloud: Experience Cloud
 solution: Commerce
-product: commerce
+solution-title: Commerce
+product: magento
 type: Documentation
+audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce.es-ES
-hide: true
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+index: y
+role: User
+feature-set: Commerce
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -16,6 +19,21 @@ ht-degree: 0%
 
 # Metadatos para uso interno
 
-El archivo metadata.md incluye metadatos de nivel de repositorio que pasan a los archivos TOC.md de la guía del usuario en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier archivo TOC.md.
+El archivo `metadata.md` incluye metadatos de nivel de repositorio que pasan a los archivos de la guía del usuario `TOC.md` en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier archivo de `TOC.md`.
 
-Consulte [Metadatos](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) para obtener una lista de valores válidos para **solución**, **producto** y **tipo**.
+| metadatos | lo que hace |
+|--- |--- |
+| solution-title | Se utiliza como vínculo en el encabezado del artículo |
+| solution-hub-url | Abre la página helpx hub |
+| solution-icon | Muestra el icono de la solución junto al título de la solución. Aún no se ha implementado |
+| getting-started-url | Vínculo a la página de introducción a la ayuda |
+| tutorials-url | Vínculo a tutoriales de vídeo: tutoriales de ayuda o tutoriales de KT |
+| niveles-mini-toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. el valor predeterminado es 2 |
+| git-repo | Especifica la ubicación del repositorio maestro para uso interno |
+
+En el archivo TOC.md
+
+| metadatos | lo que hace |
+|--- |--- |
+| user-guide-title | Se utiliza como vínculo en el encabezado del artículo |
+| user-guide-url | Abre la página helpx hub |
