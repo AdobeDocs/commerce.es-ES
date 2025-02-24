@@ -4,9 +4,9 @@ description: Aprenda a instalar y usar [!DNL Payment Services] como solución de
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ Tanto si se trata de una pequeña empresa, un competidor de mercado medio o una 
 * Independiente dentro del administrador
 
 ## Funciones
-
->[!NOTE]
->
->Es posible que algunas de las funciones mencionadas aquí aún no estén disponibles para la versión de GA (General Availability).
 
 [!DNL Payment Services] es su punto de venta único para pagos en línea (desde liquidaciones y reembolsos hasta cobros). Proporciona potentes herramientas para ofrecerte la perspectiva y el control necesarios para crear la mejor experiencia para tus compradores.
 
