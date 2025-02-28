@@ -1,9 +1,10 @@
 ---
 title: Colocación y etiquetas
 description: Descubra dónde puede colocar recomendaciones en varias páginas del sitio y sugerencias para etiquetas utilizadas con frecuencia para cada tipo de recomendación.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -51,8 +52,8 @@ _Recomendación en la parte superior de los resultados de búsqueda_
 
 En la tabla siguiente se enumeran las páginas de tienda en las que puede colocar recomendaciones y los tipos de recomendaciones permitidos en cada página.
 
-| Página | Recomendaciones de ubicación |
-|---|---|
+| Página | Recomendaciones de ubicación | Tipos |
+|---|---|---|
 | Página de inicio | Al principio del contenido principal<br>Al final del contenido principal (predeterminado) | Más vistos<br>Más comprados<br>Más añadidos al carro<br>Recomendado para ti<br>Tendencia |
 | Categoría | Al principio del contenido principal<br>Al final del contenido principal (predeterminado) | Más vistos<br>Más comprados<br>Más añadidos al carro<br>Recomendado para ti<br>Tendencia |
 | Detalles del producto | En la parte inferior del contenido principal (predeterminado) | Más vistos<br>Más comprados<br>Más añadidos al carrito<br>Más vistos esto, más vistos<br>Más vistos esto, más comprados<br>Más comprados<br>Más así<br>Tendencias<br>Similitud visual |
