@@ -2,7 +2,8 @@
 title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f2b3be02-e9dd-4bca-b9e4-c80a56bf8691
+source-git-commit: 16bd0e7ed1e8982e1571e2593115824a2004b7dc
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -12,6 +13,8 @@ ht-degree: 0%
 # Conectar su instancia
 
 [!DNL Payment Services] cuenta con la tecnología de Commerce Services y se implementa como SaaS (software como servicio). La instancia de Commerce se conecta mediante una clave de API y una clave privada, y se especifica el espacio de datos en la configuración mediante [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html). **Solo configuró esta conexión una vez.**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >
