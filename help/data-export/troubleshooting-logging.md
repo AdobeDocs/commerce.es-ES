@@ -2,9 +2,10 @@
 title: Revisar registros y solucionar problemas
 description: Obtenga información sobre cómo solucionar  [!DNL data export] errores mediante los registros de exportación de datos y exportación de saas.
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Los registros están disponibles en el directorio `var/log` del servidor de apli
 
 | nombre del registro | filename | description |
 |-----------------| ----------| -------------|
-| Registro de exportación de datos SaaS | `commerce-data-export.log` | Proporciona información sobre las actividades de exportación de datos, como eventos de entidad y déclencheur de resincronización completos.  Cada registro tiene una estructura específica y proporciona información sobre la fuente, la operación, el estado, el tiempo transcurrido, el ID de proceso y el llamador. |
+| Registro de exportación de datos SaaS | `commerce-data-export.log` | Proporciona información sobre las actividades de exportación de datos, como los eventos de entidad y los déclencheur de resincronización completa.  Cada registro tiene una estructura específica y proporciona información sobre la fuente, la operación, el estado, el tiempo transcurrido, el ID de proceso y el llamador. |
 | Registro de errores de exportación de datos SaaS | `data-export-errors.log` | Proporciona mensajes de error y seguimientos de pila para los errores que se producen durante el proceso de sincronización de datos. |
 | Registro de exportación de SaaS | `saas-export.log` | Proporciona información sobre los datos enviados a los servicios SaaS de Commerce. |
 | Registro de errores de exportación de SaaS | `saas-export-errors.log` | Proporciona información sobre los errores que se producen al enviar datos a los servicios SaaS de Commerce. |
@@ -36,8 +37,8 @@ Cada registro tiene la siguiente estructura.
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ En la tabla siguiente se describen los tipos de operación que se pueden registr
 
 | Operación | Descripción | Ejemplo de llamador |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| sincronización completa | La sincronización completa recopila y envía todos los datos al SaaS de una fuente determinada. | `bin/magento saas:resync --feed=products` |
-| reindexación parcial | La sincronización parcial recopila y envía datos a SaaS solo para las entidades actualizadas de una fuente determinada. Este registro solo está presente si existen entidades actualizadas. | `bin/magento cron:run --group=index` |
-| reintentar elementos con errores | Reenvía elementos de una fuente determinada a SaaS si la operación de sincronización anterior ha fallado debido a un error de la aplicación o del servidor de Commerce. Este registro solo está presente si existen elementos con error. | `bin/magento cron:run --group=saas_data_exporter` (cualquier grupo cron &quot;*_data_exporter&quot;) |
-| sincronización completa (heredada) | Sincronización completa para una fuente determinada en el modo de exportación heredado. | `bin/magento saas:resync --feed=categories` |
+| sincronización completa | Recopila y envía todos los datos al SaaS de una fuente determinada. | `bin/magento saas:resync --feed=products` |
+| reindexación parcial | Recopila y envía datos a SaaS solo para las entidades actualizadas de una fuente determinada. Este registro solo está presente si existen entidades actualizadas. | `bin/magento cron:run --group=index` |
+| reintentar elementos con errores | Reenviar elementos de una fuente determinada a SaaS si la operación de sincronización anterior ha fallado debido a un error de la aplicación o del servidor de Commerce. Este registro solo está presente si existen elementos con error. | `bin/magento cron:run --group=saas_data_exporter` (cualquier grupo cron &quot;*_data_exporter&quot;) |
+| sincronización completa (heredada) | Recopila y envía todos los datos a SaaS para una fuente determinada en el modo de exportación heredado. | `bin/magento saas:resync --feed=categories` |
 | reindexación parcial (heredada) | Envía entidades actualizadas a SaaS para una fuente determinada en el modo de exportación heredado. Este registro solo está presente si existen entidades actualizadas. | `bin/magento cron:run --group=index` |
 | sincronización parcial (heredada) | Envía entidades actualizadas a SaaS para una fuente determinada en el modo de exportación heredado. Este registro solo está presente si existen entidades actualizadas. | `bin/magento cron:run --group=saas_data_exporter` (cualquier grupo cron &quot;*_data_exporter&quot;) |
 
@@ -123,12 +124,12 @@ En este ejemplo se agrega una regla que permite consultar los registros de New R
 
 ## Resolución de problemas
 
-Si faltan datos o estos son incorrectos en Commerce Services, compruebe los registros para ver si se ha producido un problema durante la sincronización de la instancia de Adobe Commerce a la plataforma de Commerce Service. Si es necesario, utilice el registro ampliado para agregar información adicional a los registros para la resolución de problemas.
+Si faltan datos o estos son incorrectos en Commerce Services, compruebe en los registros si hay mensajes acerca de errores que se produjeron durante la sincronización de Adobe Commerce a la plataforma de Commerce Services. Si es necesario, utilice el registro ampliado para agregar información adicional a los registros para la resolución de problemas.
 
-- commerce-data-export-errors.log: si se produjo un error durante la fase de recopilación
-- saas-export-errors.log: si se produjo un error durante la fase de transmisión
+- El registro de errores de exportación de datos (`commerce-data-export-errors.log`) captura los errores que se producen durante la fase de recopilación.
+- El registro de errores de exportación de SaaS (`saas-export-errors.log`) registra los errores que se producen durante la fase de transmisión.
 
-Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) con la mayor información posible.
+Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con la mayor información posible.
 
 ### Resolver problemas de sincronización del catálogo {#resolvesync}
 
@@ -143,22 +144,15 @@ Cuando se sincroniza en déclencheur una sincronización de datos, los datos pue
 
 #### La sincronización no se está ejecutando
 
-Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte este artículo de [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte este artículo de [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Error de sincronización
 
-Si la sincronización del catálogo tiene el estado **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Si la sincronización del catálogo tiene el estado **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Registro extendido
 
-Para obtener información de registro adicional, puede utilizar variables de entorno para ampliar registros con datos adicionales para el seguimiento y la resolución de problemas.
-
-Hay dos archivos de registro en el directorio `var/log/`:
-
-- commerce-data-export-errors.log: si se produjo un error durante la fase de recopilación
-- saas-export-errors.log: si se produjo un error durante la fase de transmisión
-
-Puede utilizar variables de entorno para ampliar los registros con datos adicionales para el seguimiento y la resolución de problemas.
+Utilice variables de entorno para ampliar los registros con datos adicionales para el seguimiento y la resolución de problemas. Agregue la variable de entorno a la línea de comandos cuando ejecute comandos CLI de exportación de datos, como se muestra en los ejemplos siguientes.
 
 ### Comprobación de la carga útil de fuente
 
