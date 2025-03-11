@@ -2,7 +2,8 @@
 title: Recopilar datos
 description: Descubra cómo los eventos recopilan datos para  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -118,14 +119,14 @@ En esta tabla se describen los eventos utilizados por cada tipo de recomendació
 | Tipo de recomendación | Eventos | Página |
 | --- | --- | --- |
 | Más visitados | `page-view`<br>`product-view` | Página de detalles del producto |
-| Más comprados | `page-view`<br>`complete-checkout` | Carro/cierre de compra |
+| Más comprados | `page-view`<br>`place-order` | Carro/cierre de compra |
 | Más añadidos al carro | `page-view`<br>`add-to-cart` | Página de detalles del producto<br>Página de lista de productos<br>Carro<br>Lista de deseos |
 | Vio esto, vio aquello. | `page-view`<br>`product-view` | Página de detalles del producto |
 | Vio esto, compró aquello. | Recs. de producto | `page-view`<br>`product-view` | Página de detalles del producto<br>Carro/Cierre de compra |
 | Compré esto, compré aquello. | Recs. de producto | `page-view`<br>`product-view` | Página de detalles del producto |
 | Tendencia | `page-view`<br>`product-view` | Página de detalles del producto |
 | Conversión: Ver para comprar | Recs. de producto | `page-view`<br>`product-view` | Página de detalles del producto |
-| Conversión: Ver para comprar | Recs. de producto | `page-view`<br>`complete-checkout` | Carro/cierre de compra |
+| Conversión: Ver para comprar | Recs. de producto | `page-view`<br>`place-order` | Carro/cierre de compra |
 | Conversión: Ver al carro | Recs. de producto | `page-view`<br>`product-view` | Página de detalles del producto |
 | Conversión: Ver al carro | Recs. de producto | `page-view`<br>`add-to-cart` | Página de detalles del producto<br>Página de lista de productos<br>Carro<br>Lista de deseos |
 

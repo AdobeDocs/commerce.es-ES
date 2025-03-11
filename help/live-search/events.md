@@ -2,7 +2,8 @@
 title: '[!DNL Live Search] eventos'
 description: Descubra cómo los eventos recopilan datos para  [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a9f4f254-d8ff-46f1-8deb-a75b90d70d52
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -18,7 +19,7 @@ En esta tabla se describen los eventos utilizados por [!DNL Live Search] [estrat
 | Estrategia de clasificación | Eventos | Página |
 | --- | --- | --- |
 | Más visitados | `page-view`<br>`product-view` | Página de detalles del producto |
-| Más comprados | `page-view`<br>`complete-checkout` | Carro/cierre de compra |
+| Más comprados | `page-view`<br>`place-order` | Carro/cierre de compra |
 | Más añadidos al carro | `page-view`<br>`add-to-cart` | Página de detalles del producto<br>Página de lista de productos<br>Carro<br>Lista de deseos |
 | Vio esto, vio aquello. | `page-view`<br>`product-view` | Página de detalles del producto |
 
