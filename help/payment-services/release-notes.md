@@ -2,13 +2,13 @@
 title: Notas de la versión [!DNL Payment Services]
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # Notas de la versión
 
@@ -89,6 +89,33 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en el [informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y en el [informe Pagos](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## Versión 2.11.0
+
+_13 de marzo de 2025_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+
+![Nuevo](../assets/new.svg)<!-- PAY-5938 --> Ahora, [!DNL Payment Services] permite que los comerciantes administren la configuración de pagos para maximizar la flexibilidad de su negocio. Esta versión mejora la capacidad de adjuntar [varias cuentas de PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) para las regiones y marcas que admite un comerciante. Nuestro equipo de ventas puede proporcionar un vínculo de incorporación para configurar su sitio web y los ámbitos de visualización de la tienda.
+
+![Nuevo](../assets/new.svg)<!-- PAY-5968 --> Ahora, [!DNL Payment Services] actualiza la configuración del administrador con los valores de **ID de comerciante de PayPal** y **Estado de comerciante de PayPal**. Estos valores proporcionan a los comerciantes una mejor visibilidad del estado de su cuenta PayPal.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- PAY-5816 --> que restauraba la funcionalidad de pedido normal en [!DNL Payment Services] al resolver un problema que estaba causando errores en todas las ubicaciones de pedidos con la versión v2.9.0.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- PAY-5825 --> que causaba que el minicarrito de Apple Pay usara una dirección URL de totales estimados incorrecta para los clientes que iniciaron sesión. Ahora, [!DNL Payment Services] garantiza cálculos totales precisos.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- PAY-5826 --> que mejoraba la confiabilidad de la administración de pedidos al resolver un problema que causaba un error HTTP 500 al cambiar el estado del presupuesto a `inactive`.
+
+![Problema corregido](../assets/fix.svg)<!-- PAY-5849 --> Se corrigió un problema en el cual `LineItemProvider` arrojaba excepciones para cantidades decimales por debajo de 1. Ahora, [!DNL Payment Services] proporciona una mejor compatibilidad con las cantidades fraccionarias.
+
+![Se corrigió un problema](../assets/fix.svg)<!-- PAY-5868 --> Se corrigió un error en la cantidad de la tarjeta regalo durante el cierre de compra. [!DNL Payment Services] ahora garantiza valores precisos durante el proceso de cierre de compra.
+
+![Se corrigió un problema](../assets/fix.svg)<!-- PAY-5911 --> que resolvió errores durante la creación del envío para los pedidos realizados con métodos de pago en línea que no son [!DNL Payment Services], lo que mejoró la confiabilidad general.
+
+![Problema corregido](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] ahora ofrece una experiencia de pago y envío más fluida al resolver un problema en el cual Apple Pay no pudo realizar un pedido cuando se seleccionó una tarjeta de crédito diferente en la cartera.
+
+![Problema corregido](../assets/fix.svg)<!-- PAY-5971 --> [!DNL Payment Services] ya no redirige a los clientes a la página de revisión de pedidos cuando Apple Pay falla, lo que evita interrupciones innecesarias en el pago y envío.
 
 ## Versión 2.10.3
 
