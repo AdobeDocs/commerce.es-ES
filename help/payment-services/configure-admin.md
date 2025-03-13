@@ -4,9 +4,10 @@ description: Después de la instalación, puede configurar  [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,7 @@ Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchan
    >
    > Si necesita cambiar el ID del espacio de datos en Commerce Services Connector, debe restablecer su ID de [!DNL Payment Services]. Haga clic en **Restablecer ID de servicios de pago** para restablecer sus ID de zona protegida o de producción. Si restablece sus [!DNL Payment Services] ID, debe incorporarse de nuevo.
 
+1. PayPal proporciona automáticamente sus valores de **[!UICONTROL PayPal Merchant ID]** y **[!UICONTROL PayPal Merchant Status]** cuando visita el panel de [!DNL Payment Services] por primera vez.
 1. Para **Descriptor suave** (valores personalizados que se muestran en los extractos bancarios de las transacciones de los clientes para delimitar entre tiendas/marcas/catálogos), agregue el texto personalizado (hasta 22 caracteres) en el campo de texto, reemplazando `Soft descriptor` o el valor existente.
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y, a continuación, haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
@@ -48,6 +50,8 @@ Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchan
 | [!UICONTROL Method] | vista de tienda | Defina el método o el entorno para su tienda. Opciones: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | vista de tienda | El ID de comerciante de la zona protegida, que se genera automáticamente durante la incorporación a la zona protegida. |
 | [!UICONTROL Payment Services Production ID] | vista de tienda | Su ID de comerciante de producción, que se genera automáticamente durante la incorporación de la producción (en directo). |
+| [!UICONTROL PayPal Merchant ID] | vista de tienda | Tu ID único de cuenta de PayPal Merchant, generado al crear tu cuenta de PayPal. |
+| [!UICONTROL PayPal Merchant Status] | vista de tienda | Estado de tu ID de comerciante de PayPal. |
 | [!UICONTROL Soft Descriptor] | sitio web o vista de tienda | Añada un descriptor temporal a sus sitios web y vistas de tiendas para añadir información a las transacciones de clientes que delimitan marcas, tiendas o líneas de productos. |
 
 ## [!UICONTROL Credit Card Fields]

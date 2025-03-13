@@ -1,17 +1,18 @@
 ---
-title: Configuración de línea de comandos
+title: Configuración de la línea de comandos
 description: Después de la instalación, puede configurar  [!DNL Payment Services] usando la Interfaz de línea de comandos (CLI).
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
-# Configuración de línea de comandos
+# Configuración de la línea de comandos
 
 Después de instalar [!DNL Payment Services], puede configurarlo fácilmente desde [el inicio](payments-home.md) o a través de la interfaz de línea de comandos (CLI).
 
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Para obtener más información sobre la reindexación y los indexadores, consulte el tema [Administrar los indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) en la documentación para desarrolladores.
+
+## Configurar el ámbito mediante CLI
+
+[!DNL Payment Services] permite que los comerciantes usen [varias cuentas de PayPal](settings.md#use-multiple-paypal-accounts). Ahora puede cambiar los ámbitos de estas cuentas a través de CLI.
+
+Para establecer el ámbito en el nivel `website`, ejecute:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+Para establecer el ámbito en el nivel `store`, utilice:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> Si desea cambiar el ámbito a nivel de tienda, póngase en contacto con su representante de ventas [!DNL Payment Services].
+
+Una vez cambiado el ámbito, vacíe la caché para mostrar los cambios:
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Configuración del procesamiento de L2/L3
 
