@@ -1,9 +1,10 @@
 ---
 title: Incorporación e instalación
 description: Obtenga información sobre cómo instalar  [!DNL Catalog Service]
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
+source-git-commit: ccc484c47a7bb975a073b00c44cb9af7b5604f88
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Instale el servicio de catálogo para solicitar y recibir datos de producto de u
 **Requisitos de software**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2, 8.3
+- PHP 8.1, 8.2, 8.3, 8.4
 - Compositor: 2.x
 
 **Plataformas compatibles**
