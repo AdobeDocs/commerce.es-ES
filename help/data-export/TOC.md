@@ -4,9 +4,9 @@ user-guide-description: Esta guía proporciona instrucciones detalladas para usa
 breadcrumb-title: Guía de [!DNL Data Export] para servicios SaaS
 role: Admin
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 54474408897c2b8462a064400fa53a2e9040db47
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '78'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 - Exportar programación y rendimiento {#performance}
    - [Estimar el volumen de datos y el tiempo de transmisión](estimate-data-volume-sync-time.md)
    - [Mejora del rendimiento de exportación](customize-export-processing.md)
-- [Referencia de comando de CLI](data-export-cli-commands.md)
+- [Sincronizar fuentes mediante la CLI de Commerce](data-export-cli-commands.md)
 - [Revisar registros y solucionar problemas](troubleshooting-logging.md)
 - [Administración de la extensión de exportación de datos SaaS](manage-extension.md)
 - Extensibilidad {#extensibility}
