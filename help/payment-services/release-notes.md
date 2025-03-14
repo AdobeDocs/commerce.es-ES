@@ -3,9 +3,9 @@ title: Notas de la versión [!DNL Payment Services]
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en el [informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y en el [informe Pagos](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## Versión 2.11.1
+
+_14 de marzo de 2025_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Problema corregido](../assets/fix.svg)<!-- PAY-5849 --> Se corrigió un problema que afectaba a [Elementos de línea](line-items.md) durante el cierre de compra. Ahora, [!DNL Payment Services] ha mejorado la confiabilidad del proceso de cierre de compra de **elementos de línea**. Si encuentra un problema similar, póngase en contacto con su representante de ventas de [!DNL Payment Services] para obtener ayuda.
 
 ## Versión 2.11.0
 
