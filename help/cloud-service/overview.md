@@ -3,13 +3,13 @@ title: Información general sobre Adobe Commerce as a Cloud Service
 description: Obtenga información acerca de las funciones y ventajas clave de Adobe Commerce as a Cloud Service.
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
-source-git-commit: 0a112b1dab0113eb910e2ecdcca21e7e2814e761
+exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
+source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
-
 
 # Información general sobre Adobe Commerce as a Cloud Service
 
@@ -83,10 +83,13 @@ Adobe proporciona las siguientes herramientas para desarrolladores para crear in
 
 ## Commerce Foundation
 
-Commerce Foundation proporciona una plataforma de alojamiento automatizada segura y funciones de autoservicio para administrar su aplicación de Commerce en un entorno nativo de la nube. Las funciones principales incluyen:
+Commerce Foundation proporciona una plataforma de alojamiento automatizada segura y funciones de autoservicio para administrar su aplicación de Commerce en un entorno nativo de la nube.
+
+Las funciones principales incluyen:
 
 - Incorporación simplificada
 - Actualizaciones sin problemas
+- Integraciones de terceros
 
 ### Incorporación simplificada
 
@@ -103,6 +106,10 @@ El proceso de actualización típico de Adobe Commerce en la nube implicaba la c
 >[!NOTE]
 >
 >Adobe garantiza la compatibilidad con versiones anteriores de todas las actualizaciones. Esto significa que, cuando se aplican actualizaciones, no se rompen la funcionalidad o las personalizaciones existentes que se adhieren al modelo de extensibilidad [API-First](https://developer.adobe.com/commerce/extensibility/).
+
+### Integraciones de terceros
+
+Los desarrolladores pueden usar [API de GraphQL y REST](https://developer.adobe.com/commerce/services/cloud/guides/) completas para integrar Commerce Foundation con sistemas de terceros y ampliar las capacidades de Commerce.
 
 ## Integración de Experience Cloud
 
