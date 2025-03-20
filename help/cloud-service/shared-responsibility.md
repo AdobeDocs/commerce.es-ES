@@ -1,18 +1,20 @@
 ---
 title: Responsabilidad compartida
-description: Conozca las responsabilidades de seguridad de cada parte involucrada en su proyecto de Adobe Commerce as a Cloud Service.
+description: Conozca las responsabilidades de seguridad de cada parte involucrada en su  [!DNL Adobe Commerce as a Cloud Service] proyecto.
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # Modelo operativo y de seguridad de responsabilidad compartida
 
-Adobe Commerce as a Cloud Service es un servicio bajo demanda que se basa en un modelo operativo y de seguridad de responsabilidad compartida. Estas responsabilidades las comparten Adobe y los clientes. Cada parte tiene la responsabilidad distinta de proteger y operar la aplicación de Adobe Commerce.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] es un servicio bajo demanda que depende de un modelo operativo y de seguridad de responsabilidad compartida. Estas responsabilidades las comparten Adobe y los clientes. Cada parte tiene la responsabilidad distinta de proteger y operar la aplicación de Adobe Commerce.
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ Las siguientes tablas de resumen utilizan el modelo RACI para mostrar las respon
 | Definición de reglas de WAF de CDN back-end | RA | |
 | Implementación de reglas WAF de plataforma back-end | RA | |
 | Implementación de reglas WAF de CDN back-end | RA | |
-| Corrección de errores principales en Adobe Commerce as a Cloud Service | RA | I |
-| Lanzamiento de parches de infraestructura de Adobe Commerce as a Cloud Service | RA | |
+| Corrigiendo errores principales en [!DNL Adobe Commerce as a Cloud Service] | RA | I |
+| Publicando [!DNL Adobe Commerce as a Cloud Service] parches de infraestructura | RA | |
 | Escalado (infraestructura) | RA | |
 | Escala (aplicación principal) | RA | |
 | Integración de aplicaciones externas | | RA |

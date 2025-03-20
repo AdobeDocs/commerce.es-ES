@@ -1,16 +1,18 @@
 ---
 title: Configurar tu tienda
-description: Aprenda a ejecutar la herramienta de andamiaje para configurar su tienda de Adobe Commerce as a Cloud Service.
+description: Aprenda a ejecutar la herramienta de andamiaje para configurar su tienda  [!DNL Adobe Commerce as a Cloud Service] Storefront.
 role: Developer
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
 # Configurar tu tienda
+
+{{accs-early-access}}
 
 Los siguientes pasos muestran cómo configurar rápidamente su tienda de Adobe Commerce con tecnología Edge Delivery mediante el comando `aio commerce init`. Este proceso configura lo siguiente:
 
