@@ -3,9 +3,9 @@ title: Sincronización de datos con exportación de datos SaaS
 description: Descubra cómo  [!DNL SaaS Data Export] recopila y sincroniza datos entre instancias de Adobe Commerce y servicios SaaS conectados.
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
+source-git-commit: 291babe5dbdabb7d626ae744335b94e44ba6a6f5
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Los componentes principales del flujo de exportación de datos de SaaS incluyen:
 - Módulos de exportación de datos SaaS que recopilan los datos de las fuentes de Adobe Commerce, ensamblan elementos de fuentes, escuchan actualizaciones y conservan el estado de la fuente.
 - Los módulos de exportación SaaS exportan datos, configuran el enrutamiento y publican las fuentes en servicios conectados.
 - El servicio Adobe Commerce administra el proceso de ingesta de datos para validar las fuentes entrantes y mantener las actualizaciones de los servicios conectados.
+
+>[NOTA!]
+>
+>Para garantizar una programación sin problemas y evitar interrupciones en las operaciones del sitio, Adobe recomienda estimar el volumen de datos y el tiempo de sincronización antes de iniciar cualquier sincronización de fuente de datos. Esta estimación es importante a la hora de planificar sincronizaciones iniciales o actualizaciones de catálogos a gran escala, como cambios masivos de precios. Para obtener más información, consulte [Calcular el volumen de datos y el tiempo de transmisión para la sincronización de datos](estimate-data-volume-sync-time.md)
 
 ## Modos de sincronización
 
