@@ -3,9 +3,9 @@ title: Configurar tu tienda
 description: Aprenda a ejecutar la herramienta de andamiaje para configurar su tienda  [!DNL Adobe Commerce as a Cloud Service] Storefront.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ Al ejecutar el siguiente comando, se creará un andamiaje para la tienda de Comm
 
 1. Introduzca el nombre del repositorio que desea crear.
 
-1. Seleccione la plantilla para usar, por ejemplo, `adobe-commerce/adobe-demo-store`.
-
 1. Seleccione una de las siguientes opciones:
 
-   * **Usar instancia de demostración de Adobe (puntos de conexión predeterminados)**: use la instancia de Commerce de ejemplo de Adobe.
+   * **Usar el inquilino de demostración de Adobe Commerce**: use un inquilino de demostración.
       * Si selecciona esta opción, se le pedirá que instale el bot de sincronización de código de AEM en una ventana del explorador. Debe especificar el repositorio que ha creado y autorizar el bot. Vuelva a la CLI e introduzca `y` para confirmar la instalación del bot de sincronización de código de AEM.
-   * **Elegir una API disponible (Mesh -> SaaS)**: seleccione una instancia de Commerce existente en la organización seleccionada.
+   * **Elegir un inquilino de Adobe Commerce disponible**: seleccione un inquilino de Commerce existente en la organización seleccionada.
       * Si selecciona esta opción, debe seleccionar el proyecto y el espacio de trabajo en los que desea crear una malla.
 
    >[!NOTE]
