@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: Obtenga información sobre cómo configurar, administrar y supervisar el rendimiento de recomendaciones de productos.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ El espacio de trabajo [!DNL Product Recommendations] muestra una lista de recome
 
 ![espacio de trabajo de Recommendations](assets/workspace.png)
 _Workspace de Recommendations_
+
+## Recopilación de datos
+
+Para asegurarse de que cada área funcional del espacio de trabajo contiene los datos correctos, debe configurar la recopilación de datos en función de la implementación de tienda seleccionada:
+
+1. Luma: la recopilación de datos está disponible de forma predeterminada.
+1. Sin encabezado: la recopilación de datos debe configurarse manualmente, según la implementación de la tienda.
+
+Si utiliza una tienda sin encabezado, consulte la siguiente documentación para obtener más información sobre los eventos necesarios que debe agregar:
+
+- [Eventos requeridos](events.md) para el panel de recomendaciones de productos.
+- [Recopilador de eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que debe agregarse como requisito previo.
+- [Ejemplos](https://github.com/adobe/commerce-events/tree/main/examples) de la estructura de eventos.
 
 ## Establecer el ámbito
 
