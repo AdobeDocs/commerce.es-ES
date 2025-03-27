@@ -3,9 +3,9 @@ title: Límites y límites
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,12 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 - El número máximo de resultados por página es de 500.
 - No es posible filtrar los resultados mediante un atributo de tipo de fecha.
 
-## Reglas
+## Buscar en comercialización
 
 - El número máximo de [reglas](rules.md) de comercialización de búsqueda por vista de tienda es 50.
-- La comercialización de categorías puede tener una regla por categoría.
 - El número máximo de condiciones por regla es 10.
 - El número máximo de eventos por regla es 25.
+- Las reglas y los productos clasificados manualmente se aplican a los resultados de búsqueda cuando se selecciona el orden predeterminado, &quot;Ordenar por: Más relevante&quot;. Si un comprador cambia el criterio de ordenación a algo como ordenar por nombre o precio, las reglas y las clasificaciones manuales ya no están en vigor.
 - Para evitar resultados impredecibles en respuestas paginadas, el número de productos anclados no debe superar el tamaño de página solicitado.
 
 ## Sinónimos
@@ -68,9 +68,10 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 
 ## Comercialización por categorías
 
-- Se puede crear una regla por categoría para cada vista de tienda. Cada regla puede tener:
-   - Hasta diez condiciones
-   - Hasta 25 eventos
+- Puede crear una regla por categoría para cada vista de tienda.
+- El número máximo de condiciones por regla es 10.
+- El número máximo de eventos por regla es 25.
+- Las reglas se aplican cuando se abre una categoría específica en la tienda y existe una regla para esa categoría. Para las reglas de comercialización por categorías, el criterio de ordenación predeterminado es &quot;Ordenar por: Posición&quot;. Si un comprador cambia el orden, todos los productos ocultos, anclados y enterrados ya no se ordenarán.
 
 ## Permisos B2B y de categoría
 

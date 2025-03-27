@@ -1,9 +1,10 @@
 ---
 title: Añadir reglas
 description: Obtenga información sobre cómo crear reglas de comercialización de búsqueda.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -151,6 +152,10 @@ La información que se escribe aquí aparece en el panel [Detalles de regla](rul
    La regla se agrega a la lista del área de trabajo *Reglas*.
 
 1. Aunque las reglas activas entran en vigor inmediatamente, es posible que tenga que esperar hasta 15 minutos para que se actualicen los resultados de la consulta en caché en la tienda.
+
+>[!NOTE]
+>
+>Las reglas y los productos clasificados manualmente se aplican a los resultados de búsqueda cuando se selecciona el orden predeterminado, &quot;Ordenar por: Más relevante&quot;. Si un comprador cambia el criterio de ordenación a algo como ordenar por nombre o precio, las reglas y las clasificaciones manuales ya no están en vigor.
 
 ## Descripciones de campos
 
