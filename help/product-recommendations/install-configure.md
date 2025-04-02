@@ -2,7 +2,8 @@
 title: Instalar y configurar
 description: Obtenga información sobre cómo instalar, actualizar y desinstalar  [!DNL Product Recommendations].
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
+source-git-commit: a3c20f64c9a18e97b6c0cbc36a246e5c30f67341
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -76,22 +77,22 @@ Al igual que todo Adobe Commerce, [!DNL Product Recommendations] usa Composer pa
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Para actualizar a una versión principal, como de la 3.0 a la 4.0, debe editar el archivo raíz `composer.json` de su proyecto. (Vea las [notas de la versión](release-notes.md) para obtener información sobre la versión más reciente). Por ejemplo, vamos a abrir el archivo principal `composer.json` y buscar el módulo `magento/product-recommendations`:
+Para actualizar a una versión principal, como de la 5.0 a la 6.0, debe editar el archivo raíz `composer.json` de su proyecto. (Vea las [notas de la versión](release-notes.md) para obtener información sobre la versión más reciente). Por ejemplo, vamos a abrir el archivo principal `composer.json` y buscar el módulo `magento/product-recommendations`:
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^3.0",
+    "magento/product-recommendations": "^5.0",
     ...
 }
 ```
 
-Vamos a pasar la versión principal de `3.0` a `4.0`:
+Vamos a pasar la versión principal de `5.0` a `6.0`:
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^4.0",
+    "magento/product-recommendations": "^6.0",
     ...
 }
 ```
