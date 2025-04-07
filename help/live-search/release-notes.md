@@ -3,9 +3,9 @@ title: Notas de la versión [!DNL Live Search]
 description: La información de la versión más reciente de  [!DNL Live Search]  de Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Las actualizaciones incluyen:
 ## Actualizaciones de servicios alojados
 
 Estas notas describen las actualizaciones que se publicaron fuera de una versión con versiones o las mejoras realizadas en el servicio alojado.
+
+_3 de abril de 2025_
+
+![Corrección](../assets/fix.svg) Se ha actualizado la extensión de exportación de datos SaaS para quitar &quot;Los productos deben asignarse a la categoría raíz&quot; [limitación](boundaries-limits.md#b2b-and-category-permissions) para los comerciantes B2B. Consulte [Administrar la extensión de exportación de datos](../data-export/manage-extension.md) para obtener información sobre cómo actualizar la extensión de exportación de datos SaaS a la versión 103.4.0+.
 
 _20 de febrero de 2025_
 
@@ -356,7 +360,7 @@ Las instalaciones existentes de [!DNL Live Search] deben actualizarse a [!DNL Li
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
-El tablero de informes ![Nuevo](../assets/new.svg) [Rendimiento](performance.md) proporciona información sobre los términos de búsqueda que usan los compradores.
+El tablero de informes ![Nuevo](../assets/new.svg) [Rendimiento](performance.md) proporciona insight en términos de búsqueda que usan los compradores.
 ![Nuevo](../assets/new.svg) [!DNL Live Search] [Eventos de tienda SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) proporciona acceso a una capa de datos común con servicios de publicación de eventos y suscripción, y métricas.
 ![Corrección](../assets/fix.svg): [[!DNL Storefront popover]](storefront-popover.md) tiene una nueva clase `active` para el contenedor `.search-autocomplete` que controla la visibilidad.
 ![Corregir](../assets/fix.svg) En la tienda, se quita el vínculo de pie de página de [Términos de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) y se deshabilita su caché para [!DNL Live Search] instalaciones.
