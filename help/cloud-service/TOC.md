@@ -5,10 +5,10 @@ breadcrumb-title: Guía de Cloud Service
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 306f735e8fe713ba236096ba605b911b41ce405e
+source-git-commit: d7c5498826ad1ffffeda0f60f3b99488cbd4aa8f
 workflow-type: tm+mt
-source-wordcount: '22'
-ht-degree: 9%
+source-wordcount: '24'
+ht-degree: 16%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 9%
 
 - [Información general](overview.md)
 - [Primeros pasos](getting-started.md)
+- [Administración de usuarios](user-management.md)
 - [Tienda](storefront.md)
 - [Administración de recursos](assets-management.md)
 - [Casos de uso](use-cases.md)

@@ -3,9 +3,9 @@ title: Introducción a  [!DNL Adobe Commerce as a Cloud Service]
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
+source-git-commit: 9b90e6f79a394ec0941c9e48aee3859f0bcdedd5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Este diagrama proporciona información general de alto nivel sobre cómo los des
 >[!ENDTABS]
 
 ## Creación de una instancia
+
+>[!NOTE]
+>
+>Para poder crear una instancia, el administrador de productos o del sistema de su organización debe agregarlo como usuario del producto [!DNL Adobe Commerce as a Cloud Service]. Consulte [Agregar usuarios y administradores](./user-management.md#add-users-and-admins) para obtener más información.
 
 [!DNL Adobe Commerce as a Cloud Service] instancias utilizan un sistema basado en crédito. Puede crear varias instancias, pero cada una requiere una cantidad relativa de créditos. La cantidad de créditos que tienes inicialmente depende de tu suscripción.
 

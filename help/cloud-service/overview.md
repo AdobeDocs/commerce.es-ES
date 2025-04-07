@@ -4,9 +4,9 @@ description: Obtenga información acerca de las características y ventajas prin
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Las funciones principales incluyen:
 
 ### Incorporación simplificada
 
-Inicie instancias de zona protegida y producción en minutos con el portal de aprovisionamiento de autoservicio de Commerce Cloud Manager. Todo lo que necesita, incluidos los servicios de comercialización, Commerce Storefront y App Builder, se configura e integra automáticamente en sus instancias.
+Inicie las instancias de zona protegida y producción en minutos con el portal de aprovisionamiento de autoservicio [!UICONTROL Commerce Cloud Manager]. Todo lo que necesita, incluidos los servicios de comercialización, una instancia de Commerce sin encabezado y App Builder, se configura e integra automáticamente en sus instancias.
 
 Consulte [Introducción](getting-started.md) para aprender a crear y administrar instancias de Commerce.
 
