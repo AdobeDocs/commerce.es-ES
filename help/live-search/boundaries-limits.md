@@ -3,9 +3,9 @@ title: Límites y límites
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: eaea7d847be04956299a80ba3bccd90be527c482
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 - El campo [!DNL Live Search] y el widget de página de lista de productos no admiten [precios de nivel](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier).
 - Los precios de los productos no incluyen el impuesto sobre el valor añadido (IVA).
 - No se admite la búsqueda de contenido (páginas y bloques de CMS).
-- Hay un límite de 10 000 productos que se pueden paginar. Aunque este límite se puede aumentar, puede afectar al rendimiento. Asegúrese de proporcionar formas significativas de filtrar los productos en caso de que una categoría o resultado de búsqueda tenga un gran número de productos, de modo que los compradores no tengan que utilizar la paginación profunda.
+- El número máximo de resultados que se pueden paginar es 10 000. Para garantizar que los compradores no tengan que utilizar la paginación profunda cuando una categoría o resultado de búsqueda incluya un gran número de productos, proporcione formas significativas de filtrar los productos.
 - Hay un límite estricto de 1 MB por atributo, incluida la descripción y los atributos personalizados.
 - El adaptador de búsqueda no admite atributos de producto creados con un modelo de origen personalizado y utilizados como facetas. Para admitir esta funcionalidad, debe usar el [Widget de la página de lista de productos](plp-styling.md).
 - No se admiten los tipos de producto personalizados.
