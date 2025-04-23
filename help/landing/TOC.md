@@ -5,10 +5,10 @@ title: Servicios para Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: bdca30390e28b639a49eee269a64e56389d10709
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 38%
+source-wordcount: '64'
+ht-degree: 37%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 38%
 - [Información general](home.md)
 - Información de versión {#release-information}
    - [Notas de la versión](/help/landing/release-notes-all.md)
+- [Soluciones de productos](product-solutions.md)
 - Servicios de Commerce {#commerce-services}
    - Servicios de Commerce {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
