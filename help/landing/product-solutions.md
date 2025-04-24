@@ -5,13 +5,13 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
-source-git-commit: 1e73f4dd45114cfdcd2fef87ae0d9b2504214c6b
+exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
+source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Soluciones de producto de Adobe Commerce
 
@@ -39,13 +39,9 @@ En la tabla siguiente se definen los distintivos que se muestran en la documenta
 
 Esta insignia identifica únicamente la documentación de [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) y [Adobe Commerce Optimizer](../optimizer/overview.md) proyectos. Estos proyectos están alojados en una solución de software como servicio (SaaS) nativa de la nube y totalmente administrada, en la que Adobe es responsable de la mayoría de los aspectos operativos, como las actualizaciones continuas, la monitorización de la seguridad y la escalabilidad, para que los clientes puedan centrarse en el comercio en lugar de en la infraestructura.
 
-#### [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."}
+#### [!BADGE Solo PaaS]{type=Informative tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 
-Este distintivo identifica únicamente la documentación relacionada con [Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) proyectos. Estos proyectos están alojados en una solución nativa en la nube y totalmente administrada de plataforma como servicio (PaaS) con todas las funciones principales de Adobe Commerce en un entorno aprovisionado previamente.
-
->[!NOTE]
->
->A menos que se indique lo contrario, esto también incluye proyectos locales.
+Este distintivo identifica la documentación relacionada con [Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) y solo los proyectos locales. Los proyectos de Adobe Commerce en la nube están alojados en una solución nativa en la nube totalmente administrada de plataforma como servicio (PaaS) con todas las funciones principales de Adobe Commerce en un entorno aprovisionado previamente. Los proyectos locales se alojan en infraestructuras administradas por el cliente.
 
 ### Reglas
 
