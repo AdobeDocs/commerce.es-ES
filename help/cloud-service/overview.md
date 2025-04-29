@@ -4,9 +4,9 @@ description: Obtenga información acerca de las características y ventajas prin
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ La [IU de administración](https://experienceleague.adobe.com/en/docs/commerce-a
 | [Ensayo de contenido](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Servicio de catálogo](../catalog-service/overview.md) | Hoja de ruta | Una herramienta de gestión de catálogos que se vincula a Adobe Experience Platform, lo que permite la gestión de catálogos grandes. |
 | [Generador de páginas](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Tienda Commerce](https://www.aem.live/) | Disponible | Una CMS básica que permite a los usuarios crear y administrar documentos y contenido de sitios web fácilmente mediante la creación basada en documentos. Alternativamente, un editor universal permite una administración y personalización de contenido más avanzadas en varias plataformas. |
 | [Pagos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Servicios de pago para Adobe Commerce](../payment-services/overview.md) | Disponible | Un servicio de pago integrado que facilita transacciones seguras y eficientes. |
-| [Catálogo compartido](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [Servicio de indexación de precios](../price-index/price-indexing.md) | Hoja de ruta | Analiza los datos de precios y sugiere estrategias de precios óptimas para los productos en función de diversos factores. |
 | [Reescrituras de URL](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Tienda Commerce](https://www.aem.live/) | Disponible | Una CMS básica que permite a los usuarios crear y administrar documentos y contenido de sitios web fácilmente mediante la creación basada en documentos. Alternativamente, un editor universal permite una administración y personalización de contenido más avanzadas en varias plataformas. |
 | [Comercializador visual](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Servicio de catálogo](../catalog-service/overview.md) | Hoja de ruta | Una herramienta de gestión de catálogos que se vincula a Adobe Experience Platform, lo que permite la gestión de catálogos grandes. |
