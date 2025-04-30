@@ -3,9 +3,9 @@ title: Notas de la versión [!DNL Payment Services]
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Estas notas de la versión describen los cambios y correcciones de característi
 
 +++Actualizaciones de servicios alojados
 
+_25 de abril de 2025_
+
+![Nuevo problema](../assets/new.svg)<!-- Issue PAY-6051 --> Ahora, el panel [!DNL Payment Services] muestra tanto la versión de la extensión actual como la versión del panel.
+
 _30 de agosto de 2024_
 
 ![Nuevo problema](../assets/new.svg)<!-- Issue PAY-5658 --> Ahora, los comerciantes pueden filtrar las transacciones según los detalles de pago del [informe de transacciones](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/transactions.html) para obtener datos de métodos de pago más detallados y precisos.
@@ -42,7 +46,7 @@ _9 de julio de 2024_
 
 _5 de marzo de 2024_
 
-![Problema corregido](../assets/fix.svg)<!-- Issue PAY-5252 --> Ahora, los comerciantes pueden copiar datos de las cuadrículas del panel seleccionando el contenido de una sola celda.
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-5252 --> Ahora, los comerciantes pueden copiar datos de las cuadrículas de tableros seleccionando el contenido de una sola celda.
 
 _10 de octubre de 2023_
 
