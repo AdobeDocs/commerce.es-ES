@@ -6,13 +6,33 @@ hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 7d9dc53a210c80590b544cafc4e9771e187d69fd
+source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
 workflow-type: tm+mt
-source-wordcount: '8'
-ht-degree: 25%
+source-wordcount: '39'
+ht-degree: 20%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [¿Qué es  [!DNL Adobe Commerce Optimizer]?](overview.md)
+- [Información general](overview.md)
+- [Primeros pasos](get-started.md)
+- [Límites y limitaciones](boundaries-limits.md)
+- Comercialización {#merchandising}
+   - [Información general](./merchandising/overview.md)
+   - [Descubrimiento de productos](./merchandising/product-discovery.md)
+   - [Recommendations](./merchandising/recommendations.md)
+- Catálogo {#catalog}
+   - [Información general](./catalog/overview.md)
+   - [Canales](./catalog/channels.md)
+   - [Políticas](./catalog/policies.md)
+- Data Insights {#data-insights}
+   - [Información general](./data-insights/overview.md)
+   - [Sincronización de datos](./data-insights/data-sync.md)
+   - [Eventos](./data-insights/eventing.md)
+   - [Resolución de problemas](./data-insights/troubleshooting.md)
+- [Tienda](storefront.md)
+- Caso de uso {#use-case}
+   - [Información general](./use-case/overview.md)
+   - [Caso de uso completo del administrador de catálogos y tiendas](./use-case/admin-use-case.md)
+
