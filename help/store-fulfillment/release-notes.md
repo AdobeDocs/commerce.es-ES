@@ -50,9 +50,9 @@ Esta versión incluye las siguientes actualizaciones:
 
 ![Se corrigió un problema](../assets/fix.svg) Actualizaciones de instalación:
 
-- <!-- WMTP-880--> Se ha corregido un problema que provocaba que se devolviera un código de sitio web incorrecto al instalar la extensión [!DNL Store Fulfillment].
+- &#x200B;<!-- WMTP-880--> Se ha corregido un problema que provocaba que se devolviera un código de sitio web incorrecto al instalar la extensión [!DNL Store Fulfillment].
 
-- <!-- WMTP-878--> Se ha corregido un problema con los números enteros de SKU que requería que el tipo de datos se convirtiera en tipo de cadena durante la instalación.
+- &#x200B;<!-- WMTP-878--> Se ha corregido un problema con los números enteros de SKU que requería que el tipo de datos se convirtiera en tipo de cadena durante la instalación.
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- WMTP-915--> que provocaba que faltara un código de error de protección.
 

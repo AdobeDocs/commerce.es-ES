@@ -28,7 +28,7 @@ A un alto nivel, con los Servicios de Merchandising puedes:
 
 >[!INFO]
 >
->Para obtener más información sobre las API disponibles en Servicios de comercialización equipados con canales y políticas, consulte la documentación](https://developer-stage.adobe.com/commerce/services/composable-catalog) para [desarrolladores.
+>Para obtener más información sobre las API disponibles en Servicios de comercialización equipados con canales y políticas, consulte la documentación[&#128279;](https://developer-stage.adobe.com/commerce/services/composable-catalog) para desarrolladores.
 
 ## Arquitectura
 
@@ -64,7 +64,7 @@ Los datos del producto incluyen los siguientes tipos:
 - **Productos**: SKU individuales o colecciones de SKU que representan bienes físicos o servicios intangibles con atributos que representan el producto, incluidos la descripción, el peso, el tamaño, las dimensiones, etc. Los atributos también especifican los ámbitos de canal y directiva de un SKU. Los productos se pueden agrupar en varios tipos de productos, como simple, configurable, paquete, paquete de paquetes, suscripciones, etc.
 - **Metadatos**: los metadatos de atributos del producto definen y administran cómo se muestran los atributos del producto en la tienda en las listas de productos, las páginas de detalles, los resultados de búsqueda, etc. Los metadatos también definen cómo se utilizan los atributos de producto en las búsquedas (clasificación, filtrado, ponderaciones de búsqueda, etc.).
 - **Libros de precios y precios** - Determina los precios de venta de los productos. En los Servicios de Comercialización, un unidad de almacén de producto y un precio están desacoplados, por lo tanto, usted está facultado para definir múltiples libros de precios para un solo unidad de almacén. Al desacoplar los precios de la unidad de almacén, puede desbloquear precios específicos de ámbito en diferentes niveles de clientes, unidades de negocio y geografías. Puede definir precios regulares y con descuento y administrar todo esto a escala.
-- **** Assets: artefactos asociados con productos, como imágenes, videos, archivos PDF u otros tipos de archivos (hoja de ruta futura).
+- **&#x200B;**&#x200B;Assets: artefactos asociados con productos, como imágenes, videos, archivos PDF u otros tipos de archivos (hoja de ruta futura).
 
 ### Gestión del contexto del producto
 

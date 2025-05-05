@@ -264,7 +264,7 @@ Añada la configuración del proyecto para la extensión de Sidekick. Sidekick s
 
 1. Abra el archivo `tools/sidekick/config.json`.
 
-   Archivo de configuración +++Sidekick
+   +++Archivo de configuración Sidekick
 
    ```json
    {
@@ -296,7 +296,7 @@ Añada la configuración del proyecto para la extensión de Sidekick. Sidekick s
 
    Consulte la [documentación de la biblioteca Sidekick](https://www.aem.live/docs/sidekick-library) para obtener más información.
 
-+++
+   +++
 
 1. Actualice los valores de clave `url` con los valores del repositorio de GitHub.
 

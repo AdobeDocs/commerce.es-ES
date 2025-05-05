@@ -79,7 +79,7 @@ En esta sección, creará una nueva directiva. La directiva puede ser **STATIC**
    1. **Atributo** : introduzca un atributo del catálogo. Por ejemplo, &quot;part_categoría&quot;. Este nombre debe coincidir exactamente con el nombre del atributo del catálogo.
    1. **Operador** : elija el operador. Por ejemplo, **IN.**
    1. **Valor Origen** - Seleccione **STATIC**.
-   1. **** Valor - Introduzca los valores dentro del atributo que especificó anteriormente. Por ejemplo, &quot;frenos, suspensión&quot;.Estos nombres deben coincidir exactamente con los nombres de los valores del atributo especificado anteriormente.
+   1. **&#x200B;**&#x200B;Valor - Introduzca los valores dentro del atributo que especificó anteriormente. Por ejemplo, &quot;frenos, suspensión&quot;.Estos nombres deben coincidir exactamente con los nombres de los valores del atributo especificado anteriormente.
 
 1. Haga clic en la **[!UICONTROL Save]** botón del cuadro de diálogo de detalles del filtro.
 
@@ -107,7 +107,7 @@ En esta sección, creará una nueva directiva. La directiva puede ser **STATIC**
 
 1. Escriba un nombre para el activador, como **AC-Policy-Brand**.
 
-1. Seleccione el tipo **de** transporte. **** HTTP_HEADER es actualmente el único tipo admitido.
+1. Seleccione el tipo **de** transporte. **&#x200B;**&#x200B;HTTP_HEADER es actualmente el único tipo admitido.
 
 1. Haga clic en la **[!UICONTROL Save]** botón para guardar el activador.
 

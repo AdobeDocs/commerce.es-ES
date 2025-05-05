@@ -32,7 +32,7 @@ Puede descargar el informe Transacciones en formato de archivo .csv para utiliza
 
 La vista Informe de transacciones está disponible en la vista Transacciones de Servicios de pago. Incluye toda la información disponible sobre las transacciones de tu tienda o tiendas.
 
-En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**para ver la vista detallada del informe de transacciones tabulares.
+En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;para ver la vista detallada del informe de transacciones tabulares.
 
 ![Vista del informe de transacciones](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
@@ -54,7 +54,7 @@ En la vista Informe de transacciones, puede seleccionar el origen de datos (**[!
 
 ![Selección de orígenes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver la información del informe del modo de espacio aislado.
+Si _[!UICONTROL Live]_&#x200B;es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si&#x200B;_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver la información del informe del modo de espacio aislado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -84,14 +84,14 @@ En la vista Informe de transacciones, puede filtrar los resultados de los estado
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Haga clic en el selector **[!UICONTROL Filter]**.
-1. Cambie las opciones _[!UICONTROL Transaction Result]_para ver los resultados del informe solamente para las transacciones de pedidos seleccionadas.
-1. Cambie las opciones _[!UICONTROL Payment Method]_para ver los resultados del informe para el tipo de pago utilizado para la transacción.
-1. Active las opciones _[!UICONTROL Payment Detail]_para ver información adicional sobre el tipo de pago utilizado, cuando esté disponible.
+1. Cambie las opciones _[!UICONTROL Transaction Result]_&#x200B;para ver los resultados del informe solamente para las transacciones de pedidos seleccionadas.
+1. Cambie las opciones _[!UICONTROL Payment Method]_&#x200B;para ver los resultados del informe para el tipo de pago utilizado para la transacción.
+1. Active las opciones _[!UICONTROL Payment Detail]_&#x200B;para ver información adicional sobre el tipo de pago utilizado, cuando esté disponible.
 1. Escriba _Importe mínimo de pedido_ o _Importe máximo de pedido_ para ver los resultados del informe dentro de ese intervalo de importe de pedido.
-1. Escriba un _[!UICONTROL Order ID]_para buscar una transacción específica.
-1. Introduce _[!UICONTROL Card Last Four]_para buscar una tarjeta de crédito o débito específica.
-1. Escriba un _[!UICONTROL Customer ID]_para mostrar todas las transacciones de un cliente específico.
-1. Escriba _[!UICONTROL Customer Email]_para filtrar las transacciones de ese correo electrónico.
+1. Escriba un _[!UICONTROL Order ID]_&#x200B;para buscar una transacción específica.
+1. Introduce _[!UICONTROL Card Last Four]_&#x200B;para buscar una tarjeta de crédito o débito específica.
+1. Escriba un _[!UICONTROL Customer ID]_&#x200B;para mostrar todas las transacciones de un cliente específico.
+1. Escriba _[!UICONTROL Customer Email]_&#x200B;para filtrar las transacciones de ese correo electrónico.
 1. Haga clic en **[!UICONTROL Hide filters]** para ocultar el filtro.
 
 ### Mostrar y ocultar columnas
@@ -106,7 +106,7 @@ El informe Transacciones muestra todas las columnas de información disponibles 
 
 ### Actualización de datos del informe
 
-La vista Informe de transacciones muestra una marca de tiempo _[!UICONTROL Last updated]_que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe de transacciones se actualizan automáticamente cada tres horas.
+La vista Informe de transacciones muestra una marca de tiempo _[!UICONTROL Last updated]_&#x200B;que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe de transacciones se actualizan automáticamente cada tres horas.
 
 También puede forzar manualmente una actualización de los datos del informe para ver la información del informe más actualizada.
 

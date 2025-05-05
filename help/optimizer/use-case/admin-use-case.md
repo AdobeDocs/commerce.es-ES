@@ -161,7 +161,7 @@ Vamos a crear una nueva directiva llamada *categorías de piezas Celport* para f
    - **Atributo** = *part_category*
    - **Operador** = **IN**
    - **Valor Origen** = **ESTÁTICA**
-   - **** Valor = *frenos*, *suspensión*
+   - **&#x200B;**&#x200B;Valor = *frenos*, *suspensión*
 
    >[!IMPORTANT]
    >
@@ -231,7 +231,7 @@ La pieza final de este tutorial consiste en actualizar el escaparate que [ya cre
 
 1. En el directorio raíz de la carpeta, abra el archivo `config.json`.
 
-   código +++config.json
+   +++código config.json
 
    ```json
    {
@@ -269,7 +269,7 @@ La pieza final de este tutorial consiste en actualizar el escaparate que [ya cre
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-+++
+   +++
 
 1. Reemplace el valor `ac-channel-id` por el ID de canal de Celport que copió anteriormente.
 1. Si es necesario, reemplace el valor por el `ac-environment-id` ID de inquilino de su [!DNL Adobe Commerce Optimizer] instancia. Puede encontrar la identificación en el correo electrónico de incorporación para el programa de acceso anticipado o comunicándose con su Adobe Systems cuenta representante.

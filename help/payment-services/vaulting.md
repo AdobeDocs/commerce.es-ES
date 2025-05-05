@@ -73,7 +73,7 @@ Solo puede utilizar tarjetas abovedadas en el administrador si el cliente tiene 
 Para crear un pedido en Admin para un cliente con su tarjeta de crédito:
 
 1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**como método de pago.
+1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**&#x200B;como método de pago.
 1. Seleccione el método de pago de tarjeta de crédito abovedado que desee.
 1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
