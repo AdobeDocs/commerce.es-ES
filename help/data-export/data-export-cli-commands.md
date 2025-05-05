@@ -16,7 +16,7 @@ El comando `saas:resync` del paquete `magento/saas-export` le permite administra
 Adobe does not recommend using the `saas:resync` command regularly. Typical scenarios for using the command are:
 
 - Initial sync
-- Sync data to a new data space after changing the [SaaS Data Space ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
+- Sync data to a new data space after changing the [SaaS Data Space ID](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas)
 - Resolución de problemas
 
 Monitor sync operations in the `var/log/saas-export.log` file.
