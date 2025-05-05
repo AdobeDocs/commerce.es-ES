@@ -1,25 +1,25 @@
 ---
-title: Sincronizar fuentes mediante la CLI de Commerce
-description: Aprenda a utilizar los comandos de la interfaz de la línea de comandos para administrar fuentes y procesos para los servicios SaaS de  [!DNL data export extension] for Adobe Commerce.
+title: Sync feeds using the Commerce CLI
+description: Learn how to use the command-line interface commands to manage feeds and processes for the [!DNL data export extension] for Adobe Commerce SaaS services.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
+source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
-# Sincronizar fuentes mediante la CLI de Commerce
+# Sync feeds using the Commerce CLI
 
 El comando `saas:resync` del paquete `magento/saas-export` le permite administrar la sincronización de datos para los servicios SaaS de Adobe Commerce.
 
-Adobe no recomienda usar el comando `saas:resync` con regularidad. Los escenarios habituales para utilizar el comando son:
+Adobe does not recommend using the `saas:resync` command regularly. Typical scenarios for using the command are:
 
-- Sincronización inicial
-- Sincronizar datos a nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas)
+- Initial sync
+- Sync data to a new data space after changing the [SaaS Data Space ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Resolución de problemas
 
-Supervisar operaciones de sincronización en el archivo `var/log/saas-export.log`.
+Monitor sync operations in the `var/log/saas-export.log` file.
 
 ## Sincronización inicial
 
@@ -57,18 +57,18 @@ Ver todas las opciones disponibles:
 bin/magento saas:resync --help
 ```
 
-Consulte las secciones siguientes para ver descripciones de opciones con ejemplos.
+See the following sections for option descriptions with examples.
 
 
 >[!NOTE]
 >
->Para obtener opciones avanzadas para administrar el procesamiento de exportación, consulte [Personalizar el procesamiento de exportación](customize-export-processing.md).
+>For advanced options to manage export processing, see [Customize export processing](customize-export-processing.md).
 
 ## `--by-ids`
 
-Resincronizar parcialmente entidades específicas mediante sus ID. Admite fuentes de `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` y `categoryPermissions`.
+Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions` feeds.
 
-De forma predeterminada, las entidades se especifican en una lista separada por comas por SKU del producto. Para usar identificadores de producto, agregue la opción `--id-type=ProductID`.
+De manera predeterminada, al usar la opción `--by-ids`, se especifican valores mediante los valores de SKU del producto. To use product IDs instead, add the `--id-type=ProductID` option.
 
 **Ejemplos:**
 
@@ -81,15 +81,15 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Limpie la tabla de fuentes en la tabla del indexador de fuentes antes de reindexar y enviar datos a SaaS. Solo se admite para `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` y `categoryPermissions`.
+Clean up the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions`.
 
-Si se utiliza con la opción `--dry-run`, la operación realiza una operación de resincronización de ejecución en seco para todos los elementos.
+If used with the `--dry-run` option, the operation performs a dry-run resync operation for all items.
 
 >[!IMPORTANT]
 >
->Use solo después de limpiar el entorno o con la opción `--dry-run`. Si se utiliza en otros casos, la operación de limpieza provoca la pérdida de datos y problemas de sincronización de datos en los que los elementos que deben eliminarse en Adobe Commerce no se eliminan del espacio de datos SaaS.
+>Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation can cause data loss and data sync issues.
 
-**Ejemplo:**
+**Example:**
 
 ```shell
 bin/magento saas:resync --feed products --cleanup-feed
@@ -124,14 +124,14 @@ Pruebe elementos de fuentes específicos agregando la opción `--by-ids` con la 
 **Ejemplo:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### Probar todos los elementos de fuente
 
 De manera predeterminada, la fuente enviada durante una operación de `resync --dry-run` incluye solo elementos nuevos o elementos que no se pudieron exportar anteriormente. Para incluir todos los elementos en la fuente que se va a procesar, use la opción `--cleanup-feed`.
 
-**Ejemplo**
+**Example**
 
 ```shell
 bin/magento saas:resync --feed products --dry-run --cleanup-feed
@@ -139,9 +139,9 @@ bin/magento saas:resync --feed products --dry-run --cleanup-feed
 
 ## `--feed`
 
-Requerido. Especifica la entidad de fuente que se va a resincronizar.
+Required. Specifies the feed entity to resync.
 
-Fuentes disponibles:
+Available feeds:
 
 - `categories`
 - `categoryPermissions`
@@ -155,7 +155,7 @@ Fuentes disponibles:
 - `scopesCustomerGroup`
 - `variants`
 
-**Ejemplo:**
+**Example:**
 
 ```shell
 bin/magento saas:resync --feed products
@@ -163,7 +163,7 @@ bin/magento saas:resync --feed products
 
 ## `--no-reindex`
 
-Vuelve a enviar los datos del catálogo existente a [!DNL Commerce Services] sin volver a indexar. No compatible con fuentes relacionadas con productos.
+Vuelve a enviar los datos del catálogo existente a [!DNL Commerce Services] sin volver a indexar. Not supported for product-related feeds.
 
 El comportamiento varía según el [modo de exportación](data-synchronization.md#synchronization-modes):
 
