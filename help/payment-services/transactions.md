@@ -131,9 +131,9 @@ Los informes de transacciones incluyen la siguiente información.
 
 | Columna | Descripción |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de pedido de Commerce (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionada, haga clic en el identificador. |
+| [!UICONTROL Order ID] | ID de pedido de Commerce (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionada, haga clic en el identificador. |
 | [!UICONTROL PayPal Transaction ID] | ID de transacción proporcionado por el proveedor de pagos; contiene solo valores para las transacciones correctas y contiene un guión para las transacciones rechazadas. Puedes hacer clic en este identificador para acceder a la página de detalles de la transacción de PayPal. |
-| [!UICONTROL Customer ID] | ID de cliente de Commerce de un pedido <br> <br>Vea el tema [información del cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obtener más información. |
+| [!UICONTROL Customer ID] | ID de cliente de Commerce de un pedido <br> <br>Vea el tema [información del cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obtener más información. |
 | [!UICONTROL Transaction Date] | Marca de fecha y hora de transacción |
 | [!UICONTROL Payment Method] | Tipo de pago utilizado para la transacción con información sobre la marca y el tipo de tarjeta. Consulte [tipos de tarjeta](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) para obtener más información; disponible para las versiones 1.6.0 y posteriores de Payment Services |
 | [!UICONTROL Payment Detail] | Proporciona información adicional sobre el tipo de pago utilizado para la transacción, cuando está disponible. |

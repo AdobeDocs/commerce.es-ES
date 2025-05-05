@@ -26,7 +26,7 @@ Haga clic en las pestañas siguientes para ver información general de flujo de 
 
 >[!TAB Flujo de trabajo de administrador y comerciante]
 
-Este diagrama proporciona información general de alto nivel sobre cómo los administradores y comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
+Este diagrama proporciona información general de alto nivel sobre cómo los administradores y comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagrama de flujo comercial](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -103,7 +103,7 @@ De manera predeterminada, las instancias de [!DNL Adobe Commerce as a Cloud Serv
 
 Existen dos maneras de importar el catálogo en [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador de Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
+* [**Administrador de Commerce**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api): una API de REST que le permite importar los datos del catálogo mediante programación.
 
 <!-- TODO

@@ -58,7 +58,7 @@ Puede añadir un atributo de producto desde el administrador de Commerce o, medi
 
 1. Agregue el atributo a un conjunto de atributos según sea necesario.
 
-Consulte [Crear atributos de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
+Consulte [Crear atributos de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
 
 #### Crear el atributo de producto mediante programación
 

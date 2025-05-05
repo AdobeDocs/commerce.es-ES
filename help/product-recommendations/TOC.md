@@ -37,4 +37,4 @@ ht-degree: 13%
    - [Verificar](verify.md)
    - [Personalizar](customize.md)
    - [Controlar restricciones de cookies](setting-cookie.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)

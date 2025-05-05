@@ -18,13 +18,13 @@ La seguridad es de suma importancia en [!DNL Payment Services] y no se pasa info
 
 [!DNL Adobe Commerce] y [!DNL Magento Open Source] incluyen compatibilidad con varias características de seguridad.
 
-Consulte [Seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} en la guía del usuario principal para revisar las prácticas recomendadas de seguridad, y aprender a administrar las sesiones de administración y las credenciales, implementar CAPTCHA y administrar las restricciones del sitio web.
+Consulte [Seguridad](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security){target="_blank"} en la guía del usuario principal para revisar las prácticas recomendadas de seguridad, y aprender a administrar las sesiones de administración y las credenciales, implementar CAPTCHA y administrar las restricciones del sitio web.
 
 ## Conformidad con PCI
 
 La industria de tarjetas de pago (PCI) estableció un conjunto de requisitos para las empresas que aceptan pagos con tarjeta de crédito a través de Internet. Además de mantener un entorno seguro, los comerciantes que gestionan la información de las tarjetas de crédito de los clientes son responsables de cumplir algunas directrices estándar.
 
-Consulte [Directrices de cumplimiento de PCI](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} para obtener más información.
+Consulte [Directrices de cumplimiento de PCI](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} para obtener más información.
 
 Los comerciantes pueden completar un [cuestionario de autoevaluación (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, que es una herramienta de autovalidación para evaluar la seguridad de los datos del titular de la tarjeta.
 

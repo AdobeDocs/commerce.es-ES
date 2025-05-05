@@ -35,4 +35,4 @@ ht-degree: 3%
 - Casos de uso {#use-cases}
    - [Usar Adobe Journey Optimizer para enviar un correo electrónico de carro de compras abandonado](using-ajo.md)
    - [Crear una audiencia en Real-Time CDP mediante datos de evento de Commerce](create-audience.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)

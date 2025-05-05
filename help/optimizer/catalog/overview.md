@@ -24,7 +24,7 @@ A un alto nivel, con los Servicios de Merchandising puedes:
 - Desbloquee la sindicación de catálogos y ofrezca la contenido correcta diseñando su catálogo de productos para reflejar su negocio, incluidos productos, clientes, precios y distribución.
 - Ingiera y actualice rápidamente los datos del catálogo y entregue rápidamente las actualizaciones a la tienda para sus promociones y necesidades campaña.
 - Logre puntajes de faro perfectos con componentes de IU listos para usar y ultrarrápidos con tecnología de Edge Delivery Services para una navegación y recomendaciones de productos sin problemas.
-- Adopte una arquitectura componible moderna utilizando la arquitectura de extensibilidad de Adobe Systems ([aplicación Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) para importar datos de productos y potenciar escaparates de comercio sin cabeza utilizando la malla API de [Adobe Systems](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh).
+- Adopte una arquitectura componible moderna utilizando la arquitectura de extensibilidad de Adobe Systems ([aplicación Builder](https://experienceleague.adobe.com/es/playlists/commerce-get-started-app-builder-development)) para importar datos de productos y potenciar escaparates de comercio sin cabeza utilizando la malla API de [Adobe Systems](https://experienceleague.adobe.com/es/playlists/commerce-get-started-app-builder-and-api-mesh).
 
 >[!INFO]
 >

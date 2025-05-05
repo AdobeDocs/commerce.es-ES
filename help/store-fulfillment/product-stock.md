@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Administración de stock de productos
 
-Como comerciante, puede usar las opciones de origen y existencias de Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction). Además, puede utilizar la solución Store Fulfillment para controlar otras opciones de disponibilidad de inventario relacionadas con las operaciones de su tienda comercial.
+Como comerciante, puede usar las opciones de origen y existencias de Adobe Commerce [Inventory management](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/introduction). Además, puede utilizar la solución Store Fulfillment para controlar otras opciones de disponibilidad de inventario relacionadas con las operaciones de su tienda comercial.
 
 - Opción de envío a domicilio desde tiendas Merchant
 

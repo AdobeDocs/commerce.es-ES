@@ -22,7 +22,7 @@ Aparece un mensaje de error en la página de cierre de compra del comprador. El 
 
 ![Error al comprobar](assets/user-checkout-error.png "Error al desproteger"){width="600" zoomable="yes"}
 
-También se muestra un comentario sobre el pedido cancelado en el Administrador para un [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) específico.
+También se muestra un comentario sobre el pedido cancelado en el Administrador para un [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=es) específico.
 
 ![Comentario de pedido cancelado en el administrador del pedido](assets/admin-checkout-error.png "Comentario de pedido cancelado en el administrador del pedido"){width="600" zoomable="yes"}
 

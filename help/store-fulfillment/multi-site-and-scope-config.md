@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Configuración de varios sitios web y ámbitos
 
-Puede establecer el [Ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) para algunos elementos con el fin de admitir varios sitios web, tiendas y vistas de tiendas:
+Puede establecer el [Ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) para algunos elementos con el fin de admitir varios sitios web, tiendas y vistas de tiendas:
 
-- [Administrar existencias](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) por ámbito
+- [Administrar existencias](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/stocks/stocks-manage) por ámbito
 
 - Administrar [!DNL Delivery Methods] por ámbito
 

@@ -19,7 +19,7 @@ se espera que respete este código. Informar de comportamientos inaceptables a
 
 ## Documentación de guía del colaborador
 
-Consulte la [Guía del colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Consulte la [Guía del colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
 
 ## ¿Tiene alguna pregunta?
 
@@ -56,4 +56,4 @@ no dude en ponerse en contacto con los colaboradores existentes para hablar sobr
 
 ## Problemas de seguridad
 
-Para informar sobre un problema de seguridad, [envíe un problema a nuestros expertos en seguridad](https://helpx.adobe.com/security/alertus.html).
+Para informar sobre un problema de seguridad, [envíe un problema a nuestros expertos en seguridad](https://helpx.adobe.com/es/security/alertus.html).

@@ -18,7 +18,7 @@ El área de trabajo *Rendimiento* proporciona información sobre los términos d
 
 ![Rendimiento](assets/performance-unique-searches.png)
 
-También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
+También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=es) para obtener más datos sobre la sincronización de datos.
 
 >[!NOTE]
 >

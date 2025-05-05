@@ -22,7 +22,7 @@ El área de trabajo *Buscar comercialización* enumera la selección actual de r
 
 ## Establecer el ámbito
 
-Si la instalación de Adobe Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplican las reglas.
+Si la instalación de Adobe Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplican las reglas.
 
 ## Mostrar u ocultar columnas
 

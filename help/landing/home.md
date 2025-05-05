@@ -143,11 +143,11 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Monitorización de sincronización de datos" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Panel de administración de datos</strong>
          </a>
       </div>

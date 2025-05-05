@@ -34,7 +34,7 @@ Por el contrario, las implementaciones de [headless](https://developer.adobe.com
 
 ### Etiquetas de faceta
 
-Para las tiendas de [!DNL Commerce], la etiqueta de faceta está determinada por las [*propiedades de atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). En tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [espacio de trabajo de facetas](faceting-workspace.md).
+Para las tiendas de [!DNL Commerce], la etiqueta de faceta está determinada por las [*propiedades de atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=es). En tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [espacio de trabajo de facetas](faceting-workspace.md).
 
 ### Tipo de orden
 

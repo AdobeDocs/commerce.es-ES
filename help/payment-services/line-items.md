@@ -126,7 +126,7 @@ Consulte [Documentación para desarrolladores de PayPal sobre los elementos de l
 
 ## Administrar elementos de línea
 
-Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede provocar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
+Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede provocar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
 
 > Ejemplo de artículos de línea con problemas de redondeo en la vista del panel de comerciantes
 

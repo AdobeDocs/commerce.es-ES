@@ -22,27 +22,27 @@ La solución [!DNL Store Fulfillment] utiliza Adobe Commerce Inventory managemen
 
 Estos cambios de configuración le ayudan a lograr tres cosas:
 
-1. [Transfiera el inventario al origen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) para mover el inventario del stock/origen predeterminado al nuevo stock/origen.
+1. [Transfiera el inventario al origen](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/quantities/inventory-transfer) para mover el inventario del stock/origen predeterminado al nuevo stock/origen.
 
-1. [Asignar fuentes en lote](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) para agregar las nuevas fuentes para todos sus productos.
+1. [Asignar fuentes en lote](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/quantities/bulk-assignment) para agregar las nuevas fuentes para todos sus productos.
 
-1. [Complete actualizaciones masivas de los atributos de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) para agregar los atributos `Allow Store Pickup` y `Allow Home Delivery` a los productos existentes. Cuando se instala la solución, los atributos tienen los valores óptimos de *default*. Sin embargo, estos atributos no se aplican a los productos existentes hasta que complete el proceso de actualización masiva.
+1. [Complete actualizaciones masivas de los atributos de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) para agregar los atributos `Allow Store Pickup` y `Allow Home Delivery` a los productos existentes. Cuando se instala la solución, los atributos tienen los valores óptimos de *default*. Sin embargo, estos atributos no se aplican a los productos existentes hasta que complete el proceso de actualización masiva.
 
-El inventario se deduce del origen seleccionado (ubicación de tienda minorista o almacén de comercio electrónico). Las fuentes utilizadas como almacenes de comercio electrónico deben asignarse a las mismas existencias que la ubicación de recogida de la tienda y priorizarse antes que las ubicaciones de venta minorista. Para obtener más información, vea [Priorizar orígenes para un archivo de Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
+El inventario se deduce del origen seleccionado (ubicación de tienda minorista o almacén de comercio electrónico). Las fuentes utilizadas como almacenes de comercio electrónico deben asignarse a las mismas existencias que la ubicación de recogida de la tienda y priorizarse antes que las ubicaciones de venta minorista. Para obtener más información, vea [Priorizar orígenes para un archivo de Stock](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Para obtener más información sobre la administración del inventario, los inventarios de stock y los orígenes, consulte la documentación del usuario de Adobe Commerce:
 
-- [Administrar inventario](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
+- [Administrar inventario](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/introduction)
 
-- [Administración de cantidades de inventario](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
+- [Administración de cantidades de inventario](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Administrar existencias](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [Administrar existencias](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Administrar orígenes](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
+- [Administrar orígenes](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Priorización de orígenes para un recurso](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
+- [Priorización de orígenes para un recurso](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Actualizaciones masivas para los atributos del producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
+- [Actualizaciones masivas para los atributos del producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

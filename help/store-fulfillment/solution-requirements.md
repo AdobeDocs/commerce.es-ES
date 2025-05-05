@@ -26,9 +26,9 @@ Antes de instalar o actualizar, revise las notas de la versión y los requisitos
 
 - [Notas de la versión de Store Fulfillment](release-notes.md)
 
-- [Notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) en la *Información de la versión de Adobe Commerce*.
+- [Notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=es) en la *Información de la versión de Adobe Commerce*.
 
-- [Requisitos del sistema de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en la *Guía de instalación de Adobe Commerce*.
+- [Requisitos del sistema de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) en la *Guía de instalación de Adobe Commerce*.
 
 
 ## Requisitos de la aplicación Store Assist

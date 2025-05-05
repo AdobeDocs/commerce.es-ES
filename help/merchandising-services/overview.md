@@ -20,7 +20,7 @@ En un nivel superior, con los servicios de comercialización puede:
 - Desbloquee la distribución del catálogo y proporcione el contenido adecuado diseñando el catálogo de productos para que refleje su negocio, incluidos los productos, los clientes, los precios y la distribución.
 - Ingeste y actualice rápidamente los datos del catálogo y envíe rápidamente las actualizaciones a la tienda para sus promociones y necesidades de campaña.
 - Consiga puntuaciones perfectas en el faro con componentes de interfaz de usuario listos para usar y rápidos con la tecnología de Edge Delivery Services para una navegación y recomendaciones de productos sin problemas.
-- Adopte una arquitectura componible moderna usando la arquitectura de extensibilidad de Adobe ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) para importar datos de productos y activar tiendas de comercio sin encabezado usando la [malla de API](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh) de Adobe.
+- Adopte una arquitectura componible moderna usando la arquitectura de extensibilidad de Adobe ([App Builder](https://experienceleague.adobe.com/es/playlists/commerce-get-started-app-builder-development)) para importar datos de productos y activar tiendas de comercio sin encabezado usando la [malla de API](https://experienceleague.adobe.com/es/playlists/commerce-get-started-app-builder-and-api-mesh) de Adobe.
 
 >[!INFO]
 >

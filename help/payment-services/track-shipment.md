@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] permite a los comerciantes ver la información de seguimiento de un envío en su panel de comerciantes de PayPal.
 
-Consulte el tema [envíos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} para obtener más información sobre la cuadrícula de envíos de Adobe Commerce.
+Consulte el tema [envíos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} para obtener más información sobre la cuadrícula de envíos de Adobe Commerce.
 
 ## Cómo funciona el seguimiento de su envío
 

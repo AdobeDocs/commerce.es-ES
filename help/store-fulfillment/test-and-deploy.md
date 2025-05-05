@@ -644,4 +644,4 @@ La implementación y las pruebas varían en función de la infraestructura y las
 
 >[!TIP]
 >
->Para obtener instrucciones de implementación, listas de comprobación y prácticas recomendadas para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Implementar su tienda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) en la documentación para desarrolladores de Adobe Commerce.
+>Para obtener instrucciones de implementación, listas de comprobación y prácticas recomendadas para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Implementar su tienda](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) en la documentación para desarrolladores de Adobe Commerce.

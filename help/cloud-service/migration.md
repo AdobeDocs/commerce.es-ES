@@ -68,7 +68,7 @@ La migración de la instancia actual de Adobe Commerce a una nueva instancia de 
 
    * [Arquitectura de Adobe Commerce en Cloud Services](./overview.md): revise la arquitectura de la plataforma y en qué se diferencia de la instancia de Adobe Commerce actual.
    * [Marco de trabajo de extensibilidad de Adobe Commerce](https://developer.adobe.com/commerce/extensibility/): identifique cómo desea realizar la transición de las personalizaciones actuales.
-   * [Tienda Commerce con tecnología Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/): revisa la solución de tienda recomendada.
+   * [Tienda Commerce con tecnología Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es): revisa la solución de tienda recomendada.
 
 1. Auditoría de la compatibilidad de personalización:
 
@@ -90,7 +90,7 @@ Los siguientes pasos describen el proceso de desarrollo y ejecución de la migra
 
 1. Configure una de las siguientes tiendas basadas en GraphQL:
 
-   * [Crear una tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [Crear una tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es)
    * [Usa PWA Studio para crear una tienda personalizada basada en GraphQL](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. Migre los datos de la instancia anterior de Commerce a ACCS:

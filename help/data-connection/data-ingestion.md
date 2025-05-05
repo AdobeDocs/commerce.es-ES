@@ -14,7 +14,7 @@ ht-degree: 0%
 
 La [extensión de conexión de datos](overview.md) conecta los datos de Commerce con Experience Platform. Los datos que se van a usar en Experience Platform se agrupan en dos tipos de comportamiento: datos de series temporales, que pertenecen a la clase **Experience Event**, y datos de registros, que pertenecen a la clase **Individual Profile**.
 
-Obtenga más información acerca de [comportamiento de los datos](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) y [clases](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) en Experience Platform.
+Obtenga más información acerca de [comportamiento de los datos](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es#data-behaviors) y [clases](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es#class) en Experience Platform.
 
 ## Datos de series temporales
 

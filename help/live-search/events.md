@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Live Search] eventos
 
-[!DNL Live Search] utiliza eventos para activar algoritmos de búsqueda como &quot;Más visitados&quot; y &quot;Visualizó esto, Visualizó aquello&quot;. Mientras que el [tema de Luma de muestra de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) obtiene eventos de forma predeterminada, las implementaciones sin encabezado y otras personalizadas tienen que implementar eventos para sus propias necesidades.
+[!DNL Live Search] utiliza eventos para activar algoritmos de búsqueda como &quot;Más visitados&quot; y &quot;Visualizó esto, Visualizó aquello&quot;. Mientras que el [tema de Luma de muestra de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) obtiene eventos de forma predeterminada, las implementaciones sin encabezado y otras personalizadas tienen que implementar eventos para sus propias necesidades.
 
 En esta tabla se describen los eventos utilizados por [!DNL Live Search] [estrategias de clasificación](rules-add.md#intelligent-ranking).
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
+>Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.

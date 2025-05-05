@@ -47,7 +47,7 @@ El campo de categoría muestra las categorías que pertenecen a la vista de tien
 
 >[!NOTE]
 >
->Para los comerciantes B2B, el filtro Categoría se adhiere a cualquier [categoría de producto específica del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que haya configurado.
+>Para los comerciantes B2B, el filtro Categoría se adhiere a cualquier [categoría de producto específica del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=es) que haya configurado.
 
 Adobe Commerce recomienda utilizar la siguiente configuración de filtro de categoría al implementar recomendaciones en los tipos de página:
 
@@ -77,11 +77,11 @@ Filtra productos basados en visibilidad, como: _Catálogo_, _Búsqueda_ o ambos.
 
 ### Precio
 
-Un filtro basado en el precio del producto utiliza el precio final para realizar la comparación. El precio final incluye cualquier descuento o precio especial disponible para compradores anónimos. Para los comerciantes B2B, el precio mostrado refleja los [precios de grupo específicos del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) que ha configurado.
+Un filtro basado en el precio del producto utiliza el precio final para realizar la comparación. El precio final incluye cualquier descuento o precio especial disponible para compradores anónimos. Para los comerciantes B2B, el precio mostrado refleja los [precios de grupo específicos del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=es) que ha configurado.
 
 ### Estado de stock
 
 Los siguientes filtros de exclusión se pueden utilizar para filtrar los productos en función del estado de stock:
 
 - Agotado: (solo exclusión) Excluye los productos sin existencias.
-- Bajo en stock: (solo exclusión) Excluye los productos que están bajo en stock. El estado de existencias bajo se basa en el valor _Solo X del umbral izquierdo_ en la [configuración del inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Bajo en stock: (solo exclusión) Excluye los productos que están bajo en stock. El estado de existencias bajo se basa en el valor _Solo X del umbral izquierdo_ en la [configuración del inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=es).

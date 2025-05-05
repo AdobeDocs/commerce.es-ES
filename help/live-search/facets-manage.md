@@ -35,7 +35,7 @@ Consulta [Configuración](settings.md) para configurar los intervalos y agrupaci
 
 1. Para editar la etiqueta de faceta, realice una de las siguientes acciones:
 
-   * Para una tienda [!DNL Commerce], edite la [etiqueta de atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * Para una tienda [!DNL Commerce], edite la [etiqueta de atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=es).
    * Para una implementación sin encabezado, haga clic en el valor de la primera columna y edite el texto según sea necesario.
 
    ![Editar etiqueta](assets/facet-edit-label.png)

@@ -112,7 +112,7 @@ Por ejemplo, si su tienda vende algunos productos orgánicos, es posible que ten
 
 ![Agregar insignia](assets/unit-custom.png)
 
-Para asegurarse de que haya un atributo de producto personalizado disponible cuando procese la unidad de recomendación en la página, establezca la propiedad `Used in Product Listing` en `Yes` en la página [Atributos de producto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) en el Administrador.
+Para asegurarse de que haya un atributo de producto personalizado disponible cuando procese la unidad de recomendación en la página, establezca la propiedad `Used in Product Listing` en `Yes` en la página [Atributos de producto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=es) en el Administrador.
 
 Cuando se establece esta propiedad, la carga útil JSON incluye un objeto `attributes` que contiene una matriz de códigos y valores de atributo. A continuación, puede aplicar un estilo de tienda personalizado basado en estos valores de atributo, como agregar tratamientos visuales especiales o insignias, como se mencionó anteriormente.
 

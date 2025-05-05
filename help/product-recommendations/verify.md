@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # Verificar colección de eventos
 
-Después de [instalar y configurar](install-configure.md) el módulo `magento/product-recommendations`, puede comprobar que los datos de comportamiento se envían a Adobe Commerce. Puede utilizar las herramientas para desarrolladores disponibles en Chrome o instalar la extensión Snowplow Chrome. Si necesita ayuda adicional, consulte [Solucionar problemas [!DNL Product Recommendations] módulo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) en la Base de conocimiento de asistencia.
+Después de [instalar y configurar](install-configure.md) el módulo `magento/product-recommendations`, puede comprobar que los datos de comportamiento se envían a Adobe Commerce. Puede utilizar las herramientas para desarrolladores disponibles en Chrome o instalar la extensión Snowplow Chrome. Si necesita ayuda adicional, consulte [Solucionar problemas [!DNL Product Recommendations] módulo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html?lang=es) en la Base de conocimiento de asistencia.
 
 ## Verificación mediante herramientas para desarrolladores en Chrome
 
@@ -50,7 +50,7 @@ Instale la extensión [Snowplow Analytics Debugger para Chrome](https://chrome.g
 
 1. Desplácese hacia abajo hasta que vea **Datos de contexto _n_**. Busque la instancia de tienda en el **Esquema**.
 
-1. Compruebe que el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) esté configurado correctamente.
+1. Compruebe que el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html?lang=es) esté configurado correctamente.
 
 ![Filtro Snowplow](assets/snowplow-filter.png)
 _Filtro Snowplow_
@@ -61,8 +61,8 @@ _Filtro Snowplow_
 
 ## Compruebe que los eventos se activan correctamente
 
-Para comprobar que los eventos utilizados para las métricas se activan correctamente, busque los eventos `impression-render`, `view` y `rec-click` en Snowplow Analytics Debugger. Ver la [lista completa de eventos](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
+Para comprobar que los eventos utilizados para las métricas se activan correctamente, busque los eventos `impression-render`, `view` y `rec-click` en Snowplow Analytics Debugger. Ver la [lista completa de eventos](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=es).
 
 >[!NOTE]
 >
-> Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador dé su consentimiento. Si el modo de restricción de cookies está desactivado, los datos de comportamiento se recopilan de forma predeterminada.
+> Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador dé su consentimiento. Si el modo de restricción de cookies está desactivado, los datos de comportamiento se recopilan de forma predeterminada.
