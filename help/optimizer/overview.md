@@ -35,7 +35,7 @@ Si está interesado en obtener más información sobre el programa de [!DNL Adob
 
 Vea el siguiente vídeo para obtener una descripción general de alto nivel de [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450226)
+>[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 

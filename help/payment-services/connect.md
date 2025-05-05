@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] cuenta con la tecnología de Commerce Services y se implementa como SaaS (software como servicio). La instancia de Commerce se conecta mediante una clave de API y una clave privada, y se especifica el espacio de datos en la configuración mediante [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html). **Solo configuró esta conexión una vez.**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448020?captions=spa)
 
 >[!INFO]
 >
