@@ -2,9 +2,10 @@
 title: Descubrimiento de productos
 description: La detección de productos ofrece una experiencia de búsqueda rápida, relevante e intuitiva.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: b9429ccb-947b-462c-8b34-63fb53d015f6
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -37,3 +38,7 @@ La página principal **Descubrimiento de productos** contiene las siguientes fic
 - [Sinónimos](../../live-search/synonyms.md)
 - [Buscar comercialización](../../live-search/rules.md)
 - [Configuración](../../live-search/settings.md)
+
+## Limitación
+
+Para la detección de productos, no se admite la comercialización basada en atributos ni la configuración de precios.

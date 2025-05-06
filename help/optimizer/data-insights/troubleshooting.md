@@ -3,10 +3,11 @@ title: Resolución de problemas
 description: Aprenda a utilizar la sección Perspectivas de datos para solucionar errores de ingesta.
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: afefc957-65e0-4529-a6ba-472b901e2d51
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 4%
+source-wordcount: '52'
+ht-degree: 3%
 
 ---
 
@@ -16,4 +17,4 @@ ht-degree: 4%
 >
 >Esta documentación describe un producto en desarrollo de acceso anticipado y no refleja todas las funcionalidades pensadas para una disponibilidad general.
 
-Este artículo proporciona información sobre cómo puede utilizar la sección Data Insights para solucionar errores de ingesta.
+Este artículo proporciona información sobre cómo puede utilizar la sección Data Insights para solucionar errores de recopilación de datos de comportamiento.

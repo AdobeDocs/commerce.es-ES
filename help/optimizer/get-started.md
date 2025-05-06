@@ -3,9 +3,10 @@ title: Introducción a  [!DNL Adobe Commerce Optimizer]
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: ac79c8aa43ced017743fbef1f181b4eaf8e0a754
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Esta guía lo acompaña en la creación y el trabajo con una instancia de [!DNL 
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/es/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 NEED DIAGRAM
 
@@ -50,6 +51,10 @@ Una vez que las instancias de [!DNL Adobe Commerce Optimizer] estén listas, el 
 | IU [!DNL Adobe Commerce Optimizer] | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Acceder a la interfaz de usuario de Commerce Optimizer para administrar el catálogo en:<br>1. Reglas de comercialización (descubrimiento de productos, recomendaciones de productos).<br>2. Administración de catálogos (creación de canales y directivas).<br>3. Perspectivas de datos (vea el estado de ingesta de datos del catálogo). |
 | API de tienda | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Acceda a las API necesarias para configurar su tienda de Commerce con tecnología de Edge Delivery Services. |
 | API de ingesta de datos de catálogo | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | Acceda a las API necesarias para introducir los datos del catálogo. |
+
+>[!NOTE]
+>
+>Consulte la [documentación para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog/) para obtener más información sobre las API necesarias para la configuración de la tienda y la ingesta de catálogos.
 
 Como participante con acceso anticipado, recibirá un mensaje de correo electrónico con un vínculo seguro que, junto con su token de IMS, le permitirá iniciar sesión en [!DNL Adobe Commerce Optimizer] o realizar llamadas a la API.
 

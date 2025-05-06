@@ -2,9 +2,10 @@
 title: Recommendations
 description: Recommendations es una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -31,3 +32,11 @@ Desde el espacio de trabajo, puede:
 - [Editar](../../product-recommendations/edit.md) una recomendación existente.
 
 Puede mostrar estas recomendaciones de productos en la tienda mediante el componente de tienda de Recommendations.
+
+## Limitaciones
+
+A continuación se enumeran las limitaciones de Recommendations para el acceso anticipado.
+
+- [!DNL Adobe Commerce Optimizer] admite el tipo de recomendación _Vistos recientemente_.
+- No se admiten exclusiones o inclusiones de categorías o atributos.
+- No puede obtener una vista previa de las recomendaciones en [!DNL Adobe Commerce Optimizer].
