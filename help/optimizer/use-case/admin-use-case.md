@@ -232,7 +232,7 @@ La parte final de este tutorial implica actualizar la tienda que [ya has creado]
 
 1. En el directorio raíz de la carpeta, abra el archivo `config.json`.
 
-   código +++config.json
+   +++código config.json
 
    ```json
    {
@@ -270,7 +270,7 @@ La parte final de este tutorial implica actualizar la tienda que [ya has creado]
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-+++
+   +++
 
 1. Reemplace el valor `ac-channel-id` por el ID de canal de Celport que copió anteriormente.
 1. Reemplace el valor `ac-environment-id` por el identificador de inquilino de su instancia [!DNL Adobe Commerce Optimizer]. Puede encontrar el ID en el correo electrónico de incorporación para el programa de acceso anticipado o poniéndose en contacto con el representante de la cuenta de Adobe.
