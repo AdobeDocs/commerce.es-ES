@@ -3,13 +3,13 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] para Adobe Commerce proporciona una forma de recuperar el contenido de las páginas para mostrar productos y de las páginas de listas de productos mucho más rápidamente que las consultas nativas de Adobe Commerce GraphQL.'
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] para Adobe Commerce
 
@@ -84,5 +84,7 @@ El servicio de catálogo garantiza actualizaciones y cálculos de precios precis
 > Los clientes de Commerce con [!DNL Catalog Service] pueden aprovechar las actualizaciones de precios más rápidas y el tiempo de sincronización en sus sitios web con el [indexador de precios SaaS](../price-index/price-indexing.md).
 
 ## Implementación
+
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 
 El proceso de instalación requiere la configuración de [Commerce Services Connector](../landing/saas.md). Una vez hecho esto, el siguiente paso es que un integrador de sistemas actualice el código de la tienda para incorporar las consultas [!DNL Catalog Service]. Todas las [!DNL Catalog Service] consultas se enrutan a la puerta de enlace de GraphQL. La dirección URL se proporciona durante el proceso de incorporación.
