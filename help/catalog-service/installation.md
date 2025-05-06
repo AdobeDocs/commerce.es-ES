@@ -42,7 +42,7 @@ Instale el servicio de catálogo para solicitar y recibir datos de producto de u
 
 Todas las instancias de prueba comercio utilizan el punto final de Sandbox.
 
-Realice todas las pruebas de carga en el extremo del Simulador para pruebas. Antes de comenzar las pruebas de carga, envíe un vale](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) de [soporte para que el equipo Servicios pueda anticipar el tráfico adicional del servidor.
+Realice todas las pruebas de carga en el extremo del Simulador para pruebas. Antes de comenzar las pruebas de carga, envíe un vale[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) de soporte para que el equipo Servicios pueda anticipar el tráfico adicional del servidor.
 
 ## Instalación y configuración
 
