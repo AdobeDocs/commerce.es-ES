@@ -51,4 +51,4 @@ ht-degree: 3%
 - Seguridad y cumplimiento {#security-compliance}
    - [Seguridad](security.md)
    - [Protección contra fraudes significativa](fraud-protection.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=es)
