@@ -69,7 +69,7 @@ La vista de visualización de datos Pagos incluye la siguiente información.
 
 La vista Informe de pagos está disponible en la vista Pagos de Payment Services. Incluye toda la información disponible sobre los pagos de tu tienda.
 
-En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**para ver la vista detallada del informe Pagos en tablas.
+En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;para ver la vista detallada del informe Pagos en tablas.
 
 ![Transacciones de pago en el administrador](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,7 +89,7 @@ En la vista Informe de pagos, puede seleccionar el origen de datos (**[!UICONTRO
 
 ![Selección de orígenes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_es el origen de datos seleccionado, puede ver la información de informes de las tiendas en el modo de producción. Si_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver los almacenes de información de informes en el modo de espacio aislado.
+Si _[!UICONTROL Live]_&#x200B;es el origen de datos seleccionado, puede ver la información de informes de las tiendas en el modo de producción. Si&#x200B;_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver los almacenes de información de informes en el modo de espacio aislado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 

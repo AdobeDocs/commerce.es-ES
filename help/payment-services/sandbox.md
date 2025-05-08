@@ -29,7 +29,7 @@ Para completar la incorporación a la zona protegida:
       Si creó una cuenta de zona protegida de PayPal durante el proceso de incorporación a la zona protegida de PayPal, debe [restablecer su zona protegida de incorporación](#reset-your-sandbox-account) porque o no puede verificar su correo electrónico.
 
    1. Seleccione **[!UICONTROL Business]** como tipo de cuenta y haga clic en **[!UICONTROL Create]**.
-   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
+   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna&#x200B;_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
    1. Haga clic en **[!UICONTROL View/edit account]**.
 
       ![PayPal - Ver/editar cuenta de zona protegida](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}

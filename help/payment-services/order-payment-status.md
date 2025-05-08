@@ -71,7 +71,7 @@ La vista de visualización de datos de estado de pago del pedido incluye la sigu
 
 La vista Informe de estado de pago del pedido está disponible en la vista Inicio de Servicios de pago. Incluye estados detallados (pago, facturado, enviado, reembolso, disputa y más) de todas las transacciones.
 
-En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**para ver la tabla detallada del informe de estado del pago de pedidos.
+En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;para ver la tabla detallada del informe de estado del pago de pedidos.
 
 ![Ordenar transacciones de estado de pago en el administrador](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -144,7 +144,7 @@ En la vista Informe de estado de pago del pedido, puede seleccionar el origen de
 
 ![Selección de orígenes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver información del informe para el modo de espacio aislado.
+Si _[!UICONTROL Live]_&#x200B;es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si&#x200B;_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver información del informe para el modo de espacio aislado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -155,7 +155,7 @@ Las selecciones de fuentes de datos funcionan de la siguiente manera:
 Para seleccionar el origen de datos de su informe [!UICONTROL Order Payment Status]:
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Haga clic en el filtro selector _[!UICONTROL Data source]_y seleccione **[!UICONTROL Live]**o **[!UICONTROL Sandbox]**.
+1. Haga clic en el filtro selector _[!UICONTROL Data source]_&#x200B;y seleccione **[!UICONTROL Live]**&#x200B;o **[!UICONTROL Sandbox]**.
 
    Los resultados del informe se regeneran en función del origen de datos seleccionado.
 
@@ -175,7 +175,7 @@ En la vista Informe de estado de pagos de pedidos, puede filtrar los resultados 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Haga clic en el selector **[!UICONTROL Filter]**.
 1. Cambie las opciones _Estado de pago_ para ver los resultados del informe solo para los estados de pago de pedidos seleccionados.
-1. Ver los resultados del informe dentro de un intervalo de importe de pedido introduciendo un _[!UICONTROL Min Order Amount]_o _[!UICONTROL Max Order Amount_].
+1. Ver los resultados del informe dentro de un intervalo de importe de pedido introduciendo un _[!UICONTROL Min Order Amount]_&#x200B;o _[!UICONTROL Max Order Amount_].
 1. Haga clic en **[!UICONTROL Hide filters]** para ocultar el filtro.
 
 ### Mostrar y ocultar columnas
@@ -208,7 +208,7 @@ La columna Estado de reembolso muestra el estado actual de cualquier reembolso. 
 
 ### Actualización de datos del informe
 
-La vista del informe Estado de pago del pedido muestra una marca de tiempo _[!UICONTROL Last updated]_que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe Estado de los pagos de los pedidos se actualizan automáticamente cada tres horas.
+La vista del informe Estado de pago del pedido muestra una marca de tiempo _[!UICONTROL Last updated]_&#x200B;que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe Estado de los pagos de los pedidos se actualizan automáticamente cada tres horas.
 
 También puede forzar manualmente la actualización de los datos del informe de estado de los pagos de pedidos para ver la información del informe más actualizada.
 
