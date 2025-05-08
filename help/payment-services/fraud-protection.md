@@ -3,8 +3,9 @@ title: Protección contra el fraude significativo
 description: Habilite la protección contra fraudes automatizada para  [!DNL Payment Services] con Signifyd.
 role: Admin, User
 level: Intermediate
-feature: Payments, Checkout, Configuration, Security
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Configuration, Security, Paas, Saas
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -40,12 +41,12 @@ Debido a que Signifyd realiza alguna acción sobre sus pedidos, es necesario con
 
 Estas opciones de configuración no son compatibles con Payment Services ni con la integración de Signifyd:
 
-* Cuando [!DNL Payment Services] está configurado con la acción de pago `Authorize` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_&#x200B;establecida en **Crear nota de crédito**.
+* Cuando [!DNL Payment Services] está configurado con la acción de pago `Authorize` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_establecida en **Crear nota de crédito**.
 
   Motivo: [!DNL Payment Services] crea una transacción de autorización que Signify intenta devolver.
 
 
-* [!DNL Payment Services] está configurado con la acción de pago `Authorize and Capture` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_&#x200B;establecida en **Cancelar pedido**.
+* [!DNL Payment Services] está configurado con la acción de pago `Authorize and Capture` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_establecida en **Cancelar pedido**.
 
   Razón: [!DNL Payment Services] crea una transacción de captura que Signifyd intenta anular.
 

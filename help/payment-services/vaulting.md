@@ -1,8 +1,9 @@
 ---
 title: Bóveda de tarjeta de crédito
 description: Los compradores pueden guardar los datos de su tarjeta de crédito para futuras compras.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -31,7 +32,7 @@ Los clientes que iniciaron sesión pueden proteger un método de pago en el pane
 
 1. Vaya a **[!UICONTROL Stored Payment Methods]** en el panel de navegación izquierdo para ver todos sus métodos de pago almacenados.
 
-   Consulte [Métodos de pago almacenados](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obtener más información.
+   Consulte [Métodos de pago almacenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obtener más información.
 
 1. El cliente hace clic en **[!UICONTROL Add New Card]** para almacenar una tarjeta nueva.
 
@@ -72,10 +73,10 @@ Solo puede utilizar tarjetas abovedadas en el administrador si el cliente tiene 
 
 Para crear un pedido en Admin para un cliente con su tarjeta de crédito:
 
-1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=es).
-1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**&#x200B;como método de pago.
+1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**como método de pago.
 1. Seleccione el método de pago de tarjeta de crédito abovedado que desee.
-1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=es#step-3%3A-submit-the-order).
+1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
    ![Usar tarjeta de crédito abovedada en el administrador para el cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

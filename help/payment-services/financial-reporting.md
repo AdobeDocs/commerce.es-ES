@@ -2,9 +2,9 @@
 title: Informes financieros
 description: '[!DNL Payment Services] ofrece informes completos para que puedas obtener una visión clara de los pedidos y pagos de tu tienda.'
 role: User
-feature: Payments, Checkout
+feature: Payments, Checkout, Paas, Saas
 level: Intermediate
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%

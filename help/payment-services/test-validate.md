@@ -1,8 +1,9 @@
 ---
 title: Probar y validar
 description: Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] las funciones funcionan según lo esperado y proporcionan las mejores opciones de pago para sus clientes
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -18,7 +19,7 @@ Antes de exponer [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Mage
 Probar [!DNL Payment Services] en un entorno de espacio aislado es un paso de validación importante, aunque sea un entorno simulado conectado únicamente al espacio aislado de PayPal, no a bancos y comerciantes reales.
 
 1. Completa un pago y envío correcto desde tu tienda, ya sea con [Campos de tarjeta de crédito](payments-options.md#credit-card-fields) o cualquiera de los [botones de pago de PayPal](payments-options.md#paypal-smart-buttons). Ver [Credenciales de prueba](#testing-credentials) para obtener más información acerca del uso de tarjetas de crédito falsas para realizar pruebas.
-1. Capture (cuando su acción de pago esté [establecida en `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [reembolso](refunds.md) o [anule](voids.md) el pedido que acaba de completar. También puede [crear una factura](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para un pedido si la acción de pago está establecida en `Authorize` en lugar de en `Authorize and Capture`.
+1. Capture (cuando su acción de pago esté [establecida en `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [reembolso](refunds.md) o [anule](voids.md) el pedido que acaba de completar. También puede [crear una factura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para un pedido si la acción de pago está establecida en `Authorize` en lugar de en `Authorize and Capture`.
 1. En un plazo de 24 a 48 horas, consulta la transacción y otra información en el [informe de pagos](payouts.md).
 1. Ver los detalles del pedido en el [informe de estado de pago del pedido](order-payment-status.md).
 

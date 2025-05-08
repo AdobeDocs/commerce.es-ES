@@ -1,9 +1,10 @@
 ---
 title: Elementos de línea para  [!DNL Payment Services]
 description: Obtenga información acerca de los elementos de línea de  [!DNL Payment Services]  y cómo ver los elementos de línea en el panel de comerciantes.
-feature: Payments
+feature: Payments, Paas, Saas
 role: User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -122,11 +123,11 @@ El objeto `upc` contiene los atributos siguientes:
 
 +++
 
-Consulte [Documentación para desarrolladores de PayPal sobre los elementos de línea](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} para obtener más información sobre estos campos y sus limitaciones.
+Consulta [Documentación para desarrolladores de PayPal sobre artículos de línea](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} para obtener más información sobre estos campos y sus limitaciones.
 
 ## Administrar elementos de línea
 
-Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede provocar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
+Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede causar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
 
 > Ejemplo de artículos de línea con problemas de redondeo en la vista del panel de comerciantes
 

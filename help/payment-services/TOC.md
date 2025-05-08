@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 3%
 # [!DNL Payment Services] para Commerce {#payment-services}
 
 - [Información general de guía](guide-overview.md)
-- [Introducción a  [!DNL Payment Services]](overview.md)
+- [Introducción a  [!DNL Payment Services]](introduction.md)
+- [Compatibilidad para  [!DNL Payment Services]](compatibility.md)
 - [Notas de la versión](release-notes.md)
 - Incorporar [!DNL Payment Services] {#get-started}
    - [Resumen de incorporación](onboard.md)
@@ -31,18 +32,18 @@ ht-degree: 3%
    - [Configuración de línea de comandos](configure-cli.md)
    - [Configuración heredada](configure-admin.md)
    - [Prueba y validación](test-validate.md)
-- Pagos y pago y envío {#payments-checkout}
+- Pagos y pago {#payments-checkout}
    - [Opciones de pago](payments-options.md)
    - [Bóveda de tarjetas de crédito](vaulting.md)
    - [Cierre de compra en  [!DNL Payment Services]](checkout.md)
-   - Administrar pagos {#manage}
+   - Administración de pagos {#manage}
       - [Elementos de línea para  [!DNL Payment Services]](line-items.md)
       - [Reembolsos](refunds.md)
       - [Vacíos](voids.md)
    - [Cree un pedido en Admin](create-order.md)
    - [Rastreando sus envíos en  [!DNL Payment Services]](track-shipment.md)
-- Informes financieros {#reporting}
-   - [Informe Transacciones](transactions.md)
+- Informes financieros {#financial-reports}
+   - [Informes](reporting.md)
    - [Informe de estado de pago del pedido](order-payment-status.md)
    - [Informe de pagos](payouts.md)
    - [Datos disponibles](data.md)
@@ -50,4 +51,4 @@ ht-degree: 3%
 - Seguridad y cumplimiento {#security-compliance}
    - [Seguridad](security.md)
    - [Protección contra fraudes significativa](fraud-protection.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
