@@ -1,9 +1,10 @@
 ---
 title: Headless
 description: Aprenda a integrar [!DNL Product Recommendations] en una tienda sin encabezado.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
+source-git-commit: 45bf78cb4ed975e0803e5ab2701d444fed16d2bb
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ Puede integrar a [!DNL Product Recommendations] en una tienda sin encabezado usa
 
 Los integradores personalizados y sin encabezado deben consultar estas instrucciones de Luma y PWA como una implementación sugerida. Existen muchas maneras de implementar Recomendaciones de producto en soluciones sin encabezado, y esta documentación no cubre todos los escenarios. Los integradores deben cubrir eventos, diseño y pruebas para sus implementaciones.
 
-[!DNL Product Recommendations] requiere [datos de catálogo y comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=es) para funcionar. El proceso de sincronización de datos del catálogo permanece sin cambios en una implementación sin encabezado, pero se necesitan cambios para la recopilación de datos de comportamiento.
+[!DNL Product Recommendations] requiere [datos de catálogo y comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) para funcionar. El proceso de sincronización de datos del catálogo permanece sin cambios en una implementación sin encabezado, pero se necesitan cambios para la recopilación de datos de comportamiento.
 
 >[!NOTE]
 >
@@ -30,7 +31,7 @@ Puede realizar ambas acciones utilizando los SDK disponibles como se describe en
 
 1. [Instalar](install-configure.md) el módulo [!DNL Product Recommendations].
 
-1. Instale y use [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) para activar [eventos de comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=es).
+1. Instale y use [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) para activar [eventos de comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
 
    El mínimo de eventos requeridos para devolver [!DNL Product Recommendations] resultados:
 
@@ -54,3 +55,5 @@ Puede realizar ambas acciones utilizando los SDK disponibles como se describe en
 1. Una vez recopilados los datos de comportamiento, puede [crear](create.md) [!DNL Product Recommendations] en el administrador.
 
 1. Use [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) para recuperar las unidades de recomendación en la tienda. SDK devuelve los datos de producto necesarios para procesar las unidades de recomendación en una página.
+
+1. Aprenda a utilizar la consulta de GraphQL [`recommendations` ](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.
