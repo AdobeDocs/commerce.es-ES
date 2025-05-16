@@ -17,8 +17,8 @@ ht-degree: 0%
 Adobe Commerce ofrece tres modelos de implementación:
 
 - [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- [Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (local)
+- [Adobe Commerce en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/overview) (local)
 
 Esta comparación se centra en las diferencias entre los modelos de software como servicio (SaaS) y plataforma como servicio (PaaS), que proporcionan diferentes niveles de personalización, extensibilidad y control sobre la implementación comercial.
 
@@ -28,7 +28,7 @@ Esta comparación se centra en las diferencias entre los modelos de software com
 
 ## Funciones de administración de tiendas
 
-La [IU de administración de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) es la interfaz principal para acceder a las funciones y administrar las operaciones de la tienda back-end, el inventario, los precios, las promociones y las interacciones con los clientes. Sin embargo, [!DNL Adobe Commerce as a Cloud Service] ofrece soluciones únicas que reemplazan algunas de las características conocidas disponibles en Adobe Commerce en proyectos en la nube y locales.
+La [IU de administración de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/guide-overview) es la interfaz principal para acceder a las funciones y administrar las operaciones de la tienda back-end, el inventario, los precios, las promociones y las interacciones con los clientes. Sin embargo, [!DNL Adobe Commerce as a Cloud Service] ofrece soluciones únicas que reemplazan algunas de las características conocidas disponibles en Adobe Commerce en proyectos en la nube y locales.
 
 En la tabla siguiente se describen las características y las soluciones de reemplazo disponibles en [!DNL Adobe Commerce as a Cloud Service]:
 
@@ -42,31 +42,31 @@ En la tabla siguiente se describen las características y las soluciones de reem
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Administración de recursos digitales</a></td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">Visuales del producto</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Administración de recursos digitales</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">Visuales del producto</a></td>
             <td>Un sistema sólido de administración de activos digitales (DAM) que se integra con Adobe Experience Manager para administrar contenido con medios enriquecidos. Como alternativa, la función predeterminada de administración de recursos y archivos digitales proporciona herramientas básicas de administración de recursos para almacenar y administrar recursos digitales.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Sistema de administración de contenido (CMS)</a></td>
-            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/guide-overview">Sistema de administración de contenido (CMS)</a></td>
+            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/?lang=es">Storefront Builder</a></td>
             <td rowspan="3">Un CMS que permite a los usuarios crear y administrar fácilmente el contenido de la tienda mediante la creación de documentos o un editor visual, e incluye capacidades de experimentación nativas.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">Reescrituras de URL</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">Reescrituras de URL</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Ensayo de contenido</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/staging/content-staging">Ensayo de contenido</a></td>
             <td rowspan="2"><a href="../catalog-service/overview.md">Servicio de catálogo</a></td>
             <td rowspan="2">Un servicio de modelo de vista enriquecido (solo lectura) para administrar datos de catálogo y procesar experiencias de tienda relacionadas con el producto.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Pagos</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/payments/payments">Pagos</a></td>
             <td><a href="../payment-services/guide-overview.md">Servicios de pago</a></td>
             <td>Un servicio de pago integrado que facilita transacciones seguras y eficientes.</td>
         </tr>
@@ -172,7 +172,7 @@ La siguiente tabla compara las funcionalidades de la plataforma y las funciones 
     <tfoot>
         <tr>
             <td colspan="3">
-                Las <sup>1</sup> características principales de <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B</a>, como la administración de la empresa y las cotizaciones, están disponibles de forma predeterminada en SaaS. Sin embargo, las personalizaciones específicas del sector pueden requerir consideraciones de implementación adicionales.
+                Las <sup>1</sup> características principales de <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/guide-overview">B2B</a>, como la administración de la empresa y las cotizaciones, están disponibles de forma predeterminada en SaaS. Sin embargo, las personalizaciones específicas del sector pueden requerir consideraciones de implementación adicionales.
                 <br><br>
                 <sup>2</sup> La extensibilidad del modelo de datos en SaaS admite <a href="https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/">la ampliación de entidades principales</a> más allá del producto y el cliente, incluidas las entidades B2B. Sin embargo, los modelos de datos específicos del sector (por ejemplo, los atributos específicos de los distribuidores) podrían requerir consideraciones arquitectónicas adicionales.
                 <br><br>
