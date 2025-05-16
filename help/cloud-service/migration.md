@@ -2,9 +2,10 @@
 title: Migrar a  [!DNL Adobe Commerce as a Cloud Service]
 description: Obtenga información sobre cómo migrar a  [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ La migración de la instancia actual de Adobe Commerce a una nueva instancia de 
 
    * [Arquitectura de Adobe Commerce en Cloud Services](./overview.md): revise la arquitectura de la plataforma y en qué se diferencia de la instancia de Adobe Commerce actual.
    * [Marco de trabajo de extensibilidad de Adobe Commerce](https://developer.adobe.com/commerce/extensibility/): identifique cómo desea realizar la transición de las personalizaciones actuales.
-   * [Tienda Commerce con tecnología Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es): revisa la solución de tienda recomendada.
+   * [Tienda Commerce con tecnología Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/): revisa la solución de tienda recomendada.
 
 1. Auditoría de la compatibilidad de personalización:
 
@@ -90,7 +91,7 @@ Los siguientes pasos describen el proceso de desarrollo y ejecución de la migra
 
 1. Configure una de las siguientes tiendas basadas en GraphQL:
 
-   * [Crear una tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es)
+   * [Crear una tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
    * [Usa PWA Studio para crear una tienda personalizada basada en GraphQL](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. Migre los datos de la instancia anterior de Commerce a ACCS:
