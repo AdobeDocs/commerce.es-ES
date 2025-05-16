@@ -3,9 +3,10 @@ title: Comercialización por categorías
 description: Utiliza la comercialización de  [!DNL Live Search] categorías para disfrutar de una experiencia de compra más rápida.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
