@@ -142,7 +142,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## Versión 103.3.4
 
-![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce <!--MDEE-785-->](../assets/fix.svg)
+!&lbrack;Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce <!--MDEE-785-->&rbrack;(../assets/fix.svg)
 
 ## Versión 103.3.3
 
