@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versión principal actual
+
+## Versión 103.4.4
+
+![Nuevo](../assets/new.svg) Se ha agregado un mensaje de advertencia que aparece cuando se agrega el argumento `cleanup-feed` al comando CLI `saas:resync`. La opción `--cleanup-feed` debe usarse con precaución y solo en escenarios específicos como después de la limpieza del entorno o con la opción `--dry-run`. Su uso en otros casos puede provocar la pérdida de datos y problemas de sincronización. <!--MDEE-1047-->
+![Corrección](../assets/fix.svg) agregó `x-request-id` desde la respuesta del servidor para mejorar la trazabilidad. <!--MDEE-1041-->
+![Corregir](../assets/fix.svg) Se corrigió un problema en el cual el estado de sincronización no se guardaba para todo el lote de fuentes, lo que provocó una resincronización innecesaria. <!--MDEE-1049-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que todas las fuentes del lote de fuentes se omitían durante la sincronización si una fuente contenía un error. <!--MDEE-976-->
+![Corrección](../assets/fix.svg) Se ha agregado compatibilidad con dimensiones en el indizador de permisos de categoría. <!--MDEE-654-->
 
 ## Versión 103.4.3
 
@@ -134,7 +142,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## Versión 103.3.4
 
-!&lbrack;Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce <!--MDEE-785-->&rbrack;(../assets/fix.svg)
+![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce <!--MDEE-785-->](../assets/fix.svg)
 
 ## Versión 103.3.3
 
