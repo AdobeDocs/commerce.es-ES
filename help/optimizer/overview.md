@@ -35,7 +35,7 @@ Si está interesado en obtener más información sobre el programa de acceso ant
 
 Vea el siguiente vídeo para obtener información general de alto nivel sobre [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 
