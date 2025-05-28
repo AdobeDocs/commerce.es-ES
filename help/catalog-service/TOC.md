@@ -5,10 +5,10 @@ breadcrumb-title: Guía de [!DNL Catalog Service]
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 3d76363c2dcbd65a5b54b2b958e23e495460d26d
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 10%
+source-wordcount: '47'
+ht-degree: 12%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 10%
 - [Información general de la guía](guide-overview.md)
 - [Introducción a  [!DNL Catalog Service]](overview.md)
 - [Incorporación e instalación](installation.md)
-- [Servicio de catálogo y malla de API](mesh.md)
-- [Mostrar precios gravados con la malla API](taxes.md)
-- Consultas de GraphQL {#graphql}
-   - [consulta de categorías](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-   - [consulta de productos](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
-   - [consulta productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
-   - [consulta refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
+- [Recuperar datos del catálogo](graphql-queries.md)
+- Integración con otras aplicaciones {#integration}
+   - [Servicio de catálogo y malla de API](mesh.md)
+   - [Caso de uso: Visualización de precios gravados](taxes.md)
 - [Notas de la versión](release-notes.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+
 
