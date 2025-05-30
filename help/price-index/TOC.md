@@ -1,14 +1,13 @@
 ---
 user-guide-title: Guía de indexación de precios de SaaS
 user-guide-description: Esta guía proporciona instrucciones detalladas para utilizar el indexador de precios SaaS.
-breadcrumb-title: Guía del indexador de precios Saas
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 8%
+source-wordcount: '33'
+ht-degree: 9%
 
 ---
 
@@ -18,4 +17,4 @@ ht-degree: 8%
 - Adaptador de catálogo {#catalog-adapter}
    - [Información general](catalog-adapter.md)
    - [Notas de la versión](release-notes.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

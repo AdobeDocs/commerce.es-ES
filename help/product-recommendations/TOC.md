@@ -1,13 +1,12 @@
 ---
 user-guide-title: Guía de [!DNL Product Recommendations]
 user-guide-description: Esta guía proporciona instrucciones detalladas para usar  [!DNL Product Recommendations] de Adobe Commerce.
-breadcrumb-title: Guía de [!DNL Product Recommendations]
 role: Admin
 feature: Services, Recommendations
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 13%
+source-wordcount: '57'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 13%
 - [Información general de la guía](guide-overview.md)
 - [Introducción a  [!DNL Product Recommendations]](overview.md)
 - [Notas de la versión](release-notes.md)
-- Introducción {#getting-started}
+- Primeros pasos {#getting-started}
    - [Incorporación](onboarding.md)
    - [Flujo de trabajo de implementación](implementation-workflow.md)
    - [Headless](headless.md)
@@ -24,17 +23,17 @@ ht-degree: 13%
    - [Configuración](settings.md)
    - [Entorno de ensayo](staging-environment.md)
    - [Integración de Page Builder](page-builder.md)
-- [!DNL Product Recommendations] administrador {#admin}
+- Administrador de [!DNL Product Recommendations] {#admin}
    - [Workspace](workspace.md)
    - [Crear](create.md)
    - [Editar](edit.md)
    - [Tipos de recomendación](type.md)
    - [Filtros](filters.md)
    - [Colocación y etiquetas](placement.md)
-- [!DNL Product Recommendations] Desarrollador {#developer}
+- Desarrollador de [!DNL Product Recommendations] {#developer}
    - [Información general](development-overview.md)
    - [Recopilar datos](events.md)
    - [Verificar](verify.md)
    - [Personalizar](customize.md)
    - [Controlar restricciones de cookies](setting-cookie.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

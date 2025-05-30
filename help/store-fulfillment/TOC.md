@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Información detallada sobre la instalación, configuración y uso de Store Fulfillment para tiendas Adobe Commerce.
-breadcrumb-title: Gestión de tienda para Adobe Commerce
 index: true
 feature: Shipping/Delivery
 role: Admin, User
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 8%
+source-wordcount: '79'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +20,7 @@ ht-degree: 8%
 - [Flujos de trabajo de asistencia de tienda](store-assist-modules.md)
 - [Requisitos](solution-requirements.md)
 - [Notas de la versión](release-notes.md)
-- Cumplimiento de tienda integrada {#onboarding}
+- Cumplimiento de la tienda integrada {#onboarding}
    - [Resumen de incorporación](onboard.md)
    - [Instalación de la extensión](install.md)
    - [Connect Store Fulfillment](connect-set-up-service.md)
