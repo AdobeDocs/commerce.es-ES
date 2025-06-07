@@ -3,9 +3,10 @@ title: '[!DNL Catalog Service and API Mesh]'
 description: '[!DNL API Mesh] para Adobe Commerce proporciona una forma de integrar varios orígenes de datos a través de un extremo común de GraphQL.'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
+source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -16,26 +17,31 @@ La [malla de API para Adobe Developer App Builder](https://developer.adobe.com/g
 
 ![Diagrama de arquitectura de catálogo](assets/catalog-service-architecture-mesh.png)
 
-El primer paso para utilizar la API Mesh con el servicio de catálogo es conectar la API Mesh a su instancia. Vea las instrucciones detalladas en [Crear una malla](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+Para usar API Mesh con el servicio de catálogo, debe conectar API Mesh a su instancia y, a continuación, agregar el origen de API Mesh [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) que proporciona la configuración para conectarse al servicio de catálogo.
 
-Para completar la instalación, instale el [paquete CLI de Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+## Conecte y configure API Mesh.
 
-Una vez que Mesh esté configurado en Adobe I/O Runtime, ejecute el siguiente comando que agrega un origen `CommerceCatalogServiceGraph` a la malla.
+1. Conecte la API Mesh a su instancia de Adobe Commerce siguiendo las instrucciones de [Crear una Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) en la _Guía para desarrolladores de API Mesh_.
 
-```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
+   Si es la primera vez que usa API Mesh, complete el [proceso de introducción](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) antes de crear la malla.
 
-Donde `variables.json` es un archivo independiente que almacena los valores que se usan con más frecuencia para Adobe I/O Runtime.
-Por ejemplo, la clave de API se puede guardar en el archivo:
+1. Cree un archivo JSON, como `variables.json`, que contenga la clave de API del servicio de catálogo para su proyecto con el siguiente formato.
 
-```json
-{
-    "CATALOG_SERVICE_API_KEY":"your_api_key"
-}
-```
+   ```json
+   {
+       "CATALOG_SERVICE_API_KEY":"your_api_key"
+   }
+   ```
 
-Después de ejecutar este comando, el servicio de catálogo debe ejecutarse a través de la API Mesh. Puede ejecutar el comando `aio api-mesh:get` para ver la configuración de la malla actualizada.
+1. Agregue el origen `CommerceCatalogServiceGraph` a la malla utilizando [Adobe I/O Extensible CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli).
+
+   ```bash
+   aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
+   ```
+
+   La opción `-f variables.json` proporciona el valor de clave de API del servicio de catálogo necesario para actualizar la configuración.
+
+Después de ejecutar este comando, el servicio de catálogo debe ejecutarse a través de la API Mesh. Utilice el comando `aio api-mesh get` para ver la configuración de la malla actualizada.
 
 ## Ejemplos de API Mesh
 

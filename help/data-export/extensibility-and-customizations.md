@@ -2,9 +2,10 @@
 title: Ampliación y personalización de los datos de exportación de fuentes de SaaS
 description: Obtenga información sobre cómo ampliar y personalizar los datos de la fuente  [!DNL SaaS Data Export] .
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
+source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Los desarrolladores pueden agregar atributos de producto a los que se puede tene
 
 ### Añadir el atributo a Adobe Commerce
 
-Puede añadir un atributo de producto desde el administrador de Commerce o, mediante programación, utilizar un módulo PHP personalizado para definir el atributo y actualizar Adobe Commerce. Este es el método más sencillo para añadir un atributo de producto porque se puede añadir el atributo y todos los metadatos necesarios. El nuevo atributo y sus propiedades de metadatos se exportan automáticamente a los servicios SaaS durante la siguiente sincronización programada.
+Puede añadir un atributo de producto desde el administrador de Commerce o, mediante programación, utilizar un módulo PHP personalizado para definir el atributo y actualizar Adobe Commerce. Añadir el atributo desde el administrador de Commerce es el método más sencillo, ya que puede añadir el atributo y todos los metadatos necesarios a la vez. El nuevo atributo y sus propiedades de metadatos se exportan automáticamente a los servicios SaaS durante la siguiente sincronización programada.
 
 #### Cree el atributo de producto desde el administrador
 
@@ -58,19 +59,19 @@ Puede añadir un atributo de producto desde el administrador de Commerce o, medi
 
 1. Agregue el atributo a un conjunto de atributos según sea necesario.
 
-Consulte [Crear atributos de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
+Consulte [Crear atributos de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
 
 #### Crear el atributo de producto mediante programación
 
 Agregue un atributo product mediante programación creando un parche de datos que implemente `DataPatchInterface` e instancie una copia de la clase `EavSetup Factory` dentro del constructor para configurar las opciones del atributo.
 
-Al definir las opciones de atributo, todos los parámetros de atributo excepto `type`, `label` y `input` son opcionales. Defina las siguientes opciones adicionales y cualquier otra opción que difiera de la configuración predeterminada.
+Al definir las opciones de atributo, todos los parámetros de atributo excepto `type`, `label` y `input` son opcionales. Defina los siguientes parámetros adicionales y cualquier otro que difiera de la configuración predeterminada.
 
-- Asegúrese de que la propiedad se exporta a los servicios de tienda durante la sincronización de datos estableciendo `user_defined` = `1`
-- Para asegurarse de que se puede obtener acceso al atributo desde la consulta de base de datos de la lista de productos, establezca `used_in_product_listing` = `1`.
+- **`user_defined`=`1`**: exporta el atributo a los servicios de tienda durante la sincronización de datos
+- **`used_in_product_listing`=`1`**: permite acceder al atributo desde la consulta de base de datos de listado de productos
 
 Para obtener información sobre cómo crear parches de datos, consulte [Desarrollo de parches de datos y esquemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) en la *Guía para desarrolladores de PHP*.
 
 ### Añadir el atributo de producto de forma dinámica
 
-Para obtener más información sobre cómo crear atributos de producto de forma dinámica sin introducir nuevos atributos de salida, consulte [Agregar atributo de forma dinámica](add-attribute-dynamically.md).
+Para obtener más información sobre cómo crear atributos de producto de forma dinámica sin introducir nuevos atributos EAV, consulte [Agregar atributo de forma dinámica](add-attribute-dynamically.md).
