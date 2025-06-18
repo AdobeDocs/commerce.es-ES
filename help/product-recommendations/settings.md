@@ -2,7 +2,7 @@
 title: Configuración
 description: Aprenda a cambiar el origen de sus  [!DNL Product Recommendations] datos y a habilitar las recomendaciones visuales.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
+source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Los pedidos de ensayo se registran usando el ensayo `environmentId`. No afecta a
 
 >[!NOTE]
 >
->Al usar Recomendaciones de productos mediante REST, el parámetro `alternateEnvironmentId` se puede usar para especificar otros espacios de datos. Este parámetro no está disponible cuando se usan Product Recommendations mediante [GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/).
+>Al usar Recomendaciones de productos mediante REST, el parámetro `alternateEnvironmentId` se puede usar para especificar otros espacios de datos. Este parámetro no está disponible cuando se usan Product Recommendations mediante [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/).
 
 ## Elija la fuente de las recomendaciones
 

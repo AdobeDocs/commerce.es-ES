@@ -3,7 +3,7 @@ title: Ampliación y personalización de los datos de exportación de fuentes de
 description: Obtenga información sobre cómo ampliar y personalizar los datos de la fuente  [!DNL SaaS Data Export] .
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 La extensión [!DNL Commerce Data Export] proporciona una forma de exportar datos desde la aplicación [!DNL Commerce] a servicios de Commerce como Live Search, Servicio de catálogo y Recomendaciones de productos. Si es necesario, puede ampliar y personalizar los datos de fuente para incluir datos de atributo adicionales o modificar los datos recopilados.
 
-Después de agregar los datos de atributo, se puede obtener acceso a ellos desde el [campo de atributos](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) en el esquema de GraphQL para el servicio de tienda.
+Después de agregar los datos de atributo, se puede obtener acceso a ellos desde el [campo de atributos](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) en el esquema de GraphQL para el servicio de tienda.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Agregue los atributos a la consulta de atributos del producto (`Magento\CatalogD
 
 ## Añadir atributos de producto a Adobe Commerce
 
-Los desarrolladores pueden agregar atributos de producto a los que se puede tener acceso desde el [campo de atributos de producto](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields) mediante uno de los métodos siguientes:
+Los desarrolladores pueden agregar atributos de producto a los que se puede tener acceso desde el [campo de atributos de producto](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) mediante uno de los métodos siguientes:
 
 - Agregue el atributo a Adobe Commerce para incluirlo en los datos de fuente `products` exportados a los servicios de tienda de Commerce.
 - Añada el atributo de forma dinámica durante el proceso de sincronización de fuentes mediante un complemento.
@@ -59,7 +59,7 @@ Puede añadir un atributo de producto desde el administrador de Commerce o, medi
 
 1. Agregue el atributo a un conjunto de atributos según sea necesario.
 
-Consulte [Crear atributos de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
+Consulte [Crear atributos de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
 
 #### Crear el atributo de producto mediante programación
 
