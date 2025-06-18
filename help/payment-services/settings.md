@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Puede personalizar [!DNL Payment Services] según sus necesidades con una configuración útil en la página de inicio de [!DNL Payment Services].
 
-Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source], haga clic en **[!UICONTROL Settings]**. Estas opciones de configuración solo se aplican al entorno establecido en el campo _[!UICONTROL Payment mode]_de las opciones de configuración[_ General _](#configure-general-settings).
+Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source], haga clic en **[!UICONTROL Settings]**. Estas opciones de configuración solo se aplican al entorno establecido en el campo _[!UICONTROL Payment mode]_&#x200B;de las opciones de configuración[_ General _](#configure-general-settings).
 
 Para la configuración heredada o de varias tiendas, consulte [Configurar en el administrador](configure-admin.md).
 
@@ -34,9 +34,9 @@ Puede habilitar [!DNL Payment Services] para su sitio web y habilitar la prueba 
 
    ![Vista de configuración de React](assets/react-settings-view.png){width="500" zoomable="yes"}
 
-   La sección _[!UICONTROL General]_incluye la configuración usada para habilitar [!DNL Payment Services] como método de pago.
+   La sección _[!UICONTROL General]_&#x200B;incluye la configuración usada para habilitar [!DNL Payment Services] como método de pago.
 
-1. Para habilitar [!DNL Payment Services] como método de pago para tu tienda, en la sección _[!UICONTROL General]_, cambia **[!UICONTROL Enable Payment Services as payment method]**a `Yes`.
+1. Para habilitar [!DNL Payment Services] como método de pago para tu tienda, en la sección _[!UICONTROL General]_, cambia **[!UICONTROL Enable Payment Services as payment method]**&#x200B;a `Yes`.
 
 1. Si todavía está probando [!DNL Payment Services] para su tienda, establezca **Modo de pago** en `Sandbox`. Si está listo para habilitar los pagos activos, establézcalo en `Production`.
 
@@ -95,7 +95,7 @@ Ahora que ha habilitado [!UICONTROL Payment Services] para su sitio web, puede c
 
 ### Campos de tarjeta de crédito
 
-La configuración de _[!UICONTROL Credit Card Fields]_proporciona una opción de pago simple y segura para los métodos de pago con tarjeta de crédito o débito.
+La configuración de _[!UICONTROL Credit Card Fields]_&#x200B;proporciona una opción de pago simple y segura para los métodos de pago con tarjeta de crédito o débito.
 
 Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener más información.
 
@@ -140,7 +140,7 @@ Puede activar y configurar la opción de pago mediante el botón [!UICONTROL App
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Seleccione la vista de tienda, en el menú desplegable **[!UICONTROL Scope]**, para la que desea habilitar un método de pago.
-1. En la sección **[!UICONTROL Apple Pay]**, edite el valor del campo _[!UICONTROL Checkout title]_para cambiar el nombre del método de pago que se muestra durante el cierre de compra.
+1. En la sección **[!UICONTROL Apple Pay]**, edite el valor del campo _[!UICONTROL Checkout title]_&#x200B;para cambiar el nombre del método de pago que se muestra durante el cierre de compra.
 1. Para [establecer la acción de pago](production.md#set-payment-services-as-payment-method), cambie **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Para habilitar o deshabilitar Apple Pay en la página de cierre de compra, alterne el selector **[!UICONTROL Show Apple Pay on checkout page]**.
 1. Para habilitar o deshabilitar Apple Pay en la página de detalles del producto, alterne el selector **[!UICONTROL Show Apple Pay on product detail page]**.
@@ -207,8 +207,8 @@ Puedes activar y configurar las opciones de pago de los botones de pago de PayPa
 | [!UICONTROL Title] | vista de tienda | Agrega el texto que se mostrará como título para esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: campo de texto |
 | [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vista de tienda | El orden de clasificación del método de pago especificado en la página de pago. Valor `Numeric Only` |
-| [!UICONTROL Show PayPal buttons on checkout page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal payment buttons] en la página de cierre de compra. Opciones: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | vista de tienda | Habilite o deshabilite [!DNL PayPal payment buttons] en la página de detalles del producto. Opciones: [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on checkout page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal payment buttons] en la página de cierre de compra. Opciones: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | vista de tienda | Habilite o deshabilite [!DNL PayPal payment buttons] en la página de detalles del producto. Opciones: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | vista de tienda | Habilite o deshabilite [!DNL PayPal payment buttons] en la vista previa del minicarrito. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal buttons on cart page] | vista de tienda | Habilite o deshabilite [!DNL PayPal payment buttons] en la página del carro de compras. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | vista de tienda | Activar o desactivar la aparición de la opción de pago posterior en la que se muestran los botones de pago. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
@@ -220,7 +220,7 @@ Puedes activar y configurar las opciones de pago de los botones de pago de PayPa
 
 ### Estilo de botón
 
-También puede configurar las opciones _[!UICONTROL Button style]_de los botones de pago:
+También puede configurar las opciones _[!UICONTROL Button style]_&#x200B;de los botones de pago:
 
 1. Para cambiar **[!UICONTROL Layout]**, seleccione `Vertical` o `Horizontal`.
 
