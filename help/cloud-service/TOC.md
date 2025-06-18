@@ -23,4 +23,4 @@ ht-degree: 12%
 - [Casos de uso](use-cases.md)
 - [Responsabilidad compartida](shared-responsibility.md)
 - [Migración](migration.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
