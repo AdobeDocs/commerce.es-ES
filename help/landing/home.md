@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 2b948cd07020b1f53616fe201dcc5781ca2f9bcc
+source-git-commit: 526d15950fe77ac8c384d1fd670394695a824260
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,55 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
-      <a href="../live-search//overview.md">
+      <a href="../cloud-service/overview.md">
+      <img alt="Nube" src="../assets/icons/shopping-cart.svg" width="40">
+      </a>
+      <div>
+         <a href="../cloud-service/overview.md">
+         <strong>Commerce as a Cloud Service</strong>
+         </a>
+      </div>
+      <p>
+         <em>Escale las operaciones e innove más rápido con la infraestructura en la nube que se adapta automáticamente a las demandas de tráfico y pedidos.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../optimizer/overview.md">
+      <img alt="Optimización" src="../assets/icons/gauge4.svg" width="40">
+      </a>
+      <div>
+         <a href="../optimizer/overview.md">
+         <strong>Commerce Optimizer</strong>
+         </a>
+      </div>
+      <p>
+         <em>Entrega una tienda a una velocidad increíble y aumenta las conversiones, todo mientras usas tu plataforma de comercio existente.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../product-visuals/overview.md">
+      <img alt="Visual" src="../assets/icons/images.svg" width="40">
+      </a>
+      <div>
+         <a href="../product-visuals/overview.md">
+         <strong>Imágenes del producto</strong>
+         </a>
+      </div>
+      <p>
+         <em>Simplifique la administración de recursos digitales con un sistema que se integra con Adobe Experience Manager para administrar el contenido multimedia enriquecido.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <!-- Empty cell to maintain table structure -->
+   </td>
+</tr>
+<tr style="border: 0;">
+   <td valign="top">
+      <a href="../live-search/overview.md">
       <img alt="Buscar" src="../assets/icons/Magnify.svg" width="40">
       </a>
       <div>
-         <a href="../live-search//overview.md">
+         <a href="../live-search/overview.md">
          <strong>[!DNL Live Search]</strong>
          </a>
       </div>
@@ -89,7 +133,7 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong>
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura de PaaS administrada por Adobe) y proyectos locales."}
          </a>
       </div>
       <p>
@@ -102,7 +146,7 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y proyectos locales."}
+         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y proyectos locales."}
          </a>
       </div>
       <p>
@@ -143,11 +187,11 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Monitorización de sincronización de datos" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Panel de administración de datos</strong>
          </a>
       </div>
