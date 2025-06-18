@@ -85,6 +85,6 @@ El servicio de catálogo garantiza actualizaciones y cálculos de precios precis
 
 ## Implementación
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 
 El proceso de instalación requiere la configuración de [Commerce Services Connector](../landing/saas.md). Una vez hecho esto, el siguiente paso es que un integrador de sistemas actualice el código de la tienda para incorporar las consultas [!DNL Catalog Service]. Todas las [!DNL Catalog Service] consultas se enrutan a la puerta de enlace de GraphQL. La dirección URL se proporciona durante el proceso de incorporación.
