@@ -22,7 +22,7 @@ Una vez configurada la integración de **AEM Asset Selector**, los especialistas
 
 >[!NOTE]
 >
-> El Selector de recursos de AEM es un componente front-end de recursos de AEM para integrar AEM Assets con aplicaciones de creación. Para obtener más información sobre este componente, consulte el [Selector de recursos de Micro-Frontend](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} en la *Guía del usuario de AEM as a Cloud Service*.
+> El Selector de recursos de AEM es un componente front-end de recursos de AEM para integrar AEM Assets con aplicaciones de creación. Para obtener más información sobre este componente, consulte el [Selector de recursos de Micro-Frontend](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} en la *Guía del usuario de AEM as a Cloud Service*.
 
 ## Ventajas principales
 

@@ -145,7 +145,7 @@ Después de configurar el [Selector de recursos de AEM](synchronize/asset-select
 
 1. Haga clic en **[!UICONTROL Save]** y continúe.
 
-   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
+   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
 
 ## Actualizar un recurso
 
@@ -153,6 +153,6 @@ Después de actualizar y aprobar un recurso en AEM Assets, las actualizaciones s
 
 Para obtener más información, consulte la siguiente documentación de AEM Assets.
 
-* [Reprocesando recursos digitales](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Reprocesando recursos digitales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Aprobar un recurso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Aprobar un recurso](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
