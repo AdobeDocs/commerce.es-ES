@@ -3,9 +3,9 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,10 @@ Con [!DNL Apple Pay], los comerciantes pueden ofrecer una experiencia de cierre 
 ![Botón Apple Pay en el minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 Cuando está habilitado, el botón [!DNL Apple Pay] se puede ver en las vistas de página de producto, minicarrito, carro de compras y cierre de compra. Puede configurar [!DNL Apple Pay] en la configuración del almacén o en la página de inicio de la extensión.
+
+>[!NOTE]
+>
+>  El certificado de verificación del dominio de Apple Pay ya está incluido en el código de servicios de pago. Compruebe que la ruta de acceso `/.well-known/apple-developer-merchantid-domain-association` devuelve un código de respuesta 200. Consulta la [documentación para desarrolladores de PayPal sobre la integración con Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) para obtener más información sobre el certificado **Verificación del dominio de Apple Pay**.
 
 Consulte [Configuración](settings.md#apple-pay) para obtener más información.
 
@@ -123,14 +127,14 @@ Para **capturar pagos con _solo_ botones de pago de PayPal (_no_ la opción de p
 
 1. Asegúrese de que su tienda esté [en modo de producción](settings.md#enable-payment-services).
 1. [Configura los botones de pago de PayPal que desees](settings.md#payment-buttons) en Configuración.
-1. Desactive _1&rbrace; la opción **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;en la sección&#x200B;_[!UICONTROL Payment buttons]_._
+1. Desactive _1} la opción **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**en la sección_[!UICONTROL Payment buttons]_._
 
 Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pago de PayPal**:
 
 1. Asegúrese de que su tienda esté [en modo de producción](settings.md#enable-payment-services).
 1. [Configurar los botones de pago de PayPal](settings.md#payment-buttons) deseados.
-1. Desactive _1&rbrace; la opción **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;en la sección&#x200B;_[!UICONTROL Payment buttons]_._
-1. Desactiva _1&rbrace; la opción **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;de la sección&#x200B;_[!UICONTROL Credit card fields]_ y usa tu [cuenta de proveedor de tarjeta de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=es#payments)._
+1. Desactive _1} la opción **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**en la sección_[!UICONTROL Payment buttons]_._
+1. Desactiva _1} la opción **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**de la sección_[!UICONTROL Credit card fields]_ y usa tu [cuenta de proveedor de tarjeta de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
 
 ## Opciones de desprotección
 
