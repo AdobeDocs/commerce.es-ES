@@ -3,7 +3,7 @@ title: Vista de catálogo
 description: Obtenga información sobre cómo crear y administrar vistas de catálogo en  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
 workflow-type: tm+mt
 source-wordcount: '1896'
@@ -47,7 +47,7 @@ En un nivel superior, con los servicios de comercialización puede:
 - Desbloquee la distribución del catálogo y proporcione el contenido adecuado diseñando el catálogo de productos para que refleje su negocio, incluidos los productos, los clientes, los precios y la distribución.
 - Ingeste y actualice rápidamente los datos del catálogo y envíe rápidamente las actualizaciones a la tienda para sus promociones y necesidades de campaña.
 - Consiga puntuaciones perfectas en el faro con componentes de interfaz de usuario listos para usar y rápidos con la tecnología de Edge Delivery Services para una navegación y recomendaciones de productos sin problemas.
-- Adopte una arquitectura componible moderna usando la arquitectura de extensibilidad de Adobe ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) para importar datos de productos y activar tiendas de comercio sin encabezado usando la [malla de API](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh) de Adobe.
+- Adopte una arquitectura componible moderna usando la arquitectura de extensibilidad de Adobe ([App Builder](https://experienceleague.adobe.com/es/playlists/commerce-get-started-app-builder-development)) para importar datos de productos y activar tiendas de comercio sin encabezado usando la [malla de API](https://experienceleague.adobe.com/es/playlists/commerce-get-started-app-builder-and-api-mesh) de Adobe.
 
 >[!INFO]
 >

@@ -3,7 +3,7 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ Cada función desempeña un papel fundamental en la incorporación e inicio corr
 
 Los administradores son responsables de configurar instancias, administrar usuarios, grupos y autorizaciones para su organización.
 
-- **[Acceder a Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)**: administre los derechos de Adobe en toda la organización. Consulte [administración de usuarios](./user-management.md) para saber cómo usted, el administrador de productos de su organización o el administrador del sistema pueden agregar usuarios al producto [!DNL Adobe Commerce Optimizer].
+- **[Acceder a Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html)**: administre los derechos de Adobe en toda la organización. Consulte [administración de usuarios](./user-management.md) para saber cómo usted, el administrador de productos de su organización o el administrador del sistema pueden agregar usuarios al producto [!DNL Adobe Commerce Optimizer].
 
 - **Crear una instancia** - [!DNL Adobe Commerce Optimizer] instancias usan un sistema basado en crédito. Puede crear varias instancias de Zona protegida y Producción, y cada una de ellas requiere un crédito correspondiente. La cantidad de créditos que tienes inicialmente depende de tu suscripción. [Más información](#create-an-instance).
 
