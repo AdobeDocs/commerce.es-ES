@@ -44,7 +44,7 @@ Puede asignar usuarios a cualquiera de las siguientes funciones:
 
 >[!BEGINSHADEBOX &quot;Requisitos previos&quot;]
 >
-Se requiere el siguiente aprovisionamiento para la administración de usuarios:
+>Se requiere el siguiente aprovisionamiento para la administración de usuarios:
 
 - Organización de IMS aprovisionada para [!DNL Adobe Commerce Optimizer]
 - Una cuenta de Adobe Experience Cloud en la misma organización de IMS con la función de administrador de sistemas o productos
