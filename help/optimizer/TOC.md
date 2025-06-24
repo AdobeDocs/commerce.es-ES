@@ -1,38 +1,60 @@
 ---
 user-guide-title: Guía de [!DNL Adobe Commerce Optimizer]
 user-guide-description: Documentación y recursos para  [!DNL Adobe Commerce Optimizer].
-hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 06fc665062703422a3f9afde03cb7ffcc873ef4a
+source-git-commit: d74665a7f321394c88acc243217aa2adbd290064
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 20%
+source-wordcount: '90'
+ht-degree: 10%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [Información general](overview.md)
+- [¿Qué es Adobe Commerce Optimizer?](overview.md)
 - [Primeros pasos](get-started.md)
 - [Administración de usuarios](user-management.md)
+- [Responsabilidad compartida](shared-responsibility.md)
 - [Límites y limitaciones](boundaries-limits.md)
+- Administración de resultados {#manage-results}
+   - [Informe de métricas de éxito](./manage-results/success-metrics.md)
+   - [Rendimiento de búsqueda](./manage-results/search-performance.md)
+   - [Rendimiento de Recommendations](./manage-results/recommendation-performance.md)
 - Comercialización {#merchandising}
    - [Información general](./merchandising/overview.md)
-   - [Descubrimiento de productos](./merchandising/product-discovery.md)
-   - [Recommendations](./merchandising/recommendations.md)
-- Catálogo {#catalog}
-   - [Información general](./catalog/overview.md)
-   - [Canales](./catalog/channels.md)
-   - [Políticas](./catalog/policies.md)
-- Data Insights {#data-insights}
-   - [Información general](./data-insights/overview.md)
-   - [Sincronización de datos](./data-insights/data-sync.md)
-   - [Eventos](./data-insights/eventing.md)
-   - [Resolución de problemas](./data-insights/troubleshooting.md)
+   - Recommendations {#recommendations}
+      - [Información general](./merchandising/recommendations/overview.md)
+      - [Crear y administrar](./merchandising/recommendations/create.md)
+      - [Filtros](./merchandising/recommendations/filters.md)
+      - [Tipos](./merchandising/recommendations/types.md)
+      - [Prácticas recomendadas](./merchandising/recommendations/best-practice.md)
+   - Reglas de comercialización {#rules}
+      - [Información general](./merchandising/rules/overview.md)
+      - [Workspace](./merchandising/rules/workspace.md)
+      - [Crear y administrar](./merchandising/rules/add.md)
+      - [Prácticas recomendadas](./merchandising/rules/best-practice.md)
+   - Facetas {#facets}
+      - [Información general](./merchandising/facets/overview.md)
+      - [Workspace](./merchandising/facets/workspace.md)
+      - [Crear y administrar](./merchandising/facets/add.md)
+      - [Tipos](./merchandising/facets/type.md)
+      - [Prácticas recomendadas](./merchandising/facets/best-practice.md)
+   - Sinónimos {#synonyms}
+      - [Información general](./merchandising/synonyms/overview.md)
+      - [Crear y administrar](./merchandising/synonyms/add.md)
+      - [Tipos](./merchandising/synonyms/type.md)
+      - [Prácticas recomendadas](./merchandising/synonyms/best-practice.md)
+- Configuración de tienda {#setup}
+   - [Vistas de catálogo](./setup/catalog-view.md)
+   - [Políticas](./setup/policies.md)
+   - [Libros de precios](./setup/pricebooks.md)
+   - [Sincronización de datos](./setup/data-sync.md)
+   - Eventos {#events}
+      - [Información general](./setup/events/overview.md)
 - [Tienda](storefront.md)
+- [Configuración](settings.md)
 - Caso de uso {#use-case}
-   - [Información general](./use-case/overview.md)
    - [Caso de uso completo del administrador de catálogos y tiendas](./use-case/admin-use-case.md)
-
+- [Guía para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
