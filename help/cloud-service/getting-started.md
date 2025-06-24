@@ -3,17 +3,15 @@ title: Introducción a  [!DNL Adobe Commerce as a Cloud Service]
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 9c3f5d1d5e7fd57d2306502d654a854bc5c66c71
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: c608d9e82a892e40d362065c229b8d451ed3dbfb
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Primeros pasos
-
-{{accs-early-access}}
 
 [!DNL Adobe Commerce as a Cloud Service] proporciona la mayor parte de la configuración de forma predeterminada. Después de completar algunos procesos de configuración básicos, su tienda estará lista en poco tiempo. Esta guía le explica cómo crear y trabajar con una instancia.
 
@@ -27,7 +25,7 @@ Haga clic en las pestañas siguientes para ver información general de flujo de 
 
 >[!TAB Flujo de trabajo de administrador y comerciante]
 
-Este diagrama proporciona información general de alto nivel sobre cómo los administradores y comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
+Este diagrama proporciona información general de alto nivel sobre cómo los administradores y comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagrama de flujo comercial](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -104,7 +102,7 @@ De manera predeterminada, las instancias de [!DNL Adobe Commerce as a Cloud Serv
 
 Existen dos maneras de importar el catálogo en [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador de Commerce**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
+* [**Administrador de Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api): una API de REST que le permite importar los datos del catálogo mediante programación.
 
 <!-- TODO
