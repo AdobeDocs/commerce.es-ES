@@ -56,7 +56,7 @@ Utilice este método para instalar [!DNL Catalog Adapter] para una instancia de 
 
    >[!NOTE]
    >
-   >Para obtener información sobre cómo administrar los entornos de proyecto de Commerce localmente, consulte [Administración de ramas con la CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) en la _Guía del usuario de Adobe Commerce on Cloud Infrastructure_.
+   >Para obtener información sobre cómo administrar los entornos de proyecto de Commerce localmente, consulte [Administración de ramas con la CLI](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/cli-branches) en la _Guía del usuario de Adobe Commerce on Cloud Infrastructure_.
 
 1. Consulte la rama de entorno para actualizar con la CLI de Adobe Commerce Cloud.
 
@@ -86,7 +86,7 @@ Utilice este método para instalar [!DNL Catalog Adapter] para una instancia de 
    git push origin <branch-name>
    ```
 
-   Si se insertan las actualizaciones en el entorno de la nube, se inicia el [proceso de implementación de la nube de Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) para aplicar los cambios. Compruebe el estado de implementación desde el [registro de implementación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Si se insertan las actualizaciones en el entorno de la nube, se inicia el [proceso de implementación de la nube de Commerce](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/deploy/process) para aplicar los cambios. Compruebe el estado de implementación desde el [registro de implementación](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Local]
 

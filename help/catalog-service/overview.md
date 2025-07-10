@@ -125,7 +125,7 @@ El servicio de catálogo garantiza actualizaciones y cálculos de precios precis
 
 El proceso de implementación implica:
 
-1. [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."} **[Instale y configure el Servicio de catálogo](installation.md)**: instale y configure la extensión del Servicio de catálogo y configure la conexión SaaS mediante [!DNL Commerce Services Connector].
+1. [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."} **[Instale y configure el Servicio de catálogo](installation.md)**: instale y configure la extensión del Servicio de catálogo y configure la conexión SaaS mediante [!DNL Commerce Services Connector].
 2. **Actualizar código de tienda**: integra las consultas GraphQL del servicio de catálogo en tu front-end.
 3. **Consultas de ruta**: todas las consultas del servicio de catálogo pasan a través de la puerta de enlace de GraphQL (URL proporcionada durante la incorporación)
 4. **Supervisar y solucionar problemas de sincronización de datos**: compruebe el rendimiento mejorado y supervise los resultados
