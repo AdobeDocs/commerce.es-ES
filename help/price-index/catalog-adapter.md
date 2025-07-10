@@ -3,9 +3,10 @@ title: Extensión de adaptador de catálogo
 description: Uso del adaptador de catálogo para representar los precios de los servicios de Commerce
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: e42101fa-9c30-482c-a649-44dc35376abb
+source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Puede volver a activar la indexación de precios en la aplicación Commerce si e
 ## Requisitos
 
 - Adobe Commerce 2.4.4+
-- Tenga instalado uno de los siguientes servicios de Commerce:
+- El entorno de Adobe Commerce debe tener habilitado y configurado uno de los siguientes servicios de Commerce:
 
    - [Live Search](../live-search/install.md)
    - [Recomendaciones de productos](../product-recommendations/install-configure.md)
@@ -55,7 +56,7 @@ Utilice este método para instalar [!DNL Catalog Adapter] para una instancia de 
 
    >[!NOTE]
    >
-   >Para obtener información sobre cómo administrar los entornos de proyecto de Commerce localmente, consulte [Administración de ramas con la CLI](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/cli-branches) en la _Guía del usuario de Adobe Commerce on Cloud Infrastructure_.
+   >Para obtener información sobre cómo administrar los entornos de proyecto de Commerce localmente, consulte [Administración de ramas con la CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) en la _Guía del usuario de Adobe Commerce on Cloud Infrastructure_.
 
 1. Consulte la rama de entorno para actualizar con la CLI de Adobe Commerce Cloud.
 
@@ -85,7 +86,7 @@ Utilice este método para instalar [!DNL Catalog Adapter] para una instancia de 
    git push origin <branch-name>
    ```
 
-   Si se insertan las actualizaciones en el entorno de la nube, se inicia el [proceso de implementación de la nube de Commerce](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/deploy/process) para aplicar los cambios. Compruebe el estado de implementación desde el [registro de implementación](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Si se insertan las actualizaciones en el entorno de la nube, se inicia el [proceso de implementación de la nube de Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) para aplicar los cambios. Compruebe el estado de implementación desde el [registro de implementación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Local]
 
@@ -166,4 +167,3 @@ Los siguientes son algunos escenarios comunes de `[!DNL Catalog Adapter]`.
 - No se depende del indexador de precios de producto predeterminado de Adobe Commerce
 
 1. Instale el módulo `magento/module-price-indexer-disabler` desde el paquete [!DNL Catalog Adapter].
-
