@@ -2,9 +2,9 @@
 title: Añadir reglas
 description: Obtenga información sobre cómo crear reglas de comercialización de búsqueda.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 ## Añadir una regla
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
-1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplica la regla.
+1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la regla.
 1. Haga clic en el área de trabajo **Buscar comercialización**.
 1. Haga clic en **Agregar regla** para iniciar el editor de reglas.
 
@@ -101,6 +101,10 @@ Seleccione el tipo de estrategia para la regla. La ventana **Probar la regla** m
    1. En la página **Información de atributo** > **Propiedades de tienda**, establezca el valor de la búsqueda en `5` o menos.
 
       ![Producto - Peso de búsqueda](assets/set-search-weight.png)
+
+>[!NOTE]
+>
+>La experiencia de búsqueda en tiendas se ve afectada por varias configuraciones que funcionan juntas, como facetas, sinónimos y reglas de comercialización de búsqueda/categoría, lo que puede dar lugar a resultados que difieren de los que se ven al probar configuraciones individuales en la administración. Mientras que las pruebas de administración aíslan áreas de configuración específicas, la tienda aplica todas las configuraciones relevantes juntas, lo que resulta en un resultado de búsqueda más complejo y realista.
 
 ## Clasificación manual
 

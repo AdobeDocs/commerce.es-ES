@@ -3,9 +3,9 @@ title: Límites y límites
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 
 ## General
 
-- El módulo [Búsqueda avanzada](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search) se deshabilita al instalar [!DNL Live Search] y se quita el vínculo Búsqueda avanzada del pie de página de la tienda.
-- El campo [!DNL Live Search] y el widget de página de lista de productos no admiten [precios de nivel](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/pricing/product-price-tier).
+- El módulo [Búsqueda avanzada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) se deshabilita al instalar [!DNL Live Search] y se quita el vínculo Búsqueda avanzada del pie de página de la tienda.
+- El campo [ y el widget de página de lista de productos no admiten ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)precios de nivel[!DNL Live Search].
 - Los precios de los productos incluyen el impuesto sobre el valor agregado (IVA), pero [!DNL Live Search] no puede mostrar el IVA como un valor separado.
 - No se admite la búsqueda de contenido (páginas y bloques de CMS).
 - El número máximo de resultados que se pueden paginar es 10 000. Para garantizar que los compradores no tengan que utilizar la paginación profunda cuando una categoría o resultado de búsqueda incluya un gran número de productos, proporcione formas significativas de filtrar los productos.
@@ -25,7 +25,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 - El adaptador de búsqueda no admite atributos de producto creados con un modelo de origen personalizado y utilizados como facetas. Para admitir esta funcionalidad, debe usar el [Widget de la página de lista de productos](plp-styling.md).
 - No se admiten los tipos de producto personalizados.
 - No se admiten los atributos personalizados creados mediante programación con `"is_user_defined": false`.
-- Puede filtrar los resultados usando las condiciones &quot;comienza con&quot; o &quot;contiene&quot; con algunas limitaciones como se describe [aquí](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
+- Puede filtrar los resultados usando las condiciones &quot;comienza con&quot; o &quot;contiene&quot; con algunas limitaciones como se describe en [documentación para desarrolladores](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
 - Solo puede realizar el seguimiento de las métricas de rendimiento durante el último año.
 - Si una consulta de búsqueda contiene varias palabras, el espacio en blanco entre las palabras hace que se traten como términos de búsqueda independientes. Use [sinónimos](./synonyms.md) si quiere dar cuenta de consultas de búsqueda de varias palabras.
 
@@ -42,7 +42,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 ## Facetas
 
 - Se puede configurar un máximo de 100 atributos como facetas a partir de los 200 atributos filtrables que se pueden indexar.
-- Dentro de una faceta, se puede devolver un máximo de 100 contenedores. Si necesita devolver más de 100 contenedores, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para que Adobe pueda analizar el impacto en el rendimiento y determinar si es factible aumentar este límite para su entorno.
+- Dentro de una faceta, se puede devolver un máximo de 100 contenedores. Si necesita devolver más de 100 contenedores, [cree un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para que Adobe pueda analizar el impacto en el rendimiento y determinar si es factible aumentar este límite para su entorno.
 - Las facetas dinámicas pueden causar problemas de rendimiento en índices grandes e índices con una alta ordinalidad. Si ha creado facetas dinámicas y observa algún deterioro del rendimiento o si la página no se carga con errores de tiempo de espera, intente cambiar las facetas a ancladas para determinar si esto resuelve el problema de rendimiento.
 - El estado de las existencias (`quantity_and_stock_status`) no se admite como faceta. Puede usar `inStock: 'true'` para filtrar productos sin existencias. Esto se admite de forma predeterminada en el módulo `LiveSearchAdapter` cuando &quot;Mostrar productos sin existencias&quot; está establecido en &quot;Verdadero&quot; en el administrador [!DNL Commerce].
 - Los atributos de tipo de fecha no se admiten como faceta.
@@ -77,12 +77,12 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 ## Permisos B2B y de categoría
 
 - Los productos no se muestran si no se añaden a un catálogo compartido predeterminado.
-- Para restringir grupos de clientes que usen [permisos de categoría](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/category-permissions):
+- Para restringir grupos de clientes que usen [permisos de categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
    - Los productos deben asignarse a la categoría raíz. (**Nota:** Puede eliminar esta limitación actualizando la extensión de exportación de datos SaaS a la versión 103.4.0+. Ver [Administrar la extensión de exportación de datos](../data-export/manage-extension.md).
    - El grupo de clientes &quot;Sin sesión iniciada&quot; debe tener permisos de navegación &quot;Permitir&quot;.
-   - Para restringir productos al grupo de clientes &quot;No se inició sesión&quot;, vaya a cada categoría y establezca permisos para cada [grupo de clientes](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+   - Para restringir productos al grupo de clientes &quot;No se inició sesión&quot;, vaya a cada categoría y establezca permisos para cada [grupo de clientes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - En este momento no se admite la compatibilidad predeterminada con B2B con el widget PLP en PWA Studio. Sin embargo, puede [usar la API](install.md#pwa-support) para implementar esta funcionalidad.
-- Las facetas de categoría de [!DNL Live Search] pueden mostrar categorías que no se pueden mostrar a un [grupo de clientes](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) específico.
+- Las facetas de categoría de [!DNL Live Search] pueden mostrar categorías que no se pueden mostrar a un [grupo de clientes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) específico.
 - [!DNL Live Search] admite hasta 1000 grupos de clientes.
 
 ## [!DNL Storefront popover]
@@ -97,9 +97,9 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 
 Para obtener ayuda para solucionar algunos problemas comunes de [!DNL Live Search], vea los siguientes artículos de la base de conocimiento:
 
-- [[!DNL Live Search] catálogo no sincronizado](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
-- [[!DNL Live Search] el tablero y la clasificación de resultados de búsqueda son incorrectos](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
-- [[!DNL Live Search] muestra productos sin existencias independientemente de la configuración del estado de las existencias en el administrador](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
-- [[!DNL Live Search] las facetas no están ordenadas alfabéticamente](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+- [[!DNL Live Search] catálogo no sincronizado](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] el tablero y la clasificación de resultados de búsqueda son incorrectos](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] muestra productos sin existencias independientemente de la configuración del estado de las existencias en el administrador](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] las facetas no están ordenadas alfabéticamente](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
 
-Si necesita ayuda adicional, comuníquese con [soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si necesita ayuda adicional, comuníquese con [soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
