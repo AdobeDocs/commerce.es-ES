@@ -90,7 +90,7 @@ El [Recopilador de eventos de Adobe Commerce Storefront](https://developer.adobe
 
 Aunque las métricas de Recomendación de producto están optimizadas para las tiendas de Luma, también funcionan con otras implementaciones de tienda:
 
-- [Tienda Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [Tienda Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=es)
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - [Front personalizado (React, Vue JS)](headless.md)
 
@@ -140,4 +140,4 @@ En esta tabla se describen los eventos utilizados por cada tipo de recomendació
 
 >[!NOTE]
 >
->Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
+>Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
