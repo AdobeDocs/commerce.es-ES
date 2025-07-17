@@ -3,9 +3,9 @@ title: Recopilar datos
 description: Descubra cómo los eventos recopilan datos para  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ El [Recopilador de eventos de Adobe Commerce Storefront](https://developer.adobe
 | `rec-click` | El comprador hace clic en un producto de la unidad de recomendación. |
 | `view` | Se envía cuando la unidad de recomendación alcanza al menos el 50 % de visibilidad, por ejemplo desplazándose hacia abajo en la página. Por ejemplo, si una unidad de recomendación tiene dos líneas, se envía un evento `view` cuando el comprador ve una línea más un píxel de la segunda línea. Si el comprador desplaza la página hacia arriba y hacia abajo varias veces, el evento `view` se envía tantas veces como vuelva a ver toda la unidad de recomendación en la página. |
 
->[!NOTE]
->
->Las métricas de Recomendación de producto están optimizadas para las tiendas de Luma. Si su tienda está implementada con PWA Studio, consulte la [documentación de PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si usa tecnología de front-end personalizada, como React o Vue JS, aprenda a integrar [Recomendaciones de productos en un entorno sin encabezado](headless.md).
+Aunque las métricas de Recomendación de producto están optimizadas para las tiendas de Luma, también funcionan con otras implementaciones de tienda:
+
+- [Tienda Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [Front personalizado (React, Vue JS)](headless.md)
 
 #### Eventos de panel requeridos
 
@@ -138,4 +140,4 @@ En esta tabla se describen los eventos utilizados por cada tipo de recomendació
 
 >[!NOTE]
 >
->Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
+>Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
