@@ -203,7 +203,7 @@ Aunque Commerce ya recopila los datos del historial de pedidos, debe completar v
 
 Vea este vídeo para obtener más información sobre los pedidos históricos y, a continuación, complete los siguientes pasos para implementar la recopilación de pedidos históricos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450230?captions=spa)
 
 #### Configuración del servicio de sincronización de pedidos
 
