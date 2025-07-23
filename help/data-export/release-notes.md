@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
+source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versión principal actual
+
+## Versión 103.4.7
+
+![Corrección](../assets/fix.svg) Se eliminaron tablas obsoletas que almacenaban permisos de categoría para productos. <!--MDEE-1065-->
 
 ## Versión 103.4.6
 
@@ -152,7 +156,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## Versión 103.3.4
 
-!&lbrack;Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce <!--MDEE-785-->&rbrack;(../assets/fix.svg)
+![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento ](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce `data_sent_outside`<!--MDEE-785-->
 
 ## Versión 103.3.3
 
