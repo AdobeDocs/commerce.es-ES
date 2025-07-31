@@ -194,7 +194,7 @@ Necesita la siguiente información para actualizar el código de plantillas de t
 
 1. Abra el archivo `tools/sidekick/config.json`.
 
-   Archivo de configuración +++Sidekick
+   +++Archivo de configuración Sidekick
 
    ```json
    {
@@ -226,7 +226,7 @@ Necesita la siguiente información para actualizar el código de plantillas de t
 
    Consulte la [documentación de la biblioteca Sidekick](https://www.aem.live/docs/sidekick-library) para obtener más información.
 
-+++
+   +++
 
 1. Actualice los valores de clave `url` con los valores del repositorio de GitHub.
 
@@ -266,7 +266,7 @@ Necesita la siguiente información para actualizar el código de plantillas de t
    }
    ```
 
-+++
+   +++
 
 1. Guarde el archivo.
 
