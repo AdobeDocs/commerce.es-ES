@@ -3,10 +3,11 @@ title: Caso de uso completo del administrador de catálogos y tiendas
 description: Aprenda a usar [!DNL Adobe Commerce Optimizer] para administrar su catálogo mediante vistas de catálogo y directivas, y a configurar su tienda en función de la configuración de su catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Antes de comenzar este tutorial, asegúrese de que dispone de los siguientes req
 - **Permisos de usuario**
    - Acceso de administrador a Adobe Admin Console
    - Consulte [Administración de usuarios](../user-management.md) para configurar la cuenta
-   - Si no tienes acceso, comunícate con el representante de tu cuenta de Adobe o completa el [formulario del programa de acceso anticipado](https://experienceleague.adobe.com/go/aco-early-access-program)
+   - Si no tiene acceso, póngase en contacto con el representante de su cuenta de Adobe.
 
 - **Datos de ejemplo**
    - Datos del catálogo de Carvelo Automobile cargados en su instancia
@@ -46,7 +47,7 @@ Antes de comenzar este tutorial, asegúrese de que dispone de los siguientes req
 
 ## Vamos a empezar.
 
-En este caso de uso, trabajará con lo siguiente:
+En este caso de uso, está trabajando con lo siguiente:
 
 1. IU [!DNL Adobe Commerce Optimizer]: configure las vistas del catálogo y las directivas para administrar la compleja configuración operativa del catálogo para el caso de uso de Carvelo.
 
@@ -54,7 +55,7 @@ En este caso de uso, trabajará con lo siguiente:
 
 >[!NOTE]
 >
-> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=es) en la documentación de Adobe Commerce Storefront.
+> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) en la documentación de Adobe Commerce Storefront.
 
 ### ‌Lecciones clave
 
@@ -156,7 +157,7 @@ Con [!DNL Adobe Commerce Optimizer], el administrador de comercio:
 1. Cree una nueva póliza llamada *Celport part categories* para que Celport venda solamente piezas de frenos y suspensión.
 1. Cree una nueva vista de catálogo para la tienda de Celport.
 
-   Esta vista del catálogo usa las *categorías de piezas de Celport* de la directiva recién creada y las marcas *East Coast Inc* existentes para garantizar que Celport pueda vender solamente las marcas Bolt y Cruz como parte del acuerdo con East Coast Inc. La vista del catálogo de Celport usará el libro de precios de `east_coast_inc` para admitir las programaciones de precios de productos que se alineen con los acuerdos de licencia de marca.
+   Esta vista del catálogo usa las *categorías de piezas de Celport* de la directiva recién creada y las marcas *East Coast Inc* para garantizar que Celport pueda vender solamente las marcas Bolt y Cruz como parte del acuerdo con East Coast Inc. La vista del catálogo de Celport usa el libro de precios `east_coast_inc` para admitir las programaciones de precios de productos que se alinean con los acuerdos de licencia de marca.
 1. Actualice la configuración de la tienda de comercio para utilizar los datos de la vista de catálogo de Celport que ha creado.
 
 Al final de esta sección, Celport estará lista para vender los productos de Carvelo.
@@ -228,17 +229,13 @@ Cree una nueva vista de catálogo para el distribuidor *Celport* y vincule las s
 1. Rellene los detalles de la vista de catálogo:
 
    - **Nombre** = *Celport*
-   - **Orígenes de catálogo** = *en-US* (visita intro)
+   - **Orígenes de catálogo** = *en-US*
    - **Políticas** (usar lista desplegable) = *Marcas de East Coast Inc*; *Categorías de partes de Celport*; *Marca*; *Modelo*                          
 1. Haga clic en **[!UICONTROL Add]** para crear la vista de catálogo.
 
    La página Vistas de catálogo se actualiza para mostrar la nueva vista de catálogo.
 
    ![Lista de vistas de catálogo actualizada](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >Si el botón **[!UICONTROL Add]** no está en azul, asegúrese de que el origen del catálogo esté seleccionado colocando el cursor en la sección **[!UICONTROL Catalog sources]** y presionando **intro**.
 
 1. Obtenga el ID de vista de catálogo de Celport.
 
@@ -264,7 +261,7 @@ La parte final de este tutorial implica actualizar la tienda que [ya has creado]
 
 1. En el directorio raíz de la carpeta, abra el archivo `config.json`.
 
-   +++código config.json
+   código +++config.json
 
    ```json
    {
@@ -389,7 +386,7 @@ Ahora que ha actualizado la configuración de la tienda para utilizar la vista d
 
       Al guardar el archivo, la vista previa de la tienda local se actualiza automáticamente.
 
-   1. Obtenga una vista previa de los cambios en el navegador mediante la función de búsqueda para encontrar las piezas de neumáticos.
+   1. Vista previa de los cambios en el navegador mediante la función de búsqueda para encontrar las piezas de neumáticos.
 
       Observe los diferentes tipos de piezas disponibles y los precios asignados a la vista de catálogo de Kingsbluff.
 
@@ -415,10 +412,6 @@ Si tiene problemas durante este tutorial, pruebe las siguientes soluciones:
 
 - **Solución:** Compruebe que todas las directivas asociadas están habilitadas y configuradas correctamente
 
-**Problema:** El botón Agregar no está en azul
-
-- **Solución:** Para asegurarse de que el origen del catálogo está seleccionado, coloque el cursor en el campo y presione Entrar
-
 ### Problemas de configuración de tienda
 
 **Problema:** La Tienda No Se Carga
@@ -427,7 +420,7 @@ Si tiene problemas durante este tutorial, pruebe las siguientes soluciones:
 
 **Problema:** No se muestran productos
 
-- **Solución:** Compruebe que el identificador de la libreta de precios coincida con uno disponible en la instancia de Adobe Commerce Optimizer
+- **Solución:** Compruebe que el identificador de la libreta de precios coincide con el que está disponible en la instancia de Adobe Commerce Optimizer
 
 **Problema:** La búsqueda no devuelve resultados
 
@@ -451,7 +444,5 @@ Para continuar aprendiendo sobre Adobe Commerce Optimizer:
 - Explore [las características de comercialización](../merchandising/overview.md) para personalizar la experiencia de compra
 - Obtenga información acerca de [configuraciones de directivas avanzadas](../setup/policies.md)
 - Configurar [vistas de catálogo adicionales](../setup/catalog-view.md) para otros concesionarios
-- Revise la [documentación de API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) para la administración programática del catálogo
-- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)
-
-
+- Revise la [documentación de API](https://developer.adobe.com/commerce/services/optimizer/) para la administración programática del catálogo
+- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

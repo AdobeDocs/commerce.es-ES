@@ -3,11 +3,11 @@ title: Vista de catálogo
 description: Conozca cuáles son las vistas de catálogo y cómo crearlas para organizar el catálogo de productos por estructura empresarial, políticas y precios.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
+source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 
 - [Se crearon directivas](policies.md) para definir los filtros de producto
 
-- [Configurar libros de precios](pricebooks.md) para los precios
+- [Libros de precios ingeridos](pricebooks.md) para precios
 
 1. En el menú de la izquierda, ve a _Configuración de tienda_ y haz clic en **[!UICONTROL Catalog views]**.
 
@@ -49,14 +49,16 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 1. Configure los detalles de la vista del catálogo:
 
    - **Nombre**: escriba el nombre de la vista de catálogo, por ejemplo `Celport`.
-   - **Orígenes del catálogo**: agregue el origen del catálogo (configuración regional), por ejemplo `en-US`. Presione **intro**.
+   - **Orígenes del catálogo**: seleccione el origen del catálogo (configuración regional), por ejemplo `en-US`.
    - **Directivas**: utilice la lista desplegable para seleccionar las directivas relevantes. Por ejemplo, &quot;Marca&quot;, &quot;Modelo&quot;. palo de golfAsegúrese de que ya ha [creado una directiva](policies.md).
 
 1. Seleccione el libro de precios que desea vincular a la vista de catálogo.
 
-1. Haga clic en **[!UICONTROL Add]** para crear la vista de catálogo con el libro de precios y las directivas vinculados.
+   - **Usar todos los libros de precios disponibles**: esta opción extrae los datos de precios de todos los libros de precios disponibles.
+   - **Permitir solo los libros de precios seleccionados**- Esta opción muestra el cuadro de diálogo **Agregar libros de precios permitidos** donde puede seleccionar qué libro de precios específico se va a utilizar para la vista de catálogo.
+   - **Deshabilitar precios**: esta opción no está disponible en este momento.
 
-   Si el botón **[!UICONTROL Add]** no está activo, asegúrese de que el origen del catálogo se agrega correctamente colocando el cursor en el campo Orígenes del catálogo y presionando **Intro**.
+1. Haga clic en **[!UICONTROL Add]** para crear la vista de catálogo con los libros de precios y las directivas vinculados.
 
 La página Vistas de catálogo se actualiza para mostrar la nueva vista de catálogo&#x200B;
 
@@ -71,7 +73,7 @@ Las vistas de catálogo forman parte del marco de servicios de comercialización
 ### Cómo funciona
 
 **1. Ingesta de datos**
-Los datos de catálogo de PIM, ERP y otros sistemas se incorporan al marco de servicios de comercialización. Cada SKU contiene información de configuración regional y atributos de producto que se asignan a vistas de catálogo, políticas y configuraciones regionales. Para obtener más información sobre la ingesta de datos, consulte la [documentación para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Los datos de catálogo de PIM, ERP y otros sistemas se incorporan al marco de servicios de comercialización. Cada SKU contiene información de configuración regional y atributos de producto que se asignan a vistas de catálogo, políticas y configuraciones regionales. Para obtener más información sobre la ingesta de datos, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/).
 
 **2. Catálogo base unificado**
 Los datos introducidos crean un catálogo base unificado en la canalización de datos del servicio de catálogo. Esta fuente única elimina la duplicación de datos entre unidades empresariales.
@@ -80,7 +82,7 @@ Los datos introducidos crean un catálogo base unificado en la canalización de 
 Varias vistas de catálogo representan diferentes unidades de negocio (por ejemplo, Texas Retail, Texas Retail Seasonal). Las configuraciones regionales, las directivas y los libros de precios se pueden compartir en las vistas de catálogo para mayor flexibilidad.
 
 **4. Entrega multicanal**
-Los datos del catálogo filtrado se envían a varios destinos, incluidos escaparates de Edge Delivery Services, mercados, plataformas de publicidad y microtiendas personalizadas. Para obtener más información sobre la entrega de datos del catálogo, consulte la [documentación para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Los datos del catálogo filtrado se envían a varios destinos, incluidos escaparates de Edge Delivery Services, mercados, plataformas de publicidad y microtiendas personalizadas. Para obtener más información sobre la entrega de datos del catálogo, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Componentes clave
 
@@ -126,4 +128,4 @@ Los datos del catálogo filtrado se envían a varios destinos, incluidos escapar
 
 >[!INFO]
 >
->Para obtener información detallada acerca de la ingesta y entrega de datos de catálogo, consulte la [documentación para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>Para obtener información detallada acerca de la ingesta y entrega de datos de catálogo, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/).

@@ -3,11 +3,11 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
+source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,11 @@ Los comerciantes optimizan y personalizan la experiencia de compra a través de 
 
 1. Acceda a su instancia:
 
-   Haga clic en el nombre de instancia para abrir la aplicación [!DNL Adobe Commerce Optimizer].
+   Haga clic en el nombre de instancia para abrir la aplicación [!DNL Adobe Commerce Optimizer]. En la aplicación, puede cambiar entre diferentes instancias de [!DNL Adobe Commerce Optimizer] mediante la lista desplegable situada en la parte superior de la página:
+
+   ![Cambio de instancia](./assets/context-switcher.png){zoomable="yes"}
+
+   Todas las instancias mostradas pertenecen a la misma organización. Puede cambiar entre instancias para ver los datos y la configuración de cada una, como entre entornos de zona protegida y entornos de producción.
 
 1. Obtener detalles de la instancia:
    - Haga clic en el icono de información junto al nombre de la instancia.
@@ -186,5 +190,5 @@ Después de completar la configuración:
 ### Obtener ayuda
 
 - **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Recursos De Tienda**: [Documentación De Tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+- **Recursos De Tienda**: [Documentación De Tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
