@@ -261,7 +261,7 @@ La parte final de este tutorial implica actualizar la tienda que [ya has creado]
 
 1. En el directorio raíz de la carpeta, abra el archivo `config.json`.
 
-   código +++config.json
+   +++código config.json
 
    ```json
    {
