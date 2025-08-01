@@ -64,7 +64,7 @@ Las opciones especificadas en la línea de comandos anulan la configuración de 
 
 Para procesar todas las operaciones de exportación de datos mediante subprocesamiento múltiple, los integradores de sistemas o los desarrolladores pueden modificar el número de subprocesos y el tamaño del lote para cada fuente en la configuración de la aplicación de Commerce.
 
-Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
+Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
 
 **Ejemplo: Configurar subprocesamiento múltiple para productos y precios**
 
