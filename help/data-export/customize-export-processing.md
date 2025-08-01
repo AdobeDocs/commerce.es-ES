@@ -1,18 +1,18 @@
 ---
 title: Mejora del rendimiento de exportación de datos SaaS
-description: Obtenga información sobre cómo mejorar el rendimiento de exportación de datos SaaS para Commerce Services mediante el modo de exportación de datos de varios subprocesos.
+description: Obtenga información sobre cómo mejorar el rendimiento de exportación de datos SaaS para Commerce Services mediante el uso de un modo de exportación de datos de varios subprocesos.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # Mejora del rendimiento de exportación de datos SaaS
 
-**El modo de exportación de datos multiproceso** acelera el proceso de exportación al dividir los datos de las fuentes en lotes y procesarlos en paralelo.
+**El modo de exportación de datos con subprocesos múltiples** acelera el proceso de exportación al dividir los datos de las fuentes en lotes y procesarlos simultáneamente.
 
 Los desarrolladores o integradores de sistemas pueden mejorar el rendimiento utilizando el modo de exportación de datos de varios subprocesos en lugar del modo predeterminado de un solo subproceso. En el modo de un solo hilo, no hay paralelización del proceso de envío de fuentes. Además, debido a los límites predeterminados establecidos, todos los clientes están restringidos a utilizar un solo subproceso. En la mayoría de los casos, no es necesario personalizar la configuración.
 
@@ -64,7 +64,7 @@ Las opciones especificadas en la línea de comandos anulan la configuración de 
 
 Para procesar todas las operaciones de exportación de datos mediante subprocesamiento múltiple, los integradores de sistemas o los desarrolladores pueden modificar el número de subprocesos y el tamaño del lote para cada fuente en la configuración de la aplicación de Commerce.
 
-Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
+Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
 
 **Ejemplo: Configurar subprocesamiento múltiple para productos y precios**
 
