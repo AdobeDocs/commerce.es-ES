@@ -1,10 +1,11 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,9 @@ Seleccione el tipo de estrategia para la regla. La ventana **Probar la regla** m
 #### Advertencias
 
 - Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
-- Para asegurarse de que la clasificación inteligente funciona correctamente, asegúrese de que **Peso de búsqueda** para cualquier [atributo de producto](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) que se use para la búsqueda o el filtrado (facetas) sea `5` o menos.
+- Para asegurarse de que la clasificación inteligente funciona correctamente, asegúrese de que **Peso de búsqueda** de cualquier atributo que se utilice para la búsqueda o el filtrado (facetas) sea `5` o menos.
+
+Para obtener información acerca de cómo establecer pesos de búsqueda, consulte la [API de metadatos](https://developer.adobe.com/commerce/services/reference/rest/).
 
 ### Clasificación manual
 

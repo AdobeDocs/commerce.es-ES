@@ -1,10 +1,11 @@
 ---
 title: Resumen de facetas
 description: Obtenga información acerca de las facetas de  [!DNL Adobe Commerce Optimizer]  y cómo mejoran los resultados de búsqueda.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ La agregación de facetas se realiza de la siguiente manera: si la tienda tiene 
 
 ## Valores de atributo predeterminados
 
-Los siguientes [atributos de producto](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) los usa [!DNL Adobe Commerce Optimizer] y están habilitados de manera predeterminada.
+Los siguientes atributos de producto son utilizados por [!DNL Adobe Commerce Optimizer] y están habilitados de manera predeterminada.
 
 | Propiedad | Descripción | Atributo |
 |---|---|---|
 | Ordenable | Se utiliza para ordenar en la lista de productos | `price` |
 | Buscable | Uso en la búsqueda | `price` <br />`sku`<br />`name` |
+
+Consulte la [API de metadatos de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) para obtener más información sobre los atributos del producto y sus propiedades.
 
 ## Propiedades de atributo predeterminadas que no son del sistema
 

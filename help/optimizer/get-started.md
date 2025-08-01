@@ -3,11 +3,11 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
+source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Los desarrolladores gestionan la implementación técnica y la integración de d
 | Tarea | Descripción | Vínculo |
 |---|---|---|
 | **Acceder a Developer Console** | Crear proyectos y generar credenciales | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Ingesta de datos de catálogo** | Importar datos de productos de sistemas existentes | [API de ingesta de datos](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) |
+| **Ingesta de datos de catálogo** | Importar datos de productos de sistemas existentes | [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
 | **Configurar tienda** | Configurar la tienda de Edge Delivery Services | [Configuración de tienda](./storefront.md) |
 
 ### Tareas del comerciante
@@ -143,14 +143,14 @@ Los datos de ejemplo se basan en el [escenario comercial de Carvelo](./use-case/
 
 **Cargar los datos de ejemplo:**
 
-1. Acceda al repositorio de GitHub:
-   - Visite [Repositorio de ingesta de datos de catálogo de muestra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+1. Acceda al repositorio de GitHub [Ingesta de datos de catálogo de muestra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion).
 
-1. Siga las instrucciones de configuración del archivo LÉAME del repositorio.
+1. Siga las instrucciones de configuración del archivo LÉAME del repositorio para completar las siguientes tareas:
 
-   - Configuración y ejecución de la ingesta de datos
-   - Configurar directivas y vistas de catálogo mediante los datos de ejemplo
-   - Limpiar datos de ejemplo (opcional)
+   - Configurar su entorno
+   - Completar el proceso de ingesta de datos
+   - Creación de vistas de catálogo y políticas con los datos de ejemplo
+   - Compruebe la ingesta de datos comprobando los datos del servicio de catálogo en la página [Sincronización de datos](./setup/data-sync.md)
 
 ## Pasos siguientes
 
@@ -185,6 +185,6 @@ Después de completar la configuración:
 
 ### Obtener ayuda
 
-- **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Recursos De Tienda**: [Documentación De Tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+- **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/)
+- **Recursos De Tienda**: [Documentación De Tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

@@ -1,8 +1,9 @@
 ---
 title: Rendimiento de búsqueda
 description: La página Rendimiento de la búsqueda proporciona a insight los términos de búsqueda que utilizan los compradores.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 0%
@@ -51,7 +52,7 @@ En la siguiente sección se proporcionan estrategias que puede utilizar para mej
 Existen varios factores clave que determinan la relevancia y eficacia de los resultados de búsqueda:
 
 - Los datos de productos bien estructurados garantizan que los algoritmos de búsqueda puedan hacer coincidir de forma eficaz los productos con las consultas. Los datos de productos de baja calidad conducen a resultados de búsqueda menos relevantes. Para afectar directamente al éxito de su estrategia de comercialización:
-   - Configure los [atributos correctos según la búsqueda](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) con su peso correspondiente.
+   - Configure los [atributos correctos según la búsqueda](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) con su peso correspondiente.
    - Asegúrese de que los datos de esos atributos sean relevantes.
 - Una experiencia de búsqueda bien diseñada crea confianza con los clientes e infunde confianza en que encontrarán lo que necesitan.
 - Las reglas de búsqueda son esenciales, ya que pueden aumentar la visibilidad de ciertos productos en función de la popularidad, las nuevas llegadas, los criterios promocionales o cualquier otra estrategia de comercialización para satisfacer los requisitos comerciales.
@@ -97,7 +98,7 @@ Para optimizar la funcionalidad de búsqueda, usa [sinónimos y ortografía](../
 
 ## Mejorar la relevancia de los resultados de búsqueda
 
-Para mejorar la relevancia de los resultados de búsqueda, implemente [reglas de búsqueda](../merchandising/rules/overview.md) efectivas y use metadatos de productos para garantizar que se puedan realizar búsquedas de [atributos precisos y detallados](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata).
+Para mejorar la relevancia de los resultados de búsqueda, implemente [reglas de búsqueda](../merchandising/rules/overview.md) efectivas y use metadatos de productos para garantizar que se puedan realizar búsquedas de [atributos precisos y detallados](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
 
 ### Imágenes
 
@@ -109,7 +110,7 @@ Asegúrese de que los productos secundarios de los productos configurables tenga
 
 ### Aprovechamiento de metadatos del producto
 
-Asegúrese de que los atributos precisos y detallados del producto [están configurados para permitir búsquedas](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata). Tenga en cuenta que los atributos SKU, nombre y categoría se pueden buscar de forma predeterminada y no se pueden excluir de la búsqueda. Para obtener los mejores resultados, no utilice espacios en los SKU.
+Asegúrese de que los atributos precisos y detallados del producto [están configurados para permitir búsquedas](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Tenga en cuenta que los atributos SKU, nombre y categoría se pueden buscar de forma predeterminada y no se pueden excluir de la búsqueda. Para obtener los mejores resultados, no utilice espacios en los SKU.
 
 Para aumentar la relevancia de la búsqueda, asigne una ponderación a cada atributo en el que se pueda buscar. Los atributos con un peso mayor deben aparecer más arriba en los resultados de búsqueda. La ordenación por relevancia se ve afectada por varios criterios, como el peso de la búsqueda. Esto significa que, a veces, los atributos con una ponderación de búsqueda menor pueden seguir teniendo más relevancia que los atributos con una ponderación de búsqueda mayor. Otros criterios pueden incluir el número de coincidencias en cualquier atributo determinado, la posición del término de búsqueda encontrado y la estructura de texto general antes y después de un término de búsqueda.
 
@@ -117,8 +118,8 @@ Asegúrese de que cada producto tenga contenido relevante dentro de cada atribut
 
 Obtenga más información sobre los atributos de producto para la búsqueda:
 
-- [Establecer atributos como en los que se puede buscar](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)
-- [Asignar peso a atributos](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)
+- [Establecer atributos como en los que se puede buscar](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
+- [Asignar peso a atributos](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## Descripciones de campos
 

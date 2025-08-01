@@ -2,9 +2,10 @@
 title: Mejora del rendimiento de exportación de datos SaaS
 description: Obtenga información sobre cómo mejorar el rendimiento de exportación de datos SaaS para Commerce Services mediante el modo de exportación de datos de varios subprocesos.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Recuerde que una planificación cuidadosa, que incluya la estimación del volume
 
 >[!NOTE]
 >
->Adobe recomienda tener cuidado al utilizar el procesamiento de subprocesos múltiples. Esta capacidad es una función de acceso anticipado que aún se está mejorando. Si configura el subprocesamiento múltiple para obtener un rendimiento más rápido, puede almacenar en déclencheur las protecciones de los servicios de Adobe Commerce incluidas para evitar el uso indebido del sistema durante la ingesta de datos. Estas protecciones también restringen a los usuarios de activar cambios de sincronización que pueden sobrecargar el sistema. Cuando se activan las protecciones, las solicitudes se bloquean y el sistema devuelve errores 429. Si se producen estos errores, ajuste la configuración y envíe un ticket de asistencia para obtener ayuda.
+>Adobe recomienda tener cuidado al utilizar el procesamiento de subprocesos múltiples. Si configura el subprocesamiento múltiple para obtener un rendimiento más rápido, puede almacenar en déclencheur las protecciones de los servicios de Adobe Commerce incluidas para evitar el uso indebido del sistema durante la ingesta de datos. Estas protecciones también restringen a los usuarios de activar cambios de sincronización que pueden sobrecargar el sistema. Cuando se activan las protecciones, las solicitudes se bloquean y el sistema devuelve errores 429. Si se producen estos errores, ajuste la configuración y envíe un ticket de asistencia para obtener ayuda.
 
 ## Configurar subprocesamiento múltiple
 
@@ -63,7 +64,7 @@ Las opciones especificadas en la línea de comandos anulan la configuración de 
 
 Para procesar todas las operaciones de exportación de datos mediante subprocesamiento múltiple, los integradores de sistemas o los desarrolladores pueden modificar el número de subprocesos y el tamaño del lote para cada fuente en la configuración de la aplicación de Commerce.
 
-Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
+Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
 
 **Ejemplo: Configurar subprocesamiento múltiple para productos y precios**
 

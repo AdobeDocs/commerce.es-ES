@@ -1,10 +1,11 @@
 ---
 title: Crear y administrar facetas
 description: Aprenda a agregar y administrar facetas en  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,9 +26,9 @@ Cualquier atributo de producto filtrable puede utilizarse como faceta. Las facet
 
    La faceta se agrega al final de la lista *Facetas dinámicas* y el botón *Publicar cambios* pasa a estar disponible.
 
-1. Si la faceta que desea agregar no se encuentra, asegúrese de que el [atributo product](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) tenga el siguiente conjunto:
+1. Si la faceta que desea agregar no se encuentra, use la [API de metadatos](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) para establecer el parámetro `searchable`:
 
-   - `searchable` = `Yes`
+   `"searchable": true`
 
    La faceta estará disponible en la tienda la próxima vez que el catálogo se sincronice con [!DNL Adobe Commerce Optimizer]. Si la faceta no está disponible después de dos horas, consulte [sincronización de datos](../../setup/data-sync.md).
 
