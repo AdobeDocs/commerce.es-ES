@@ -3,11 +3,11 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
+source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,6 @@ Siga estos pasos esenciales para ejecutar el entorno [!DNL Adobe Commerce Optimi
 Después de crear la instancia:
 
 1. [Administre su instancia](#manage-an-instance) desde Commerce Cloud Manager.
-1. Configure las vistas del catálogo y las directivas mediante la [guía de vista de catálogo](./setup/catalog-view.md).
 1. Configure el acceso de los usuarios con la [guía de administración de usuarios](./user-management.md).
 
 ### Paso 3. Añadir datos de ejemplo (opcional)
@@ -146,15 +145,12 @@ Los datos de ejemplo se basan en el [escenario comercial de Carvelo](./use-case/
 
 1. Acceda al repositorio de GitHub:
    - Visite [Repositorio de ingesta de datos de catálogo de muestra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Siga las instrucciones de configuración del archivo LÉAME del repositorio.
 
-2. Ejecute la ingesta:
-   - Utilice los scripts proporcionados para cargar datos de ejemplo en el entorno de ensayo de Adobe Commerce Optimizer.
-   - Verifique que los datos aparezcan en su página [Sincronización de datos](./setup/data-sync.md).
+1. Siga las instrucciones de configuración del archivo LÉAME del repositorio.
 
-3. Limpiar (opcional):
-
-   Quite los datos de ejemplo con el script `reset.js` incluido en el código de origen del cargador de datos de ejemplo.
+   - Configuración y ejecución de la ingesta de datos
+   - Configurar directivas y vistas de catálogo mediante los datos de ejemplo
+   - Limpiar datos de ejemplo (opcional)
 
 ## Pasos siguientes
 
@@ -190,5 +186,5 @@ Después de completar la configuración:
 ### Obtener ayuda
 
 - **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Recursos De Tienda**: [Documentación De Tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+- **Recursos De Tienda**: [Documentación De Tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
