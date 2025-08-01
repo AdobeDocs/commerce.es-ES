@@ -84,7 +84,7 @@ Para [!DNL Product Recommendations], el espacio de datos de SaaS contiene datos 
 >[!WARNING]
 >
 > Use su **espacio de datos SaaS de producción** solo en su instalación de producción [!DNL Commerce] para evitar conflictos de datos. De lo contrario, se corre el riesgo de contaminar los datos del sitio de producción con datos de prueba, lo que provoca retrasos en la implementación. Por ejemplo, los datos del producto de producción se podrían sobrescribir por error a partir de los datos de ensayo, como las direcciones URL de ensayo.
-> > Si esto sucede, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para solicitar la limpieza de datos.
+> &#x200B;> Si esto sucede, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para solicitar la limpieza de datos.
 
 Si no encuentra los campos de configuración de LiveSearch en el Panel de administración, compruebe que ha introducido la clave de API de SaaS correcta.  Asegúrese de haber añadido la clave SaaS de producción al configurar el espacio de datos de producción y de haber añadido la clave de ensayo al configurar el espacio de datos provisional. Si configura la clave incorrecta, los servicios SaaS, como LiveSearch, no están disponibles en el entorno de Adobe Commerce.
 
@@ -116,7 +116,7 @@ Para seleccionar o crear un proyecto SaaS, solicite la clave de API [!DNL Commer
 
    Si no ve la sección **[!UICONTROL Commerce Services Connector]** en la configuración de [!DNL Commerce], instale los módulos de [!DNL Commerce] para el [[!DNL Commerce] servicio](#availableservices) que desee. Además, asegúrese de que el paquete `magento/module-services-id` está instalado.
 
-1. En las secciones _[!UICONTROL Sandbox API Keys]_y_[!UICONTROL Production API Keys]_, pegue los valores de clave.
+1. En las secciones _[!UICONTROL Sandbox API Keys]_&#x200B;y_[!UICONTROL Production API Keys]_, pegue los valores de clave.
 
    - Las claves privadas deben incluir `----BEGIN PRIVATE KEY---` al principio de la clave y `----END PRIVATE KEY----` al final de la clave.
    - Si no dispone de una copia de las claves reales, solicítelas al propietario de la cuenta y, a continuación, introduzca los valores en la configuración.
