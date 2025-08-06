@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
+source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versión principal actual
+
+## Versión 103.4.8
+
+![Nuevo](../assets/new.svg) agregó información de precio de nivel a la fuente de precios. <!--MDEE-1070-->
+![Corrección](../assets/fix.svg): la extensión del exportador de datos ahora exporta correctamente los precios de selección de paquetes con alcance de sitio web, lo que garantiza que los precios de tienda reflejen valores precisos basados en la configuración &quot;Ámbito de precio de catálogo&quot;.<!--MDEE-1115-->
+![Corrección](../assets/fix.svg) Anteriormente, los productos se sincronizaban con un estado `lowStock=true` incorrecto al usar Inventory management (Multi-source Inventory management) con la configuración de umbral. Este problema se ha corregido para garantizar la precisión en la creación de informes de existencias bajas.<!--MDEE-1113-->
 
 ## Versión 103.4.7
 
