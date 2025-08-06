@@ -3,10 +3,10 @@ title: Configurar tu tienda
 description: Aprenda a ejecutar la herramienta de andamiaje para configurar su tienda  [!DNL Adobe Commerce as a Cloud Service] Storefront.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: c10d3b6a88fefb8680a039347960bfc7cfa13153
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Los siguientes pasos muestran cómo configurar rápidamente su tienda de Adobe Commerce con tecnología Edge Delivery mediante el comando `aio commerce init`. Este proceso configura lo siguiente:
 
-* [Tienda Commerce con tecnología Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es): Una tienda con rendimiento, escalable y segura que usa Edge Delivery Services de Adobe.
+* [Tienda Commerce con tecnología Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/): Una tienda con rendimiento, escalable y segura que usa Edge Delivery Services de Adobe.
 * [Mesh de API para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/): una plataforma de API que permite a los desarrolladores combinar varias fuentes de datos en un único extremo de GraphQL. API Mesh organiza la API de terceros con la API de Adobe a través de una sola puerta de enlace. Una consulta al único extremo de GraphQL puede devolver resultados de varios orígenes.
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/): una colección de herramientas para desarrolladores con acceso a API, eventos, funciones de tiempo de ejecución y complementos que puede usar para generar proyectos para aplicaciones de Adobe.
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/): un motor sin servidor para implementar código personalizado que responde a eventos y ejecuta funciones en la nube.
@@ -90,7 +90,7 @@ Antes de ejecutar el comando `aio commerce init`, debe completar los siguientes 
 
 ## Ejecutar el comando `aio commerce init`
 
-Al ejecutar el siguiente comando, se creará un andamiaje para la tienda de Commerce. Este andamiaje es un buen punto de partida para crear y comprender tu tienda. Para obtener más información sobre cómo trabajar con la tienda, consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es).
+Al ejecutar el siguiente comando, se creará un andamiaje para la tienda de Commerce. Este andamiaje es un buen punto de partida para crear y comprender tu tienda. Para obtener más información sobre cómo trabajar con la tienda, consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 
 1. Ejecute el comando `init`:
@@ -123,7 +123,7 @@ Al ejecutar el siguiente comando, se creará un andamiaje para la tienda de Comm
    * Vista previa de tu tienda: `https://main--<repo name>--<username or org>.aem.page/`
    * Ejecutar localmente: `aio commerce:dev`
 
-Para personalizar tu tienda, consulta la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es).
+Para personalizar tu tienda, consulta la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 ## Resolución de problemas
 
@@ -150,3 +150,12 @@ Si tiene problemas con el comando `aio login`, Adobe recomienda cerrar la sesió
    ```bash
    aio console project select
    ```
+
+## Pasos siguientes
+
+Consulte los siguientes artículos para obtener más información:
+
+* Para obtener más información sobre cómo administrar y mostrar contenido y datos en la tienda, consulta [actualizar contenido de la tienda](./use-cases.md#update-storefront-content).
+* Para obtener más información sobre las características de experimentación contextual, vea [experimentación contextual](./use-cases.md#contextual-experimentation).
+* Para obtener más información sobre el uso de la IA generativa para automatizar la generación de contenido de alta calidad, consulte [Generar variaciones](./use-cases.md#generate-variations).
+* Para obtener más información sobre cómo actualizar el contenido del sitio e integrar con componentes de front-end y datos de back-end de Commerce, consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
