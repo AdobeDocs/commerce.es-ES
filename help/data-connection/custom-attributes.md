@@ -1,18 +1,23 @@
 ---
-title: Añadir atributos de pedido personalizados
+title: Añadir atributos personalizados a los pedidos
 description: Aprenda a añadir atributos de pedido personalizados a los datos de back office y a enviarlos a Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# Añadir atributos de pedido personalizados
+# Añadir atributos personalizados a los pedidos
 
 En este artículo, aprenderá a añadir atributos personalizados a los eventos de back office. Con los atributos personalizados, puede capturar perspectivas de datos enriquecidas para mejorar los análisis y crear experiencias personalizadas para sus compradores.
+
+>[!NOTE]
+>
+>Aprenda a [agregar identidades personalizadas](custom-identities.md) a los perfiles.
 
 Los atributos personalizados se admiten en dos niveles:
 
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 Para asegurarse de que su esquema [!DNL Commerce] puede introducir los nuevos atributos de pedido personalizados en Experience Platform, debe ampliar el esquema para incluir estos campos personalizados.
 
-Para obtener información sobre cómo ampliar un esquema XDM existente para incluir estos campos personalizados, consulte el artículo [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) en la documentación de Experience Platform. El campo ID de inquilino se genera dinámicamente; sin embargo, la estructura del campo debe ser similar al ejemplo proporcionado en la documentación de Experience Platform.
+Para obtener información sobre cómo ampliar un esquema XDM existente para incluir estos campos personalizados, consulte el artículo [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) en la documentación de Experience Platform. El campo ID de inquilino se genera dinámicamente; sin embargo, la estructura del campo debe ser similar al ejemplo proporcionado en la documentación de Experience Platform.
 
 >[!IMPORTANT]
 >
