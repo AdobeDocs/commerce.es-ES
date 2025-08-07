@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 Para asegurarse de que su esquema [!DNL Commerce] puede introducir los nuevos atributos de pedido personalizados en Experience Platform, debe ampliar el esquema para incluir estos campos personalizados.
 
-Para obtener información sobre cómo ampliar un esquema XDM existente para incluir estos campos personalizados, consulte el artículo [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) en la documentación de Experience Platform. El campo ID de inquilino se genera dinámicamente; sin embargo, la estructura del campo debe ser similar al ejemplo proporcionado en la documentación de Experience Platform.
+Para obtener información sobre cómo ampliar un esquema XDM existente para incluir estos campos personalizados, consulte el artículo [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) en la documentación de Experience Platform. El campo ID de inquilino se genera dinámicamente; sin embargo, la estructura del campo debe ser similar al ejemplo proporcionado en la documentación de Experience Platform.
 
 >[!IMPORTANT]
 >
