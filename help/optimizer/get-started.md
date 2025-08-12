@@ -3,11 +3,11 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: ee11900f0ddf77a8cb7df7d5ae378924bdf1f2d7
+source-git-commit: 87fbd979b0660af1bf3a8786eb1e1f5f79cea043
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Una vez abierta la aplicación, puede cambiar fácilmente entre entornos como zo
 
    ![Cambio de instancia](./assets/context-switcher.png){zoomable="yes"}
 
-### Obtenga detalles de la instancia**
+### Obtener detalles de la instancia
 
 Vea los detalles de la instancia haciendo clic en el icono de información junto al nombre de la instancia.
 
@@ -212,5 +212,6 @@ Después de completar la configuración:
 ### Obtener ayuda
 
 - **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/)
-- **Recursos De Tienda**: [Documentación De Tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+- **Recursos de tienda**: [documentación de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutoriales**: [Tutoriales de Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
