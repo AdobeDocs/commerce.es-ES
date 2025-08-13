@@ -3,11 +3,11 @@ title: Vista de catálogo
 description: Conozca cuáles son las vistas de catálogo y cómo crearlas para organizar el catálogo de productos por estructura empresarial, políticas y precios.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 La página Vistas de catálogo se actualiza para mostrar la nueva vista de catálogo&#x200B;
 
 Después de completar estos pasos, la vista de catálogo ahora está configurada para mostrar productos y precios en función de las fuentes y directivas seleccionadas.
+
+## Administrar vista de catálogo
+
+Siga estas instrucciones para actualizar o ver las propiedades de las vistas de catálogo existentes.
+
+### Editar vista de catálogo
+
+1. En el área de trabajo *Vistas de catálogo*, busque la vista de catálogo en la cuadrícula que desea editar y haga clic en **...** para abrir el menú de acciones.
+1. Haga clic en **Editar** para acceder al editor de vista de catálogo.
+1. Actualice el nombre, los orígenes de catálogo, las directivas y la información del libro de precios según sea necesario.
+1. Guarde los cambios.
+
+### Eliminar vista de catálogo
+
+1. En el área de trabajo *Vistas de catálogo*, busque la vista de catálogo en la cuadrícula que desea editar y haga clic en **...** para abrir el menú de acciones.
+1. Haga clic en **Eliminar**.
+
+   Cuando aparezca el diálogo de confirmación, haga clic en **[!UICONTROL Delete]**.
+
+### Ver detalles
+
+Esta opción proporciona una forma rápida de ver todos los parámetros de vista de catálogo mientras se mantiene en la tabla *Vistas de catálogo*.
+
+En el área de trabajo *Vistas de catálogo*, busque la vista de catálogo en la cuadrícula que desee editar y haga clic en el ![icono de información](../assets/info-icon.png).
+
+![Detalles de vista de catálogo](../assets/catalog-view-details.png)
+
+Desde aquí puede ver los detalles de configuración de la vista de catálogo, como:
+
+- Ver ID
+- Nombre
+- Fuentes de catálogo
+- Políticas
+- Fecha de creación
+- Datos modificados
+
+Algunos de estos ajustes de configuración son necesarios al configurar la tienda o utilizar la API de ingesta de datos.
 
 ## Descripción general de arquitectura
 
