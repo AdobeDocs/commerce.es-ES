@@ -19,7 +19,7 @@ Este tutorial proporciona instrucciones detalladas para configurar y usar [Adobe
 >[!TIP]
 >
 >Realice un seguimiento rápido del proceso de configuración de la tienda mediante la herramienta Creador de sitios para configurar el repositorio de código de la tienda y el entorno de creación de documentos
->>automáticamente. A continuación, puede seguir estas instrucciones para comprender cómo se creó la tienda y obtener más información acerca de los componentes disponibles.
+>&#x200B;>automáticamente. A continuación, puede seguir estas instrucciones para comprender cómo se creó la tienda y obtener más información acerca de los componentes disponibles.
 
 ## Requisitos previos
 
