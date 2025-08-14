@@ -2,29 +2,30 @@
 title: Configurar tu tienda
 description: Aprenda a configurar su  [!DNL Adobe Commerce Optimizer] tienda.
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
+source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Configurar tu tienda
 
->[!NOTE]
+Este tutorial proporciona instrucciones detalladas para configurar y usar [Adobe Commerce Storefront con tecnología Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) para crear una tienda Commerce segura, escalable y de rendimiento con tecnología de datos de tu instancia de [!DNL Adobe Commerce Optimizer].
+
+
+>[!TIP]
 >
->Esta documentación describe un producto en desarrollo de acceso anticipado y no refleja todas las funcionalidades pensadas para una disponibilidad general.
-
-Este tutorial muestra cómo configurar y usar [Adobe Commerce Storefront con tecnología Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es) para crear una tienda Commerce segura, escalable y de rendimiento con tecnología de datos de tu instancia de [!DNL Adobe Commerce Optimizer].
-
+>Realice un seguimiento rápido del proceso de configuración de la tienda mediante la herramienta Creador de sitios para configurar el repositorio de código de la tienda y el entorno de creación de documentos
+>>automáticamente. A continuación, puede seguir estas instrucciones para comprender cómo se creó la tienda y obtener más información acerca de los componentes disponibles.
 
 ## Requisitos previos
 
 * Asegúrese de que tiene una cuenta de GitHub (github.com) que puede crear repositorios y que está configurada para el desarrollo local.
 
-* Obtenga información acerca de los conceptos y el flujo de trabajo para desarrollar tiendas Commerce en Adobe Edge Delivery Services revisando la [Información general](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=es) en la documentación de Adobe Commerce Storefront.
+* Obtenga información acerca de los conceptos y el flujo de trabajo para desarrollar tiendas Commerce en Adobe Edge Delivery Services revisando la [Información general](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) en la documentación de Adobe Commerce Storefront.
 * Configurar el entorno de desarrollo
 
 
@@ -60,7 +61,7 @@ Instale el administrador de versiones de nodos (NVM) y la versión requerida de 
 
 >[!TIP]
 >
->Hay recursos adicionales disponibles para ampliar y personalizar su solución [!DNL Adobe Commerce Optimizer] mediante [App Builder para Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) y [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obtener información de acceso y uso, póngase en contacto con el representante de su cuenta de Adobe.
+>Hay recursos adicionales disponibles para ampliar y personalizar su solución [!DNL Adobe Commerce Optimizer] mediante [App Builder para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) y [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obtener información de acceso y uso, póngase en contacto con el representante de su cuenta de Adobe.
 
 #### Instalación de Sidekick
 
@@ -68,7 +69,7 @@ Instale la extensión del explorador Sidekick para editar, previsualizar y publi
 
 ## Crear tu tienda
 
-La tienda que crees para tu proyecto [!DNL Adobe Commerce Optimizer] usa una versión personalizada de la plantilla de Adobe Commerce en Edge Delivery Services Storefront. Las plantillas son un conjunto de archivos y carpetas que proporcionan un punto de partida para el desarrollo de tiendas. Este proceso de configuración es diferente al proceso de configuración estándar para una tienda [Adobe Commerce en Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es).
+La tienda que crees para tu proyecto [!DNL Adobe Commerce Optimizer] usa una versión personalizada de la plantilla de Adobe Commerce en Edge Delivery Services Storefront. Las plantillas son un conjunto de archivos y carpetas que proporcionan un punto de partida para el desarrollo de tiendas. Este proceso de configuración es diferente al proceso de configuración estándar para una tienda [Adobe Commerce en Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -107,7 +108,6 @@ Cree un repositorio de GitHub para el código de plantillas de sitio de su tiend
 1. Complete el formulario de configuración con los siguientes detalles:
 
    * **Plantilla de repositorio**—`hlxsites/aem-boilerplate-commerce` (predeterminada).
-   * **Incluir todas las ramas**: seleccione la opción para incluir todas las ramas.
    * **Propietario**: su organización o cuenta (obligatorio).
    * **Nombre del repositorio**: Un nombre único para su nuevo repositorio (obligatorio).
    * **Descripción**: Una breve descripción de su repositorio (opcional).
@@ -145,12 +145,6 @@ Necesita la siguiente información para actualizar el código de plantillas de t
 
 1. Abra el repositorio en su terminal o IDE.
 
-1. Consulte la rama `aco`
-
-   ```bash
-   git checkout aco
-   ```
-
 1. Cree su archivo de configuración copiando el archivo `default-fstab.yaml` en `fstab.yaml`.
 
    ```bash
@@ -159,7 +153,7 @@ Necesita la siguiente información para actualizar el código de plantillas de t
 
 1. Actualice el punto de montaje en el archivo de configuración de la tienda para que apunte a la dirección URL de contenido.
 
-   1. Abra el archivo de configuración [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es#vocabulary).
+   1. Abra el archivo de configuración [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
       ```yaml
       mountpoints:
@@ -192,47 +186,39 @@ Necesita la siguiente información para actualizar el código de plantillas de t
 >
 >Asegúrese de que ha instalado la [extensión de Sidekick](https://www.aem.live/docs/sidekick#installation) en su explorador.
 
-1. Abra el archivo `tools/sidekick/config.json`.
+1. Cree un nuevo directorio `tools/sidekick`.
 
-   +++Archivo de configuración Sidekick
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. Copie el archivo `demo-sidekick.json` en el directorio raíz al directorio `tools/sidekick` y cambie su nombre a `config.json`.
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+
+1. Personalice la configuración de Sidekick para su sitio.
+
+   Desde el directorio `tools/sidekick/`, edite el archivo `config.json`.
+
+   +++Archivo de configuración de Sidekick
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   Consulte la [documentación de la biblioteca Sidekick](https://www.aem.live/docs/sidekick-library) para obtener más información.
-
-   +++
-
 1. Actualice los valores de clave `url` con los valores del repositorio de GitHub.
 
-   * Reemplace la cadena `{ORG}` por la organización o el nombre de usuario de su repositorio.
+   * Reemplace la cadena `{{ORG}}` por la organización o el nombre de usuario de su repositorio.
 
-   * Reemplazar la cadena `{SITE}` por el nombre del repositorio
+   * Reemplace la cadena `{{SITE}}` por el nombre del repositorio.
+
+   * El sistema ha rellenado la variable `pathname`.
 
    +++Ejemplo de archivo de configuración actualizado
 
@@ -240,29 +226,9 @@ Necesita la siguiente información para actualizar el código de plantillas de t
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -284,8 +250,8 @@ Para usar el código de plantilla de tienda personalizado, sobrescriba el códig
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
    
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -293,16 +259,16 @@ Para usar el código de plantilla de tienda personalizado, sobrescriba el códig
         modified:   tools/sidekick/config.json
    ```
 
-1. Confirme los cambios en la rama `aco`.
+1. Confirme los cambios.
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. Sobrescribir la plantilla de la rama `main` con los cambios en la rama `aco`.
+1. Aplique los cambios.
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### Paso 5: Añadir la aplicación de sincronización de código de AEM
@@ -327,7 +293,7 @@ Conecte el repositorio al servicio de Edge Delivery agregando la aplicación Git
 
 Cree e inicialice el contenido de la tienda en el entorno de creación de documentos alojado en `https://da.live` con la herramienta de creación de sitios. Esta herramienta importa el contenido de ejemplo en el entorno de creación de documentos y completa el proceso de vista previa y publicación de contenido para todos los documentos del contenido de ejemplo. El contenido de ejemplo incluye los diseños de página, titulares, etiquetas y otros elementos para rellenar la tienda.
 
-1. Abra la [herramienta de creación de sitios](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+1. Abrir la [herramienta de creación de sitios](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
 1. Configure el repositorio:
 
@@ -474,4 +440,4 @@ Consulte el [caso de uso de extremo a extremo del administrador de tiendas y cat
 
 >[!MORELIKETHIS]
 >
-> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
+> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
