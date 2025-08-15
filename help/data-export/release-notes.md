@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
+source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versión principal actual
+
+## Versión 103.4.8
+
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que las fuentes de precios de productos no se regeneraban cuando se eliminaba un producto o cuando se cambiaba el SKU del producto.<!--MDEE-1125-->
+![Corrección](../assets/fix.svg) Se ha mejorado el procesamiento de actualizaciones de productos para garantizar que los cambios se reflejen con precisión al actualizar un producto recién creado con la misma SKU que un producto eliminado anteriormente. La sincronización de productos ahora utiliza correctamente los ID de producto actualizados, lo que garantiza una exportación de datos precisa y fiable.<!--MDEE-1126-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema en el que el servicio de catálogo podía devolver datos de variante obsoletos para productos configurables al garantizar que los eventos de actualización de productos se publiquen después de eliminaciones de atributos.<!--MDEE-1127-->
 
 ## Versión 103.4.8
 
