@@ -3,7 +3,7 @@ title: Caso de uso completo del administrador de catálogos y tiendas
 description: Aprenda a usar [!DNL Adobe Commerce Optimizer] para administrar su catálogo mediante vistas de catálogo y directivas, y a configurar su tienda en función de la configuración de su catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
@@ -55,7 +55,7 @@ En este caso de uso, está trabajando con lo siguiente:
 
 >[!NOTE]
 >
-> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) en la documentación de Adobe Commerce Storefront.
+> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=es) en la documentación de Adobe Commerce Storefront.
 
 ### ‌Lecciones clave
 
@@ -447,4 +447,4 @@ Para continuar aprendiendo sobre Adobe Commerce Optimizer:
 - Obtenga información acerca de [configuraciones de directivas avanzadas](../setup/policies.md)
 - Configurar [vistas de catálogo adicionales](../setup/catalog-view.md) para otros concesionarios
 - Revise la [documentación de API](https://developer.adobe.com/commerce/services/optimizer/) para la administración programática del catálogo
-- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)
