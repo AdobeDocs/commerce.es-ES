@@ -4,9 +4,9 @@ description: Niveles de procesamiento de pagos con tarjeta dentro de  [!DNL Paym
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Procesamiento de los niveles 2 y 3
 
 [!DNL Payment Services] ofrece capacidades avanzadas de procesamiento de tarjetas para ayudar a los comerciantes a optimizar sus transacciones de pago y reducir las tarifas de intercambio. Hay tres niveles de procesamiento de tarjetas disponibles, cada uno con diferentes requisitos de datos de transacción.
+
+>[!CAUTION]
+>
+> Los pedidos de [carril rápido](payments-options.md#fastlane-button) no incluyen datos de nivel 2/nivel 3, elementos de línea y desglose de cantidades.
 
 ## Requisitos de datos por nivel de procesamiento
 

@@ -5,8 +5,8 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration, Paas
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Para obtener más información sobre los datos utilizados en los informes de [!D
 
 ### Configurar cron en [!DNL Magento Open Source]
 
-Si desea usar un modo de índice `BY SCHEDULE` en [!DNL Magento Open Source], debe configurar cron. Consulte [Configurar y ejecutar cron](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+Si desea usar un modo de índice `BY SCHEDULE` en [!DNL Magento Open Source], debe configurar cron. Consulte [Configurar y ejecutar cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Establecer indizadores
 
@@ -49,13 +49,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Si no especifica ningún indizador en el comando, todos los indizadores se actualizarán con el mismo valor. Si desea cambiar un indizador específico, debe enumerarlo en el comando.
 
-Para obtener más información sobre cómo cambiar manualmente el modo de un indizador, consulte [Configurar indizadores](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} en la documentación para desarrolladores. Para obtener información sobre cómo cambiarlo en Admin, consulte [Administración de índices](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} en la guía del usuario principal.
+Para obtener más información sobre cómo cambiar manualmente el modo de un indizador, consulte [Configurar indizadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} en la documentación para desarrolladores. Para obtener información sobre cómo cambiarlo en Admin, consulte [Administración de índices](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} en la guía del usuario principal.
 
 ### Reindexación manual de datos
 
-Puede reindexar los datos manualmente, en lugar de esperar a que se produzca automáticamente. Consulte [Reindex](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} en [Administrar los indizadores](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} para obtener más información.
+Puede reindexar los datos manualmente, en lugar de esperar a que se produzca automáticamente. Consulte [Reindex](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} en [Administrar los indizadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} para obtener más información.
 
-Cuando se establece el modo `BY SCHEDULE`, el sistema rastrea las entidades cambiadas y el trabajo cron actualiza el índice para ellas en función de una programación establecida. Consulte [Ejecutar cron desde la línea de comandos](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) en [Configuración y ejecución de cron](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) para obtener información sobre cómo almacenar en déclencheur manualmente la indexación mediante trabajos cron.
+Cuando se establece el modo `BY SCHEDULE`, el sistema rastrea las entidades cambiadas y el trabajo cron actualiza el índice para ellas en función de una programación establecida. Consulte [Ejecutar cron desde la línea de comandos](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) en [Configuración y ejecución de cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) para obtener información sobre cómo almacenar en déclencheur manualmente la indexación mediante trabajos cron.
 
 ### Enviar datos reindexados al servicio de pago
 
@@ -89,11 +89,11 @@ Todos los datos necesarios para los informes se envían a [!DNL Payment Services
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Para obtener más información sobre la reindexación y los indexadores, consulte el tema [Administrar los indexadores](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers) en la documentación para desarrolladores.
+Para obtener más información sobre la reindexación y los indexadores, consulte el tema [Administrar los indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) en la documentación para desarrolladores.
 
 ## Configurar el ámbito mediante CLI
 
-[!DNL Payment Services] permite que los comerciantes usen [varias cuentas de PayPal](settings.md#use-multiple-paypal-accounts). Ahora puede cambiar los ámbitos de estas cuentas a través de CLI.
+[!DNL Payment Services] permite que los comerciantes usen [varias cuentas de PayPal](configure-admin.md#use-multiple-paypal-accounts). Ahora puede cambiar los ámbitos de estas cuentas a través de CLI.
 
 Para establecer el ámbito en el nivel `website`, ejecute:
 

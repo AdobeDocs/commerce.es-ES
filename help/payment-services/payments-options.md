@@ -3,9 +3,9 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,22 @@ Consulte [Habilitar [!DNL Payment Services] para producción](../payment-service
 
 ## [!UICONTROL Digital Wallets]
 
+### [!DNL Fastlane] botón
+
+[!DNL Fastlane] ofrece una forma rápida, segura y sin complicaciones de pagar en línea. Durante el **pago y envío de los invitados**, puedes guardar de manera segura tu tarjeta y los detalles de envío para realizar compras aún más rápidas en el futuro.
+
+* **Acceso instantáneo para compradores verificados**: reconoce a millones de clientes que regresan y permite pagos sin problemas en segundos.
+* **Aumentar ingresos**: mejore las tasas de conversión y autorización con compras más completadas.
+* **Acelere la retirada**: reduzca la fricción con un inicio de sesión seguro y sin contraseña.
+
+Cuando [!DNL Fastlane] está habilitado, la opción [!UICONTROL Credit Card Fields] está deshabilitada de manera predeterminada.
+
+>[!NOTE]
+>
+> Actualmente, Fastlane solo es compatible con comerciantes estadounidenses; por lo tanto, [!UICONTROL 3D Secure authentication] no es compatible actualmente.
+
+Consulte el tema [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} para obtener más información.
+
 ### [!DNL Apple Pay] botón
 
 Con [!DNL Apple Pay], los comerciantes pueden ofrecer una experiencia de cierre de compra segura y optimizada en Safari (para un máximo de 99 dominios por cuenta de comerciante), lo cual puede aumentar las conversiones. El botón [!DNL Apple Pay] rellena automáticamente los datos de pago, contacto y envío almacenados de los dispositivos iOS o macOS de los clientes, lo que permite una experiencia de pago rápida y con un solo toque.
@@ -57,7 +73,7 @@ Cuando está habilitado, el botón [!DNL Apple Pay] se puede ver en las vistas d
 >
 >  El certificado de verificación del dominio de Apple Pay ya está incluido en el código de servicios de pago. Compruebe que la ruta de acceso `/.well-known/apple-developer-merchantid-domain-association` devuelve un código de respuesta 200. Consulta la [documentación para desarrolladores de PayPal sobre la integración con Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) para obtener más información sobre el certificado **Verificación del dominio de Apple Pay**.
 
-Consulte [Configuración](settings.md#apple-pay) para obtener más información.
+Consulte [Configuración](configure-admin.md#apple-pay) para obtener más información.
 
 ### [!DNL Google Pay] botón
 
@@ -79,7 +95,7 @@ Cuando está habilitado, el botón [!DNL Google Pay] se puede ver en las vistas 
 
 ![Botón PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Puede configurar [!UICONTROL PayPal payment buttons] en la configuración de tienda o en la página de inicio de [!DNL Payment Services]. Consulte [Configuración](settings.md#payment-buttons) para obtener más información.
+Puede configurar [!UICONTROL PayPal payment buttons] en la configuración de tienda o en la página de inicio de [!DNL Payment Services].
 
 Obtén información sobre la disponibilidad de métodos de pago por país en la [documentación de métodos de pago](https://developer.paypal.com/docs/checkout/payment-methods/) de PayPal.
 
@@ -109,9 +125,15 @@ Ofrezca a sus clientes pagos a corto plazo sin intereses y otras opciones de fin
 
 El botón [!DNL Pay Later] está visible desde las vistas de página de producto, minicarrito, carro de compras y cierre de compra.
 
-Ver información acerca de las ofertas de Pago posterior en [Documentación de ofertas de Pago posterior de PayPal](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilice la lista desplegable **País o región** para seleccionar una región de interés.
+Consulta información sobre [Ofertas de pago posterior](https://developer.paypal.com/docs/checkout/pay-later/us/) en la documentación para desarrolladores de PayPal. Utilice la lista desplegable **País o región** para seleccionar una región de interés.
 
-Obtenga información sobre cómo deshabilitar o habilitar la mensajería de [!DNL Pay Later] al actualizar la configuración de [Configuración](settings.md#payment-buttons).
+Obtenga información sobre cómo deshabilitar o habilitar la mensajería de [!DNL Pay Later] al actualizar la configuración de [Configuración](configure-admin.md#pay-later-button).
+
+##### Opcional. Configurar la mensajería de pago posterior
+
+**Configurar la mensajería** para [Pagar más tarde](configure-admin.md#pay-later-button) permite a los comerciantes modificar los estilos predeterminados para esta opción de pago. Si establece **[!UICONTROL Display Pay Later Message]** en `Yes` en su configuración de [Settings](configure-admin.md#pay-later-button), se muestra un botón modal de **[!UICONTROL Configure Messaging]** para que pueda establecer los estilos de **[!UICONTROL PayPal Pay Later messaging]**.
+
+![Mensajes de pago posterior](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
 ### Usar sólo botones de pago de PayPal
 
@@ -125,16 +147,16 @@ Esto le permite:
 
 Para **capturar pagos con _solo_ botones de pago de PayPal (_no_ la opción de pago con tarjeta de crédito de PayPal)**:
 
-1. Asegúrese de que su tienda esté [en modo de producción](settings.md#enable-payment-services).
-1. [Configura los botones de pago de PayPal que desees](settings.md#payment-buttons) en Configuración.
-1. Desactive _1&rbrace; la opción **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;en la sección&#x200B;_[!UICONTROL Payment buttons]_._
+1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
+1. [Configura los botones de pago de PayPal que desees](configure-admin.md#payment-buttons) en Configuración.
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
 
 Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pago de PayPal**:
 
-1. Asegúrese de que su tienda esté [en modo de producción](settings.md#enable-payment-services).
-1. [Configurar los botones de pago de PayPal](settings.md#payment-buttons) deseados.
-1. Desactive _1&rbrace; la opción **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;en la sección&#x200B;_[!UICONTROL Payment buttons]_._
-1. Desactiva _1&rbrace; la opción **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;de la sección&#x200B;_[!UICONTROL Credit card fields]_ y usa tu [cuenta de proveedor de tarjeta de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=es#payments)._
+1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
+1. [Configurar los botones de pago de PayPal](configure-admin.md#payment-buttons) deseados.
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactiva _1} la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opciones de desprotección
 

@@ -3,7 +3,7 @@ title: Configuración de la zona protegida de pruebas
 description: Usa una cuenta de zona protegida de PayPal para usar  [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Para completar la incorporación a la zona protegida:
       Si creó una cuenta de zona protegida de PayPal durante el proceso de incorporación a la zona protegida de PayPal, debe [restablecer su zona protegida de incorporación](#reset-your-sandbox-account) porque o no puede verificar su correo electrónico.
 
    1. Seleccione **[!UICONTROL Business]** como tipo de cuenta y haga clic en **[!UICONTROL Create]**.
-   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna&#x200B;_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
+   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
    1. Haga clic en **[!UICONTROL View/edit account]**.
 
       ![PayPal - Ver/editar cuenta de zona protegida](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -41,7 +41,7 @@ Para completar la incorporación a la zona protegida:
 
    Esta opción está visible si todavía no ha completado la incorporación a la zona protegida de [!DNL Payment Services].
 
-   Se genera automáticamente un identificador de comerciante de zona protegida, que se rellena en [settings](settings.md). No cambie ni modifique este ID.
+   Se genera automáticamente un identificador de comerciante de zona protegida, que se rellena en [settings](configure-admin.md). No cambie ni modifique este ID.
 
    Se le mostrará una ventana de PayPal para conectar una cuenta PayPal y comenzar a aceptar pagos.
 
