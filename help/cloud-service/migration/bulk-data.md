@@ -1,10 +1,10 @@
 ---
 title: Herramienta de migración masiva de datos
 description: Aprenda a utilizar la herramienta de migración masiva de datos para migrar datos de su instancia de Adobe Commerce en la nube existente a  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
+source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
@@ -39,8 +39,8 @@ Las secciones siguientes describen estos pasos en detalle.
 
 La disponibilidad de la herramienta de migración masiva de datos es la siguiente:
 
-- **T3 de 2025**: para acceder a la herramienta de migración masiva de datos, envíe un ticket de asistencia.
-- **T3 de 2025**: la herramienta de migración masiva de datos estará disponible para el público y se podrá acceder a ella desde esta página.
+- **T4 de 2025**: para acceder a la herramienta de migración masiva de datos, envíe un ticket de asistencia.
+- **T4 2025**: la herramienta de migración de datos en masa estará disponible para el público y se podrá acceder a ella desde esta página.
 
 ## Crear entorno de destino
 
