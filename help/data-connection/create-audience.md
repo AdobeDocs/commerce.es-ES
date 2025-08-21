@@ -79,9 +79,9 @@ Utilice estos datos de evento para especificar que la audiencia incluye personas
 
    ![Generar regla](assets/build-rule.png)
 
-   El área de trabajo **Generador de segmentos** es donde usted define las reglas y condiciones para su audiencia.&#x200B; Estas reglas y condiciones se basan en datos de evento y perfil de la tienda Commerce y definen los criterios que determinan si un usuario cumple los requisitos para la audiencia. Por ejemplo, puede crear una regla que incluya a los usuarios que han visto un producto específico o a los usuarios que han realizado una compra en un lapso de tiempo determinado. Más información sobre [Generador de segmentos](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) y las reglas y condiciones.
+   El área de trabajo **Generador de segmentos** es donde usted define las reglas y condiciones para su audiencia.&#x200B; Estas reglas y condiciones se basan en datos de evento y perfil de la tienda Commerce y definen los criterios que determinan si un usuario cumple los requisitos para la audiencia. Por ejemplo, puede crear una regla que incluya a los usuarios que han visto un producto específico o a los usuarios que han realizado una compra en un lapso de tiempo determinado. Más información sobre [Generador de segmentos](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/ui/segment-builder) y las reglas y condiciones.
 
-1. Seleccione la ficha [Eventos](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events).
+1. Seleccione la ficha [Eventos](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/ui/segment-builder#events).
 
    ![Ficha Eventos](assets/audience-events-tab.png)
 
@@ -109,7 +109,7 @@ Una audiencia está disponible en [!DNL Commerce] al activarla para el destino [
 
 >[!IMPORTANT]
 >
->Si aún no ha establecido [!DNL Commerce] como destino disponible para recibir datos, consulte el tema [Adobe [!DNL Commerce] Conexión](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
+>Si aún no ha establecido [!DNL Commerce] como destino disponible para recibir datos, consulte el tema [Adobe [!DNL Commerce] Conexión](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
 
 1. En la ficha **Detalles** de la audiencia, haga clic en **Activar en destino**.
 
@@ -119,7 +119,7 @@ Una audiencia está disponible en [!DNL Commerce] al activarla para el destino [
 
 ## &#x200B;3. Vea la audiencia en el panel de audiencias
 
-En [!DNL Commerce], puede ver todas las [audiencias activas](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) que se pueden personalizar para su instancia de [!DNL Commerce] mediante el panel **Audiencias de Real-Time CDP**.
+En [!DNL Commerce], puede ver todas las [audiencias activas](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) que se pueden personalizar para su instancia de [!DNL Commerce] mediante el panel **Audiencias de Real-Time CDP**.
 
 Para acceder al panel de **Audiencias de Real-Time CDP**, ve a la barra lateral de _Administración_ y luego ve a **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
@@ -132,9 +132,9 @@ En el tablero, busque la audiencia que ha creado. Tenga en cuenta que no se util
 Esta sección muestra cómo crear una regla de precios de carro de compras basada en la nueva audiencia.
 
 1. Confirme que la nueva audiencia se mostrará en el tablero **Audiencias de Real-Time CDP**.
-1. [Crear una regla de precios de carro de compras](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
-1. [Establezca la condición](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) de la regla de precio del carro de compras con su nueva audiencia.
-1. [Establece la acción](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) que desea que tenga lugar cuando se agregue el producto al carro de compras.
+1. [Crear una regla de precios de carro de compras](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
+1. [Establezca la condición](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) de la regla de precio del carro de compras con su nueva audiencia.
+1. [Establece la acción](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) que desea que tenga lugar cuando se agregue el producto al carro de compras.
 1. Continúe configurando la regla de precios del carro de compras.
 1. Vaya a la vista del cliente de la instancia de zona protegida.
 1. Añada al carro de compras el producto en el que basó la audiencia. Observe que la regla de precios del carro de compras está habilitada.

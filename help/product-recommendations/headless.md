@@ -15,7 +15,7 @@ Puede integrar a [!DNL Product Recommendations] en una tienda sin encabezado usa
 
 Los integradores personalizados y sin encabezado deben consultar estas instrucciones de Luma y PWA como una implementación sugerida. Existen muchas maneras de implementar Recomendaciones de producto en soluciones sin encabezado, y esta documentación no cubre todos los escenarios. Los integradores deben cubrir eventos, diseño y pruebas para sus implementaciones.
 
-[!DNL Product Recommendations] requiere [datos de catálogo y comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) para funcionar. El proceso de sincronización de datos del catálogo permanece sin cambios en una implementación sin encabezado, pero se necesitan cambios para la recopilación de datos de comportamiento.
+[!DNL Product Recommendations] requiere [datos de catálogo y comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=es) para funcionar. El proceso de sincronización de datos del catálogo permanece sin cambios en una implementación sin encabezado, pero se necesitan cambios para la recopilación de datos de comportamiento.
 
 >[!NOTE]
 >
