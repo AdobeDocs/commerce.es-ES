@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 1. En la barra lateral de _Admin_, ve a **Marketing** > _Promociones_ > **Recomendaciones de productos** para mostrar el espacio de trabajo de _Recomendaciones de productos_.
 
-1. Especifique la [Vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views) donde desea que se muestren las recomendaciones.
+1. Especifique la [Vista de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) donde desea que se muestren las recomendaciones.
 
    >[!NOTE]
    >
-   > Las unidades de recomendación de Page Builder deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre cómo crear recomendaciones de productos con Page Builder, consulte [Agregar contenido: recomendaciones de productos](https://experienceleague.adobe.com/es/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Las unidades de recomendación de Page Builder deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre cómo crear recomendaciones de productos con Page Builder, consulte [Agregar contenido: recomendaciones de productos](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Haga clic en **Crear recomendación**.
 
@@ -38,14 +38,14 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
    >[!NOTE]
    >
-   > Las recomendaciones de productos no se admiten en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Las recomendaciones de productos no se admiten en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página principal
    * Categoría
    * Detalles del producto
    * Carrito
    * Confirmación
-   * [Generador de páginas](https://experienceleague.adobe.com/es/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Generador de páginas](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Puede crear hasta cinco unidades de recomendación activas para cada tipo de página y hasta 25 para Page Builder. El tipo de página aparece atenuado cuando se alcanza el límite.
 
@@ -172,7 +172,7 @@ A continuación se enumeran los posibles motivos y soluciones para puntuaciones 
 * **Basado en estática**: los porcentajes bajos de estos indicadores pueden deberse a la falta de datos de catálogo para los productos que se pueden mostrar. Si son inferiores a lo esperado, una sincronización completa puede solucionar este problema.
 * **Basado en dinámico**: los porcentajes bajos de los indicadores basados en dinámico pueden deberse a:
 
-   * Faltan campos en los [eventos de tienda](events.md) necesarios para los tipos de recomendación respectivos (requestId, contexto de producto, etc.).
+   * Faltan campos en los [eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) necesarios para los tipos de recomendación respectivos (requestId, contexto de producto, etc.).
    * Poco tráfico en la tienda, por lo que el volumen de eventos de comportamiento que recibimos es bajo.
    * La variedad de eventos de comportamiento de la tienda en diferentes productos es baja. Por ejemplo, si solo el diez por ciento de sus productos se ven o se compran la mayor parte del tiempo, los indicadores de preparación respectivos serán bajos.
 

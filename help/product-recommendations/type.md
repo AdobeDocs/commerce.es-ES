@@ -1,9 +1,10 @@
 ---
 title: Tipos de recomendación
 description: Obtenga información acerca de las recomendaciones que puede implementar en varias páginas del sitio.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Como práctica recomendada, Adobe recomienda las siguientes directrices al utili
 
 >[!NOTE]
 >
->Para obtener más información acerca de los eventos descritos en este artículo, vea [events](events.md).
+>Para obtener más información sobre los eventos descritos en este artículo, consulte [eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) en la documentación para desarrolladores.
 
 ## Personalizado {#personalized}
 
