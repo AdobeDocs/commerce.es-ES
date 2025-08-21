@@ -3,10 +3,10 @@ title: Introducción a  [!DNL Adobe Commerce as a Cloud Service]
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 81dd617b0a6460b8dcb01c0a21b696663b0ae493
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: d8c0cf5f54a8518b033013cdb24b25f8ff363f02
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Haga clic en las pestañas siguientes para ver información general de flujo de 
 
 >[!TAB Flujo de trabajo de administrador y comerciante]
 
-Este diagrama proporciona información general de alto nivel sobre cómo los administradores y comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
+Este diagrama proporciona información general de alto nivel sobre cómo los administradores y comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagrama de flujo comercial](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -59,12 +59,6 @@ Este diagrama proporciona información general de alto nivel sobre cómo los des
 
 1. Escriba un **Nombre** y una **Descripción** para su instancia.
 
-1. Seleccione la región en la que desea alojar la instancia.
-
-   >[!NOTE]
-   >
-   >Una vez creada la instancia, no se puede modificar la región.
-
 1. Elija [!UICONTROL **Tipo de entorno**] para su instancia. Puede elegir entre las siguientes opciones:
 
    * [!UICONTROL **Espacio aislado**]: ideal para fines de diseño y prueba. Debe comenzar el recorrido de [!DNL Adobe Commerce as a Cloud Service] usando el entorno de espacio aislado.
@@ -72,8 +66,14 @@ Este diagrama proporciona información general de alto nivel sobre cómo los des
 
    >[!NOTE]
    >
-   >* Actualmente, las instancias de zona protegida están limitadas a la región de América del Norte.
+   >* Las instancias de zona protegida se limitan a la región de América del Norte.
    >* La opción para instalar datos de ejemplo no está disponible actualmente.
+
+1. Seleccione la región en la que desea alojar la instancia.
+
+   >[!NOTE]
+   >
+   >Una vez creada la instancia, no se puede modificar la región.
 
 1. Haga clic en [!UICONTROL **Agregar instancia**].
 
@@ -99,7 +99,7 @@ De manera predeterminada, las instancias de [!DNL Adobe Commerce as a Cloud Serv
 
 Existen dos maneras de importar el catálogo en [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador de Commerce**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
+* [**Administrador de Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api): una API de REST que le permite importar los datos del catálogo mediante programación.
 
 <!-- TODO
