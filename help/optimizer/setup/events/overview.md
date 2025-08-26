@@ -3,7 +3,8 @@ title: Información general sobre eventos
 description: Obtenga información acerca de los eventos que  [!DNL Adobe Commerce Optimizer] usa para mejorar las búsquedas y recomendaciones.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
+source-git-commit: f12aff86957c2f8f1f830da6f481d28cd54e1f20
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -61,7 +62,7 @@ En esta tabla se describen los eventos que usa la detección de productos [estra
 | Más añadidos al carro | `page-view`<br>`add-to-cart` | Página de detalles del producto<br>Página de lista de productos<br>Carro<br>Lista de deseos |
 | Vio esto, vio aquello. | `page-view`<br>`product-view` | Página de detalles del producto |
 
-### Eventos de panel requeridos
+#### Eventos de panel requeridos
 
 Se requieren algunos eventos para rellenar el [panel de rendimiento de búsqueda](../../manage-results/search-performance.md)
 
@@ -173,4 +174,4 @@ En esta tabla se describen los eventos utilizados por cada tipo de recomendació
 
 ## Asistencia
 
-Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

@@ -3,11 +3,11 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
+source-git-commit: 89099811cd04b92a56fd3c1bda98c586e988f878
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ Siga estos pasos esenciales para ejecutar el entorno [!DNL Adobe Commerce Optimi
    ![Crear instancia](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Configure las opciones de instancia:
-   - **Nombre**: Nombre descriptivo (por ejemplo, &quot;Mi espacio aislado de la compañía&quot;)
+   - **Nombre de instancia**: Nombre descriptivo (por ejemplo, &quot;Mi espacio aislado de la compañía&quot;)
    - **Descripción**: Breve descripción del propósito
-   - **Región**: selecciona tu región preferida
    - **Tipo de entorno**: Comience con un entorno de **espacio aislado** para realizar pruebas
+   - **Región**: selecciona tu región preferida
 
 1. Haga clic en **Agregar instancia**.
 
-   Cloud Manager se actualiza para incluir la nueva instancia. Para obtener más información sobre cómo obtener acceso y administrarla, consulte [Administrar una instancia](#manage-an-instance).
+   Cloud Manager se actualiza para incluir la nueva instancia. Para obtener más información sobre cómo obtener acceso y administrarla, consulte [Administrar una instancia](#manage-instances).
 
 >[!NOTE]
 >
->Las instancias de zona protegida se limitan a la región de América del Norte. No se puede cambiar la región después de crearla.
+>Solo puede crear entornos de zona protegida en la región de América del Norte. Una vez creada una instancia, no se puede cambiar la región.
 
 ### Paso 2. Configurar su entorno
 
 Después de crear la instancia:
 
-1. [Administre su instancia](#manage-an-instance) desde Commerce Cloud Manager.
+1. [Administre su instancia](#manage-instances) desde Commerce Cloud Manager.
 1. Configure el acceso de los usuarios con la [guía de administración de usuarios](./user-management.md).
 
 ### Paso 3. Añadir datos de ejemplo (opcional)
@@ -217,6 +217,6 @@ Después de completar la configuración:
 ### Obtener ayuda
 
 - **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/)
-- **Recursos de tienda**: [documentación de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-- **Tutoriales**: [Tutoriales de Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+- **Recursos de tienda**: [documentación de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutoriales**: [Tutoriales de Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
