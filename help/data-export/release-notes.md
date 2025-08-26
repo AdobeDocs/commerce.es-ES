@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: fa3900de75ae36a3efccc7791b6345875b46148f
+source-git-commit: 728be19f73f19d9e229ae38fd5c171df74b963fb
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1522'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Las actualizaciones incluyen:
 
 ## Versión 103.4.10
 
-![Corrección](../assets/fix.svg) Se ha corregido un problema que hacía que se devolviera un tipo incorrecto (`text` en lugar de `OBJECT`) para algunos atributos creados dinámicamente Ahora, la información de tipo correcta se devuelve de forma coherente, lo que elimina la necesidad de realizar resincronizaciones manuales o soluciones alternativas.<!--MDEE-1131-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que se devolvía un tipo incorrecto (`text` en lugar de `OBJECT`) para algunos atributos creados dinámicamente Ahora, la información de tipo correcta se devuelve de forma coherente, lo que elimina la necesidad de realizar resincronizaciones manuales o soluciones alternativas.<!--MDEE-1131-->
 ![Corrección](../assets/fix.svg) Se ha corregido un problema por el que la recopilación de datos de productos durante las sincronizaciones parciales podía fallar debido a errores en el proveedor de inventario LowStock. Esta corrección garantiza que los datos del producto se exporten de forma fiable y que no se omitan los ID de producto debido a errores relacionados con LowStock.<!--MDEE-1132-->
 
 ## Versión 103.4.9
