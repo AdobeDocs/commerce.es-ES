@@ -2,11 +2,11 @@
 title: ¿Qué es Adobe Commerce Optimizer?
 description: Obtenga información acerca de  [!DNL Adobe Commerce Optimizer]  y sus características clave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Con [!DNL Adobe Commerce Optimizer], puede:
 
 Vea el siguiente vídeo para obtener información general de alto nivel sobre [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 
@@ -79,7 +79,7 @@ Defina las vistas de catálogo y las políticas. El catálogo no solo contiene l
 
 Las funciones clave incluyen:
 
-- **Ingesta de catálogo de terceros**: ingrese datos de catálogo de cualquier fuente de terceros (su catálogo de Commerce existente, PIM, ERP, etc.). Los datos del catálogo se incorporan directamente a la capa de servicios de comercialización, que es un componente SaaS denominado Servicios de comercialización con vistas y directivas de catálogo (vistas y directivas de catálogo).
+- **Ingesta de catálogo de terceros**: ingrese datos de catálogo de cualquier fuente de terceros (su catálogo de Commerce existente, PIM, ERP, etc.). Los datos del catálogo se incorporan directamente a la capa de servicios de comercialización, que es un componente SaaS denominado Servicios de comercialización con tecnología de Vistas y directivas de catálogo.
 - **Servicios de comercialización con tecnología de vistas de catálogo y directivas** - Esta solución es la parte fundamental de [!DNL Adobe Commerce Optimizer]. Los servicios de comercialización ofrecidos por las vistas y directivas del catálogo son un modelo de datos de catálogo flexible y altamente escalable que desbloquea casos de uso de varias marcas, unidades empresariales y varios idiomas. Estos servicios de comercialización proporcionan componentes básicos que los comerciantes pueden utilizar para crear y administrar catálogos a escala. En [!DNL Adobe Commerce Optimizer], puede administrar su catálogo creando vistas de catálogo y directivas que definan mejor sus objetivos comerciales. Además, el comerciante puede proporcionar experiencias personalizadas para impulsar el tráfico y la participación mediante la detección de productos&#x200B; recomendaciones y comercialización inteligente.
 - **Métricas antes y después**: proporciona información en tiempo real sobre el rendimiento de sus iniciativas de comercio. Puede ver los resultados antes y después de indicadores clave de rendimiento (KPI) específicos, evaluar el impacto de los cambios y optimizar para obtener mejores resultados. Puede exportar los resultados en un PDF.
 - **Tienda Commerce con tecnología Edge Delivery**: con la entrega de Edge, puedes iniciar tu sitio rápidamente con componentes de tienda creados previamente con funcionalidad de comercio integrada, incluidas páginas de listado de productos, páginas de detalles de productos, carrito y cierre de compra.
