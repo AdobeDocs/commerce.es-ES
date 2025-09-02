@@ -3,10 +3,11 @@ title: Creación de eventos personalizados
 description: Aprenda a crear eventos personalizados para conectar los datos de Adobe Commerce a otros productos DX de Adobe.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -76,11 +77,7 @@ Las anulaciones de atributos para eventos estándar solo se admiten en Experienc
 
 Para cualquier evento con `customContext`, el recolector anula los campos combinados establecidos en los contextos relevantes con campos en `customContext`. El caso de uso de las invalidaciones es cuando un desarrollador desea reutilizar y ampliar contextos establecidos por otras partes de la página en eventos ya admitidos.
 
->[!NOTE]
->
->Al anular los eventos personalizados, el reenvío de eventos a Experience Platform debe desactivarse para ese tipo de evento a fin de evitar el recuento doble.
-
-Ejemplos:
+### Ejemplos
 
 Vista de producto con invalidaciones publicadas mediante Adobe Commerce Events SDK:
 
@@ -131,6 +128,30 @@ En Experience Platform Edge:
   }
 }
 ```
+
+Tiendas basadas en Luma:
+
+En las tiendas basadas en Luma, la publicación de eventos se implementa de forma nativa. Por lo tanto, puede establecer datos personalizados ampliando `customContext`.
+
+Por ejemplo:
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+Consulte [anulación de evento personalizado](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) para obtener más información sobre la administración de datos personalizados.
 
 >[!NOTE]
 >
