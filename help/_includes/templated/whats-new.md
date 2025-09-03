@@ -1,5 +1,5 @@
 ---
-source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
+source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 3%
@@ -23,12 +23,12 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>FALTA lo nuevo en la #197 de PR de actualización principal: "eliminar la carpeta de andamios" asignada a jhoover (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/197)</p>
+      <td><p>Ahora puede usar la <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">herramienta de creación de sitios</a> para configurar su tienda sin usar la CLI.</p>
 </td>
       <td>
         Actualización importante
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">comprometer</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">comprometer</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>FALTA lo nuevo en el nuevo tema PR #158: "Agregar un nuevo tema sobre identidades personalizadas" asignado a emarr (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/158)</p>
+      <td><p>Se ha agregado un tema sobre cómo agregar <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados a perfiles</a>.</p>
 </td>
       <td>
         Nuevo tema
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">comprometer</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">comprometer</a></td>
     </tr>
   </tbody>
 </table>
@@ -72,7 +72,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td>
         Comentarios
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">comprometer</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">comprometer</a></td>
     </tr>
   </tbody>
 </table>
