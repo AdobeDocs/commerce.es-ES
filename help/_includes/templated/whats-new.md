@@ -23,7 +23,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Ahora puede usar la <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">herramienta de creación de sitios</a> para configurar su tienda sin usar la CLI.</p>
+      <td><p>Ahora puede usar la <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/storefront">herramienta de creación de sitios</a> para configurar su tienda sin usar la CLI.</p>
 </td>
       <td>
         Actualización importante
@@ -45,7 +45,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha agregado un tema sobre cómo agregar <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados a perfiles</a>.</p>
+      <td><p>Se ha agregado un tema sobre cómo agregar <a href="https://experienceleague.adobe.com/es/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados a perfiles</a>.</p>
 </td>
       <td>
         Nuevo tema
