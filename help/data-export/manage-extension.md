@@ -39,4 +39,4 @@ Puede actualizar cualquiera de los módulos de exportación de datos de comercio
    composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
    ```
 
-Si la instancia de Commerce está implementada en la infraestructura de Cloud, actualice la extensión desde el directorio del proyecto de Cloud. Consulte [Actualizar una extensión](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) en la _Guía de infraestructura de Adobe Commerce en la nube_.
+Si la instancia de Commerce está implementada en la infraestructura de Cloud, actualice la extensión desde el directorio del proyecto de Cloud. Consulte [Actualizar una extensión](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) en la _Guía de infraestructura de Adobe Commerce en la nube_.

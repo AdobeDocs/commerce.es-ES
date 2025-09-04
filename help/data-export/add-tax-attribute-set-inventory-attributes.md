@@ -14,9 +14,9 @@ ht-degree: 0%
 
 El módulo Atributos de producto adicionales de Adobe Commerce amplía las fuentes de datos del producto. Incluye atributos de producto adicionales de las configuraciones de producto de Adobe Commerce:
 
-* [Clasificación de impuestos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [Conjunto de atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [Inventario](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [Clasificación de impuestos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [Conjunto de atributos](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [Inventario](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 Una vez instalado, el módulo funciona automáticamente. Registra y exporta los atributos adicionales durante la sincronización de productos. No se requiere ninguna configuración adicional.
 
@@ -158,7 +158,7 @@ El módulo Atributos de producto adicionales mejora las fuentes de productos exi
 * [Extensión de exportación de datos de Adobe Commerce](manage-extension.md#update-a-module-to-a-specific-version), versión 103.4.11 o posterior
 * Acceso a [repo.magento.com](https://repo.magento.com)
 
-  Para generar claves y obtener los derechos necesarios, consulta [Obtener tus claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Para instalaciones en la nube, consulte la [Guía de Commerce en infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  Para generar claves y obtener los derechos necesarios, consulta [Obtener tus claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Para instalaciones en la nube, consulte la [Guía de Commerce en infraestructura en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Acceso a la línea de comandos del servidor de aplicaciones de Adobe Commerce.
 
 ### Pasos de instalación
@@ -171,7 +171,7 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Para ver los pasos detallados de la instalación, consulte las siguientes guías:
 
-* [Instalar extensión en Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Instalar extensión en Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 * [Instalar extensión de Adobe Commerce local](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
 
 ## Sincronización de datos de producto
@@ -200,9 +200,9 @@ A **productos les faltan atributos adicionales:**
 
 * Compruebe que la configuración del inventario sea correcta en el Administrador
 * Comprobar invalidaciones de inventario específicas del sitio web
-* Compruebe que el [módulo de Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) funciona correctamente
+* Compruebe que el [módulo de Inventory management](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/guide-overview) funciona correctamente
 
-Para obtener más información, consulte la [Guía de Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) en la *Documentación de Adobe Commerce Merchant*.
+Para obtener más información, consulte la [Guía de Inventory management](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/guide-overview) en la *Documentación de Adobe Commerce Merchant*.
 
 **Problemas de rendimiento:**
 

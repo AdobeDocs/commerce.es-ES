@@ -30,7 +30,7 @@ Las actualizaciones incluyen:
 
 ## Versión 103.4.11
 
-![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 Se ha agregado compatibilidad con atributos de producto adicionales para incluir datos de clase de impuestos, juego de atributos e inventario de configuraciones de producto de Commerce en la fuente de productos. Los clientes que deseen incluir estos atributos en las fuentes de exportación de productos deben agregar el módulo Atributos de producto adicionales a su proyecto de Adobe Commerce. Consulte [Agregar atributos de clase de impuestos, conjunto de atributos e inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Corrección](../assets/fix.svg) ha resuelto un problema que provocaba una sincronización incorrecta de las actualizaciones de productos eliminadas si se producía un error durante un índice de productos completo. Ahora, todas las eliminaciones de productos se sincronizan correctamente incluso si se produce un error durante el proceso de indexación. <!--MDEE-1144-->
 
