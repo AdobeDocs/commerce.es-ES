@@ -1,8 +1,8 @@
 ---
-source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
+source-git-commit: c2e506277ceba1e2ebb1abaa0f3bd3065a025e41
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 3%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 # Novedades de la plantilla
@@ -10,6 +10,28 @@ ht-degree: 3%
 ## Novedades de la versión
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 4 de septiembre de 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado documentación para el <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">módulo de atributos de producto adicionales</a> opcional. Cuando este módulo está instalado en un entorno de Adobe Commerce, el proceso de exportación de datos exporta automáticamente la clase de impuestos, el conjunto de atributos y los metadatos de inventario de la configuración del producto de Commerce a las fuentes <code class="language-plaintext highlighter-rouge">products</code> y <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
+</td>
+      <td>
+        Nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a77c6bd98622488214d89a077e1dfaa8338108fd">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 21 de agosto de 2025
 
@@ -23,7 +45,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Ahora puede usar la <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/storefront">herramienta de creación de sitios</a> para configurar su tienda sin usar la CLI.</p>
+      <td><p>Ahora puede usar la <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">herramienta de creación de sitios</a> para configurar su tienda sin usar la CLI.</p>
 </td>
       <td>
         Actualización importante
@@ -45,7 +67,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha agregado un tema sobre cómo agregar <a href="https://experienceleague.adobe.com/es/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados a perfiles</a>.</p>
+      <td><p>Se ha agregado un tema sobre cómo agregar <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados a perfiles</a>.</p>
 </td>
       <td>
         Nuevo tema
