@@ -1,8 +1,9 @@
 ---
 title: Configuración
 description: Configure las opciones de  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
+source-git-commit: 652681cc9aef416040ccd470d04bf2540fe97262
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -22,7 +23,7 @@ La configuración de **Idioma** indica a [!DNL Adobe Commerce Optimizer] qué id
 Puede especificar el número de grupos de intervalos de precios y cómo se distribuyen los valores de precios entre ellos. Cada rango de precios se superpone con el grupo anterior por uno. Por ejemplo, cinco grupos con un intervalo de 20 crean los siguientes intervalos de precios: 0-20, 20-40, 40-60, 60-80 y >80. Si no hay suficientes productos en el catálogo para rellenar todos los intervalos definidos, la visualización de los grupos disponibles se ajusta en consecuencia. Por ejemplo: 0-20, 60-80, >80.
 
 1. En el área de trabajo **Configuración**, seleccione **[!UICONTROL Search]** y, a continuación, en **Facetado de precios**, haga lo siguiente:
-   - Escriba el **número de selecciones** o las agrupaciones de precios que estarán disponibles. Se pueden definir hasta 50 agrupaciones de precios.
+   - Escriba el **número de selecciones** o las agrupaciones de precios que estarán disponibles. Se pueden definir hasta 100 agrupaciones de precios.
    - Escriba el **valor de intervalo** o el rango de precios de cada grupo. El valor máximo es 40 000 000.
 1. Haga clic en **Guardar**.
 
@@ -32,7 +33,7 @@ Puede especificar el número de grupos de intervalos de precios y cómo se distr
 
 | Campo | Descripción |
 |--- |--- |
-| Número de selecciones | Especifica el número de agrupaciones de intervalos de precios que se pueden usar como filtros de búsqueda en la tienda. Valor predeterminado: 8, Valor máximo: 50 |
+| Número de selecciones | Especifica el número de agrupaciones de intervalos de precios que se pueden usar como filtros de búsqueda en la tienda. Valor predeterminado: 8, Valor máximo: 100 |
 | Valor de intervalo | Especifica el intervalo de rango de precios para cada grupo. Por ejemplo, cinco selecciones con un valor de intervalo de 20 crean cinco agrupaciones de 0-20, 20-40, 40-60, 60-80 y >80. Valor predeterminado: 5, Valor máximo: 40 000 000 |
 
 ## Idioma
