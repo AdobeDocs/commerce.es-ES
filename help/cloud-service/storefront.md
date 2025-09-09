@@ -3,8 +3,8 @@ title: Configurar tu tienda
 description: Aprenda a ejecutar la herramienta de andamiaje para configurar su tienda  [!DNL Adobe Commerce as a Cloud Service] Storefront.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: b0d492ffab2dcf5742772d02bed026e241ac43cd
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: 408f28bdc20708022c8eca0fbfea4adb17014bf7
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Para configurar la tienda de Adobe Commerce con tecnología Edge Delivery Services para Adobe Commerce as a Cloud Service (SaaS), siga estos pasos.
 
-Si desea un tutorial más personalizable y detallado, consulte la [documentación de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es).
+Si desea un tutorial más personalizable y detallado, consulte la [documentación de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 1. Abra la [herramienta de creación de sitios](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -45,4 +45,4 @@ Consulte los siguientes artículos para obtener más información:
 * Para obtener más información sobre cómo administrar y mostrar contenido y datos en la tienda, consulta [actualizar contenido de la tienda](./use-cases.md#update-storefront-content).
 * Para obtener más información sobre las características de experimentación contextual, vea [experimentación contextual](./use-cases.md#contextual-experimentation).
 * Para obtener más información sobre el uso de la IA generativa para automatizar la generación de contenido de alta calidad, consulte [Generar variaciones](./use-cases.md#generate-variations).
-* Para obtener más información sobre cómo actualizar el contenido del sitio e integrar con componentes de front-end y datos de back-end de Commerce, consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es).
+* Para obtener más información sobre cómo actualizar el contenido del sitio e integrar con componentes de front-end y datos de back-end de Commerce, consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
