@@ -2,9 +2,9 @@
 title: Filtrar productos
 description: Defina condiciones que incluyan o excluyan productos de para que se utilicen como recomendaciones.
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
-source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
+source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -42,15 +42,13 @@ Los operadores lógicos `AND` y `OR` se utilizan para unir varias condiciones. S
 
 ### Categoría
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
-
 Filtra los productos según su categoría. El filtro de categoría utiliza asignaciones de categoría directa y sus subcategorías. Por ejemplo, al habilitar una condición de exclusión para la categoría `Gear` se excluyen los productos asignados a `Gear` y todas sus subcategorías, como `Gear/Bags` o `Gear/Fitness Equipment`. Lo mismo se aplica a un filtro de inclusión en una categoría. Por ejemplo, al habilitar una condición de inclusión para la categoría `Gear` se incluyen los productos asignados a `Gear` y todas sus subcategorías, como `Gear/Bags` o `Gear/Fitness Equipment`.
 
 El campo de categoría muestra las categorías que pertenecen a la vista de tienda actual.
 
 >[!NOTE]
 >
->Para los comerciantes B2B, el filtro Categoría se adhiere a cualquier [categoría de producto específica del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=es) que haya configurado.
+>Para los comerciantes B2B, el filtro Categoría se adhiere a cualquier [categoría de producto específica del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que haya configurado.
 
 Adobe Commerce recomienda utilizar la siguiente configuración de filtro de categoría al implementar recomendaciones en los tipos de página:
 
@@ -72,23 +70,19 @@ Los filtros de producto especifican qué productos específicos son aptos o no p
 
 ### Tipo
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
-
 Un filtro basado en un tipo de producto incluye o excluye todos los productos de un tipo específico. Los tipos admitidos son _simple_, _configurable_, _virtual_, _descargable_ o _tarjeta regalo_. No se admiten los tipos de producto _Paquete_, _agrupado_ y personalizado.
 
 ### Visibilidad
-
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 
 Filtra productos basados en visibilidad, como: _Catálogo_, _Búsqueda_ o ambos.
 
 ### Precio
 
-Un filtro basado en el precio del producto utiliza el precio final para realizar la comparación. El precio final incluye cualquier descuento o precio especial disponible para compradores anónimos. Para los comerciantes B2B, el precio mostrado refleja los [precios de grupo específicos del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=es) que ha configurado.
+Un filtro basado en el precio del producto utiliza el precio final para realizar la comparación. El precio final incluye cualquier descuento o precio especial disponible para compradores anónimos. Para los comerciantes B2B, el precio mostrado refleja los [precios de grupo específicos del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) que ha configurado.
 
 ### Estado de stock
 
 Los siguientes filtros de exclusión se pueden utilizar para filtrar los productos en función del estado de stock:
 
 - Agotado: (solo exclusión) Excluye los productos sin existencias.
-- Bajo en stock: (solo exclusión) Excluye los productos que están bajo en stock. El estado de existencias bajo se basa en el valor _Solo X del umbral izquierdo_ en la [configuración del inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=es).
+- Bajo en stock: (solo exclusión) Excluye los productos que están bajo en stock. El estado de existencias bajo se basa en el valor _Solo X del umbral izquierdo_ en la [configuración del inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

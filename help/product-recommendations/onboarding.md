@@ -2,10 +2,9 @@
 title: Incorporación
 description: Conozca los requisitos y las plataformas compatibles en  [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
+source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -47,7 +46,7 @@ Los clientes de Product Recommendations pueden usar la [indexación de precios S
 
 ### Compatibilidad con B2B {#b2bsupport}
 
-Las tiendas B2B a menudo requieren una lógica compleja que dicta la visibilidad del producto y los precios para cada comprador o grupo de clientes. [!DNL Product Recommendations] ahora [admite](release-notes.md) esta funcionalidad al cumplir [permisos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=es), [catálogos compartidos](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=es) y [precios específicos de grupos de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=es). Por ejemplo, si ha ocultado ciertas categorías del segmento de clientes minoristas, a un comprador de ese segmento no se le mostrarían recomendaciones para productos de esas categorías. Además, al definir un catálogo compartido para grupos de clientes y empresas específicos, esos compradores ven recomendaciones solo para los productos a los que pueden acceder. Todos los productos recomendados reflejan el precio correcto específico del grupo de clientes en función del grupo de clientes de cada comprador.
+Las tiendas B2B a menudo requieren una lógica compleja que dicta la visibilidad del producto y los precios para cada comprador o grupo de clientes. [!DNL Product Recommendations] ahora [admite](release-notes.md) esta funcionalidad al cumplir [permisos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartidos](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) y [precios específicos de grupos de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por ejemplo, si ha ocultado ciertas categorías del segmento de clientes minoristas, a un comprador de ese segmento no se le mostrarían recomendaciones para productos de esas categorías. Además, al definir un catálogo compartido para grupos de clientes y empresas específicos, esos compradores ven recomendaciones solo para los productos a los que pueden acceder. Todos los productos recomendados reflejan el precio correcto específico del grupo de clientes en función del grupo de clientes de cada comprador.
 
 >[!NOTE]
 >
