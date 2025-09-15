@@ -4,9 +4,9 @@ description: Aprenda a crear eventos personalizados para conectar los datos de A
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### Ejemplo 1 - agregando `productCategories`
+### Ejemplo 1
+
+En este ejemplo se agrega un contexto personalizado al publicar el evento.
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### Ejemplo 2: añadir contexto personalizado antes del evento de publicación
+### Ejemplo 2
+
+En este ejemplo se agrega un contexto personalizado antes de publicar el evento.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### Ejemplo 3: el contexto personalizado establecido en el publicador sobrescribe el contexto personalizado establecido anteriormente en la capa de datos del cliente de Adobe.
+### Ejemplo 3
+
+Este ejemplo establece el contexto personalizado en el publicador y sobrescribe el contexto personalizado establecido anteriormente en la capa de datos del cliente de Adobe.
 
 En este ejemplo, el evento `pageView` tendrá **Nombre de página personalizado 2** en el campo `web.webPageDetails.name`.
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### Ejemplo 4: agregar contexto personalizado a `productListItems` con eventos con varios productos
+### Ejemplo 4
+
+Este ejemplo agrega contexto personalizado a `productListItems` eventos con varios productos.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+Tiendas basadas en Luma:
+
+Los almacenes basados en Luma implementan eventos de publicación de forma nativa, por lo que puede establecer datos personalizados ampliando `customContext`.
+
+Por ejemplo:
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
