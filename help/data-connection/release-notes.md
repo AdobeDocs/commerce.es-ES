@@ -3,9 +3,9 @@ title: Notas de la versión
 description: La información de la versión más reciente para la extensión  [!DNL Data Connection] de Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
+source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1290'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ Estas notas de la versión contienen actualizaciones para la extensión [!DNL Da
 
 Para ver los cambios y correcciones de características relacionados con las extensiones utilizadas por la extensión [!DNL Data Connection], consulte **Actualizaciones de servicio compatibles**.
 
-Consulte [Próximas versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule) para obtener más información sobre las programaciones de versiones y la compatibilidad.
+Consulte [Próximas versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) para obtener más información sobre las programaciones de versiones y la compatibilidad.
 
-Consulte la documentación para desarrolladores para [saber qué versiones de Commerce admiten este módulo](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
+Consulte la documentación para desarrolladores para [saber qué versiones de Commerce admiten este módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Actualizaciones de servicios compatibles
 
@@ -81,6 +81,14 @@ _12 de octubre de 2022_
 ![Nuevo](../assets/new.svg): Se agregó compatibilidad con una [tienda AEM](overview.md#aem-support).
 
 +++
+
+## 3.4.0
+
+_16 de septiembre de 2025_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"} con versiones de Adobe Commerce 2.4.4 y posteriores
+
+![El nuevo](../assets/new.svg) [!DNL Data Connection] ahora respeta completamente el modo de restricción de cookies al impedir la recopilación y el almacenamiento de datos en cookies o el almacenamiento local cuando las restricciones están habilitadas.
 
 ## 3.3.0
 
