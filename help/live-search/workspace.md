@@ -2,9 +2,9 @@
 title: Configuración de Live Search
 description: El área de trabajo  [!DNL Live Search] se usa para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: bb212bf88ba7bad3deb2d2d699124413f4dd76ff
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Si utiliza una tienda sin encabezado, consulte la siguiente documentación para 
 
 ### Clientes sanitarios
 
-Si es cliente de atención médica e instaló la extensión HIPAA de [Data Services](../data-connection/hipaa-readiness.md#installation), que forma parte de la extensión [Data Connection](../data-connection/overview.md), ya no se capturarán los datos de evento de tienda que usa [!DNL Live Search]. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Live Search]. Consulte [configuración general](https://experienceleague.adobe.com/es/docs/commerce-admin/config/general/general#data-services) para obtener más información.
+Si es cliente de atención médica e instaló la extensión HIPAA de [Data Services](../data-connection/hipaa-readiness.md#installation), que forma parte de la extensión [Data Connection](../data-connection/overview.md), ya no se capturarán los datos de evento de tienda que usa [!DNL Live Search]. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Live Search]. Consulte [configuración general](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) para obtener más información.
 
 ## Establecer el ámbito
 
-Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) de toda la configuración de [!DNL Live Search] se ha establecido en `Default Store View`. Si su instalación de [!DNL Commerce] incluye varias vistas de tienda, establezca **Ámbito** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es) donde se aplique la configuración de faceta.
+Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de toda la configuración de [!DNL Live Search] se ha establecido en `Default Store View`. Si su instalación de [!DNL Commerce] incluye varias vistas de tienda, establezca **Ámbito** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) donde se aplique la configuración de faceta.
 
 ## Opciones de menú
 
@@ -50,7 +50,7 @@ Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admi
 
 ## Definir atributos como en los que se puede buscar
 
-Para generar resultados de alto nivel de segmentación, revise el conjunto de atributos de producto [en los que se puede buscar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=es) (`searchable=true`). Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
+Para generar resultados de alto nivel de segmentación, revise el conjunto de atributos de producto [en los que se puede buscar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`). Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
 
 Para permitir que se puedan buscar los atributos, complete los siguientes pasos:
 
@@ -60,7 +60,7 @@ Para permitir que se puedan buscar los atributos, complete los siguientes pasos:
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search] también respeta el [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=es#weighted-search) de un atributo de producto, tal como se establece en Adobe Commerce. Los atributos con un peso mayor aparecerán más arriba en los resultados de búsqueda.
+[!DNL Live Search] también respeta el [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) de un atributo de producto, tal como se establece en Adobe Commerce. Los atributos con un peso mayor aparecerán más arriba en los resultados de búsqueda.
 
 Siempre se pueden buscar los atributos siguientes:
 
@@ -69,6 +69,10 @@ Siempre se pueden buscar los atributos siguientes:
 - `categories`
 
 [Las facetas](facets.md) son atributos de producto definidos en [!DNL Live Search] para poder filtrarlos. Puede establecer cualquier atributo que se pueda filtrar como faceta en [!DNL Live Search], pero existen [límites](boundaries-limits.md) para la cantidad de facetas que puede buscar al mismo tiempo.
+
+>[!NOTE]
+>
+>Un atributo de producto sólo se puede filtrar si la configuración del atributo de producto tiene las propiedades requeridas: *Usar en la búsqueda = Sí*, *Usar en la navegación por capas de resultados de búsqueda=sí* y *Usar en la navegación por capas=Filtrable (con resultados)*. Si faltan estas propiedades, el atributo no es visible en la configuración de faceta. Para obtener instrucciones de configuración, consulte [Agregar una faceta](facets-add.md#add-a-facet).
 
 [Sinónimos](synonyms.md) son términos que puede definir para ayudar a guiar a los usuarios hacia el producto correcto. Los usuarios que buscan pantalones pueden escribir &quot;pantalones&quot; o &quot;pantalones&quot;. Puede establecer sinónimos para que estos términos de búsqueda lleven a los usuarios a los resultados de &quot;pantalones&quot;.
 
@@ -105,4 +109,4 @@ Los precios de la página Widget de Lista de Productos y de la ventana emergente
 
 ### Términos de búsqueda
 
-[!DNL Live Search] admite [redirecciones de términos de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=es) en implementaciones en las que Adobe Commerce administra el enrutamiento, como en Luma y otros temas basados en php.
+[!DNL Live Search] admite [redirecciones de términos de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) en implementaciones en las que Adobe Commerce administra el enrutamiento, como en Luma y otros temas basados en php.
