@@ -3,16 +3,16 @@ title: '[!DNL Manage the Data Export extension]'
 description: Obtenga información sobre cómo actualizar la extensión  [!DNL Data Export] y quitar o deshabilitar los servicios de exportación de datos que no son necesarios.
 role: Admin, Developer
 exl-id: 94702995-d272-47b9-9560-198eee3250a6
-source-git-commit: c7a08cabe07ec94e31e9f4c27448ee0862e62cf2
+source-git-commit: ea722d5e427e5bf536b9f2d2322f0dabb2981c77
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 # Administración de la extensión de exportación de datos SaaS
 
-La extensión [!DNL data export] para los servicios SaaS es una colección de módulos que permiten la recopilación y sincronización de datos entre Adobe Commerce y los servicios de Commerce conectados.
+La [[!DNL data export] extensión](https://github.com/magento/commerce-data-export) para los servicios SaaS es una colección de módulos que permiten la recopilación y sincronización de datos entre Adobe Commerce y los servicios de Commerce conectados.
 
 Se incluyen módulos específicos en los metapaquetes para las extensiones de servicios de Adobe Commerce, como
 como [Live Search](/help/live-search/overview.md), [Product Recommendations](/help/product-recommendations/overview.md) y [Servicio de catálogo](/help/catalog-service/overview.md). Si utiliza estos servicios, no se requiere ninguna instalación independiente para habilitar la extensión de exportación de datos.
@@ -36,7 +36,7 @@ Puede actualizar cualquiera de los módulos de exportación de datos de comercio
 1. Desde la línea de comandos, actualice el módulo mediante Composer:
 
    ```bash
-   composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
+   composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-Si la instancia de Commerce está implementada en la infraestructura de Cloud, actualice la extensión desde el directorio del proyecto de Cloud. Consulte [Actualizar una extensión](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) en la _Guía de infraestructura de Adobe Commerce en la nube_.
+Si la instancia de Commerce está implementada en la infraestructura de Cloud, actualice la extensión desde el directorio del proyecto de Cloud. Consulte [Actualizar una extensión](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) en la _Guía de infraestructura de Adobe Commerce en la nube_.
