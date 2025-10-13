@@ -2,442 +2,240 @@
 title: Configurar tu tienda
 description: Aprenda a configurar su  [!DNL Adobe Commerce Optimizer] tienda.
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 2b35e822e192bdac316379f55c3bc924d62ca008
+source-git-commit: c00cb55bd7b61d6506ee8b9b81d28118c1adde00
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
 
 # Configurar tu tienda
 
-Este tutorial proporciona instrucciones detalladas para configurar y usar [Adobe Commerce Storefront con tecnología Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es) para crear una tienda Commerce segura, escalable y de rendimiento con tecnología de datos de tu instancia de [!DNL Adobe Commerce Optimizer].
+Esta guía le explica cómo configurar una tienda para la instancia de [!DNL Adobe Commerce Optimizer] mediante los servicios de entrega de Adobe Edge. Su tienda incluye código de plantillas, contenido de muestra y compatibilidad con páginas de detalles de productos y descubrimiento de productos (búsqueda y filtrado).
 
-
->[!TIP]
->
->Realice un seguimiento rápido del proceso de configuración de la tienda mediante la herramienta Creador de sitios para configurar el repositorio de código de la tienda y el entorno de creación de documentos
->&#x200B;>automáticamente. A continuación, puede seguir estas instrucciones para comprender cómo se creó la tienda y obtener más información acerca de los componentes disponibles.
+**Tiempo estimado para finalizar:** 30-45 minutos
 
 ## Requisitos previos
 
-* Asegúrese de que tiene una cuenta de GitHub (github.com) que puede crear repositorios y que está configurada para el desarrollo local.
+* **Cuenta de GitHub** que puede crear repositorios y está configurada para el desarrollo local (github.com)
+* **[!DNL Adobe Commerce Optimizer]instancia** con datos de ejemplo y vistas de catálogo y directivas configuradas
+   * Consulte [Agregar datos de ejemplo](get-started.md#add-sample-data) para obtener instrucciones de configuración.
 
-* Obtenga información acerca de los conceptos y el flujo de trabajo para desarrollar tiendas Commerce en Adobe Edge Delivery Services revisando la [Información general](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=es) en la documentación de Adobe Commerce Storefront.
-* Configurar el entorno de desarrollo
+### Datos de instancia requeridos
 
+Antes de empezar, recopile la siguiente información de su instancia de [!DNL Adobe Commerce Optimizer]:
 
-### Configurar el entorno de desarrollo
-
-Instale Node.js y la extensión del explorador Sidekick necesaria para desarrollar y probar la tienda [!DNL Adobe Commerce Optimizer] en Edge Delivery Services.
-
-#### Instalar Node.js
-
-Instale el administrador de versiones de nodos (NVM) y la versión requerida de Node.js (22.13.1 LTS).
-
-1. Instale el administrador de versiones de nodos (NVM).
-
-   ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-   ```
-
-1. Instale Node.js y NPM. Para obtener más información, consulte [Node.js](https://nodejs.org/en/).
-
-   ```bash
-   nvm install 22
-   ```
-
-   ```bash
-   npm install -g npm
-   ```
-
-1. Compruebe la instalación.
-
-   ```bash
-   npm -v
-   ```
-
->[!TIP]
->
->Hay recursos adicionales disponibles para ampliar y personalizar su solución [!DNL Adobe Commerce Optimizer] mediante [App Builder para Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) y [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obtener información de acceso y uso, póngase en contacto con el representante de su cuenta de Adobe.
-
-#### Instalación de Sidekick
-
-Instale la extensión del explorador Sidekick para editar, previsualizar y publicar contenido en la tienda. Ver [instrucciones de instalación de Sidekick](https://www.aem.live/docs/sidekick#installation).
-
-## Crear tu tienda
-
-La tienda que crees para tu proyecto [!DNL Adobe Commerce Optimizer] usa una versión personalizada de la plantilla de Adobe Commerce en Edge Delivery Services Storefront. Las plantillas son un conjunto de archivos y carpetas que proporcionan un punto de partida para el desarrollo de tiendas. Este proceso de configuración es diferente al proceso de configuración estándar para una tienda [Adobe Commerce en Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es).
+* **ID de inquilino** (también denominado ID de instancia)
+   * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
+* **Punto final de GraphQL** para su instancia
+   * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
+* **Id. de vista de catálogo** para la vista de catálogo global
+   * Disponible en la [página de detalles del catálogo](./setup/catalog-view.md#manage-catalog-view)
+* **Configuración regional de Source** para su vista de catálogo
+   * El valor predeterminado para los datos de ejemplo es `en_US`
 
 >[!NOTE]
 >
->Este tutorial utiliza macOS, Chrome y Visual Studio Code como entorno de desarrollo. Las capturas de pantalla y las instrucciones reflejan esa configuración. Puede utilizar un sistema operativo, un explorador y un editor de código diferentes, pero la interfaz de usuario que ve y los pasos que sigue varían en consecuencia.
+>Los clientes de acceso de prueba pueden encontrar el punto final de GraphQL en el correo electrónico de bienvenida recibido cuando se creó la instancia. Las instancias de prueba vienen preconfiguradas con datos de muestra, vistas de catálogo y directivas.
 
-### Resumen de flujo de trabajo
+## Configuración de pasos
 
-Siga estos pasos para configurar una tienda para usarla con [!DNL Adobe Commerce Optimizer].
+1. **[Crea tu proyecto de tienda](#create-your-storefront-project)**-Usa la [herramienta de creador de sitios](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) para crear un nuevo proyecto de tienda con código de plantillas, contenido de muestra y un archivo de configuración.
 
-1. **[Crear un repositorio de código](#step-1-create-site-code-repository)**: cree un repositorio de GitHub a partir de la plantilla de plantillas de plantillas de Adobe Commerce + Edge Delivery Services. Incluir todas las ramas del repositorio de origen.
-1. **[Actualizar la plantilla de plantilla de tienda](#step-2-update-the-storefront-boilerplate)**: actualiza la plantilla de plantilla personalizada para conectar la carpeta de contenido a la tienda.
-1. **[Implementar cambios](#step-3-deploy-changes)**: confirma y envía la personalización de las plantillas a GitHub para aplicar los cambios.
-1. **[Agregar la aplicación CodeSync](#step-5-add-the-aem-code-sync-app)**: conecte el repositorio al servicio Edge Delivery. No conecte la aplicación de sincronización de código hasta que haya completado la personalización del código fuente y lo haya insertado en el repositorio de GitHub.
-1. **[Agregar contenido](#step-6-add-content)**: use la herramienta de clonación de contenido de demostración para crear e inicializar el contenido de la tienda en el entorno de Document Author alojado en `https://da.live`.
-1. **[Vista previa del sitio de demostración](#step-7-preview-demo-site)**: conéctese al sitio de la tienda para ver el contenido y los datos de ejemplo de la instancia de demostración [!DNL Adobe Commerce Optimizer].
-1. **[Desarrolle en su entorno local](#step-8-develop-in-your-local-environment)**-Instale las dependencias requeridas. Inicie el servidor de desarrollo local y actualice la configuración de la tienda para conectarse a la instancia de [!DNL Adobe Commerce Optimizer] que Adobe le proporcionó.
-1. **[Pasos siguientes](#next-steps)**: obtenga más información sobre cómo administrar y mostrar contenido y datos en la tienda.
+1. **[Personalizar la configuración de la tienda](#customize-the-storefront-configuration)**: actualice el archivo `config.json` en su repositorio para conectarse a su instancia de [!DNL Adobe Commerce Optimizer].
 
+1. **[Compruebe su configuración](#verify-your-setup)** (10 minutos)
+   * Previsualización del sitio de la tienda
+   * Prueba de las páginas de detalles del producto y funcionalidad de búsqueda
 
-### Paso 1: Crear repositorio de código de sitio
+## Cree su proyecto de tienda
 
-Cree un repositorio de GitHub para el código de plantillas de sitio de su tienda con la plantilla de plantillas de Edge Delivery Services + Adobe Commerce.
+La herramienta Creador de sitios crea un proyecto de tienda completo con los siguientes componentes:
 
-1. Inicie sesión en su cuenta de GitHub.
+* **Sitio**: página de aterrizaje de tienda con contenido de plantillas
+* **Código**: repositorio con archivos de origen de plantillas
+* **Contenido**: entorno de creación de documentos con archivos de contenido de sitio
+* **Configuración de Commerce**: `config.json` archivo para configuración específica de instancia
 
-1. Vaya al repositorio de GitHub [aem-boilerplate-commerce](https://github.com/hlxsites/aem-boilerplate-commerce).
+### Paso 1: Generación del proyecto
 
-1. Seleccione **Usar esta plantilla** y, a continuación, seleccione **Crear un nuevo repositorio** en el menú desplegable.
+1. Abrir la [herramienta Creador de sitios](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
-   ![[!DNL Create github repo from storefront boilerplate template]](./assets/storefront-create-github-repo.png){width="700" zoomable="yes"}
+   ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-   Se muestra la página de configuración del repositorio.
+1. Seleccione **Crear nuevo sitio (código y contenido)**.
 
-   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/storefront-configure-github-repo.png){width="700" zoomable="yes"}
+1. Complete la configuración del sitio:
 
-1. Complete el formulario de configuración con los siguientes detalles:
+   * **Nombre de organización/usuario de GitHub**: escriba su nombre de usuario u organización de GitHub
+   * **Nombre del sitio**: elige un nombre descriptivo para tu tienda
+   * **Punto final de Commerce GraphQL (opcional)**: escriba el punto final de GraphQL para su instancia de [!DNL Adobe Commerce Optimizer]
 
-   * **Plantilla de repositorio**—`hlxsites/aem-boilerplate-commerce` (predeterminada).
-   * **Propietario**: su organización o cuenta (obligatorio).
-   * **Nombre del repositorio**: Un nombre único para su nuevo repositorio (obligatorio).
-   * **Descripción**: Una breve descripción de su repositorio (opcional).
-   * **Público o privado**: Adobe recomienda público (predeterminado).
+1. Haga clic en **Crear sitio** para crear el repositorio de GitHub con el código de plantilla de tienda.
 
-1. Seleccione **Crear repositorio**.
+   Cuando se crea el repositorio, el creador del sitio actualiza y le solicita que instale la aplicación de sincronización de código.
 
-   Después de varios minutos, se abre el nuevo repositorio.
+### Paso 2: Instalar la aplicación de sincronización de código
 
-   Omita las notificaciones de solicitudes de extracción que se muestren en la interfaz de usuario de GitHub.
+1. Haga clic en **[!UICONTROL Install AEM Code Sync App]** para abrir el programa de instalación de sincronización de código en una pestaña nueva.
 
-### Paso 2: Actualizar la plantilla de la tienda
+1. Configure la aplicación de sincronización de código:
+   * Seleccione su organización de GitHub y haga clic en **[!UICONTROL Configure]**.
+   * En la interfaz de sincronización de código, haga clic en **[!UICONTROL Only select repositories]**.
+   * Haga clic en el menú **[!UICONTROL Select repositories]** y, a continuación, seleccione el repositorio de código de tienda que ha creado.
+   * Haga clic en **[!UICONTROL Save]** para registrar su repositorio.
 
-Necesita la siguiente información para actualizar el código de plantillas de tienda:
+1. Vuelva a la ventana del explorador donde está abierto el Creador del sitio y haga clic en **Crear sitio**.
 
-* **URL del repositorio de GitHub del paso 2**— `github.com/{ORG}/{SITE}`
+   El creador del sitio copia el contenido de las plantillas de tienda en el entorno de creación de documentos. Este proceso tarda de 1 a 2 minutos.
 
-   * `{ORG}` es el nombre de organización o de usuario para el repositorio
+### Paso 3: guardar los vínculos del proyecto
 
-   * `{SITE}` es su nombre de repositorio
+1. En la sección Detalles del sitio, revise los vínculos del proyecto de tienda:
 
-* **URL de carpeta de contenido del paso 1**— `https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}`
+   ![[!DNL Storefront setup complete]](./assets/storefront-setup-complete.png){width="700" zoomable="yes"}
 
-  `{YOUR_FOLDER_ID}` es el identificador de la carpeta que creó con los datos de contenido de ejemplo.
+   Use estos vínculos para administrar el código, el contenido y la configuración de la tienda.
 
-#### Vincule el repositorio al entorno de Document Author
+1. Copie y guarde estos vínculos para referencia futura: haga clic en **[!UICONTROL Copy].
 
-1. Clone el repositorio en el equipo local.
+## Configurar tu tienda
 
-   ```bash
-   git clone https://github.com/{ORG}/{SITE}.git
+Actualice la configuración de la tienda para conectarse a la instancia de [!DNL Adobe Commerce Optimizer].
+
+1. Abra el administrador de configuración mediante el vínculo guardado anteriormente:
+
+   `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+
+1. Busque la sección `cs` (servicio de catálogo) en la configuración.
+
+1. Reemplace los valores de marcador de posición por los valores de la instancia. Consulte [Requisitos previos](#prerequisites).
+
+   ```json
+   "cs": {
+      "AC-View-ID": "{catalogViewId}",
+      "AC-Environment-ID": "{tenantId}",
+      "AC-Source-Locale": "en_US"
+   }
    ```
 
-   Si encuentra errores al clonar el repositorio, consulte [Solucionar errores de clonación](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors) en la documentación de GitHub.
-
-1. Abra el repositorio en su terminal o IDE.
-
-1. Cree su archivo de configuración copiando el archivo `default-fstab.yaml` en `fstab.yaml`.
-
-   ```bash
-   cp default-fstab.yaml fstab.yaml
-   ```
-
-1. Actualice el punto de montaje en el archivo de configuración de la tienda para que apunte a la dirección URL de contenido.
-
-   1. Abra el archivo de configuración [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=es#vocabulary).
-
-      ```yaml
-      mountpoints:
-        /:
-          url: https://content.da.live/{org}/{site}/
-          type: markup
-      
-      folders:
-       /products/: /products/default
-      ```
-
-   1. Reemplace las cadenas `{ORG}` y `{SITE}` por los valores del repositorio de GitHub que creó para su código de plantillas.
-
-      Por ejemplo, el código actualizado debería tener este aspecto.
-
-      ```yaml
-      mountpoints:
-        /:
-          url: https://content.da.live/owner-name/aco-storefront/
-          type: markup
-      ```
-
-   1. Guarde el archivo.
-
-#### Configuración de la extensión de Sidekick
-
-1. Añada la configuración del proyecto para la extensión de Sidekick. Esta configuración garantiza que Sidekick esté disponible para administrar el contenido del proyecto de tienda.
+1. Guarde el archivo de configuración.
 
 >[!NOTE]
 >
->Asegúrese de que ha instalado la [extensión de Sidekick](https://www.aem.live/docs/sidekick#installation) en su explorador.
+>Los cambios de configuración pueden tardar unos minutos en propagarse. Si no ve los datos inmediatamente, espere de 2 a 3 minutos antes de solucionar el problema.
 
-1. Cree un nuevo directorio `tools/sidekick`.
+## Verifique su configuración
 
-   ```shell
-   mkdir tools/sidekick
-   ```
+Pruebe la tienda para asegurarse de que está conectada correctamente a la instancia de [!DNL Adobe Commerce Optimizer].
 
-1. Copie el archivo `demo-sidekick.json` en el directorio raíz al directorio `tools/sidekick` y cambie su nombre a `config.json`.
+### Paso 1: Ver la página principal de tu tienda
 
-   ```shell
-   cp demo-sidekick.json tools/sidekick/config.json
-   ```
+1. Vaya a la URL de vista previa activa:
 
-1. Personalice la configuración de Sidekick para su sitio.
+   `https://main--{SITE}--{ORG}.aem.live`
 
-   Desde el directorio `tools/sidekick/`, edite el archivo `config.json`.
+   Reemplace `{ORG}` y `{SITE}` por su organización de GitHub y el nombre del sitio.
 
-   +++Archivo de configuración de Sidekick
-
-   ```json
-   {
-     "project": "My Project",
-     "editUrlLabel": "Document Authoring",
-     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
-   }
-   ```
-
-1. Actualice los valores de clave `url` con los valores del repositorio de GitHub.
-
-   * Reemplace la cadena `{{ORG}}` por la organización o el nombre de usuario de su repositorio.
-
-   * Reemplace la cadena `{{SITE}}` por el nombre del repositorio.
-
-   * El sistema ha rellenado la variable `pathname`.
-
-   +++Ejemplo de archivo de configuración actualizado
-
-   Si el nombre del repositorio de GitHub es `aco-storefront` y la organización es `early-adopter`, la URL actualizada debería tener el aspecto siguiente:
-
-   ```json
-   {
-     "project": "My Project",
-     "editUrlLabel": "Document Authoring",
-     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
-   }
-   ```
-
-   +++
-
-1. Guarde el archivo.
-
-### Paso 3: Implementar cambios
-
-Para usar el código de plantilla de tienda personalizado, sobrescriba el código de la rama `main` con sus actualizaciones.
-
-1. Desde el editor o IDE, confirme y guarde los archivos actualizados.
-
-   ```bash
-   git add .
-   ```
-
-1. Compruebe que está confirmando los dos archivos actualizados.
-
-   ```bash
-   git status
-   On branch main
-   Your branch is up to date with 'origin/main'.
-   
-   Changes to be committed:
-    (use "git restore --staged <file>..." to unstage)
-        new file:   fstab1.yaml
-        modified:   tools/sidekick/config.json
-   ```
-
-1. Confirme los cambios.
-
-   ```bash
-   git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
-   ```
-
-1. Aplique los cambios.
-
-   ```bash
-   git push
-   ```
-
-### Paso 5: Añadir la aplicación de sincronización de código de AEM
-
-Conecte el repositorio al servicio de Edge Delivery agregando la aplicación GitHub de sincronización de código de AEM a su repositorio.
-
->[!IMPORTANT]
->
->No conecte la aplicación de sincronización de código hasta que haya cargado el código de plantillas actualizado en la rama principal del repositorio de GitHub.
-
-1. Abra la página de configuración [aplicación AEM Code Sync](https://github.com/apps/aem-code-sync).
-
-1. Seleccione **Configurar** y luego realice la autenticación con la **organización** o la **cuenta** que contiene el repositorio que creó.
-
-1. En el formulario, elija **Seleccionar solo repositorios** y, a continuación, seleccione el repositorio que creó.
-
-1. Seleccione **Instalar** para agregar la aplicación AEM Code Sync a su repositorio.
-
-   Debería ver un mensaje que indique que la aplicación se ha instalado correctamente.
-
-### Paso 6: Añadir contenido
-
-Cree e inicialice el contenido de la tienda en el entorno de creación de documentos alojado en `https://da.live` con la herramienta de creación de sitios. Esta herramienta importa el contenido de ejemplo en el entorno de creación de documentos y completa el proceso de vista previa y publicación de contenido para todos los documentos del contenido de ejemplo. El contenido de ejemplo incluye los diseños de página, titulares, etiquetas y otros elementos para rellenar la tienda.
-
-1. Abrir la [herramienta de creación de sitios](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
-
-1. Configure el repositorio:
-
-   * Seleccione **[!UICONTROL Use Existing Repository]**.
-   * Escriba **[!UICONTROL Organization/Username]** para el proyecto de plantillas de tienda.
-   * Escriba **[!UICONTROL Repository Name]**.
-
-1. Importe, previsualice y publique el contenido en el entorno de creación de documentos seleccionando **Crear sitio**.
-
-   ![[!DNL AEM demo content clone tool]](./assets/storefront-edit-initial-content.png){width="700" zoomable="yes"}
-
-   Una vez creado el sitio, puede utilizar los vínculos de las secciones [!UICONTROL Edit content] y [!UICONTROL View Site] para explorar la tienda de demostración.
-
-   Los vínculos principales a su contenido y sitio siguen estos formatos:
-
-   * **Carpeta de contenido raíz**— `https://da.live/#/{ORG}/{SITE}`
-   * **Vista previa del sitio**—   `https://main--{SITE}--{ORG}.aem.page/`
-   * **Producción del sitio:**— `https:/main--{SITE}--{ORG}.ae.live/`
-
-1. Abra el vínculo de la carpeta de contenido raíz para ver el contenido.
-
-   ![[!DNL Storefront Document Author environment]](./assets/storefront-document-author-environment.png){width="700" zoomable="yes"}
-
-   >[!TIP]
-   >
-   >En la navegación lateral, usa los vínculos [!UICONTROL **Aprender**] y [!UICONTROL **Descubrir**] para acceder a recursos de aprendizaje y administrar el sitio y el contenido del mismo.
-
-### Paso 7: Previsualizar el sitio de demostración
-
-Compruebe que el contenido de la muestra y los datos de la instancia de demostración de Adobe Commerce Optimizer se muestran correctamente.
-
-* **El contenido de muestra** se proporciona desde la carpeta de contenido en el entorno de Document Author. Incluye los diseños de página, los titulares y las etiquetas del sitio.
-* **Los datos de muestra** se han obtenido desde la instancia de demostración [!DNL Adobe Commerce Optimizer]. Los datos incluyen datos de productos con atributos de productos, imágenes, descripciones de productos y precios rellenados según los valores de encabezado especificados en el archivo de configuración de tienda, `config.json`.
-
-#### Conéctese al sitio para ver contenido y datos de ejemplo
-
-1. Para ver el sitio, vaya a `https://main--{SITE}--{ORG}.aem.live`.
-
-   Reemplace `{ORG}` y `{SITE}` por la organización y el nombre de su repositorio de plantillas.
+1. **Criterios de éxito**: debería ver la página principal de la tienda con contenido de plantillas.
 
    ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
-   Si la página devuelve un error 404, compruebe lo siguiente:
+### Paso 2: Probar las páginas de detalles del producto
 
-   * [El punto de montaje del archivo `fstab.yaml` señala a la dirección URL de contenido correcta](#link-the-repository-to-the-document-author-environment): `https://content.da.live/{ORG}/{SITE}/`
-   * [Ha configurado la aplicación de sincronización de código para conectarse a su repositorio de GitHub](#step-5%3A-add-the-aem-code-sync-app).
-   * [Ha publicado el contenido en el entorno de Document Author mediante la herramienta de clonación de contenido de demostración](#step-6%3A-add-content-documents-for-your-storefront).
+Consulte la página de detalles predeterminada del producto para comprobar que los datos del producto se cargan correctamente.
 
+1. Vaya a una página de producto de ejemplo:
+   `https://main--{SITE}--{ORG}.aem.live/products/placeholder/{sku}`
 
-1. Vea los datos de catálogo de muestra procedentes de la instancia predeterminada de Commerce Optimizer.
+   Utilice cualquier SKU de los datos de ejemplo:
+   `https://main--{SITE}--{ORG}.aem.live/products/placeholder/aur-flu-tir-std-2017`
 
-   1. En el encabezado de la tienda, haga clic en la lupa para buscar `tires`.
+   Para la tienda predeterminada, puede usar el valor `placeholder` en la ruta para ver el producto. Cuando empiece a personalizar la tienda, puede personalizar el código de la tienda para establecer la ruta a la página de detalles del producto en función de las rutas del producto definidas en el catálogo.
 
-      ![[!DNL View product list page]](./assets/storefront-site-with-aco-data.png){width="675" zoomable="yes"}
+   >[!TIP]
+   >
+   >Ver los SKU disponibles de la página [Sincronización de datos](./setup/data-sync.md) en tu instancia de [!DNL Adobe Commerce Optimizer].
 
-   1. Pulse **Intro** para ver la página de resultados de la búsqueda.
+1. **Criterios de éxito**: La página debería mostrar:
+   * Nombre, descripción y precios del producto
+   * Imágenes de productos
+   * Funcionalidad Añadir al carro
+   * Datos recuperados de su instancia de [!DNL Adobe Commerce Optimizer]
 
-      ![[!DNL View search results page]](./assets/storefront-with-aco-search-results-page.png){width="675" zoomable="yes"}
+   ![[!DNL Default product detail page showing a product from the sample data]](./assets/storefront-boilerplate-product-page.png){width="700" zoomable="yes"}
 
-      Los componentes de página de resultados de búsqueda se definen en el documento de contenido `search`. Los datos de los resultados de búsqueda se rellenan según la configuración de la tienda en `config.json`.
+### Paso 3: Probar la funcionalidad de búsqueda predeterminada
 
-   1. Vea la página de detalles del producto seleccionando cualquier producto de neumático en la página.
+Pruebe las funciones de producto predeterminadas, incluidas la búsqueda y el filtrado.
 
-      ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
+1. En la página de inicio de la tienda, haga clic en el icono de lupa del encabezado.
 
-      Los componentes de la página de detalles del producto están definidos por el documento de contenido `default` en la carpeta `product`.
+1. Escriba la cadena de búsqueda `tires` y presione **Intro**.
 
-### Paso 8: Desarrollo en su entorno local
+1. **Criterios de éxito**: debería ver:
+   * Página de resultados de búsqueda con productos de neumáticos
+   * Opciones de filtrado en la barra lateral
+   * Listados de productos con imágenes y precios
 
-En esta sección, se actualiza la configuración de la tienda desde el entorno de desarrollo local.
+   ![[!DNL View search results page]](./assets/storefront-with-aco-search-results-page.png){width="675" zoomable="yes"}
 
-* Actualice la configuración de la tienda para conectarse al extremo de GraphQL para la instancia [!DNL Adobe Commerce Optimizer] que Adobe ha aprovisionado para usted.
-* Actualice los valores del encabezado para recuperar datos de la instancia.
+1. Haga clic en cualquier producto de neumático para ver su página de detalles.
 
-#### Iniciar desarrollo local
+   ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
-1. En el IDE, cierre la rama principal y restablézcala a la última confirmación de la rama remota.
+## Resolución de problemas
 
-   ```bash
-   git checkout main
-   git reset --hard origin/main
-   ```
+Si se producen problemas durante la configuración, utilice la consola del inspector de páginas web para comprobar si hay errores. Además, intente borrar la caché del explorador o utilice un explorador diferente.
 
-1. Instale las dependencias necesarias.
+Siga estas directrices para comprobar problemas comunes:
 
-   ```bash
-   npm install
-   ```
+### Problemas comunes
 
-1. Inicie el servidor de desarrollo local.
+| Problema | Síntomas | Solución |
+|-------|----------|----------|
+| **Error en la instalación de sincronización de código** | No se puede completar la configuración de sincronización de código | <ul><li>Asegúrese de que tiene acceso de administrador a su organización de GitHub.</li><li>Intente utilizar un repositorio personal en lugar de una organización.</li><li>Compruebe los permisos de GitHub e inténtelo de nuevo.</li></ul> |
+| **El sitio no se carga** | 404 o errores de conexión | <ul><li>Compruebe el formato de la dirección URL del sitio: `https://main--{SITE}--{ORG}.aem.live`</li><li>Compruebe que la aplicación de sincronización de código esté correctamente instalada.</li><li>Asegúrese de que el repositorio sea público o esté configurado correctamente.</li></ul> |
+| **No se mostraron datos del producto** | Las páginas de producto muestran marcadores de posición o errores | <ul><li>Compruebe sus valores de configuración en `config.json`</li><li>En la instancia [!DNL Adobe Commerce Optimizer], compruebe la página Sincronización de datos para comprobar que se han cargado los productos de ejemplo. Si no hay productos disponibles, vuelva a cargar los datos de ejemplo o agregue un producto mediante la [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Espere unos minutos para que los cambios de configuración se propaguen.</li><li>Intente recuperar los detalles del producto mediante la consulta de [productos](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) del servicio de comercialización utilizando los mismos encabezados configurados en el archivo `config.json`. Si puede recuperar los datos, es probable que haya un problema con la configuración de la vista del catálogo o un error de índice.</li></ul> |
+| **La búsqueda no devuelve resultados** | Página de resultados de búsqueda vacía | <ul><li>Compruebe que puede recuperar los resultados de la búsqueda de productos usando la consulta [productSearch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) de los servicios de comercialización con los mismos encabezados configurados en el archivo `config.json`. Si puede recuperar los datos, es probable que haya un problema con la configuración de la vista del catálogo o un error de índice.</li><li>Confirme que el identificador de vista de catálogo del archivo `config.json` coincide con el identificador de vista de catálogo de [!DNL Adobe Commerce Optimizer].</li><li>En Adobe Commerce Optimizer, compruebe la configuración de las directivas, la configuración regional y los libros de precios que utilizó en la configuración del encabezado de tienda.</li><li>Compruebe que la configuración de [metadatos de atributo](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) esté establecida correctamente para la búsqueda.</li></ul> |
 
-   ```bash
-   npm start
-   ```
+### Lista de comprobación de validación
 
-   La primera página de la tienda de plantillas debe estar visible en el explorador en `http://localhost:3000`.
+Antes de continuar con los siguientes pasos, verifica lo siguiente para asegurarte de que tu tienda funcione correctamente:
 
-   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Los valores de configuración coinciden con la configuración de la instancia<br>
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) La página principal de la tienda se carga sin errores<br>
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Al menos una página de detalles del producto muestra información completa<br>
+![La funcionalidad de búsqueda Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) devuelve resultados relevantes<br>
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Las imágenes del producto se están cargando correctamente<br>
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Los valores de configuración coinciden con la configuración de la instancia<br>
 
+### Obtener ayuda
 
-#### Actualizar la configuración de la tienda
+Si los problemas persisten:
 
-Actualice el archivo de configuración de la tienda y previsualice los cambios en el entorno de desarrollo local.
+* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Consulte la [guía para desarrolladores de Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)
+* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
-1. En su IDE, actualice la configuración de la tienda para conectarse a la instancia de [!DNL Adobe Commerce Optimizer] que Adobe ha aprovisionado para usted.
+## Pasos siguientes
 
-   1. Abra el archivo `config.json`.
+Después de configurar y comprobar la tienda, puedes:
 
-   1. Actualice los siguientes valores mediante el extremo de la instancia [!DNL Adobe Commerce Optimizer]:
+1. **[Instalar Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)**: extensión de explorador para editar, previsualizar y publicar contenido directamente desde el sitio web
 
-      * **`commerce-endpoint`**: reemplace el valor existente por su dirección URL de extremo.
+2. **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**: crea un entorno local para personalizar el código y el contenido de tu tienda
 
-        ```json
-        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql"
-        ```
+### Aprender y explorar
 
-      * **`ac-environment-id`**: reemplace el valor existente por el ID de inquilino de la dirección URL de extremo.
+* **[Completar el caso de uso de extremo a extremo](./use-case/admin-use-case.md)**: obtenga más información acerca de la configuración de la tienda y la administración del catálogo mediante [!DNL Adobe Commerce Optimizer]
 
-        ```json
-        "ac-environment-id": "{tenantId}"
-        ```
+* **[Explorar la personalización de tiendas](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**: aprende las opciones avanzadas de configuración
 
-   1. Guarde el archivo.
-
-      Si la vista previa local funciona correctamente, las actualizaciones se aplican a la tienda local.
-
-1. Compruebe el sitio para ver los resultados del cambio de configuración.
-
-   1. En el explorador, vaya a `http://localhost:3000` y actualice la página.
-
-   1. En el encabezado de la tienda, haga clic en la lupa para buscar `tires`.
-
-      ![Buscar neumáticos](./assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
-
-   1. Pulse **Intro** para mostrar la página de resultados de la búsqueda.
-
-      ![Resultados de búsqueda vacíos con valores de encabezado no válidos](./assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
-
-      La búsqueda no devuelve ningún resultado porque los valores del encabezado del archivo de configuración de la tienda se basan en la instancia predeterminada. Ahora que la configuración apunta a la instancia [!DNL Adobe Commerce Optimizer] aprovisionada por usted, esos valores no son válidos.
-
-### Pasos siguientes
-
-Consulte el [caso de uso de extremo a extremo del administrador de tiendas y catálogos](./use-case/admin-use-case.md) para obtener más información sobre cómo administrar y mostrar contenido y datos en la tienda.
+* **[Use complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**: agregue componentes creados previamente para mejorar su experiencia con la tienda
 
 >[!MORELIKETHIS]
 >
-> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
+> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
