@@ -1378,7 +1378,7 @@ A diferencia de los eventos de tienda que utilizan ECID para identificar y vincu
 
 1. Crear un elemento de mapa de identidad.
 
-   ![Mapa de identidad de la oficina ](assets/custom-code-backoffice.png)
+   ![Mapa de identidad de la oficina &#x200B;](assets/custom-code-backoffice.png)
    _Crear mapa de identidad de back office_
 
 1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
@@ -1411,7 +1411,7 @@ return IdentityMap;
 
 ## Configuración del consentimiento
 
-Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de manera predeterminada. La exclusión se administra mediante la cookie [`mg_dnt` ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es). Puede seguir los pasos descritos aquí si elige usar `mg_dnt` para administrar el consentimiento. La [documentación de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=es) tiene varias opciones adicionales para administrar el consentimiento.
+Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de manera predeterminada. La exclusión se administra mediante la cookie [`mg_dnt` &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es). Puede seguir los pasos descritos aquí si elige usar `mg_dnt` para administrar el consentimiento. La [documentación de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=es) tiene varias opciones adicionales para administrar el consentimiento.
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%do not track cookie%`) para la cookie `mg_dnt`:
 

@@ -78,7 +78,7 @@ Si desea introducir los datos de evento de perfil del cliente en Experience Plat
 
 ### Enviar datos de eventos de perfil de series temporales a Experience Platform mediante el conjunto de datos existente
 
-Si desea agregar datos de evento de perfil del lado del servidor [de la serie temporal ](events-backoffice.md#customer-profile-events-server-side) a su secuencia de datos de Commerce existente, agregue el grupo de campos `Demographic Details` al esquema. El esquema ahora contiene los siguientes grupos de campos específicos de Commerce:
+Si desea agregar datos de evento de perfil del lado del servidor [de la serie temporal &#x200B;](events-backoffice.md#customer-profile-events-server-side) a su secuencia de datos de Commerce existente, agregue el grupo de campos `Demographic Details` al esquema. El esquema ahora contiene los siguientes grupos de campos específicos de Commerce:
 
 - Búsqueda del sitio
 - Visite la página web

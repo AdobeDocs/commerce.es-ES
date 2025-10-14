@@ -56,4 +56,4 @@ Puede realizar ambas acciones utilizando los SDK disponibles como se describe en
 
 1. Use [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) para recuperar las unidades de recomendación en la tienda. SDK devuelve los datos de producto necesarios para procesar las unidades de recomendación en una página.
 
-1. Aprenda a utilizar la consulta de GraphQL [`recommendations` ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.
+1. Aprenda a utilizar la consulta de GraphQL [`recommendations` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.

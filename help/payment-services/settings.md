@@ -244,7 +244,7 @@ También puede configurar las opciones _[!UICONTROL Button style]_&#x200B;de los
 
 1. [Vaciar la caché](#flush-the-cache).
 
-Puede configurar el estilo del botón de pago [ en la configuración heredada en Admin](configure-admin.md#configure-paypal-smart-buttons) o aquí en [!DNL Payment Services Home]. Consulta la [Guía de estilo para los botones de PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obtener más información sobre cómo aplicar estilo a los botones de pago de PayPal.
+Puede configurar el estilo del botón de pago [&#x200B; en la configuración heredada en Admin](configure-admin.md#configure-paypal-smart-buttons) o aquí en [!DNL Payment Services Home]. Consulta la [Guía de estilo para los botones de PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obtener más información sobre cómo aplicar estilo a los botones de pago de PayPal.
 
 #### Opciones de configuración
 
