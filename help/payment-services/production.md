@@ -131,7 +131,7 @@ Para permitir que tus tiendas se activen, solicita el derecho de pagos de Adobe 
 1. Complete el formulario.
 1. Un miembro del equipo de ventas se pondrá en contacto con usted.
 
-También puede solicitar el derecho de pago a Adobe en [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+También puede solicitar el derecho de pago a Adobe en [business.adobe.com](https://business.adobe.com/es/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
