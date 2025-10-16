@@ -1,10 +1,11 @@
 ---
 title: Tipos de recomendación
 description: Obtenga información acerca de las recomendaciones que puede implementar en varias páginas del sitio.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
+source-git-commit: 3fa6816c539494ce2cc67a9e3c601b8d3048f5d9
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -18,13 +19,43 @@ Adobe Commerce Optimizer proporciona un gran conjunto de recomendaciones que pue
 - [Popularidad](#popularity)
 - [De alto rendimiento](#highperf)
 
+Como práctica recomendada, Adobe recomienda las siguientes directrices al utilizar Recommendations:
+
+- Diversifique los tipos de recomendaciones. Los clientes empiezan a ignorar las recomendaciones si sugieren los mismos productos una y otra vez.
+
+- No implemente las mismas recomendaciones en la página del carro de compras y en la página de confirmación de pedidos. Considere utilizar `Most Added to Cart` para la página del carro de compras y `Bought This, Bought That` para la página de confirmación de pedido.
+
+- Mantenga su sitio ordenado. No implemente más de tres unidades de recomendación en la misma página.
+
+- Si su tienda vende ropa, la recomendación `More like this` puede sugerir productos específicos del sexo que no coincidan con el sexo del producto que se está viendo. Considere utilizar este tipo de recomendación solo para categorías que no sean de ropa.
+
 >[!NOTE]
 >
->Para obtener más información acerca de los eventos descritos en este artículo, vea [events](../../setup/events/overview.md).
+>Para obtener más información sobre los eventos descritos en este artículo, consulte [eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) en la documentación para desarrolladores.
+
+## Requisitos de datos y comportamiento
+
+Recomendaciones de productos es un sistema basado en datos que se basa en los datos de comportamiento recopilados de su tienda. La calidad y la cantidad de las recomendaciones dependen de la cantidad de datos de eventos disponibles.
+
+>[!IMPORTANT]
+>
+>La mayoría de los tipos de recomendación requieren datos de comportamiento suficientes (como vistas de producto, acciones de complemento al carro de compras y compras) para generar resultados significativos. El sistema suele necesitar varios días de actividad activa del comprador para crear recomendaciones precisas. Consulte [indicadores de preparación](create.md#readiness-indicators) para obtener información sobre cómo el tráfico del sitio ayuda a rellenar los distintos tipos de recomendaciones.
+
+### Qué sucede si los datos son insuficientes
+
+Cuando no hay suficientes datos de evento para generar recomendaciones, el sistema puede:
+
+- Devolver resultados vacíos para la unidad de recomendación.
+- Déclencheur [recomendaciones de copia de seguridad](../../setup/events/overview.md#backup-recommendations), como mostrar `Most viewed` productos cuando las recomendaciones personalizadas aún no están disponibles.
+- Mostrar menos productos que [configurados](create.md) en la unidad de recomendación.
 
 ## Personalizado {#personalized}
 
 Estos tipos de recomendación recomiendan productos basados en el historial de comportamiento del comprador específico en el sitio. Por ejemplo, si un comprador ya ha buscado una chaqueta o ha comprado una en su sitio web, estas recomendaciones esencialmente recogen lo que dejaron y recomiendan otras chaquetas o productos similares.
+
+>[!NOTE]
+>
+>Las recomendaciones personalizadas requieren que los compradores tengan un historial de comportamiento establecido. Los nuevos visitantes o compradores sin un historial de interacción suficiente verán [recomendaciones de copia de seguridad](../../setup/events/overview.md#backup-recommendations), como los productos más vistos, hasta que generen suficientes señales de comportamiento en el sitio.
 
 | Tipo | Descripción |
 |---|---|
@@ -38,6 +69,8 @@ Estos tipos de recomendación están orientados a la prueba social para ayudar a
 >[!NOTE]
 >
 >Los tipos de recomendación &quot;visto esto, visto aquello&quot;, &quot;visto esto, comprado aquello&quot; y &quot;comprado esto, comprado aquello&quot; no usan una métrica de ocurrencia simple, sino un algoritmo de filtrado colaborativo más sofisticado que busca *similitudes interesantes* que no se desvíen hacia productos populares. Los datos utilizados para informar a estos tipos de recomendaciones se basan en el comportamiento agregado del comprador derivado de varias sesiones del sitio. Los datos no se basan en el comportamiento del comprador derivado de una sola incidencia en la sesión en el sitio. Estos tipos de recomendación ayudan a los compradores a encontrar aquellos productos adyacentes que podrían no ser obvios de emparejar con el producto que se está viendo en ese momento.
+>
+>Estos tipos de recomendación requieren datos de interacción interproductos sustanciales para identificar correlaciones significativas. Las tiendas con una diversidad de catálogos de productos limitada o poco tráfico pueden ver menos recomendaciones hasta que surjan patrones de comportamiento suficientes.
 
 | Tipo | Descripción |
 |---|---|
@@ -50,6 +83,10 @@ Estos tipos de recomendación están orientados a la prueba social para ayudar a
 
 Estos tipos de recomendación recomiendan productos que son los más populares o los que han sido tendencia en los últimos siete días.
 
+>[!NOTE]
+>
+>Las recomendaciones basadas en popularidad requieren datos de evento suficientes de tu tienda. Si su tienda es nueva o tiene poco tráfico, estos tipos de recomendación pueden devolver resultados limitados o nulos hasta que se hayan recopilado los datos de comportamiento adecuados. Supervise su [indicador de preparación de datos](../../manage-results/recommendation-performance.md) para garantizar un rendimiento óptimo.
+
 | Tipo | Descripción |
 |---|---|
 | Más visitados | Recomienda los productos que más se vieron contando la cantidad de sesiones en las que se produjo una acción de visualización en los últimos siete días.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
@@ -61,9 +98,14 @@ Estos tipos de recomendación recomiendan productos que son los más populares o
 
 Estos tipos de recomendación recomiendan productos de mayor rendimiento según criterios de éxito como las tasas de conversión o de complementos al carro de compras.
 
+>[!NOTE]
+>
+>Los tipos de recomendación de alto rendimiento dependen de los datos de conversión (compras y acciones de complemento al carro de compras). Es posible que los nuevos almacenes o las tiendas con volúmenes de conversión bajos tengan que recopilar datos durante 7-14 días antes de que estas recomendaciones entren en vigor.
+
 | Tipo | Descripción |
 |---|---|
 | Ver para adquirir la conversión | Recomienda productos con la tasa de conversión de vista a compra más alta. De todas las sesiones de compradores que registraron una vista de producto, ¿cuál es la proporción que finalmente registró una compra por parte del comprador?<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> -Principales vendedores<br/>- Productos populares<br/>- Es posible que esté interesado en |
 | Ver conversión al carro de compras | Recomienda productos con la mayor tasa de conversión de vista a carro. De todas las sesiones de compradores que registraron una vista de producto, ¿cuál es la proporción que finalmente registró un anuncio al carro de compras del comprador?<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Principales vendedores<br/>- Productos populares<br/>- Es posible que esté interesado en |
 | Más comprados | A menudo denominado &quot;Principales vendedores&quot;, este tipo de recomendación cuenta el número de sesiones en las que se produjo una acción de pedido en los últimos siete días. Este tipo de recomendación se puede utilizar en todas las páginas.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
+| Más añadidos al carro | Recomienda los productos que los compradores añaden con mayor frecuencia a los carros de compras en los últimos siete días. Este tipo de recomendación se puede utilizar en todas las páginas.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
 | Más añadidos al carro | Recomienda los productos que los compradores añaden con mayor frecuencia a los carros de compras en los últimos siete días. Este tipo de recomendación se puede utilizar en todas las páginas.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
