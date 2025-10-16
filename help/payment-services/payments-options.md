@@ -3,9 +3,9 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Cuando [!DNL Fastlane] está habilitado, la opción [!UICONTROL Credit Card Fiel
 
 >[!NOTE]
 >
-> Actualmente, Fastlane solo es compatible con comerciantes estadounidenses; por lo tanto, [!UICONTROL 3D Secure authentication] no es compatible actualmente.
+> En las instancias de zona protegida, las transacciones de carril rápido no muestran la dirección de envío en la vista Actividad de transacción.
 
 Consulte el tema [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} para obtener más información.
 
@@ -149,14 +149,14 @@ Para **capturar pagos con _solo_ botones de pago de PayPal (_no_ la opción de p
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
 1. [Configura los botones de pago de PayPal que desees](configure-admin.md#payment-buttons) en Configuración.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
 
 Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pago de PayPal**:
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
 1. [Configurar los botones de pago de PayPal](configure-admin.md#payment-buttons) deseados.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desactiva _1&rbrace; la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_&#x200B;cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=es#payments)
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactiva _1} la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opciones de desprotección
 

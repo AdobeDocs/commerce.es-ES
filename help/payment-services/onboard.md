@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Este diagrama de flujo muestra el proceso de incorporación de la zona protegida
 1. [Configura el servicio de zona protegida](sandbox.md#enable-sandbox-testing) (o, alternativamente, continúa con [habilitar pagos activos](sandbox.md#enable-live-payments) si has probado la funcionalidad en otro entorno) con una cuenta de procesamiento de pagos PayPal de prueba.
 1. Probar pagos en un entorno [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/es/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Producción]
 
@@ -83,7 +83,7 @@ Este diagrama de flujo muestra los pasos de la zona protegida necesarios para in
 1. [Configura el servicio de zona protegida](sandbox.md#enable-sandbox-testing) (o, alternativamente, continúa con [habilitar pagos activos](sandbox.md#enable-live-payments) si has probado la funcionalidad en otro entorno) con una cuenta de procesamiento de pagos PayPal de prueba.
 1. Probar pagos en un entorno [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/es/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Producción]
 
@@ -110,7 +110,8 @@ Este diagrama de flujo muestra el proceso general para habilitar [!DNL Payment S
 
 >[!MORELIKETHIS]
 >
-> * [Solucionar problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=es)
-> * [Cuenta de zona protegida de PayPal no verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=es)
-> * [Datos de informe [!DNL Payment Services] aplazados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=es)
-> * [La tarjeta de crédito de prueba falla con PayPal al procesar pagos en un entorno limitado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=es)
+> * [Solucionar problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+> * [Cuenta de zona protegida de PayPal no verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+> * [Datos de informe [!DNL Payment Services] aplazados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+> * [La tarjeta de crédito de prueba falla con PayPal al procesar pagos en un entorno limitado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+> * [Deshabilitar la [!DNL Payment Services] extensión](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
