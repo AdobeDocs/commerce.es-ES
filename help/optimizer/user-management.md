@@ -1,11 +1,11 @@
 ---
-title: Administración de usuarios
+title: Usuario y Identity Management
 description: Obtenga información sobre cómo crear y administrar usuarios, y asignar funciones de usuario para  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
-source-git-commit: 36a953d4fb0e1e14c7cb88a80f3b59d6fe8eb49e
+source-git-commit: b88406169191cb9d4f0d2b5ef113703f5afcd589
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ Puede asignar usuarios a cualquiera de las siguientes funciones:
 
 - **Usuario**: los usuarios tienen acceso a la interfaz de usuario de [!DNL Adobe Commerce Optimizer] para ver y administrar vistas de catálogo y reglas de comercialización, así como para realizar un seguimiento de las métricas de rendimiento.
 
-- [**Desarrollador**](https://helpx.adobe.com/es/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}— Los desarrolladores tienen permisos de usuario y acceso a Adobe Developer Console. Esto significa que pueden crear proyectos y configurar credenciales para utilizar herramientas para desarrolladores como las API y SDK de [!DNL Adobe Commerce Optimizer], así como herramientas de extensibilidad de Adobe como App Builder y API Mesh.
+- [**Desarrollador**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}— Los desarrolladores tienen permisos de usuario y acceso a Adobe Developer Console. Esto significa que pueden crear proyectos y configurar credenciales para utilizar herramientas para desarrolladores como las API y SDK de [!DNL Adobe Commerce Optimizer], así como herramientas de extensibilidad de Adobe como App Builder y API Mesh.
 
 - **Administrador** - Existen tres tipos diferentes de roles de administrador:
-   - [Administradores del sistema](https://helpx.adobe.com/es/enterprise/using/admin-roles.html){target="_blank"}: el administrador del sistema tiene acceso a todos los productos y perfiles de producto de la organización a través de Adobe Admin Console.
+   - [Administradores del sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"}: el administrador del sistema tiene acceso a todos los productos y perfiles de producto de la organización a través de Adobe Admin Console.
    - [Administradores de productos](#add-a-product-admin): los administradores de productos pueden [administrar usuarios, roles y permisos para el producto](#add-users-and-admins) en [!DNL Adobe Admin Console].
    - [Administradores de perfil de producto](#add-users-developers-and-product-profile-admins): los administradores de perfil de producto pueden administrar usuarios para el producto en [!DNL Adobe Admin Console].
 
@@ -143,6 +143,9 @@ Para agregar desarrolladores y administradores de perfiles de producto, repita e
 
 Puede agregar varios usuarios de forma más eficaz mediante uno de los métodos siguientes:
 
-- Use la función **Agregar usuarios mediante CSV** en Adobe Admin Console para realizar una [carga CSV en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html){target="_blank"}.
-- Agregue varios usuarios a una función creando un [grupo de usuarios](https://helpx.adobe.com/es/enterprise/using/user-groups.html){target="_blank"}. A continuación, agregue el producto [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] al grupo de usuarios.
+- Use la función **Agregar usuarios mediante CSV** en Adobe Admin Console para realizar una [carga CSV en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+- Agregue varios usuarios a una función creando un [grupo de usuarios](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. A continuación, agregue el producto [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] al grupo de usuarios.
 
+## Administración de identidades y configuración de inicio de sesión único
+
+{{ims-identity-and-sso-config}}

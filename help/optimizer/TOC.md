@@ -4,9 +4,9 @@ user-guide-description: Documentación y recursos para  [!DNL Adobe Commerce Opt
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
+source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 - [¿Qué es Adobe Commerce Optimizer?](overview.md)
 - [Primeros pasos](get-started.md)
-- [Administración de usuarios](user-management.md)
+- [Administración de usuarios e identidades](user-management.md)
 - [Responsabilidad compartida](shared-responsibility.md)
 - [Límites y limitaciones](boundaries-limits.md)
 - [Notas de la versión](release-notes.md)
@@ -57,7 +57,7 @@ ht-degree: 10%
 - [Tienda](storefront.md)
 - [Configuración](settings.md)
 - Caso de uso {#use-case}
-   - [Caso de uso completo del administrador de catálogos y tiendas](./use-case/admin-use-case.md)
+   - [Caso de uso completo de administración de catálogos y tiendas](./use-case/admin-use-case.md)
 - Recursos para desarrolladores {#developer}
    - [Conector de Salesforce Commerce](./developer/salesforce-connector.md)
    - [Referencia de API de REST de ingesta de datos](https://developer.adobe.com/commerce/services/reference/rest/)
