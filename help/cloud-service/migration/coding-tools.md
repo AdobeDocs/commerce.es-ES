@@ -1,13 +1,13 @@
 ---
 title: Herramientas de codificación de IA para extensiones
 description: Aprenda a utilizar las herramientas de IA para crear extensiones de Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Architect
 hide: true
 hidefromtoc: true
-source-git-commit: e032571ba0dd8a2f71813f9e3114afa3f7d617bf
+source-git-commit: 4ee3a547aa292f3e52cf424e368c9fba12d3e4e0
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ El uso de las herramientas de codificación de IA ofrece las siguientes ventajas
 
 ## Requisitos previos
 
-* [Cursor](https://cursor.com/download)
+* Un agente de codificación, como [Cursor](https://cursor.com/download)&#x200B;(recomendado), [Copiloto de Github](https://github.com/features/copilot), [CLI de Google Gemini](https://github.com/google-gemini/gemini-cli) o [Código Claude](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): versión LTS
 * Administrador de paquetes: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) o [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): para la clonación del repositorio y el control de versiones
@@ -68,6 +68,16 @@ El proceso de instalación le pedirá las opciones de configuración. Para la ub
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
+```
+
+Al seleccionar el agente de codificación, Adobe recomienda seleccionar `Cursor` para obtener la mejor experiencia de desarrollo:
+
+```terminal
+? Which coding agent would you like to use?
+❯ Cursor
+  Copilot
+  Gemini CLI
+  Claude Code
 ```
 
 Al seleccionar el administrador de paquetes, Adobe recomienda usar `npm` para mantener la coherencia:
@@ -164,7 +174,7 @@ Consulte los siguientes recursos para empezar:
 
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicaciones de ejemplo de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por qué debería utilizar estos recursos
