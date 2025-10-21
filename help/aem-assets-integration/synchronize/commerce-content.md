@@ -3,9 +3,9 @@ title: Mantener un contenido preciso y relevante
 description: Una plataforma de comercio electrónico es uno de los canales de participación más cruciales. Garantizar actualizaciones sin problemas en el sistema de administración de recursos garantiza que las tiendas de comercio siempre muestren la información de producto más actualizada.
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Al desvincular la creación de contenido de la administración de catálogos, la
 * Las actualizaciones de productos siguen siendo rápidas porque la creación de recursos no retrasa los cambios del catálogo, lo que permite una mayor agilidad en la gestión de nuevos productos.
 
 * La automatización mejora la eficacia y la precisión, reduciendo las discrepancias entre los datos del producto y el contenido asociado.
+
+>[!NOTE]
+>
+> Las importaciones de productos CSV en PaaS y SaaS no almacenan en déclencheur los eventos de actualización. Utilice la API para importar y actualizar catálogos.
 
 ## Cambios del ciclo vital de AEM Assets
 
