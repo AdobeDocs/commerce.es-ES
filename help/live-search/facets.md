@@ -2,16 +2,16 @@
 title: Facetas
 description: Las facetas de [!DNL Live Search] utilizan varias dimensiones de valores de atributo como criterios de búsqueda.
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 269f68868f5df14b1ca3709c01f6c17e6775df05
+source-git-commit: 86484d49aa4b79bfe64455dba18b84bcd9073736
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
 # Facetas
 
-Las facetas son un método de filtrado de alto rendimiento que utiliza varias dimensiones de valores de atributo como criterios de búsqueda. La búsqueda con facetas es similar, pero considerablemente &quot;más inteligente&quot; que la navegación con capas estándar [y &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=es). La lista de filtros disponibles está determinada por los [atributos filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=es#filterable-attributes) de los productos devueltos en los resultados de búsqueda.
+Las facetas son un método de filtrado de alto rendimiento que utiliza varias dimensiones de valores de atributo como criterios de búsqueda. La búsqueda con facetas es similar, pero considerablemente &quot;más inteligente&quot; que la navegación con capas estándar [y ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). La lista de filtros disponibles está determinada por los [atributos filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de los productos devueltos en los resultados de búsqueda.
 
 [!DNL Live Search] usa la consulta `productSearch`, que devuelve facetas y otros datos específicos de [!DNL Live Search]. Consulte [`productSearch` consulta](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) en la documentación para desarrolladores para ver ejemplos de código.
 
@@ -37,8 +37,8 @@ Si tiene un gran número de atributos con los que lidiar, considere la posibilid
 
 | Configuración | Descripción |
 |--- |--- |
-| [Configuración de visualización de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=es) | Anclaje - `Yes` |
-| [Propiedades del atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=es) | [Tipo de entrada de catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=es) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
+| [Configuración de visualización de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anclaje - `Yes` |
+| [Propiedades del atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de entrada de catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
 | Propiedades de tienda de atributos | Usar en la navegación por capas de los resultados de búsqueda - `Yes` |
 
 ## Agregación de facetas
@@ -48,51 +48,3 @@ La agregación de facetas se realiza de la siguiente manera: si la tienda tiene 
 * Agregación `categories`: agrega `categories` y, a continuación, aplica los filtros `color` y `price`, pero no el filtro `categories`.
 * Agregación `color`: agrega `color` y, a continuación, aplica los filtros `price` y `categories`, pero no el filtro `color`.
 * Agregación `price`: agrega `price` y, a continuación, aplica los filtros `color` y `categories`, pero no el filtro `price`.
-
-## Valores de atributo predeterminados
-
-Los atributos de producto siguientes tienen [propiedades de tienda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=es) que usa [!DNL Live Search] y que están habilitadas de manera predeterminada.
-
-| Propiedad | Propiedad Storefront | Atributo |
-|---|---|---|
-| Ordenable | Se utiliza para ordenar en la lista de productos | `price` |
-| Buscable | Uso en la búsqueda | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | Uso en la navegación por capas: filtrable (con resultados) | `price`<br />`visibility`<br />`category_name` |
-
-## Propiedades de atributo predeterminadas que no son del sistema
-
-En la tabla siguiente se muestran las propiedades de búsqueda y filtrado predeterminadas de los atributos que no son del sistema, incluidos los que son específicos de los datos de ejemplo de Luma. Al establecer la propiedad del atributo *Use in Search* en `Yes`, se permite la búsqueda en el atributo tanto en [!DNL Live Search] como en Adobe Commerce nativo.
-
-| Código de atributo | Buscable | Uso en la navegación por capas |
-|--- |--- |--- |
-| actividad | Sí | Filtrable (con resultados) |
-| attributes_brand | Sí | No |
-| marca | Sí | No |
-| clima | Sí | Filtrable (con resultados) |
-| collar | Sí | Filtrable (con resultados) |
-| color | Sí | Filtrable (con resultados) |
-| coste | Sí | No |
-| eco_collection | Sí | Filtrable (con resultados) |
-| género | Sí | Filtrable (con resultados) |
-| fabricante | Sí | Filtrable (con resultados) |
-| material | Sí | Filtrable (con resultados) |
-| propósito | Sí | Filtrable (con resultados) |
-| strap_bags | Sí | Filtrable (con resultados) |
-| style_general | Sí | Filtrable (con resultados) |
-
-## Propiedades predeterminadas de atributos del sistema
-
-En la tabla siguiente se muestran la búsqueda predeterminada y las propiedades filtrables de los atributos del sistema.
-
-| Código de atributo | Buscable | Uso en la navegación por capas |
-|--- |--- |--- |
-| allow_open_amount | Sí | Filtrable (con resultados) |
-| description | Sí | No |
-| name | Sí | No |
-| precio | Sí | Filtrable (con resultados) |
-| short_description | Sí | No |
-| sku | Sí | No |
-| status | Sí | No |
-| tax_class_id | Sí | No |
-| url_key | Sí | No |
-| peso | Sí | No |
