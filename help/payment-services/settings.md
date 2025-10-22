@@ -40,7 +40,7 @@ Puede habilitar [!DNL Payment Services] para su sitio web y habilitar la prueba 
 
 1. Si todavía está probando [!DNL Payment Services] para su tienda, establezca **Modo de pago** en `Sandbox`. Si está listo para habilitar los pagos activos, establézcalo en `Production`.
 
-1. Los valores de **[!UICONTROL Payment Services Sandbox ID]** y **[!UICONTROL Payment Services Production ID]** se rellenan automáticamente una vez que configura [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} y visita el panel [!DNL Payment Services] por primera vez. Haga esto para finalizar la incorporación para su zona protegida o entornos de producción. Estos valores asocian su ID de SaaS a [!DNL Payment Services].
+1. Los valores de **[!UICONTROL Payment Services Sandbox ID]** y **[!UICONTROL Payment Services Production ID]** se rellenan automáticamente una vez que configura [Commerce Services Connector](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} y visita el panel [!DNL Payment Services] por primera vez. Haga esto para finalizar la incorporación para su zona protegida o entornos de producción. Estos valores asocian su ID de SaaS a [!DNL Payment Services].
 
    >[!WARNING]
    >
@@ -120,7 +120,7 @@ Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Title] | vista de tienda | Añade el texto que se mostrará como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/es/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vista de tienda | El orden de clasificación del método de pago especificado en la página de pago. Valor `Numeric Only` |
 | [!UICONTROL 3DS Secure authentication] | sitio web | Habilitar o deshabilitar la [autenticación segura de 3DS](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | sitio web | Habilitar o deshabilitar los campos de tarjeta de crédito para mostrar en la página de cierre de compra. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
@@ -158,7 +158,7 @@ Puede activar y configurar la opción de pago mediante el botón [!UICONTROL App
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Checkout title] | vista de tienda | Añade el texto que se mostrará como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions) para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/es/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions) para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | sitio web | Activa o desactiva el botón Apple Pay para mostrar en la página de pago y envío. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | sitio web | Activa o desactiva el botón Apple Pay para mostrar en la página de detalles del producto. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | sitio web | Activa o desactiva el botón Apple Pay para mostrar la vista previa del minicarrito. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
@@ -205,7 +205,7 @@ Puedes activar y configurar las opciones de pago de los botones de pago de PayPa
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Title] | vista de tienda | Agrega el texto que se mostrará como título para esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: campo de texto |
-| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/es/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vista de tienda | El orden de clasificación del método de pago especificado en la página de pago. Valor `Numeric Only` |
 | [!UICONTROL Show PayPal buttons on checkout page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal payment buttons] en la página de cierre de compra. Opciones: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | vista de tienda | Habilite o deshabilite [!DNL PayPal payment buttons] en la página de detalles del producto. Opciones: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
@@ -262,7 +262,7 @@ Puede configurar el estilo del botón de pago [&#x200B; en la configuración her
 
 Para asegurarse de que los usuarios administradores puedan crear y administrar pedidos en el administrador de Commerce, habilite los recursos específicos de [!DNL Payment Services] en los roles de usuario.
 
-Consulte [Funciones de usuario](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) para obtener información sobre cómo administrar las funciones.
+Consulte [Funciones de usuario](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html?lang=es) para obtener información sobre cómo administrar las funciones.
 
 Al asignar recursos a la función, debe seleccionar:
 
@@ -280,7 +280,7 @@ Si cambias la configuración en _Configuración_, por ejemplo, cambiando los bot
 
 Si algún tipo de caché de la tabla Administración de caché tiene un estado `INVALIDATED`, es posible que el almacén no muestre la configuración más reciente para ese elemento. Vacíe la caché para actualizar el almacén y mostrar la configuración más reciente.
 
-Para asegurarse de que la tienda muestre la configuración correcta, [vacíe la caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) periódicamente.
+Para asegurarse de que la tienda muestre la configuración correcta, [vacíe la caché](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management) periódicamente.
 
 ## Bóveda de tarjetas
 
@@ -302,10 +302,10 @@ Consulte [3DS en Seguridad](security.md#3ds) para obtener más información.
 
 ## Usar varias cuentas de PayPal
 
-En [!UICONTROL Payment Services], puedes usar varias cuentas de PayPal dentro de **una** cuenta de comerciante en el nivel de sitio web. Por ejemplo, si tienes tiendas en varios países (que usan [divisas](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency) diferentes) o quieres usar Adobe Commerce para algunas partes de tu negocio, pero no para _todos_, puedes configurar tu cuenta de comerciante para que use varias cuentas de PayPal.
+En [!UICONTROL Payment Services], puedes usar varias cuentas de PayPal dentro de **una** cuenta de comerciante en el nivel de sitio web. Por ejemplo, si tienes tiendas en varios países (que usan [divisas](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/currency/currency) diferentes) o quieres usar Adobe Commerce para algunas partes de tu negocio, pero no para _todos_, puedes configurar tu cuenta de comerciante para que use varias cuentas de PayPal.
 
-Vea [Sitio, tienda y ámbito de vista](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) para obtener más información sobre la jerarquía de sitios web, tiendas y vistas de tiendas.
+Vea [Sitio, tienda y ámbito de vista](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es) para obtener más información sobre la jerarquía de sitios web, tiendas y vistas de tiendas.
 
 Consulte [Configuración de la línea de comandos](configure-cli.md#configure-scope-via-cli) para obtener más información sobre cómo configurar ámbitos para varias cuentas de PayPal a través de CLI.
 
-El representante de ventas puede crear un nuevo [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) para tu cuenta de comerciante e incorporar el sitio adicional con PayPal para que se muestre en el sitio cualquiera de los botones de PayPal que configuraste para que aparezcan. Póngase en contacto con su representante de ventas para obtener ayuda con el uso de varias cuentas de PayPal para sus sitios web.
+El representante de ventas puede crear un nuevo [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) para tu cuenta de comerciante e incorporar el sitio adicional con PayPal para que se muestre en el sitio cualquiera de los botones de PayPal que configuraste para que aparezcan. Póngase en contacto con su representante de ventas para obtener ayuda con el uso de varias cuentas de PayPal para sus sitios web.
