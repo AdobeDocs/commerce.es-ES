@@ -3,7 +3,8 @@ title: Mostrar precios gravados con la API Mesh
 description: Use [!DNL API Mesh] para Adobe Commerce y el servicio de catálogo para mostrar los precios, incluidos los impuestos.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -20,8 +21,8 @@ En este tema, API Mesh se utiliza para mostrar los precios de los productos en u
 
 Debe tener los impuestos configurados para que se muestren en la página Detalles del producto.
 
-1. [Configurar tasas de impuestos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=es).
-1. Habilite que los impuestos se [muestren en el catálogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=es#step-1%3A-configure-catalog-prices-display-settings) y configúrelo en `Including and Excluding Tax` o `Including Tax`.
+1. [Configurar tasas de impuestos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Habilite que los impuestos se [muestren en el catálogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) y configúrelo en `Including and Excluding Tax` o `Including Tax`.
 
 Compruebe que el servicio de catálogo funciona en la página de detalles del producto.
 
@@ -31,7 +32,7 @@ Compruebe que el servicio de catálogo funciona en la página de detalles del pr
 
 Si aún no lo ha hecho, conecte la API Mesh con el servicio de catálogo a su instancia. Consulte las instrucciones detalladas en el tema [Introducción](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) de la guía para desarrolladores de API Mesh.
 
-En el archivo `mesh.json`, reemplace los valores `name `, `endpoint` y `x-api-key`.
+En el archivo `mesh.json`, reemplace los valores `name`, `endpoint` y `x-api-key`.
 
 ```json
 {

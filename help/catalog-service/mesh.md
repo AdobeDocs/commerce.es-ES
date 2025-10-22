@@ -4,7 +4,7 @@ description: '[!DNL API Mesh] para Adobe Commerce proporciona una forma de integ
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
-source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -50,7 +50,7 @@ La malla de API permite a los usuarios consumir fuentes de datos externas para m
 ### Habilitar precios de nivel
 
 En este ejemplo, la API Mesh se utiliza para habilitar los precios de nivel en Adobe Commerce.
-Reemplazar los valores `name `, `endpoint` y `x-api-key`.
+Reemplazar los valores `name`, `endpoint` y `x-api-key`.
 
 ```json
 {
@@ -165,7 +165,7 @@ query {
 
 ### Obtener un ID de entidad
 
-Esta malla anexa `entityId` a la interfaz ProductView. Reemplazar los valores `name `, `endpoint` y `x-api-key`.
+Esta malla anexa `entityId` a la interfaz ProductView. Reemplazar los valores `name`, `endpoint` y `x-api-key`.
 
 ```json
 {

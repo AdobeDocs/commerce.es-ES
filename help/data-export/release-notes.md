@@ -4,7 +4,7 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 9cca531a5f50850366a1c942fcda71eacecef5d0
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Las actualizaciones incluyen:
 
 ## Versión 103.4.11
 
-![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 Se ha agregado compatibilidad con atributos de producto adicionales para incluir datos de clase de impuestos, juego de atributos e inventario de configuraciones de producto de Commerce en la fuente de productos. Los clientes que deseen incluir estos atributos en las fuentes de exportación de productos deben agregar el módulo Atributos de producto adicionales a su proyecto de Adobe Commerce. Consulte [Agregar atributos de clase de impuestos, conjunto de atributos e inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Corrección](../assets/fix.svg) ha resuelto un problema que provocaba una sincronización incorrecta de las actualizaciones de productos eliminadas si se producía un error durante un índice de productos completo. Ahora, todas las eliminaciones de productos se sincronizan correctamente incluso si se produce un error durante el proceso de indexación. <!--MDEE-1144-->
 
@@ -75,7 +75,7 @@ Se ha agregado compatibilidad con atributos de producto adicionales para incluir
 
 ## Versión 103.4.5
 
-![La nueva exportación de datos SaaS de &#x200B;](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
+![La nueva exportación de datos SaaS de ](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
 ![Corrección](../assets/fix.svg): se mejoró la creación de informes de errores de exportación de datos. Los registros ahora incluyen mensajes de error más detallados, incluidos detalles técnicos originales para facilitar la depuración y el seguimiento de errores. <!--MDEE-1064-->
 
 ## Versión 103.4.4
@@ -192,7 +192,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## Versión 103.3.4
 
-![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento &#x200B;](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce `data_sent_outside`<!--MDEE-785-->
+![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento ](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce `data_sent_outside`<!--MDEE-785-->
 
 ## Versión 103.3.3
 
@@ -218,14 +218,18 @@ La exportación de datos de ![New](../assets/new.svg) SaaS ahora almacena en cac
 ![Nuevo](../assets/new.svg) Se cambió el nombre de los trabajos cron de la fuente de exportación inmediata a `*_feed_resend_failed_items`.
 
 ![Nuevo](../assets/new.svg): se ha cambiado el nombre de las fuentes de exportación inmediatas, los identificadores de vista de indizador y las tablas de registro de cambios.
+
 - tablas de fuentes (e ID de vistas de indizador):
+
    - `catalog_data_exporter_products` -> `cde_products_feed`
    - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
    - `catalog_data_exporter_categories` -> `cde_categories_feed`
    - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
    - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
    - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+
 - nombres de tabla de registro de cambios: sigue el mismo patrón de nomenclatura que las tablas de fuentes, pero los nombres de tabla de registro de cambios agregan un sufijo `_cl`.  Por ejemplo `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+
 Si tiene código personalizado que hace referencia a cualquiera de estas entidades, actualice las referencias con los nuevos nombres para asegurarse de que el código sigue funcionando correctamente.
 
 ![Corrección](../assets/fix.svg) Establezca el campo `modified_at` en los datos de fuente solo para las fuentes que lo requieran.

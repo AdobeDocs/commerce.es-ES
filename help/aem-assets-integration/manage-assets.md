@@ -3,7 +3,7 @@ title: Administrar recursos
 description: Utilice la integración de AEM Assets para Commerce para administrar los recursos de medios de su tienda.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 394a958250fcc9b0d9f672c1daf46a6d7c16a71d
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
@@ -79,7 +79,7 @@ La asociación con la imagen seleccionada se almacenará en Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=es#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
+> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
 
 ## Vídeos del producto
 
@@ -149,7 +149,7 @@ Después de configurar el [Selector de recursos de AEM](synchronize/asset-select
 
 1. Haga clic en **[!UICONTROL Save]** y continúe.
 
-   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
+   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
 
 ## Actualizar un recurso
 
@@ -157,6 +157,6 @@ Después de actualizar y aprobar un recurso en AEM Assets, las actualizaciones s
 
 Para obtener más información, consulte la siguiente documentación de AEM Assets.
 
-* [Reprocesando recursos digitales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Reprocesando recursos digitales](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Aprobar un recurso](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Aprobar un recurso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

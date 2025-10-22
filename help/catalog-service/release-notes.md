@@ -3,7 +3,7 @@ title: Notas de la versión [!DNL Catalog Service]
 description: La información de la versión más reciente de  [!DNL Catalog Service]  para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -68,7 +68,7 @@ _23 de mayo de 2024_
 
 ![Corrección](../assets/fix.svg) <!--DATA-5033-->El indicador `InStock` para los valores de opción ahora tiene en cuenta el estado `enabled` de ámbito de la variante del producto.
 
-![Corrección](../assets/fix.svg) <!--DATA-5888-->Agregue soporte para precios de productos que requieran números grandes (hasta 16 dígitos) y mayor precisión decimal (hasta 4 decimales). Para aplicar las actualizaciones de la configuración de precios al catálogo existente, vuelva a sincronizar los datos del catálogo desde el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-dashboard) o mediante la [interfaz de línea de comandos de Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+![Corrección](../assets/fix.svg) <!--DATA-5888-->Agregue soporte para precios de productos que requieran números grandes (hasta 16 dígitos) y mayor precisión decimal (hasta 4 decimales). Para aplicar las actualizaciones de la configuración de precios al catálogo existente, vuelva a sincronizar los datos del catálogo desde el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) o mediante la [interfaz de línea de comandos de Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
 
 #### Limitaciones conocidas
 
@@ -102,7 +102,7 @@ _22 de febrero de 2024_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) El [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=es) ya está disponible. Este panel modificado proporciona información sobre las secuencias de datos de [!DNL Product Recommendations], [!DNL Live Search] y [!DNL Catalog Service]. La compatibilidad con esta característica se introdujo en la versión 3.1.0 del metapaquete `catalog-service`.
+![Nuevo](../assets/new.svg) El [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ya está disponible. Este panel modificado proporciona información sobre las secuencias de datos de [!DNL Product Recommendations], [!DNL Live Search] y [!DNL Catalog Service]. La compatibilidad con esta característica se introdujo en la versión 3.1.0 del metapaquete `catalog-service`.
 
 ### Versión V1.16
 
