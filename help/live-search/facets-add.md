@@ -2,9 +2,9 @@
 title: Agregar facetas
 description: Aprenda a agregar atributos de producto filtrables como  [!DNL Live Search] facetas.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 053533bc5f3f990ce8219f1e0c7c4930b28f0cd5
+source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ La faceta se agrega al final de la lista *Facetas dinámicas* y el botón *Publi
 
 1. Si la faceta que desea agregar no se encuentra, vaya a **Tiendas** > Atributos > **Producto** y compruebe que el atributo tiene las [propiedades requeridas](facets.md) para utilizarlo como faceta. Si es necesario, actualice las siguientes propiedades de tienda del atributo:
 
-   * Usar en la búsqueda: `No`
-   * Usar en la navegación por capas de los resultados de búsqueda - `Yes`
-   * Uso en la navegación por capas - `Filterable (with results)`
+   * **[!UICONTROL Use in Search]** -  `Yes`
+   * **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
+   * **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
 1. Cuando se le solicite, actualice la caché.
 

@@ -3,7 +3,7 @@ title: Prácticas recomendadas de [!DNL Live Search]
 description: Conozca las prácticas recomendadas para implementar  [!DNL Live Search] en su tienda.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4ba9734946f551784cd429ffa7cb23358f0f9710
+source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 0%
@@ -63,7 +63,7 @@ La funcionalidad de filtro y faceta es un componente crítico del sitio [!DNL Co
 
 Para configurar un atributo de producto como faceta, debe tener las siguientes [propiedades establecidas](facets-add.md#step-1-add-a-facet):
 
-- **[!UICONTROL Use in Search]** -  `No`
+- **[!UICONTROL Use in Search]** -  `Yes`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
 - **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
@@ -101,7 +101,7 @@ Casos de uso recomendados para configurar redirecciones de búsqueda:
 
 Pruebe siempre las redirecciones de búsqueda para asegurarse de que funcionan correctamente y conducen a las páginas más relevantes. Supervise continuamente su rendimiento y realice los ajustes necesarios.
 
-Aprenda a [administrar redirecciones de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-terms).
+Aprenda a [administrar redirecciones de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Mejorar la relevancia de los resultados de búsqueda
 
@@ -155,7 +155,7 @@ Asegúrese de que cada producto tenga contenido relevante dentro de cada atribut
 Obtenga más información sobre los atributos de producto para la búsqueda:
 
 - [Definir atributos como en los que se puede buscar](workspace.md#set-attributes-as-searchable)
-- [Asignar peso a atributos](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Asignar peso a atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorización de resultados de búsqueda
 
