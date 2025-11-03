@@ -1,11 +1,11 @@
 ---
 title: Resumen de facetas
 description: Obtenga información acerca de las facetas de  [!DNL Adobe Commerce Optimizer]  y cómo mejoran los resultados de búsqueda.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: b786a8675625dc969b9542b4b4f716de5342c1af
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -39,40 +39,66 @@ Los siguientes atributos de producto son utilizados por [!DNL Adobe Commerce Opt
 
 Consulte la [API de metadatos de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) para obtener más información sobre los atributos del producto y sus propiedades.
 
-## Propiedades de atributo predeterminadas que no son del sistema
+## Búsqueda por capas y expansión de tipos de búsqueda
 
-En la tabla siguiente se muestran las propiedades de búsqueda y filtrado predeterminadas de los atributos que no son del sistema. Si establece la propiedad del atributo *Use in Search* en `Yes`, se podrá buscar en el atributo en [!DNL Adobe Commerce Optimizer].
+La búsqueda por capas, o búsqueda dentro de una búsqueda, es un sistema de filtrado basado en atributos que amplía la funcionalidad de búsqueda tradicional para incluir parámetros de búsqueda adicionales. Estos parámetros de búsqueda adicionales permiten una detección de productos más precisa y flexible.
 
-| Código de atributo | Buscable |
-|--- |--- |
-| actividad | Sí |
-| attributes_brand | Sí |
-| marca | Sí |
-| clima | Sí |
-| collar | Sí |
-| color | Sí |
-| coste | Sí |
-| eco_collection |  |
-| género | Sí |
-| fabricante | Sí |
-| material | Sí |
-| propósito | Sí |
-| strap_bags | Sí |
-| style_general | Sí |
+Con la búsqueda por capas puede:
 
-## Propiedades predeterminadas de atributos del sistema
+- Permitir que los compradores busquen en los resultados de búsqueda.
+- Use la indexación de búsqueda `startsWith` y `contains` en la segunda capa de la búsqueda por capas para restringir aún más los resultados.
 
-En la tabla siguiente se muestran la búsqueda predeterminada y las propiedades filtrables de los atributos del sistema.
+Las funcionalidades de búsqueda avanzada se implementan a través del parámetro `filter` en la consulta [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) utilizando operadores específicos:
 
-| Código de atributo | Buscable |
-|--- |--- |
-| allow_open_amount | Sí |
-| description | Sí |
-| name | Sí |
-| precio | Sí |
-| short_description | Sí |
-| sku | Sí |
-| status | Sí |
-| tax_class_id | Sí |
-| url_key | Sí |
-| peso | Sí |
+- **Búsqueda por niveles** - Buscar en otro contexto de búsqueda - Con esta capacidad, puede realizar hasta dos niveles de búsqueda para sus consultas de búsqueda. Por ejemplo:
+
+   - **Búsqueda de nivel 1** - Busque &quot;motor&quot; en `product_attribute_1`.
+   - **Búsqueda de nivel 2** - Busque &quot;número de pieza 123&quot; en `product_attribute_2`. En este ejemplo se busca &quot;número de pieza 123&quot; dentro de los resultados para &quot;motor&quot;.
+
+  La búsqueda por capas está disponible tanto para la indexación de búsqueda `startsWith` como para la indexación de búsqueda `contains` en la segunda capa de la búsqueda por capas, como se describe a continuación:
+
+- **comienza con la indexación de búsqueda** - La búsqueda usa la indexación `startsWith`. Esta capacidad permite:
+
+   - Buscando productos en los que el valor del atributo comience con una cadena especificada.
+   - Configuración de una búsqueda &quot;termina con&quot; para que los compradores puedan buscar productos en los que el valor del atributo termine con una cadena en particular.
+      - Para habilitar una búsqueda &quot;termina con&quot;, el atributo del producto debe ingerirse a la inversa y la llamada de API también debe ser una cadena invertida. Por ejemplo, si desea buscar un nombre de producto que termine con &quot;pantalones&quot;, debe enviarlo como &quot;stnap&quot;.
+
+- **contiene indización de búsqueda** - La búsqueda de un atributo mediante contiene indización. Esta nueva capacidad permite:
+
+   - Búsqueda de una consulta dentro de una cadena más grande. Por ejemplo, si un comprador busca el número de producto PE-123 en la cadena HAPE-123.
+
+      - Nota: este tipo de búsqueda es diferente de la búsqueda de frases [existente](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), que realiza una búsqueda de autocompletar. Por ejemplo, si el valor de atributo del producto es &quot;pantalones de exterior&quot;, una búsqueda de frase devuelve una respuesta para &quot;sin bandeja&quot;, pero no devuelve una respuesta para &quot;u hormigas&quot;. Sin embargo, una búsqueda contiene sí devuelve una respuesta para &quot;o hormigas&quot;.
+
+Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal.
+
+### Implementación
+
+1. [Establecer atributos como para búsqueda](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
+
+1. Especifique la capacidad de búsqueda para ese atributo, como **Contiene** (predeterminado) o **Comienza con**. Puede especificar un máximo de seis atributos para habilitar **Contiene** y seis atributos para habilitar **Comienza con**. Además, para la indexación **Contiene**, la longitud de la cadena está limitada a 50 caracteres o menos.
+
+1. Consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) para ver ejemplos de cómo actualizar las llamadas a la API [!DNL Commerce Optimizer] con las nuevas funciones de búsqueda `contains` y `startsWith`.
+
+   Puede implementar estas nuevas condiciones en la página de resultados de búsqueda. Por ejemplo, puede agregar una nueva sección en la página donde el comprador pueda restringir aún más los resultados de búsqueda. Puede permitir que los compradores seleccionen atributos de producto específicos, como Fabricante, Número de pieza y Descripción. Desde allí, buscan dentro de esos atributos utilizando las condiciones `contains` o `startsWith`.
+
+### Cuándo utilizar la búsqueda por capas en lugar de las facetas
+
+La búsqueda por capas y las facetas sirven para diferentes propósitos en la detección de productos y la elección entre ellos depende de su caso de uso específico:
+
+**Usar búsqueda por capas para:**
+
+- Buscar en los resultados de búsqueda utilizando varios criterios
+- Trabaje con números de pieza, SKU o especificaciones técnicas cuando los usuarios conozcan información parcial
+- Permitir que los compradores reduzcan los resultados paso a paso con criterios anidados
+- Reduzca la cantidad de llamadas de API combinando varios criterios de búsqueda en una sola consulta
+- Implementar patrones de búsqueda específicos de la empresa que vayan más allá de la navegación con facetas estándar
+
+**Usar facetas para:**
+
+- Proporcionar filtrado típico de categoría, precio, marca y atributo
+- Ofrezca opciones de filtro intuitivas que los usuarios puedan comprender y seleccionar fácilmente
+- Mostrar las opciones disponibles según los resultados de búsqueda actuales
+- Mostrar recuentos e intervalos de filtros que ayuden a los usuarios a comprender las opciones disponibles
+- Trabaje con características comunes del producto, como color, tamaño, material, etc
+
+**Práctica recomendada:** Utilice la búsqueda por niveles para búsquedas técnicas y complejas en las que los usuarios tengan criterios específicos y utilice facetas para el filtrado estándar de comercio electrónico en las que los usuarios deseen explorar y refinar las opciones visualmente.

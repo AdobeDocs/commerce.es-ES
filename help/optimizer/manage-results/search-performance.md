@@ -1,11 +1,11 @@
 ---
 title: Rendimiento de búsqueda
 description: La página Rendimiento de la búsqueda proporciona a insight los términos de búsqueda que utilizan los compradores.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -136,3 +136,41 @@ Obtenga más información sobre los atributos de producto para la búsqueda:
 | Cero resultados | Enumera las consultas de búsqueda que no devuelven resultados y la cantidad de veces utilizadas durante el intervalo de fechas especificado. Límite de informes: 500 términos principales |
 | Resultados frecuentes | Enumera los nombres de los productos que recibieron la mayor cantidad de vistas durante el intervalo de fechas especificado. Los resultados populares se calculan únicamente en función de las impresiones y no se ven afectados por el número de clics o ingresos generados. Límite de informes: 500 términos principales |
 | Búsquedas únicas | Enumera las consultas de búsqueda únicas utilizadas durante el intervalo de fechas especificado. Los datos del informe se calculan del mismo modo que los datos de instantáneas de búsqueda única. Si un comprador escribe la misma consulta de búsqueda dos veces, pero con una diferencia de más de una hora, la búsqueda se considera dos búsquedas únicas. Límite de informes: 500 términos principales |
+
+## Propiedades de atributo predeterminadas que no son del sistema
+
+En la tabla siguiente se muestran las propiedades de búsqueda y filtrado predeterminadas de los atributos que no son del sistema. Si establece la propiedad del atributo *Use in Search* en `Yes`, se podrá buscar en el atributo en [!DNL Adobe Commerce Optimizer].
+
+| Código de atributo | Buscable |
+|--- |--- |
+| actividad | Sí |
+| attributes_brand | Sí |
+| marca | Sí |
+| clima | Sí |
+| collar | Sí |
+| color | Sí |
+| coste | Sí |
+| eco_collection |  |
+| género | Sí |
+| fabricante | Sí |
+| material | Sí |
+| propósito | Sí |
+| strap_bags | Sí |
+| style_general | Sí |
+
+## Propiedades predeterminadas de atributos del sistema
+
+En la tabla siguiente se muestran la búsqueda predeterminada y las propiedades filtrables de los atributos del sistema.
+
+| Código de atributo | Buscable |
+|--- |--- |
+| allow_open_amount | Sí |
+| description | Sí |
+| name | Sí |
+| precio | Sí |
+| short_description | Sí |
+| sku | Sí |
+| status | Sí |
+| tax_class_id | Sí |
+| url_key | Sí |
+| peso | Sí |

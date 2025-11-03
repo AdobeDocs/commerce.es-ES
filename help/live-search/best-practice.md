@@ -3,9 +3,9 @@ title: Prácticas recomendadas de [!DNL Live Search]
 description: Conozca las prácticas recomendadas para implementar  [!DNL Live Search] en su tienda.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
+source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Para administrar [!DNL Live Search], ve a **Marketing** > *SEO y búsqueda* > **
 
 ## Optimización de la funcionalidad de búsqueda
 
-En esta sección, aprenderá a optimizar la funcionalidad de búsqueda mediante funciones como autocompletar para proporcionar sugerencias en tiempo real como tipo de comprador, sinónimos y ortografía para garantizar que los compradores encuentren productos incluso si utilizan palabras diferentes, facetas que permitan a los compradores reducir los resultados de búsqueda y redirecciones de búsqueda para redirigir automáticamente a los compradores de una consulta de búsqueda a una página específica.
+En esta sección, aprenderá a optimizar la funcionalidad de búsqueda mediante funciones como autocompletar para proporcionar sugerencias en tiempo real como tipo de comprador, sinónimos y ortografía para garantizar que los compradores encuentren productos incluso si utilizan palabras diferentes y facetas que permitan a los compradores reducir los resultados de búsqueda.
 
 ### Autocompletar
 
@@ -85,24 +85,6 @@ Más información sobre las facetas:
 - [Administrar facetas](facets-manage.md) (editar, fijar una faceta, eliminar, publicar)
 - [Facetado de precios](settings.md#price-faceting)
 
-### Buscar redirecciones
-
-Una redirección de búsqueda le permite redirigir automáticamente a los compradores de una consulta de búsqueda a una página específica. Las redirecciones de búsqueda pueden mejorar la experiencia del comprador y guiar a los clientes hacia el contenido más relevante, como una página de producto, categoría, página de aterrizaje o un conjunto personalizado de resultados de búsqueda. Las redirecciones de búsqueda ayudan a optimizar la experiencia de compra y garantizar que los compradores encuentren lo que buscan de forma rápida y eficaz.
-
-Casos de uso recomendados para configurar redirecciones de búsqueda:
-
-- **Productos o categorías populares**: redirige a los compradores a una página o categoría de producto específica cuando buscan términos comunes o populares. Por ejemplo, si busca &quot;iPhone&quot;, podría redirigir directamente a la página de categoría de iPhone o a una página de modelo específica.
-
-- **Campañas promocionales**: durante los eventos promocionales o las ventas, redirige los términos de búsqueda relevantes a las páginas de aterrizaje que resaltan ofertas especiales o productos destacados.
-
-- **Búsquedas de marcas**: cuando los compradores busquen un nombre de marca, rediríjalos a la página dedicada de la marca donde se enumeran todos los productos de esa marca.
-
-- **Interrupción del producto**: si se suspende un producto, puede redirigir las búsquedas de ese producto a productos similares o a la nueva versión del producto.
-
-Pruebe siempre las redirecciones de búsqueda para asegurarse de que funcionan correctamente y conducen a las páginas más relevantes. Supervise continuamente su rendimiento y realice los ajustes necesarios.
-
-Aprenda a [administrar redirecciones de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-terms).
-
 ## Mejorar la relevancia de los resultados de búsqueda
 
 En esta sección se explica cómo mejorar la relevancia de los resultados de búsqueda mediante la implementación de reglas de búsqueda eficaces y el uso de metadatos de productos para garantizar que se puedan buscar atributos precisos y detallados.
@@ -155,7 +137,7 @@ Asegúrese de que cada producto tenga contenido relevante dentro de cada atribut
 Obtenga más información sobre los atributos de producto para la búsqueda:
 
 - [Definir atributos como en los que se puede buscar](workspace.md#set-attributes-as-searchable)
-- [Asignar peso a atributos](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Asignar peso a atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorización de resultados de búsqueda
 
@@ -182,7 +164,6 @@ Puede supervisar estos KPI en el [!DNL Live Search] [espacio de trabajo de rendi
   Para reducir la tasa de resultados cero, puede:
 
    - Ofrezca términos de búsqueda alternativos o relacionados, como [sinónimos](synonyms.md), cuando no se encuentren coincidencias exactas.
-   - Proporcione a los compradores sugerencias relacionadas o alternativas cuando su búsqueda no genere resultados estableciendo redirecciones de búsqueda.
    - Revise con regularidad las consultas de resultados cero para identificar patrones y realizar los ajustes necesarios en el catálogo de productos y la configuración de búsqueda.
 
 - **Resultados populares**: puede mejorar significativamente los resultados de búsqueda al alinearlos con las preferencias y los comportamientos de los compradores.
