@@ -1,7 +1,7 @@
 ---
 title: Rendimiento de búsqueda
 description: La página Rendimiento de la búsqueda proporciona a insight los términos de búsqueda que utilizan los compradores.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
