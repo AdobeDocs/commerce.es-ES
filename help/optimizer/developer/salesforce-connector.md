@@ -2,9 +2,9 @@
 title: Conector de Salesforce Commerce
 description: Obtenga información acerca de [!DNL Commerce Optimizer SFCC Connector] que proporciona un punto de partida para integrar Salesforce Commerce B2C con [!DNL Adobe Commerce Optimizer] para sincronizar los datos del catálogo e implementar y personalizar el conector para admitir operaciones empresariales.
 role: Admin, Developer
-source-git-commit: f3da99ec4d2c518748d0911d6cf5d2d89ab45a47
+source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Basado en la tecnología Adobe App Builder, [!DNL Commerce Optimizer Salesforce Commerce Connector] permite la transferencia y administración sin problemas de los datos del catálogo de Salesforce Commerce Cloud B2C a [!DNL Adobe Commerce Optimizer]. Combina ambas plataformas y mantiene la información del producto, los precios y las actualizaciones sincronizados, sin necesidad de volver a plataformas.
 
 De forma predeterminada, el conector ofrece funciones fiables de sincronización de datos y la flexibilidad para personalizar los flujos de trabajo según las necesidades de su empresa.
+
+Para ver una serie completa de tutoriales de vídeo, consulte [Más información acerca del kit de iniciación en la nube de Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Capacidades clave
 
@@ -87,7 +89,6 @@ El diagrama siguiente ilustra el flujo de datos de alto nivel para la integraci�
 * **Aplicación ACO SFCC Starter Kit App Builder**: proporciona funciones sin servidor que administran la sincronización de datos entre SFCC y Adobe Commerce Optimizer.
 * **Cartucho SFCC personalizado**: cartucho requerido que amplía la instancia de Salesforce Commerce Cloud con las API necesarias para la extracción de datos.
 * **IU de administración**: interfaz web para supervisar el estado de sincronización y administrar las operaciones del conector.
-
 
 ### Proceso de sincronización
 
