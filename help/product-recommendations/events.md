@@ -22,7 +22,7 @@ Consulte la [documentación para desarrolladores](https://developer.adobe.com/co
 
 ## Clientes sanitarios
 
-Si es cliente de atención médica e instaló la extensión HIPAA de [Data Services](../data-connection/hipaa-readiness.md#installation), que forma parte de la extensión [Data Connection](../data-connection/overview.md), ya no se capturarán los datos de evento de tienda que usa [!DNL Product Recommendations]. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Product Recommendations]. Consulte [configuración general](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) para obtener más información.
+Si es cliente de atención médica e instaló la extensión HIPAA de [Data Services](../data-connection/hipaa-readiness.md#installation), que forma parte de la extensión [Data Connection](../data-connection/overview.md), ya no se capturarán los datos de evento de tienda que usa [!DNL Product Recommendations]. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Product Recommendations]. Consulte [configuración general](https://experienceleague.adobe.com/es/docs/commerce-admin/config/general/general#data-services) para obtener más información.
 
 ## Tipos de datos y eventos
 
@@ -87,4 +87,4 @@ En caso de que la recopilación de datos de entrada sea insuficiente, los siguie
 
 >[!NOTE]
 >
->Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
+>Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
