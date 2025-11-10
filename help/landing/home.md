@@ -5,51 +5,46 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 8a80f803607e15163d3f75d93727a304917ef4d6
+source-git-commit: fd3857e93dbaaf7ffce97715b77ee63e8460af16
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
 
 # Guías de servicios de Adobe Commerce
 
-Adobe proporciona una colección de servicios de Commerce, servicios de integración y herramientas de datos para ayudar a los comerciantes a dar soporte a componentes clave de su negocio.
+Los servicios de Adobe Commerce ofrecen potentes funciones que amplían su tienda, optimizan las integraciones y optimizan la administración de datos.
+
+## ¿Cómo se conecta Commerce a los servicios?
+
+Todos los servicios de Commerce se conectan a su instancia de Commerce a través del [conector de servicios de Commerce](saas.md).
+
+Cuando se configura el conector de Commerce Services, tiene acceso a las siguientes funciones:
+
+- [Servicios de tienda](#storefront-services): funciones con tecnología de IA para la detección de productos, recomendaciones y pagos
+- [Servicios de integración](#integration-services): conexiones a Adobe Experience Platform, AEM Assets y otras soluciones de Adobe
+
+Estos servicios le ayudan a aumentar las conversiones, ofrecer experiencias personalizadas y hacer un mejor uso de los datos comerciales en todo el ecosistema de Adobe.
+
+![Nivel de servicios](./assets/services-layer.png)
 
 >[!NOTE]
 >
 >Adobe recomienda actualizar a la última versión compatible de todos los servicios de Commerce. Ver las [notas de la versión](release-notes-all.md).
 
-## Servicios de Commerce
+Además de estas funciones, hay herramientas que le permiten monitorizar el flujo de datos desde la instancia de Commerce a la plataforma SaaS. Estas herramientas pueden sincronizar automáticamente los datos y ayudarle a optimizar el rendimiento. Más información sobre las [herramientas de datos](#data-tools) disponibles.
+
+## Servicios disponibles
+
+>[!BEGINTABS]
+
+>[!TAB Servicios de tienda]
+
+Los servicios de tienda son un grupo de funciones con tecnología de IA que optimizan el descubrimiento de productos, personalizan las interacciones con los clientes y agilizan el procesamiento de pagos para aumentar la participación y las conversiones. Con los servicios de tienda, puede mejorar la experiencia de compra e impulsar el crecimiento del negocio.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
-   <td valign="top">
-      <a href="../cloud-service/overview.md">
-      <img alt="Nube" src="../assets/icons/shopping-cart.svg" width="40">
-      </a>
-      <div>
-         <a href="../cloud-service/overview.md">
-         <strong>Commerce as a Cloud Service</strong>
-         </a>
-      </div>
-      <p>
-         <em>Escale las operaciones e innove más rápido con la infraestructura en la nube que se adapta automáticamente a las demandas de tráfico y pedidos.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../optimizer/overview.md">
-      <img alt="Optimización" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-         <a href="../optimizer/overview.md">
-         <strong>Commerce Optimizer</strong>
-         </a>
-      </div>
-      <p>
-         <em>Entrega una tienda a una velocidad increíble y aumenta las conversiones, todo mientras usas tu plataforma de comercio existente.</em>
-      </p>
-   </td>
    <td valign="top">
       <a href="../catalog-service/overview.md">
       <img alt="Datos de catálogo para servicios conectados" src="../assets/icons/DataBook.svg" width="40">
@@ -63,8 +58,6 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
          <em>Ofrezca a sus clientes una experiencia de producto optimizada a la vez que aumenta el rendimiento, mejora la escalabilidad y aumenta las conversiones.</em>
       </p>
    </td>
-</tr>
-<tr style="border: 0;">
    <td valign="top">
       <a href="../live-search/overview.md">
       <img alt="Buscar" src="../assets/icons/Magnify.svg" width="40">
@@ -107,7 +100,9 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
 </tr>
 </table>
 
-## Servicios de integración
+>[!TAB Servicios de integración]
+
+Los servicios de integración hacen referencia a funciones que conectan la instancia de Commerce a otros productos o servicios dentro de Adobe.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -117,24 +112,11 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura de PaaS administrada por Adobe) y proyectos locales."}
+         <strong>[!DNL Data Connection]</strong>
          </a>
       </div>
       <p>
          <em>Aproveche la conexión entre Adobe Commerce y Adobe Experience Platform Edge para usar datos de Commerce para otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../landing/saas.md">
-      <img alt="ThumbsUp" src="../assets/icons/DataSetting.svg" width="40">
-      </a>
-      <div>
-          <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y proyectos locales."}
-         </a>
-      </div>
-      <p>
-         <em>Configure la autenticación para habilitar la comunicación segura entre Adobe Commerce y los servicios conectados. Para cada entorno, especifique el ID del espacio de datos para el almacenamiento de datos de los servicios de Commerce.</em>
       </p>
    </td>
    <td valign="top">
@@ -153,7 +135,9 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
 </tr>
 </table>
 
-## Herramientas de datos
+>[!TAB Herramientas de datos]
+
+Las herramientas de datos le ayudan a administrar y optimizar el flujo de información entre su instancia de Commerce y los servicios conectados. Estas herramientas garantizan una sincronización de datos eficaz, supervisan las operaciones de sincronización y mejoran el rendimiento descargando procesos que requieren muchos recursos.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -184,11 +168,11 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Monitorización de sincronización de datos" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Panel de administración de datos</strong>
          </a>
       </div>
@@ -201,6 +185,23 @@ Adobe proporciona una colección de servicios de Commerce, servicios de integrac
 >[!NOTE]
 >
 >El tablero de administración de datos está disponible sin coste adicional para los comerciantes de Commerce que usan las recomendaciones de producto v6.0.0, Live Search v4.1.0 o el servicio de catálogo v1.17 con una licencia activa. Los comerciantes que usen versiones de servicio anteriores pueden usar [Sincronización de catálogos](../landing/catalog-sync.md) para administrar y rastrear la sincronización de datos.
+
+>[!ENDTABS]
+
+## ¿Qué problemas pueden resolver los servicios de Commerce?
+
+Tanto si desea escalar su negocio, mejorar las experiencias de los clientes o tomar decisiones basadas en datos, los servicios de Adobe Commerce ofrecen soluciones para los desafíos comunes de Commerce:
+
+| Problema | Desafío | Solución |
+|---------|-----------|----------|
+| Mejore la detección y conversión de productos | Los compradores no pueden encontrar lo que están buscando, lo que conduce a altas tasas de devolución y pérdidas de ventas. | Use [Live Search](../live-search/overview.md) y [Product Recommendations](../product-recommendations/overview.md) para ofrecer búsquedas con tecnología de IA y tolerancia a errores tipográficos, resultados instantáneos de &quot;búsqueda mientras escribe&quot;, facetas dinámicas y recomendaciones personalizadas de productos basadas en el comportamiento de compradores en tiempo real. |
+| Creación de experiencias personalizadas omnicanal | Los datos de comercio están en silo, lo que impide ofrecer experiencias personalizadas en todos los canales. | Use [Conexión de datos](../data-connection/overview.md) para enviar datos de comportamiento, transaccionales y de perfil a Adobe Experience Platform. Genere segmentos de clientes sofisticados, cree campañas de carros de compras abandonados, dirija audiencias similares y analice las tendencias estacionales en todo el recorrido de clientes. |
+| Administración de recursos digitales optimizada | La administración de imágenes de productos y medios enriquecidos en varios sistemas es una tarea laboriosa y propensa a errores. | La integración de [AEM Assets](../aem-assets-integration/overview.md) proporciona administración de recursos centralizada al conectar Adobe Commerce a un proyecto de Adobe Experience Manager Assets, simplificar los flujos de trabajo y garantizar experiencias de marca coherentes en todos los puntos de contacto. |
+| Optimizar procesamiento de pagos | Las opciones de pago limitadas y las malas experiencias de pago están afectando la satisfacción y la conversión del cliente. | [Servicios de pago](../payment-services/guide-overview.md) ofrece varios métodos de pago, incluidos pagos a plazos sin intereses, con un tablero unificado para administrar pagos, pedidos y facturas. |
+| Administrar la sincronización de datos a escala | La indexación con uso intensivo de recursos está ralentizando el sitio y no puede rastrear fácilmente los problemas de sincronización de datos. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md) y [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizan automáticamente los datos de catálogo, pedido e inventario, descargan cálculos de precios a la infraestructura en la nube de Adobe y proporcionan visibilidad en tiempo real del estado de sincronización. |
+| Recuperar clientes perdidos y reducir los retornos | Las altas tasas de pérdida de clientes y de devolución de productos están afectando a la rentabilidad. | Combine [Conexión de datos](../data-connection/overview.md) con Adobe Journey Optimizer y Real-Time CDP para identificar patrones de retorno, crear campañas de recuperación, segmentar clientes por comportamiento y enviar campañas de participación personalizadas por correo electrónico y SMS. |
+| Toma de decisiones de comercialización basadas en datos | No está seguro de qué productos promocionar o cuándo ejecutar promociones. | [Live Search](../live-search/overview.md) proporciona perspectivas de rendimiento de búsqueda y herramientas de comercialización para acceder a métricas clave, analizar términos de búsqueda y usar reglas de comercialización inteligentes para impulsar o enterrar productos basados en el comportamiento real de los clientes y los objetivos comerciales. |
+| Mantener el cumplimiento de los datos confidenciales | Debe gestionar los datos confidenciales de los clientes y, al mismo tiempo, mantener el cumplimiento de HIPAA. | [La conexión de datos](../data-connection/overview.md) está preparada para HIPAA, lo que le permite compartir datos del back-office con Experience Platform al tiempo que mantiene el cumplimiento y gestiona sistemáticamente las solicitudes de privacidad. |
 
 {{$include /help/_includes/templated/whats-new.md}}
 
