@@ -2,11 +2,11 @@
 title: Configurar tu tienda
 description: Aprenda a configurar su  [!DNL Adobe Commerce Optimizer] tienda.
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: c00cb55bd7b61d6506ee8b9b81d28118c1adde00
+source-git-commit: d6d559728361f4421829f34818aa368eac407225
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -105,9 +105,9 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
 
 Actualice la configuración de la tienda para conectarse a la instancia de [!DNL Adobe Commerce Optimizer].
 
-1. Abra el administrador de configuración mediante el vínculo guardado anteriormente:
+1. Abra el archivo `config.json` en el repositorio de código de plantillas.
 
-   `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+   `https://github.com/<username or org>/<repo name>/config.json`
 
 1. Busque la sección `cs` (servicio de catálogo) en la configuración.
 
@@ -116,16 +116,18 @@ Actualice la configuración de la tienda para conectarse a la instancia de [!DNL
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Environment-ID": "{tenantId}",
-      "AC-Source-Locale": "en_US"
+      "AC-Source-Locale": "en_US",
+      "AC-Price-Book-ID": "{priceBookId}"
    }
    ```
 
+   >[!NOTE]
+   >
+   >Para encontrar el ID de la libreta de precios, consulte los [detalles de configuración de la vista del catálogo](./setup/catalog-view.md) en Adobe Commerce Optimizer para ver los libros de precios asignados. Si no se ha asignado ningún libro de precios, puede eliminar esta cabecera del fichero de configuración. Vuelva a añadirlo cuando se haya asignado un libro de precios a la vista de catálogo.
+
 1. Guarde el archivo de configuración.
 
->[!NOTE]
->
->Los cambios de configuración pueden tardar unos minutos en propagarse. Si no ve los datos inmediatamente, espere de 2 a 3 minutos antes de solucionar el problema.
+   Los cambios de configuración pueden tardar unos minutos en propagarse. Si no ve los datos inmediatamente, espere de 2 a 3 minutos antes de solucionar el problema.
 
 ## Verifique su configuración
 
@@ -216,26 +218,26 @@ Antes de continuar con los siguientes pasos, verifica lo siguiente para asegurar
 
 Si los problemas persisten:
 
-* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
+* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Consulte la [guía para desarrolladores de Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)
-* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Pasos siguientes
 
 Después de configurar y comprobar la tienda, puedes:
 
-1. **[Instalar Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#install-and-configure-sidekick)**: extensión de explorador para editar, previsualizar y publicar contenido directamente desde el sitio web
+1. **[Instalar Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)**: extensión de explorador para editar, previsualizar y publicar contenido directamente desde el sitio web
 
-2. **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#set-up-local-environment)**: crea un entorno local para personalizar el código y el contenido de tu tienda
+2. **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**: crea un entorno local para personalizar el código y el contenido de tu tienda
 
 ### Aprender y explorar
 
 * **[Completar el caso de uso de extremo a extremo](./use-case/admin-use-case.md)**: obtenga más información acerca de la configuración de la tienda y la administración del catálogo mediante [!DNL Adobe Commerce Optimizer]
 
-* **[Explorar la personalización de tiendas](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=es)**: aprende las opciones avanzadas de configuración
+* **[Explorar la personalización de tiendas](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**: aprende las opciones avanzadas de configuración
 
-* **[Use complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)**: agregue componentes creados previamente para mejorar su experiencia con la tienda
+* **[Use complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**: agregue componentes creados previamente para mejorar su experiencia con la tienda
 
 >[!MORELIKETHIS]
 >
-> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
+> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
