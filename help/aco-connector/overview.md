@@ -130,11 +130,11 @@ Después de crear el proyecto, guarde los siguientes valores en la página Crede
 
 Guarde los siguientes valores desde los detalles de la instancia de Adobe Commerce Optimizer.
 
-* **ID de instancia: **el identificador único de la instancia de Adobe Commerce Optimizer. También se conoce como ID de inquilino.
+* **ID de instancia: &#x200B;** el identificador único de la instancia de Adobe Commerce Optimizer. También se conoce como ID de inquilino.
 
   Obtenga el ID de instancia desde la URL para acceder a su instancia de Adobe Commerce Optimizer. Por ejemplo, en la dirección URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, el identificador de instancia es `1234567890abcdef`.
 
-* **Región: **La región en la que está alojada la instancia de la zona protegida de Adobe Commerce Optimizer.
+* **Región: &#x200B;** La región en la que está alojada la instancia de la zona protegida de Adobe Commerce Optimizer.
 
   Obtenga la región desde la URL de Adobe Commerce Optimizer. Por ejemplo, en la dirección URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, la región es `na1`.
 
@@ -172,7 +172,7 @@ Puede comprobar la sincronización de datos desde Commerce Admin y Commerce Opti
 
 1. Compruebe que los datos del catálogo fluyen desde Commerce a Commerce Optimizer:
 
-   En Commerce Admin, abra la página [!UICONTROL Data Feed Sync Status] seleccionando [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
+   En Commerce Admin, abra la página [!UICONTROL Data Feed Sync Status] seleccionando [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]**.
 
    ![Página de estado de sincronización de fuente de datos con informes de estado de elemento de fuente](./assets/data-feed-sync-status.png)
 
