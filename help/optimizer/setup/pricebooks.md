@@ -3,11 +3,11 @@ title: Libros de precios
 description: Aprenda a administrar libros de precios en  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
+source-git-commit: 1c720bc3ba755639eff2f17912fb3a3446e367f6
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,25 @@ ht-degree: 0%
 
 Los libros de precios permiten definir los precios de los productos para un origen de catálogo en diferentes niveles de clientes y mercados. Los libros de precios admiten un modelo jerárquico, que permite hasta tres niveles de libros de precios secundarios anidados en cada libro de precios base. Cada libro de precios puede hacer referencia a un libro de precios principal, formando una estructura de árbol para las fuentes del catálogo de precios.
 
+![Jerarquía de libros de precios](../assets/price-book-hier.png)
+
 El libro de precios base define la moneda para sí mismo y para todos sus libros de precios secundarios. Los libros de precios secundarios heredan esta divisa y no pueden anularla.
 
-Consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/reference/rest/) para obtener información sobre cómo crear, actualizar y eliminar libros de precios para [!DNL Adobe Commerce Optimizer] mediante la API del libro de precios.
+## Añadir libros de precios a Commerce Optimizer
+
+Los libros de precios se agregan a Commerce Optimizer mediante la API de libro de precios. Consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/reference/rest/) para aprender a crear, actualizar y eliminar libros de precios para [!DNL Adobe Commerce Optimizer].
+
+## Ver libros de precios en Commerce Optimizer
+
+Después de ingerir libros de precios en Commerce Optimizer, puede ver la lista de libros de precios y sus identificadores correspondientes en la página **Vista de catálogo**.
+
+1. Vaya a _Configuración de la tienda_ y haga clic en **[!UICONTROL Catalog views]**.
+
+1. Haga clic en **[!UICONTROL Create catalog view]**.
+
+   En los detalles de configuración de la vista del catálogo, seleccione uno de los libros de precios disponibles.
+
+   ![Nombres e ID del libro de precios](../assets/price-book-name-ids.png)
 
 ## Conceptos clave
 

@@ -1,10 +1,11 @@
 ---
 title: Rendimiento de Recommendations
 description: La página de rendimiento de Recommendations proporciona a insight información sobre el rendimiento de las recomendaciones de productos.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
+source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,11 @@ Seleccione la [vista de catálogo](../setup/catalog-view.md) donde se aplican su
 
 ## Ver un informe
 
-Haga clic en el calendario y realice una de las siguientes acciones:
+Haga clic en **[!UICONTROL Date Range]** y seleccione uno de los siguientes intervalos:
 
-- Para especificar una sola fecha, haga doble clic en la fecha del calendario.
-- Para especificar un intervalo de fechas, haga clic en la primera y en la última fecha del calendario.
+![Intervalo de fechas de Recommendations](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->El intervalo de fechas no puede superar un año.
+La tabla de recomendación se actualiza para mostrar las métricas de ese intervalo de fechas.
 
 ## Personalizar tabla
 
@@ -71,7 +69,7 @@ Aprenda a [crear una nueva recomendación o a administrar una existente](../merc
 
 | Control | Descripción |
 |---|---|
-| ![Selector de calendario](../assets/icon-calendar.png) | Determina el intervalo de tiempo que se utiliza para los cálculos de métricas. |
+| ![Intervalo de fecha](../assets/rec-perf-date-range.png) | Determina el intervalo de tiempo que se utiliza para los cálculos de métricas. |
 | ![Selector de columna](../assets/icon-show-hide-columns.png) | Determina las columnas que aparecen en la tabla Recommendations. |
 | Crear recomendación | Abre la página [Crear nueva recomendación](../merchandising/recommendations/create.md). |
 
