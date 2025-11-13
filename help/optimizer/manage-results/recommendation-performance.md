@@ -1,11 +1,11 @@
 ---
 title: Rendimiento de Recommendations
 description: La página de rendimiento de Recommendations proporciona a insight información sobre el rendimiento de las recomendaciones de productos.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
+source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,15 @@ La página Rendimiento de las Recomendaciones muestra una lista de recomendacion
 
 ![Rendimiento de recomendaciones](../assets/rec-performance.png){zoomable="yes"}
 
-## Elija la **vista de catálogo**
-
-Seleccione la [vista de catálogo](../setup/catalog-view.md) donde se aplican sus recomendaciones.
-
-![Vista de catálogo](../assets/catalog-view.png)
-
 ## Ver un informe
 
-Haga clic en **[!UICONTROL Date Range]** y seleccione uno de los siguientes intervalos:
+1. Elija el **origen del catálogo**, como `en-US`, donde se aplican las recomendaciones.
 
-![Intervalo de fechas de Recommendations](../assets/rec-perf-date-range.png)
+1. Haga clic en **[!UICONTROL Date Range]** y seleccione uno de los siguientes intervalos:
 
-La tabla de recomendación se actualiza para mostrar las métricas de ese intervalo de fechas.
+   ![Intervalo de fechas de Recommendations](../assets/rec-perf-date-range.png)
+
+   La tabla de recomendación se actualiza para mostrar las métricas de ese intervalo de fechas.
 
 ## Personalizar tabla
 
@@ -46,14 +42,6 @@ La tabla de recomendación se actualiza para mostrar las métricas de ese interv
    - Para ocultar una columna visible, haga clic en cualquier nombre de columna con una marca de verificación.
 
    La tabla se actualiza para incluir solo las columnas seleccionadas.
-
-## Definición de filtros
-
-Haga clic en el icono de filtro para filtrar las métricas en el espacio de trabajo de rendimiento de Recommendations.
-
-![Filtrar métricas](../assets/rec-filters.png)
-
-Puede configurar varios valores para cada uno de los filtros. Consulte la [tabla siguiente](#column-descriptions) para obtener descripciones de cada filtro.
 
 ## Ver detalles
 
