@@ -1,13 +1,13 @@
 ---
 title: Herramientas de codificación de IA para extensiones
 description: Aprenda a utilizar las herramientas de IA para crear extensiones de Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -96,10 +96,19 @@ Al seleccionar el administrador de paquetes, Adobe recomienda usar `npm` para ma
 
    Los siguientes archivos se añaden al espacio de trabajo:
 
+   **Cursor**
+
    * Configuración de MCP: `.cursor/mcp.json`
    * Directorio de reglas: `.cursor/rules/`
 
+   **Copiloto**
+
+   * Configuración de MCP: `.vscode/mcp.json`
+   * Directorio de reglas: `.github/copilot-instructions.md`
+
 ## Configuración posterior a la instalación
+
+### Cursor
 
 1. Reinicie el IDE del cursor para cargar las nuevas herramientas y configuración de MCP.
 
@@ -119,6 +128,45 @@ Al seleccionar el administrador de paquetes, Adobe recomienda usar `npm` para ma
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
    ```
+
+1. Utilice el siguiente mensaje para ver si el agente utiliza el servidor MCP. Si no es así, pídale al agente que utilice explícitamente las herramientas de MCP disponibles.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+```
+
+### Copiloto
+
+1. Reinicie Visual Studio Code para cargar las nuevas herramientas y configuración de MCP.
+
+1. Compruebe la instalación confirmando que el archivo `copilot-instructions.md` existe en la carpeta `.github`.
+
+1. Habilite el servidor MCP:
+
+   * Abra el panel Extensiones haciendo clic en el icono **Extensiones** en la barra de actividades de la barra lateral izquierda, o bien, use **Cmd+Mayús+X** (macOs) o **Ctrl+Mayús+X** (Windows y Linux).
+   * Haga clic en **SERVIDORES MCP - INSTALADOS**.
+   * Haga clic en el icono de engranaje situado junto a **commerce-extensibility MCP Server** y seleccione **Start Server**, si el servidor está detenido.
+   * Vuelva a hacer clic en el icono de engranaje y seleccione **Mostrar salida**.
+
+1. Compruebe el estado del servidor. La salida `MCP:commerce-extensibility` debe coincidir con lo siguiente:
+
+   ```terminal
+   2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
+   2025-11-13 12:58:50.652 [info] Connection state: Starting
+   2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
+   2025-11-13 12:58:50.657 [info] Connection state: Starting
+   2025-11-13 12:58:50.657 [info] Connection state: Running
+   
+   (...)
+   
+   2025-11-13 12:58:50.753 [info] Discovered 10 tools
+   ```
+
+1. Utilice el siguiente mensaje para ver si el agente utiliza el servidor MCP. Si no es así, pídale al agente que utilice explícitamente las herramientas de MCP disponibles.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+```
 
 ## Mensaje de ejemplo
 
@@ -174,7 +222,7 @@ Consulte los siguientes recursos para empezar:
 
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicaciones de ejemplo de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por qué debería utilizar estos recursos
