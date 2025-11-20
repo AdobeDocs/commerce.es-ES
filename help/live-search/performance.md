@@ -1,7 +1,8 @@
 ---
 title: Rendimiento
-description: El área de trabajo  [!DNL Live Search] Rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: El área de trabajo  [!DNL Live Search] Rendimiento proporciona insight a los términos de búsqueda que utilizan los compradores.
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Rendimiento
 
-El área de trabajo *Rendimiento* proporciona información sobre los términos de búsqueda que usan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. El espacio de trabajo Rendimiento proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
+El área de trabajo *Rendimiento* proporciona insight a los términos de búsqueda que usan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. El espacio de trabajo Rendimiento proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
 
 * Búsquedas únicas
 * Cero resultados
@@ -18,7 +19,7 @@ El área de trabajo *Rendimiento* proporciona información sobre los términos d
 
 ![Rendimiento](assets/performance-unique-searches.png)
 
-También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=es) para obtener más datos sobre la sincronización de datos.
+También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
 
 >[!NOTE]
 >
