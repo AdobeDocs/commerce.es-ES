@@ -2,7 +2,7 @@
 title: Límites y límites
 description: Obtenga información acerca de los límites de  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
