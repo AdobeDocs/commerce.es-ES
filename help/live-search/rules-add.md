@@ -2,9 +2,9 @@
 title: Añadir reglas
 description: Obtenga información sobre cómo crear reglas de comercialización de búsqueda.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
+source-git-commit: 0b8ab786bb6ec333337dc114de214b6d8e4df427
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 ## Añadir una regla
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
-1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplica la regla.
+1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la regla.
 1. Haga clic en el área de trabajo **Buscar comercialización**.
 1. Haga clic en **Agregar regla** para iniciar el editor de reglas.
 
@@ -90,6 +90,33 @@ Los propietarios de tiendas pueden configurar los siguientes tipos de estrategia
 * Ninguno: los productos se ordenan por relevancia.
 
 Seleccione el tipo de estrategia para la regla. La ventana **Probar la regla** muestra los resultados esperados.
+
+### Funcionamiento de la puntuación de clasificación inteligente
+
+La clasificación inteligente determina el orden final del producto combinando dos factores clave: **relevancia textual** y **señales de comportamiento**. Comprender cómo interactúan estos factores le ayuda a establecer expectativas realistas en los resultados de búsqueda.
+
+**Componentes de puntuación:**
+
+* **Relevancia textual**: El factor dominante en la puntuación. Esto mide en qué medida coinciden el nombre, la descripción y los atributos de un producto con la consulta de búsqueda. La puntuación de relevancia del texto es ilimitada (no tiene un límite superior específico) y se ve afectada por factores como:
+
+   * Frecuencia de aparición de palabras coincidentes.
+   * Longitud (en palabras) de los nombres y descripciones de los productos.
+
+* **Señales de comportamiento**: un aumento limitado aplicado sobre la puntuación de relevancia de texto. Al seleccionar una estrategia de clasificación inteligente como &quot;Más visitados&quot; o &quot;Más comprados&quot;, los productos con señales de comportamiento más altas reciben un impulso fijo en sus puntuaciones. Sin embargo, este impulso tiene un límite definido.
+
+**Es posible que el producto más visitado no aparezca primero:**
+
+La relevancia textual suele dominar la clasificación porque su puntuación es ilimitada, mientras que los aumentos de comportamiento son fijos. Como resultado, los productos con texto fuerte coinciden a menudo con los que tienen señales de participación más altas. Los aumentos de comportamiento por sí solos pueden no compensar las grandes brechas en la relevancia del texto. La clasificación inteligente soluciona esto al tener en cuenta la calidad de las coincidencias y la interacción con el comprador, lo que mejora la relevancia general. Sin embargo, la calidad de la coincidencia de texto sigue siendo el principal motor de la clasificación.
+
+**Ejemplo:**
+
+Un comerciante usa la estrategia de clasificación inteligente &quot;Más visto&quot; y busca &quot;vela&quot;. Se espera que el SKU del producto YAN-K-E-512 aparezca en la parte superior de los resultados porque tiene el recuento de vistas más alto. Sin embargo, otros productos tienen una clasificación más alta:
+
+* **Vela de Texas** (primera posición): tiene un nombre de producto más corto y limpio que crea una puntuación de relevancia de texto muy alta. Aunque tiene menos vistas que YAN-K-E-512, su coincidencia de texto superior supera el impulso de comportamiento.
+
+* **YAN-K-E-512** (posición inferior): a pesar de tener el percentil de vista más alto en los datos de comportamiento &quot;Más visitados&quot;, su nombre complejo basado en SKU genera una puntuación de relevancia de texto más baja. El impulso de comportamiento fijo no es suficiente para superar esta brecha de relevancia del texto.
+
+Consulte [reglas de búsqueda](./best-practice.md#search-rules) para obtener información sobre cómo mejorar la capacidad de búsqueda de productos mediante el uso de reglas.
 
 ### Advertencias
 

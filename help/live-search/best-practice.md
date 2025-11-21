@@ -3,9 +3,9 @@ title: Prácticas recomendadas de [!DNL Live Search]
 description: Conozca las prácticas recomendadas para implementar  [!DNL Live Search] en su tienda.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,7 @@ Es crucial establecer una regla de búsqueda predeterminada bien pensada. La [re
 - Priorice ligeramente los productos con márgenes de beneficio más altos sin poner en riesgo la relevancia.
 - Resaltar productos que están a la venta o que forman parte de promociones especiales.
 - Defina automáticamente reglas de búsqueda durante los periodos de promoción o ventas utilizando el intervalo de fechas durante el periodo de promoción.
+- Utilice siempre el panel &quot;Probar la regla&quot; para obtener una vista previa de cómo la estrategia de clasificación inteligente afecta a los resultados de búsqueda reales de diferentes consultas.
 - Adapte los resultados de búsqueda según el comportamiento de cada comprador mediante [clasificación inteligente](rules-add.md#intelligent-ranking), como &quot;recomendado para usted&quot;, &quot;más visitados&quot;, etc. Para adaptar el comportamiento del comprador, debe asegurarse de que el evento se implementa correctamente. Para los comerciantes de Luma, los eventos están disponibles de forma predeterminada. Para implementaciones sin encabezado o personalizadas, debe [implementar eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) según sus necesidades específicas.
 
 Más información sobre las reglas de búsqueda:
@@ -137,7 +138,7 @@ Asegúrese de que cada producto tenga contenido relevante dentro de cada atribut
 Obtenga más información sobre los atributos de producto para la búsqueda:
 
 - [Definir atributos como en los que se puede buscar](workspace.md#set-attributes-as-searchable)
-- [Asignar peso a atributos](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Asignar peso a atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorización de resultados de búsqueda
 
