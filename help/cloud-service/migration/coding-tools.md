@@ -1,13 +1,13 @@
 ---
 title: Herramientas de codificación de IA para extensiones
 description: Aprenda a utilizar las herramientas de IA para crear extensiones de Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
+source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,16 @@ Al seleccionar el administrador de paquetes, Adobe recomienda usar `npm` para ma
 
    * Configuración de MCP: `.vscode/mcp.json`
    * Directorio de reglas: `.github/copilot-instructions.md`
+
+>[!NOTE]
+>
+>Antes de implementar el proyecto, deberá completar las siguientes tareas de configuración:
+>
+>* Inicie sesión en [Adobe Developer Console](https://developer.adobe.com/console) mediante la CLI de Adobe I/O.
+>* Cree un proyecto de App Builder (consulte [Configuración del proyecto](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Configurar variables de entorno en un archivo de `.env`.
+>
+>Puede completar estos pasos de configuración manualmente o aprovechar las herramientas de codificación de IA para guiarle a través del proceso. Consulte [Crear una integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) para obtener instrucciones de configuración detalladas.
 
 ## Configuración posterior a la instalación
 
@@ -222,7 +232,7 @@ Consulte los siguientes recursos para empezar:
 
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicaciones de ejemplo de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por qué debería utilizar estos recursos
