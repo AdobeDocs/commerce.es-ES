@@ -4,9 +4,9 @@ user-guide-description: Documentación y recursos para  [!DNL Adobe Commerce Opt
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
+source-git-commit: b3a3fcc34154cb231a4a656f0b9cafb9f4bef9bb
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '101'
 ht-degree: 10%
 
 ---
@@ -59,6 +59,6 @@ ht-degree: 10%
 - Caso de uso {#use-case}
    - [Caso de uso completo de administración de catálogos y tiendas](./use-case/admin-use-case.md)
 - Recursos para desarrolladores {#developer}
+   - [Referencias de la API y la Guía del desarrollador](https://developer.adobe.com/commerce/services/optimizer/)
    - [Conector de Salesforce Commerce](./developer/salesforce-connector.md)
-   - [Referencia de API de REST de ingesta de datos](https://developer.adobe.com/commerce/services/reference/rest/)
-   - [Referencia de la API de GraphQL de comercialización](https://developer.adobe.com/commerce/services/reference/graphql/)
+
