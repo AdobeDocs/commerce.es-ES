@@ -2,7 +2,7 @@
 title: Conector de Salesforce Commerce
 description: Obtenga información acerca de [!DNL Commerce Optimizer SFCC Connector] que proporciona un punto de partida para integrar Salesforce Commerce B2C con [!DNL Adobe Commerce Optimizer] para sincronizar los datos del catálogo e implementar y personalizar el conector para admitir operaciones empresariales.
 role: Admin, Developer
-source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 0%
@@ -15,9 +15,9 @@ Basado en la tecnología Adobe App Builder, [!DNL Commerce Optimizer Salesforce 
 
 De forma predeterminada, el conector ofrece funciones fiables de sincronización de datos y la flexibilidad para personalizar los flujos de trabajo según las necesidades de su empresa.
 
-Para ver una serie completa de tutoriales de vídeo, consulte [Más información acerca del kit de iniciación en la nube de Salesforce Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Para ver una serie completa de tutoriales de vídeo, consulte [Más información acerca del kit de iniciación en la nube de Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
-## Capacidades clave
+## Funcionalidades clave
 
 * **Sincronización de datos de catálogo:** inserte datos de productos (incluidas variantes, libros de precios y estructuras) de Salesforce Commerce B2C en Adobe Commerce Optimizer para mantener actualizados los escaparates y las aplicaciones basadas en la experiencia.
 * **Sincronización de precios:** Importe y administre datos de precios directamente desde Salesforce Commerce B2C.
@@ -104,7 +104,7 @@ El conector admite varios modos de sincronización.
 
 Al planificar la implementación, tenga en cuenta estos factores clave:
 
-### Asignación y atributos de datos
+### Asignación de datos y atributos
 
 * **Atributos que permiten búsqueda:** Salesforce Commerce B2C establece atributos que permiten búsqueda a través de la interfaz de usuario, que la API no expone. Use [[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) para configurar manualmente estos atributos en los que se puede buscar en Adobe Commerce Optimizer.
 * **Asignación de atributos:** Planifique la asignación de atributos de productos B2C de Salesforce Commerce a metadatos [!DNL Commerce Optimizer] en función de los requisitos de su empresa.

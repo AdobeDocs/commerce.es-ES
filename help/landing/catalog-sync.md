@@ -3,7 +3,7 @@ title: Sincronización de catálogo
 description: Obtenga información sobre cómo exportar datos de productos del servidor  [!DNL Commerce] a [!DNL Commerce Services].
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> El tablero de sincronización de catálogos ahora es el tablero de administración de datos. Este tablero remodelado ahora es compatible con [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ y [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Los clientes pueden obtener el tablero de administración de datos actualizando a la última versión de uno de esos servicios. Obtenga más información al respecto en la documentación de [Panel de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es). Este tema actual permanece para los usuarios que aún no se han actualizado y que aún tienen el panel Sincronización de catálogos.
+> El tablero de sincronización de catálogos ahora es el tablero de administración de datos. Este tablero remodelado ahora es compatible con [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ y [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Los clientes pueden obtener el tablero de administración de datos actualizando a la última versión de uno de esos servicios. Obtenga más información al respecto en la documentación de [Panel de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html). Este tema actual permanece para los usuarios que aún no se han actualizado y que aún tienen el panel Sincronización de catálogos.
 
-Adobe Commerce utiliza indexadores para compilar datos de catálogo en tablas. El proceso se activa automáticamente por [eventos](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=es#events-that-trigger-full-reindexing), como un cambio en el precio de un producto o en el nivel de inventario.
+Adobe Commerce utiliza indexadores para compilar datos de catálogo en tablas. El proceso se activa automáticamente por [eventos](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing), como un cambio en el precio de un producto o en el nivel de inventario.
 
 El servicio de sincronización de catálogos mueve continuamente los datos de productos de una instancia de [!DNL Adobe Commerce] a la plataforma [!DNL Commerce Services] para mantenerlos actualizados. Por ejemplo, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requiere la información actual del catálogo para devolver con precisión las recomendaciones con los nombres, precios y disponibilidad correctos. Use el panel _Sincronización de catálogo_ para observar y administrar el proceso de sincronización o la interfaz de línea de comandos para almacenar en déclencheur una sincronización de catálogo y reindexar los datos de producto para que los consuma [!DNL Commerce Services]. Consulte [Referencia de la interfaz de la línea de comandos](../data-export/data-export-cli-commands.md) en la guía _Exportación de datos SaaS_.
 

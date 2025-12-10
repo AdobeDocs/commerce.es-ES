@@ -3,9 +3,9 @@ title: Vista de catálogo
 description: Conozca cuáles son las vistas de catálogo y cómo crearlas para organizar el catálogo de productos por estructura empresarial, políticas y precios.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Considere las vistas de catálogo como &quot;lentes&quot; diferentes a través d
 - Una vista de catálogo regional puede mostrar productos y precios específicos de un área geográfica
 - Una vista del catálogo de marcas puede mostrar solo productos de una marca en particular
 
-## Crear una vista de catálogo
+## Creación de una vista de catálogo
 
 En esta sección, crea una vista de catálogo, selecciona una [política](policies.md) y un [libro de precios](pricebooks.md).
 
@@ -148,12 +148,12 @@ Los datos del catálogo filtrado se envían a varios destinos, incluidos escapar
 
 ## Casos de uso
 
-### Conglomerado de varias marcas
+### Conglomerado multimarca
 
 **Desafío**: administra varias marcas, países e idiomas<br>
 **Solución**: catálogo único con vistas de catálogo para cada combinación de marca y región
 
-### Distribuidor de piezas automotrices
+### Distribuidor de piezas de automóviles
 
 **Desafío**: 3.000 distribuidores con los mismos productos pero precios diferentes<br>
 **Solución**: Un catálogo con vistas de catálogo y libros de precios específicos del distribuidor

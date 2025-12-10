@@ -1,9 +1,9 @@
 ---
 title: Crear y administrar facetas
 description: Aprenda a agregar y administrar facetas en  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
-source-git-commit: dc751a54c654980a29606c85cdd1cd3324973aab
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Cualquier atributo de producto filtrable puede utilizarse como faceta. Las facet
 
 1. Una vez finalizado, haga clic en **Guardar**.
 
-## Fijar/Desfijar facetas
+## Fijar/desanclar facetas
 
 El fijador cambia de color cuando se hace clic y se usa para mover la faceta a la sección *Facetas fijadas* o *Facetas dinámicas*.
 

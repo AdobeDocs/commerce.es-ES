@@ -2,7 +2,7 @@
 title: Recursos de [!DNL Payment Services]
 description: Recursos relacionados disponibles para  [!DNL Payment Services] versiones.
 feature: Payments
-source-git-commit: 93ed84e33a0102ac7590a4c6dccc17fc85981f18
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%

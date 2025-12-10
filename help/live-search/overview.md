@@ -3,7 +3,7 @@ title: ¿Qué es  [!DNL Live Search]?
 description: '[!DNL Live Search] de Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva.'
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 1%
@@ -31,17 +31,17 @@ La parte de Adobe Commerce de la arquitectura incluye alojar la búsqueda *Admin
 
 ![Flujo de datos de Live Search](assets/ls-cs-data-flow.png)
 
-## Explicación rápida
+## Recorrido rápido
 
 Con un enfoque en la velocidad, relevancia y facilidad de uso, [!DNL Live Search] cambia las reglas del juego tanto para los compradores como para los comerciantes. Vea el siguiente vídeo y haga un recorrido rápido por [!DNL Live Search] desde la tienda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452572?captions=spa&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Para ver un vídeo más detallado sobre cómo usar y configurar Live Search, consulte el tema [Demostración completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Para ver un vídeo más detallado sobre cómo usar y configurar Live Search, consulte el tema [Demostración completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Buscar mientras escribe
 
-[!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los principales resultados de búsqueda en una [ventana emergente](storefront-popover.md) mientras los compradores escriben consultas en el cuadro [Buscar](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search). La página [detalles del producto](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront) se muestra cuando los compradores hacen clic en un producto sugerido o destacado. Un vínculo _Ver todo_ al pie de página de la ventana emergente muestra la página de resultados de la búsqueda.
+[!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los principales resultados de búsqueda en una [ventana emergente](storefront-popover.md) mientras los compradores escriben consultas en el cuadro [Buscar](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). La página [detalles del producto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) se muestra cuando los compradores hacen clic en un producto sugerido o destacado. Un vínculo _Ver todo_ al pie de página de la ventana emergente muestra la página de resultados de la búsqueda.
 
 [!DNL Live Search] devuelve los resultados de &quot;buscar mientras escribe&quot; para una consulta de dos o más caracteres. Para una coincidencia parcial, el número máximo de caracteres por palabra es 20. El número de caracteres de la consulta no se puede configurar. La ventana emergente incluye los campos `name`, `sku` y `category_ids`.
 
@@ -97,4 +97,4 @@ El [!DNL Live Search] [espacio de trabajo](workspace.md) es el área del adminis
 
 Si no envía una consulta de búsqueda de los datos del catálogo en el entorno de prueba durante 90 días consecutivos, los datos del catálogo se establecen en modo de hibernación y no se devuelve ningún dato para ninguna consulta de búsqueda. Esta directiva no afecta a los datos de catálogo del entorno de producción.
 
-Para reactivar los datos del catálogo en su entorno de prueba, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) con el título: &quot;Reactivar [!DNL Live Search]&quot; e incluya los identificadores de entorno. Los datos del catálogo en el entorno de prueba deben restaurarse en un par de horas.
+Para reactivar los datos del catálogo en su entorno de prueba, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) con el título: &quot;Reactivar [!DNL Live Search]&quot; e incluya los identificadores de entorno. Los datos del catálogo en el entorno de prueba deben restaurarse en un par de horas.

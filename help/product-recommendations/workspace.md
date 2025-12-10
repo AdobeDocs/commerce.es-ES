@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Obtenga información sobre cómo configurar, administrar y supervisar el rendimiento de recomendaciones de productos.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Si utiliza una tienda sin encabezado, consulte la siguiente documentación para 
 
 ## Establecer el ámbito
 
-Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es) de toda la configuración de recomendaciones está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplican las recomendaciones.
+Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de toda la configuración de recomendaciones está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplican las recomendaciones.
 
 ## Definir intervalo de fechas de métricas
 

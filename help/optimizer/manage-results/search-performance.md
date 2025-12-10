@@ -1,9 +1,9 @@
 ---
 title: Rendimiento de búsqueda
 description: La página Rendimiento de la búsqueda proporciona a insight los términos de búsqueda que utilizan los compradores.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Existen varios factores clave que determinan la relevancia y eficacia de los res
 - Las reglas de búsqueda son esenciales, ya que pueden aumentar la visibilidad de ciertos productos en función de la popularidad, las nuevas llegadas, los criterios promocionales o cualquier otra estrategia de comercialización para satisfacer los requisitos comerciales.
 - La navegación con facetas permite a los compradores refinar su búsqueda y obtener resultados relevantes rápidamente.
 
-### Monitorización de resultados de búsqueda
+### Monitorizar resultados de búsqueda
 
 Para optimizar los resultados de búsqueda con [!DNL Adobe Commerce Optimizer], supervise los indicadores clave de rendimiento (KPI) relevantes, como las consultas únicas, la posición de clics promedio, las tasas de pulsaciones, la tasa de conversión y la tasa de resultados cero, a fin de comprender cómo los compradores interactúan con la funcionalidad de búsqueda. Estos datos le guían para actualizar y perfeccionar regularmente las reglas de búsqueda.
 

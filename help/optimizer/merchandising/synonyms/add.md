@@ -1,8 +1,9 @@
 ---
 title: Crear y administrar sinónimos
 description: Aprenda a crear y administrar sinónimos para  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%

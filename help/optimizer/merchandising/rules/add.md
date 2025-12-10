@@ -1,9 +1,9 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 5f3bde7070857cbfd6892e5881ce0437973f0cc0
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '2103'
 ht-degree: 0%
