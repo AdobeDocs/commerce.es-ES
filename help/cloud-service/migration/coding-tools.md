@@ -1,11 +1,11 @@
 ---
 title: Herramientas de codificación de IA para extensiones
 description: Aprenda a utilizar las herramientas de IA para crear extensiones de Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -72,7 +72,7 @@ El uso de las herramientas de codificación de IA ofrece las siguientes ventajas
 
 El proceso de instalación le pedirá las opciones de configuración. Para la ubicación de configuración, elija &quot;Directorio actual&quot; para instalar las herramientas en el espacio de trabajo actual:
 
-```terminal
+```plain
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ El proceso de instalación le pedirá las opciones de configuración. Para la ub
 
 Al seleccionar el agente de codificación, Adobe recomienda seleccionar `Cursor` para obtener la mejor experiencia de desarrollo:
 
-```terminal
+```plain
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ Al seleccionar el agente de codificación, Adobe recomienda seleccionar `Cursor`
 
 Al seleccionar el administrador de paquetes, Adobe recomienda usar `npm` para mantener la coherencia:
 
-```terminal
+```plain
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -168,7 +168,7 @@ aio auth login
 
 1. Comprobar el estado del servidor: el servidor MCP de extensibilidad de Commerce debe aparecer de la siguiente manera:
 
-   ```terminal
+   ```plain
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. Utilice el siguiente mensaje para ver si el agente utiliza el servidor MCP. Si no es así, pídale al agente que utilice explícitamente las herramientas de MCP disponibles.
 
-```terminal
+```plain
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Compruebe el estado del servidor. La salida `MCP:commerce-extensibility` debe coincidir con lo siguiente:
 
-   ```terminal
+   ```plain
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Utilice el siguiente mensaje para ver si el agente utiliza el servidor MCP. Si no es así, pídale al agente que utilice explícitamente las herramientas de MCP disponibles.
 
-   ```terminal
+   ```plain
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 El siguiente mensaje de ejemplo crea una extensión para enviar notificaciones cuando se realiza un pedido.
 
-```terminal
+```plain
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 Además de preguntar, puede usar el comando `/search-commerce-docs` para buscar documentación en conversaciones con el agente. Por ejemplo:
 
-```text
+```plain
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Consulte los siguientes recursos para empezar:
 
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicaciones de ejemplo de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por qué debería utilizar estos recursos
@@ -304,7 +304,7 @@ El sistema de reglas aplica automáticamente el siguiente protocolo de cuatro fa
 
 Para el desarrollo complejo que implica varias acciones de tiempo de ejecución, puntos de contacto o integraciones, solicite explícitamente que las herramientas de IA creen un plan de implementación detallado. Cuando vea un plan de alto nivel en [Phase 2](#protocol) que involucra varios componentes, pida un plan de implementación detallado para dividirlo en tareas manejables:
 
-```terminal
+```plain
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -326,7 +326,7 @@ La herramienta toma como valor predeterminado las herramientas MCP, pero en dete
 
 Si ve que se están utilizando comandos CLI y desea utilizar herramientas MCP en su lugar, utilice el siguiente indicador:
 
-```terminal
+```plain
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ Es importante cuestionar la complejidad innecesaria creada por las herramientas 
 
 Cuando se agregan archivos innecesarios (`validator.js`, `transformer.js`, `sender.js`) para extremos de solo lectura simples, use las siguientes indicaciones:
 
-```terminal
+```plain
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Pida ayuda con las pruebas. Las herramientas pueden ayudarle con la depuración,
 
 **Acciones de tiempo de ejecución de pruebas**:
 
-```terminal
+```plain
 Help me test the customer-created runtime action running locally
 ```
 
 **Errores de depuración**:
 
-```terminal
+```plain
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Comprobar registros**:
 
-```terminal
+```plain
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Crear cargas útiles de prueba**:
 
-```terminal
+```plain
 Generate test data for this Commerce event
 ```
 
-```terminal
+```plain
 Create a test payload for the customer_save_after event
 ```
 
 **Buscar extremos de tiempo de ejecución**:
 
-```terminal
+```plain
 What's the URL for this deployed action?
 ```
 
 **Identificar autenticación**:
 
-```terminal
+```plain
 How do I authenticate with this external API?
 ```
 
 **Solucionar problemas**:
 
-```terminal
+```plain
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Implementar solo las acciones modificadas para acelerar el desarrollo. Esto redu
 
 Después de realizar cambios importantes, aproveche las herramientas para limpiar las acciones huérfanas. Permita que las herramientas de IA gestionen el proceso de limpieza de forma sistemática, puede identificar de forma eficaz las acciones huérfanas, verificar su estado y eliminarlas de forma segura sin intervención manual.
 
-```terminal
+```plain
 Help me identify and clean up orphaned runtime actions
 ```
 
 Solicite las herramientas de IA para enumerar las acciones implementadas e identificar las que no se utilizan
 
-```terminal
+```plain
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Haga que las herramientas de IA eliminen las acciones huérfanas utilizando los comandos adecuados
 
-```terminal
+```plain
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
