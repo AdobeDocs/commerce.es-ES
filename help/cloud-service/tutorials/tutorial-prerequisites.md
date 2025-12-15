@@ -4,7 +4,7 @@ description: Conozca los requisitos previos del laboratorio de extensión de cla
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -127,7 +127,7 @@ cp env.dist .env
 
 Abra el archivo `.env` en un editor de texto y agregue las siguientes credenciales de OAuth:
 
-```plain
+```shell-session
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -143,7 +143,7 @@ Puede copiar estos valores de la página **[!UICONTROL Credential details]** en 
 
 Agregue los siguientes detalles de la instancia de Commerce al archivo `.env`:
 
-```plain
+```shell-session
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -159,7 +159,7 @@ Para buscar estos valores:
 
 Establezca un valor temporal para el prefijo de evento:
 
-```plain
+```shell-session
 EVENT_PREFIX=test
 ```
 
@@ -331,7 +331,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```plain
+   ```shell-session
    Search the storefront docs for information about slots
    ```
 
