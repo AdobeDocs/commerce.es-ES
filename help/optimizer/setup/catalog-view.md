@@ -3,11 +3,11 @@ title: Vista de catálogo
 description: Conozca cuáles son las vistas de catálogo y cómo crearlas para organizar el catálogo de productos por estructura empresarial, políticas y precios.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ En esta sección, crea una vista de catálogo, selecciona una [política](polici
 
 Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 
-- [Se crearon directivas](policies.md) para definir los filtros de producto
+- [Se crearon directivas](policies.md) para definir los filtros de producto.
 
-- [Libros de precios ingeridos](pricebooks.md) para precios
+- [Capas de catálogo definidas](catalog-layer.md) para definir variantes de sus productos.
+
+- [Libros de precios ingeridos](pricebooks.md) para precios.
 
 1. En el menú de la izquierda, ve a _Configuración de tienda_ y haz clic en **[!UICONTROL Catalog views]**.
 
@@ -50,6 +52,7 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 
    - **Nombre**: escriba el nombre de la vista de catálogo, por ejemplo `Celport`.
    - **Orígenes del catálogo**: seleccione el origen del catálogo (configuración regional), por ejemplo `en-US`.
+   - **Capas de catálogo**: revise las capas ingeridas y la prioridad.
    - **Directivas**: utilice la lista desplegable para seleccionar las directivas relevantes. Por ejemplo, &quot;Marca&quot;, &quot;Modelo&quot;. palo de golfAsegúrese de que ya ha [creado una directiva](policies.md).
 
 1. Seleccione el libro de precios que desea vincular a la vista de catálogo.
@@ -63,6 +66,20 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 La página Vistas de catálogo se actualiza para mostrar la nueva vista de catálogo&#x200B;
 
 Después de completar estos pasos, la vista de catálogo ahora está configurada para mostrar productos y precios en función de las fuentes y directivas seleccionadas.
+
+## Capas de catálogo
+
+Las capas de catálogo permiten modificar los datos de producto dentro de una vista de catálogo sin cambiar los datos de origen originales. Las capas aplican cambios a atributos de producto específicos, como nombre, descripción, imágenes, vínculos y metadatos, creando una capa sobre el catálogo base. Los datos originales del producto permanecen intactos, lo que permite personalizar los productos de forma segura y revertir los cambios en cualquier momento.
+
+Los casos de uso comunes para las capas de catálogo incluyen:
+
+- **Optimización de SEO**: anula los metatítulos y las descripciones de los productos según las recomendaciones de IA de [Sites Optimizer](../manage-results/opportunities.md)
+- **Campañas de temporada**: actualiza temporalmente nombres de productos, descripciones o imágenes para las promociones
+- **Personalización regional**: muestra información de producto diferente según la ubicación geográfica o el idioma
+- **Pruebas A/B**: Pruebe diferentes presentaciones de productos para optimizar las tasas de conversión
+- **Administración de varias marcas**: personalice los atributos del producto para las distintas vistas del catálogo de marcas.
+
+Para obtener más información sobre cómo crear, administrar y priorizar las capas de catálogo, consulte [Capas de catálogo](catalog-layer.md).
 
 ## Administrar vista de catálogo
 
@@ -166,3 +183,9 @@ Los datos del catálogo filtrado se envían a varios destinos, incluidos escapar
 >[!INFO]
 >
 >Para obtener información detallada acerca de la ingesta y entrega de datos de catálogo, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/).
+
+## Más parecido a esto
+
+- [Capas de catálogo](catalog-layer.md): aprenda a modificar los datos de productos sin cambiar el origen original
+- [Directivas](policies.md): cree directivas para filtrar productos en las vistas de catálogo
+- [Libros de precios](pricebooks.md): administre estructuras de precios para diferentes segmentos de clientes
