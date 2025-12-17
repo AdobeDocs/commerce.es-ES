@@ -2,9 +2,9 @@
 title: Añadir reglas
 description: Obtenga información sobre cómo crear reglas de comercialización de búsqueda.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 085eb0fa1a278701cc889d219db7e8571327a632
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2067'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 ## Añadir una regla
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
-1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplica la regla.
+1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la regla.
 1. Haga clic en el área de trabajo **Buscar comercialización**.
 1. Haga clic en **Agregar regla** para iniciar el editor de reglas.
 
@@ -181,6 +181,10 @@ La información que se escribe aquí aparece en el panel [Detalles de regla](rul
 1. Una vez finalizado, haga clic en **Guardar y publicar**.
 
    La regla se agrega a la lista del área de trabajo *Reglas*.
+
+   >[!IMPORTANT]
+   >
+   >Si el botón **[!UICONTROL Save and publish]** está deshabilitado, asegúrese de haber escrito toda la información necesaria para la regla, incluido el nombre de la misma.
 
 1. Aunque las reglas activas entran en vigor inmediatamente, es posible que tenga que esperar hasta 15 minutos para que se actualicen los resultados de la consulta en caché en la tienda.
 
