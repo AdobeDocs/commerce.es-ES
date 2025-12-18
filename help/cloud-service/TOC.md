@@ -30,4 +30,4 @@ ht-degree: 10%
    - [Requisitos previos del tutorial de extensión Clasificaciones](tutorials/tutorial-prerequisites.md)
    - [Tutorial de extensión de clasificaciones](tutorials/ratings-extension.md)
 - [Notas de la versión](release-notes.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
