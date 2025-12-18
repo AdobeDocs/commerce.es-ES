@@ -3,9 +3,9 @@ title: Migración de archivos multimedia a AEM
 description: Migre los archivos de medios de Adobe Commerce o de un origen externo al DAM de AEM Assets.
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
-source-git-commit: 995fb071953ddad6cb2076207910679905bb0347
+source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ Tanto Adobe Commerce como Adobe Experience Manager (AEM) proporcionan caracterí
 | **Requisitos del sistema** | <ul><li>Entorno de AEM as a Cloud Service aprovisionado con AEM Assets</li><li>Capacidad de almacenamiento suficiente</li><li>Ancho de banda de red para transferencias de archivos grandes</li></ul> |
 | **Acceso y permisos requeridos** | <ul><li>Acceso de administrador a AEM Assets as a Cloud Service</li><li>Acceso al sistema de origen donde se almacenan los archivos multimedia (Adobe Commerce o sistema externo)</li><li>Permisos adecuados para acceder a los servicios de almacenamiento en la nube</li></ul> |
 | **Cuenta de almacenamiento en la nube** | <ul><li>Cuenta de AWS S3 o Azure Blob Storage</li><li>Configuración de contenedor/contenedor privado</li><li>Credenciales de autenticación</li></ul> |
-| **Contenido de Source** | <ul><li>Archivos de medios organizados listos para la migración</li><li>Archivos de imagen y vídeo en <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formatos admitidos por los AEM Assets</a>.</li><li>Recursos limpios y duplicados</li></li> |
-| **Preparación de metadatos** | <ul><li><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Perfil de metadatos de AEM Assets configurado para recursos de Commerce</a></li><li>Valores de metadatos asignados para cada recurso</li><li>Editor de archivos CSV (por ejemplo, Microsoft Excel)</li></ul> |
+| **Contenido de Source** | <ul><li>Archivos de medios organizados listos para la migración</li><li>Archivos de imagen y vídeo en <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formatos admitidos por los AEM Assets</a>.</li><li>Recursos limpios y duplicados</li></li> |
+| **Preparación de metadatos** | <ul><li><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Perfil de metadatos de AEM Assets configurado para recursos de Commerce</a></li><li>Valores de metadatos asignados para cada recurso</li><li>Editor de archivos CSV (por ejemplo, Microsoft Excel)</li></ul> |
 
 ## Prácticas recomendadas de migración
 
@@ -44,9 +44,9 @@ Siga el flujo de trabajo de migración para exportar archivos de medios desde Ad
 
 [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."}
 
-Para los comerciantes de Adobe Commerce, el **módulo de almacenamiento remoto** puede facilitar la importación y exportación de archivos multimedia. Este módulo permite a las empresas almacenar y administrar archivos multimedia mediante servicios de almacenamiento remoto como AWS S3. Para configurar el almacenamiento remoto de su instancia de Commerce, consulte [Configuración del almacenamiento remoto](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) en la **Guía de configuración de Commerce**.
+Para los comerciantes de Adobe Commerce, el **módulo de almacenamiento remoto** puede facilitar la importación y exportación de archivos multimedia. Este módulo permite a las empresas almacenar y administrar archivos multimedia mediante servicios de almacenamiento remoto como AWS S3. Para configurar el almacenamiento remoto de su instancia de Commerce, consulte [Configuración del almacenamiento remoto](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) en la **Guía de configuración de Commerce**.
 
-Si tiene archivos multimedia almacenados fuera de Adobe Commerce, cárguelos directamente a una de las [fuentes de datos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) compatibles con AEM as a Cloud Service.
+Si tiene archivos multimedia almacenados fuera de Adobe Commerce, cárguelos directamente a una de las [fuentes de datos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) compatibles con AEM as a Cloud Service.
 
 ### Paso 2: Crear un archivo CSV para la asignación de metadatos
 
@@ -57,9 +57,9 @@ Para cada archivo multimedia que planee migrar, proporcione valores para los cam
 | Metadatos | Descripción | Valor |
 |-------|-------------|--------|
 | assetPath | Ruta de acceso completa en la que se almacenará el recurso en el repositorio de AEM Assets.<br><br>Utilice la ruta de acceso para crear subcarpetas para organizar los recursos de Commerce, por ejemplo `content/dam/commerce/<brand>/<type>`. | `/content/dam/commerce/<sub-folder>/..<filename>` |
-| comercio:posiciones | La posición/orden del recurso en las galerías de productos | Varios valores numéricos separados por barra vertical (consulte el archivo csv) |
+| commerce:positions | La posición/orden del recurso en las galerías de productos | Varios valores numéricos separados por barra vertical (&quot;Número: multi&quot;) |
 | commerce:isCommerce | Indicador que indica si el recurso se utiliza en el comercio | `Yes` |
-| commerce:sku | SKU de producto asociadas a este recurso | Varios valores de cadena separados por una barra vertical (consulte el archivo csv) |
+| commerce:skus | SKU de producto asociadas a este recurso | Varios valores de cadena separados por barra vertical (cadena: multi) |
 | commerce:roles | Los roles o tipos de imágenes para el recurso (por ejemplo, `thumbnail`, `main image`, `swatch`) | Valores múltiples separados por punto y coma (por ejemplo, &quot;thumbnail; image; swatch_image; small_image&quot;) |
 
 +++Código CSV
@@ -80,7 +80,7 @@ Después de crear el archivo de asignación de metadatos, utilice la herramienta
 
 A continuación se ofrece una descripción general de alto nivel sobre el uso de la herramienta.
 
-1. [Inicie sesión en el entorno de as a Cloud Service Author para AEM Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
+1. [Inicie sesión en el entorno de as a Cloud Service Author para AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
 
 1. En la vista Herramientas de Experience Manager, seleccione **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**.
 
@@ -99,12 +99,12 @@ A continuación se ofrece una descripción general de alto nivel sobre el uso de
    * Opcional. Información sobre los tipos MIME, el tamaño de archivo y otros parámetros para personalizar la configuración de importación
    * La ruta al archivo CSV de asignación de metadatos que ha cargado en la instancia de almacenamiento de Cloud.
 
-   Para ver los pasos detallados, consulte [Configuración de la herramienta de importación masiva](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) en la *Guía del usuario de as a Cloud Service para AEM Assets*.
+   Para ver los pasos detallados, consulte [Configuración de la herramienta de importación masiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) en la *Guía del usuario de as a Cloud Service para AEM Assets*.
 
 1. Después de guardar la configuración, utilice las herramientas de importación masiva para probar y ejecutar la operación de importación.
 
 >[!MORELIKETHIS]
 >
-> [Demostración en vídeo de la herramienta de importación masiva](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> &#x200B;> [Sugerencias, prácticas recomendadas y limitaciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> &#x200B;> [Cargar o introducir recursos mediante API &#x200B;](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [Demostración en vídeo de la herramienta de importación masiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> [Sugerencias, prácticas recomendadas y limitaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> [Cargar o introducir recursos mediante API ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
