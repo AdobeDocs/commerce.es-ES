@@ -42,7 +42,7 @@ Cuando la regla de coincidencia **[!UICONTROL Match by product SKU]** está conf
    >
    > Si un recurso se utiliza para varios productos, configure los metadatos de cada SKU asociado.
 
-1. En la ficha `Basic`, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_en `approved`.
+1. En la ficha `Basic`, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_&#x200B;en `approved`.
 
    ![Metadatos de ejemplo](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
