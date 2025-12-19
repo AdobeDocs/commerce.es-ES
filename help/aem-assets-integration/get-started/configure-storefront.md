@@ -28,4 +28,4 @@ Para habilitar la integración en tiendas de Commerce con tecnología de Edge De
 
 Los complementos de Commerce detectan automáticamente la configuración de `commerce-assets-enabled` y ajustan la administración de imágenes en consecuencia.
 
-Para obtener más información sobre cómo usar AEM Assets con Commerce Storefront con tecnología Edge Delivery Services, complete la configuración de tienda que se describe en el tema [Integración de AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) de la *documentación de Adobe Commerce Storefront*.
+Para obtener más información sobre cómo usar AEM Assets con Commerce Storefront con tecnología Edge Delivery Services, complete la configuración de tienda que se describe en el tema [Integración de AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=es) de la *documentación de Adobe Commerce Storefront*.
