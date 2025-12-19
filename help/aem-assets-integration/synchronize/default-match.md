@@ -3,9 +3,9 @@ title: Coincidencia automática predeterminada
 description: Descubra cómo la regla de coincidencia automática predeterminada permite una sincronización perfecta entre Adobe Commerce y la integración de AEM Assets, lo que garantiza que los recursos se vinculen automáticamente a las entidades de comercialización correctas.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,18 @@ La integración de AEM Assets para Commerce proporciona un mecanismo de coincide
 
 Cuando la regla de coincidencia **[!UICONTROL Match by product SKU]** está configurada en el administrador de Commerce, los archivos de recursos de Commerce se sincronizan automáticamente de los AEM Assets al proyecto de Commerce en función de los metadatos de recursos configurados para cada archivo. Usted configura los metadatos de la ficha de AEM **Commerce** en el entorno de **autor de AEM Assets**:
 
-![Metadatos de ejemplo](../assets/example-metadata.png){width="600" zoomable="yes"}
+1. En AEM Assets, actualice los metadatos de la imagen para agregar la asociación de Adobe Commerce estableciendo el campo `Eligible for Commerce` en `Yes`.
 
-1. En AEM Assets, actualice los metadatos de la imagen para agregar la asociación de Adobe Commerce `Commerce=yes`.
+   ![Metadatos de ejemplo](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. Configure los metadatos ([!UICONTROL SKU], [!UICONTROL position] y [!UICONTROL role]) que vinculan el recurso al SKU del producto asociado.
 
    >[!NOTE]
    >
    > Si un recurso se utiliza para varios productos, configure los metadatos de cada SKU asociado.
+
+1. En la ficha `Basic`, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_en `approved`.
+
+   ![Metadatos de ejemplo](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
 Este método garantiza que los recursos digitales se vinculen y muestren correctamente en Adobe Commerce. También permite a los comerciantes y especialistas en marketing administrar las funciones y el posicionamiento de recursos directamente en los AEM Assets, lo que proporciona un mecanismo coherente y centralizado para la selección y el orden de las imágenes en todos los canales de participación.
