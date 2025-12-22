@@ -50,9 +50,9 @@ Este código de paquete añade los siguientes recursos al entorno de creación d
 
 Necesita los siguientes recursos y permisos para implementar el código de paquete `assets-commerce` en el entorno as a Cloud Service AEM de AEM Assets:
 
-* [Acceso al Programa Cloud Manager de AEM Assets y a los entornos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) con los roles de Administrador de implementación y Programa.
+* [Acceso al Programa Cloud Manager de AEM Assets y a los entornos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) con los roles de Administrador de implementación y Programa.
 
-* Un [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) y conocimiento del proceso de desarrollo local de AEM.
+* Un [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) y conocimiento del proceso de desarrollo local de AEM.
 
 * Comprenda la [estructura del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) y cómo implementar paquetes de contenido personalizado mediante Cloud Manager.
 
@@ -60,15 +60,15 @@ Necesita los siguientes recursos y permisos para implementar el código de paque
 
 ## Paso 1: Instalación del paquete de assets-commerce
 
-1. Vaya a AEM Cloud Manager, seleccione un programa y [cree entornos de producción y ensayo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) que desee integrar con Adobe Commerce.
+1. Vaya a AEM Cloud Manager, seleccione un programa y [cree entornos de producción y ensayo](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) que desee integrar con Adobe Commerce.
 
-1. Configure una [canalización de implementación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) o verifique que su canalización pueda implementar cambios en el entorno seleccionado.
+1. Configure una [canalización de implementación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) o verifique que su canalización pueda implementar cambios en el entorno seleccionado.
 
-1. [Clonar el repositorio de Git administrado por Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) para el programa seleccionado.
+1. [Clonar el repositorio de Git administrado por Adobe](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) para el programa seleccionado.
 
 1. En GitHub, descargue el código del paquete del [repositorio Commerce de AEM Assets](https://github.com/ankumalh/assets-commerce).
 
-1. Desde su [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copie manualmente el código descargado en el repositorio administrado de Adobe existente.
+1. Desde su [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copie manualmente el código descargado en el repositorio administrado de Adobe existente.
 
 1. En todos los `filter.xml` y `pom.xml files` de su proyecto, reemplace todas las ocurrencias de `<my-app>` con el nombre de su aplicación.
 
@@ -102,7 +102,7 @@ Si la ficha **Commerce** no aparece en las propiedades, debe crear manualmente u
 
 1. Arrastre y suelte un componente **checkbox** en la ficha **Commerce** y asígnelo a la propiedad `commerce:isCommerce`. Defina **Yes** y **No** como las opciones.
 
-Si tiene algún otro problema, cree un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) o póngase en contacto con su representante de ventas de integración de AEM Assets para obtener ayuda.
+Si tiene algún otro problema, cree un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) o póngase en contacto con su representante de ventas de integración de AEM Assets para obtener ayuda.
 
 ## Paso 2: Opcional. Configuración de un perfil de metadatos
 
@@ -180,4 +180,4 @@ El componente de interfaz de usuario de datos del producto se agrega automática
 
 * [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} [Instalar paquetes de Adobe Commerce](configure-commerce.md).
 
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} [Configure la integración desde el administrador de Commerce](setup-synchronization.md).
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} [Configure la integración desde el administrador de Commerce](setup-synchronization.md).
