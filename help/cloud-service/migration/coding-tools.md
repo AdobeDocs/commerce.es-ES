@@ -1,22 +1,24 @@
 ---
 title: Herramientas de codificación de IA para extensiones
 description: Aprenda a utilizar las herramientas de IA para crear extensiones de Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+feature: App Builder, Cloud
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # Herramientas de codificación de IA para extensiones
 
-Al migrar a [!DNL Adobe Commerce as a Cloud Service], puede usar las herramientas de codificación de IA para convertir las extensiones PHP [!DNL Adobe Commerce] existentes en extensiones [!DNL Adobe Developer App Builder]. También se puede usar para crear nuevas extensiones de [!DNL App Builder].
+Al migrar a [!DNL Adobe Commerce as a Cloud Service], puede usar las herramientas de codificación de IA para convertir las extensiones PHP [!DNL Adobe Commerce] existentes en extensiones [!DNL Adobe Developer App Builder]. También puede usar estas herramientas para crear nuevas extensiones de [!DNL App Builder].
 
-El uso de las herramientas de codificación de IA ofrece las siguientes ventajas:
+Las herramientas de codificación de IA ofrecen las siguientes ventajas:
 
 * **Flujo de trabajo de desarrollo mejorado**: herramientas de desarrollo de Adobe Commerce integradas.
 * **Asistencia con tecnología de IA**: generación y depuración de código según el contexto.
@@ -74,7 +76,7 @@ El uso de las herramientas de codificación de IA ofrece las siguientes ventajas
    aio commerce extensibility tools-setup
    ```
 
-El proceso de instalación le pedirá las opciones de configuración. Para la ubicación de configuración, elija &quot;Directorio actual&quot; para instalar las herramientas en el espacio de trabajo actual:
+El proceso de instalación le pedirá que especifique las opciones de configuración. Para la ubicación de configuración, elija &quot;Directorio actual&quot; para instalar las herramientas en el espacio de trabajo actual:
 
 ```shell-session
 ? Where would you like to setup the tools?
@@ -130,7 +132,7 @@ Al seleccionar el administrador de paquetes, Adobe recomienda usar `npm` para ma
 
 ## Configuración posterior a la instalación
 
-### Iniciar sesión en [!DNL Adobe I/O CLI]
+### Inicie sesión en Adobe I/O CLI
 
 Después de instalar [!DNL Adobe I/O CLI], debe iniciar sesión siempre que desee utilizar el servidor MCP.
 
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Habilite el servidor MCP:
 
    * Abra el panel Extensiones haciendo clic en el icono **Extensiones** en la barra de actividades de la barra lateral izquierda, o bien, use **Cmd+Mayús+X** (macOs) o **Ctrl+Mayús+X** (Windows y Linux).
-   * Haga clic en **SERVIDORES MCP - INSTALADOS**.
-   * Haga clic en el icono de engranaje situado junto a **commerce-extensibility MCP Server** y seleccione **Start Server**, si el servidor está detenido.
-   * Vuelva a hacer clic en el icono de engranaje y seleccione **Mostrar salida**.
+   * Haga clic en [!UICONTROL **SERVIDORES MCP - INSTALADOS**].
+   * Haga clic en el icono de engranaje situado junto a [!UICONTROL **commerce-extensibility MCP Server**] y seleccione [!UICONTROL **Start Server**], si el servidor está detenido.
+   * Vuelva a hacer clic en el icono de engranaje y seleccione [!UICONTROL **Mostrar salida**].
 
 1. Compruebe el estado del servidor. La salida `MCP:commerce-extensibility` debe coincidir con lo siguiente:
 
@@ -279,7 +281,7 @@ Consulte los siguientes recursos para empezar:
 
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Plantillas de inicio de Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicaciones de ejemplo de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por qué debería utilizar estos recursos
@@ -326,7 +328,7 @@ Las extensiones de Adobe Commerce complejas suelen incluir:
 >
 >Antes de usar las herramientas de MCP, asegúrese de haber [iniciado sesión en la CLI de Adobe I/O](#log-in-to-the-adobe-io-cli).
 
-La herramienta toma como valor predeterminado las herramientas MCP, pero en determinadas circunstancias, puede utilizar comandos CLI en su lugar. Si desea garantizar el uso de la herramienta MCP, solicítelas explícitamente en el mensaje.
+La herramienta toma como valor predeterminado las herramientas MCP, pero en determinadas circunstancias puede utilizar comandos CLI en su lugar. Para garantizar el uso de la herramienta MCP, solicítelas explícitamente en el mensaje.
 
 Si ve que se están utilizando comandos CLI y desea utilizar herramientas MCP en su lugar, utilice el siguiente indicador:
 
@@ -346,7 +348,7 @@ Los comandos CLI se pueden utilizar en los siguientes casos:
 
 ### Desarrollo
 
-Es importante cuestionar la complejidad innecesaria creada por las herramientas de IA.
+Interrogue la complejidad innecesaria creada por las herramientas de IA.
 
 Cuando se agregan archivos innecesarios (`validator.js`, `transformer.js`, `sender.js`) para extremos de solo lectura simples, use las siguientes indicaciones:
 
@@ -466,7 +468,7 @@ Siga estas prácticas recomendadas al implementar:
 
 #### Implementación incremental
 
-Implementar solo las acciones modificadas para acelerar el desarrollo. Esto reducirá el riesgo de romper la funcionalidad existente y proporcionará comentarios más rápidos sobre los cambios. También reduce el riesgo de dañar la funcionalidad existente.
+Implementar solo las acciones modificadas para acelerar el desarrollo. Este método reduce el riesgo de dañar la funcionalidad existente y proporciona comentarios más rápidos sobre los cambios.
 
 * Uso de herramientas de MCP para implementar acciones específicas
 
@@ -479,7 +481,7 @@ Implementar solo las acciones modificadas para acelerar el desarrollo. Esto redu
 
 #### Limpieza en tiempo de ejecución
 
-Después de realizar cambios importantes, aproveche las herramientas para limpiar las acciones huérfanas. Permita que las herramientas de IA gestionen el proceso de limpieza de forma sistemática, puede identificar de forma eficaz las acciones huérfanas, verificar su estado y eliminarlas de forma segura sin intervención manual.
+Después de realizar cambios importantes, aproveche las herramientas para limpiar las acciones huérfanas. Permita que las herramientas de IA gestionen el proceso de limpieza sistemáticamente. Puede identificar de forma eficaz las acciones huérfanas, verificar su estado y eliminarlas de forma segura sin intervención manual.
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Rastrear patrones de uso de tokens:
 
 ## Qué se debe evitar
 
-Debe evitar los siguientes antipatrones al utilizar las herramientas de codificación de IA:
+Evite los siguientes antipatrones al utilizar las herramientas de codificación de IA:
 
 * **No omita la fase de aclaración**. Asegúrese siempre de que la fase 1 se complete antes de la implementación.
 * **No omita la prueba después de cada característica**: realice la prueba gradualmente, no espere hasta que se complete todo.

@@ -3,11 +3,12 @@ title: Información general de [!DNL Adobe Commerce as a Cloud Service]
 description: Obtenga información acerca de las características y ventajas principales de  [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
+level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Información general de [!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service] ofrece flexibilidad, escalabilidad y eficiencia al permitir que las empresas ofrezcan y escalen rápidamente operaciones digitales y aceleren la innovación. La infraestructura nativa en la nube de Adobe ajusta automáticamente los recursos para satisfacer las demandas máximas de tráfico, pedidos y administración de catálogos.
+[!DNL Adobe Commerce as a Cloud Service] ofrece flexibilidad, escalabilidad y eficiencia al permitir que las empresas ofrezcan y escalen rápidamente operaciones digitales a la vez que aceleran la innovación. La infraestructura nativa en la nube de Adobe ajusta automáticamente los recursos para satisfacer las demandas máximas de tráfico, pedidos y administración de catálogos.
 
 En la tabla siguiente se destacan los productos que alimentan [!DNL Adobe Commerce as a Cloud Service]:
 
@@ -58,21 +59,21 @@ En la tabla siguiente se destacan los productos que alimentan [!DNL Adobe Commer
 
 Vea el siguiente vídeo para obtener una breve introducción a la arquitectura de [!DNL Adobe Commerce as a Cloud Service]. A continuación, se proporcionan diagramas que ilustran la arquitectura del vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443270?captions=spa&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 Este diagrama ilustra el flujo de datos entre [!DNL Adobe Commerce as a Cloud Service] y todas las soluciones de Adobe Experience Cloud.
 
-![[!DNL Adobe Commerce as a Cloud Service] diagrama de arquitectura](./assets/data-flow.svg){zoomable="yes"}
+![Diagrama de flujo de datos que muestra [!DNL Adobe Commerce as a Cloud Service] integración con [!DNL Adobe Experience Cloud] soluciones](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce Storefront
 
-Usa [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=es) de Adobe con tecnología de Edge Delivery Services para crear experiencias enriquecidas en minutos con una sencilla creación basada en documentos o edición visual con Storefront Builder.
+Use [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) de Adobe con tecnología de [!DNL Edge Delivery Services] para crear experiencias enriquecidas en minutos con la creación simple basada en documentos o la edición visual con [!DNL Storefront Builder].
 
-Commerce Storefront carece totalmente de encabezado con una arquitectura disociada que proporciona todos los servicios de comercialización y datos a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
+[!DNL Commerce Storefront] no tiene encabezado con una arquitectura disociada que proporciona todos los datos y servicios de comercialización a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] no admite tiendas Luma. Si está migrando desde Adobe Commerce en la nube o local, consulte [escaparates existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=es#existing-storefronts) para obtener instrucciones sobre la transición.
+>[!DNL Adobe Commerce as a Cloud Service] no admite tiendas Luma. Si está migrando desde Adobe Commerce en la nube o local, consulte [escaparates existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) para obtener instrucciones sobre la transición.
 
 ## Servicios de comercialización y servicios de pago
 
@@ -83,26 +84,26 @@ Adobe proporciona un completo conjunto de servicios de comercialización intelig
 - [Servicio de catálogo](../catalog-service/guide-overview.md): ofrezca a sus clientes una experiencia de producto optimizada a la vez que aumenta el rendimiento, mejora la escalabilidad y aumenta las conversiones.
 - [Servicios de pago](../payment-services/guide-overview.md): Mejore la satisfacción del cliente ofreciendo varios métodos de pago, incluidos pagos a plazos sin intereses, y una sola vista del procesamiento de pagos, pedidos y facturas.
 
-## Imágenes de productos con tecnología de AEM Assets
+## [!DNL Product Visuals powered by AEM Assets]
 
 La visualización de productos ayuda a simplificar la administración de recursos mediante un sistema de administración de recursos digitales (DAM) que se integra con Adobe Experience Manager para administrar contenido con medios enriquecidos.
 
 La integración garantiza que los recursos digitales, como las imágenes de los productos o el contenido de marketing, se vinculen dinámicamente a las entidades de comercialización adecuadas, incluidos los productos y las categorías de Adobe Commerce, en función del SKU u otros atributos clave.
 
-Los elementos visuales del producto están disponibles de forma predeterminada con [!DNL Adobe Commerce as a Cloud Service], lo que proporciona algunas de las capacidades de los AEM Assets.
+[!DNL Product Visuals] está disponible de forma predeterminada con [!DNL Adobe Commerce as a Cloud Service], lo que proporciona algunas de las capacidades de [!DNL AEM Assets].
 
 Como alternativa, las capacidades nativas de [!DNL Adobe Commerce as a Cloud Service] proporcionan herramientas básicas de administración de recursos para almacenar y administrar recursos digitales.
 
-Consulte la guía de integración de [AEM Assets](../aem-assets-integration/overview.md) para obtener más información sobre cómo integrar elementos visuales de productos con tecnología de AEM Assets con [!DNL Adobe Commerce as a Cloud Service].
+Consulte la guía de integración de [AEM Assets](../aem-assets-integration/overview.md) para obtener más información sobre cómo integrar [!DNL Product Visuals powered by AEM Assets] con [!DNL Adobe Commerce as a Cloud Service].
 
-### Visuales o AEM Assets del producto
+### [!DNL Product Visuals] o [!DNL AEM Assets]
 
 La siguiente comparación le ayuda a seleccionar la mejor opción para su contenido que supply chain necesita:
 
 <table>
   <tr>
     <td align="left">
-      <strong>Imágenes de productos con tecnología de AEM Assets</strong>
+      <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
         <li>Imagen de producto y vídeo integrados y automatizados Digital Asset Manager (DAM)</li>
         <li>Cambiar el tamaño, recortar y convertir imágenes</li>
@@ -146,7 +147,7 @@ La siguiente comparación le ayuda a seleccionar la mejor opción para su conten
 
 ## Plataforma de desarrollador
 
-Adobe proporciona a los desarrolladores puntos de extensión y herramientas completos para crear aplicaciones que amplíen las capacidades de Commerce Foundation y se integren con sistemas de terceros (como CRM, ERPS y PIMS). Estas herramientas reducen el coste total de propiedad de la plataforma de las siguientes maneras:
+Adobe proporciona a los desarrolladores puntos de extensión y herramientas completos para crear aplicaciones que amplíen las capacidades de Commerce Foundation y se integren con sistemas de terceros (como CRM, ERP y PIM). Estas herramientas reducen el coste total de propiedad de la plataforma de las siguientes maneras:
 
 - **Escalabilidad**: las aplicaciones se pueden escalar por separado del software principal, lo que permite una mayor eficiencia y actualizaciones simplificadas.
 - **Aislamiento**: un entorno aislado significa que los desarrolladores pueden actualizar o modificar sus extensiones a su discreción sin depender de una versión principal.
@@ -167,7 +168,7 @@ Adobe proporciona las siguientes herramientas para desarrolladores para crear in
 
 ## Commerce Foundation
 
-Commerce Foundation proporciona una plataforma de alojamiento automatizada segura y funciones de autoservicio para administrar su aplicación de Commerce en un entorno nativo de la nube.
+[!DNL Commerce Foundation] proporciona una plataforma de alojamiento automatizada segura y características de autoservicio para administrar su aplicación de Commerce en un entorno nativo de la nube.
 
 Las funciones principales incluyen:
 
@@ -177,7 +178,7 @@ Las funciones principales incluyen:
 
 ### Incorporación simplificada
 
-Inicie las instancias de zona protegida y producción en minutos con el portal de aprovisionamiento de autoservicio [!UICONTROL Commerce Cloud Manager]. Todo lo que necesita, incluidos los servicios de comercialización, una instancia de Commerce sin encabezado y App Builder, se configura e integra automáticamente en sus instancias.
+Inicie las instancias de zona protegida y producción en minutos con el portal de aprovisionamiento de autoservicio [!UICONTROL Commerce Cloud Manager]. Todo lo que necesita, incluidos los servicios de comercialización, una instancia de Commerce sin encabezado y [!DNL App Builder], se configura e integra automáticamente en sus instancias.
 
 Consulte [Introducción](getting-started.md) para aprender a crear y administrar instancias de Commerce.
 
@@ -193,11 +194,11 @@ El proceso de actualización típico de Adobe Commerce en la nube implicaba la c
 
 ### Integraciones de terceros
 
-Los desarrolladores pueden usar las API [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) y [REST](https://developer.adobe.com/commerce/webapi/rest/) completas para integrar Commerce Foundation con sistemas de terceros y ampliar las capacidades de Commerce.
+Los desarrolladores pueden usar las API [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) y [REST](https://developer.adobe.com/commerce/webapi/rest/) completas para integrar [!DNL Commerce Foundation] con sistemas de terceros y ampliar las capacidades de Commerce.
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 

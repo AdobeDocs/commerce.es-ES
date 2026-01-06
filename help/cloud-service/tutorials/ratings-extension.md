@@ -1,12 +1,14 @@
 ---
 title: Tutorial de extensión de clasificaciones
 description: Obtenga información sobre cómo crear una extensión de clasificaciones de productos para Adobe Commerce as a Cloud Service mediante App Builder y las herramientas de desarrollo asistido por IA.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -39,29 +41,29 @@ git --version
 bash --version
 ```
 
-Si alguno de los comandos anteriores no devuelve los resultados esperados, vea los [requisitos previos](tutorial-prerequisites.md) para obtener instrucciones.
+Si alguno de los comandos anteriores no devuelve los resultados esperados, consulte los [requisitos previos](tutorial-prerequisites.md) para obtener instrucciones.
 
 ## Desarrollo de extensiones
 
-Esta sección le guía a través del proceso de desarrollo de una extensión de clasificación para Adobe Commerce as a Cloud Service mediante herramientas de desarrollo asistido por IA.
+Esta sección le guía a través del desarrollo de una extensión de clasificación para Adobe Commerce as a Cloud Service mediante herramientas de desarrollo asistido por IA.
 
 1. Vaya a **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]** y compruebe que el conjunto de herramientas `commerce-extensibility` esté habilitado sin errores. Si hay errores, active o desactive el conjunto de herramientas.
 
-   ![Configuración del cursor](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Configuración del IDE de cursor que muestra el conjunto de herramientas de extensibilidad comercial MCP habilitado](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >Al trabajar con herramientas de desarrollo asistido por IA, habrá variaciones naturales en el código y las respuestas generadas por el agente.
+   >Cuando trabaje con herramientas de desarrollo asistido por IA, espere variaciones naturales en el código y las respuestas generadas por el agente.
    >Si tiene algún problema con el código, siempre puede pedir al agente que le ayude a depurarlo.
 
 1. Si se ha añadido documentación al contexto del cursor, desactívela:
 
    - Vaya a [!UICONTROL **Cursor**] > [!UICONTROL **Configuración**] > [!UICONTROL **Configuración del cursor**] > [!UICONTROL **Indexación y documentos**] y elimine cualquier documentación enumerada.
 
-   ![Deshabilitar documentación](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![Indexación de cursor y configuración de documentos con lista de documentación vacía](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Genere un código para una extensión de clasificación de productos:
-   - En la ventana de conversación Cursor the cursor, seleccione el modo **Agente**.
+   - En la ventana de conversación Cursor, seleccione el modo [!UICONTROL **Agente**].
    - Introduzca la siguiente solicitud:
 
    ```shell-session
@@ -80,9 +82,9 @@ Esta sección le guía a través del proceso de desarrollo de una extensión de 
 
 1. Responda las preguntas del agente con precisión para ayudarle a generar el mejor código.
 
-   ![Escriba el mensaje en el cursor](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![Ventana de chat del cursor en el modo Agente con el mensaje de extensión ingresado](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![El agente hace preguntas que aclaran](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![Agente de IA haciendo preguntas aclaratorias sobre los requisitos de extensión](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. Utilice el siguiente texto de ejemplo para responder a las preguntas del agente con el fin de configurar datos de clasificación aleatorios:
 
@@ -90,7 +92,7 @@ Esta sección le guía a través del proceso de desarrollo de una extensión de 
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ Esta sección le guía a través del proceso de desarrollo de una extensión de 
 
    El agente crea un archivo de `requirements.md` que sirve como origen de la verdad para la implementación.
 
-   ![Archivo de requisitos creado](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![Archivo Requirements.md creado por un agente de IA con detalles de implementación](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. Revise el archivo `requirements.md` y compruebe el plan.
 
@@ -112,11 +114,11 @@ Esta sección le guía a través del proceso de desarrollo de una extensión de 
 
    El agente genera el código necesario y proporciona un resumen detallado de los pasos siguientes.
 
-   ![Planificación de arquitectura](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![Plan de arquitectura de fase 2 del agente de IA para la API de clasificaciones](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![Resumen de generación de código](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![Resumen de archivos y estructura de código generados](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![Pasos siguientes](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![Agente de IA que proporciona los siguientes pasos para la prueba y la implementación](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### Pruebas locales
 
@@ -128,9 +130,9 @@ Esta sección le guía a través del proceso de desarrollo de una extensión de 
 
 1. Siga las instrucciones del agente y confirme que la API funciona localmente.
 
-   ![Pruebas locales](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![Instrucciones del agente de IA para pruebas de API locales](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![Resultados de pruebas locales](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![El terminal muestra resultados correctos de prueba de API local con cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Implementación de la extensión
 
@@ -142,19 +144,19 @@ Esta sección le guía a través del proceso de desarrollo de una extensión de 
 
    El agente realiza una evaluación de la preparación previa al despliegue antes de este.
 
-   ![Evaluación previa a la implementación](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![lista de comprobación de evaluación de preparación previa al despliegue del agente de IA](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. Cuando confíe en los resultados de la evaluación, indique al agente que continúe con el despliegue.
 
    El agente utiliza el kit de herramientas de MCP para verificar, crear e implementar automáticamente.
 
-   ![Implementación](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![Proceso de implementación y compilación del kit de herramientas de MCP](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Posterior a la implementación
 
 Puede probar la API antes de integrarla en la tienda. El agente debe proporcionar la ubicación de la nueva acción y una estrategia de prueba.
 
-![Estrategia de prueba](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![Estrategia de prueba del agente de IA con URL de acción implementada y comandos de prueba](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 También puede probar la API manualmente utilizando cURL en un terminal:
 
@@ -162,7 +164,7 @@ También puede probar la API manualmente utilizando cURL en un terminal:
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![prueba cURL](../assets/curl-test.png){width="600" zoomable="yes"}
+![El terminal muestra una prueba de cURL correcta de la API de clasificaciones implementada](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Integración con Edge Delivery Services
 
@@ -172,9 +174,9 @@ Para integrar la API de clasificaciones con una tienda [!DNL Adobe Commerce] con
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![Contrato de servicio](../assets/create-contract.png){width="600" zoomable="yes"}
+![Agente de IA creando archivo de contrato de servicio para integración de tienda](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![Detalles del contrato de servicio](../assets/contract.png){width="600" zoomable="yes"}
+![Clasificaciones del archivo de marcado de contrato de API con detalles de extremo y respuesta](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=es).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

@@ -1,19 +1,21 @@
 ---
 title: Herramienta de migración masiva de datos
 description: Aprenda a utilizar la herramienta de migración masiva de datos para migrar datos de su instancia de Adobe Commerce en la nube existente a  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+feature: Cloud
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # Herramienta de migración masiva de datos
 
-La herramienta de migración masiva de datos sigue una arquitectura distribuida que permite una migración de datos segura y eficaz de los entornos PaaS a SaaS. Esta herramienta está diseñada para que los implementadores de soluciones migren datos de una Adobe Commerce en la nube (PaaS) existente a [!DNL Adobe Commerce as a Cloud Service] (SaaS). Para obtener más información sobre el proceso de migración, consulte la [descripción general de la migración](./overview.md).
+La herramienta de migración masiva de datos sigue una arquitectura distribuida que permite una migración de datos segura y eficaz de los entornos PaaS a SaaS. Esta herramienta ayuda a los implementadores de soluciones a migrar datos de una Adobe Commerce en la nube (PaaS) existente a [!DNL Adobe Commerce as a Cloud Service] (SaaS). Para obtener más información sobre el proceso de migración, consulte la [descripción general de la migración](./overview.md).
 
 >[!NOTE]
 >
@@ -21,7 +23,7 @@ La herramienta de migración masiva de datos sigue una arquitectura distribuida 
 
 La siguiente imagen detalla la arquitectura y los componentes clave para utilizar la herramienta de migración masiva de datos.
 
-![Arquitectura de la herramienta de migración masiva de datos](../assets/bulk-data-diagram.png)
+![Diagrama de arquitectura de la herramienta de migración masiva de datos que muestra el flujo de datos de PaaS a SaaS](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## Flujo de trabajo migración
 
@@ -44,13 +46,13 @@ La disponibilidad de la herramienta de migración masiva de datos es la siguient
 
 ## Crear entorno de destino
 
-El implementador de soluciones (SI) crea un entorno de destino para la migración. Este entorno se utiliza para almacenar los datos que se migran de la instancia de origen.
+El implementador de soluciones (SI) crea un entorno de destino para la migración. Este entorno almacena los datos migrados desde la instancia de origen.
 
 Primero, [cree una nueva instancia de  [!DNL Adobe Commerce as a Cloud Service] (SaaS)](../getting-started.md#create-an-instance).
 
 ### Configuración de la herramienta de extracción
 
-La herramienta de extracción se utiliza para extraer datos de la instancia de origen.
+Utilice la herramienta de extracción para extraer datos de la instancia de origen.
 
 1. Descargue la herramienta de extracción desde el vínculo proporcionado por Adobe.
 1. Establezca las siguientes variables de entorno en la herramienta de extracción:
@@ -87,13 +89,13 @@ Ejecute la herramienta de carga de datos proporcionada por Adobe. Esta herramien
 1. Genere un plan de carga.
 1. Ejecute el plan moviendo los datos a la base de datos de inquilinos SaaS por lotes.
 1. Procese los medios del catálogo y transfiéralos al entorno de destino.
-1. Vacía la caché de Redis de SaaS e invalida los índices de base de datos del inquilino.
+1. Vacíe la caché de Redis de SaaS e invalide los índices de base de datos para el inquilino.
 
 ### Ingesta de datos del catálogo
 
 Una vez cargados los datos, los datos del catálogo fluyen automáticamente de la base de datos de inquilino de SaaS al servicio de catálogo.
 
-El servicio de catálogo comparte estos datos con Live Search y Recommendations de productos. No se requiere ninguna intervención manual para este proceso. Los datos estarán disponibles en todos los servicios una vez que se complete la ingesta.
+El servicio de catálogo comparte estos datos con Live Search y Recommendations de productos. No se requiere ninguna intervención manual para este proceso. Los datos están disponibles en todos los servicios una vez finalizada la ingesta.
 
 ### Verificación de integridad de datos
 
