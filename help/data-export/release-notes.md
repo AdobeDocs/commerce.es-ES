@@ -90,7 +90,7 @@ Se ha agregado compatibilidad con atributos de producto adicionales para incluir
 
 ## Versión 103.4.5
 
-![La nueva exportación de datos SaaS de ](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
+![La nueva exportación de datos SaaS de &#x200B;](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
 ![Corrección](../assets/fix.svg): se mejoró la creación de informes de errores de exportación de datos. Los registros ahora incluyen mensajes de error más detallados, incluidos detalles técnicos originales para facilitar la depuración y el seguimiento de errores. <!--MDEE-1064-->
 
 ## Versión 103.4.4
@@ -207,7 +207,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## Versión 103.3.4
 
-![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento ](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce `data_sent_outside`<!--MDEE-785-->
+![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento &#x200B;](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce `data_sent_outside`<!--MDEE-785-->
 
 ## Versión 103.3.3
 
