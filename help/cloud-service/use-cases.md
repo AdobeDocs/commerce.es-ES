@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1390'
@@ -200,7 +200,7 @@ Imagine un escenario en el que desee modificar rápidamente el fondo de una imag
 
 #### Agregar la imagen a [!DNL Commerce AEM Assets]
 
-1. En el [panel de navegación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], seleccione [!UICONTROL **Assets**] > [!UICONTROL **Archivos**] > [!UICONTROL **Commerce**] y haga clic en el recurso que creó en la sección anterior.
+1. En el [panel de navegación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], seleccione [!UICONTROL **Assets**] > [!UICONTROL **Archivos**] > [!UICONTROL **Commerce**] y haga clic en el recurso que creó en la sección anterior.
 
    ![Carpeta de Commerce en [!DNL AEM Assets] con imágenes de productos](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +250,7 @@ Generate Variations de [!DNL Adobe Commerce] aprovecha la IA generativa para aut
 
 ### Generar texto
 
-1. Abra el sitio de la tienda con el [Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Abra el sitio de la tienda con el [Editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Seleccione el bloque de texto que desee editar.
 
@@ -264,7 +264,7 @@ Generate Variations de [!DNL Adobe Commerce] aprovecha la IA generativa para aut
 
 ### Generación de contenido e imágenes
 
-1. Abrir [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Abrir [[!DNL Generate Variations]](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Seleccione la plantilla [!UICONTROL **Hero Banner**].
 
