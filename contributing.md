@@ -1,8 +1,8 @@
 ---
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 4ddab6bbd62a3cc7c6dff089745c1b5ef5c20f70
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 3%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 # Contribución
@@ -17,16 +17,16 @@ Este proyecto se adhiere al [código de conducta](code-of-conduct.md) de Adobe. 
 se espera que respete este código. Informar de comportamientos inaceptables a
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Documentación de guía del colaborador
+## Documentación de la guía del colaborador
 
-Consulte la [Guía del colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
+Consulte la [Guía del colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## ¿Tiene alguna pregunta?
 
 Comience por rellenar un problema. Los colaboradores existentes en este proyecto trabajan para llegar a
 consenso en torno a la dirección del proyecto y soluciones de problemas dentro de los hilos de problemas cuando corresponda.
 
-## Contrato de licencia de colaborador
+## Acuerdo de licencia de colaborador
 
 Todas las contribuciones de terceros a este proyecto deben estar acompañadas por un colaborador firmado
 acuerdo de licencia. Esto otorga permiso a Adobe para redistribuir sus contribuciones
@@ -40,12 +40,10 @@ Todos los envíos deben ser solicitudes de extracción y deben revisarse
 por los colaboradores del proyecto. Leer [documentación de solicitud de extracción de GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 para obtener más información sobre el envío de solicitudes de extracción.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Por último, siga la [plantilla de solicitud de extracción](PULL_REQUEST_TEMPLATE.md) cuando
+envío de una solicitud de extracción
 
-## De Colaborador a Supervisor
+## De colaborador a supervisor
 
 ¡Nos encantan las contribuciones de nuestra comunidad! Si desea ir un paso más allá de colaborador
 y convertirse en un supervisor con acceso de escritura completo y voz en el proyecto, debe
@@ -56,4 +54,52 @@ no dude en ponerse en contacto con los colaboradores existentes para hablar sobr
 
 ## Problemas de seguridad
 
-Para informar sobre un problema de seguridad, [envíe un problema a nuestros expertos en seguridad](https://helpx.adobe.com/es/security/alertus.html).
+Para informar sobre un problema de seguridad, [envíe un problema a nuestros expertos en seguridad](https://helpx.adobe.com/security/alertus.html).
+
+## Aspectos destacados de las novedades
+
+Si los cambios introducen nuevos temas, actualizaciones significativas o correcciones que es necesario resaltar, puede agregar una breve descripción a la [sección Novedades](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) directamente desde el cuerpo de la solicitud de extracción.
+
+Para añadir un resaltado de Novedades:
+
+1. Incluya la etiqueta `whatsnew` con la descripción adecuada en el cuerpo de la solicitud de extracción al final. La descripción debe proporcionar contexto sobre el cambio y un vínculo al tema o temas de destino. Utilice el siguiente formato (las comillas de bloque de código son solo para representación, no las incluya en el cuerpo de la solicitud de extracción):
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html).
+   ```
+
+   o, si hay varios temas:
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce/third-target-topic.html).
+   ```
+
+   también puede utilizar listas para varios elementos destacados:
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+1. Añada etiquetas compatibles que indiquen el tipo de cambio. Las etiquetas admitidas incluyen etiquetas para cada tipo de cambio, como:
+
+   - `new-topic` - para nuevos temas
+   - `major-update`: para actualizaciones importantes que pueden incluir cambios significativos en el contenido, la estructura o la funcionalidad
+   - `technical` - para cambios técnicos que no se consideran actualizaciones importantes pero que aún requieren atención
+
+**Importante:**
+
+1. La parte `whatsnew` debe comenzar desde la etiqueta `whatsnew` y estar al final del cuerpo de la solicitud de extracción.
+1. Las descripciones de los cambios deben incluir vínculos de trabajo. Asegúrese de que los vínculos sean correctos y lleven a los temas deseados. Si el tema es nuevo, compruebe que los vínculos funcionan después de combinar la solicitud de extracción y publicar el nuevo tema. Es aceptable corregir los vínculos después de combinar la solicitud de extracción.
+
+Por ejemplo, busque en solicitudes de extracción cerradas en el repositorio para ver el formato de los resaltados existentes y compárelos con la [sección Novedades](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) para ver cómo aparecen en la documentación.
