@@ -1,11 +1,11 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,9 @@ También puede hacer clic en el icono de anclaje para anclar un producto a su ub
 
 >[!NOTE]
 >
->Solo puede anclar productos que se devuelven en la consulta.
+>Solo puede anclar productos que aparezcan en los resultados de búsqueda para la consulta configurada y las condiciones de regla.
+>
+>Los productos deben estar indexados, ser visibles, estar en stock y cumplir todos los filtros de regla para poder anclarlos. Si un producto no aparece en la vista previa o en los resultados de la regla, el anclaje no tiene ningún efecto.
 
 O los eventos se pueden configurar manualmente:
 
