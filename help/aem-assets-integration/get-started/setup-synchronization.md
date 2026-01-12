@@ -16,7 +16,7 @@ Configure la integración conectando Commerce a la instancia de AEM Assets y sel
 
 Después de identificar el proyecto de AEM Assets, seleccione la regla de coincidencia para sincronizar los recursos entre Adobe Commerce y los AEM Assets.
 
-* **[!UICONTROL Match by product SKU]**: regla predeterminada que coincide con el SKU de los metadatos del recurso con el [SKU del producto de Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) para garantizar que los recursos estén asociados con los productos correctos.
+* **[!UICONTROL Match by product SKU]**: regla predeterminada que coincide con el SKU de los metadatos del recurso con el [SKU del producto de Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/glossary#sku) para garantizar que los recursos estén asociados con los productos correctos.
 
 * **[!UICONTROL Custom match]**: regla de coincidencia para escenarios más complejos o requisitos empresariales específicos que requieren una lógica de coincidencia personalizada. La implementación de la coincidencia personalizada requiere el desarrollo de código personalizado en Adobe Developer App Builder para definir cómo se comparan los recursos con los productos. Próximamente más detalles...
 
@@ -28,7 +28,7 @@ Para la configuración inicial, usa la regla predeterminada *Coincidir con el SK
 
 * [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} [Instale paquetes de Adobe Commerce](configure-commerce.md) para agregar la extensión y generar las credenciales y conexiones necesarias para usar la extensión.
 
-* Para habilitar [Dynamic Media con las funciones de OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) en AEM as a Cloud Service, envía un ticket de asistencia de Adobe con la siguiente información:
+* Para habilitar [Dynamic Media con las funciones de OpenAPI](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) en AEM as a Cloud Service, envía un ticket de asistencia de Adobe con la siguiente información:
 
    * Title: Habilite la API abierta de Dynamic Media para lograr una integración completa entre Adobe Commerce y los AEM Assets/productos visuales de AEM Assets
 
@@ -43,7 +43,7 @@ Para la configuración inicial, usa la regla predeterminada *Coincidir con el SK
 
 ## Configuración de la conexión
 
-1. Obtenga el proyecto [Entorno de creación de AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start) y el ID de entorno.
+1. Obtenga el proyecto [Entorno de creación de AEM Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/quick-start) y el ID de entorno.
 
    1. Abra AEM Cloud Manager y seleccione **[!UICONTROL Assets]**.
 
@@ -78,7 +78,7 @@ Para la configuración inicial, usa la regla predeterminada *Coincidir con el SK
 1. Seleccione una de las reglas de coincidencia de recursos para la sincronización de recursos de la lista desplegable **[!UICONTROL Asset matching rule]**.
 
    * Seleccionar **[!UICONTROL Match by SKU]** para [coincidencia automática predeterminada](../synchronize/default-match.md),
-   * Seleccione **[!UICONTROL Custom match]** para [coincidencia automática personalizada](../synchronize/custom-match.md) (requiere [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
+   * Seleccione **[!UICONTROL Custom match]** para [coincidencia automática personalizada](../synchronize/custom-match.md) (requiere [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
 
 1. Agregue el nombre del campo de metadatos de AEM Assets [definido para las SKU de productos de Commerce en el campo &#x200B;](configure-aem.md#configure-metadata), **[!UICONTROL Match by product SKU attribute name]** de forma predeterminada.`commerce:skus`
 
@@ -105,7 +105,7 @@ La configuración **Propietario de la visualización** determina qué sistema pr
 
 El administrador muestra las imágenes disponibles para ese propietario, mientras que el resto de las imágenes aparecen atenuadas y mostradas con la etiqueta **hidden**.
 
-Consulte el tema [establecer detalles de la imagen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} para obtener detalles sobre el comportamiento de visualización de la imagen.
+Consulte el tema [establecer detalles de la imagen](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} para obtener detalles sobre el comportamiento de visualización de la imagen.
 
 >[!TIP]
 >
@@ -133,7 +133,7 @@ Si el proyecto as a Cloud Service de AEM Assets se ha configurado con un [nombre
 
 ## Siguiente paso
 
-* **Configura tu tienda de Commerce**: para usar AEM Assets con Commerce Storefront con tecnología Edge Delivery Services, completa la configuración de la tienda que se describe en el tema [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) de la *documentación de Adobe Commerce Storefront*.
+* **Configura tu tienda de Commerce**: para usar AEM Assets con Commerce Storefront con tecnología Edge Delivery Services, completa la configuración de la tienda que se describe en el tema [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=es) de la *documentación de Adobe Commerce Storefront*.
 
 * Configure [reglas coincidentes](../synchronize/default-match.md) entre Adobe Commerce y la integración de AEM Assets.
 
