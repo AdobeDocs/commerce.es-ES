@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configuración
 
-Al [configurar un espacio de datos SaaS](../landing/saas.md#saas-configuration) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe AI](https://business.adobe.com/ai.html) analiza esos datos y calcula las asociaciones de productos que se usan para las recomendaciones de productos.
+Al [configurar un espacio de datos SaaS](../landing/saas.md#saas-configuration) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe AI](https://business.adobe.com/es/ai.html) analiza esos datos y calcula las asociaciones de productos que se usan para las recomendaciones de productos.
 
 Los entornos que no son de producción para pruebas o ensayo generalmente no tienen la cantidad o calidad de los datos de comportamiento de la tienda para ofrecer recomendaciones de productos realistas. El comportamiento real del comprador a escala solo se puede capturar en un entorno de producción. Para solucionar este problema, Adobe Commerce le permite utilizar recomendaciones de productos de su entorno de producción con otros espacios de datos de SaaS que no sean de producción. El uso de datos reales de la tienda en un entorno que no sea de producción le permite obtener una vista previa de las recomendaciones que ven los compradores y experimentar con diferentes tipos de recomendaciones y ubicaciones. Los compradores pueden obtener una vista previa de las recomendaciones de un espacio de datos de SaaS diferente, pero no hacer clic en ellas.
 
