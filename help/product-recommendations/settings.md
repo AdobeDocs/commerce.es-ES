@@ -2,7 +2,7 @@
 title: Configuración
 description: Aprenda a cambiar el origen de sus  [!DNL Product Recommendations] datos y a habilitar las recomendaciones visuales.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configuración
 
-Al [configurar un espacio de datos SaaS](../landing/saas.md#saas-configuration) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe Sensei](https://www.adobe.com/sensei.html) analiza esos datos y calcula las asociaciones de productos que se usan para las recomendaciones de productos.
+Al [configurar un espacio de datos SaaS](../landing/saas.md#saas-configuration) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe AI](https://business.adobe.com/ai.html) analiza esos datos y calcula las asociaciones de productos que se usan para las recomendaciones de productos.
 
 Los entornos que no son de producción para pruebas o ensayo generalmente no tienen la cantidad o calidad de los datos de comportamiento de la tienda para ofrecer recomendaciones de productos realistas. El comportamiento real del comprador a escala solo se puede capturar en un entorno de producción. Para solucionar este problema, Adobe Commerce le permite utilizar recomendaciones de productos de su entorno de producción con otros espacios de datos de SaaS que no sean de producción. El uso de datos reales de la tienda en un entorno que no sea de producción le permite obtener una vista previa de las recomendaciones que ven los compradores y experimentar con diferentes tipos de recomendaciones y ubicaciones. Los compradores pueden obtener una vista previa de las recomendaciones de un espacio de datos de SaaS diferente, pero no hacer clic en ellas.
 

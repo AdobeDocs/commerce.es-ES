@@ -2,7 +2,7 @@
 title: Flujo de trabajo de implementación
 description: Conoce los pasos para implementar  [!DNL Product Recommendations] correctamente en tu tienda.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
-source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 [!DNL Product Recommendations] utiliza datos de catálogo y de comportamiento:
 
-- Comportamiento: datos de la participación de un comprador en el sitio, como vistas de productos, artículos añadidos a un carro de compras y compras. Adobe Commerce y Adobe Sensei no recopilan información de identificación personal.
+- Comportamiento: datos de la participación de un comprador en el sitio, como vistas de productos, artículos añadidos a un carro de compras y compras. Adobe Commerce y Adobe AI no recopilan información de identificación personal.
 
 - Catálogo: metadatos del producto, como nombre, precio y disponibilidad.
 
-Al instalar `magento/product-recommendations module`, Adobe Sensei agrega los datos de catálogo y comportamiento y crea [!DNL Product Recommendations] para cada tipo de recomendación. A continuación, el servicio [!DNL Product Recommendations] implementa esas recomendaciones en la tienda. Para ayudarle a implementar recomendaciones de productos en su tienda, utilice el siguiente flujo de trabajo:
+Al instalar `magento/product-recommendations module`, Adobe AI agrega los datos de comportamiento y catálogo y crea [!DNL Product Recommendations] para cada tipo de recomendación. A continuación, el servicio [!DNL Product Recommendations] implementa esas recomendaciones en la tienda. Para ayudarle a implementar recomendaciones de productos en su tienda, utilice el siguiente flujo de trabajo:
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ Al instalar `magento/product-recommendations module`, Adobe Sensei agrega los da
 
 1. **Implementar la recopilación de datos en la producción**
 
-   La implementación de [!DNL Product Recommendations] requiere dos [fuentes de datos](type.md) principales: catálogo y comportamiento. Dado que la producción es el único entorno en el que se capturan y analizan las acciones de los compradores, comience la recopilación de datos sobre la producción lo antes posible. [Descubra](events.md) cómo Adobe Sensei entrena modelos de aprendizaje automático que resultan en recomendaciones de mayor calidad. Como beneficio adicional, cuando empiece a recopilar datos de comportamiento en producción, puede [recuperar recomendaciones](staging-environment.md#fetch-recommendations-from-production-environment-recommended) basadas en estos datos de producción mientras opera en entornos que no son de producción. A continuación, puede probar y experimentar con diferentes recomendaciones que se calculan en función de los datos reales del comprador recopilados en la producción.
+   La implementación de [!DNL Product Recommendations] requiere dos [fuentes de datos](type.md) principales: catálogo y comportamiento. Dado que la producción es el único entorno en el que se capturan y analizan las acciones de los compradores, comience la recopilación de datos sobre la producción lo antes posible. [Descubra](events.md) cómo la IA de Adobe entrena modelos de aprendizaje automático que resultan en recomendaciones de mayor calidad. Como beneficio adicional, cuando empiece a recopilar datos de comportamiento en producción, puede [recuperar recomendaciones](staging-environment.md#fetch-recommendations-from-production-environment-recommended) basadas en estos datos de producción mientras opera en entornos que no son de producción. A continuación, puede probar y experimentar con diferentes recomendaciones que se calculan en función de los datos reales del comprador recopilados en la producción.
 
-   Para implementar la recopilación de datos en producción, debe [instalar y configurar](install-configure.md) el módulo [!DNL Product Recommendations] proporcionando una [clave de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es).
+   Para implementar la recopilación de datos en producción, debe [instalar y configurar](install-configure.md) el módulo [!DNL Product Recommendations] proporcionando una [clave de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ Al instalar `magento/product-recommendations module`, Adobe Sensei agrega los da
    >
    > Al personalizar la plantilla, puede especificar la hoja de estilo, sobrescribir dónde aparece una unidad de recomendación en una página, etc.
 
-   Consulte [Personalizar](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=es) en la documentación para desarrolladores para obtener información sobre cómo completar este paso.
+   Consulte [Personalizar](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) en la documentación para desarrolladores para obtener información sobre cómo completar este paso.
 
 1. **Recomendaciones de prueba en su entorno que no sea de producción**
 

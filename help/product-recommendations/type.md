@@ -2,7 +2,7 @@
 title: Tipos de recomendación
 description: Obtenga información acerca de las recomendaciones que puede implementar en varias páginas del sitio.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Estos tipos de recomendación recomiendan productos que son los más populares o
 | Más visitados | Recomienda los productos que más se vieron contando la cantidad de sesiones en las que se produjo una acción de visualización en los últimos siete días.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
 | Más comprados | Recomienda los productos comprados con mayor frecuencia por los compradores en los últimos siete días.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
 | Más añadidos al carro | Recomienda los productos que los compradores añaden con mayor frecuencia a los carros de compras en los últimos siete días. Este tipo de recomendación se puede utilizar en todas las páginas.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
-| Tendencia | Recomienda productos en función del impulso reciente de la popularidad de un producto en todo el sitio.<br/><br/>Adobe Sensei agrega datos de compra y navegación en el sitio para determinar y clasificar qué productos son los más populares entre los compradores. Dado que Trending analiza el impulso reciente del producto, es un tipo de recomendación eficaz para los catálogos que tienen una alta rotación. Si el catálogo es más estático, puede que no sea tan útil a menos que los patrones de compra de la audiencia sean muy variables.<br/><br/>Cuando se usa en la página de inicio, Tendencia recomienda productos que recientemente se han hecho populares en todo el sitio. Las tendencias no muestran productos que son populares de manera consistente, sino más bien aquellos que se han vuelto populares recientemente. Por ejemplo, si tiene una campaña de marketing por correo electrónico que promociona determinados productos, el aumento de popularidad generado por el correo electrónico aumenta la probabilidad de que los productos promocionados se clasifiquen como tendencias.<br/><br/>**Dónde se usó:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Tendencia<br/>- Tendencia ahora<br/>- Tendencia reciente<br/>- Productos destacados<br/>- Productos relacionados con la tendencia (PDP) |
+| Tendencia | Recomienda productos en función del impulso reciente de la popularidad de un producto en todo el sitio.<br/><br/>Adobe AI agrega datos de compra y navegación en el sitio para determinar y clasificar qué productos son los más populares entre los compradores. Dado que Trending analiza el impulso reciente del producto, es un tipo de recomendación eficaz para los catálogos que tienen una alta rotación. Si el catálogo es más estático, puede que no sea tan útil a menos que los patrones de compra de la audiencia sean muy variables.<br/><br/>Cuando se usa en la página de inicio, Tendencia recomienda productos que recientemente se han hecho populares en todo el sitio. Las tendencias no muestran productos que son populares de manera consistente, sino más bien aquellos que se han vuelto populares recientemente. Por ejemplo, si tiene una campaña de marketing por correo electrónico que promociona determinados productos, el aumento de popularidad generado por el correo electrónico aumenta la probabilidad de que los productos promocionados se clasifiquen como tendencias.<br/><br/>**Dónde se usó:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Tendencia<br/>- Tendencia ahora<br/>- Tendencia reciente<br/>- Productos destacados<br/>- Productos relacionados con la tendencia (PDP) |
 
 ## Alto rendimiento {#highperf}
 
@@ -124,7 +124,7 @@ El tipo de recomendación _Similitud visual_ ofrece recomendaciones para otros p
 - Material
 - Estilo
 
-Adobe Sensei utiliza IA para procesar y analizar las imágenes del catálogo y crear atributos utilizados para determinar similitudes visuales.
+Adobe AI utiliza IA para procesar y analizar las imágenes del catálogo y crear atributos que se utilizan para determinar similitudes visuales.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Debido a que este tipo de recomendación no es aplicable a la mayoría de los ca
 
    La página [Crear nueva recomendación](create.md) ahora muestra **Similitud visual** como un tipo de recomendación seleccionable cuando el tipo de página es **Detalle del producto**.
 
-Después de habilitar las recomendaciones visuales, Adobe Sensei inicia el procesamiento de imágenes. El tiempo que tarda depende del tamaño del catálogo.
+Después de habilitar las recomendaciones visuales, la IA de Adobe inicia el procesamiento de imágenes. El tiempo que tarda depende del tamaño del catálogo.
 
 ### Dónde se utiliza
 

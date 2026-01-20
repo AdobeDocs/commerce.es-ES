@@ -3,10 +3,10 @@ title: Migrar a  [!DNL Adobe Commerce as a Cloud Service]
 description: Obtenga información sobre cómo migrar a  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
-source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '3020'
 ht-degree: 0%
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 **Diferencias clave**
 
-* [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."} **PaaS (actual)**: El comerciante administra el código de la aplicación, las actualizaciones, los parches y la configuración de la infraestructura dentro del entorno alojado de Adobe. [Modelo de responsabilidad compartida](https://experienceleague.adobe.com/es/docs/commerce-operations/security-and-compliance/shared-responsibility) para servicios (MySQL, Elasticsearch y otros).
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} **SaaS (Nuevo - [!DNL Adobe Commerce as a Cloud Service])**: Adobe administra completamente la aplicación, la infraestructura y las actualizaciones principales. Los comerciantes se centran en la personalización a través de puntos de extensibilidad (API, App Builder, SDK de IU). Código de la aplicación principal bloqueado.
+* [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."} **PaaS (actual)**: El comerciante administra el código de la aplicación, las actualizaciones, los parches y la configuración de la infraestructura dentro del entorno alojado de Adobe. [Modelo de responsabilidad compartida](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) para servicios (MySQL, Elasticsearch y otros).
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} **SaaS (Nuevo - [!DNL Adobe Commerce as a Cloud Service])**: Adobe administra completamente la aplicación, la infraestructura y las actualizaciones principales. Los comerciantes se centran en la personalización a través de puntos de extensibilidad (API, App Builder, SDK de IU). Código de la aplicación principal bloqueado.
 
 **Implicaciones arquitectónicas**
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) y [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
+* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Aprovisionamiento de autoservicio con [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ## Rutas de migración
@@ -169,7 +169,7 @@ Esta opción sirve como paso de transición, basado en una integración existent
 
 * **Sincronización de datos de catálogo**: Asegúrese de que la instancia de Adobe Commerce PaaS siga sincronizando los datos de producto y catálogo con el servicio SaaS de catálogo de Adobe Commerce existente. Esto generalmente se basa en conectores o módulos establecidos dentro de la instancia de PaaS. El servicio SaaS de catálogo sigue siendo la fuente autorizada para las funciones de búsqueda y comercialización, y deriva sus datos del backend de PaaS.
 * **Mesh de API para optimización**: Aunque la tienda sin encabezado (en Edge Delivery Services) y otros servicios podrían consumir directamente datos del servicio SaaS de catálogo, Adobe recomienda encarecidamente usar Mesh de API (en App Builder). La malla de API puede unificar las API del servicio SaaS de catálogo con otras API necesarias del backend de PaaS (por ejemplo, comprobaciones de inventario en tiempo real de la base de datos transaccional o atributos de producto personalizados no replicados completamente en el servicio SaaS de catálogo) en un único extremo de GraphQL con rendimiento. Esto también permite el almacenamiento en caché, la autenticación y la transformación de respuestas centralizadas.
-* **Integrar Live Search y Product Recommendations**: configure los servicios SaaS de Live Search y Product Recommendations para [introducir datos de catálogo](https://experienceleague.adobe.com/es/docs/commerce/live-search/install#configure-the-data) directamente desde el servicio SaaS de catálogo de Adobe Commerce existente, que a su vez se rellena mediante el servidor PaaS.
+* **Integrar Live Search y Product Recommendations**: configure los servicios SaaS de Live Search y Product Recommendations para [introducir datos de catálogo](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) directamente desde el servicio SaaS de catálogo de Adobe Commerce existente, que a su vez se rellena mediante el servidor PaaS.
 
 **Beneficio**: Esto proporciona una ruta más rápida a una tienda sin encabezado y a funciones avanzadas de comercialización de SaaS al aprovechar un servicio SaaS de catálogo existente y operativo y su canalización de integración con su servidor PaaS. Sin embargo, conserva la dependencia del backend de PaaS para la fuente de datos del catálogo principal y no proporciona las capacidades de agregación de varias fuentes inherentes al nuevo modelo de datos de catálogo componible. Esta opción es un trampolín válido hacia una arquitectura componible más completa.
 
@@ -187,7 +187,7 @@ Este es el enfoque estratégico, preparado para el futuro, para aprovechar Adobe
       * **Ingesta por lotes**: Para cargas iniciales grandes o actualizaciones masivas periódicas, utilice transferencias de archivos seguras (por ejemplo, CSV o JSON) a un área de ensayo, procesadas por los servicios de ingesta de Adobe Experience Platform (AEP) en CCDM.
       * **Integración directa de API** (con orquestación de App Builder): para escenarios más complejos, App Builder puede actuar como una capa de orquestación, haciendo llamadas directas de API al servidor PaaS, transformando los datos y enviándolos a CCDM.
 * **Vista de catálogo y definición de directiva**: configure vistas de catálogo (agrupaciones lógicas para la presentación de catálogo único, como vistas de tienda, regiones y segmentos B2B/B2C) y defina directivas (conjuntos de reglas para la presentación, el filtrado y la comercialización de productos) dentro de CCDM. Esto permite un control dinámico sobre la variedad de productos y la lógica de visualización por vista de catálogo.
-* **Integrar Live Search y Product Recommendations**: Una vez que los datos del catálogo estén presentes en CCDM, integre Live Search y los servicios de Adobe basados en SaaS. Estos aprovechan la IA de Adobe Sensei y los modelos de aprendizaje automático para ofrecer una relevancia de búsqueda superior y recomendaciones personalizadas, consumiendo datos directamente del CCDM.
+* **Integrar Live Search y Product Recommendations**: Una vez que los datos del catálogo estén presentes en CCDM, integre Live Search y los servicios de Adobe basados en SaaS. Estos aprovechan la IA de Adobe y los modelos de aprendizaje automático para ofrecer una relevancia de búsqueda superior y recomendaciones personalizadas, consumiendo datos directamente del CCDM.
 
 **Beneficio**: Al abstraer la administración y la detección de catálogos en los servicios CCDM y SaaS asociados, se logra un rendimiento mejorado, se obtienen capacidades de comercialización impulsadas por IA, se descargan significativamente las operaciones de lectura de su back-end heredado y se habilita una sólida experiencia de &quot;despegue&quot; de la parte superior de funnel.
 

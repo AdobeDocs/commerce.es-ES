@@ -4,7 +4,7 @@ description: Obtenga información acerca de los eventos que  [!DNL Adobe Commerc
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Existen dos tipos de datos utilizados en Recommendations:
 - **Comportamiento**: datos de la participación de un comprador en el sitio, como vistas de productos, elementos agregados al carro de compras y compras.
 - **Catálogo**: metadatos de producto, como nombre, precio, disponibilidad, etc.
 
-Adobe Sensei agrega los datos de comportamiento y catálogo, creando Recommendations para cada tipo de recomendación. A continuación, el servicio Recommendations implementa esas recomendaciones en la tienda en forma de widget que contiene el producto recomendado _items_.
+Adobe AI agrega los datos de comportamiento y catálogo, creando Recommendations para cada tipo de recomendación. A continuación, el servicio Recommendations implementa esas recomendaciones en la tienda en forma de widget que contiene el producto recomendado _items_.
 
 Algunos tipos de recomendación utilizan datos de comportamiento de los compradores para entrenar modelos de aprendizaje automático y crear recomendaciones personalizadas. Otros tipos de recomendación solo utilizan datos de catálogo y no utilizan datos de comportamiento. Si desea empezar a usar Recommendations rápidamente en el sitio, puede usar el tipo de recomendación `More like this`.
 
@@ -86,7 +86,7 @@ Algunos tipos de recomendación utilizan datos de comportamiento de los comprado
 
 ¿Cuándo puede empezar a utilizar tipos de recomendación que utilicen datos de comportamiento? Depende de ti. Este problema se conoce como _Inicio en frío_.
 
-El problema de _arranque en frío_ se refiere al tiempo que tarda un modelo en entrenar y en ser efectivo. En el caso de las recomendaciones, esto significa esperar a que Adobe Sensei recopile datos suficientes para entrenar sus modelos de aprendizaje automático antes de implementar unidades de recomendaciones en el sitio. Cuantos más datos tengan los modelos, más precisas y útiles serán las recomendaciones. Dado que la recopilación de datos se produce en un sitio activo, es mejor iniciar este proceso antes.
+El problema de _arranque en frío_ se refiere al tiempo que tarda un modelo en entrenar y en ser efectivo. En el caso de las recomendaciones, esto significa esperar a que la IA de Adobe recopile datos suficientes para entrenar sus modelos de aprendizaje automático antes de implementar unidades de recomendación en el sitio. Cuantos más datos tengan los modelos, más precisas y útiles serán las recomendaciones. Dado que la recopilación de datos se produce en un sitio activo, es mejor iniciar este proceso antes.
 
 La siguiente tabla proporciona algunas directrices generales sobre la cantidad de tiempo que se tarda en recopilar suficientes datos para cada tipo de recomendación:
 
@@ -148,7 +148,7 @@ Se requieren los siguientes eventos para rellenar el [panel de rendimiento de Re
 | CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 | vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-Los siguientes eventos no son específicos de Recommendations, pero son necesarios para que Adobe Sensei interprete correctamente los datos del comprador:
+Los siguientes eventos no son específicos de Recommendations, pero son necesarios para que Adobe AI interprete correctamente los datos del comprador:
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ En esta tabla se describen los eventos utilizados por cada tipo de recomendació
 
 ## Asistencia
 
-Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
