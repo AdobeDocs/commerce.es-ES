@@ -464,7 +464,7 @@ Los desarrolladores que tienen acceso al código pueden personalizar completamen
 
 ### Extensión de Data Export
 
-Una vez habilitado [!DNL Live Search], la extensión de exportación de datos sincroniza los datos de Commerce entre la aplicación de Commerce y [!DNL Live Search]. Este proceso garantiza que los datos de comercio más recientes estén disponibles en la tienda. En Administración, puede comprobar el estado de sincronización mediante el panel de administración de datos. Puede administrar y solucionar problemas del proceso de exportación de datos mediante la CLI y los registros de comercio. Para obtener más información, consulte la Guía[ de exportación de ](../data-export/overview.md)datos.
+Una vez habilitado [!DNL Live Search], la extensión de exportación de datos sincroniza los datos de Commerce entre la aplicación de Commerce y [!DNL Live Search]. Este proceso garantiza que los datos de comercio más recientes estén disponibles en la tienda. En Administración, puede comprobar el estado de sincronización mediante el panel de administración de datos. Puede administrar y solucionar problemas del proceso de exportación de datos mediante la CLI y los registros de comercio. Para obtener más información, consulte la Guía[&#x200B; de exportación de &#x200B;](../data-export/overview.md)datos.
 
 ### Gestión de inventario
 
@@ -474,7 +474,7 @@ Una vez habilitado [!DNL Live Search], la extensión de exportación de datos si
 
 ### Indexador de precios
 
-[!DNL Live Search]Los clientes pueden utilizar el indexador[ de precios SaaS](../price-index/price-indexing.md), que proporciona actualizaciones de cambio de precios y tiempo de sincronización más rápidos.
+[!DNL Live Search]Los clientes pueden utilizar el indexador[&#x200B; de precios SaaS](../price-index/price-indexing.md), que proporciona actualizaciones de cambio de precios y tiempo de sincronización más rápidos.
 
 ### Sostenimiento de precios
 
