@@ -2,11 +2,11 @@
 title: Límites y límites
 description: Comprenda [!DNL Adobe Commerce Optimizer] los límites y limitaciones para planificar la capacidad y evitar problemas de rendimiento.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: f9ac230d448f071e6e8e6368b940f0c415abb02b
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1337'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Su uso debe permanecer dentro de estos límites. Excederlos puede causar un aume
 
 Los límites de licencia se pueden aumentar comprando los paquetes de licencia descritos en la sección [Límites de licencia y límites del sistema](#license-limits-and-system-boundaries), o negociando licencias personalizadas para casos de uso únicos. Póngase en contacto con su representante de cuentas de Adobe para hablar sobre sus necesidades.
 
-Si tiene alguna pregunta sobre los límites del sistema, comuníquese con la [atención al cliente de Adobe](https://experienceleague.adobe.com/home?lang=es#support).
+Si tiene alguna pregunta sobre los límites del sistema, comuníquese con la [atención al cliente de Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Evitar problemas de rendimiento
 
@@ -149,7 +149,6 @@ Las siguientes funciones están disponibles para recomendaciones de productos. A
 | --- | --- | --- | --- |
 | Unidades de recomendación activas | Número de componentes de recomendaciones activas en la tienda (como &quot;Los clientes también vieron&quot; o &quot;Es posible que también te guste&quot;) | 50 | No |
 | Inclusiones/exclusiones de categorías o atributos | Filtre los productos a un conjunto específico que cumpla los requisitos para las recomendaciones | No compatible | |
-| Previsualizar recomendaciones | Previsualizar cómo aparecen las recomendaciones en la tienda antes de publicar | No compatible | |
 
 {style="table-layout:auto"}
 
@@ -157,7 +156,7 @@ Las siguientes funciones están disponibles para recomendaciones de productos. A
 
 | **Capacidad** | **Descripción** | **Asignación base** | **Ampliable?** | **Notas** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacidad para crear integraciones y extensiones nativas de la nube | Basado en el nivel de GMV<p>Asignación mínima: 1 paquete/año</p> | Sí<p>Adición de paquetes adicionales</p> | Para los límites definidos por envase, ver:<ul><li>[Descripción del producto App Builder](https://helpx.adobe.com/es/legal/product-descriptions/adobe-developer-app-builder.html) para los límites definidos por paquete.</li><li>[Limitaciones y configuración del sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) en las *Guías de tiempo de ejecución de App Builder*.</li><li>[Requisitos de almacenamiento de App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacidad para crear integraciones y extensiones nativas de la nube | Basado en el nivel de GMV<p>Asignación mínima: 1 paquete/año</p> | Sí<p>Adición de paquetes adicionales</p> | Para los límites definidos por envase, ver:<ul><li>[Descripción del producto App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) para los límites definidos por paquete.</li><li>[Limitaciones y configuración del sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) en las *Guías de tiempo de ejecución de App Builder*.</li><li>[Requisitos de almacenamiento de App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
