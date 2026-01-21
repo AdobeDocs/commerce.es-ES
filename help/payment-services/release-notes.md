@@ -650,7 +650,7 @@ Los comerciantes de ![New](../assets/new.svg)<!-- Issue PAY-666 --> pueden [conf
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-780 --> Tus compradores pueden pagar con [!DNL Payment Services] o a través de [creación manual de pedidos](create-order.md).
 
-![Los informes completos de ](../assets/new.svg)<!-- Issue PAY-1856 -->New[Order payment status](order-payment-status.md) y [Payouts](payouts.md) están disponibles para que [!DNL Payment Services] te dé una visión clara de los pedidos de tu tienda y los pagos relacionados.
+![Los informes completos de &#x200B;](../assets/new.svg)<!-- Issue PAY-1856 -->New[Order payment status](order-payment-status.md) y [Payouts](payouts.md) están disponibles para que [!DNL Payment Services] te dé una visión clara de los pedidos de tu tienda y los pagos relacionados.
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] admite precios por niveles flexibles, basados en el volumen total de procesamiento, adaptados a cualquier comerciante.
 
