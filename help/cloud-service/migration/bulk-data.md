@@ -2,7 +2,7 @@
 title: Herramienta de migración masiva de datos
 description: Aprenda a utilizar la herramienta de migración masiva de datos para migrar datos de su instancia [!DNL Adobe Commerce as a Cloud Service] de Adobe Systems Commerce on Cloud existente.
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica a Adobe Systems Commerce como Cloud Service y solo a Adobe Systems proyectos de Commerce Optimizer (infraestructura SaaS administradas por Adobe Systems)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica a Adobe Systems Commerce como Cloud Service y solo a Adobe Systems proyectos de Commerce Optimizer (infraestructura SaaS administradas por Adobe Systems)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
