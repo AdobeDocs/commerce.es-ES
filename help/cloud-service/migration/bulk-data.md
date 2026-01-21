@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Migración masiva de datos herramienta
 
-El herramienta de migración masiva de datos sigue una arquitectura distribuida que permite una migración de datos segura y eficiente de PaaS a entornos SaaS. Este herramienta ayuda a los implementadores de soluciones a migrar datos de una instancia de Adobe Systems Commerce on Cloud (PaaS) existente a [!DNL Adobe Commerce as a Cloud Service] (SaaS). Para obtener más información sobre el proceso de migración, consulte Información general[ sobre migración](./overview.md).
+El herramienta de migración masiva de datos sigue una arquitectura distribuida que permite una migración de datos segura y eficiente de PaaS a entornos SaaS. Este herramienta ayuda a los implementadores de soluciones a migrar datos de una instancia de Adobe Systems Commerce on Cloud (PaaS) existente a [!DNL Adobe Commerce as a Cloud Service] (SaaS). Para obtener más información sobre el proceso de migración, consulte Información general[&#x200B; sobre migración](./overview.md).
 
 >[!NOTE]
 >
