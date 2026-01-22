@@ -2,11 +2,11 @@
 title: Configurar tu tienda
 description: Aprenda a configurar su  [!DNL Adobe Commerce Optimizer] tienda.
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: e46c55cba21501c6fa12db6c130493b99de0e4da
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -218,26 +218,28 @@ Antes de continuar con los siguientes pasos, verifica lo siguiente para asegurar
 
 Si los problemas persisten:
 
-* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
+* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Consulte la [guía para desarrolladores de Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)
-* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Pasos siguientes
 
 Después de configurar y comprobar la tienda, puedes:
 
-1. **[Instalar Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#install-and-configure-sidekick)**: extensión de explorador para editar, previsualizar y publicar contenido directamente desde el sitio web
+1. **[Instale la extensión del explorador Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** para editar, previsualizar y publicar contenido directamente desde el sitio web.
 
-2. **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#set-up-local-environment)**: crea un entorno local para personalizar el código y el contenido de tu tienda
+2. **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**: crea un entorno local para personalizar el código y el contenido de la tienda.
 
 ### Aprender y explorar
 
-* **[Completar el caso de uso de extremo a extremo](./use-case/admin-use-case.md)**: obtenga más información acerca de la configuración de la tienda y la administración del catálogo mediante [!DNL Adobe Commerce Optimizer]
+* **[Completa el caso de uso de extremo a extremo](./use-case/admin-use-case.md)**—Más información acerca de la configuración de la tienda y la administración del catálogo con [!DNL Adobe Commerce Optimizer].
 
-* **[Explorar la personalización de tiendas](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=es)**: aprende las opciones avanzadas de configuración
+* **[Explorar la personalización de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**: aprende las opciones avanzadas de configuración.
 
-* **[Use complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)**: agregue componentes creados previamente para mejorar su experiencia con la tienda
+* **[Usa complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**: agrega componentes creados previamente para mejorar tu experiencia con la tienda.
+
+* **Migrar al servicio de configuración de tienda**: después de crear tu tienda inicial, puedes migrar la configuración para usar el servicio de configuración que admite casos de uso avanzados como reposes de configuración y superposiciones. Para obtener más información, consulte la documentación de [Servicio de configuración](https://www.aem.live/docs/config-service-setup) en Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
+> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
