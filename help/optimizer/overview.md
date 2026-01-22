@@ -2,11 +2,11 @@
 title: ¿Qué es Adobe Commerce Optimizer?
 description: Obtenga información acerca de  [!DNL Adobe Commerce Optimizer]  y sus características clave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Con [!DNL Adobe Commerce Optimizer], puede:
 
 Vea el siguiente vídeo para obtener información general de alto nivel sobre [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 
@@ -84,6 +84,10 @@ Las funciones clave incluyen:
 - **Métricas antes y después**: proporciona información en tiempo real sobre el rendimiento de sus iniciativas de comercio. Puede ver los resultados antes y después de indicadores clave de rendimiento (KPI) específicos, evaluar el impacto de los cambios y optimizar para obtener mejores resultados. Puede exportar los resultados en un PDF.
 - **Tienda Commerce con tecnología Edge Delivery**: con la entrega de Edge, puedes iniciar tu sitio rápidamente con componentes de tienda creados previamente con funcionalidad de comercio integrada, incluidas páginas de listado de productos, páginas de detalles de productos, carrito y cierre de compra.
 - **Carro de compras y cierre de compra de terceros**: utilice la malla de la API y el creador de aplicaciones para integrarlos con los sistemas de carrito y cierre de compra de terceros.
+
+>[!NOTE]
+>
+>Para comprender los límites del sistema y las licencias para las capacidades de [!DNL Adobe Commerce Optimizer], vea el tema [Límites y límites](boundaries-limits.md).
 
 ## Arquitectura
 
