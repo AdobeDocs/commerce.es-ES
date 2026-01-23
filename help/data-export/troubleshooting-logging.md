@@ -3,7 +3,7 @@ title: Revisar registros y solucionar problemas
 description: Obtenga información sobre cómo solucionar  [!DNL data export] errores mediante los registros de exportación de datos y exportación de saas.
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
+source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Si almacena los registros de Adobe Commerce en New Relic, puede agregar reglas d
 
    - **Regla de análisis**
 
-     `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
+     `\[%{DATA:timestamp}\] report.%{DATA:logLevel}: %{GREEDYDATA:feed:json}`
 
 En este ejemplo se agrega una regla que permite consultar los registros de New Relic por tipo de fuente específico, operación, etc.
 
@@ -129,7 +129,7 @@ Si faltan datos o estos son incorrectos en Commerce Services, compruebe en los r
 - El registro de errores de exportación de datos (`commerce-data-export-errors.log`) captura los errores que se producen durante la fase de recopilación.
 - El registro de errores de exportación de SaaS (`saas-export-errors.log`) registra los errores que se producen durante la fase de transmisión.
 
-Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con la mayor información posible.
+Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con la mayor información posible.
 
 ### Resolver problemas de sincronización del catálogo {#resolvesync}
 
@@ -144,11 +144,11 @@ Cuando se sincroniza en déclencheur una sincronización de datos, los datos pue
 
 #### La sincronización no se está ejecutando
 
-Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte este artículo de [KnowledgeBase](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte este artículo de [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Error de sincronización
 
-Si la sincronización del catálogo tiene el estado **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Si la sincronización del catálogo tiene el estado **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Registro extendido
 
