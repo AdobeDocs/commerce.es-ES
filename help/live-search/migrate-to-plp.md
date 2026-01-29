@@ -319,7 +319,7 @@ En esta situación, hay un problema conocido en el que habilitar el widget PLP p
 
 **Opción 3: reemplazar GTM por Adobe Analytics**
 
-- Considere migrar a [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) si corresponde.
+- Considere migrar a [Adobe Analytics](https://business.adobe.com/es/products/adobe-analytics.html) si corresponde.
 - Póngase en contacto con Ingeniería de clientes para obtener ayuda.
 
 **Con quién ponerte en contacto**: envía un ticket de asistencia para recibir actualizaciones de compatibilidad con GTM o ayuda de ingeniería de clientes.
@@ -444,7 +444,7 @@ Se debe contactar con **socios de desarrollo/integradores de sistemas** para:
 - Implementaciones sin encabezado o de PWA
 - Seguimiento de eventos personalizado
 
-Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## FAQ
 
