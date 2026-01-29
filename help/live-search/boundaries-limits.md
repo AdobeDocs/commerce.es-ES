@@ -18,7 +18,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 
 - El adaptador de búsqueda ha sido [obsoleto](release-notes.md#live-search-400) desde [!DNL Live Search] 4.0.0. El widget de página de lista de productos (PLP) es la solución compatible con todas las implementaciones de [!DNL Live Search] en el futuro. El adaptador de búsqueda solo recibirá actualizaciones relacionadas con la seguridad. Consulte la [guía de migración](migrate-to-plp.md) para obtener información sobre cómo migrar al widget PLP.
 - El módulo [Búsqueda avanzada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) se deshabilita al instalar [!DNL Live Search] y se quita el vínculo Búsqueda avanzada del pie de página de la tienda.
-- El campo [ y el widget de página de lista de productos no admiten ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)precios de nivel[!DNL Live Search].
+- El campo [&#x200B; y el widget de página de lista de productos no admiten &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)precios de nivel[!DNL Live Search].
 - Los precios de los productos incluyen el impuesto sobre el valor agregado (IVA), pero [!DNL Live Search] no puede mostrar el IVA como un valor separado.
 - No se admite la búsqueda de contenido (páginas y bloques de CMS).
 - El número máximo de resultados que se pueden paginar es 10 000. Para garantizar que los compradores no tengan que utilizar la paginación profunda cuando una categoría o resultado de búsqueda incluya un gran número de productos, proporcione formas significativas de filtrar los productos.
