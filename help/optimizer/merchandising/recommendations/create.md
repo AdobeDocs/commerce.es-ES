@@ -65,7 +65,7 @@ Después de crear una recomendación, debe recuperar su ID para implementar la u
 
 1. En la sección **ID de recomendación**, copie el ID.
 
-1. Use este identificador para configurar la [recomendación ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
+1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
