@@ -1,11 +1,11 @@
 ---
 title: Crear y administrar recomendaciones
 description: Obtenga información sobre cómo crear y administrar recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
    - **Activar** para habilitar la unidad de recomendación en tu tienda.
 
-1. Cuando se le solicite, copie el ID de recomendación. Utilice este ID para identificar qué unidad de recomendación se está usando en el menú desplegable de recomendaciones de su tienda de Edge Delivery Services.
+   La recomendación aparecerá en el área de trabajo de Recommendations. Para usar tu recomendación en tu tienda, necesitas encontrar la [ID de recomendación](#get-recommendation-id).
 
 >[!NOTE]
 >
@@ -50,6 +50,22 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 >[!IMPORTANT]
 >
 >Algunos exploradores pueden bloquear los scripts esenciales que impiden que Recommendations funcione según lo esperado.
+
+## Obtener ID de recomendación
+
+Después de crear una recomendación, debe recuperar su ID para implementar la unidad de recomendación en la tienda.
+
+1. En la página **Recommendations**, seleccione la recomendación.
+
+1. Haga clic en el icono de información (![icono de información](../../assets/info-icon.png)) junto al nombre de la recomendación.
+
+   Se muestra la página **Detalles de unidad de recomendación**.
+
+   ![Obtener ID de recomendación](../../assets/get-rec-id.png)
+
+1. En la sección **ID de recomendación**, copie el ID.
+
+1. Use este identificador para configurar la [recomendación ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
