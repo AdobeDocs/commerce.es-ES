@@ -3,16 +3,16 @@ title: Coincidencia automática personalizada
 description: Descubra cómo la coincidencia automática personalizada es especialmente útil para los comerciantes con una lógica de coincidencia compleja o para aquellos que dependen de un sistema de terceros que no puede rellenar metadatos en los AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
+source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 1%
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
 # Coincidencia automática personalizada
 
-Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
+Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
 
 ## Configurar la coincidencia automática personalizada
 
@@ -22,9 +22,99 @@ Si la estrategia de coincidencia automática predeterminada (**coincidencia auto
 
 1. Al seleccionar esta regla coincidente, el administrador muestra campos adicionales para configurar los **extremos** y los **parámetros de autenticación** necesarios para la lógica de coincidencia personalizada.
 
+### workspace.json
+
+El campo **[!UICONTROL Adobe I/O Workspace Configuration]** proporciona una forma sencilla de configurar su emparejador personalizado mediante la importación del archivo de configuración de App Builder `workspace.json`.
+
+Puede descargar el archivo de `workspace.json` desde [Adobe Developer Console](https://developer.adobe.com/console). El archivo contiene todas las credenciales y los detalles de configuración de App Builder Workspace.
+
++++Ejemplo `workspace.json`
+
+```json
+{
+  "project": {
+    "id": "project_id",
+    "name": "project_name",
+    "title": "title_name",
+    "org": {
+      "id": "id",
+      "name": "Organization_name",
+      "ims_org_id": "ims_id"
+    },
+    "workspace": {
+      "id": "workspace_id",
+      "name": "workspace_name_id",
+      "title": "workspace_title_id",
+      "action_url": "https://action_url.net",
+      "app_url": "https://app_url.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "credential_id",
+            "name": "credential_name_id",
+            "integration_type": "oauth_server_to_server",
+            "oauth_server_to_server": {
+              "client_id": "client_id",
+              "client_secrets": ["secret"],
+              "technical_account_email": "xx@technical_account_email.com",
+              "technical_account_id": "technical_account_id",
+              "scopes": [
+                "AdobeID",
+                "openid",
+                "read_organizations",
+                "additional_info.projectedProductContext",
+                "additional_info.roles",
+                "adobeio_api",
+                "read_client_secret",
+                "manage_client_secrets"
+              ]
+            }
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          }
+        ],
+        "runtime": {
+          "namespaces": [
+            {
+              "name": "namespace_name",
+              "auth": "example_auth"
+            }
+          ]
+        },
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}
+```
+
++++
+
+1. Arrastre y suelte el archivo `workspace.json` de su proyecto de App Builder en el campo **[!UICONTROL Adobe I/O Workspace Configuration]**. También puede hacer clic en para examinar y seleccionar el archivo.
+
+![Configuración de Workspace](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+
+1. El sistema automáticamente:
+
+   * Valida la estructura JSON.
+   * Extrae y rellena credenciales de OAuth
+   * Obtiene las acciones de tiempo de ejecución disponibles para el espacio de trabajo
+   * Rellena las opciones desplegables de los campos **[!UICONTROL Product to Asset URL]** y **[!UICONTROL Asset to Product URL]**
+
+1. Seleccione las acciones de tiempo de ejecución adecuadas en los menús desplegables para cada flujo.
+
+1. Haga clic en **[!UICONTROL Save Config]**.
+
 ## Extremos de API de emparejador personalizados
 
-Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
+Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
 
 * **Extremo de recurso de App Builder a dirección URL del producto**
 * Extremo de **App Builder product to asset URL**
@@ -176,6 +266,6 @@ El parámetro `asset_matches` contiene los atributos siguientes:
 | Atributo | Tipo de datos | Descripción |
 | --- | --- | --- |
 | `asset_id` | Cadena | Representa el ID de recurso actualizado. |
-| `asset_roles` | Cadena | Devuelve todas las funciones de recurso disponibles. Utiliza [funciones de recurso de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) compatibles como `thumbnail`, `image`, `small_image` y `swatch_image`. |
+| `asset_roles` | Cadena | Devuelve todas las funciones de recurso disponibles. Utiliza [funciones de recurso de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) compatibles como `thumbnail`, `image`, `small_image` y `swatch_image`. |
 | `asset_format` | Cadena | Proporciona los formatos disponibles para el recurso. Los valores posibles son `image` y `video`. |
 | `asset_position` | Cadena | Muestra la posición del recurso. |
