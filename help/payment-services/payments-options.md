@@ -3,9 +3,9 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -135,6 +135,16 @@ Obtenga información sobre cómo deshabilitar o habilitar la mensajería de [!DN
 
 ![Mensajes de pago posterior](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### Llamadas de retorno de envío del lado del servidor para los botones de pago de PayPal
+
+Los métodos de pago PayPal, PayAfter y Venmo usan una [devolución de llamada de envío del lado del servidor](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) que permite a PayPal comunicarse directamente con tu instancia de Commerce para recuperar las opciones de envío y calcular los totales en tiempo real.
+
+Este enfoque del lado del servidor permite que [!DNL Payment Services] omita la ventana emergente de confirmación de pedido, lo que ofrece una experiencia de compra más rápida y optimizada. Como los gastos de envío y los impuestos se calculan dinámicamente mediante la devolución de llamadas, el comprador ve los totales exactos directamente en la página de revisión de PayPal o Venmo.
+
+>[!NOTE]
+>
+>El punto final de llamada de retorno debe estar disponible públicamente y responder en un plazo de 5 segundos. Si el tiempo de respuesta supera este límite, PayPal muestra un mensaje de error en la ventana emergente. Consulte [Probar en entornos de desarrollo local](test-validate.md#test-on-local-development-environments) para obtener información sobre cómo probar estos métodos de pago localmente.
+
 ### Usar sólo botones de pago de PayPal
 
 Para que tu tienda entre en modo de producción rápidamente, puedes configurar _solo_ botones de pago de PayPal (Venmo, PayPal, etc.).—en lugar de utilizar también la opción de pago con tarjeta de crédito PayPal.
@@ -149,14 +159,14 @@ Para **capturar pagos con _solo_ botones de pago de PayPal (_no_ la opción de p
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
 1. [Configura los botones de pago de PayPal que desees](configure-admin.md#payment-buttons) en Configuración.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
 
 Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pago de PayPal**:
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
 1. [Configurar los botones de pago de PayPal](configure-admin.md#payment-buttons) deseados.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desactiva _1&rbrace; la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_&#x200B;cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=es#payments)
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactiva _1} la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opciones de desprotección
 
