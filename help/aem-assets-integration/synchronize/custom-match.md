@@ -3,16 +3,16 @@ title: Coincidencia automática personalizada
 description: Descubra cómo la coincidencia automática personalizada es especialmente útil para los comerciantes con una lógica de coincidencia compleja o para aquellos que dependen de un sistema de terceros que no puede rellenar metadatos en los AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
+source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Coincidencia automática personalizada
 
-Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
+Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
 
 ## Configurar la coincidencia automática personalizada
 
@@ -114,7 +114,7 @@ Puede descargar el archivo de `workspace.json` desde [Adobe Developer Console](h
 
 ## Extremos de API de emparejador personalizados
 
-Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
+Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
 
 * **Extremo de recurso de App Builder a dirección URL del producto**
 * Extremo de **App Builder product to asset URL**
@@ -125,7 +125,7 @@ Este punto de conexión recupera la lista de SKU asociadas a un recurso determin
 
 #### Ejemplo de uso
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -140,8 +140,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             asset_id: params.assetId,
             product_matches: [
@@ -150,7 +153,8 @@ async function main(params) {
                     asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -160,7 +164,7 @@ exports.main = main;
 
 **Solicitud**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
@@ -171,21 +175,28 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 **Respuesta**
 
-```bash
+```json
 {
   "asset_id": "{ASSET_ID}",
   "product_matches": [
     {
       "product_sku": "{PRODUCT_SKU_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail", "image"]
     },
     {
       "product_sku": "{PRODUCT_SKU_2}",
       "asset_roles": ["thumbnail"]
     }
-  ]
+  ],
+  "skip": false
 }
 ```
+
+| Parámetro | Tipo de datos | Descripción |
+| --- | --- | --- |
+| `asset_id` | Cadena | ID del recurso con el que se está estableciendo una coincidencia. |
+| `product_matches` | Matriz | Lista de productos asociados al recurso. |
+| `skip` | Booleano | (Opcional) Cuando `true`, el motor de reglas omite la sincronización de este recurso (sin actualización de asignación de productos). Si se omite o se `false`, se ejecuta el procesamiento normal. Ver [Omitir procesamiento de sincronización](#skip-sync-processing). |
 
 ### Extremo de URL de producto a recurso de App Builder
 
@@ -193,7 +204,7 @@ Este extremo recupera la lista de recursos asociados a un SKU determinado:
 
 #### Ejemplo de uso
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -204,8 +215,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             product_sku: params.productSku,
             asset_matches: [
@@ -215,7 +229,8 @@ async function main(params) {
                     asset_format: "image", // can be "image" or "video"
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -225,7 +240,7 @@ exports.main = main;
 
 **Solicitud**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
@@ -236,36 +251,44 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 **Respuesta**
 
-```bash
+```json
 {
   "product_sku": "{PRODUCT_SKU}",
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"],
+      "asset_roles": ["thumbnail", "image"],
       "asset_position": 1,
-      "asset_format": image
+      "asset_format": "image"
     },
     {
       "asset_id": "{ASSET_ID_2}",
-      "asset_roles": ["thumbnail"]
+      "asset_roles": ["thumbnail"],
       "asset_position": 2,
-      "asset_format": image     
+      "asset_format": "image"
     }
-  ]
+  ],
+  "skip": false
 }
 ```
 
 | Parámetro | Tipo de datos | Descripción |
 | --- | --- | --- |
-| `productSKU` | Cadena | Representa el SKU del producto actualizado. |
-| `asset_matches` | Cadena | Devuelve todos los recursos asociados con un SKU de producto específico. |
+| `product_sku` | Cadena | El SKU del producto que se está buscando. |
+| `asset_matches` | Matriz | Lista de recursos asociados al producto. |
+| `skip` | Booleano | (Opcional) Cuando `true`, el motor de reglas omite la sincronización de este producto (sin actualización de asignación de recursos). Si se omite o se `false`, se ejecuta el procesamiento normal. Ver [Omitir procesamiento de sincronización](#skip-sync-processing). |
 
 El parámetro `asset_matches` contiene los atributos siguientes:
 
 | Atributo | Tipo de datos | Descripción |
 | --- | --- | --- |
-| `asset_id` | Cadena | Representa el ID de recurso actualizado. |
-| `asset_roles` | Cadena | Devuelve todas las funciones de recurso disponibles. Utiliza [funciones de recurso de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) compatibles como `thumbnail`, `image`, `small_image` y `swatch_image`. |
-| `asset_format` | Cadena | Proporciona los formatos disponibles para el recurso. Los valores posibles son `image` y `video`. |
-| `asset_position` | Cadena | Muestra la posición del recurso. |
+| `asset_id` | Cadena | ID del recurso. |
+| `asset_roles` | Matriz | Funciones de los recursos. Utiliza [funciones de recurso de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) compatibles como `thumbnail`, `image`, `small_image` y `swatch_image`. |
+| `asset_format` | Cadena | El formato del recurso. Los valores posibles son `image` y `video`. |
+| `asset_position` | Número | La posición del recurso en la galería de productos. |
+
+## Omitir procesamiento de sincronización
+
+El parámetro `skip` permite que el elemento de coincidencia personalizado omita el procesamiento de sincronización para recursos o productos específicos.
+
+Cuando la aplicación de App Builder devuelve `"skip": true` en la respuesta, el motor de reglas no envía solicitudes de actualización o eliminación de API a Commerce para ese recurso o producto. Esta optimización reduce las llamadas de API innecesarias y mejora el rendimiento.
