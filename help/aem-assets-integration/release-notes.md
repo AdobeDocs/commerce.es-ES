@@ -3,9 +3,9 @@ title: Notas de la versión de AEM Assets Integration
 description: Revise las notas de la versión para obtener información acerca de todas las versiones de integración de AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: 56f31a320411c28d267dfd677d36e5ec04f6f2d8
+source-git-commit: d59c9d179018318d7a0ab1685d8e9e172eefa3ed
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Estas notas de la versión describen todas las versiones de para la integración
 
 Para ver los cambios y correcciones de características publicados fuera de la versión normal de la funcionalidad, consulte las secciones _Actualizaciones de servicios alojados_.
 
-Obtenga más información acerca de las próximas versiones, la compatibilidad del producto y las versiones de Adobe Commerce que admiten la extensión de integración de AEM Assets. Consulte los temas [Programación de versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule) y [Disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability) de Adobe Commerce.
+Obtenga más información acerca de las próximas versiones, la compatibilidad del producto y las versiones de Adobe Commerce que admiten la extensión de integración de AEM Assets. Consulte los temas [Programación de versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) y [Disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) de Adobe Commerce.
 
 ## Actualizaciones de servicios alojados
 
@@ -30,7 +30,7 @@ Estas notas de la versión describen los cambios y correcciones de característi
 
 _11 de septiembre de 2025_
 
-![Nuevo problema](../assets/new.svg) actualizó los extremos [coincidencia automática personalizada](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} con un nuevo atributo `asset_matches`.
+![Nuevo problema](../assets/new.svg) actualizó los extremos [coincidencia automática personalizada](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} con un nuevo atributo `asset_matches`.
 
 _11 de febrero de 2025_
 
@@ -38,13 +38,21 @@ _11 de febrero de 2025_
 
 +++
 
+## Versión 1.3.0
+
+_17 de febrero de 2026_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
+
+![Nuevo problema](../assets/new.svg)<!-- Issue ACCS-169 -->: los campos **[!UICONTROL Program ID]** y **[!UICONTROL Environment ID]** ahora se rellenan automáticamente como desplegables según la sesión IMS del usuario. Esto elimina la entrada manual y reduce los errores de configuración. Para usar esta característica, el usuario debe tener un rol en la [capa de entrega de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank} y un [ID de cliente IMS de selector de recursos](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#configure-the-connection){target=_blank} válido configurado.
+
 ## Versión 1.2.14
 
 _13 de febrero de 2026_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Se ha corregido un problema](../assets/fix.svg)<!-- Issue ACCS-171 -->. Se ha corregido un problema [coincidente personalizado](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/custom-match) por el que el menú desplegable de acciones de tiempo de ejecución mostraba datos de espacio de trabajo sin guardar tras la recarga de la página.
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue ACCS-171 -->. Se ha corregido un problema [coincidente personalizado](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match) por el que el menú desplegable de acciones de tiempo de ejecución mostraba datos de espacio de trabajo sin guardar tras la recarga de la página.
 
 ## Versión 1.2.13
 
@@ -52,7 +60,7 @@ _10 de febrero de 2026_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Nuevo problema](../assets/new.svg)<!-- Issue ACCS-171 --> agregó un campo **[!UICONTROL Adobe I/O Workspace Configuration]** que simplifica la configuración de [coincidencia personalizada](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}. Los comerciantes ahora pueden cargar su archivo App Builder `workspace.json` para rellenar automáticamente las credenciales de OAuth y los extremos de las acciones de tiempo de ejecución.
+![Nuevo problema](../assets/new.svg)<!-- Issue ACCS-171 --> agregó un campo **[!UICONTROL Adobe I/O Workspace Configuration]** que simplifica la configuración de [coincidencia personalizada](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}. Los comerciantes ahora pueden cargar su archivo App Builder `workspace.json` para rellenar automáticamente las credenciales de OAuth y los extremos de las acciones de tiempo de ejecución.
 
 ## Versión 1.2.12
 
@@ -114,7 +122,7 @@ _17 de octubre de 2025_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue ACAP-1155 --> que mejoraba la estabilidad general de los atributos personalizados. Los atributos personalizados ahora se actualizan correctamente al utilizar API asincrónicas.
 
-![Se ha corregido un problema](../assets/fix.svg)<!-- Issue ACAP-1074 --> Ahora, la [sincronización de productos y recursos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank} no falla cuando se define una dirección URL de vínculo base.
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue ACAP-1074 --> Ahora, la [sincronización de productos y recursos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank} no falla cuando se define una dirección URL de vínculo base.
 
 ## Versión 1.2.3
 
@@ -138,9 +146,9 @@ _7 de agosto de 2025_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-1018 --> Ahora, los comerciantes pueden elegir el origen de los recursos de medios e imágenes seleccionando un [Propietario de visualización](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank} al configurar la integración de Assets desde el Administrador.
+![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-1018 --> Ahora, los comerciantes pueden elegir el origen de los recursos de medios e imágenes seleccionando un [Propietario de visualización](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank} al configurar la integración de Assets desde el Administrador.
 
-![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-1078 --> actualizó los extremos [coincidencia automática personalizada](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} con un nuevo atributo `asset_matches`. Este cambio le permite implementar su propia lógica de coincidencia para devolver todos los recursos asociados con un `productSku` específico.
+![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-1078 --> actualizó los extremos [coincidencia automática personalizada](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} con un nuevo atributo `asset_matches`. Este cambio le permite implementar su propia lógica de coincidencia para devolver todos los recursos asociados con un `productSku` específico.
 
 ## Versión 1.1.2
 
@@ -156,7 +164,7 @@ _23 de abril de 2025_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-955 --> Ahora se puede usar una [URL de dominio personalizado](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) en lugar de la URL de envío de AEM. Si un comerciante establece un **nombre de dominio personalizado** en su panel de AEM, es necesario agregar esta **URL de dominio personalizado** en Commerce.
+![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-955 --> Ahora se puede usar una [URL de dominio personalizado](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) en lugar de la URL de envío de AEM. Si un comerciante establece un **nombre de dominio personalizado** en su panel de AEM, es necesario agregar esta **URL de dominio personalizado** en Commerce.
 
 ![Se corrigió un problema](../assets/fix.svg)<!-- Issue ACAP-987 --> Se mejoraron los registros generales de los procesos de sincronización de AEM Assets.
 
@@ -166,7 +174,7 @@ _12 de marzo de 2025_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-xx --> Ahora, el selector de Assets requiere el [ID de cliente IMS del selector de Assets](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/setup-synchronization) para habilitar la asignación de imágenes de AEM Assets con categorías de productos y contenido generado por Page Builder.
+![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-xx --> Ahora, el selector de Assets requiere el [ID de cliente IMS del selector de Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization) para habilitar la asignación de imágenes de AEM Assets con categorías de productos y contenido generado por Page Builder.
 
 ## Versión 1.0.20
 
