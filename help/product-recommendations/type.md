@@ -2,9 +2,9 @@
 title: Tipos de recomendación
 description: Obtenga información acerca de las recomendaciones que puede implementar en varias páginas del sitio.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+source-git-commit: ee773b29fae84141dbb383d0a4cb6c09c49fbe70
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1873'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Estos tipos de recomendación están orientados a la prueba social para ayudar a
 | Tipo | Descripción |
 |---|---|
 | Vio esto, vio aquello. | Recomienda productos que los compradores ven con mayor frecuencia y de forma desproporcionada con el producto visualizado actualmente.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Los clientes que vieron este producto también vieron (PDP) |
-| Vio esto, compró aquello. | Recomienda productos que los compradores tienden a comprar con desproporción con mayor frecuencia después de ver el producto actual. Este tipo ayuda a guiar a los compradores para que descubran productos que es posible que no hayan notado de otra manera.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Clientes que vieron este producto final comprado<br/>- Clientes que finalmente compraron<br/>- ¿Qué compran otros después de ver este producto? |
+| Vio esto, compró aquello. | Recomienda productos que los compradores tienden a comprar con desproporción con mayor frecuencia después de ver el producto actual. Este tipo ayuda a guiar a los compradores para que descubran productos que es posible que no hayan notado de otra manera.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Clientes que finalmente vieron esto compraron<br/>- Clientes que finalmente compraron<br/>- ¿Qué compran otros después de ver este producto? |
 | Compré esto, compré aquello. | Recomienda productos que los compradores compran con una frecuencia desproporcionada mayor con el producto visualizado actualmente. Este tipo muestra productos muy relevantes que los compradores pueden añadir a su carro de compras sumando lo que otros compradores han comprado con el producto actual.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Obtenga todo lo que necesita<br/>- No olvide estas<br/>- Compradas frecuentemente juntas |
 | Más parecido a esto | Recomienda productos basados en metadatos similares como nombre, descripción, asignación de categorías y atributos. Al evaluar los atributos de los productos que se ven, este tipo recomienda productos similares en la misma categoría. Por ejemplo, si un comprador está explorando alfombras de yoga, se recomiendan otros productos en la categoría de equipamiento. Dado que este tipo de recomendación no distingue entre géneros, no se recomienda para prendas de vestir, moda u otros verticales específicos de género.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Más productos como este<br/>- Similar a este |
 | [Similitud visual](#visualsim) | Recomienda productos de aspecto similar al producto que se está viendo. Este tipo de recomendación es más útil si las imágenes y los aspectos visuales de los productos son importantes para la experiencia de compra. |
@@ -106,8 +106,6 @@ Estos tipos de recomendación recomiendan productos de mayor rendimiento según 
 |---|---|
 | Ver para adquirir la conversión | Recomienda productos con la tasa de conversión de vista a compra más alta. De todas las sesiones de compradores que registraron una vista de producto, ¿cuál es la proporción que finalmente registró una compra por parte del comprador?<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> -Principales vendedores<br/>- Productos populares<br/>- Es posible que esté interesado en |
 | Ver conversión al carro de compras | Recomienda productos con la mayor tasa de conversión de vista a carro. De todas las sesiones de compradores que registraron una vista de producto, ¿cuál es la proporción que finalmente registró un anuncio al carro de compras del comprador?<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Principales vendedores<br/>- Productos populares<br/>- Es posible que esté interesado en |
-| Más comprados | A menudo denominado &quot;Principales vendedores&quot;, este tipo de recomendación cuenta el número de sesiones en las que se produjo una acción de pedido en los últimos siete días. Este tipo de recomendación se puede utilizar en todas las páginas.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
-| Más añadidos al carro | Recomienda los productos que los compradores añaden con mayor frecuencia a los carros de compras en los últimos siete días. Este tipo de recomendación se puede utilizar en todas las páginas.<br/><br/>**Lugar de uso:**<br/>- Página de inicio<br/>- Categoría<br/>- Detalles del producto<br/>- Carro de compras<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/> - Más populares<br/>- Tendencias<br/>- Más populares ahora<br/>- Recientemente populares<br/>- Productos populares inspirados por este producto (PDP)<br/>- Principales vendedores |
 
 ## Similitud visual {#visualsim}
 
@@ -124,7 +122,7 @@ El tipo de recomendación _Similitud visual_ ofrece recomendaciones para otros p
 - Material
 - Estilo
 
-Adobe AI utiliza IA para procesar y analizar las imágenes del catálogo y crear atributos que se utilizan para determinar similitudes visuales.
+Adobe AI utiliza IA para procesar y analizar las imágenes del catálogo y crear atributos utilizados para determinar similitudes visuales.
 
 >[!NOTE]
 >
@@ -152,7 +150,7 @@ Debido a que este tipo de recomendación no es aplicable a la mayoría de los ca
 
    La página [Crear nueva recomendación](create.md) ahora muestra **Similitud visual** como un tipo de recomendación seleccionable cuando el tipo de página es **Detalle del producto**.
 
-Después de habilitar las recomendaciones visuales, la IA de Adobe inicia el procesamiento de imágenes. El tiempo que tarda depende del tamaño del catálogo.
+Después de habilitar las recomendaciones visuales, Adobe AI inicia el procesamiento de imágenes. El tiempo que tarda depende del tamaño del catálogo.
 
 ### Dónde se utiliza
 
