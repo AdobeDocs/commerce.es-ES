@@ -31,7 +31,7 @@ Los elementos de línea están habilitados de manera predeterminada para [!DNL P
 
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL Line Items]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL Line Items]_.
 
 1. Para **[!UICONTROL Line Items Enabled]**, seleccione `Yes` para habilitar (predeterminado) o `No` para deshabilitar elementos de línea.
 
