@@ -166,7 +166,7 @@ Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pa
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
 1. [Configurar los botones de pago de PayPal](configure-admin.md#payment-buttons) deseados.
 1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desactiva _1&rbrace; la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_&#x200B;cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
+1. Desactiva _1&rbrace; la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_&#x200B;cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=es#payments)
 
 ## Métodos de pago locales
 
