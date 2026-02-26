@@ -3,9 +3,9 @@ title: Configuración de la zona protegida de pruebas
 description: Usa una cuenta de zona protegida de PayPal para usar  [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Para completar la incorporación a la zona protegida:
       Si creó una cuenta de zona protegida de PayPal durante el proceso de incorporación a la zona protegida de PayPal, debe [restablecer su zona protegida de incorporación](#reset-your-sandbox-account) porque o no puede verificar su correo electrónico.
 
    1. Seleccione **[!UICONTROL Business]** como tipo de cuenta y haga clic en **[!UICONTROL Create]**.
-   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna&#x200B;_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
+   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
    1. Haga clic en **[!UICONTROL View/edit account]**.
 
       ![PayPal - Ver/editar cuenta de zona protegida](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -79,6 +79,32 @@ Esta característica es `off` de manera predeterminada. Cuando lo habilita, los 
 >[!IMPORTANT]
 >
 >Esta configuración no se aplica a otros flujos de cierre de compra.
+
+## País del comprador
+
+En producción, PayPal utiliza la geolocalización del comprador para determinar qué métodos de pago están disponibles en los flujos de pago y exprés. Dado que el modo de espacio aislado no admite la geolocalización, usa la configuración **País del comprador** para simular la ubicación del comprador y controlar qué métodos de pago se procesan.
+
+Esta configuración es útil para probar métodos de pago específicos de la región, como Venmo (solo EE. UU.), Pago posterior (EE. UU. y Reino Unido) o [Métodos de pago locales](payments-options.md#local-payment-methods) (Europa) sin necesidad de una VPN.
+
+Para configurar el país del comprador:
+
+1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y seleccione **[!UICONTROL Payment Methods]**.
+
+1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL General Configuration]_.
+
+1. Establezca **[!UICONTROL Method]** en `Sandbox`.
+
+1. Seleccione el país que desee en la lista desplegable **[!UICONTROL Buyer's country]**.
+
+1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
+
+>[!NOTE]
+>
+>La configuración de **[!UICONTROL Buyer's country]** solo aparece cuando el método está establecido en `Sandbox`. Esto no afecta a los entornos de producción.
 
 ## Realizar pruebas en un entorno limitado
 

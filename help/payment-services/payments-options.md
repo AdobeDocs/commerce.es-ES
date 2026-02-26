@@ -3,9 +3,9 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -159,14 +159,51 @@ Para **capturar pagos con _solo_ botones de pago de PayPal (_no_ la opción de p
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
 1. [Configura los botones de pago de PayPal que desees](configure-admin.md#payment-buttons) en Configuración.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
 
 Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pago de PayPal**:
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
 1. [Configurar los botones de pago de PayPal](configure-admin.md#payment-buttons) deseados.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desactiva _1&rbrace; la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_&#x200B;cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=es#payments)
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactiva _1} la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
+
+## Métodos de pago locales
+
+Los métodos de pago locales (LPM) proporcionan soporte para métodos de pago específicos de la región y locales, como transferencias bancarias y soluciones de pago localizadas, junto con las opciones existentes basadas en tarjetas. Los comerciantes pueden habilitar o deshabilitar los LPM disponibles directamente desde la configuración de Commerce. Los LPM amplían las capacidades de pago de Adobe, satisfacen las necesidades del mercado europeo, mejoran la localización de pagos y ayudan a aumentar la conversión, la adopción por parte de los comerciantes y la satisfacción del comprador.
+
+Los LPM disponibles incluyen:
+
+| Método de pago | Países | Moneda |
+|----------------|-----------|----------|
+| Bancontact | Bélgica | EUR |
+| BLIK | Polonia | PLN |
+| eps | Austria | EUR |
+| iDEAL | Países Bajos | EUR |
+| MyBank | Italia | EUR |
+| Przelewy24 | Polonia | EUR, PLN |
+
+Los LPM se muestran a los clientes según su dirección de facturación y la moneda base de su sitio web. Un método de pago solo aparece cuando ambas condiciones coinciden con los requisitos del método de pago.
+
+Consulte [Configuración de métodos de pago locales](configure-admin.md#local-payment-methods) para obtener más información.
+
+## Botones de cierre rápido
+
+Para fomentar una experiencia de pago más rápida, las opciones de pago exprés están disponibles al principio del flujo de pago. Los clientes pueden completar su compra con PayPal, PayPal Más tarde, Venmo, Apple Pay o Google Pay.
+
+Una vez activado, los botones de pago rápido se muestran al principio del proceso de pago, proporcionando una ruta más rápida para la compra para los clientes que prefieren métodos de pago de cartera digital.
+
+Para activar los botones de pago rápido, configure cada método de pago de forma individual:
+
+* **PayPal y pagar más tarde**: habilita **[!UICONTROL Show buttons at start of checkout]** en la configuración de [botones de pago de PayPal](configure-admin.md#paypal-payment-buttons).
+
+* **Apple Pay**: habilita **[!UICONTROL Show Apple Pay at start of checkout]** en la configuración de [Apple Pay](configure-admin.md#apple-pay).
+
+* **Google Pay**: habilita **[!UICONTROL Show Google Pay at start of checkout]** en la configuración de [Google Pay](configure-admin.md#google-pay).
+
+>[!NOTE]
+>
+>La disponibilidad del método de pago depende de la ubicación del comprador. Para probar la zona protegida, usa la configuración [País del comprador](sandbox.md#buyers-country) para simular diferentes regiones. Por ejemplo, Venmo solo está disponible en los Estados Unidos. Pagar más tarde está disponible en los Estados Unidos y el Reino Unido.
 
 ## Opciones de desprotección
 

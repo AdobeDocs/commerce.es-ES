@@ -4,9 +4,9 @@ description: Obtenga información acerca de los elementos de línea de  [!DNL Pa
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,29 @@ Los elementos de línea de [!DNL Payment Services] son los elementos incluidos e
 
 Esta información es útil para el servicio al cliente, la gestión de pedidos y la facturación adecuada.
 
-Esta característica está habilitada de manera predeterminada para [!DNL Payment Services]. Para consultar artículos de línea:
+## Configurar elementos de línea
+
+Los elementos de línea están habilitados de manera predeterminada para [!DNL Payment Services]. Para configurar:
+
+1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Vaya a **[!UICONTROL Sales]** y seleccione **[!UICONTROL Payment Methods]**.
+
+1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL Line Items]_.
+
+1. Para **[!UICONTROL Line Items Enabled]**, seleccione `Yes` para habilitar (predeterminado) o `No` para deshabilitar elementos de línea.
+
+1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
+
+>[!IMPORTANT]
+>
+> Si tiene extensiones de terceros que agregan tarifas personalizadas (como tarifas de manejo) a sus pedidos, es posible que tenga que deshabilitar los elementos de línea. [!DNL Payment Services] calcula los artículos de línea en función de los componentes de pedido estándar de Commerce (artículos, impuestos, envíos y descuentos). Las tarifas de terceros que no son reconocidas por [!DNL Payment Services] pueden causar una discrepancia entre el total del artículo de línea y el total del pedido, lo que puede impedir que se complete el cierre de compra.
+
+## Ver elementos de línea
+
+Para consultar artículos de línea:
 
 1. Vaya a su [panel de comerciantes de PayPal](https://www.paypal.com/merchant/){target=_blank}.
 
@@ -127,13 +149,13 @@ Consulta [Documentación para desarrolladores de PayPal sobre artículos de lín
 
 ## Administrar elementos de línea
 
-Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede causar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
+Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede causar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
 
 > Ejemplo de artículos de línea con problemas de redondeo en la vista del panel de comerciantes
 
 ![Vista de elementos de línea](assets/line-items-example.png){width="600" zoomable="yes"}
 
-+++Cómo calcula Adobe Commerce un problema de redondeo en los elementos de línea
++++Cálculo de Adobe Commerce de un problema de redondeo en elementos de línea
 
 Los elementos de línea de [!DNL Payment Services] equilibran este problema de redondeo de modo que el valor de `unit_amount` o `unit_tax` corresponda con el importe total del pedido. Un artículo se puede dividir en dos líneas para resolver este problema de redondeo:
 
