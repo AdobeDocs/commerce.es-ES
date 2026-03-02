@@ -25,7 +25,7 @@ Con [!DNL Adobe Commerce Optimizer], puede:
 
 Vea el siguiente vídeo para obtener información general de alto nivel sobre [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450226)
+>[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 
