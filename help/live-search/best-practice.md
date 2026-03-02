@@ -3,9 +3,9 @@ title: Prácticas recomendadas de [!DNL Live Search]
 description: Conozca las prácticas recomendadas para implementar  [!DNL Live Search] en su tienda.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
+source-git-commit: c3d431a6536c3c5528b9aee45f03b0b94b4ea64e
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Existen varios factores clave que determinan la relevancia y eficacia de los res
 - Los datos de productos bien estructurados garantizan que los algoritmos de búsqueda puedan hacer coincidir de forma eficaz los productos con las consultas. Los datos de productos de baja calidad conducen a resultados de búsqueda poco relevantes. Para afectar directamente al éxito de su estrategia de comercialización:
    - Configure los atributos correctos según se pueda buscar con su peso correspondiente.
    - Asegúrese de que los datos de esos atributos sean relevantes.
-- Una experiencia de búsqueda bien diseñada crea confianza con los clientes e infunde confianza en que encontrarán lo que necesitan.
+- Una experiencia de búsqueda bien diseñada crea confianza con los clientes e infunde confianza en que pueden encontrar lo que necesitan.
 - Las reglas de búsqueda son esenciales, ya que pueden aumentar la visibilidad de ciertos productos en función de la popularidad, las nuevas llegadas, los criterios promocionales o cualquier otra estrategia de comercialización para satisfacer los requisitos comerciales.
 - La navegación con facetas permite a los compradores refinar su búsqueda y obtener resultados relevantes rápidamente.
 
@@ -124,21 +124,92 @@ Más información sobre las reglas de búsqueda:
    - [Editar, ver y eliminar](rules-manage.md)
 - Recopilación de datos
    - [[!DNL Live Search] eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Recopilador de eventos de Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
+   - [Recopilador de eventos de Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
    - [Eventos de Commerce en GitHub](https://github.com/adobe/commerce-events/tree/main/examples) 
 
-### Aprovechamiento de metadatos del producto
+### Aprovechamiento de metadatos de productos
 
-Asegúrese de que los atributos de producto precisos y detallados estén [configurados para realizar búsquedas](workspace.md#set-attributes-as-searchable). Tenga en cuenta que los atributos SKU, nombre y categoría se pueden buscar de forma predeterminada y no se pueden excluir de la búsqueda. Para obtener los mejores resultados, no utilice espacios en los SKU.
+Asegúrese de que los atributos de producto precisos y detallados estén [configurados para realizar búsquedas](workspace.md#set-attributes-as-searchable). Tenga en cuenta que los atributos SKU, nombre y categoría se pueden buscar de forma predeterminada y no se pueden excluir de la búsqueda. Para obtener los mejores resultados, no utilice espacios en los SKU.
+
+Elegir qué atributos permiten búsquedas tiene un gran impacto en la calidad de la búsqueda. Si se pueden buscar demasiados atributos, la relevancia puede reducirse y provocar coincidencias inesperadas, incluso si aumenta el número de resultados devueltos. En esta sección se explica cómo seleccionar atributos en los que se pueden realizar búsquedas deliberadamente para equilibrar la cobertura y la relevancia.
+
+**Atributos en los que se puede buscar recomendados:**
+
+- **Nombre del producto** - Intento alto, describe directamente el producto.
+- **Descripción principal** - Detalles concisos del producto que los compradores esperan encontrar.
+- **Marca**: los compradores buscan con frecuencia por marca.
+- **Número/estilo de modelo**: identificadores específicos con intención clara.
+- **Características principales** - Características distintivas importantes (por ejemplo, &quot;impermeable&quot;, &quot;inalámbrico&quot;).
+- **Material/Tela** - Para las categorías de moda y muebles.
+
+**Evite permitir búsquedas en estos atributos:**
+
+- **Descripciones o especificaciones largas**: si hay demasiado texto, se generará ruido y coincidencias inesperadas.
+- **Rutas de categorías**: puede causar resultados irrelevantes debido a términos de taxonomía amplios.
+- **Códigos SKU internos con caracteres mixtos**: crea falsos positivos en coincidencias parciales.
+- **Campos administrativos**: Las notas internas o los códigos de almacén no son relevantes para los compradores.
+- **Etiquetas de contenido o formato de HTML**: el contenido técnico no mejora la relevancia.
+
+#### Problemas comunes causados por atributos incorrectos en los que se puede buscar
+
+Hacer que se puedan buscar los atributos incorrectos puede frustrar a los compradores y crear escalaciones de soporte.
+
+| Ejemplo | Escenario | Recomendación |
+|---------|----------|----------------|
+| **Transformación y autocompletar efectos secundarios** | Un comerciante hace que las descripciones de productos largas puedan buscarse. Un comprador busca &quot;lata&quot; (buscando contenedores). Debido a la segmentación y a la coincidencia parcial, aparecen productos con &quot;puede&quot; como parte de palabras más grandes en sus descripciones, como &quot;americano&quot;, &quot;dosel&quot; o &quot;lienzo&quot;. Los productos no están relacionados con la superficie de intención del comprador y pierden confianza en la búsqueda. | Reduzca los campos en los que se pueden buscar a atributos de alta intención como el nombre del producto y la descripción principal. Valide los términos de búsqueda principales para identificar coincidencias problemáticas. Utilice reglas de comercialización o redirecciones de búsqueda para administrar casos extremos conocidos específicos. |
+| **La clasificación por popularidad amplifica la coincidencia ruidosa** | Un comerciante establece la clasificación en &quot;Más comprados&quot; e incluye rutas de categoría y descripciones largas como atributos en los que se puede buscar. Un comprador busca &quot;bolsa de ordenador portátil&quot;. La combinación amplia devuelve bolsas para portátiles, accesorios para portátiles, bolsas para otros fines y los propios portátiles. Puesto que los portátiles se adquieren con mayor frecuencia que las maletas para portátiles, ocupan el primer puesto. El comprador percibe la clasificación como incorrecta, aunque el sistema funcione según lo configurado. | Elimine los atributos en los que se pueden realizar búsquedas ruidosas como las rutas de categoría. Una vez que el conjunto de coincidencias sea más preciso, aplique estrategias de clasificación basadas en la popularidad. Monitorice los análisis de búsqueda para identificar consultas donde se produce este patrón. |
+| **La ruta de categoría crea falsos positivos** | Un comerciante puede buscar en la ruta de categoría completa (por ejemplo, &quot;Hogar > Cocina > Electrodomésticos > Electrodomésticos pequeños&quot;). Un comprador busca &quot;escritorio de oficina en casa&quot;. Los productos de la categoría &quot;Inicio&quot; coinciden incluso si son artículos de cocina, ya que &quot;hogar&quot; existe en su ruta de categoría. Aparatos de cocina, decoración del hogar y otros productos no relacionados aparecen en los resultados, diluyendo la relevancia. | No permita que se puedan buscar en las rutas de categorías; utilice facetas en su lugar para permitir que los compradores filtren por categoría. Si el filtrado de categorías es esencial para la estrategia de búsqueda, impleméntelo a través de reglas de comercialización en lugar de atributos en los que se pueda buscar. |
+
+#### Ponderación adecuada de atributos en los que se puede buscar
 
 Para aumentar la relevancia de la búsqueda, asigne una ponderación a cada atributo en el que se pueda buscar. Los atributos con un peso mayor deben aparecer más arriba en los resultados de búsqueda. La ordenación por relevancia se ve afectada por varios criterios, como el peso de la búsqueda. Esto significa que, a veces, los atributos con una ponderación de búsqueda menor pueden seguir teniendo más relevancia que los atributos con una ponderación de búsqueda mayor. Otros criterios pueden incluir el número de coincidencias en cualquier atributo determinado, la posición del término de búsqueda encontrado y la estructura de texto general antes y después de un término de búsqueda.
 
+**Prioridades de peso:**
+
+- **Peso más alto (9-10):** Nombre del producto, marca
+- **Peso de Medium (6-8):** Número de modelo, descripción principal, características clave
+- **Menor peso (3-5):** Descripciones secundarias, materiales, especificaciones
+
 Asegúrese de que cada producto tenga contenido relevante dentro de cada atributo en el que se puede buscar. No se recomienda establecer un atributo como en el que se pueda buscar si tiene grandes cantidades de contenido, ya que esto puede reducir la relevancia de los resultados de búsqueda.
+
+#### Resolución de problemas
+
+Si los resultados de búsqueda parecen aleatorios o irrelevantes, utilice esta lista de comprobación antes de escalar como defecto de producto:
+
+1. **Revisar la configuración de atributos en los que se puede buscar:**
+
+   - Enumerar todos los atributos configurados actualmente como en los que se puede buscar.
+   - Identifique cualquier atributo amplio o ruidoso (descripciones largas, rutas de categoría, campos administrativos).
+   - Elimine el estado en el que se puede buscar de los atributos que no representan la intención del comprador.
+
+1. **Validar coincidencias de consulta con atributos principales:**
+
+   - Pruebe las consultas de búsqueda más comunes.
+   - Compruebe que los resultados coinciden principalmente en el nombre del producto y la marca en lugar de en el texto tangencial.
+   - Compruebe si los resultados inesperados solo comparten coincidencias débiles en el contenido de formulario largo.
+
+1. **Prueba con y sin campos ruidosos:**
+
+   - Eliminar temporalmente el estado en el que se puede buscar de la ruta de categoría y los campos de descripción larga.
+   - Vuelva a ejecutar las consultas problemáticas para ver si la relevancia mejora.
+   - Si los resultados mejoran, ajuste la configuración de forma permanente.
+
+1. **Usar reglas de comercialización para excepciones:**
+
+   - Para consultas conocidas específicas que necesiten un tratamiento especial, cree reglas de búsqueda segmentadas.
+   - No intente resolver casos extremos haciendo que se puedan buscar más atributos.
+   - Utilice redirecciones para búsquedas de nombres de marcas o errores ortográficos comunes.
+
+1. **Supervisar e iterar:**
+
+   - Use [espacio de trabajo de rendimiento](performance.md) para rastrear la tasa de resultados cero y las tasas de clics.
+   - Revise las consultas de búsqueda principales semanalmente para identificar nuevos patrones.
+   - Ajuste los atributos y pesos que permiten búsqueda en función de los datos, no de las suposiciones.
 
 Obtenga más información sobre los atributos de producto para la búsqueda:
 
 - [Definir atributos como en los que se puede buscar](workspace.md#set-attributes-as-searchable)
-- [Asignar peso a atributos](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Asignar peso a atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorización de resultados de búsqueda
 
