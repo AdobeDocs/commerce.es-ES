@@ -2,11 +2,11 @@
 title: ¿Qué es Adobe Commerce Optimizer?
 description: Obtenga información acerca de  [!DNL Adobe Commerce Optimizer]  y sus características clave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Con [!DNL Adobe Commerce Optimizer], puede:
 
 Vea el siguiente vídeo para obtener información general de alto nivel sobre [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 
@@ -33,7 +33,7 @@ Vea el siguiente vídeo para obtener información general de alto nivel sobre [!
 
 - Los comerciantes que deseen mantener su sistema de comercio back-end existente y solo transformar las experiencias de la tienda.
 - Empresas en las que un sistema de terceros administra el ciclo vital del carro de compras y el cierre de compra.
-- Clientes de AEM que buscan una forma sencilla de administrar su catálogo de productos desde un motor de comercio de terceros.
+- [Clientes de AEM](setup/product-visuals.md) que buscan una manera sencilla de administrar su catálogo de productos desde un motor de comercio de terceros.
 
 ## Recorrido rápido
 
@@ -69,6 +69,7 @@ Cree experiencias personalizadas para sus compradores a través de la detección
 Defina las vistas de catálogo y las políticas. El catálogo no solo contiene los datos del producto, sino que también le ayuda a definir la estructura empresarial. Además, puede obtener información valiosa sobre la disponibilidad de los datos de productos para su tienda, lo que garantiza que se puedan mostrar rápidamente a los compradores.
 
 - **Vistas de catálogo**: le ayuda a definir su estructura comercial en grupos empresariales significativos. Por ejemplo, los concesionarios de la industria del automóvil, las filiales de conglomerados de marcas múltiples o las ubicaciones de fabricación de los proveedores.
+- **Capas de catálogo**: modifique los datos del producto sin cambiar los datos de origen. Cuando se usan AEM Assets para imágenes de productos, el nivel AEM-Assets se aplica a través de [Product Visuals](setup/product-visuals.md). Consulte [Capas de catálogo](setup/catalog-layer.md) para obtener más información.
 - **Directivas**: filtros de acceso a datos alojados en vistas de catálogo. Las políticas ayudan a garantizar que el contenido correcto se envíe al destino correcto. Por ejemplo, tiendas físicas, mercados, canalizaciones de publicidad (Google, Facebook, Instagram).
 - **Sincronización de datos**: muestra una descripción general del estado de sincronización de los datos de producto transferidos desde su origen de datos (PIM, ERP, etc.) a [!DNL Adobe Commerce Optimizer]. Los datos del producto se muestran en las fichas **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** y **[!UICONTROL Recommendations]**.
 - **Eventos**: muestra datos de evento de tienda que alimentan el Descubrimiento de productos y las recomendaciones. La página **Events** permite al comerciante comprobar que ha implementado correctamente los eventos de tienda y que los eventos se han capturado correctamente. Los comerciantes pueden utilizar esta página para identificar posibles problemas y tomar medidas para resolver cualquier problema relacionado con el evento.
