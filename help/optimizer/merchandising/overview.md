@@ -2,11 +2,11 @@
 title: Resumen de comercialización
 description: Obtenga información acerca de las características de comercialización en  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: 5f6c7e68d330a063fbdb2fce1aeb86a08cf25a80
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---

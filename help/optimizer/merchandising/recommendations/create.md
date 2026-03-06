@@ -1,11 +1,11 @@
 ---
 title: Crear y administrar recomendaciones
 description: Obtenga información sobre cómo crear y administrar recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
+source-git-commit: 3d748e83e07a16e58c0c55f12a6c0ad40bbfdead
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,17 @@ _Unidad de recomendación_
 
 Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](../../manage-results/recommendation-performance.md) para medir impresiones, vistas, clics, etc. La tabla Recommendations muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundadas.
 
-1. En la barra lateral de _Adobe Commerce Optimizer_, ve a _Comercialización_ > **Recommendations** para mostrar el espacio de trabajo de _Recommendations_.
+1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**para mostrar el área de trabajo de_ Recommendations _.
+
+1. En el campo **Vista de catálogo**, seleccione la vista de catálogo en la que desea que la recomendación esté disponible. Más información acerca de [usar vistas de catálogo para recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
+
+   >[!IMPORTANT]
+   >
+   >Esta función se encuentra actualmente en fase beta.
 
 1. Haga clic en **Crear recomendación**.
+
+   La recomendación que cree estará disponible en la vista de catálogo seleccionada anteriormente.
 
 1. En la sección _Asigne un nombre a la recomendación_, escriba un nombre descriptivo para la referencia interna, como `Home page most popular`.
 
@@ -35,6 +43,8 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 1. (Opcional) En la sección _Filtros_, [aplique filtros](filters.md) para controlar qué productos aparecen en la unidad de recomendación.
 
+1. Utilice el panel _Vista previa de productos recomendados_ para comprender mejor cómo los filtros afectan a los productos que se muestran en la unidad de recomendación. Obtenga más información sobre cómo [obtener una vista previa de las recomendaciones](#preview-recommendations).
+
 1. Cuando termine, haga clic en una de las siguientes opciones:
 
    - **Guardar como borrador** para editar la unidad de recomendación más adelante. No se puede modificar el tipo de recomendación para una unidad de recomendación en estado de borrador.
@@ -45,11 +55,33 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 >[!NOTE]
 >
-> Puede crear hasta 50 unidades de recomendación activas.
+>Puede crear hasta 50 unidades de recomendación activas. Consulte [Límites y límites](../../boundaries-limits.md) para obtener detalles.
 
 >[!IMPORTANT]
 >
 >Algunos exploradores pueden bloquear los scripts esenciales que impiden que Recommendations funcione según lo esperado.
+
+## Previsualizar recomendaciones
+
+El panel _Vista previa de productos recomendados_ siempre está disponible con una selección de muestra de productos que podrían aparecer en la unidad de recomendación cuando se implemente en la tienda.
+
+![Vista previa de recomendaciones](../../assets/rec-preview.png)
+
+Para probar una recomendación cuando se trabaja en un entorno que no es de producción, puede recuperar datos de recomendación de una fuente diferente. Esto permite a los comerciantes experimentar con las reglas y previsualizar las recomendaciones antes de implementarlas en la producción.
+
+| Campo | Descripción |
+|---|---|
+| Vista de catálogo |
+| Nombre | El nombre del producto. |
+| SKU | La unidad de stock asignada al producto |
+| Precio | El precio del producto. |
+| Tipo de resultado | Principal: Indica que hay suficientes datos de formación recopilados para mostrar una recomendación.<br />Copia de seguridad: indica que no se recopilaron suficientes datos de formación, por lo que se usa una recomendación de copia de seguridad para rellenar el espacio. Vaya a [Datos de comportamiento](../../setup/events/overview.md) para obtener más información acerca de los modelos de aprendizaje automático y las recomendaciones de copia de seguridad. |
+
+A medida que cree su unidad de recomendación, experimente con el tipo de recomendación y los filtros para obtener comentarios inmediatos en tiempo real sobre los productos que se incluirán. A medida que empiece a comprender qué productos aparecen, puede configurar la unidad de recomendación para satisfacer sus necesidades comerciales.
+
+[!DNL Adobe Commerce Optimizer] [filtra](filters.md) recomendaciones para evitar mostrar productos duplicados cuando se implementan varias unidades de recomendación en una sola página. Como resultado, los productos que aparecen en el panel de vista previa pueden diferir de los que aparecen en la tienda.
+
+Para configuraciones de varias tiendas, idiomas o marcas, puede configurar si cada recomendación se aplica a todas las vistas de catálogo (globales) o a una sola [vista de catálogo](../../setup/catalog-view.md). Obtenga más información sobre cómo [establecer la vista de catálogo](../../manage-results/recommendation-performance.md#select-catalog-view) al trabajar con recomendaciones.
 
 ## Obtener ID de recomendación
 
@@ -65,13 +97,13 @@ Después de crear una recomendación, debe recuperar su ID para implementar la u
 
 1. En la sección **ID de recomendación**, copie el ID.
 
-1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=es) en su tienda de Edge Delivery Services.
+1. Use este identificador para configurar la [recomendación ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
 Puede editar, desactivar o eliminar una recomendación existente.
 
-1. En la barra lateral de _Adobe Commerce Optimizer_, ve a _Comercialización_ > **Recommendations**.
+1. En la barra lateral _[!DNL Adobe Commerce Optimizer]_, vaya a_ Comercialización _>**Recomendaciones**.
 
 1. Seleccione la recomendación que desee modificar.
 
@@ -84,13 +116,13 @@ Puede editar, desactivar o eliminar una recomendación existente.
    - Número de productos
    - Filtrar productos
 
-   No puede cambiar el tipo de recomendación.
+   No se puede cambiar el tipo de recomendación ni la vista de catálogo. La vista de catálogo se establece al crear la recomendación. Para obtener más información, consulte [seleccionar vista de catálogo](../../manage-results/recommendation-performance.md#select-catalog-view).
 
 1. Una vez finalizado, haga clic en **Guardar cambios**.
 
 ## Indicadores de preparación
 
-Los indicadores de preparación muestran qué tipos de recomendación funcionan mejor según los datos de catálogo y de comportamiento disponibles. También puede usar indicadores de preparación para determinar si tiene problemas con [la colección de eventos](../../setup/events/overview.md) o si no tiene tráfico suficiente para rellenar el tipo de recomendación.
+Los indicadores de preparación muestran qué tipos de recomendación funcionan mejor según los datos de catálogo y de comportamiento disponibles. También pueden ayudarle a identificar posibles problemas con [la colección de eventos](../../setup/events/overview.md) o a determinar si un tipo de recomendación no está recibiendo tráfico suficiente para generar resultados.
 
 Los indicadores de preparación se clasifican en [estáticos](#static-based) o [dinámicos](#dynamic-based). Solo se utilizan datos de catálogo de uso basados en estáticos, mientras que los basados en dinámicos utilizan datos de comportamiento de sus compradores. Esos datos de comportamiento se usan para [entrenar modelos de aprendizaje automático](../../setup/events/overview.md) para generar recomendaciones personalizadas y calcular su puntuación de preparación.
 
@@ -100,7 +132,7 @@ Los indicadores de disponibilidad indican cuánto se ha entrenado el modelo. Los
 
 El porcentaje del indicador de preparación se deriva de un cálculo que indica cuántos productos se pueden recomendar según el tipo de recomendación. Las estadísticas se aplican a los productos en función del tamaño general del catálogo, el volumen de interacciones (como vistas, clics, complementos a los carros de compras) y el porcentaje de SKU que registran esos eventos en un intervalo de tiempo determinado. Por ejemplo, durante el tráfico máximo de la temporada de vacaciones, los indicadores de disponibilidad pueden mostrar valores más altos que en tiempos de volumen normal.
 
-Como resultado de estas variables, el porcentaje del indicador de disponibilidad puede fluctuar. Esto explica por qué podría ver que los tipos de recomendación entran y salen de &quot;Listo para implementar&quot;.
+Como resultado de estas variables, el porcentaje del indicador de disponibilidad puede fluctuar. Esta fluctuación explica por qué podría ver que los tipos de recomendación entran y salen de &quot;Listo para implementar&quot;.
 
 Los indicadores de preparación se calculan en función de un par de factores:
 
@@ -109,8 +141,8 @@ Los indicadores de preparación se calculan en función de un par de factores:
 
 En función de los factores anteriores, se calcula un valor de disponibilidad y se muestra de la siguiente manera:
 
-- 75 % o más significa que las recomendaciones sugeridas para ese tipo de recomendación serán muy relevantes.
-- Al menos el 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación serán menos relevantes.
+- 75 % o más significa que las recomendaciones sugeridas para ese tipo de recomendación son altamente relevantes.
+- Al menos el 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación son menos relevantes.
 - Menos del 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación pueden no ser relevantes. En este caso, se utilizan [recomendaciones de copia de seguridad](../../setup/events/overview.md#backuprecs).
 
 Obtenga más información acerca de [por qué los indicadores de preparación podrían ser bajos](#what-to-do-if-the-readiness-indicator-percent-is-low).
@@ -156,9 +188,9 @@ _Tipo de recomendación_
 >
 >Los indicadores nunca pueden alcanzar el 100%.
 
-El porcentaje del indicador de preparación para los tipos de recomendación que dependen de los datos del catálogo no cambia mucho, ya que el catálogo del comerciante no cambia con frecuencia. Sin embargo, el porcentaje del indicador de preparación para los tipos de recomendación basados en los datos de comportamiento del comprador puede cambiar a menudo según la actividad diaria del comprador.
+El indicador de preparación para los tipos de recomendación que dependen de los datos del catálogo no cambia mucho, ya que el catálogo del comerciante rara vez cambia. Sin embargo, el indicador de preparación para los tipos de recomendación basados en los datos de comportamiento del comprador puede cambiar a menudo según la actividad diaria del comprador.
 
-#### Qué hacer si el porcentaje del indicador de disponibilidad es bajo
+#### Qué hacer si el indicador de disponibilidad está bajo
 
 Un porcentaje de preparación bajo indica que no hay muchos productos del catálogo que puedan incluirse en las recomendaciones de este tipo de recomendación. Esto significa que existe una alta probabilidad de que se devuelvan [recomendaciones de copia de seguridad](../../setup/events/overview.md#backuprecs) si implementa este tipo de recomendación de todos modos.
 
@@ -172,24 +204,5 @@ A continuación se enumeran los posibles motivos y soluciones para puntuaciones 
 - **Basado en dinámico**: los porcentajes bajos de los indicadores basados en dinámico pueden deberse a:
 
    - Faltan campos en los [eventos de tienda](../../setup/events/overview.md) necesarios para los tipos de recomendación respectivos (requestId, contexto de producto, etc.).
-   - Poco tráfico en la tienda, por lo que el volumen de eventos de comportamiento que recibimos es bajo.
-   - La variedad de eventos de comportamiento de la tienda en diferentes productos es baja. Por ejemplo, si solo el diez por ciento de sus productos se ven o se compran la mayor parte del tiempo, los indicadores de preparación respectivos serán bajos.
-
-## Previsualizar recomendaciones
-
-El panel _Vista previa de productos recomendados_ siempre está disponible con una selección de muestra de productos que podrían aparecer en la unidad de recomendación cuando se implemente en la tienda.
-
-![Vista previa de recomendaciones](../../assets/rec-preview.png)
-
-Para probar una recomendación cuando se trabaja en un entorno que no es de producción, puede recuperar datos de recomendación de una fuente diferente. Esto permite a los comerciantes experimentar con las reglas y previsualizar las recomendaciones antes de implementarlas en la producción.
-
-| Campo | Descripción |
-|---|---|
-| Nombre | El nombre del producto. |
-| SKU | La unidad de stock asignada al producto |
-| Precio | El precio del producto. |
-| Tipo de resultado | Principal: indica que hay suficientes datos de formación recopilados para mostrar una recomendación.<br />Copia de seguridad: indica que no se recopilaron suficientes datos de formación, por lo que se utiliza una recomendación de copia de seguridad para rellenar el espacio. Vaya a [Datos de comportamiento](../../setup/events/overview.md) para obtener más información acerca de los modelos de aprendizaje automático y las recomendaciones de copia de seguridad. |
-
-A medida que cree su unidad de recomendación, experimente con el tipo de recomendación y los filtros para obtener comentarios inmediatos en tiempo real sobre los productos que se incluirán. A medida que empiece a comprender qué productos aparecen, puede configurar la unidad de recomendación para satisfacer sus necesidades comerciales.
-
-[!DNL Adobe Commerce Optimizer] [filtra](filters.md) recomendaciones para evitar mostrar productos duplicados cuando se implementan varias unidades de recomendación en una sola página. Como resultado, los productos que aparecen en el panel de vista previa pueden diferir de los que aparecen en la tienda.
+   - Poco tráfico al almacén, por lo que el volumen de eventos de comportamiento recibidos es bajo.
+   - La variedad de eventos de comportamiento de la tienda en diferentes productos es baja. Por ejemplo, si solo el diez por ciento de sus productos se ven o se compran la mayor parte del tiempo, los indicadores de preparación respectivos son bajos.

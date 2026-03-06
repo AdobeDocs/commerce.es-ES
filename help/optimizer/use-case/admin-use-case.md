@@ -3,11 +3,11 @@ title: Caso de uso completo del administrador de catálogos y tiendas
 description: Aprenda a usar [!DNL Adobe Commerce Optimizer] para administrar su catálogo mediante vistas de catálogo y directivas, y a configurar su tienda en función de la configuración de su catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Este caso de uso está diseñado para administradores y desarrolladores que dese
 
 Antes de comenzar este tutorial, asegúrese de que dispone de los siguientes requisitos previos:
 
-- **Instancia de Adobe Commerce Optimizer**
+- **[!DNL Adobe Commerce Optimizer]instancia**
    - Acceso a una instancia de prueba en Cloud Manager
    - Consulte [Introducción](../get-started.md) para obtener instrucciones de configuración
 
@@ -55,7 +55,7 @@ En este caso de uso, está trabajando con lo siguiente:
 
 >[!NOTE]
 >
-> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=es) en la documentación de Adobe Commerce Storefront.
+> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) en la documentación de Adobe Commerce Storefront.
 
 ### ‌Lecciones clave
 
@@ -63,7 +63,7 @@ Al final de este artículo, deberá hacer lo siguiente:
 
 - Conozca los aspectos básicos de [!DNL Adobe Commerce Optimizer] con su modelo de datos de catálogo escalable y de rendimiento.
 - Descubra cómo el modelo de datos de catálogo se integra con los componentes de tienda independientes de la plataforma creados por Adobe.
-- Aprenda a utilizar las vistas de catálogo y las directivas de Adobe Commerce Optimizer para crear vistas de catálogo personalizadas y filtros de acceso a datos, y enviar los datos a una tienda de Adobe Commerce con tecnología de Edge Delivery.
+- Aprenda a utilizar las vistas de catálogo y las directivas de [!DNL Adobe Commerce Optimizer] para crear vistas de catálogo y filtros de acceso a datos personalizados, y a enviar los datos a una tienda de Adobe Commerce con tecnología de Edge Delivery.
 
 ## Escenario de negocio - Carvelo Automobile
 
@@ -126,7 +126,7 @@ En el panel de navegación izquierdo, expanda la sección _Configuración de tie
 
 >[!NOTE]
 >
->Por ahora, puedes ignorar la vista del catálogo **Global**.
+>Por ahora, puede ignorar la vista de catálogo **Todas las vistas**.
 
 Haga clic en el icono de información para revisar los detalles de la vista del catálogo.
 
@@ -221,7 +221,7 @@ Cree una nueva vista de catálogo para el distribuidor *Celport* y vincule las s
 
 1. En el carril izquierdo, expanda la sección _Configuración de tienda_ y haga clic en **[!UICONTROL Catalog views]**.
 
-   Observe las vistas de catálogo existentes: *Arkbridge*, *Kingsbluff* y *Global*.
+   Observe las vistas de catálogo existentes: *Arkbridge*, *Kingsbluff* y *Todas las vistas*.
 
    ![Página de vistas de catálogo existente](../assets/existing-channels-list.png)
 
@@ -392,7 +392,7 @@ Ahora que ha actualizado la configuración de la tienda para utilizar la vista d
 
       Observe los diferentes tipos de piezas disponibles y los precios asignados a la vista de catálogo de Kingsbluff.
 
-   Estos experimentos demuestran la flexibilidad de Adobe Commerce Optimizer: puede cambiar rápidamente entre diferentes vistas de catálogo y libros de precios para crear experiencias de compra personalizadas para diferentes audiencias sin duplicar los datos del catálogo.
+   Estos experimentos demuestran la flexibilidad de [!DNL Adobe Commerce Optimizer]: puede cambiar rápidamente entre distintas vistas de catálogo y libros de precios para crear experiencias de compra personalizadas para distintas audiencias sin duplicar los datos del catálogo.
 
 ## Resolución de problemas
 
@@ -422,13 +422,13 @@ Si tiene problemas durante este tutorial, pruebe las siguientes soluciones:
 
 **Problema:** No se muestran productos
 
-- **Solución:** Compruebe que el identificador de la libreta de precios coincide con el que está disponible en la instancia de Adobe Commerce Optimizer
+- **Solución:** Compruebe que el identificador de la libreta de precios coincide con el que está disponible en su instancia de [!DNL Adobe Commerce Optimizer]
 
 **Problema:** La búsqueda no devuelve resultados
 
 - **Solución:** Confirme que las directivas de vista de catálogo permiten la categoría de producto buscada
 
-Para obtener ayuda adicional, consulta la [documentación de Adobe Commerce Optimizer](../overview.md) o ponte en contacto con el servicio de asistencia de Adobe.
+Para obtener ayuda adicional, consulta la [[!DNL Adobe Commerce Optimizer] documentación](../overview.md) o ponte en contacto con el servicio de asistencia de Adobe.
 
 ## Resumen
 
@@ -441,10 +441,10 @@ En este tutorial, ha realizado correctamente lo siguiente:
 
 ## Pasos siguientes
 
-Para continuar aprendiendo sobre Adobe Commerce Optimizer:
+Para continuar aprendiendo acerca de [!DNL Adobe Commerce Optimizer]:
 
 - Explore [las características de comercialización](../merchandising/overview.md) para personalizar la experiencia de compra
 - Obtenga información acerca de [configuraciones de directivas avanzadas](../setup/policies.md)
 - Configurar [vistas de catálogo adicionales](../setup/catalog-view.md) para otros concesionarios
 - Revise la [documentación de API](https://developer.adobe.com/commerce/services/optimizer/) para la administración programática del catálogo
-- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)
+- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

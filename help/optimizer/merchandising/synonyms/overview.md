@@ -1,10 +1,11 @@
 ---
 title: Resumen de sinónimos
 description: Obtenga información acerca de los sinónimos en  [!DNL Adobe Commerce Optimizer]  y cómo mejoran los resultados de búsqueda.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 3131cc27a25d1bf958071b973f1d4bf1a68be152
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+exl-id: 9efa7b7b-4559-4e23-8858-d2f5da90455b
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---

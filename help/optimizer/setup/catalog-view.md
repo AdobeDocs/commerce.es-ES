@@ -3,11 +3,11 @@ title: Vista de catálogo
 description: Conozca cuáles son las vistas de catálogo y cómo crearlas para organizar el catálogo de productos por estructura empresarial, políticas y precios.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Vistas del catálogo de servicios de comercialización
 
-Las vistas de catálogo son la base de Adobe Commerce Optimizer Merchandising Services, lo que le permite organizar el catálogo de productos por estructura empresarial, directivas y precios. Este modelo de datos flexible admite escenarios de varias marcas, unidades de negocio y varios idiomas, a la vez que mantiene la eficacia operativa.
+Las vistas de catálogo son la base de [!DNL Adobe Commerce Optimizer] Servicios de comercialización, lo que permite organizar el catálogo de productos por estructura empresarial, directivas y precios. Este modelo de datos flexible admite escenarios de varias marcas, unidades de negocio y varios idiomas, a la vez que mantiene la eficacia operativa.
 
 ## ¿Qué son las vistas de catálogo?
 
@@ -31,6 +31,16 @@ Considere las vistas de catálogo como &quot;lentes&quot; diferentes a través d
 - Una vista del catálogo de distribuidores puede mostrar únicamente los productos disponibles para ese distribuidor específico
 - Una vista de catálogo regional puede mostrar productos y precios específicos de un área geográfica
 - Una vista del catálogo de marcas puede mostrar solo productos de una marca en particular
+
+### Vista de catálogo u origen de catálogo
+
+A continuación se explica la diferencia entre una vista de catálogo y un origen de catálogo:
+
+- **Vista de catálogo**: una vista configurada del catálogo para una necesidad comercial específica. Cuando crea una vista de catálogo, selecciona qué origen de catálogo (o configuración regional) usar y luego agrega [directivas](policies.md) para filtrar qué productos son visibles y vincula [libros de precios](pricebooks.md) para controlar los precios. Un solo origen de catálogo puede activar muchas vistas de catálogo (por ejemplo, un origen de `en-US` con vistas de catálogo independientes para diferentes marcas o regiones). Considere una vista de catálogo como *cómo* expone esos datos a una tienda, canal o audiencia.
+
+- **Origen del catálogo**: el contexto de datos subyacente que proporciona información del producto. Un origen de catálogo suele ser una configuración regional (por ejemplo, `en-US`, `fr-CA`) o un sistema externo como PIM o ERP. [!DNL Adobe Commerce Optimizer] ingiere datos de producto de uno o más orígenes de catálogo en un catálogo base unificado. Piense en un origen de catálogo como *de donde* proceden los datos del catálogo sin procesar.
+
+En resumen, **origen del catálogo** es el contexto de datos del que se extrae; mientras que **vista del catálogo** es el contexto filtrado, con precios y organizado que se presenta a los compradores o canales.
 
 ## Creación de una vista de catálogo
 
@@ -66,6 +76,14 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 La página Vistas de catálogo se actualiza para mostrar la nueva vista de catálogo&#x200B;
 
 Después de completar estos pasos, la vista de catálogo ahora está configurada para mostrar productos y precios en función de las fuentes y directivas seleccionadas.
+
+### Especificar vistas de catálogo para recomendaciones y reglas de descubrimiento de productos
+
+>[!IMPORTANT]
+>
+>Esta función se encuentra actualmente en fase beta.
+
+Puede especificar una vista de catálogo al [crear unidades de recomendación](../merchandising/recommendations/create.md) o [reglas de comercialización](../merchandising/rules/add.md).
 
 ## Capas de catálogo
 

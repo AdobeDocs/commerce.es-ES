@@ -1,10 +1,10 @@
 ---
 title: Oportunidades
 description: Identifique oportunidades para impulsar el tráfico, la participación y las conversiones mediante la integración con Adobe Sites Optimizer para mejorar el sitio de forma inteligente y basada en datos.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a proyectos de Adobe Commerce Optimizer (infraestructura SaaS administrada por Adobe)."
-source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1342'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ La página **Oportunidades** le ayuda a identificar e implementar optimizaciones
 
 ## ¿Qué son las oportunidades?
 
-[Las oportunidades](https://experienceleague.adobe.com/es/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) son recomendaciones basadas en IA que ayudan a los comerciantes a identificar y abordar los problemas que afectan el rendimiento de su sitio comercial. Estas recomendaciones están impulsadas por [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/es/docs/experience-manager-sites-optimizer/content/home), un servicio basado en la nube que analiza y mejora el rendimiento del sitio web.
+[Las oportunidades](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) son recomendaciones basadas en IA que ayudan a los comerciantes a identificar y abordar los problemas que afectan el rendimiento de su sitio comercial. Estas recomendaciones están impulsadas por [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), un servicio basado en la nube que analiza y mejora el rendimiento del sitio web.
 
 ## Funcionalidades clave
 
@@ -28,7 +28,7 @@ La página **Oportunidades** le ayuda a identificar e implementar optimizaciones
 
 ## Introducción
 
-Para habilitar Oportunidades en Commerce Optimizer, póngase en contacto con el administrador de éxito del cliente (CSM). Las oportunidades están disponibles con la licencia de Adobe Sites Optimizer **Ultima**.
+Para habilitar oportunidades en [!DNL Adobe Commerce Optimizer], póngase en contacto con el administrador de éxito del cliente (CSM). Las oportunidades están disponibles con la licencia de Adobe Sites Optimizer **Ultima**.
 
 ## Recorrido rápido
 
@@ -96,7 +96,7 @@ A continuación se enumeran los tipos de oportunidades admitidos:
 
 Antes de usar la corrección automática, asegúrese de lo siguiente:
 
-- El catálogo de productos se ha introducido completamente en Commerce Optimizer.
+- Su catálogo de productos se ha ingerido completamente en [!DNL Adobe Commerce Optimizer].
 - El tipo de oportunidad admite la corrección automática (algunos tipos de optimización requieren implementación manual).
 - Tiene los permisos adecuados para crear y administrar capas de catálogo.
 
@@ -176,7 +176,7 @@ Las métricas de éxito supervisan los indicadores de rendimiento clave, como la
 
 ## Más información sobre Sites Optimizer
 
-Para obtener información detallada acerca de las funcionalidades y características de Sites Optimizer, consulte la [documentación de Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/es/docs/experience-manager-sites-optimizer/content/home).
+Para obtener información detallada acerca de las funcionalidades y características de Sites Optimizer, consulte la [documentación de Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Recursos adicionales:
 

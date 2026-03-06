@@ -3,11 +3,11 @@ title: Libros de precios
 description: Aprenda a administrar libros de precios en  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 1c720bc3ba755639eff2f17912fb3a3446e367f6
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ Los libros de precios permiten definir los precios de los productos para un orig
 
 El libro de precios base define la moneda para sí mismo y para todos sus libros de precios secundarios. Los libros de precios secundarios heredan esta divisa y no pueden anularla.
 
-## Añadir libros de precios a Commerce Optimizer
+## Agregar libros de precios a [!DNL Adobe Commerce Optimizer]
 
-Los libros de precios se agregan a Commerce Optimizer mediante la API de libro de precios. Consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/reference/rest/) para aprender a crear, actualizar y eliminar libros de precios para [!DNL Adobe Commerce Optimizer].
+Agrega libros de precios a [!DNL Adobe Commerce Optimizer] mediante la API de libro de precios. Consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/reference/rest/) para aprender a crear, actualizar y eliminar libros de precios para [!DNL Adobe Commerce Optimizer].
 
-## Ver libros de precios en Commerce Optimizer
+## Ver libros de precios en [!DNL Adobe Commerce Optimizer]
 
-Después de ingerir libros de precios en Commerce Optimizer, puede ver la lista de libros de precios y sus identificadores correspondientes en la página **Vista de catálogo**.
+Después de ingerir libros de precios en [!DNL Adobe Commerce Optimizer], puede ver la lista de libros de precios y sus identificadores correspondientes en la página **Vista de catálogo**.
 
 1. Vaya a _Configuración de la tienda_ y haga clic en **[!UICONTROL Catalog views]**.
 

@@ -1,11 +1,11 @@
 ---
 title: Filtros de recomendación
 description: Aprenda a utilizar filtros para controlar qué productos aparecen en  [!DNL Adobe Commerce Optimizer] recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
-source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---

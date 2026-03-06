@@ -1,11 +1,11 @@
 ---
 title: Rendimiento de búsqueda
 description: La página Rendimiento de la búsqueda proporciona a insight los términos de búsqueda que utilizan los compradores.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ La página *Rendimiento de la búsqueda* proporciona a insight los términos de 
 
 - Búsquedas únicas
 - Posición de clic promedio
-- Tasa de pulsaciones
+- Tasa de clics
 - Tasa de conversión
 - Tasa de resultados cero
 
@@ -121,7 +121,7 @@ Asegúrese de que cada producto tenga contenido relevante dentro de cada atribut
 | Datos de instantánea | Descripción |
 |--- |--- |
 | Búsquedas únicas | Número total de búsquedas únicas para el intervalo de fechas especificado. Varias búsquedas realizadas por el mismo comprador, incluso si se refieren a la misma consulta, se consideran únicas si se envían con más de una hora de diferencia. |
-| Tasa de pulsaciones | El porcentaje de búsquedas que finalizan cuando el comprador hace clic en un producto. Por ejemplo, la tasa de clics es del 50 % si el comprador busca &quot;pantalones&quot; y &quot;camisa&quot; y luego hace clic en un resultado de la búsqueda &quot;camisa&quot;. |
+| Tasa de clics | El porcentaje de búsquedas que finalizan cuando el comprador hace clic en un producto. Por ejemplo, la tasa de clics es del 50 % si el comprador busca &quot;pantalones&quot; y &quot;camisa&quot; y luego hace clic en un resultado de la búsqueda &quot;camisa&quot;. |
 | Tasa de conversión | El porcentaje de productos que compra el comprador en comparación con el número de productos en los que hace clic para el intervalo de fechas especificado. Por ejemplo, la tasa de conversión de la interacción es del 100 % si el comprador ve seis productos en la ventana emergente, hace clic en uno y realiza una compra. <br /><br />La tasa de conversión no se ve afectada por el número de vistas de un producto determinado. Por ejemplo, la tasa de conversión sigue siendo la misma si el comprador utiliza la búsqueda, pero no hace clic en ningún producto. |
 | Tasa de resultados cero | Porcentaje de búsquedas únicas que no devuelven resultados para el intervalo de fechas especificado. Por ejemplo, la tasa de resultados cero es del 66,67 % si el comprador busca &quot;fjjajfjfjf&quot; dos veces (sin resultados) y &quot;pantalones&quot; una vez (con resultados). |
 | El Promedio de posición del clic | La posición relativa de la tasa promedio de pulsaciones basada en búsquedas únicas para el intervalo de fechas especificado. |

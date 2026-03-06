@@ -1,11 +1,11 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 ## Crear una regla
 
 1. En el carril izquierdo, vaya a _Reglas de comercialización_ > **Reglas de comercialización**.
-1. Haga clic en **Crear regla** para iniciar el editor de reglas.
+1. (Opcional) Utilice la lista desplegable **Vista de catálogo** para seleccionar la vista de catálogo donde se debe aplicar la regla. La regla que cree se vinculará a la vista seleccionada (o a todas las vistas de catálogo si está seleccionada la opción **Todas las vistas**). Consulte [Seleccionar vista de catálogo](workspace.md#select-catalog-view) para ver cómo funciona el ámbito de la vista de catálogo.
+
+   >[!IMPORTANT]
+   >
+   >Esta función se encuentra actualmente en fase beta.
+
+1. Haga clic en **[!UICONTROL Create rule]** para iniciar el editor de reglas.
 
 ![Crear regla](../../assets/create-rule.png)
 
@@ -165,7 +171,7 @@ O los eventos se pueden configurar manualmente:
 
 ## Editar, ver y eliminar reglas
 
-Siga estas instrucciones para actualizar las propiedades de las reglas existentes.
+Siga estas instrucciones para actualizar las propiedades de las reglas existentes. No se puede cambiar la vista de catálogo (ámbito) de una regla una vez creada; el ámbito se establece al crear la regla. Ver [Seleccionar vista de catálogo](workspace.md#select-catalog-view).
 
 ### Editar regla
 
