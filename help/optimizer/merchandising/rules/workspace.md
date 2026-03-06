@@ -1,7 +1,7 @@
 ---
 title: Workspace de reglas de comercialización
 description: Obtenga información sobre el espacio de trabajo Reglas de comercialización.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
 source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt

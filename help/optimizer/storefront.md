@@ -2,7 +2,7 @@
 title: Configurar tu tienda
 description: Aprenda a configurar su  [!DNL Adobe Commerce Optimizer] tienda.
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: c41134938f7408d062899ecaf3f63d37e1bdbca3
 workflow-type: tm+mt
@@ -57,7 +57,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
 * **Sitio**: página de aterrizaje de tienda con contenido de plantillas
 * **Código**: repositorio con archivos de origen de plantillas
 * **Contenido**: entorno de creación de documentos con archivos de contenido de sitio
-* **Configuración de Commerce**: [Configuración de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} para la configuración específica de instancia
+* **Configuración de Commerce**: [Configuración de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=es){target="_blank"} para la configuración específica de instancia
 
 ### Paso 1: Generación del proyecto
 
@@ -200,8 +200,8 @@ Siga estas directrices para comprobar problemas comunes:
 |-------|----------|----------|
 | **Error en la instalación de sincronización de código** | No se puede completar la configuración de sincronización de código | <ul><li>Asegúrese de que tiene acceso de administrador a su organización de GitHub.</li><li>Intente utilizar un repositorio personal en lugar de una organización.</li><li>Compruebe los permisos de GitHub e inténtelo de nuevo.</li></ul> |
 | **El sitio no se carga** | 404 o errores de conexión | <ul><li>Compruebe el formato de la dirección URL del sitio: `https://main--{SITE}--{ORG}.aem.live`</li><li>Compruebe que la aplicación de sincronización de código esté correctamente instalada.</li><li>Asegúrese de que el repositorio sea público o esté configurado correctamente.</li></ul> |
-| **No se mostraron datos del producto** | Las páginas de producto muestran marcadores de posición o errores | <ul><li>Compruebe sus valores de configuración en `config.json`</li><li>En la instancia [!DNL Adobe Commerce Optimizer], compruebe la página Sincronización de datos para comprobar que se han cargado los productos de ejemplo. Si no hay productos disponibles, vuelva a cargar los datos de ejemplo o agregue un producto mediante la [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Espere unos minutos para que los cambios de configuración se propaguen.</li><li>Intente recuperar los detalles del producto mediante la consulta de [productos del servicio de comercialización](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) con los mismos encabezados configurados en la [configuración de tienda de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}. Si puede recuperar los datos, es probable que haya un problema con la configuración de la vista del catálogo o un error de índice.</li></ul> |
-| **La búsqueda no devuelve resultados** | Página de resultados de búsqueda vacía | <ul><li>Compruebe que puede recuperar los resultados de la búsqueda de productos usando la [consulta productSearch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) de los servicios de comercialización con los mismos encabezados configurados en la [configuración de tienda de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}. Si puede recuperar los datos, es probable que haya un problema con la configuración de la vista del catálogo o un error de índice.</li><li>Confirme que el identificador de vista de catálogo de la [configuración de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} coincide con el identificador de vista de catálogo de [!DNL Adobe Commerce Optimizer].</li><li>En [!DNL Adobe Commerce Optimizer], compruebe la configuración de las directivas, la configuración regional y los libros de precios que utilizó en la configuración del encabezado de tienda.</li><li>Compruebe que la configuración de [metadatos de atributo](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) esté establecida correctamente para la búsqueda.</li></ul> |
+| **No se mostraron datos del producto** | Las páginas de producto muestran marcadores de posición o errores | <ul><li>Compruebe sus valores de configuración en `config.json`</li><li>En la instancia [!DNL Adobe Commerce Optimizer], compruebe la página Sincronización de datos para comprobar que se han cargado los productos de ejemplo. Si no hay productos disponibles, vuelva a cargar los datos de ejemplo o agregue un producto mediante la [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Espere unos minutos para que los cambios de configuración se propaguen.</li><li>Intente recuperar los detalles del producto mediante la consulta de [productos del servicio de comercialización](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) con los mismos encabezados configurados en la [configuración de tienda de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=es){target="_blank"}. Si puede recuperar los datos, es probable que haya un problema con la configuración de la vista del catálogo o un error de índice.</li></ul> |
+| **La búsqueda no devuelve resultados** | Página de resultados de búsqueda vacía | <ul><li>Compruebe que puede recuperar los resultados de la búsqueda de productos usando la [consulta productSearch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) de los servicios de comercialización con los mismos encabezados configurados en la [configuración de tienda de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=es){target="_blank"}. Si puede recuperar los datos, es probable que haya un problema con la configuración de la vista del catálogo o un error de índice.</li><li>Confirme que el identificador de vista de catálogo de la [configuración de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=es){target="_blank"} coincide con el identificador de vista de catálogo de [!DNL Adobe Commerce Optimizer].</li><li>En [!DNL Adobe Commerce Optimizer], compruebe la configuración de las directivas, la configuración regional y los libros de precios que utilizó en la configuración del encabezado de tienda.</li><li>Compruebe que la configuración de [metadatos de atributo](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) esté establecida correctamente para la búsqueda.</li></ul> |
 
 ### Lista de comprobación de validación
 
@@ -218,28 +218,28 @@ Antes de continuar con los siguientes pasos, verifica lo siguiente para asegurar
 
 Si los problemas persisten:
 
-* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
 * Consulte la [[!DNL Adobe Commerce Optimizer] guía para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/)
-* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
 
 ## Pasos siguientes
 
 Después de configurar y comprobar la tienda, puedes:
 
-1. **[Instale la extensión del explorador Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** para editar, previsualizar y publicar contenido directamente desde el sitio web.
+1. **[Instale la extensión del explorador Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#install-and-configure-sidekick)** para editar, previsualizar y publicar contenido directamente desde el sitio web.
 
-2. **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**: crea un entorno local para personalizar el código y el contenido de la tienda.
+2. **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#set-up-local-environment)**: crea un entorno local para personalizar el código y el contenido de la tienda.
 
 ### Aprender y explorar
 
 * **[Completa el caso de uso de extremo a extremo](./use-case/admin-use-case.md)**—Más información acerca de la configuración de la tienda y la administración del catálogo con [!DNL Adobe Commerce Optimizer].
 
-* **[Explorar la personalización de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**: aprende las opciones avanzadas de configuración.
+* **[Explorar la personalización de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=es)**: aprende las opciones avanzadas de configuración.
 
-* **[Usa complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**: agrega componentes creados previamente para mejorar tu experiencia con la tienda.
+* **[Usa complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)**: agrega componentes creados previamente para mejorar tu experiencia con la tienda.
 
 * **Migrar al servicio de configuración de tienda**: después de crear tu tienda inicial, puedes migrar la configuración para usar el servicio de configuración que admite casos de uso avanzados como reposes de configuración y superposiciones. Para obtener más información, consulte la documentación de [Servicio de configuración](https://www.aem.live/docs/config-service-setup) en Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
+> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.

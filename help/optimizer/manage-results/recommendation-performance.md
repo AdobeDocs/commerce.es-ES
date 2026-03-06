@@ -1,7 +1,7 @@
 ---
 title: Rendimiento de Recommendations
 description: La página de rendimiento de Recommendations proporciona a insight información sobre el rendimiento de las recomendaciones de productos.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
 source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
