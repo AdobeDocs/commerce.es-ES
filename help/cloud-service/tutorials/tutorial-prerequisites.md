@@ -273,7 +273,7 @@ Se requieren los siguientes elementos para completar la sección [tienda](./rati
 
 * [Google Chrome](https://www.google.com/chrome/) - Necesario para probar la tienda
 
-* Un proyecto de tienda conectado a su instancia [!DNL Commerce]. Si no tiene un proyecto de tienda, siga los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, incluida la sección [Vincular repositorio a los datos de comercio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
+* Un proyecto de tienda conectado a su instancia [!DNL Commerce]. Si no tiene un proyecto de tienda, siga los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}, incluida la sección [Vincular repositorio a los datos de comercio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#link-repo-to-commerce-data){target="_blank"}.
 
 ### Clonar el repositorio de la tienda
 
