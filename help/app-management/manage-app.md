@@ -30,7 +30,7 @@ Antes de asociar una aplicación, asegúrese de que dispone de lo siguiente:
 
 Vea este vídeo para aprender a asociar una aplicación a una instancia de Commerce y configurar opciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478958?captions=spa)
 
 ## Asociar una aplicación
 
