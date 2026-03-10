@@ -2,9 +2,9 @@
 title: Configuración de AEM Assets para Commerce Optimizer
 description: Obtenga información sobre cómo configurar la integración de AEM Assets para  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Antes de configurar la integración, asegúrese de lo siguiente:
 
 ## Incorporación
 
-Para integrar la integración de AEM Assets con [!DNL Commerce Optimizer], debe [Crear un vale de soporte](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Para integrar la integración de AEM Assets con [!DNL Commerce Optimizer], debe [Crear un vale de soporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 El Soporte de Adobe utiliza la información de su ticket para registrar su inquilino con el Servicio de integración de Assets y configurar la integración.
 
@@ -61,8 +61,6 @@ Una vez que el Soporte de Adobe procesa el ticket, la integración se configura 
 Una vez completada la incorporación:
 
 1. **Registro con el servicio de integración de Assets**: el inquilino de [!DNL Commerce Optimizer] está registrado con el servicio de integración de Assets usando el identificador de inquilino de [!DNL Adobe Commerce Optimizer], el identificador de programa de AEM, el identificador de entorno de AEM y el inquilino.
-
-1. **Configuración de autenticación**: la autenticación del token del servicio IMS está configurada entre [!DNL Commerce Optimizer] y el servicio de integración de Assets para una comunicación segura.
 
 1. **Suscripción de evento**: Assets Integration Service se suscribe a:
 
@@ -115,7 +113,7 @@ El recurso debe estar en estado **aprobado** para la sincronización de datos co
 
 >[!CAUTION]
 >
-> Asigne la capa `AEM-Assets` a su [vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-view). Si la capa no está asignada, los datos de imagen del producto pueden sobrescribirse inesperadamente.
+> Asigne la capa `AEM-Assets` a su [vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Si la capa no está asignada, los datos de imagen del producto pueden sobrescribirse inesperadamente.
 
 ## Sincronización
 
