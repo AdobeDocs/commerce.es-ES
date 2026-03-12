@@ -3,9 +3,9 @@ title: Administrar recursos
 description: Utilice la integración de AEM Assets para Commerce para administrar los recursos de medios de su tienda.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,13 @@ Puede administrar los siguientes tipos de medios una vez habilitada la integraci
 * Imágenes de contenido
 * Vídeos del producto
 * Imágenes de categoría
+
+**Actualizando imágenes de producto?**
+
+Las imágenes de producto se vinculan mediante reglas coincidentes:
+
+* Para obtener información sobre cómo agregar o actualizar recursos de productos en AEM Assets (metadatos, vinculación de SKU, aprobación), consulte [Coincidencia automática predeterminada](synchronize/default-match.md).
+* Para ver imágenes de categoría o contenido de Page Builder, consulte [Selección manual de recursos](synchronize/asset-selector-integration.md).
 
 ## Imágenes de productos
 
@@ -41,13 +48,20 @@ Las imágenes de producto se obtienen automáticamente de los AEM Assets en func
    >
    > Un mensaje indica que la integración está habilitada, lo que la convierte en una sección **de solo lectura**, ya que la administración de imágenes está centralizada en DAM.
 
+   Para configurar los recursos del producto (vincular imágenes a SKU), abra la instancia de autor de AEM Assets y haga clic en **Assets** desde la vista principal. Consulte [Coincidencia automática predeterminada](synchronize/default-match.md) para ver los pasos de configuración de metadatos.
+
 ### Administración de imágenes de productos en AEM Assets
 
 Para administrar imágenes relacionadas con el producto, todos los cambios deben hacerse directamente en **AEM Assets**. Este proceso está completamente automatizado, lo que garantiza que todos los cambios se sincronicen con Adobe Commerce sin necesidad de intervención manual.
 
+Para obtener información sobre cómo vincular recursos a productos en AEM Assets (incluida la configuración y aprobación de metadatos), consulte los siguientes temas:
+
+* [Coincidencia automática predeterminada](synchronize/default-match.md)
+* [Coincidencia automática personalizada](synchronize/custom-match.md).
+
 ### SLA de sincronización
 
-Compruebe [Sincronización SLA](get-started/setup-synchronization.md#synchronization-sla)para obtener más información sobre este tema.
+Para obtener información acerca de la sincronización, vea el tema [Sincronización con SLA](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Imágenes de contenido
 
@@ -79,7 +93,7 @@ La asociación con la imagen seleccionada se almacenará en Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=es#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
+> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
 
 ## Vídeos del producto
 
@@ -119,7 +133,7 @@ Esta integración garantiza que los comerciantes puedan administrar fácilmente 
 
 ### SLA de sincronización
 
-Compruebe [Sincronización SLA](get-started/setup-synchronization.md#synchronization-sla)para obtener más información sobre este tema.
+Para obtener información acerca de la sincronización, vea el tema [Sincronización con SLA](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Imágenes de categoría
 
@@ -149,14 +163,16 @@ Después de configurar el [Selector de recursos de AEM](synchronize/asset-select
 
 1. Haga clic en **[!UICONTROL Save]** y continúe.
 
-   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
+   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
 
 ## Actualizar un recurso
 
 Después de actualizar y aprobar un recurso en AEM Assets, las actualizaciones se envían automáticamente a Adobe Commerce mediante la función de coincidencia automatizada. Este proceso se activa tras la aprobación del recurso. Para asegurarse de que se incluyen todos los cambios finales y las actualizaciones de metadatos, asegúrese de volver a procesar el recurso antes de aprobarlo.
 
-Para obtener más información, consulte la siguiente documentación de AEM Assets.
+Para que el flujo de trabajo del lado de Commerce vincule recursos a productos mediante metadatos, consulte el tema [Coincidencia automática predeterminada](synchronize/default-match.md).
 
-* [Reprocesando recursos digitales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+Para conocer los procedimientos de los AEM Assets, consulte la siguiente documentación:
 
-* [Aprobar un recurso](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Reprocesando recursos digitales](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+
+* [Aprobar un recurso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

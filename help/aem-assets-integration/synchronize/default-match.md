@@ -3,9 +3,9 @@ title: Coincidencia automática predeterminada
 description: Descubra cómo la regla de coincidencia automática predeterminada permite una sincronización perfecta entre Adobe Commerce y la integración de AEM Assets, lo que garantiza que los recursos se vinculen automáticamente a las entidades de comercialización correctas.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ La integración de AEM Assets para Commerce proporciona un mecanismo de coincide
 
 Cuando la regla de coincidencia **[!UICONTROL Match by product SKU]** está configurada en el administrador de Commerce, los archivos de recursos de Commerce se sincronizan automáticamente de los AEM Assets al proyecto de Commerce en función de los metadatos de recursos configurados para cada archivo. Usted configura los metadatos de la ficha de AEM **Commerce** en el entorno de **autor de AEM Assets**:
 
+1. Abra la instancia de autor de AEM Assets (la dirección URL se aprovisiona para su proyecto en la misma organización de IMS que Adobe Commerce).
+
+1. En la pantalla de navegación principal, haga clic en **Assets** para acceder a la interfaz de administración de activos digitales (DAM).
+
 1. En AEM Assets, actualice los metadatos de la imagen para agregar la asociación de Adobe Commerce estableciendo el campo `Eligible for Commerce` en `Yes`.
 
    ![Metadatos de ejemplo](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
@@ -42,7 +46,7 @@ Cuando la regla de coincidencia **[!UICONTROL Match by product SKU]** está conf
    >
    > Si un recurso se utiliza para varios productos, configure los metadatos de cada SKU asociado.
 
-1. En la ficha `Basic`, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_&#x200B;en `approved`.
+1. En la ficha `Basic`, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_en `approved`.
 
    ![Metadatos de ejemplo](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

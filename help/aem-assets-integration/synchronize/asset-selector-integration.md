@@ -3,7 +3,7 @@ title: Selección manual de recursos
 description: Descubra cómo el Selector de recursos de AEM, integrado en el Administrador de Commerce, ayuda a los especialistas en marketing y a los comerciantes a añadir fácilmente imágenes de los AEM Assets a Adobe Commerce, lo que optimiza la administración de recursos.
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: 08f2fab39b4dcd46986f43598cdf2637b0bba5a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Una vez configurada la integración de **AEM Asset Selector**, los especialistas
 
 * Administre las imágenes de categoría sin esfuerzo, para que se ajusten a las directrices de marca y campaña.
 * [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."}: asigne recursos directamente en Page Builder para contenido visualmente enriquecido.
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} Asigna Assets directamente en Commerce Storefront con tecnología Edge Delivery Services para enriquecer visualmente el contenido.
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} Asigna Assets directamente en Commerce Storefront con tecnología Edge Delivery Services para contenido visualmente enriquecido.
 
 >[!NOTE]
 >
-> El Selector de recursos de AEM es un componente front-end de recursos de AEM para integrar AEM Assets con aplicaciones de creación. Para obtener más información sobre este componente, consulte el [Selector de recursos de Micro-Frontend](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} en la *Guía del usuario de AEM as a Cloud Service*.
+> El Selector de recursos de AEM es un componente front-end de recursos de AEM para integrar AEM Assets con aplicaciones de creación. Para obtener más información sobre este componente, consulte el [Selector de recursos de Micro-Frontend](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} en la *Guía del usuario de AEM as a Cloud Service*.
 
 ## Ventajas principales
 
