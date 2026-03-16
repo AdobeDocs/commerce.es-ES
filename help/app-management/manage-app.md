@@ -2,7 +2,7 @@
 title: Administre su aplicación
 description: Asocie, configure y desasocie aplicaciones de App Builder con su instancia de Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Un administrador de aplicaciones asocia una aplicación de App Builder con su instancia de Commerce. Los formularios de configuración se representan de forma dinámica en función del esquema de la aplicación, por lo que no se requiere el desarrollo de la IU de administración personalizada. El administrador de aplicaciones configura las opciones a través de formularios que Commerce genera automáticamente.
 
-![Administración de aplicaciones](assets/app-management-ui.png){width="500" zoomable="yes"}
+![Administración de aplicaciones](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Requisitos previos
 
@@ -30,7 +30,7 @@ Antes de asociar una aplicación, asegúrese de que dispone de lo siguiente:
 
 Vea este vídeo para aprender a asociar una aplicación a una instancia de Commerce y configurar opciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478958?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Asociar una aplicación
 
