@@ -24,9 +24,9 @@ Estas notas de la versión contienen actualizaciones para la extensión [!DNL Da
 
 Para ver los cambios y correcciones de características relacionados con las extensiones utilizadas por la extensión [!DNL Data Connection], consulte **Actualizaciones de servicio compatibles**.
 
-Consulte [Próximas versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) para obtener más información sobre las programaciones de versiones y la compatibilidad.
+Consulte [Próximas versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule) para obtener más información sobre las programaciones de versiones y la compatibilidad.
 
-Consulte la documentación para desarrolladores para [saber qué versiones de Commerce admiten este módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Consulte la documentación para desarrolladores para [saber qué versiones de Commerce admiten este módulo](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
 
 ## Actualizaciones de servicios compatibles
 
