@@ -67,7 +67,7 @@ Antes de configurar la integración de AEM Assets, compruebe que ha completado l
    * Seleccionar **[!UICONTROL Match by SKU]** para [coincidencia automática predeterminada](../synchronize/default-match.md),
    * Seleccione **[!UICONTROL Custom match]** para [coincidencia automática personalizada](../synchronize/custom-match.md) (requiere [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
 
-1. Agregue el nombre del campo de metadatos de AEM Assets [definido para las SKU de productos de Commerce en el campo ](configure-aem.md#configure-metadata), **[!UICONTROL Match by product SKU attribute name]** de forma predeterminada.`commerce:skus`
+1. Agregue el nombre del campo de metadatos de AEM Assets [definido para las SKU de productos de Commerce en el campo &#x200B;](configure-aem.md#configure-metadata), **[!UICONTROL Match by product SKU attribute name]** de forma predeterminada.`commerce:skus`
 
 1. Seleccione **[!UICONTROL Save Config]** para aplicar actualizaciones e iniciar la sincronización de recursos.
 
