@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Permisos de usuario e IMS
 
-**IMS** (Adobe Identity Management System) es la capa de autenticación. Para Adobe Commerce as a Cloud Service, la autenticación IMS está habilitada de forma predeterminada en Admin. Para Adobe Commerce en la nube o local, IMS es opcional;[Al habilitar IMS para Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} se proporciona una interfaz de usuario de configuración mejorada (Selector de recursos, listas desplegables rellenadas automáticamente), pero puede configurar la integración sin IMS introduciendo manualmente **ID de programa** e **ID de entorno**.
+**IMS** (Adobe Identity Management System) es la capa de autenticación. Para Adobe Commerce as a Cloud Service, la autenticación IMS está habilitada de forma predeterminada en Admin. Para Adobe Commerce en la nube o local, IMS es opcional;[Al habilitar IMS para Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=es){target=_blank} se proporciona una interfaz de usuario de configuración mejorada (Selector de recursos, listas desplegables rellenadas automáticamente), pero puede configurar la integración sin IMS introduciendo manualmente **ID de programa** e **ID de entorno**.
 
 La integración de AEM Assets también requiere **perfiles de producto de Adobe Admin Console** específicos al usar IMS. Los usuarios que configuran la integración en Commerce Admin necesitan el perfil de producto **Usuarios de DM OpenAPI AEM Assets - entrega** o el perfil de producto **autor** como reserva. Esto se controla mediante perfiles de producto de Admin Console en la organización IMS del usuario y permite:
 
@@ -54,7 +54,7 @@ La autenticación IMS está habilitada de forma predeterminada. Agregue el usuar
 
 >[!NOTE]
 >
-> Los usuarios también deben añadirse a Commerce y a los AEM Assets. Consulte [Agregar un usuario a AEM Assets o a elementos visuales del producto](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} en la guía de _Usuario y Identity Management_ para obtener la configuración completa.
+> Los usuarios también deben añadirse a Commerce y a los AEM Assets. Consulte [Agregar un usuario a AEM Assets o a elementos visuales del producto](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} en la guía de _Usuario y Identity Management_ para obtener la configuración completa.
 
 ![Perfil de producto de Admin Console para la entrega de AEM Assets](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
@@ -66,9 +66,9 @@ Se requiere el **ID de cliente de IMS** para que PaaS habilite el Selector de re
 
 Para utilizar el Selector de recursos y los campos de configuración rellenados automáticamente (ID de programa, ID de entorno, asignación de dominio):
 
-1. [Habilite Adobe IMS para Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} para que el administrador de Commerce utilice la autenticación IMS y pueda leer los perfiles de producto de Admin Console del usuario.
+1. [Habilite Adobe IMS para Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=es){target=_blank} para que el administrador de Commerce utilice la autenticación IMS y pueda leer los perfiles de producto de Admin Console del usuario.
 
-1. [Abra un ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) para solicitar un ID de cliente IMS personalizado para el Selector de recursos.
+1. [Abra un ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) para solicitar un ID de cliente IMS personalizado para el Selector de recursos.
 
 1. Desde [Adobe Admin Console](https://adminconsole.adobe.com/), agregue el usuario al perfil de producto **Usuarios de OpenAPI de DM AEM Assets - delivery** o al perfil de producto **author** (por ejemplo, `<environment-name> - author - <program-id> - <environment-id>`) como reserva cuando el usuario no tenga el perfil de producto de entrega de AEM en su Admin Console.
 
@@ -80,5 +80,5 @@ Sin IMS, aún puede configurar la integración introduciendo manualmente el ID d
 
 * [Configuración de permisos de usuario de IMS para la integración de AEM Assets](setup-synchronization.md): conecte Commerce a los AEM Assets y configure las reglas coincidentes.
 * [Selección manual de recursos](../synchronize/asset-selector-integration.md): utilice el Selector de recursos para imágenes de categoría y Page Builder.
-* [Agregar un usuario a los AEM Assets o a los elementos visuales del producto](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}: para ACCS, agregue primero a Commerce y a AEM Cloud Manager (Propietario del negocio, Administrador de implementación). El perfil **Usuarios de DM OpenAPI de AEM Assets - delivery** (o el perfil **author** como reserva) es un requisito adicional para el Selector de recursos y las funciones de rellenado automático.
-* [Asignar integrantes del equipo a la capa de entrega de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentación de AEM para el acceso a envíos.
+* [Agregar un usuario a los AEM Assets o a los elementos visuales del producto](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}: para ACCS, agregue primero a Commerce y a AEM Cloud Manager (Propietario del negocio, Administrador de implementación). El perfil **Usuarios de DM OpenAPI de AEM Assets - delivery** (o el perfil **author** como reserva) es un requisito adicional para el Selector de recursos y las funciones de rellenado automático.
+* [Asignar integrantes del equipo a la capa de entrega de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentación de AEM para el acceso a envíos.
