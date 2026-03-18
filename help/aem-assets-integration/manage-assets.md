@@ -3,9 +3,9 @@ title: Administrar recursos
 description: Utilice la integración de AEM Assets para Commerce para administrar los recursos de medios de su tienda.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe Commerce proporciona Page Builder como **sistema de administración de con
 
 ### Uso del Selector de recursos de AEM en Page Builder
 
-[!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} Para usar el **Selector de recursos de AEM** para incrustar imágenes:
+[!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} Para usar el **Selector de recursos de AEM** para incrustar imágenes, asegúrese de que los usuarios tengan los [permisos y la autenticación IMS necesarios](get-started/permissions.md).
 
 1. Vaya a cualquier sección de **Adobe Commerce Admin** que admita `content enrichment` con **Page Builder**.
 
@@ -93,7 +93,7 @@ La asociación con la imagen seleccionada se almacenará en Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=es#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
+> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
 
 ## Vídeos del producto
 
@@ -141,7 +141,7 @@ Adobe Commerce permite a los comerciantes asociar imágenes con categorías de p
 
 ### Uso del Selector de recursos de AEM para imágenes de categoría
 
-Después de configurar el [Selector de recursos de AEM](synchronize/asset-selector-integration.md), puede utilizarlo para agregar recursos al contenido de las categorías del catálogo.
+Después de configurar el [Selector de recursos de AEM](synchronize/asset-selector-integration.md) y asegurarse de que los usuarios tengan los [permisos y la autenticación IMS](get-started/permissions.md) necesarios, puede utilizarlo para agregar recursos al contenido de las categorías del catálogo.
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
@@ -163,7 +163,7 @@ Después de configurar el [Selector de recursos de AEM](synchronize/asset-select
 
 1. Haga clic en **[!UICONTROL Save]** y continúe.
 
-   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
+   Para obtener más información sobre cómo crear una categoría, consulte [Completar el contenido de la categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) en la **Guía de administración del catálogo de Commerce**.
 
 ## Actualizar un recurso
 
@@ -173,6 +173,6 @@ Para que el flujo de trabajo del lado de Commerce vincule recursos a productos m
 
 Para conocer los procedimientos de los AEM Assets, consulte la siguiente documentación:
 
-* [Reprocesando recursos digitales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Reprocesando recursos digitales](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Aprobar un recurso](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Aprobar un recurso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
