@@ -2,14 +2,14 @@
 title: Notas de la versión [!DNL Adobe Commerce Optimizer Connector]
 description: La información de la versión más reciente de  [!DNL Adobe Commerce Optimizer Connector]  para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: dc5bd916b93789b4a25f0bc16a40fdfc6604c6ea
+source-git-commit: 4da2776c561d88b5343442df84b691cb857fada3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
-# Notas de la versión de Adobe Commerce Optimizer
+# Notas de la versión de Adobe Commerce Optimizer Connector
 
 Estas notas de la versión describen todas las versiones para [!DNL Adobe Commerce Optimizer Connector] e incluyen:
 
