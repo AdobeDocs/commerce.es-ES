@@ -3,7 +3,7 @@ title: Activación de correo electrónico mediante REST
 description: Aprenda a almacenar en déclencheur los correos electrónicos transaccionales bajo demanda mediante la API de REST especificando un ID de plantilla, un correo electrónico de destinatario y variables de plantilla para  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Experienced
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 source-git-commit: 9661e368f7a0dc85edcd3e52a67ae2a98355d8b5
 workflow-type: tm+mt
 source-wordcount: '523'

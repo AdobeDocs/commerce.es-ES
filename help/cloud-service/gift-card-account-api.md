@@ -3,7 +3,7 @@ title: Puntos finales REST de cuenta de tarjeta regalo
 description: Aprenda a utilizar las API de REST de cuenta de tarjeta regalo para crear, actualizar, eliminar y consultar cuentas de tarjeta regalo mediante programación en  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer
 level: Experienced
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
 source-wordcount: '807'
