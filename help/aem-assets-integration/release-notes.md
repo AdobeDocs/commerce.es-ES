@@ -46,7 +46,7 @@ _11 de marzo de 2026_
 
 ![Nuevo problema](../assets/new.svg)<!-- Issue PAY-1041 --> agregó compatibilidad con Adobe Commerce 2.4.9-beta1 y PHP 8.5.
 
-![Nuevo problema](../assets/new.svg)<!-- Issue ACCS-169 --> Los campos **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** y [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} ahora se rellenan automáticamente como desplegables según la [sesión de IMS del usuario](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}.
+![Nuevo problema](../assets/new.svg)<!-- Issue ACCS-169 --> Los campos **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** y [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} ahora se rellenan automáticamente como desplegables según la [sesión de IMS del usuario](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}.
 
 ## Versión 1.2.14
 
