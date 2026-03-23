@@ -23,7 +23,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregaron nuevos temas: <br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/login-as-customer">Iniciar sesión como cliente</a> para Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/gift-card-account-api">API de cuenta de tarjeta regalo</a> para Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/email-triggering">Plantilla de correo electrónico</a> para Adobe Commerce as a Cloud Service.<br />Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">las notas de la versión</a> con la información de la versión número 2 de marzo de 2026.</p>
+      <td><p>Se agregaron nuevos temas: <br />- <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/login-as-customer">Iniciar sesión como cliente</a> para Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/gift-card-account-api">API de cuenta de tarjeta regalo</a> para Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/email-triggering">Plantilla de correo electrónico</a> para Adobe Commerce as a Cloud Service.<br />Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">las notas de la versión</a> con la información de la versión número 2 de marzo de 2026.</p>
 </td>
       <td>
         Nuevo tema
@@ -45,7 +45,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions">Permisos de usuario de IMS para la integración de AEM Assets</a> para explicar cómo se configuran los permisos de IMS y del nivel de entrega para habilitar el selector de recursos y los campos de configuración rellenados automáticamente (ID de programa, ID de entorno, asignación de dominio) en el administrador.</p>
+      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/permissions">Permisos de usuario de IMS para la integración de AEM Assets</a> para explicar cómo se configuran los permisos de IMS y del nivel de entrega para habilitar el selector de recursos y los campos de configuración rellenados automáticamente (ID de programa, ID de entorno, asignación de dominio) en el administrador.</p>
 </td>
       <td>
         Nuevo tema
@@ -67,7 +67,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/manage-assets">Administrar recursos multimedia de Commerce</a> y <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/default-match">Coincidencia automática predeterminada</a> con instrucciones de navegación más claras para los usuarios que configuran recursos de productos en los AEM Assets.</p>
+      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/manage-assets">Administrar recursos multimedia de Commerce</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/default-match">Coincidencia automática predeterminada</a> con instrucciones de navegación más claras para los usuarios que configuran recursos de productos en los AEM Assets.</p>
 </td>
       <td>
         Técnico
@@ -89,7 +89,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Notas de la versión de la integración de AEM Assets</a> con la versión 1.3.4: compatibilidad con Adobe Commerce 2.4.9-beta1 y PHP 8.5 y completado automático de la asignación de dominios en la interfaz de usuario de la configuración.</p>
+      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/release-notes">Notas de la versión de la integración de AEM Assets</a> con la versión 1.3.4: compatibilidad con Adobe Commerce 2.4.9-beta1 y PHP 8.5 y completado automático de la asignación de dominios en la interfaz de usuario de la configuración.</p>
 </td>
       <td>
         Técnico
@@ -111,7 +111,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service con la última versión para entornos de producción.</p>
+      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service con la última versión para entornos de producción.</p>
 </td>
       <td>
         Actualización importante
@@ -119,7 +119,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se ha añadido una nueva guía de documentación de <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">Administración de aplicaciones</a> para presentar la Administración de aplicaciones y cómo asociar, configurar y administrar aplicaciones de App Builder con su instancia de Commerce.</p>
+      <td><p>Se ha añadido una nueva guía de documentación de <a href="https://experienceleague.adobe.com/es/docs/commerce/app-management/overview">Administración de aplicaciones</a> para presentar la Administración de aplicaciones y cómo asociar, configurar y administrar aplicaciones de App Builder con su instancia de Commerce.</p>
 </td>
       <td>
         Nuevo tema
@@ -141,12 +141,12 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó la integración de tienda al <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">tutorial de clasificaciones</a>.</p>
+      <td><p>Se agregó la integración de tienda al <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/tutorials/ratings-extension">tutorial de clasificaciones</a>.</p>
 </td>
       <td>
         Actualización importante
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/pull/15">solicitud de extracción</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.es-ES/pull/15">solicitud de extracción</a></td>
     </tr>
   </tbody>
 </table>
@@ -163,7 +163,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha publicado la <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">documentación del Conector de Adobe Commerce Optimizer v1.0.9</a> para la versión de disponibilidad general.</p>
+      <td><p>Se ha publicado la <a href="https://experienceleague.adobe.com/es/docs/commerce/aco-optimizer-connector/overview">documentación del Conector de Adobe Commerce Optimizer v1.0.9</a> para la versión de disponibilidad general.</p>
 </td>
       <td>
         Actualización principal, nuevo tema, técnico
@@ -171,7 +171,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notas de la versión</a> de Adobe Commerce as a Cloud Service con la última versión de espacio aislado.</p>
+      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de Adobe Commerce as a Cloud Service con la última versión de espacio aislado.</p>
 </td>
       <td>
         Actualización importante
@@ -193,7 +193,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice#leverage-product-metadata">Prácticas recomendadas de Live Search</a> con instrucciones detalladas para elegir atributos en los que se puede buscar, incluidos tres ejemplos reales de problemas de configuración comunes y una lista de comprobación de solución de problemas para mejorar la relevancia de la búsqueda.</p>
+      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/live-search/best-practice#leverage-product-metadata">Prácticas recomendadas de Live Search</a> con instrucciones detalladas para elegir atributos en los que se puede buscar, incluidos tres ejemplos reales de problemas de configuración comunes y una lista de comprobación de solución de problemas para mejorar la relevancia de la búsqueda.</p>
 </td>
       <td>
         Comentarios
@@ -201,7 +201,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f55cbabdc50af4e38b57ece217e5133d1f3fada8">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se han agregado instrucciones para eliminar una clave de API a la documentación de <a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#delapikey">Commerce Services Connector</a>.</p>
+      <td><p>Se han agregado instrucciones para eliminar una clave de API a la documentación de <a href="https://experienceleague.adobe.com/es/docs/commerce/user-guides/integration-services/saas#delapikey">Commerce Services Connector</a>.</p>
 </td>
       <td>
         Comentarios
@@ -209,7 +209,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a12a0bca1d4a7f3b9350c704275a9e3128fa2b37">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se ha agregado un nuevo tema sobre la <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco">integración de AEM Assets con Adobe Commerce Optimizer</a>.</p>
+      <td><p>Se ha agregado un nuevo tema sobre la <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/configure-aco">integración de AEM Assets con Adobe Commerce Optimizer</a>.</p>
 </td>
       <td>
         Nuevo tema
@@ -231,7 +231,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">herramienta de migración masiva de datos</a> con una nota importante de que la configuración del catálogo no se importa automáticamente.</p>
+      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">herramienta de migración masiva de datos</a> con una nota importante de que la configuración del catálogo no se importa automáticamente.</p>
 </td>
       <td>
         Comentarios
@@ -239,7 +239,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1ac84e8f10f61a6b8f995f348d4872773d2890e8">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Servicios de pago</a> con la documentación de la versión 2.14.0, que incluye Métodos de pago alternativos (APM) para los mercados europeos, botones de cierre de compra exprés y la configuración de la zona protegida País del comprador.</p>
+      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/payment-services/release-notes">Servicios de pago</a> con la documentación de la versión 2.14.0, que incluye Métodos de pago alternativos (APM) para los mercados europeos, botones de cierre de compra exprés y la configuración de la zona protegida País del comprador.</p>
 </td>
       <td>
         Actualización principal, nuevo tema
@@ -261,7 +261,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Ya están disponibles las <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/coding-tools">herramientas para desarrolladores de programación de IA para Adobe Commerce App Builder</a>, el <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">tutorial de extensión de clasificaciones</a>, el <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/shipping-method-extension">tutorial de extensión de método de envío</a> y las <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">páginas de requisitos previos de tutorial</a>.</p>
+      <td><p>Ya están disponibles las <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/migration/coding-tools">herramientas para desarrolladores de programación de IA para Adobe Commerce App Builder</a>, el <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/tutorials/ratings-extension">tutorial de extensión de clasificaciones</a>, el <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/tutorials/shipping-method-extension">tutorial de extensión de método de envío</a> y las <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">páginas de requisitos previos de tutorial</a>.</p>
 </td>
       <td>
         Nuevo tema
@@ -283,7 +283,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service con la última versión para entornos de producción.</p>
+      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service con la última versión para entornos de producción.</p>
 </td>
       <td>
         Actualización importante
@@ -305,7 +305,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">Resumen de la integración de AEM Assets</a> con un nuevo vídeo de tutorial para usuarios de Adobe Commerce as a Cloud Service (ACCS).</p>
+      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/overview">Resumen de la integración de AEM Assets</a> con un nuevo vídeo de tutorial para usuarios de Adobe Commerce as a Cloud Service (ACCS).</p>
 </td>
       <td>
         Comentarios, actualización importante
@@ -313,7 +313,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1cef99b8284aef05e34ab8ca65b776492ec5bee7">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notas de la versión</a> de Adobe Commerce as a Cloud Service con la última versión de espacio aislado.</p>
+      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de Adobe Commerce as a Cloud Service con la última versión de espacio aislado.</p>
 </td>
       <td>
         Comentarios, actualización importante
@@ -335,7 +335,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Coincidencia automática personalizada</a> con compatibilidad con el parámetro de sincronización <code class="language-plaintext highlighter-rouge">skip</code>, lo que permite que los elementos de coincidencia personalizados omitan el procesamiento de sincronización cuando las asignaciones no han cambiado.</p>
+      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/custom-match">Coincidencia automática personalizada</a> con compatibilidad con el parámetro de sincronización <code class="language-plaintext highlighter-rouge">skip</code>, lo que permite que los elementos de coincidencia personalizados omitan el procesamiento de sincronización cuando las asignaciones no han cambiado.</p>
 </td>
       <td>
         Actualización importante
@@ -357,7 +357,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Actualización principal de <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Notas de la versión del servicio de catálogo</a>: introducción reestructurada, versiones de Storefront Catalog Service añadidas v1.46-v1.36 y GA, descripciones de características ampliadas con ejemplos de GraphQL (filtrado de atributos, precios de nivel, capas de producto, recommendationsByUnitIds, etc.) y versiones anteriores alineadas con el formato y los vínculos actuales.</p>
+      <td><p>Actualización principal de <a href="https://experienceleague.adobe.com/es/docs/commerce/catalog-service/release-notes">Notas de la versión del servicio de catálogo</a>: introducción reestructurada, versiones de Storefront Catalog Service añadidas v1.46-v1.36 y GA, descripciones de características ampliadas con ejemplos de GraphQL (filtrado de atributos, precios de nivel, capas de producto, recommendationsByUnitIds, etc.) y versiones anteriores alineadas con el formato y los vínculos actuales.</p>
 </td>
       <td>
         Actualización importante
@@ -379,7 +379,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Mejora la documentación de integración de AEM Assets aclarando los requisitos y agregando <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data">documentación de comandos CLI para exportar metadatos</a>.</p>
+      <td><p>Mejora la documentación de integración de AEM Assets aclarando los requisitos y agregando <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/migrate-data">documentación de comandos CLI para exportar metadatos</a>.</p>
 </td>
       <td>
         Comentarios
@@ -401,7 +401,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">límites y limitaciones</a> para las recomendaciones de productos, que documentan los tipos de productos compatibles, las limitaciones especiales de precios, los límites de unidades y filtros, el comportamiento de las cookies/API de vista previa y las restricciones relacionadas.</p>
+      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/es/docs/commerce/product-recommendations/boundaries-limits">límites y limitaciones</a> para las recomendaciones de productos, que documentan los tipos de productos compatibles, las limitaciones especiales de precios, los límites de unidades y filtros, el comportamiento de las cookies/API de vista previa y las restricciones relacionadas.</p>
 </td>
       <td>
         Comentarios, nuevo tema
@@ -409,7 +409,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2b850e32660f1a8540bb6a024f3617994b6c13f6">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se ha mejorado la entrada PAY-6227 v2.12.0 para vincular a la nueva sección <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">devolución de llamada de envío del lado del servidor</a>, lo que aclara cómo esta característica permite un proceso de cierre de compra más rápido.</p>
+      <td><p>Se ha mejorado la entrada PAY-6227 v2.12.0 para vincular a la nueva sección <a href="https://experienceleague.adobe.com/es/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">devolución de llamada de envío del lado del servidor</a>, lo que aclara cómo esta característica permite un proceso de cierre de compra más rápido.</p>
 </td>
       <td>
         Comentarios
@@ -431,7 +431,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">las notas de la versión</a> de Adobe Commerce as a Cloud Service para la versión de febrero destinada a la producción.</p>
+      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">las notas de la versión</a> de Adobe Commerce as a Cloud Service para la versión de febrero destinada a la producción.</p>
 </td>
       <td>
         Actualización importante
@@ -453,7 +453,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>La integración de AEM Assets v1.2.13 agrega <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Configuración de Adobe I/O Workspace</a> para la configuración personalizada de emparejador. Puede cargar su App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> para la validación automática y la extracción de credenciales, o bien configurarlo manualmente. Consulte las <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">notas de la versión</a> para la versión 1.2.13 y la guía <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">coincidencia personalizada</a> actualizada.</p>
+      <td><p>La integración de AEM Assets v1.2.13 agrega <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/custom-match">Configuración de Adobe I/O Workspace</a> para la configuración personalizada de emparejador. Puede cargar su App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> para la validación automática y la extracción de credenciales, o bien configurarlo manualmente. Consulte las <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/release-notes">notas de la versión</a> para la versión 1.2.13 y la guía <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/custom-match">coincidencia personalizada</a> actualizada.</p>
 </td>
       <td>
         Actualización importante
@@ -475,7 +475,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregaron notas de la versión para <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versión 103.4.19</a>.</p>
+      <td><p>Se agregaron notas de la versión para <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versión 103.4.19</a>.</p>
 </td>
       <td>
         Técnico
@@ -497,7 +497,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notas de la versión de Adobe Commerce as a Cloud Service</a> para la versión de febrero de 2026 de la zona protegida.</p>
+      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión de Adobe Commerce as a Cloud Service</a> para la versión de febrero de 2026 de la zona protegida.</p>
 </td>
       <td>
         Actualización importante
@@ -519,7 +519,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregaron notas de la versión para <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versión 103.4.18</a>.</p>
+      <td><p>Se agregaron notas de la versión para <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versión 103.4.18</a>.</p>
 </td>
       <td>
         Técnico
@@ -541,7 +541,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha documentado cómo los clientes de Commerce pueden monitorizar y solucionar problemas de las exportaciones de fuentes de datos desde la página de estado de Sincronización de fuentes en el Administrador de Commerce. Consulte <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Ver y administrar el proceso de sincronización</a> en la Guía de exportación de datos.</p>
+      <td><p>Se ha documentado cómo los clientes de Commerce pueden monitorizar y solucionar problemas de las exportaciones de fuentes de datos desde la página de estado de Sincronización de fuentes en el Administrador de Commerce. Consulte <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Ver y administrar el proceso de sincronización</a> en la Guía de exportación de datos.</p>
 </td>
       <td>
         Técnico
@@ -563,7 +563,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha agregado más información a la <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">página de comparación de características</a>, que incluye información sobre nueva infraestructura, capacidad operativa y mercado.</p>
+      <td><p>Se ha agregado más información a la <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/feature-comparison">página de comparación de características</a>, que incluye información sobre nueva infraestructura, capacidad operativa y mercado.</p>
 </td>
       <td>
         Comentarios
@@ -585,7 +585,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha agregado la guía <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migración del adaptador de búsqueda al widget PLP</a> con escenarios de migración detallados, procedimientos paso a paso, directrices basadas en roles y solución de problemas para los clientes que realizan la transición desde el adaptador de búsqueda obsoleto.</p>
+      <td><p>Se ha agregado la guía <a href="https://experienceleague.adobe.com/es/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migración del adaptador de búsqueda al widget PLP</a> con escenarios de migración detallados, procedimientos paso a paso, directrices basadas en roles y solución de problemas para los clientes que realizan la transición desde el adaptador de búsqueda obsoleto.</p>
 </td>
       <td>
         Comentarios, actualización principal, nuevo tema
