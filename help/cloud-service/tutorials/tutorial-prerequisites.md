@@ -7,9 +7,9 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 1848c9dda4a1976e1bccb4d1f9d5a2e21540fc0b
+source-git-commit: 0ece7b58bdafd664297cbdee809c53ef2389fb12
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,125 @@ En este tutorial, se requieren las siguientes herramientas tanto para el desarro
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
+
+Después de instalar [!DNL Adobe I/O CLI] y los complementos necesarios, configure el área de trabajo de extensibilidad. Adobe recomienda utilizar la configuración automatizada para disfrutar de la experiencia más rápida.
+
+* **[Configuración automatizada](#automated-setup) (recomendada)**: ejecute un solo comando para configurar el área de trabajo automáticamente.
+* **[Configuración manual](#manual-setup)**: siga las instrucciones paso a paso para configurar cada componente de forma individual.
+
+### Configuración automatizada (recomendada) {#automated-setup}
+
+>[!TIP]
+>
+>Si encuentra problemas con la configuración automatizada, siga los pasos de la [configuración manual](#manual-setup) que se indican a continuación.
+
+El comando `app-setup` automatiza el proceso de configuración del área de trabajo, incluida la creación de un proyecto [!DNL Adobe Developer Console], la adición de las API necesarias, la configuración de [!DNL Adobe I/O CLI], la clonación del Starter Kit, la conexión del área de trabajo local y la instalación de las herramientas de IA de extensibilidad.
+
+El comando `app-setup` le guía a través de los siguientes pasos:
+
+* Seleccionar o crear un proyecto [!DNL Adobe Developer Console] con las API requeridas
+* Configurando [!DNL Adobe I/O CLI] con su organización, proyecto y área de trabajo
+* Clonación del Starter Kit adecuado y configuración del proyecto
+* Configuración del entorno y conexión del espacio de trabajo local al espacio de trabajo remoto
+* Instalación de las herramientas de extensibilidad de Commerce y habilidades con los agentes de codificación
+
+Ejecute el siguiente comando y siga las indicaciones interactivas:
+
+```bash
+aio commerce extensibility app-setup
+```
+
+Una vez finalizado el comando, vaya al directorio del proyecto y reinicie el agente de codificación para cargar las nuevas herramientas y habilidades de MCP. Si el tutorial requiere una tienda, ejecute de nuevo el comando y seleccione el Starter Kit [!DNL AEM Boilerplate Commerce].
+
+En el siguiente ejemplo de instalación se muestran las indicaciones interactivas y la salida del kit de inicio de cierre de compra.
+
++++Instalación de ejemplo (kit de inicio de cierre de compra)
+
+```shell-session
+aio commerce extensibility app-setup
+
+🚀 Adobe Commerce Extensibility App Setup
+
+✔ Logged in
+📁 Working directory: /Users/username/projects/my-commerce-project
+
+✔ Which starter kit would you like to use? Checkout Starter Kit
+✔ Enter a name for your project directory: my-extension
+✔ Which coding agent would you like to install the skills for? Cursor
+
+📦 Cloning Checkout Starter Kit...
+   ✔ Repository cloned
+   Using npm (package-lock.json found)
+   ✔ Dependencies installed
+
+📋 Current Adobe I/O Console configuration:
+   Org: My Organization (1234567)
+   Project: My Commerce Project (1234567890123456789)
+   Workspace: Stage (9876543210987654321)
+✔ Do you want to continue with this configuration? (Answer "No" to select a different org/project/workspace)
+No
+
+🔧 Selecting Adobe I/O Console org, project, and workspace...
+
+? Select Org: My Organization
+Org selected My Organization
+You are currently in:
+1. Org: My Organization
+2. Project: <no project selected>
+3. Workspace: <no workspace selected>
+
+? Select Project: My Commerce Project
+Project selected : My Commerce Project
+You are currently in:
+1. Org: My Organization
+2. Project: My Commerce Project
+3. Workspace: <no workspace selected>
+
+? Select Workspace: Stage
+Workspace selected Stage
+You are currently in:
+1. Org: My Organization
+2. Project: My Commerce Project
+3. Workspace: Stage
+
+✅ Console configured:
+   Org: My Organization
+   Project: My Commerce Project
+   Workspace: Stage
+
+🔐 Configuring workspace credentials and services...
+   ✔ Workspace configuration loaded
+   ✔ OAuth server-to-server credentials already configured
+   ✔ All required services available in organization
+   ✔ Subscribed to: Adobe Commerce as a Cloud Service
+
+📋 Configuring Checkout Starter Kit...
+   Creating .env from env.dist...
+✔ Select tenant (type to search) My Commerce Instance:
+https://<region>.api.commerce.adobe.com/<tenant-id>/graphql
+   ✔ Commerce instance configured
+✔ Enter the event prefix for your workspace: my-prefix
+   ✔ Workspace IDs configured
+   ✔ OAuth credentials configured
+   ✔ Checkout Starter Kit configured
+
+🔧 Installing Commerce Extensibility tools and agent skills...
+   ✔ Commerce Extensibility tools installed
+
+🎉 App setup complete!
+
+📁 Project directory: /Users/username/projects/my-commerce-project/my-extension
+
+Next steps:
+   1. cd into your project directory
+   2. Restart your coding agent to load the Commerce Extensibility tools and skills
+```
+
++++
+
+### Configuración manual {#manual-setup}
+
+Las secciones siguientes describen cómo configurar manualmente cada componente del espacio de trabajo de extensibilidad. Siga estos pasos si prefiere la configuración manual o si tiene problemas con la [configuración automatizada](#automated-setup).
 
 ### Requisitos previos de Adobe Developer Console
 
@@ -267,20 +386,26 @@ Este proceso crea la configuración de MCP (`.<agent>/mcp.json`), el directorio 
 
    ![Terminal que muestra la configuración de las herramientas de extensibilidad de IA con el kit de inicio de pago seleccionado](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
-## Requisitos previos de Storefront
+## Configuración manual de la tienda
+
+En esta sección se describe cómo configurar manualmente la tienda para el [tutorial de extensión de clasificación](./ratings-extension.md) y otros tutoriales de tienda.
+
+Para configurar automáticamente su tienda, ejecute el comando `app-setup` descrito en la sección [Configuración automatizada](#automated-setup) y seleccione el Starter Kit [!DNL AEM Boilerplate Commerce].
+
+### Requisitos previos
 
 Se requieren los siguientes elementos para completar la sección [tienda](./ratings-extension.md#connect-to-the-storefront) del tutorial de la extensión [Clasificaciones](./ratings-extension.md) y mostrar las clasificaciones de productos en tu tienda.
 
 * [Google Chrome](https://www.google.com/chrome/) - Necesario para probar la tienda
 
-* Un proyecto de tienda conectado a su instancia [!DNL Commerce]. Si no tiene un proyecto de tienda, siga los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}, incluida la sección [Vincular repositorio a los datos de comercio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#link-repo-to-commerce-data){target="_blank"}.
+* Un proyecto de tienda conectado a su instancia [!DNL Commerce]. Si no tiene un proyecto de tienda, siga los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, incluida la sección [Vincular repositorio a los datos de comercio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
 ### Clonar el repositorio de la tienda
 
 Abra el terminal y clone el repositorio:
 
 ```bash
-git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
+git clone https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
 
@@ -294,7 +419,9 @@ npm install
 
 ### Instalación de las herramientas de IA de tienda
 
-Configure las herramientas de desarrollo asistido por IA en la carpeta `storefront`. Ejecute el siguiente comando desde la raíz del proyecto de plantillas:
+Configure las herramientas de desarrollo asistido por IA en la carpeta `storefront`.
+
+Ejecute el siguiente comando desde la raíz del proyecto de plantillas. El comando instala el paquete `@adobe-commerce/commerce-extensibility-tools` como una dependencia de desarrollo, copia los archivos de aptitudes en el directorio de aptitudes del agente y configura MCP (Model Context Protocol) para que el agente pueda acceder a las herramientas de búsqueda de documentación de Commerce.
 
 ```bash
 aio commerce extensibility tools-setup
@@ -305,5 +432,3 @@ El comando le guiará por dos mensajes:
 1. **Seleccionar un kit de inicio** — Elija **AEM Boilerplate Commerce**.
 
 1. **Seleccione su agente de codificación** — Elija su agente de la lista de agentes admitidos.
-
-El comando instala el paquete `@adobe-commerce/commerce-extensibility-tools` como una dependencia de desarrollo, copia los archivos de aptitudes en el directorio de aptitudes del agente y configura MCP (Model Context Protocol) para que el agente pueda acceder a las herramientas de búsqueda de documentación de Commerce.
