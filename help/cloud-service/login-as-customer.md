@@ -3,7 +3,7 @@ title: Iniciar sesión como cliente con códigos de un solo uso
 description: Aprenda a utilizar la función Iniciar sesión como cliente de venta libre para generar códigos de una sola vez para la autenticación de clientes en  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Intermediate
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 source-git-commit: 2de1006ad3cee936d114bcf1b9a98b43a54d8c76
 workflow-type: tm+mt
 source-wordcount: '861'
@@ -65,7 +65,7 @@ Debe cumplir los siguientes requisitos antes de utilizar la función Iniciar ses
 
 >[!IMPORTANT]
 >
->El código de tiempo único OTC generado es válido durante 30 segundos de forma predeterminada y se invalida después de un solo uso. El TTL se puede configurar enviando un [ticket de soporte](https://experienceleague.adobe.com/home?support-tab=home#support).
+>El código de tiempo único OTC generado es válido durante 30 segundos de forma predeterminada y se invalida después de un solo uso. El TTL se puede configurar enviando un [ticket de soporte](https://experienceleague.adobe.com/home?lang=es&support-tab=home#support).
 
 Una vez generado el código de una sola vez, puede utilizarlo si navega hasta la tienda e inicia sesión con las siguientes credenciales:
 
