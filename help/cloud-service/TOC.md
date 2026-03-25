@@ -26,7 +26,7 @@ ht-degree: 5%
       - [Herramienta de migración masiva de datos](migration/bulk-data.md)
       - [Herramientas de codificación](migration/coding-tools.md)
    - [Documentación del servicio RAG](migration/doc-rag.md)
-- [Iniciar sesión como cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Iniciar sesión como cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Extremos REST de cuenta de tarjeta regalo](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Correo electrónico activado mediante REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutoriales {#tutorials}
@@ -39,6 +39,6 @@ ht-degree: 5%
 - Esquemas {#schemas}
    - [Esquema GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Esquema de API de REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Tutoriales en vídeo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriales en vídeo](https://experienceleague.adobe.com/es/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notas de la versión](release-notes.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
