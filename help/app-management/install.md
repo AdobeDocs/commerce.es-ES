@@ -2,10 +2,10 @@
 title: Instalar y obtener acceso a  [!DNL App Management]
 description: Requisitos previos y requisitos de acceso para usar Adobe Commerce [!DNL App Management].
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 86c0945bbb0a562de1b66d420dec2a05d4d81e5f
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '410'
+ht-degree: 0%
 
 ---
 
@@ -66,6 +66,20 @@ Se muestra la vista [!DNL App Management]. Aquí puede asociar, configurar y adm
 
 ## Instalación de aplicaciones de App Builder
 
-Si necesita instalar una aplicación de App Builder desde Adobe Exchange (por ejemplo, una aplicación prediseñada de integración o Marketplace), consulte [Instalar aplicaciones de App Builder desde Adobe Exchange](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obtener instrucciones paso a paso.
+Si necesita instalar una aplicación de App Builder desde Adobe Exchange (por ejemplo, una aplicación prediseñada de integración o Marketplace), consulte [Instalar aplicaciones de App Builder desde Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obtener instrucciones paso a paso.
 
 Después de instalar e implementar una aplicación, usa [!DNL App Management] para [asociarla a tu instancia de Commerce](manage-app.md#associate-an-app) y configurar su configuración.
+
+## Webhooks y aplicaciones de Commerce
+
+Algunas aplicaciones de App Builder usan [webhooks de Adobe Commerce](https://developer.adobe.com/commerce/extensibility/webhooks/) para que Commerce pueda llamar a su aplicación a través de HTTP cuando se produzcan ciertos eventos (por ejemplo, después de guardar un producto). Los extremos de los ganchos web y la lógica de suscripción los define **el desarrollador de aplicaciones** cuando se crea e implementa la aplicación; los administradores de tiendas no configuran los ganchos web por separado en la administración de aplicaciones.
+
+Después de [asociar la aplicación](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) con su instancia de Commerce y completar las instrucciones de configuración de la aplicación, el comportamiento del gancho web sigue la implementación de la aplicación.
+
+Si [!DNL App Management] no puede almacenar en déclencheur el extremo de validación de la aplicación (por ejemplo, la dirección URL no está disponible o la respuesta no cumple los requisitos), es posible que vea un error similar al siguiente en el panel [!DNL App Management]:
+
+![Error de validación de webhook](assets/webhook-validation-error.png){width="600" zoomable="yes"}
+
+Trabaje con el **desarrollador de aplicaciones** para corregir la configuración o implementación del webhook de modo que la validación se pueda realizar correctamente.
+
+**Desarrolladores de aplicaciones**. Para implementar suscripciones a ganchos web y respuestas de controladores de App Builder, consulte [Webhooks](https://developer.adobe.com/commerce/extensibility/app-management/installation/webhooks/) en la documentación para desarrolladores de Commerce Extensibility y el paquete [`@adobe/aio-commerce-lib-webhooks`](https://github.com/adobe/aio-commerce-sdk/tree/main/packages/aio-commerce-lib-webhooks) en GitHub.
