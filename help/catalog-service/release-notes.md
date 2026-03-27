@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: La información de la versión más reciente de  [!DNL Catalog Service]  para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: 9ba7a964243c616cc7e40fb180a855b839cd4597
+source-git-commit: 20ef635da00fb12b2efd5c1397f3d2de109d47fe
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2366'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ _3 de noviembre de 2025_
 - Controlar las anulaciones de nivel de campo con máscaras de capa
 - Compatibilidad con capas de contenido premium, estacionales y optimizadas para móviles
 
-  Las capas se recuperan mediante la consulta `products` existente, se aplican del lado del servidor desde los encabezados de solicitud y no requieren cambios de esquema. Consulte [Capa de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-layer) en la _Guía de Adobe Commerce Optimizer_.
+  Las capas se recuperan mediante la consulta `products` existente, se aplican del lado del servidor desde los encabezados de solicitud y no requieren cambios de esquema. Consulte [Capa de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) en la _Guía de Adobe Commerce Optimizer_.
 
 ![Corregir](../assets/fix.svg) Los productos agrupados ahora se pueden consultar cuando el producto principal no tiene precios; los productos secundarios devuelven sus propias funciones de visibilidad.<!--DATA-6779-->
 
@@ -222,7 +222,7 @@ _15 de julio de 2025_
 
 _20 de junio de 2025_
 
-![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/pricebooks).
+![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nuevas](../assets/new.svg) **claves que no distinguen entre mayúsculas y minúsculas**: las búsquedas de claves en las consultas ahora no distinguen entre mayúsculas y minúsculas, lo que reduce los errores de mayúsculas y minúsculas. <!--DATA-6494, DCAT-2495-->
 
@@ -351,7 +351,7 @@ _23 de mayo de 2024_
 
 ![Corrección](../assets/fix.svg) <!--DATA-5033-->El indicador `InStock` de los valores de opción ahora respeta el estado `enabled` de ámbito de la variante del producto.
 
-![Corrección](../assets/fix.svg) <!--DATA-5888-->Se ha agregado compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../landing/catalog-sync.md#command-line-interface) para aplicar las actualizaciones.
+![Corrección](../assets/fix.svg) <!--DATA-5888-->Se ha agregado compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../landing/catalog-sync.md#command-line-interface) para aplicar las actualizaciones.
 
 #### Limitaciones conocidas
 
@@ -385,7 +385,7 @@ _22 de febrero de 2024_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
+![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
 
 ### Versión v1.16
 
@@ -554,7 +554,7 @@ _14 de octubre de 2025_
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
 ![Nueva](../assets/new.svg) **actualización de servicios de datos**—`magento/data-services` dependencia actualizada a ^8.0.0. Compruebe el uso de la API de servicios de datos personalizados y del entorno para la compatibilidad con 8.x antes de actualizar.
-ea
+
 ![Nuevo](../assets/new.svg) Se actualizaron la versión y los metadatos de la versión 3.3.0.
 
 ### Versión 3.2.0
@@ -577,6 +577,20 @@ _26 de enero de 2024_
 - **Administrador de sincronización de catálogos** `magento/module-catalog-sync-admin` para la interfaz de usuario de administración y la configuración relacionada con la sincronización de catálogos.
 
 ![Nuevo](../assets/new.svg) Se actualizaron la versión y los metadatos de la versión 3.1.0.
+
+## Instalador del servicio de catálogo
+
+El instalador se entrega con la extensión del Servicio de catálogo y gestiona las comprobaciones de instalación y entorno para que el Servicio de catálogo coincida con la pila de Commerce.
+
+- Para los clientes de **Adobe Commerce as a Cloud Service**, la versión más reciente del instalador está instalada en su entorno.
+
+- Para **Adobe Commerce en la infraestructura en la nube** o **local**, mantenga el instalador alineado con el [metapaquete del servicio de catálogo](#catalog-service-metapackage): use Composer para actualizar `magento/catalog-service-installer` cada vez que actualice `magento/catalog-service` o cuando estas notas de la versión describan un cambio que necesite, por ejemplo, compatibilidad con una nueva versión de PHP. De este modo, las herramientas de instalación seguirán siendo compatibles con la versión del servicio de catálogo que ejecute.
+
+### Versión v1.0.6
+
+_25 de marzo de 2026_
+
+![Nuevo](../assets/new.svg) **PHP 8.5**—Garantiza la compatibilidad cuando el Servicio de catálogo funcione en PHP 8.5.
 
 ## Documentación relacionada
 
