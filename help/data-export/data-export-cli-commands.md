@@ -2,9 +2,9 @@
 title: Sincronizar fuentes mediante la CLI de Commerce
 description: Aprenda a utilizar los comandos de la interfaz de la línea de comandos para administrar fuentes y procesos para los servicios SaaS de  [!DNL data export extension] for Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ El comando `saas:resync` del paquete `magento/saas-export` le permite administra
 Adobe no recomienda usar el comando `saas:resync` con regularidad. Los escenarios habituales para utilizar el comando son:
 
 - Sincronización inicial
-- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas)
+- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Resolución de problemas
 
 Supervisar operaciones de sincronización en el archivo `var/log/saas-export.log`.
@@ -85,9 +85,9 @@ Limpie la tabla del indexador de fuentes antes de reindexar y enviar datos a Saa
 
 Si se utiliza con la opción `--dry-run`, la operación realiza una operación de resincronización de ejecución en seco para todos los elementos.
 
->[!IMPORTANT]
+>[!WARNING]
 >
->Use solo después de limpiar el entorno o con la opción `--dry-run`. Si se utiliza en otros casos, la operación de limpieza puede causar pérdida de datos y problemas de sincronización de datos.
+>El uso del comando resync con la opción `cleanup-feed` borra el estado de exportación de la fuente local y puede provocar una sincronización incompleta. Por ejemplo, es posible que las eliminaciones de entidades en Adobe Commerce no se reflejen en los servicios de Commerce conectados, o que las entidades antiguas permanezcan en los índices remotos de los servicios de Commerce aunque se hayan eliminado o actualizado en Adobe Commerce. Utilice esta opción solo para reconstrucciones de entorno completas, como después de una limpieza del espacio de datos SaaS.
 
 **Ejemplo:**
 
