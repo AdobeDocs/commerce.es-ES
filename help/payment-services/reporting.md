@@ -1,12 +1,12 @@
 ---
 title: Informes
-description: Utilice el informe Transacciones para obtener visibilidad sobre las tasas de autorización de transacciones y las tendencias de transacciones.
+description: Use el informe  [!DNL Payment Services] Transacciones del administrador para revisar las tasas de autorización, los resultados de las transacciones, los códigos de respuesta y las tendencias de Adobe Commerce en implementaciones en la nube, locales y SaaS.
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 4482c1f93a424c73497b88c707d0ab93a694c957
+source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,27 @@ Puede descargar el informe Transacciones en formato de archivo .csv para utiliza
 
 >[!NOTE]
 >
->No puede ver informes financieros si no ha [incorporado y activado el modo Activo](production.md#enable-live-payments) para [!DNL Payment Services].
+> No puede ver informes financieros si no ha [incorporado y activado el modo Activo](production.md#enable-live-payments) para [!DNL Payment Services].
 
 ## Vista del informe de transacciones
 
 La vista Informe de transacciones está disponible en la vista Transacciones de Servicios de pago. Incluye toda la información disponible sobre las transacciones de tu tienda o tiendas.
 
-En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;para ver la vista detallada del informe de transacciones tabulares.
+En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**para ver la vista detallada del informe de transacciones tabulares. Desde **[!UICONTROL Home]**, también puede elegir **[!UICONTROL View Report]**en **[!UICONTROL Transactions]**en [!DNL Adobe Commerce as a Cloud Service] y [!DNL Adobe Commerce Optimizer].
+
+>[!BEGINTABS]
+
+>[!TAB Adobe Commerce en la nube y local]
 
 ![Vista del informe de transacciones](assets/transactions-report-view.png){width="800" zoomable="yes"}
+
+>[!TAB Adobe Commerce as a Cloud Service y Commerce Optimizer]
+
+Las mismas capacidades de informes se aplican a las implementaciones de SaaS. Las rutas de exploración muestran **[!UICONTROL Home]** > **[!UICONTROL Transactions]** y la cuadrícula incluye columnas como **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** y **[!UICONTROL Response Code]**.
+
+![Vista de informe de transacciones en SaaS](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!ENDTABS]
 
 Puede configurar esta vista, según las secciones de este tema, para presentar mejor los datos que desee ver.
 
@@ -55,7 +67,7 @@ En la vista Informe de transacciones, puede seleccionar el origen de datos (**[!
 
 ![Selección de orígenes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_&#x200B;es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si&#x200B;_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver la información del informe del modo de espacio aislado.
+Si _[!UICONTROL Live]_es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver la información del informe del modo de espacio aislado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -85,14 +97,14 @@ En la vista Informe de transacciones, puede filtrar los resultados de los estado
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Haga clic en el selector **[!UICONTROL Filter]**.
-1. Cambie las opciones _[!UICONTROL Transaction Result]_&#x200B;para ver los resultados del informe solamente para las transacciones de pedidos seleccionadas.
-1. Cambie las opciones _[!UICONTROL Payment Method]_&#x200B;para ver los resultados del informe para el tipo de pago utilizado para la transacción.
-1. Active las opciones _[!UICONTROL Payment Detail]_&#x200B;para ver información adicional sobre el tipo de pago utilizado, cuando esté disponible.
+1. Cambie las opciones _[!UICONTROL Transaction Result]_para ver los resultados del informe solamente para las transacciones de pedidos seleccionadas.
+1. Cambie las opciones _[!UICONTROL Payment Method]_para ver los resultados del informe para el tipo de pago utilizado para la transacción.
+1. Active las opciones _[!UICONTROL Payment Detail]_para ver información adicional sobre el tipo de pago utilizado, cuando esté disponible.
 1. Escriba _Importe mínimo de pedido_ o _Importe máximo de pedido_ para ver los resultados del informe dentro de ese intervalo de importe de pedido.
-1. Escriba un _[!UICONTROL Order ID]_&#x200B;para buscar una transacción específica.
-1. Introduce _[!UICONTROL Card Last Four]_&#x200B;para buscar una tarjeta de crédito o débito específica.
-1. Escriba un _[!UICONTROL Customer ID]_&#x200B;para mostrar todas las transacciones de un cliente específico.
-1. Escriba _[!UICONTROL Customer Email]_&#x200B;para filtrar las transacciones de ese correo electrónico.
+1. Escriba un _[!UICONTROL Order ID]_para buscar una transacción específica.
+1. Introduce _[!UICONTROL Card Last Four]_para buscar una tarjeta de crédito o débito específica.
+1. Escriba un _[!UICONTROL Customer ID]_para mostrar todas las transacciones de un cliente específico.
+1. Escriba _[!UICONTROL Customer Email]_para filtrar las transacciones de ese correo electrónico.
 1. Haga clic en **[!UICONTROL Hide filters]** para ocultar el filtro.
 
 ### Mostrar y ocultar columnas
@@ -107,7 +119,7 @@ El informe Transacciones muestra todas las columnas de información disponibles 
 
 ### Actualización de datos del informe
 
-La vista Informe de transacciones muestra una marca de tiempo _[!UICONTROL Last updated]_&#x200B;que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe de transacciones se actualizan automáticamente cada tres horas.
+La vista Informe de transacciones muestra una marca de tiempo _[!UICONTROL Last updated]_que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe de transacciones se actualizan automáticamente cada tres horas.
 
 También puede forzar manualmente una actualización de los datos del informe para ver la información del informe más actualizada.
 
@@ -132,9 +144,9 @@ Los informes de transacciones incluyen la siguiente información.
 
 | Columna | Descripción |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de pedido de Commerce (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionada, haga clic en el identificador. |
+| [!UICONTROL Order ID] | ID de pedido de Commerce (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionada, haga clic en el identificador. |
 | [!UICONTROL PayPal Transaction ID] | ID de transacción proporcionado por el proveedor de pagos; contiene solo valores para las transacciones correctas y contiene un guión para las transacciones rechazadas. Puedes hacer clic en este identificador para acceder a la página de detalles de la transacción de PayPal. |
-| [!UICONTROL Customer ID] | ID de cliente de Commerce de un pedido <br> <br>Vea el tema [información del cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obtener más información. |
+| [!UICONTROL Customer ID] | ID de cliente de Commerce de un pedido <br> <br>Vea el tema [información del cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obtener más información. |
 | [!UICONTROL Transaction Date] | Marca de fecha y hora de transacción |
 | [!UICONTROL Payment Method] | Tipo de pago utilizado para la transacción con información sobre la marca y el tipo de tarjeta. Consulte [tipos de tarjeta](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) para obtener más información; disponible para las versiones 1.6.0 y posteriores de Payment Services |
 | [!UICONTROL Payment Detail] | Proporciona información adicional sobre el tipo de pago utilizado para la transacción, cuando está disponible. |
