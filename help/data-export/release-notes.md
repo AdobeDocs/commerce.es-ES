@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5ce7a8aa82d23312685f052864aed96066c6e6c4
+source-git-commit: c7ad81a2b53e06ea9aab65aa53088a07839bc30d
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,17 @@ Las actualizaciones incluyen:
 ![Corrección](../assets/fix.svg) Correcciones y mejoras
 ![Error](../assets/bug.svg) Problemas conocidos
 
-
 >[!NOTE]
 >
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026
+
+### Versión 103.4.21
+
+_2 de abril de 2026_
+
+![Corrección](../assets/fix.svg) **Se ha mejorado la confiabilidad de la resincronización manual del indizador de permisos de categoría**-Se ha corregido un problema en el cual la ejecución de indizadores en un orden determinado podía hacer que algunos productos se volvieran invisibles temporalmente. El sistema ahora aplica el orden correcto y déclencheur automáticamente una resincronización completa cuando es necesario, lo que garantiza que todos los productos permanezcan visibles después de las operaciones manuales de reindexación. <!--MDEE-1332-->
 
 ### Versión 103.4.20
 
@@ -46,15 +51,13 @@ _6 de febrero de 2026_
 
 _2 de febrero de 2026_
 
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los lotes de elementos podían superar el límite permitido durante las actualizaciones, lo que provocaba `items_limit_exceeded` errores al sincronizar datos con [servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los lotes de elementos podían superar el límite permitido durante las actualizaciones, lo que provocaba `items_limit_exceeded` errores al sincronizar datos con [servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 
 ![Corrección](../assets/fix.svg): se ha mejorado la confiabilidad de las exportaciones de datos de productos al agregar lógica para registrar los elementos con errores durante la recopilación de opciones de productos del paquete. <!--CCSAAS-4458-->
 
 ### Versión 103.4.17
 
 _5 de enero de 2026_
-
-### Versión 103.4.17
 
 ![Corrección](../assets/fix.svg) Se ha actualizado la extensión de exportación de datos (`magento/module-data-exporter`) para quitar la dependencia `magento/module-analytics`, que ya no es necesaria.<!--MDEE-1260-->
 
@@ -63,7 +66,6 @@ _5 de enero de 2026_
 ![Corregir](../assets/fix.svg) Se corrigió un problema en el cual los productos con un precio de $0 o un descuento del 100% no se mostraban como gratuitos en la tienda. Los precios de las tiendas y del carro de compras ahora son coherentes. <!--MDEE-1159-->
 
 ![Se ha corregido](../assets/fix.svg) la compatibilidad con Symfony 7.4 LTS en las extensiones de exportación de datos para admitir futuras actualizaciones e integraciones. <!--MDEE-1272-->
-
 
 ## Versiones anteriores
 
@@ -77,13 +79,13 @@ _24 de noviembre de 2025_
 
 _22 de octubre de 2025_
 
-![Nuevo](../assets/new.svg) Se agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de Adobe Commerce a servicios conectados (Servicio de catálogo, Live Search y Recomendaciones de productos). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=es) en la *Guía de administración de Commerce*. <!--MDEE-954-->
+![Nuevo](../assets/new.svg) Se agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de Adobe Commerce a servicios conectados (Servicio de catálogo, Live Search y Recomendaciones de productos). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) en la *Guía de administración de Commerce*. <!--MDEE-954-->
 
 ### Versión 103.4.14
 
 _10 de octubre de 2025_
 
-![Corrección](../assets/fix.svg) ha resuelto un problema en el que el trabajo de [indizador mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) podría fallar si falta la tabla `cde_product_overrides_feed_cl`. La corrección garantiza una reindexación estable y evita errores de trabajos relacionados con esta tabla en entornos de varios inquilinos&quot;. <!--MDEE-1175-->
+![Corrección](../assets/fix.svg) ha resuelto un problema en el que el trabajo de [indizador mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) podría fallar si falta la tabla `cde_product_overrides_feed_cl`. La corrección garantiza una reindexación estable y evita errores de trabajos relacionados con esta tabla en entornos de varios inquilinos. <!--MDEE-1175-->
 
 ### Versión 103.4.13
 
@@ -103,7 +105,7 @@ _18 de septiembre de 2025_
 
 _29 de agosto de 2025_
 
-![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 Se ha agregado compatibilidad con atributos de producto adicionales para incluir datos de clase de impuestos, juego de atributos e inventario de configuraciones de producto de Commerce en la fuente de productos. Los clientes que deseen incluir estos atributos en las fuentes de exportación de productos deben agregar el módulo Atributos de producto adicionales a su proyecto de Adobe Commerce. Ver [Agregar clase de impuestos, conjunto de atributos y atributos de inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Corrección](../assets/fix.svg) ha resuelto un problema que provocaba una sincronización incorrecta de las actualizaciones de productos eliminadas si se producía un error durante un índice de productos completo. Ahora, todas las eliminaciones de productos se sincronizan correctamente incluso si se produce un error durante el proceso de indexación. <!--MDEE-1144-->
@@ -112,7 +114,7 @@ Se ha agregado compatibilidad con atributos de producto adicionales para incluir
 
 _18 de agosto de 2025_
 
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que se devolvía un tipo incorrecto (`text` en lugar de `OBJECT`) para algunos atributos creados dinámicamente Ahora, la información de tipo correcta se devuelve de manera consistente, lo que elimina la necesidad de realizar resincronizaciones manuales o soluciones alternativas.<!--MDEE-1131-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que se devolvía un tipo incorrecto (`text` en lugar de `OBJECT`) para algunos atributos creados dinámicamente Ahora, la información de tipo correcta se devuelve de forma coherente, lo que elimina la necesidad de realizar resincronizaciones manuales o soluciones alternativas.<!--MDEE-1131-->
 
 ![Corrección](../assets/fix.svg) Se ha corregido un problema por el que la recopilación de datos de productos durante las sincronizaciones parciales podía fallar debido a errores en el proveedor de inventario LowStock. Esta corrección garantiza que los datos del producto se exporten de forma fiable y que no se omitan los ID de producto debido a errores relacionados con LowStock.<!--MDEE-1132-->
 
@@ -154,7 +156,7 @@ _20 de junio de 2025_
 
 _27 de mayo de 2025_
 
-![La nueva exportación de datos SaaS de &#x200B;](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
+![La nueva exportación de datos SaaS de ](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
 
 ![Corrección](../assets/fix.svg): se mejoró el informe de errores de exportación de datos. Los registros ahora incluyen mensajes de error más detallados, incluidos detalles técnicos originales para facilitar la depuración y el seguimiento de errores. <!--MDEE-1064-->
 
@@ -200,7 +202,7 @@ _31 de marzo de 2025_
 
 _11 de marzo de 2025_
 
-![Corrección](../assets/new.svg) Se ha agregado funcionalidad para sincronizar parcialmente las fuentes `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
+![Se ha agregado la funcionalidad ](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
@@ -334,7 +336,7 @@ _5 de junio de 2024_
 
 _31 de mayo de 2024_
 
-![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento &#x200B;](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce `data_sent_outside`<!--MDEE-785-->
+![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento ](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce. `data_sent_outside`<!--MDEE-785-->
 
 ### Versión 103.3.3
 
@@ -378,7 +380,7 @@ _30 de abril de 2024_
    - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
    - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
-- nombres de tabla de registro de cambios: sigue el mismo patrón de nomenclatura que las tablas de fuentes, pero los nombres de tabla de registro de cambios agregan un sufijo `_cl`.  Por ejemplo `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+- nombres de tabla de registro de cambios: sigue el mismo patrón de nomenclatura que las tablas de fuentes, pero los nombres de tabla de registro de cambios agregan un sufijo `_cl`. Por ejemplo `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
 Si tiene código personalizado que hace referencia a cualquiera de estas entidades, actualice las referencias con los nuevos nombres para asegurarse de que el código sigue funcionando correctamente.
 
@@ -412,7 +414,6 @@ _3 de abril de 2024_
 
 ![Corregir](../assets/fix.svg) exclusión mutua agregada para todas las fuentes que se procesan.
 
-
 ### Versión 103.2.2
 
 _14 de marzo de 2024_
@@ -434,3 +435,5 @@ _5 de marzo de 2024_
 _21 de febrero de 2024_
 
 - Se ha agregado la sincronización de datos multiproceso para productos y precios.
+
+
