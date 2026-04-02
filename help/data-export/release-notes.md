@@ -156,7 +156,7 @@ _20 de junio de 2025_
 
 _27 de mayo de 2025_
 
-![La nueva exportación de datos SaaS de ](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
+![La nueva exportación de datos SaaS de &#x200B;](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
 
 ![Corrección](../assets/fix.svg): se mejoró el informe de errores de exportación de datos. Los registros ahora incluyen mensajes de error más detallados, incluidos detalles técnicos originales para facilitar la depuración y el seguimiento de errores. <!--MDEE-1064-->
 
@@ -202,7 +202,7 @@ _31 de marzo de 2025_
 
 _11 de marzo de 2025_
 
-![Se ha agregado la funcionalidad ](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
+![Se ha agregado la funcionalidad &#x200B;](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
@@ -336,7 +336,7 @@ _5 de junio de 2024_
 
 _31 de mayo de 2024_
 
-![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento ](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce. `data_sent_outside`<!--MDEE-785-->
+![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento &#x200B;](../assets/fix.svg) cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce. `data_sent_outside`<!--MDEE-785-->
 
 ### Versión 103.3.3
 
