@@ -2,14 +2,20 @@
 title: Incorporación
 description: Conozca los requisitos y las plataformas compatibles en  [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: 8f421bd4421b9599ad52aa68c5caaee6592ccb43
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
 # Incorporación
+
+>[!IMPORTANT]
+>
+>**Recomendaciones de productos no es un servicio compatible con HIPAA.** No habilite ni utilice Product Recommendations en ninguna implementación de Adobe Commerce que utilice la oferta compatible con HIPAA o que procese de otro modo la información médica protegida (PHI). Product Recommendations forma parte de los servicios SaaS de Commerce que actualmente están clasificados como no preparados para HIPAA.
+>
+>Para obtener detalles sobre qué funciones de Adobe Commerce están preparadas para HIPAA y qué servicios no se deben usar con PHI, consulte [Preparación para HIPAA en Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) y [Operaciones](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
 El proceso de incorporación de [!DNL Product Recommendations] requiere acceso a la línea de comandos del servidor y consta de los siguientes pasos. Si no está familiarizado con el trabajo desde la línea de comandos, pida ayuda a un desarrollador o integrador de sistemas.
 
@@ -22,7 +28,7 @@ El proceso de incorporación de [!DNL Product Recommendations] requiere acceso a
 ## Requisitos
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2
+- PHP 8.1, 8.2, 8.3 u 8.4
 - Compositor 2
 
 ### Plataformas compatibles
@@ -46,7 +52,7 @@ Los clientes de Product Recommendations pueden usar la [indexación de precios S
 
 ### Compatibilidad con B2B {#b2bsupport}
 
-Las tiendas B2B a menudo requieren una lógica compleja que dicta la visibilidad del producto y los precios para cada comprador o grupo de clientes. [!DNL Product Recommendations] ahora [admite](release-notes.md) esta funcionalidad al cumplir [permisos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=es), [catálogos compartidos](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=es) y [precios específicos de grupos de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=es). Por ejemplo, si ha ocultado ciertas categorías del segmento de clientes minoristas, a un comprador de ese segmento no se le mostrarían recomendaciones para productos de esas categorías. Además, al definir un catálogo compartido para grupos de clientes y empresas específicos, esos compradores ven recomendaciones solo para los productos a los que pueden acceder. Todos los productos recomendados reflejan el precio correcto específico del grupo de clientes en función del grupo de clientes de cada comprador.
+Las tiendas B2B a menudo requieren una lógica compleja que dicta la visibilidad del producto y los precios para cada comprador o grupo de clientes. [!DNL Product Recommendations] ahora [admite](release-notes.md) esta funcionalidad al cumplir [permisos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartidos](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) y [precios específicos de grupos de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por ejemplo, si ha ocultado ciertas categorías del segmento de clientes minoristas, a un comprador de ese segmento no se le mostrarían recomendaciones para productos de esas categorías. Además, al definir un catálogo compartido para grupos de clientes y empresas específicos, esos compradores ven recomendaciones solo para los productos a los que pueden acceder. Todos los productos recomendados reflejan el precio correcto específico del grupo de clientes en función del grupo de clientes de cada comprador.
 
 >[!NOTE]
 >
