@@ -1,13 +1,13 @@
 ---
 title: Servicio RAG de documentación
 description: Aprenda a utilizar el servicio de búsqueda de documentación con tecnología de IA para el desarrollo de Adobe Commerce.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 28396828516645abec3b42a2c6874afe9134dfb8
+source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ El servicio de documentación RAG (Retrieval-Augmented Generation) proporciona f
 
 Este RAG proporciona una interfaz IDE para hacer preguntas sobre Adobe Commerce y puede aconsejarle sobre las prácticas recomendadas para desarrollar aplicaciones y otras tareas de migración.
 
-El servicio RAG forma parte del servidor [Commerce extensibility tools](./coding-tools.md) MCP (Model Context Protocol), que se integra con el cursor y otros asistentes de IA compatibles con MCP.
+El servicio RAG forma parte del servidor [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP (Model Context Protocol), que se integra con el cursor y otros asistentes de IA compatibles con MCP.
 
 ## Documentación disponible
 
@@ -30,9 +30,9 @@ En la tabla siguiente se describe qué documentación está indexada actualmente
 
 | Categoría | Índice | Contenido incluido | Palabras clave |
 |-------|---------|---------|------------------------|
-| [Tienda](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) | commerce-storefront-docs | Edge Delivery Services, complementos, componentes de tienda | tienda, lista desplegable, EDS, lista de productos, cierre de compra |
+| [Tienda](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, complementos, componentes de tienda | tienda, lista desplegable, EDS, lista de productos, cierre de compra |
 | [Extensibilidad](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, eventos, extensiones, integraciones | webhook, evento, extensión, API mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, producto, cliente, pedido, inventario |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, producto, cliente, pedido, inventario |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, acciones en tiempo de ejecución, extensiones de IU | creador de aplicaciones, acción de tiempo de ejecución, React Spectrum |
 
 Para obtener más información sobre la selección de índices, consulte [Selección automática de índices](#automatic-index-selection-recommended) y [Selección explícita de índices](#explicit-index-selection).
@@ -46,7 +46,7 @@ Para obtener información detallada sobre la documentación incluida en cada ín
 * **Ejecución local**: todas las herramientas se ejecutan localmente en el equipo.
 * **Comunicación segura**: la búsqueda en la documentación usa HTTPS con validación de tokens.
 
-El extremo de producción está protegido por [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview), que incluye las siguientes protecciones:
+El extremo de producción está protegido por [Puerta principal de Azure](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview), que incluye las siguientes protecciones:
 
 * Firewall de aplicaciones web (WAF) con conjunto de reglas predeterminado de Microsoft 2.1 y conjunto de reglas de Bot Manager 1.0
 * Bloqueo geográfico para regiones sujetas a embargo por Estados Unidos (Cuba, Irán, Corea del Norte, Siria, Crimea, Luhansk, Donetsk)
@@ -127,7 +127,7 @@ Antes de instalar, asegúrese de que dispone de lo siguiente:
 
 ## Uso
 
-Una vez instalado, puede llamar a los índices [automáticamente](#automatic-index-selection-recommended) o [explícitamente](#explicit-index-selection). También puede usar el comando [`/search-commerce-docs` &#x200B;](#command-based-search).
+Una vez instalado, puede llamar a los índices [automáticamente](#automatic-index-selection-recommended) o [explícitamente](#explicit-index-selection). También puede usar el comando [`/search-commerce-docs` ](#command-based-search).
 
 >[!NOTE]
 >
