@@ -1,7 +1,7 @@
 ---
 title: Servicio RAG de documentación
 description: Aprenda a utilizar el servicio de búsqueda de documentación con tecnología de IA para el desarrollo de Adobe Commerce.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
@@ -30,9 +30,9 @@ En la tabla siguiente se describe qué documentación está indexada actualmente
 
 | Categoría | Índice | Contenido incluido | Palabras clave |
 |-------|---------|---------|------------------------|
-| [Tienda](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, complementos, componentes de tienda | tienda, lista desplegable, EDS, lista de productos, cierre de compra |
+| [Tienda](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) | commerce-storefront-docs | Edge Delivery Services, complementos, componentes de tienda | tienda, lista desplegable, EDS, lista de productos, cierre de compra |
 | [Extensibilidad](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, eventos, extensiones, integraciones | webhook, evento, extensión, API mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, producto, cliente, pedido, inventario |
+| [Commerce](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, producto, cliente, pedido, inventario |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, acciones en tiempo de ejecución, extensiones de IU | creador de aplicaciones, acción de tiempo de ejecución, React Spectrum |
 
 Para obtener más información sobre la selección de índices, consulte [Selección automática de índices](#automatic-index-selection-recommended) y [Selección explícita de índices](#explicit-index-selection).
