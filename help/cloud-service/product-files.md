@@ -4,7 +4,7 @@ description: Aprenda a adjuntar archivos como PDF, manuales y hojas de datos a p
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 source-git-commit: 848ba518d170c9a0270b2513fdc8efb6813f6845
 workflow-type: tm+mt
 source-wordcount: '607'
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Añadir archivos a los productos
 
-[!DNL Adobe Commerce as a Cloud Service] admite un &quot;archivo&quot; [tipo de entrada de atributo de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} que permite a los comerciantes adjuntar archivos, como PDF, manuales, certificados y hojas de datos directamente a los productos. Los archivos se almacenan en el almacenamiento de medios de Amazon S3 y se puede acceder a ellos a través de la tienda mediante GraphQL o a través de integraciones mediante la API de REST.
+[!DNL Adobe Commerce as a Cloud Service] admite un &quot;archivo&quot; [tipo de entrada de atributo de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} que permite a los comerciantes adjuntar archivos, como PDF, manuales, certificados y hojas de datos directamente a los productos. Los archivos se almacenan en el almacenamiento de medios de Amazon S3 y se puede acceder a ellos a través de la tienda mediante GraphQL o a través de integraciones mediante la API de REST.
 
 Existen tres formas de cargar archivos en los atributos del archivo de producto:
 
@@ -26,15 +26,15 @@ Existen tres formas de cargar archivos en los atributos del archivo de producto:
 
 Antes de cargar archivos, debe crear un atributo de archivo y asignarlo a un conjunto de atributos.
 
-* [Crear un atributo de archivo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - Establecer **[!UICONTROL Catalog Input Type for Store Owner]** en **[!UICONTROL File]**.
+* [Crear un atributo de archivo](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - Establecer **[!UICONTROL Catalog Input Type for Store Owner]** en **[!UICONTROL File]**.
 
-* [Asignar el atributo a un conjunto de atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Arrastre el nuevo atributo de archivo al grupo deseado.
+* [Asignar el atributo a un conjunto de atributos](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Arrastre el nuevo atributo de archivo al grupo deseado.
 
-* Configure los tipos de archivo permitidos y el tamaño en la configuración de [Atributos de archivo de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes).
+* Configure los tipos de archivo permitidos y el tamaño en la configuración de [Atributos de archivo de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/config/catalog/product-file-attributes).
 
 ## Cargar archivos mediante el administrador
 
-Después de [crear un atributo de archivo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} y asignarlo a un conjunto de atributos, puede cargar archivos directamente desde la página de edición del producto.
+Después de [crear un atributo de archivo](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} y asignarlo a un conjunto de atributos, puede cargar archivos directamente desde la página de edición del producto.
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 
@@ -61,7 +61,7 @@ El proceso consta de cuatro pasos:
 
 ## Cargar mediante importación de producto
 
-Puede adjuntar archivos a productos de forma masiva mediante la [API de importación](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"} o la IU de importación de administración. Los atributos del archivo de producto solo admiten la importación desde direcciones URL externas, que sigue el mismo método que el [Método 2 para la importación de imágenes de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce descarga el archivo desde la dirección URL proporcionada y lo guarda en el almacenamiento de medios S3.
+Puede adjuntar archivos a productos de forma masiva mediante la [API de importación](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"} o la IU de importación de administración. Los atributos del archivo de producto solo admiten la importación desde direcciones URL externas, que sigue el mismo método que el [Método 2 para la importación de imágenes de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce descarga el archivo desde la dirección URL proporcionada y lo guarda en el almacenamiento de medios S3.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-En ambos casos, la dirección URL debe ser de acceso público, y la extensión y el tamaño del archivo deben cumplir con las [limitaciones configuradas](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
+En ambos casos, la dirección URL debe ser de acceso público, y la extensión y el tamaño del archivo deben cumplir con las [limitaciones configuradas](https://experienceleague.adobe.com/es/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
 
 ## Recuperación de archivos mediante GraphQL
 
