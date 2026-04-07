@@ -1,11 +1,11 @@
 ---
 title: Crear y administrar recomendaciones
 description: Obtenga información sobre cómo crear y administrar recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 3d748e83e07a16e58c0c55f12a6c0ad40bbfdead
+source-git-commit: a0863a0d54c5c26b1ae207fd36777e0c515caaf0
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ _Unidad de recomendación_
 
 Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](../../manage-results/recommendation-performance.md) para medir impresiones, vistas, clics, etc. La tabla Recommendations muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundadas.
 
-1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**&#x200B;para mostrar el área de trabajo de_ Recommendations _.
+1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**para mostrar el área de trabajo de_ Recommendations _.
 
 1. En el campo **Vista de catálogo**, seleccione la vista de catálogo en la que desea que la recomendación esté disponible. Más información acerca de [usar vistas de catálogo para recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
    >[!IMPORTANT]
    >
-   >Esta función se encuentra actualmente en fase beta.
+   >Esta característica se encuentra actualmente en [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las unidades de recomendación existentes para aprovechar el nuevo ámbito de vista de catálogo.
 
 1. Haga clic en **Crear recomendación**.
 
@@ -97,7 +97,7 @@ Después de crear una recomendación, debe recuperar su ID para implementar la u
 
 1. En la sección **ID de recomendación**, copie el ID.
 
-1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=es) en su tienda de Edge Delivery Services.
+1. Use este identificador para configurar la [recomendación ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
