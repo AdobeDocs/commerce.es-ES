@@ -1,49 +1,60 @@
 ---
 title: Crear y administrar reglas
-description: Obtenga información sobre cómo crear y administrar reglas de comercialización.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+description: Obtenga información sobre cómo crear y administrar reglas de comercialización para búsquedas, listados de productos predeterminados y páginas de categorías.
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0df932ab95666438baf1210b6fe913e4ae8e28b9
+source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2714'
 ht-degree: 0%
 
 ---
 
 # Crear y administrar reglas
 
-Para generar una regla, el primer paso es utilizar el editor de reglas para definir las condiciones en el texto de consulta del comprador que almacenan en déclencheur los eventos asociados. A continuación, complete los detalles de la regla, pruebe los resultados y publique la regla.
+Para generar una regla, abra el editor de reglas, elija un **tipo de regla** (condiciones de búsqueda, lista predeterminada o páginas de categoría), luego defina las condiciones y la clasificación donde se apliquen, pruebe los resultados y publique la regla.
 
-## Crear una regla
+## Crear una regla {#create-a-rule}
 
 1. En el carril izquierdo, vaya a _Reglas de comercialización_ > **Reglas de comercialización**.
 1. (Opcional) Utilice la lista desplegable **Vista de catálogo** para seleccionar la vista de catálogo donde se debe aplicar la regla. La regla que cree se vinculará a la vista seleccionada (o a todas las vistas de catálogo si está seleccionada la opción **Todas las vistas**). Consulte [Seleccionar vista de catálogo](workspace.md#select-catalog-view) para ver cómo funciona el ámbito de la vista de catálogo.
 
    >[!IMPORTANT]
    >
-   >Esta característica se encuentra actualmente en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las reglas de comercialización existentes para aprovechar el nuevo ámbito de vista de catálogo.
+   >Las vistas del catálogo se encuentran actualmente en [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las reglas de comercialización existentes para aprovechar el nuevo ámbito de vista de catálogo.
 
 1. Haga clic en **[!UICONTROL Create rule]** para iniciar el editor de reglas.
 
 ![Crear regla](../../assets/create-rule.png)
 
-En la sección **Genere su regla**, usted define criterios de búsqueda, condiciones y tipos de clasificación específicos.
+### Tipos de reglas
+
+Cada tipo de regla tiene un icono de información en el editor con una breve explicación. Utilice el tipo que coincida con el lugar en el que los compradores deben ver la lógica de comercialización:
+
+| Tipo de regla | Finalidad |
+| --- | --- |
+| **Regla de todos los productos** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
+| **Regla de categoría** (Beta) | Aplica la comercialización y la clasificación a una o varias categorías seleccionadas y controla el orden de los productos en esas páginas de categorías. |
+| **Regla de búsqueda** | Aplica la comercialización y la clasificación cuando los compradores ejecutan una búsqueda que coincide con las condiciones de consulta de la regla. |
+
+En la sección **Generar la regla**, define el nombre de la regla, la programación, si la regla se aplica a todos los listados o a condiciones de búsqueda específicas y los tipos de clasificación.
 
 1. En el campo **[!UICONTROL Name]**, escriba un nombre para la regla. Todos los nombres de reglas deben ser únicos.
 1. En el campo **[!UICONTROL Description]**, escriba una descripción para la regla.
 1. En el campo **[!UICONTROL Date range]**, especifique la fecha o el intervalo de fechas en que desea que la regla esté activa.
-1. En la sección **[!UICONTROL Rule applies to]**, tiene dos opciones: **[!UICONTROL All product listings]** o **[!UICONTROL Specific conditions]**.
+1. En la sección **[!UICONTROL Rule applies to]**, seleccione [tipo de regla](#rule-types) que desee usar.
 
-   - **Todas las listas de productos**: se trata esencialmente de la regla predeterminada y se aplica a todas las consultas de búsqueda, a menos que se defina una consulta de búsqueda más específica. Solo puede crear una regla predeterminada que no contenga condiciones. Elija el Tipo de clasificación inteligente y las clasificaciones manuales que desee aplicar a todas las búsquedas predeterminadas.
-   - **Condiciones específicas**: consulte la siguiente sección para obtener más información sobre los tipos de condiciones que puede establecer para la regla.
+>[!BEGINTABS]
 
-### Condiciones
+>[!TAB Regla de búsqueda]
+
+Una regla de búsqueda aplica lógica de comercialización y clasificación cuando los compradores realizan una búsqueda que coincide con las condiciones definidas.
 
 Las condiciones son los requisitos para almacenar en déclencheur un evento. Una regla puede tener hasta diez condiciones y 25 eventos. Una regla predeterminada no puede tener ninguna condición.
 
 ![Seleccionar condición de regla](../../assets/rule-set-condition.png)
 
-#### Condición única
+**Condición única**
 
 1. En *Generar la regla*, seleccione la **condición** que se debe cumplir y siga las instrucciones para completar la instrucción.
 
@@ -57,8 +68,9 @@ Las condiciones son los requisitos para almacenar en déclencheur un evento. Una
 1. Para probar otras consultas, cambia el texto de la consulta en el cuadro de búsqueda *Probar la regla* y pulsa **Devolver**.
 Inicialmente, el panel de prueba procesa la consulta desde el cuadro de búsqueda Condiciones. Pero ahora está procesando la consulta desde el cuadro de consulta de prueba. El panel de prueba procesa solo una consulta a la vez.
 1. Si te gusta el resultado, actualiza el texto en el cuadro de búsqueda *Condiciones*. A continuación, haga clic en cualquier lugar de la página para actualizar los resultados en el panel de pruebas.
+1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
 
-#### Varias condiciones
+**Varias condiciones**
 
 1. Para generar una regla con varias condiciones, haga clic en **Agregar condición**.
 Una regla puede tener hasta diez condiciones. El operador lógico que une dos condiciones se basa en la configuración actual de *Match*. De manera predeterminada, *Match* es `All` y el operador lógico es `AND`.
@@ -75,26 +87,47 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
    En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas independientes que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activa con más frecuencia en la tienda que la otra.
 
 1. Para agregar otra condición, haga clic en **Agregar condición** y repita el proceso.
+1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
 
-### Clasificación inteligente
+>[!TAB Regla de categoría]
 
-La clasificación inteligente combina los comportamientos de los usuarios y las estadísticas del sitio para determinar la clasificación del producto.
-Los propietarios de tiendas pueden configurar los siguientes tipos de estrategias de clasificación:
+>[!IMPORTANT]
+>
+>Las reglas de categoría están en versión beta.
+
+Las reglas de categoría controlan cómo se ordenan los productos en **páginas de categoría**. Combinas **reglas de categoría** con **clasificación inteligente** (incluidas las señales controladas por IA) y **acciones manuales** como fijar, impulsar y enterrar, para que puedas revisar la detección, ejecutar promociones y alinear las páginas de categoría con tu estrategia sin depender de herramientas externas.
+
+1. En **Categorías**, seleccione la categoría o categorías a las que se debe aplicar la regla. Las categorías seleccionadas aparecen debajo del control para que pueda confirmar el ámbito.
+1. En la lista de categorías que aparecen, puede hacer clic en los tres puntos y seleccionar lo siguiente:
+
+   - **Eliminar** - Elimina la categoría de la regla.
+   - **Aplicar a subcategorías**: aplica la regla a subcategorías que aún no tienen definida una regla de comercialización activa.
+   - **Vista previa**: muestra cómo aparecería la página de la categoría en tu tienda.
+
+1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las reglas de búsqueda, con cualquier diferencia destacada.
+
+>[!ENDTABS]
+
+### Clasificación inteligente {#intelligent-ranking}
+
+La clasificación inteligente ordena los productos mediante **señales de comportamiento** y, cuando corresponde, IA. Se aplica a **reglas de búsqueda**, **todas las listas de productos** (reglas predeterminadas) y **reglas de categoría** (páginas de categoría). Para las **búsquedas** del comprador, la clasificación también pesa **relevancia textual** para la consulta; las **páginas de categoría** no utilizan el texto de consulta de la misma manera: el editor se centra en estrategias de comportamiento.
+
+Los propietarios de tiendas pueden definir estrategias como las siguientes. Las etiquetas exactas y las ventanas de tiempo coinciden con el editor de reglas y pueden diferir ligeramente por tipo de regla.
 
 ![Clasificaciones inteligentes](../../assets/rule-intelligent-ranking.png)
 
-- Más comprados: esto clasifica los productos según el total de compras por SKU en los 7 días anteriores.
-- Más añadidos al carro de compras: clasifica en orden del total de actividades &quot;Agregar al carro de compras&quot; en los 7 días anteriores.
-- Más visitados: Clasifica el total de vistas por SKU en los 7 días anteriores.
-- Recomendado para usted: utiliza el punto de datos `viewed-viewed` . Los compradores que vieron este SKU también vieron estos otros SKU.
-- Tendencia: revisa los eventos de vista de página de las últimas 72 horas para los eventos en segundo plano y 24 horas para los eventos en primer plano.
-- Ninguno: los productos se ordenan por relevancia.
+- **Más comprados** / **Más comprados** — Clasifica por frecuencia de compra por SKU en una ventana reciente (por ejemplo, los 7 días anteriores para contextos de búsqueda).
+- **Más agregados al carro** — Clasifica por actividad total de complemento al carro en una ventana reciente (por ejemplo, los 7 días anteriores para contextos de búsqueda).
+- **Más visitados**: clasifica por vistas por SKU en una ventana reciente (por ejemplo, los 7 días anteriores para contextos de búsqueda).
+- **Recomendado para usted** — Utiliza la señal `viewed-viewed`: los compradores que vieron este SKU también vieron otros SKU; admite pedidos personalizados en páginas de categoría donde estén disponibles.
+- **Tendencia**: Enfatiza la popularidad reciente (para búsquedas, vistas de página de las últimas 72 horas para eventos en segundo plano y 24 horas para eventos en primer plano).
+- **Ninguno**: para la búsqueda y los listados predeterminados, los productos se solicitan por **Relevancia**. Para **reglas de categoría**, utiliza el orden de comercialización predeterminado para la categoría cuando no elige otra estrategia inteligente.
 
-Seleccione el tipo de estrategia para la regla. La ventana **Probar la regla** muestra los resultados esperados.
+Seleccione la estrategia para la regla. El panel **Probar la regla** muestra los resultados esperados para las reglas orientadas a la búsqueda; **las reglas de categoría** utilizan la vista previa de categoría.
 
-#### Funcionamiento de la puntuación de clasificación inteligente
+#### Funcionamiento de la puntuación de clasificación inteligente (búsqueda)
 
-La clasificación inteligente determina el orden final del producto combinando dos factores clave: **relevancia textual** y **señales de comportamiento**. Comprender cómo interactúan estos factores le ayuda a establecer expectativas realistas en los resultados de búsqueda.
+Para **resultados de búsqueda** (y la consulta de prueba en el editor de reglas), la clasificación inteligente determina el orden final del producto combinando dos factores clave: **relevancia textual** y **señales de comportamiento**. Comprender cómo interactúan estos factores le ayuda a establecer expectativas realistas en los resultados de búsqueda.
 
 **Componentes de puntuación:**
 
@@ -122,18 +155,18 @@ Consulte [reglas de búsqueda](./best-practice.md#tips-to-optimize-search-rules)
 #### Advertencias
 
 - Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
-- Para asegurarse de que la clasificación inteligente funciona correctamente, asegúrese de que **Peso de búsqueda** de cualquier atributo que se utilice para la búsqueda o el filtrado (facetas) sea `5` o menos.
+- Para garantizar que la clasificación inteligente funcione correctamente en **search**, asegúrate de que **Search Weight** para cualquier atributo que se use para la búsqueda o el filtrado (facetas) sea `5` o menos. (Esta guía se aplica a la indexación de búsqueda, no a los flujos de comercialización solo de categoría).
 
 Para obtener información acerca de cómo establecer pesos de búsqueda, consulte la [API de metadatos](https://developer.adobe.com/commerce/services/reference/rest/).
 
-### Clasificación manual
+### Clasificación manual {#manual-ranking}
 
-**Clasificación manual** son acciones que modifican los resultados de búsqueda cuando se cumplen las condiciones definidas. Una sola regla puede tener hasta 25 eventos.
+**La clasificación manual** eventos ajusta el orden del producto para **resultados de búsqueda** (cuando se cumplen las condiciones de la regla), para **listados de productos predeterminados** y para **listados de páginas de categorías**. Una sola regla puede tener hasta 25 eventos.
 
-- Ampliación: mueve un producto a una posición superior en los resultados de búsqueda.
-- Entierro: mueve un SKU a una posición inferior en los resultados de búsqueda.
-- Fijar un producto: el producto se muestra en la &quot;posición&quot; seleccionada en la página.
-- Ocultar un producto: excluye un SKU de los resultados de búsqueda.
+- **Aumentar**: mueve un producto a una posición superior en el listado.
+- **Enterrar**: mueve un SKU a una posición inferior en el anuncio.
+- **Anclar un producto**: corrige un producto en la posición seleccionada del listado.
+- **Ocultar un producto**: excluye un SKU de los resultados (orientado a la búsqueda; confirme el comportamiento de las reglas de categoría en el editor).
 
 La forma más sencilla de anclar un producto es arrastrando y soltando.
 
@@ -143,9 +176,9 @@ También puede hacer clic en el icono de anclaje para anclar un producto a su ub
 
 >[!NOTE]
 >
->Solo puede anclar productos que aparezcan en los resultados de búsqueda para la consulta configurada y las condiciones de regla.
+>**Reglas de búsqueda**: solo puede anclar productos que aparezcan en los resultados de búsqueda para las condiciones de consulta y regla configuradas. Los productos deben estar indexados, ser visibles, estar en stock y cumplir todos los filtros de regla para poder anclarlos. Si un producto no aparece en la vista previa o en los resultados de la regla, el anclaje no tiene ningún efecto.
 >
->Los productos deben estar indexados, ser visibles, estar en stock y cumplir todos los filtros de regla para poder anclarlos. Si un producto no aparece en la vista previa o en los resultados de la regla, el anclaje no tiene ningún efecto.
+>**Orden predeterminado**: las posiciones manuales se aplican cuando el comprador usa la ordenación predeterminada: **Ordenar por: Más relevante** para la búsqueda o **relevancia** / **posición** para los listados de categoría. Si el comprador cambia la ordenación; por ejemplo, por nombre, comportamiento anclado, aumentado, enterrado u oculto, puede que ya no coincida con la vista previa.
 
 O los eventos se pueden configurar manualmente:
 
@@ -155,7 +188,7 @@ O los eventos se pueden configurar manualmente:
 
 1. Para varios eventos, elija cualquier otro evento que desee almacenar en déclencheur cuando se cumplan las condiciones.
 
-### Finalización de la regla
+### Finalización de la regla {#finalizing-the-rule}
 
 1. Examine los resultados de la regla en el panel de prueba.
 1. Si la regla tiene varias consultas, pruebe cada una de ellas que pueda verse afectada por la regla.
@@ -167,9 +200,9 @@ O los eventos se pueden configurar manualmente:
 
 >[!NOTE]
 >
->Las reglas y los productos clasificados manualmente se aplican a los resultados de búsqueda cuando se selecciona el orden predeterminado, &quot;Ordenar por: Más relevante&quot;. Si un comprador cambia el criterio de ordenación a algo como ordenar por nombre o precio, las reglas y las clasificaciones manuales ya no están en vigor.
+>Las reglas y los productos clasificados manualmente se aplican a los resultados de **search** cuando se selecciona el criterio de ordenación predeterminado, &quot;Ordenar por: Más relevante&quot;. Si un comprador cambia el criterio de ordenación a algo parecido a ordenar por nombre, las reglas y las clasificaciones manuales ya no estarán en vigor. Para los anuncios de **category**, el comportamiento de ordenación predeterminada se describe en [Clasificación manual](#manual-ranking).
 
-## Editar, ver y eliminar reglas
+## Editar, ver y eliminar reglas {#edit-view-and-delete-rules}
 
 Siga estas instrucciones para actualizar las propiedades de las reglas existentes. No se puede cambiar la vista de catálogo (ámbito) de una regla una vez creada; el ámbito se establece al crear la regla. Ver [Seleccionar vista de catálogo](workspace.md#select-catalog-view).
 
@@ -196,7 +229,7 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 1. En el área de trabajo *Reglas*, busque la regla en la cuadrícula que desea editar y haga clic en las opciones **Más** (...).
 1. Haga clic en **Eliminar**.
 
-## Descripciones de campos
+## Descripciones de campos {#field-descriptions}
 
 ### Condiciones (si)
 
@@ -221,21 +254,21 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 | Cualquiera | Cambia todos los operadores lógicos de la regla a `OR` y devuelve el conjunto de productos coincidentes. |
 | Todo | Cambia todos los operadores lógicos de la regla a `AND` y devuelve el conjunto de productos coincidentes. |
 
-### Clasificación manual
+### Eventos de clasificación manual
 
 | Evento | Descripción |
 |--- |--- |
-| Aumentar | Mueve un SKU o un rango de SKU a una posición superior en los resultados de búsqueda. Cada uno está marcado con un distintivo de vista previa &quot;potenciado&quot; en los resultados de búsqueda de la prueba. |
-| Enterrar | Mueve un SKU o un rango de SKU más abajo en los resultados de búsqueda. Cada uno está marcado con un distintivo de vista previa &quot;enterrado&quot; en los resultados de búsqueda de la prueba. |
-| Fijar un producto | Adjunta un único SKU a una posición específica en los resultados de búsqueda. El producto está marcado con un distintivo de vista previa &quot;anclado&quot; en los resultados de búsqueda de la prueba. |
-| Ocultar un producto | Excluye un SKU o un rango de SKU de los resultados de búsqueda. |
+| Aumentar | Sube un SKU o un rango de SKU en el anuncio (búsqueda o categoría). Cada uno está marcado con un distintivo de vista previa &quot;potenciado&quot; en los resultados de la prueba. |
+| Enterrar | Mueve un SKU o un rango de SKU a una posición inferior del anuncio. Cada una está marcada con un distintivo de vista previa &quot;enterrado&quot; en los resultados de la prueba. |
+| Fijar un producto | Adjunta un único SKU a una posición específica del anuncio. El producto está marcado con un distintivo de vista previa &quot;anclado&quot; en los resultados de la prueba. |
+| Ocultar un producto | Excluye un SKU o un rango de SKU de los resultados (orientado a la búsqueda; confirme las reglas de categoría en el editor). |
 
 ### Detalles
 
 | Campo | Descripción |
 |--- |--- |
 | Nombre | Nombre de la regla. Los nombres de las reglas deben ser únicos. |
-| Tipo de regla | Predeterminado o Consulta. El valor predeterminado se aplica a todas las reglas, a menos que se defina una regla de consulta más específica. |
+| Tipo de regla | **Predeterminado** (todas las listas de productos), **Consulta** (condiciones de búsqueda específicas) o **Categoría** (páginas de categoría), según **La regla se aplica a**. |
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |
 | Fecha de finalización | La fecha de finalización de la regla, si está programada. |
 | Descripción | Breve descripción de la regla. |

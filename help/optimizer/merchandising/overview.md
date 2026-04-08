@@ -2,11 +2,11 @@
 title: Resumen de comercialización
 description: Obtenga información acerca de las características de comercialización en  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ La detección de productos proporciona a los comerciantes herramientas potentes 
 
 Con la detección de productos, puede:
 
-* **Configure [facetas](./facets/overview.md), [reglas de comercialización](./rules/overview.md) y [sinónimos](./synonyms/overview.md)** para guiar a los compradores hacia los productos más relevantes con fricción mínima.
+* **Configure [facetas](./facets/overview.md), [reglas de categoría y búsqueda de comercialización](./rules/overview.md) y [sinónimos](./synonyms/overview.md)** para guiar a los compradores hacia los productos más relevantes con fricción mínima.
 * **Cree experiencias de búsqueda intuitivas y orientadas a objetivos** que reflejen su estrategia de comercialización y sus prioridades de temporada.
 * **Use faceteo dinámico impulsado por IA y cambio de clasificación de resultados** para adaptar los resultados de búsqueda en tiempo real en función del comportamiento del comprador, lo que aumenta la participación y las ventas.
 * **Asegúrese de que los elementos promocionales y de alta prioridad aparezcan de forma eficaz** para alinear los resultados de búsqueda con los objetivos empresariales.

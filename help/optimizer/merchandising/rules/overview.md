@@ -1,34 +1,45 @@
 ---
 title: Reglas de comercialización
-description: '[!DNL Adobe Commerce Optimizer] reglas de comercialización combinan lógica con acciones para dar forma a la experiencia de compra.'
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+description: '[!DNL Adobe Commerce Optimizer] reglas de comercialización combinan lógica con acciones para dar forma a los resultados de búsqueda, listados de productos predeterminados y páginas de categorías.'
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
 
 # Reglas de comercialización
 
-Las reglas de comercialización se refieren a un conjunto de reglas que combinan lógica con acciones para dar forma a la experiencia de búsqueda de un comprador en su tienda. Puede utilizar reglas de comercialización para impulsar, enterrar, fijar u ocultar productos con el fin de calibrar los resultados de búsqueda en tiempo real para lograr los objetivos de su empresa.
+Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** (**Todos los listados de productos**) y en **páginas de categoría** ([reglas de categoría](#category-rules) están en versión beta). Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales.
 
-Cada regla tiene tres componentes principales:
+Cada **regla de búsqueda** tiene tres componentes principales:
 
-- Condiciones: las condiciones que almacenan en déclencheur una acción.
-- Eventos: las acciones que se realizan cuando se cumplen las condiciones.
-- Detalles: nombre de la regla, y marco temporal y descripción opcionales.
+- **Condiciones**: requisitos basados en consultas que requieren una acción cuando la búsqueda del comprador coincide.
+- **Eventos**: las acciones que tienen lugar cuando se cumplen las condiciones (clasificación manual y eventos relacionados).
+- **Detalles**: el nombre de la regla, el lapso de tiempo y la descripción opcionales.
 
-Puede combinar varias condiciones y acciones, y programar una regla para que esté activa durante un periodo. También puede establecer una regla predeterminada que se aplique incluso cuando no se haya definido ningún término de búsqueda.
+**Las reglas de categoría** utilizan **selección de categoría** en lugar de las condiciones de consulta de búsqueda; la clasificación inteligente y la clasificación manual funcionan de la misma manera que para la búsqueda, con diferencias indicadas en [Crear y administrar reglas](add.md).
+
+Puede combinar varias condiciones y acciones para las reglas de búsqueda y programar cualquier regla para que esté activa durante un periodo. También puede establecer una **regla predeterminada** (**Todos los listados de productos**) que se aplique cuando no se aplique ninguna regla de categoría o búsqueda más específica.
+
+## Reglas de categoría {#category-rules}
+
+>[!IMPORTANT]
+>
+>Las reglas de categoría están en versión beta.
+
+**Reglas de categoría** controlan el pedido de productos en **páginas de categoría**. Selecciona una o más categorías y, a continuación, aplica una clasificación inteligente (por ejemplo, más visitados, tendencias) y acciones manuales como anclar, aumentar y enterrar. No utilizan condiciones de consulta de búsqueda. Para ver los pasos de configuración, los tipos de reglas y cómo se aplica la clasificación en la categoría en comparación con la búsqueda, consulte [Crear y administrar reglas](add.md).
 
 ## Requisitos
 
-Una regla de búsqueda simple puede tener una sola condición y un solo evento, mientras que una regla compleja puede tener hasta diez condiciones que almacenen en déclencheur hasta 25 eventos.
+Una **regla de búsqueda** simple puede tener una sola condición y un solo evento, mientras que una regla compleja puede tener hasta diez condiciones que almacenen en déclencheur hasta 25 eventos. **Las reglas de categoría** siguen los mismos límites de evento para la clasificación manual; no utilizan condiciones de consulta.
+
 Las reglas pueden tener:
 
-- Hasta diez condiciones
-- Hasta 25 eventos
+- Hasta diez **condiciones** (solo reglas de búsqueda)
+- Hasta 25 **eventos**
 
 El texto de la consulta puede contener:
 
@@ -50,9 +61,11 @@ Al componer una regla compleja, puede resultar útil escribirla con sangría par
 
 ## Regla predeterminada
 
-Puede establecer una regla predeterminada que se aplique cuando no se proporciona ningún término de búsqueda o cuando no se puede aplicar ninguna otra regla de búsqueda. Si establece la regla predeterminada en Más compradas, todas las consultas tendrán ese tipo de clasificación de forma predeterminada, a menos que se sustituyan por un término de búsqueda más específico. No se puede establecer ningún término de búsqueda para la regla predeterminada.
+Puede establecer una regla predeterminada (**Todos los listados de productos**) que se aplique cuando no se proporcione ningún término de búsqueda o cuando no se pueda aplicar ninguna otra regla de búsqueda. Si establece la regla predeterminada en Más compradas, las consultas predeterminadas corresponden a ese tipo de clasificación a menos que se las sustituya por un término de búsqueda más específico. No se puede establecer ningún término de búsqueda para la regla predeterminada. **Las reglas de categoría** son independientes: sólo se aplican a las categorías que seleccione y no reemplazan la regla de listado predeterminada.
 
 ## Orden de prioridad con varias reglas
+
+Lo siguiente se aplica a **reglas de búsqueda** y a cómo interactúan para una búsqueda determinada. Se aplican **reglas de categoría** por categoría; consulte [Crear y administrar reglas](add.md#category-rules) para ver cómo se ajustan a las reglas predeterminadas y de búsqueda.
 
 Solo se aplica una regla de búsqueda a un término de búsqueda al mismo tiempo.
 Si se encuentran varias reglas aplicables a una frase de búsqueda, se aplican todas estas reglas. Si hay un conflicto entre dos reglas (`rule 1` que aumenta sku1 pero `rule 2` oculta el mismo SKU), entonces la regla aplicada más recientemente (`rule 2`) tiene prioridad.
