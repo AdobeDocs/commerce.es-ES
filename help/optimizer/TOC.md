@@ -4,9 +4,9 @@ user-guide-description: Documentación y recursos para  [!DNL Adobe Commerce Opt
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: e5cb31d0daec30b78cebf4173b72a556e7a92dd2
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '107'
 ht-degree: 11%
 
 ---
@@ -61,6 +61,8 @@ ht-degree: 11%
 - [Configuración](settings.md)
 - Caso de uso {#use-case}
    - [Caso de uso completo de administración de catálogos y tiendas](./use-case/admin-use-case.md)
+- Sitio de lanzamiento {#launch}
+   - [Iniciar lista de comprobación](./launch/launch-checklist.md)
 - Recursos para desarrolladores {#developer}
    - [Referencias de la API y la Guía del desarrollador](https://developer.adobe.com/commerce/services/optimizer/)
    - [Conector de Salesforce Commerce](./developer/salesforce-connector.md)
