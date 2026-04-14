@@ -139,7 +139,7 @@ Una vez abierta la aplicación, cambie fácilmente entre entornos como zona prot
 
 Vea los detalles de la instancia haciendo clic en el icono de información junto al nombre de la instancia.
 
-![[!DNL Adobe Commerce Optimizer] panel de detalles de instancia que muestra los extremos y el identificador de instancia ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![[!DNL Adobe Commerce Optimizer] panel de detalles de instancia que muestra los extremos y el identificador de instancia &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Tenga en cuenta la siguiente información clave:
 
