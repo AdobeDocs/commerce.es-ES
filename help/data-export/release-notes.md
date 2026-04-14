@@ -36,7 +36,7 @@ _13 de abril de 2026_
 - Se ha corregido un problema en el cual los productos eliminados no se eliminaban correctamente de los servicios de Commerce conectados si el servicio de exportación no estaba disponible durante la eliminación. Las operaciones de reintento y resincronización ahora garantizan que los productos eliminados se reflejen correctamente en el SaaS. <!--MDEE-1319-->
 - Ahora, las entidades de catálogo (productos y categorías) se pueden exportar a los servicios conectados de Commerce aunque falten valores de atributo en la vista del almacén de administración. Esto mejora la compatibilidad con las extensiones de terceros y reduce los errores de exportación debido a la falta de valores predeterminados. <!--MDEE-1333-->
 
-![Corrección](../assets/fix.svg) Se ha resuelto un error en la página Estado de sincronización de fuentes de datos que se podía producir cuando los registros de fuentes contenían datos inesperados o faltaban. El sistema ahora gestiona correctamente estos casos, mejorando la estabilidad y evitando bloqueos. Si está usando el conector de Adobe Commerce Optimizer para sincronizar datos de Adobe Commerce a Adobe Commerce Optimizer, actualice a [versión 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) o posterior del conector de ACO para obtener la corrección.<!--MDEE-1327-->
+![Corrección](../assets/fix.svg) Se ha resuelto un error en la página Estado de sincronización de fuentes de datos que se podía producir cuando los registros de fuentes contenían datos inesperados o faltaban. El sistema ahora gestiona correctamente estos casos, mejorando la estabilidad y evitando bloqueos. Si está usando el conector de Adobe Commerce Optimizer para sincronizar datos de Adobe Commerce a Adobe Commerce Optimizer, actualice a [versión 1.0.11](https://experienceleague.adobe.com/es/docs/commerce/aco-optimizer-connector/release-notes) o posterior del conector de ACO para obtener la corrección.<!--MDEE-1327-->
 
 ### Versión 103.4.21
 
@@ -62,7 +62,7 @@ _6 de febrero de 2026_
 
 _2 de febrero de 2026_
 
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los lotes de elementos podían superar el límite permitido durante las actualizaciones, lo que provocaba `items_limit_exceeded` errores al sincronizar datos con [servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los lotes de elementos podían superar el límite permitido durante las actualizaciones, lo que provocaba `items_limit_exceeded` errores al sincronizar datos con [servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 
 ![Corrección](../assets/fix.svg): se ha mejorado la confiabilidad de las exportaciones de datos de productos al agregar lógica para registrar los elementos con errores durante la recopilación de opciones de productos del paquete. <!--CCSAAS-4458-->
 
@@ -90,7 +90,7 @@ _24 de noviembre de 2025_
 
 _22 de octubre de 2025_
 
-![Nuevo](../assets/new.svg) Se agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de Adobe Commerce a servicios conectados (Servicio de catálogo, Live Search y Recomendaciones de productos). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) en la *Guía de administración de Commerce*. <!--MDEE-954-->
+![Nuevo](../assets/new.svg) Se agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de Adobe Commerce a servicios conectados (Servicio de catálogo, Live Search y Recomendaciones de productos). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=es) en la *Guía de administración de Commerce*. <!--MDEE-954-->
 
 ### Versión 103.4.14
 
@@ -116,7 +116,7 @@ _18 de septiembre de 2025_
 
 _29 de agosto de 2025_
 
-![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 Se ha agregado compatibilidad con atributos de producto adicionales para incluir datos de clase de impuestos, juego de atributos e inventario de configuraciones de producto de Commerce en la fuente de productos. Los clientes que deseen incluir estos atributos en las fuentes de exportación de productos deben agregar el módulo Atributos de producto adicionales a su proyecto de Adobe Commerce. Ver [Agregar clase de impuestos, conjunto de atributos y atributos de inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Corrección](../assets/fix.svg) ha resuelto un problema que provocaba una sincronización incorrecta de las actualizaciones de productos eliminadas si se producía un error durante un índice de productos completo. Ahora, todas las eliminaciones de productos se sincronizan correctamente incluso si se produce un error durante el proceso de indexación. <!--MDEE-1144-->
