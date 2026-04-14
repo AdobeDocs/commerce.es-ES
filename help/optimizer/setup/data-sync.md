@@ -3,11 +3,11 @@ title: Sincronización de datos
 description: Revise los datos del catálogo que se están sincronizando desde la fuente de datos de Commerce en  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 604f46a65b2bfa84e1be07f410a4e36051eb1a29
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -54,5 +54,10 @@ Si no ve productos específicos en la página **Sincronización de datos**, debe
 
 ## Monitorización del estado de sincronización de datos
 
-En el caso de los proyectos que usan Adobe Commerce como fuente de datos de flujo ascendente, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la [página de estado de sincronización de fuentes de datos](../../data-export/data-synchronization.md) en el administrador de Commerce.
+En los proyectos que usan Adobe Commerce como fuente de datos de flujo ascendente a través de Commerce Optimizer Connector, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la [página de estado de sincronización de fuentes de datos](../../data-export/data-synchronization.md) en el administrador de Commerce.
+
+## Temas relacionados
+
+- [Conector de Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
+
 

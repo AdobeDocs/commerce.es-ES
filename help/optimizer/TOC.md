@@ -4,17 +4,18 @@ user-guide-description: Documentación y recursos para  [!DNL Adobe Commerce Opt
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
+source-git-commit: fccfd5b75419e2f04537a48098591b53220725a5
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 11%
+source-wordcount: '108'
+ht-degree: 12%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
 - [¿Qué es  [!DNL Adobe Commerce Optimizer]?](overview.md)
-- [Primeros pasos](get-started.md)
+- [Introducción](get-started.md)
+- [Integraciones](./integrations/integrations-overview.md)
 - [Administración de usuarios e identidades](user-management.md)
 - [Responsabilidad compartida](shared-responsibility.md)
 - [Límites y límites](boundaries-limits.md)
@@ -52,7 +53,7 @@ ht-degree: 11%
    - [Capas de catálogo](./setup/catalog-layer.md)
    - [Políticas](./setup/policies.md)
    - [Libros de precios](./setup/pricebooks.md)
-   - [Visuales del producto](./setup/product-visuals.md)
+   - [Imágenes del producto](./setup/product-visuals.md)
    - [Sincronización de datos](./setup/data-sync.md)
    - Eventos {#events}
       - [Información general](./setup/events/overview.md)
@@ -63,6 +64,6 @@ ht-degree: 11%
 - Sitio de lanzamiento {#launch}
    - [Iniciar lista de comprobación](./launch/launch-checklist.md)
 - Recursos para desarrolladores {#developer}
-   - [Referencias de la API y la Guía del desarrollador](https://developer.adobe.com/commerce/services/optimizer/)
+   - [Guía para desarrolladores y referencias de API](https://developer.adobe.com/commerce/services/optimizer/)
    - [Conector de Salesforce Commerce](./developer/salesforce-connector.md)
 - [Notas de la versión](release-notes.md)
