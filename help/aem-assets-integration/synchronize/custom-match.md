@@ -3,16 +3,16 @@ title: Coincidencia automática personalizada
 description: Descubra cómo la coincidencia automática personalizada es especialmente útil para los comerciantes con una lógica de coincidencia compleja o para aquellos que dependen de un sistema de terceros que no puede rellenar metadatos en los AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
+source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
 # Coincidencia automática personalizada
 
-Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
+Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
 
 ## Configurar la coincidencia automática personalizada
 
@@ -114,7 +114,7 @@ Puede descargar el archivo de `workspace.json` desde [Adobe Developer Console](h
 
 ## Extremos de API de emparejador personalizados
 
-Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
+Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
 
 * **Extremo de recurso de App Builder a dirección URL del producto**
 * Extremo de **App Builder product to asset URL**
@@ -171,7 +171,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | Parámetro | Tipo de datos | Descripción |
 | --- | --- | --- |
 | `assetId` | Cadena | Representa el ID de recurso actualizado. |
-| `eventData` | Cadena | Devuelve la carga útil de datos asociada al ID de recurso. |
+| `eventData` | Objeto | Carga útil de evento asociada al recurso (por ejemplo, metadatos de recurso que el usuario coincidente lea de `eventData.assetMetadata`). |
 
 **Respuesta**
 
@@ -246,8 +246,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 | Parámetro | Tipo de datos | Descripción |
 | --- | --- | --- |
-| `productSKU` | Cadena | Representa el SKU del producto actualizado. |
-| `eventData` | Cadena | Devuelve la carga útil de datos asociada al SKU del producto. |
+| `productSku` | Cadena | Representa el SKU del producto actualizado. |
+| `eventData` | Objeto | Carga útil de evento asociada con el producto (por ejemplo, campos que utilice el usuario coincidente del evento entrante). |
 
 **Respuesta**
 
@@ -283,7 +283,7 @@ El parámetro `asset_matches` contiene los atributos siguientes:
 | Atributo | Tipo de datos | Descripción |
 | --- | --- | --- |
 | `asset_id` | Cadena | ID del recurso. |
-| `asset_roles` | Matriz | Funciones de los recursos. Utiliza [funciones de recurso de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) compatibles como `thumbnail`, `image`, `small_image` y `swatch_image`. |
+| `asset_roles` | Matriz | Funciones de los recursos. Utiliza [funciones de recurso de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) compatibles como `thumbnail`, `image`, `small_image` y `swatch_image`. |
 | `asset_format` | Cadena | El formato del recurso. Los valores posibles son `image` y `video`. |
 | `asset_position` | Número | La posición del recurso en la galería de productos. |
 
