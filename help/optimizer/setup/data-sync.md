@@ -3,7 +3,7 @@ title: Sincronización de datos
 description: Revise los datos del catálogo que se están sincronizando desde la fuente de datos de Commerce en  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 source-git-commit: 604f46a65b2bfa84e1be07f410a4e36051eb1a29
 workflow-type: tm+mt
