@@ -35,7 +35,7 @@ La parte de Adobe Commerce de la arquitectura incluye alojar la búsqueda *Admin
 
 Con un enfoque en la velocidad, relevancia y facilidad de uso, [!DNL Live Search] cambia las reglas del juego tanto para los compradores como para los comerciantes. Vea el siguiente vídeo y haga un recorrido rápido por [!DNL Live Search] desde la tienda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452572?captions=spa&learn=on)
 
 Para ver un vídeo más detallado sobre cómo usar y configurar Live Search, consulte el tema [Demostración completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
