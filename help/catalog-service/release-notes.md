@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: La información de la versión más reciente de  [!DNL Catalog Service]  para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: 20ef635da00fb12b2efd5c1397f3d2de109d47fe
+source-git-commit: f0bc0ef5fce33b2a494499b3c4ce6746ef0867d8
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2412'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,21 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 
 ## Servicio de catálogo de tienda
 
+### Versión v1.50
+
+_7 de abril de 2026_
+
+![Nuevo](../assets/new.svg): la consulta `categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)` ahora tiene el parámetro de entrada de familia como opcional. Esto permite una recuperación de categorías más flexible al permitir el acceso mediante slug sin dependencia de un parámetro de familia específico. Esta consulta solo está disponible para [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
+
 ### Versión v1.48
 
-_19 de febrero de 2025_
+_19 de febrero de 2026_
 
 ![Nuevo](../assets/new.svg): la consulta `categoryTree` de la API de GraphQL ahora devuelve descripciones de categorías, imágenes y metaetiquetas SEO. Esta actualización ofrece los datos que los desarrolladores de tiendas necesitan para mostrar imágenes de categorías y mejorar la optimización de los motores de búsqueda con metatítulos, descripciones y palabras clave adecuados. Solo se admite en implementaciones de Commerce que usan el [modelo de datos de catálogo maquetable](https://developer.adobe.com/commerce/services/optimizer/) para tiendas sin encabezado&lt;<!--DATA-6933-->
 
 ### Versión v1.47
 
-_12 de febrero de 2025_
+_12 de febrero de 2026_
 
 ![Nuevo](../assets/new.svg) El servicio API ahora admite el tipo `CategoryProductView`, lo que permite obtener vistas y consultas mejoradas de productos por categoría. Esta actualización permite a los desarrolladores recuperar y filtrar datos de producto de forma eficaz en función de la categoría, lo que mejora la flexibilidad y el rendimiento para casos de uso impulsados por categoría. Para obtener más información, consulte [Implementar categorías en la tienda](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/). Solo se admite en implementaciones de Commerce que usan el [modelo de datos de catálogo maquetable](https://developer.adobe.com/commerce/services/optimizer/) para tiendas sin encabezado<!--DATA-6949-->
 
@@ -111,7 +117,7 @@ _3 de noviembre de 2025_
 - Controlar las anulaciones de nivel de campo con máscaras de capa
 - Compatibilidad con capas de contenido premium, estacionales y optimizadas para móviles
 
-  Las capas se recuperan mediante la consulta `products` existente, se aplican del lado del servidor desde los encabezados de solicitud y no requieren cambios de esquema. Consulte [Capa de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-layer) en la _Guía de Adobe Commerce Optimizer_.
+  Las capas se recuperan mediante la consulta `products` existente, se aplican del lado del servidor desde los encabezados de solicitud y no requieren cambios de esquema. Consulte [Capa de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) en la _Guía de Adobe Commerce Optimizer_.
 
 ![Corregir](../assets/fix.svg) Los productos agrupados ahora se pueden consultar cuando el producto principal no tiene precios; los productos secundarios devuelven sus propias funciones de visibilidad.<!--DATA-6779-->
 
@@ -222,7 +228,7 @@ _15 de julio de 2025_
 
 _20 de junio de 2025_
 
-![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/pricebooks).
+![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nuevas](../assets/new.svg) **claves que no distinguen entre mayúsculas y minúsculas**: las búsquedas de claves en las consultas ahora no distinguen entre mayúsculas y minúsculas, lo que reduce los errores de mayúsculas y minúsculas. <!--DATA-6494, DCAT-2495-->
 
@@ -351,7 +357,7 @@ _23 de mayo de 2024_
 
 ![Corrección](../assets/fix.svg) <!--DATA-5033-->El indicador `InStock` de los valores de opción ahora respeta el estado `enabled` de ámbito de la variante del producto.
 
-![Corrección](../assets/fix.svg) <!--DATA-5888-->Se ha agregado compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../landing/catalog-sync.md#command-line-interface) para aplicar las actualizaciones.
+![Corrección](../assets/fix.svg) <!--DATA-5888-->Se ha agregado compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../landing/catalog-sync.md#command-line-interface) para aplicar las actualizaciones.
 
 #### Limitaciones conocidas
 
@@ -385,7 +391,7 @@ _22 de febrero de 2024_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
+![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
 
 ### Versión v1.16
 
