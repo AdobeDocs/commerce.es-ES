@@ -40,14 +40,14 @@ En esta vista de Inicio, puedes acceder a _Inicio_, _Obtener información_ sobre
 
 ## Inicio
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 
 | Campo | Descripción |
 |---|---|
 | [!UICONTROL Orders] | Estos informes le permiten ver rápidamente el estado de pago de sus pedidos e identificar cualquier problema potencial. |
 | [!UICONTROL Payouts] | Los informes de pagos muestran información completa sobre los pagos de un vistazo, lo que permite una total transparencia sobre el importe del pago, el volumen procesado y la creación de informes detallados sobre las transacciones para la reconciliación financiera. |
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."}
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."}
 
 | Campo | Descripción |
 |---|---|

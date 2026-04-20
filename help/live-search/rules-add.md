@@ -16,7 +16,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 ## Añadir una regla
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
-1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la regla.
+1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplica la regla.
 1. Haga clic en el área de trabajo **Buscar comercialización**.
 1. Haga clic en **Agregar regla** para iniciar el editor de reglas.
 
