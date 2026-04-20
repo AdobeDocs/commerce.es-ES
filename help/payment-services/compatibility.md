@@ -44,7 +44,7 @@ Para usar [!DNL Payment Services], primero tendrá que conectar su instancia de 
 
 ### ¿Qué opción de [!DNL Payment Services] es adecuada para usted?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
+>[!VIDEO](https://video.tv.adobe.com/v/3447921?captions=spa)
 
 Consulte [Connect](connect.md) para obtener más información sobre cómo configurar la extensión de [!DNL Payment Services].
 
