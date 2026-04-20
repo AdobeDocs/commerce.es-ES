@@ -1,9 +1,9 @@
 ---
 title: Reglas de comercialización
 description: '[!DNL Adobe Commerce Optimizer] reglas de comercialización combinan lógica con acciones para dar forma a los resultados de búsqueda, listados de productos predeterminados y páginas de categorías.'
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Puede establecer una regla predeterminada (**Todos los listados de productos**) 
 
 ## Orden de prioridad con varias reglas
 
-Lo siguiente se aplica a **reglas de búsqueda** y a cómo interactúan para una búsqueda determinada. Se aplican **reglas de categoría** por categoría; consulte [Crear y administrar reglas](add.md#category-rules) para ver cómo se ajustan a las reglas predeterminadas y de búsqueda.
+Lo siguiente se aplica a **reglas de búsqueda** y a cómo interactúan para una búsqueda determinada. Se aplican **reglas de categoría** por categoría; consulte [Crear y administrar reglas](add.md) para ver cómo se ajustan a las reglas predeterminadas y de búsqueda.
 
 Solo se aplica una regla de búsqueda a un término de búsqueda al mismo tiempo.
 Si se encuentran varias reglas aplicables a una frase de búsqueda, se aplican todas estas reglas. Si hay un conflicto entre dos reglas (`rule 1` que aumenta sku1 pero `rule 2` oculta el mismo SKU), entonces la regla aplicada más recientemente (`rule 2`) tiene prioridad.

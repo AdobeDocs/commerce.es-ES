@@ -3,7 +3,7 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Hay diferentes comportamientos para cada método de pago según dónde se encuen
 
 [!DNL Payment Services] proporciona las opciones de pago y los flujos de incorporación de **Advanced** (totalmente compatible) y **Standard** (Pago y envío exprés), según el país en el que opere.
 
-* **Opciones avanzadas** - Todas las [opciones de pagos disponibles](../payment-services/payments-options.md) están disponibles para los [países con soporte total](../payment-services/introduction.md#availability) actuales. Durante la incorporación para habilitar los pagos activos, selecciona la [opción de incorporación avanzada](../payment-services/production.md#advanced-onboarding).
+* **Opciones avanzadas** - Todas las [opciones de pagos disponibles](../payment-services/payments-options.md) están disponibles para los [países con soporte total](compatibility.md#standard-vs-advanced-payment-services-experience) actuales. Durante la incorporación para habilitar los pagos activos, selecciona la [opción de incorporación avanzada](../payment-services/production.md#advanced-onboarding).
 
 * **Estándar** - Un subconjunto de opciones de pagos (Pago y envío exprés)—tarjetas de crédito y débito de PayPal—está disponible para otros países compatibles. [Los campos de tarjeta de crédito](#credit-card-fields) y [Apple Pay](#apple-pay-button) no están disponibles para esta opción de incorporación. Durante la incorporación para habilitar los pagos activos, selecciona la [opción de incorporación estándar](../payment-services/production.md#standard-onboarding).
 
@@ -127,11 +127,11 @@ El botón [!DNL Pay Later] está visible desde las vistas de página de producto
 
 Consulta información sobre [Ofertas de pago posterior](https://developer.paypal.com/docs/checkout/pay-later/us/) en la documentación para desarrolladores de PayPal. Utilice la lista desplegable **País o región** para seleccionar una región de interés.
 
-Obtenga información sobre cómo deshabilitar o habilitar la mensajería de [!DNL Pay Later] al actualizar la configuración de [Configuración](configure-admin.md#pay-later-button).
+Obtenga información sobre cómo deshabilitar o habilitar la mensajería de [!DNL Pay Later] al actualizar la configuración de [Configuración](configure-admin.md#paypal-payment-buttons).
 
 ##### Opcional. Configurar la mensajería de pago posterior
 
-**Configurar la mensajería** para [Pagar más tarde](configure-admin.md#pay-later-button) permite a los comerciantes modificar los estilos predeterminados para esta opción de pago. Si establece **[!UICONTROL Display Pay Later Message]** en `Yes` en su configuración de [Settings](configure-admin.md#pay-later-button), se muestra un botón modal de **[!UICONTROL Configure Messaging]** para que pueda establecer los estilos de **[!UICONTROL PayPal Pay Later messaging]**.
+**Configurar la mensajería** para [Pagar más tarde](configure-admin.md#paypal-payment-buttons) permite a los comerciantes modificar los estilos predeterminados para esta opción de pago. Si establece **[!UICONTROL Display Pay Later Message]** en `Yes` en su configuración de [Settings](configure-admin.md#paypal-payment-buttons), se muestra un botón modal de **[!UICONTROL Configure Messaging]** para que pueda establecer los estilos de **[!UICONTROL PayPal Pay Later messaging]**.
 
 ![Mensajes de pago posterior](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -157,16 +157,16 @@ Esto le permite:
 
 Para **capturar pagos con _solo_ botones de pago de PayPal (_no_ la opción de pago con tarjeta de crédito de PayPal)**:
 
-1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
-1. [Configura los botones de pago de PayPal que desees](configure-admin.md#payment-buttons) en Configuración.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#general-configuration).
+1. [Configura los botones de pago de PayPal que desees](configure-admin.md#paypal-payment-buttons) en Configuración.
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**._[!UICONTROL Payment buttons]_
 
 Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pago de PayPal**:
 
-1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#enable-payment-services).
-1. [Configurar los botones de pago de PayPal](configure-admin.md#payment-buttons) deseados.
-1. Desactive _1&rbrace; la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desactiva _1&rbrace; la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_&#x200B;cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=es#payments)
+1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#general-configuration).
+1. [Configurar los botones de pago de PayPal](configure-admin.md#paypal-payment-buttons) deseados.
+1. Desactive _1} la opción_ en la sección **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desactiva _1} la opción_ de la sección **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** y usa tu _[!UICONTROL Credit card fields]_cuenta de proveedor de tarjeta de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Métodos de pago locales
 

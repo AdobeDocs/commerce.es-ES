@@ -3,9 +3,9 @@ title: Caso de uso completo del administrador de catálogos y tiendas
 description: Aprenda a usar [!DNL Adobe Commerce Optimizer] para administrar su catálogo mediante vistas de catálogo y directivas, y a configurar su tienda en función de la configuración de su catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 0%
@@ -55,7 +55,7 @@ En este caso de uso, está trabajando con lo siguiente:
 
 >[!NOTE]
 >
-> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=es) en la documentación de Adobe Commerce Storefront.
+> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) en la documentación de Adobe Commerce Storefront.
 
 ### ‌Lecciones clave
 
@@ -110,7 +110,7 @@ En última instancia, Carvelo tiene dos objetivos principales:
 
 ## &#x200B;1. Acceder a la instancia [!DNL Adobe Commerce Optimizer]
 
-Vaya a la dirección URL de la aplicación de Commerce Optimizer preconfigurada con los datos de ejemplo. Puede encontrar la URL en el Administrador de Commerce Cloud a partir de los detalles de la instancia del proyecto de Commerce Optimizer u obtenerla del administrador del sistema. (Consulte [Acceso a una instancia](../get-started.md#access-an-instance).)
+Vaya a la dirección URL de la aplicación de Commerce Optimizer preconfigurada con los datos de ejemplo. Puede encontrar la URL en el Administrador de Commerce Cloud a partir de los detalles de la instancia del proyecto de Commerce Optimizer u obtenerla del administrador del sistema. (Consulte [Acceso a una instancia](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
 Cuando inicie [!DNL Adobe Commerce Optimizer], verá lo siguiente:
 
@@ -157,7 +157,7 @@ Con [!DNL Adobe Commerce Optimizer], el administrador de comercio:
 1. Cree una nueva póliza llamada *Celport part categories* para que Celport venda solamente piezas de frenos y suspensión.
 1. Cree una nueva vista de catálogo para la tienda de Celport.
 
-   Esta vista del catálogo usa las *categorías de piezas de Celport* de la directiva recién creada y las marcas *East Coast Inc* para garantizar que Celport pueda vender solamente las marcas Bolt y Cruz como parte del acuerdo con East Coast Inc. La vista del catálogo de Celport usa el libro de precios `east_coast_inc` para admitir las programaciones de precios de productos que se alinean con los acuerdos de licencia de marca.
+   Esta vista del catálogo usa las *categorías de partes de Celport* de la póliza recién creada y las marcas *East Coast Inc* para asegurar que Celport pueda vender solamente las marcas Bolt y Cruz como parte del acuerdo con East Coast Inc. La vista del catálogo de Celport usa el catálogo de precios de `east_coast_inc` para admitir programaciones de precios de productos que se alineen con los acuerdos de licencia de marca.
 1. Actualice la configuración de la tienda de comercio para utilizar los datos de la vista de catálogo de Celport que ha creado.
 
 Al final de esta sección, Celport estará lista para vender los productos de Carvelo.
@@ -257,7 +257,7 @@ Después de crear la vista de catálogo de Celport y las políticas asociadas, e
 
 ## &#x200B;3. Actualiza tu tienda
 
-La parte final de este tutorial implica actualizar la tienda que [ya has creado](#prerequisite) para enviar datos al nuevo catálogo de Celport. En esta sección, reemplace el ID de vista de catálogo del archivo de configuración de la tienda por el ID de vista de catálogo de Celport.
+La parte final de este tutorial implica actualizar la tienda que [ya has creado](#prerequisites) para enviar datos al nuevo catálogo de Celport. En esta sección, reemplace el ID de vista de catálogo del archivo de configuración de la tienda por el ID de vista de catálogo de Celport.
 
 1. En su entorno de desarrollo local, abra la carpeta donde clonó el repositorio de GitHub con los archivos de configuración de las plantillas de tienda.
 
@@ -447,4 +447,4 @@ Para continuar aprendiendo acerca de [!DNL Adobe Commerce Optimizer]:
 - Obtenga información acerca de [configuraciones de directivas avanzadas](../setup/policies.md)
 - Configurar [vistas de catálogo adicionales](../setup/catalog-view.md) para otros concesionarios
 - Revise la [documentación de API](https://developer.adobe.com/commerce/services/optimizer/) para la administración programática del catálogo
-- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)
+- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

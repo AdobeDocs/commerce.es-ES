@@ -2,8 +2,8 @@
 title: Conector de Adobe Commerce Optimizer
 description: Obtenga información sobre cómo conectar los datos de su proyecto de nube o local de Commerce a Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 11bb5df2488a017065db44504f35612fe54e284c
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Connector permite varios flujos de trabajo clave:
 
 * **Exportar los datos del catálogo de Commerce a[!DNL Adobe Commerce Optimizer]**: los datos del libro de precios y precios se exportan a nivel del sitio web y del grupo de clientes. Los datos de atributos de productos y productos se exportan en el nivel `store view`. De forma predeterminada, la sincronización de datos del catálogo está habilitada para todos los ámbitos de Commerce (sitios web y vistas de tiendas).
 
-  Para habilitar este flujo de trabajo, instale la extensión PHP `adobe-commerce/commerce-data-export-aco-adapter`, revise la configuración del exportador y, a continuación, habilite la integración entre Commerce y Commerce Optimizer desde el administrador de Commerce. Para obtener instrucciones detalladas, consulte [Introducción](#get-started).
+  Para habilitar este flujo de trabajo, instale la extensión PHP `adobe-commerce/commerce-data-export-aco-adapter`, revise la configuración del exportador y, a continuación, habilite la integración entre Commerce y Commerce Optimizer desde el administrador de Commerce. Para obtener instrucciones detalladas, consulte [Introducción](get-started.md).
 
 * **Asigne el sitio web de Commerce y almacene los datos de vista para exportar a[!DNL Adobe Commerce Optimizer]**
 

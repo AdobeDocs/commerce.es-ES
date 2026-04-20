@@ -2,7 +2,7 @@
 title: Agregar facetas
 description: Aprenda a agregar atributos de producto filtrables como  [!DNL Live Search] facetas.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -35,7 +35,7 @@ La faceta se agrega al final de la lista *Facetas dinámicas* y el botón *Publi
 
 1. Cuando se le solicite, actualice la caché.
 
-   La faceta estará disponible en la tienda la próxima vez que el catálogo se sincronice con [!DNL Live Search]. Si la faceta no está disponible después de dos horas, consulte [Sincronizar datos del catálogo](install.md#synchronize-catalog-data).
+   La faceta estará disponible en la tienda la próxima vez que el catálogo se sincronice con [!DNL Live Search]. Si la faceta no está disponible después de dos horas, consulte [Sincronizar datos del catálogo](install.md#sync).
 
 ## Paso 2: Editar las propiedades de la faceta (opcional)
 
@@ -57,7 +57,8 @@ La faceta se agrega al final de la lista *Facetas dinámicas* y el botón *Publi
 
 1. Cuando finalice la faceta, haga clic en **Publicar cambios**.
 1. Espere a que la faceta aparezca en la tienda.
-Si la faceta no está disponible después de dos horas, consulte [Verificar exportación](install.md#synchronize-catalog-data) en las instrucciones de instalación.
+
+   Si la faceta no está disponible después de dos horas, consulte [Verificar exportación](install.md#sync) en las instrucciones de instalación.
 
 ## Descripciones de campos
 

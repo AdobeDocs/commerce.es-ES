@@ -1,9 +1,9 @@
 ---
 title: Crear y administrar recomendaciones
 description: Obtenga información sobre cómo crear y administrar recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: a0863a0d54c5c26b1ae207fd36777e0c515caaf0
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
@@ -19,13 +19,13 @@ _Unidad de recomendación_
 
 Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](../../manage-results/recommendation-performance.md) para medir impresiones, vistas, clics, etc. La tabla Recommendations muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundadas.
 
-1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**&#x200B;para mostrar el área de trabajo de_ Recommendations _.
+1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**para mostrar el área de trabajo de_ Recommendations _.
 
 1. En el campo **Vista de catálogo**, seleccione la vista de catálogo en la que desea que la recomendación esté disponible. Más información acerca de [usar vistas de catálogo para recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
    >[!IMPORTANT]
    >
-   >Esta característica se encuentra actualmente en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las unidades de recomendación existentes para aprovechar el nuevo ámbito de vista de catálogo.
+   >Esta característica se encuentra actualmente en [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las unidades de recomendación existentes para aprovechar el nuevo ámbito de vista de catálogo.
 
 1. Haga clic en **Crear recomendación**.
 
@@ -97,7 +97,7 @@ Después de crear una recomendación, debe recuperar su ID para implementar la u
 
 1. En la sección **ID de recomendación**, copie el ID.
 
-1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=es) en su tienda de Edge Delivery Services.
+1. Use este identificador para configurar la [recomendación ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
@@ -136,16 +136,16 @@ Como resultado de estas variables, el porcentaje del indicador de disponibilidad
 
 Los indicadores de preparación se calculan en función de un par de factores:
 
-- Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los casos para evitar el uso de [recomendaciones de copia de seguridad](../../setup/events/overview.md#backuprecs)?
+- Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los casos para evitar el uso de [recomendaciones de copia de seguridad](../../setup/events/overview.md#backup-recommendations)?
 - Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
 
 En función de los factores anteriores, se calcula un valor de disponibilidad y se muestra de la siguiente manera:
 
 - 75 % o más significa que las recomendaciones sugeridas para ese tipo de recomendación son altamente relevantes.
 - Al menos el 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación son menos relevantes.
-- Menos del 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación pueden no ser relevantes. En este caso, se utilizan [recomendaciones de copia de seguridad](../../setup/events/overview.md#backuprecs).
+- Menos del 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación pueden no ser relevantes. En este caso, se utilizan [recomendaciones de copia de seguridad](../../setup/events/overview.md#backup-recommendations).
 
-Obtenga más información acerca de [por qué los indicadores de preparación podrían ser bajos](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Obtenga más información acerca de [por qué los indicadores de preparación podrían ser bajos](#what-to-do-if-the-readiness-indicator-is-low).
 
 ### Basado en estáticas
 
@@ -192,7 +192,7 @@ El indicador de preparación para los tipos de recomendación que dependen de lo
 
 #### Qué hacer si el indicador de disponibilidad está bajo
 
-Un porcentaje de preparación bajo indica que no hay muchos productos del catálogo que puedan incluirse en las recomendaciones de este tipo de recomendación. Esto significa que existe una alta probabilidad de que se devuelvan [recomendaciones de copia de seguridad](../../setup/events/overview.md#backuprecs) si implementa este tipo de recomendación de todos modos.
+Un porcentaje de preparación bajo indica que no hay muchos productos del catálogo que puedan incluirse en las recomendaciones de este tipo de recomendación. Esto significa que existe una alta probabilidad de que se devuelvan [recomendaciones de copia de seguridad](../../setup/events/overview.md#backup-recommendations) si implementa este tipo de recomendación de todos modos.
 
 >[!IMPORTANT]
 >

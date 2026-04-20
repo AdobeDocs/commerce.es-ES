@@ -1,7 +1,8 @@
 ---
 title: Indexación
 description: Obtenga información sobre cómo  [!DNL Live Search] indexa las propiedades de atributos de productos.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Las propiedades de atributos del producto (metadatos) determinan:
 
 El ámbito de los metadatos de atributo es `website/store/store view`.
 
-La API [!DNL Live Search] permite que un cliente ordene por cualquier atributo de producto que tenga la propiedad [storefront](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` establecida en `Yes` en el administrador de Adobe Commerce. Cuando está habilitado, se puede establecer `Search Weight` para el atributo.
+La API [!DNL Live Search] permite que un cliente ordene por cualquier atributo de producto que tenga la propiedad [storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` establecida en `Yes` en el administrador de Adobe Commerce. Cuando está habilitado, se puede establecer `Search Weight` para el atributo.
 
 [!DNL Live Search] no indiza los productos eliminados o los productos establecidos en `Not Visible Individually`.
 
@@ -32,7 +33,7 @@ La API [!DNL Live Search] permite que un cliente ordene por cualquier atributo d
 
 El cliente llama al servicio de búsqueda desde la tienda para recuperar metadatos de índice (filtrables, ordenables). El servicio de búsqueda solo puede llamar a los atributos de producto que permiten búsqueda con la propiedad *Usar en navegación por capas* establecida en `Filterable (with results)` y *Usar para ordenar en lista de productos* establecida en `Yes`.
 
-Para construir una consulta dinámica, el servicio de búsqueda necesita saber qué atributos se pueden buscar y su [peso](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respeta los pesos de búsqueda de Adobe Commerce (1-10, donde 10 es la prioridad más alta). La lista de datos sincronizados y compartidos con el servicio de catálogo se encuentra en el esquema, que se define en:
+Para construir una consulta dinámica, el servicio de búsqueda necesita saber qué atributos se pueden buscar y su [peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respeta los pesos de búsqueda de Adobe Commerce (1-10, donde 10 es la prioridad más alta). La lista de datos sincronizados y compartidos con el servicio de catálogo se encuentra en el esquema, que se define en:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -49,7 +50,7 @@ Si [!DNL Live Search] se configura y sincroniza durante la incorporación, el í
 
 Los siguientes eventos almacenan en déclencheur una sincronización completa y la generación de índices:
 
-* Incorporando [sincronización de datos del catálogo](install.md#synchronize-catalog-data)
+* Incorporando [sincronización de datos del catálogo](install.md#sync)
 * Cambios en los metadatos de atributos
 
 Por ejemplo, al cambiar la propiedad `Use in Search` del atributo `color` de `No` a `Yes`, los metadatos del atributo se cambian a `searchable=true` y se déclencheur una sincronización y reindexación completas. El siguiente déclencheur de metadatos de atributo genera una sincronización y reindexación completas cuando se cambia:
@@ -61,7 +62,7 @@ Por ejemplo, al cambiar la propiedad `Use in Search` del atributo `color` de `No
 
 ### Transmisión de actualizaciones de productos
 
-Una vez que se haya creado el índice inicial durante la [incorporación](install.md#synchronize-catalog-data), las siguientes actualizaciones incrementales del producto se sincronizan y reindexan continuamente:
+Una vez que se haya creado el índice inicial durante la [incorporación](install.md#sync), las siguientes actualizaciones incrementales del producto se sincronizan y reindexan continuamente:
 
 * Nuevos productos añadidos al catálogo
 * Cambios en los valores de atributos del producto
@@ -89,7 +90,7 @@ En la tabla siguiente se describen varios cambios y el tiempo de espera aproxima
 
 ## Búsqueda de clientes
 
-La API [!DNL Live Search] permite a un cliente ordenar por cualquier atributo de producto ordenable estableciendo la propiedad [storefront](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes), *usada para ordenar en listas de productos* a `Yes`. Según el tema, esta configuración hace que el atributo se incluya como opción en el control de paginación [Ordenar por](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/navigation/navigation) en las páginas del catálogo. [!DNL Live Search] puede indizar hasta 200 atributos de productos, con [propiedades de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes) en las que se pueden realizar búsquedas y filtros.
+La API [!DNL Live Search] permite a un cliente ordenar por cualquier atributo de producto ordenable estableciendo la propiedad [storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *usada para ordenar en listas de productos* a `Yes`. Según el tema, esta configuración hace que el atributo se incluya como opción en el control de paginación [Ordenar por](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) en las páginas del catálogo. [!DNL Live Search] puede indizar hasta 200 atributos de productos, con [propiedades de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) en las que se pueden realizar búsquedas y filtros.
 
 Los metadatos de índice se almacenan en la canalización de indexación y el servicio de búsqueda puede acceder a ellos.
 

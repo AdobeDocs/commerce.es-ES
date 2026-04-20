@@ -2,7 +2,7 @@
 title: Configuración de AEM Assets para Commerce Optimizer
 description: Obtenga información sobre cómo configurar la integración de AEM Assets para  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Antes de configurar la integración, asegúrese de lo siguiente:
 
 ## Incorporación
 
-Para integrar la integración de AEM Assets con [!DNL Commerce Optimizer], debe [Crear un vale de soporte](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Para integrar la integración de AEM Assets con [!DNL Commerce Optimizer], debe [Crear un vale de soporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 El Soporte de Adobe utiliza la información de su ticket para registrar su inquilino con el Servicio de integración de Assets y configurar la integración.
 
@@ -85,7 +85,7 @@ El proceso de instalación y configuración de los AEM Assets para [!DNL Commerc
 
 Asegúrese de que el entorno de los AEM Assets esté listo:
 
-1. **Configuración de AEM Assets**: configure el perfil de metadatos de Commerce. Consulte [Configurar un perfil de metadatos](configure-aem.md#configure-a-metadata-profile).
+1. **Configuración de AEM Assets**: configure el perfil de metadatos de Commerce. Consulte [Configurar un perfil de metadatos](configure-aem.md#step-2-optional-configure-a-metadata-profile).
 
 1. **Habilitación de Dynamic Media**: compruebe que Dynamic Media con las capacidades de OpenAPI esté habilitada en su entorno de AEM Assets.
 
@@ -113,7 +113,7 @@ El recurso debe estar en estado **aprobado** para la sincronización de datos co
 
 >[!CAUTION]
 >
-> Asigne la capa `AEM-Assets` a su [vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-view). Si la capa no está asignada, los datos de imagen del producto pueden sobrescribirse inesperadamente.
+> Asigne la capa `AEM-Assets` a su [vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Si la capa no está asignada, los datos de imagen del producto pueden sobrescribirse inesperadamente.
 
 ## Sincronización
 

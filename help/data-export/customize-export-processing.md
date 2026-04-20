@@ -3,7 +3,7 @@ title: Mejora del rendimiento de exportación de datos SaaS
 description: Obtenga información sobre cómo mejorar el rendimiento de exportación de datos SaaS para Commerce Services mediante el uso de un modo de exportación de datos de varios subprocesos.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Recuerde que una planificación cuidadosa, que incluya la estimación del volume
 
 ## Configurar subprocesamiento múltiple
 
-Se admite el modo multiproceso para todos los [métodos de sincronización](data-synchronization.md#synchronization-process): sincronización completa, sincronización parcial y sincronización de elementos con errores. Para configurar subprocesos múltiples, especifique el número de subprocesos y el tamaño del lote que se utilizarán durante la sincronización.
+Se admite el modo multiproceso para todos los [métodos de sincronización](data-synchronization.md#view-and-manage-the-synchronization-process): sincronización completa, sincronización parcial y sincronización de elementos con errores. Para configurar subprocesos múltiples, especifique el número de subprocesos y el tamaño del lote que se utilizarán durante la sincronización.
 
 - `thread-count` es el número de subprocesos activados para procesar entidades. El valor predeterminado `thread-count` es `1`.
 - `batch-size` es el número de entidades procesadas en una iteración. El valor predeterminado `batch-size` es `100` registros para todas las fuentes, excepto la fuente de precios. Para la fuente de precios, el valor predeterminado es `500` registros.
@@ -64,7 +64,7 @@ Las opciones especificadas en la línea de comandos anulan la configuración de 
 
 Para procesar todas las operaciones de exportación de datos mediante subprocesamiento múltiple, los integradores de sistemas o los desarrolladores pueden modificar el número de subprocesos y el tamaño del lote para cada fuente en la configuración de la aplicación de Commerce.
 
-Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
+Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
 
 **Ejemplo: Configurar subprocesamiento múltiple para productos y precios**
 
