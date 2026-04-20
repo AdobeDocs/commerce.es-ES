@@ -3,7 +3,7 @@ title: Sincronización de datos
 description: Revise los datos del catálogo que se están sincronizando desde la fuente de datos de Commerce en  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 source-git-commit: 2cb17424a0f063a585ddd861b7057d9851467fbc
 workflow-type: tm+mt
@@ -54,7 +54,7 @@ Si no ve productos específicos en la página **Sincronización de datos**, debe
 
 ## Monitorización del estado de sincronización de datos
 
-En el caso de los proyectos que usan Adobe Commerce como fuente de datos de flujo ascendente a través de Commerce Optimizer Connector, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la [página Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) del administrador de Commerce.
+En el caso de los proyectos que usan Adobe Commerce como fuente de datos de flujo ascendente a través de Commerce Optimizer Connector, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la [página Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) del administrador de Commerce.
 
 ## Temas relacionados
 
