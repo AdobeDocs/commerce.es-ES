@@ -4,9 +4,9 @@ description: Utilice consultas de GraphQL para recuperar los datos del catálogo
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 49bbdb3b-bbe9-4777-8ea7-3bd25ae53889
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: a4c3a24deb77a9aadc7954b46d171b4d4edea6ba
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Recuperación de datos de catálogo con GraphQL {#graphql-queries}
 
 Utilice las consultas de GraphQL para recuperar datos de producto, precio y de otro tipo del espacio de datos SaaS del catálogo de Adobe Commerce y utilícelos para procesar experiencias de Commerce más rápidamente que las consultas nativas de GraphQL de Adobe Commerce.
+
+{{aco-merchandising-services}}
 
 El servicio de catálogo ofrece las siguientes consultas:
 
@@ -25,4 +27,4 @@ El servicio de catálogo ofrece las siguientes consultas:
 | `refineProduct` | Restringe los resultados de una consulta de productos que se ejecuta con un producto complejo para devolver información específica acerca de una variante de producto. | Útil para procesar páginas de detalles de productos actualizadas cuando los compradores seleccionan una opción de producto. [Ver ejemplo.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |
 | `variants` | Devuelve detalles sobre todas las variaciones de un producto. | Útil para mostrar imágenes de variante en páginas de detalles o listas de productos sin enviar varias solicitudes de API. [Ver ejemplo.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) |
 
-Consulte la [Guía de API de servicio de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) para obtener más información sobre el uso de estas consultas
+Consulte [Storefront Services GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) para obtener más información sobre el uso de estas consultas.
