@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: ce8882b8af21198a7bc57bc58124e8a2d1491a50
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2693'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Si alguno de los comandos anteriores no devuelve los resultados esperados, consu
 
 Además, compruebe lo siguiente:
 
-- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview){target="_blank"}.
-- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}.
+- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - La CLI `aem` está instalada:
 
   ```bash
@@ -135,62 +135,62 @@ El agente genera requisitos y documentos de arquitectura para que los revise. Co
 - Una acción de API de REST para CRUD de suscripción (crear, leer, actualizar y eliminar)
 - Un controlador back-in-stock impulsado por eventos activado por eventos de inventario de Commerce
 - Una acción de stock programada como reserva
-- Persistencia al utilizar `aio-lib-state`
+- Persistence using `aio-lib-state`
 
 >[!NOTE]
 >
->Los agentes de IA son no deterministas y sus comportamientos difieren según el modelo y el IDE. Puede obtener un conjunto diferente de preguntas que producen un conjunto diferente de requisitos y arquitectura. Si es así, intente dirigir el agente en una dirección tal que la implementación coincida estrechamente con lo que se presenta en este tutorial antes de continuar.
+>AI agents are non-deterministic and their behaviors differ depending on the model and IDE. You may get a different set of questions that produce a different set of requirements and architecture. If so, try to steer the agent in a direction such that the implementation closely matches what is presented in this tutorial before proceeding.
 
-### Paso 4: Selección de un plan de implementación
+### Step 4: Select an implementation plan
 
-El agente le da la opción de crear un plan de implementación detallado o de completar una implementación directa.
+The agent gives you the option to create a detailed implementation plan, or to complete a direct implementation.
 
-- Si desea un plan revisable que se pueda ejecutar por fases con más control, seleccione la primera opción.
-- Si desea que el agente realice la implementación completa con una intervención mínima, seleccione la segunda opción.
+- If you want a reviewable plan that you can execute in phases with more control, select the first option.
+- If you want the agent to do the full implementation with minimal intervention, select the second option.
 
-### Paso 5: Implementación, incorporación y suscripción a eventos
+### Step 5: Deploy, onboard, and subscribe to events
 
-Una vez que el agente completa la implementación, proporciona los siguientes pasos para implementar la aplicación, incorporar la instancia de Commerce y suscribirse a eventos mediante los siguientes comandos:
+After the agent completes the implementation, it provides next steps to deploy the app, onboard the Commerce instance, and subscribe to events using the following commands:
 
-1. Implemente la extensión:
+1. Deploy the extension:
 
    ```bash
    aio app deploy
    ```
 
-1. Ejecute el script de incorporación para registrar el proveedor de eventos con Commerce:
+1. Run the onboarding script to register the event provider with Commerce:
 
    ```bash
    npm run onboard
    ```
 
-1. Suscribirse a eventos de Commerce:
+1. Subscribe to Commerce events:
 
    ```bash
    npm run commerce-event-subscribe
    ```
 
-1. Valide la suscripción al evento.
+1. Validate the event subscription.
 
-   Vaya a la instancia de Commerce y abra **[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**.
+   Navigate to your Commerce instance and open **[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**.
 
-   Debería ver una tabla de registros de eventos.
+   You should see a table of event records.
 
-   ![Menú de administración de Commerce que resalta la sección Suscripción a evento](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
+   ![Commerce Admin menu highlighting Event Subscription section](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
 
-   ![Tabla de suscripción de eventos con entradas de eventos registradas](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
+   ![Event subscription table with registered event entries](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
 
-### Paso 6: Prueba de la extensión
+### Step 6: Test the extension
 
-Pida al agente que proporcione los pasos de la prueba. Como es un servicio API, puede solicitar instrucciones de línea de comandos:
+Ask the agent to provide testing steps. Since this is an API service, you can request command-line instructions:
 
 ```shell-session
 Give me step by step instructions to test the API service from the command line.
 ```
 
-Siga los pasos que proporcione el agente. Los siguientes ejemplos muestran comandos de prueba típicos.
+Follow the steps the agent provides. The following examples show typical test commands.
 
-**Suscribirse a un SKU:**
+**Subscribe to a SKU:**
 
 ```bash
 API_URL="https://<your-runtime-url>/api/v1/web/notify-out-of-stock/api"; curl -X POST "$API_URL" \
@@ -198,7 +198,7 @@ API_URL="https://<your-runtime-url>/api/v1/web/notify-out-of-stock/api"; curl -X
   -d '{"email":"test@example.com","sku":"ADB153"}'
 ```
 
-La respuesta es similar a:
+The response looks similar to::
 
 ```json
 {

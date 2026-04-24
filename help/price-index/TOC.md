@@ -4,10 +4,10 @@ user-guide-description: Esta guía proporciona instrucciones detalladas para uti
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 9%
+source-wordcount: '39'
+ht-degree: 7%
 
 ---
 
@@ -17,4 +17,4 @@ ht-degree: 9%
 - Adaptador de catálogo {#catalog-adapter}
    - [Información general](catalog-adapter.md)
    - [Notas de la versión](release-notes.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

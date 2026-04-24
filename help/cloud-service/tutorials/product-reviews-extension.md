@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 9c76bae29c05909406a40ca03a2b3d242db05f3f
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2533'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Si alguno de los comandos anteriores no devuelve los resultados esperados, vea l
 
 Además, compruebe lo siguiente:
 
-- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview){target="_blank"}.
-- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}.
+- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - La CLI `aem` está instalada:
 
   ```bash
@@ -133,12 +133,12 @@ El agente regresa con una serie de preguntas que debe responder antes de que pue
 
 **Ejemplo de preguntas del agente:**
 
-1. **API de REST — host y consumidores** — ¿Debería la API de REST de CRUD formar parte de esta aplicación de App Builder (acciones web en Adobe I/O Runtime) a la que llaman las tiendas? ¿Quién lo llamará (tienda EDS, tienda personalizada/sin encabezado o ambas)? ¿Necesita CORS, acceso público (no autenticado) o los llamadores utilizarán claves API o OAuth?
-1. **Modelo de datos**: ¿Qué debe representar una &quot;revisión&quot; o una &quot;pregunta&quot;? ¿Identificador de cliente (solo correo electrónico o también ID de cliente)? ¿Identificador de producto (solo SKU o SKU + vista de tienda)? ¿Puede el mismo cliente enviar varias revisiones para el mismo SKU?
-1. **Persistencia**: ¿Es `aio-lib-state` el lugar adecuado para mantener las críticas y las preguntas y respuestas, o bien tiene una tienda externa? ¿Debe el diseño suponer que hay varios inquilinos o un solo inquilino?
-1. **Semántica de paginación**: para GET de preguntas y respuestas, ¿se aplica `limit` solo a preguntas (con respuestas anidadas) o al recuento total de preguntas más respuestas?
+1. **API de REST — host y consumidores** — ¿Debería la API de REST de CRUD formar parte de esta aplicación de App Builder (acciones web en Adobe I/O Runtime) a la que llaman las tiendas? Who will call it (EDS Storefront, custom/headless storefront, or both)? Do you need CORS, public (unauthenticated) access, or will callers use API keys or OAuth?
+1. **Data model** — What should one &quot;review&quot; or &quot;question&quot; represent? Customer identifier (email only, or also customer ID)? Product identifier (SKU only, or SKU + store view)? Can the same customer submit multiple reviews for the same SKU?
+1. **Persistence** — Is `aio-lib-state` the right place to persist reviews and Q&amp;A, or do you have an external store? Should the design assume multi-tenant or single-tenant?
+1. **Pagination semantics** — For Q&amp;A GET, does `limit` apply to questions only (with nested answers), or to the total count of questions plus answers?
 
-**Respuestas de ejemplo:**
+**Example answers:**
 
 ```shell-session
 1. The REST API should be part of this App Builder app. It will be called by the EDS Storefront. No authentication — public access for both GET and POST.
@@ -149,53 +149,53 @@ El agente regresa con una serie de preguntas que debe responder antes de que pue
 
 >[!NOTE]
 >
->Su agente puede hacer diferentes preguntas. Utilice estas respuestas como guía para dirigir al agente hacia el mismo resultado funcional: una API de REST pública con revisiones y preguntas y respuestas, persistencia de `aio-lib-state` y sin autenticación.
+>Your agent may ask different questions. Use these answers as guidance for steering the agent toward the same functional outcome: a public REST API with reviews and Q&amp;A, `aio-lib-state` persistence, and no authentication.
 
-### Paso 3: Revisar los requisitos y la arquitectura
+### Step 3: Review requirements and architecture
 
-El agente genera requisitos y documentos de arquitectura para que los revise. Compruebe que los requisitos coinciden con las respuestas proporcionadas y que la arquitectura cubre lo siguiente:
+The agent generates requirements and architecture documents for you to review. Verify that the requirements match the answers you provided and that the architecture covers:
 
-- Cuatro acciones web: `reviews-get`, `reviews-post`, `qa-get`, `qa-post`
-- Persistencia usando `aio-lib-state` con claves que se ajustan al patrón permitido (`[a-zA-Z0-9-_.]` — sin dos puntos)
-- Valores de estado almacenados como cadenas JSON (no como objetos sin procesar ni matrices)
-- Paquete independiente: código compartido (utilidades, constantes) dentro del paquete `product-reviews`, no a través de `../../` rutas que escapan del paquete
+- Four web actions: `reviews-get`, `reviews-post`, `qa-get`, `qa-post`
+- Persistence using `aio-lib-state` with keys that conform to the allowed pattern (`[a-zA-Z0-9-_.]` — no colons)
+- State values stored as JSON strings (not raw objects or arrays)
+- Self-contained package — shared code (utils, constants) inside the `product-reviews` package, not via `../../` paths that escape the bundle
 
 >[!NOTE]
 >
->Los agentes de IA son no deterministas y sus comportamientos difieren según el modelo y el IDE. Puede obtener un conjunto diferente de preguntas que producen un conjunto diferente de requisitos y arquitectura. Si es así, intente dirigir el agente en la dirección tal que la implementación coincida estrechamente con lo que se presenta en este tutorial antes de continuar.
+>AI agents are non-deterministic and their behaviors differ depending on the model and IDE. You may get a different set of questions that produce a different set of requirements and architecture. If so, try to steer the agent in the direction such that the implementation closely matches what is presented in this tutorial before proceeding.
 
-### Paso 4: Selección de un plan de implementación
+### Step 4: Select an implementation plan
 
-El agente le da la opción de crear un plan de implementación detallado o de completar una implementación directa.
+The agent gives you the option to create a detailed implementation plan or to complete a direct implementation.
 
-- Si desea un plan revisable que se pueda ejecutar por fases con más control, seleccione la primera opción.
-- Si desea que el agente realice la implementación completa con una intervención mínima, seleccione la segunda opción.
+- If you want a reviewable plan that you can execute in phases with more control, select the first option.
+- If you want the agent to do the full implementation with minimal intervention, select the second option.
 
-### Paso 5: Implementación de la extensión
+### Step 5: Deploy the extension
 
-Una vez que el agente haya completado la implementación, implemente la extensión:
+After the agent completes the implementation, deploy the extension:
 
 ```bash
 aio app deploy
 ```
 
-Si el agente agregó `require-adobe-auth: true` a las acciones, pídale que quite la autenticación para poder llamar a los extremos directamente desde la tienda:
+If the agent added `require-adobe-auth: true` to the actions, ask it to remove authentication so that the endpoints can be called directly from the storefront:
 
 ```shell-session
 Remove the requirement to provide a valid Adobe IMS access token from all product-reviews actions.
 ```
 
-A continuación, vuelva a implementar:
+Then redeploy:
 
 ```bash
 aio app deploy
 ```
 
-### Paso 6: Crear datos ficticios y rellenarlos previamente para realizar pruebas
+### Step 6: Create mock data and pre-populate for testing
 
-Cree un archivo de datos ficticios y utilice curl para rellenar previamente la API y obtener contenido de revisión de muestra y preguntas y respuestas para probarlo en la CLI y en la tienda.
+Create a mock data file, and use curl to pre-populate the API so that you have sample review and Q&amp;A content for testing in the CLI and storefront.
 
-1. Cree un archivo `docs/mock-product-reviews-data.json` (o similar) con datos de ejemplo. Por ejemplo:
+1. Create a file `docs/mock-product-reviews-data.json` (or similar) with sample data. Por ejemplo:
 
    ```json
    {
@@ -209,9 +209,9 @@ Cree un archivo de datos ficticios y utilice curl para rellenar previamente la A
    }
    ```
 
-1. Utilice curl para PUBLICAR los datos en la API implementada.
+1. Use curl to POST the data to your deployed API.
 
-   Reemplace `<your-runtime-url>` con su URL de tiempo de ejecución de App Builder (por ejemplo, `https://1172492-prodreviewqa135-stage.adobeioruntime.net`):
+   Replace `<your-runtime-url>` with your actual App Builder runtime URL (for example, `https://1172492-prodreviewqa135-stage.adobeioruntime.net`):
 
    ```bash
    API_URL="https://<your-runtime-url>/api/v1/web/product-reviews"
@@ -236,7 +236,7 @@ Cree un archivo de datos ficticios y utilice curl para rellenar previamente la A
      -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it comes in blue and red.","user":"seller@example.com"}'
    ```
 
-1. Compruebe los datos con solicitudes de GET:
+1. Verify the data with GET requests:
 
    ```bash
    curl -s "$API_URL/reviews-get?sku=ADB153"
@@ -245,13 +245,13 @@ Cree un archivo de datos ficticios y utilice curl para rellenar previamente la A
 
 >[!TIP]
 >
->Use el SKU `ADB153` para un producto que tenga contenido de reseñas y preguntas y respuestas, y `ADB152` para un producto sin reseñas. Esta configuración de datos permite probar estados rellenados y vacíos en la tienda.
+>Use SKU `ADB153` for a product that has both review and Q&amp;A content, and `ADB152` for a product with no reviews. This data configuration enables testing both populated and empty states in the storefront.
 
-### Paso 7: Prueba de la extensión
+### Step 7: Test the extension
 
-Pida al agente que proporcione los pasos de prueba o utilice los ejemplos de curl del paso anterior. Los siguientes ejemplos muestran comandos de prueba típicos.
+Ask the agent to provide testing steps, or use the curl examples from the preceding step. The following examples show typical test commands.
 
-**Enviar una revisión:**
+**Submit a review:**
 
 ```bash
 API_URL="https://<your-runtime-url>/api/v1/web/product-reviews"
@@ -260,13 +260,13 @@ curl -s -X POST "$API_URL/reviews-post" \
   -d '{"sku":"ADB153","rating":5,"review":"Excellent!","user":"test@example.com"}'
 ```
 
-**Enumerar críticas:**
+**List reviews:**
 
 ```bash
 curl -s "$API_URL/reviews-get?sku=ADB153"
 ```
 
-**Enviar una pregunta:**
+**Submit a question:**
 
 ```bash
 curl -s -X POST "$API_URL/qa-post" \
@@ -274,7 +274,7 @@ curl -s -X POST "$API_URL/qa-post" \
   -d '{"sku":"ADB153","type":"question","content":"Is this dishwasher safe?","user":"test@example.com"}'
 ```
 
-**Enviar una respuesta** (usar `id` de la respuesta a la pregunta como `questionId`):
+**Submit an answer** (use the `id` from the question response as `questionId`):
 
 ```bash
 curl -s -X POST "$API_URL/qa-post" \
@@ -282,19 +282,19 @@ curl -s -X POST "$API_URL/qa-post" \
   -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it is.","user":"support@example.com"}'
 ```
 
-### Creación del contrato de servicio
+### Create the service contract
 
-Ahora que la implementación del servicio ha finalizado, pídale al agente que cree un contrato de servicio para el trabajo de la tienda:
+Now that the service implementation is complete, ask the agent to create a service contract for the storefront work:
 
 ```shell-session
 Create a service contract for the Product Review and Q&A application that defines the API endpoints, request and response formats, and any necessary data models. Ensure that the service contract is clear and detailed enough for a frontend developer to implement the storefront integration without needing to ask additional questions about the API. Name this file PRODUCT_REVIEW_QA_CONTRACT.md
 ```
 
-Copie este archivo en su proyecto de tienda para que el agente de tienda pueda hacer referencia a él.
+Copy this file into your storefront project so the storefront agent can reference it.
 
-## Conectar con la tienda
+## Connect to the storefront
 
-Esta sección lo guiará a través de la implementación de la parte de tienda de las revisiones de productos y la extensión de preguntas y respuestas mediante [!DNL Edge Delivery Services] y las herramientas de desarrollo asistido por IA. Agregue un bloque de revisión de producto al PDP que muestre el contenido de revisión y preguntas y respuestas, y permita a los compradores enviar contenido nuevo.
+This section guides you through implementing the storefront portion of the product reviews and Q&amp;A extension using [!DNL Edge Delivery Services] and AI-assisted development tools. Agregue un bloque de revisión de producto al PDP que muestre el contenido de revisión y preguntas y respuestas, y permita a los compradores enviar contenido nuevo.
 
 >[!NOTE]
 >
@@ -449,27 +449,27 @@ Utilice las siguientes sugerencias si encuentra problemas durante el tutorial.
 | Síntoma | Causa | Fix |
 |---------|-------|-----|
 | El bloque no se procesa en la página de prueba | El elemento de bloque está anidado dentro de un elemento `div` adicional, por lo que después de `decorateSections` el selector de bloque (`div.section > div > div`) no coincide. | Convierta el bloque en un elemento secundario directo de la sección. Estructura: `section > div.product-review` (o clase de bloque equivalente). Evite `section > div > div.product-review`. |
-| Tokens CSS no válidos | El bloque utiliza tokens de diseño que no existen en `styles/styles.css` (por ejemplo, `--color-error-100`, `--type-detail-font-size`). | Pida al agente que valide los tokens con los `styles/styles.css` del proyecto y reemplace los tokens no válidos por los existentes (por ejemplo, `--color-alert-*`, `--type-details-caption-*`). |
+| Invalid CSS tokens | The block uses design tokens that do not exist in `styles/styles.css` (for example, `--color-error-100`, `--type-detail-font-size`). | Ask the agent to validate tokens against the project&#39;s `styles/styles.css` and replace invalid tokens with existing ones (for example, `--color-alert-*`, `--type-details-caption-*`). |
 
 {style="table-layout:auto"}
 
-## Resumen del tutorial
+## Tutorial recap
 
-A continuación se muestra un resumen de los temas tratados en este tutorial:
+Here is a summary of the topics covered in this tutorial:
 
-- **Desarrollo de extensiones:** Describe la funcionalidad para crear y ver contenido de reseñas de productos y preguntas y respuestas en una tienda con un servidor de Adobe Commerce as a Cloud Service en un agente de IA y cómo implementar esta funcionalidad generando una API de REST que funcione con cuatro extremos usando [!DNL App Builder].
-- **Persistencia:** con `aio-lib-state` con formato de clave correcto y valores serializados en JSON.
-- **Datos ficticios y rellenado previo:** Creación de un archivo de datos ficticios y uso de curl para rellenar previamente la API para las pruebas de CLI y de tienda.
-- **Contratos de servicio:** Creación de contratos de API que vinculan extensiones backend e implementaciones de tienda.
-- **Integración de tienda por fases:** Trabajando con los requisitos, la arquitectura y la implementación con habilidades asistidas por IA.
-- **Bloque de PDP:** Agregar un bloque de revisión de producto al PDP que muestra revisiones y preguntas y respuestas con formularios de envío y paginación.
+- **Extension development:** Describing functionality to create and view product review and Q&amp;A content  on a storefront with an Adobe Commerce as a Cloud Service backend to an AI agent and how to implement this functionality by generating a working REST API with four endpoints using [!DNL App Builder].
+- **Persistence:** Using `aio-lib-state` with correct key format and JSON-serialized values.
+- **Mock data and pre-population:** Creating a mock data file and using curl to pre-populate the API for CLI and storefront testing.
+- **Service contracts:** Creating API contracts that bridge backend extensions and storefront implementations.
+- **Phased storefront integration:** Working through requirements, architecture, and implementation using AI-assisted skills.
+- **PDP block:** Adding a product review block to the PDP that displays reviews and Q&amp;A with submission forms and pagination.
 
-## Pasos siguientes
+## Next steps
 
-Utilice las siguientes sugerencias para ampliar el servicio de revisiones de productos:
+Use the following suggestions to extend your product reviews service:
 
-- **Agregar moderación:** Implemente un flujo de trabajo de moderación para el contenido de revisión y preguntas y respuestas antes de que se publique.
-- **Añadir autenticación:** Requiere que los compradores inicien sesión para enviar críticas o contenido de preguntas y respuestas, y asociar envíos con cuentas de clientes.
-- **Agregar una página de administración de suscripciones:** Cree una página de tienda donde los compradores puedan ver y editar sus críticas.
-- **Admitir implementaciones de varios inquilinos:** Amplíe la administración de estado para admitir varios inquilinos de Commerce en una sola aplicación de App Builder.
-- **Agregar limitación de velocidad:** Implemente límites de velocidad en la API para evitar abusos.
+- **Add moderation:** Implement a moderation workflow for review and Q&amp;A content before it is published.
+- **Add authentication:** Require shoppers to be logged in to submit reviews or Q&amp;A content, and associate submissions with customer accounts.
+- **Add a subscription management page:** Create a storefront page where shoppers can view and edit their reviews.
+- **Support multi-tenant deployments:** Extend the state management to support multiple Commerce tenants in a single App Builder app.
+- **Add rate limiting:** Implement rate limits on the API to prevent abuse.

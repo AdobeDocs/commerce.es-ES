@@ -1,12 +1,12 @@
 ---
 title: Responsabilidad compartida
 description: Conozca las responsabilidades de seguridad de cada parte involucrada en su  [!DNL Adobe Commerce Optimizer] proyecto.
-role: Admin, Architect, Leader
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+role: Admin, Developer, Leader
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---

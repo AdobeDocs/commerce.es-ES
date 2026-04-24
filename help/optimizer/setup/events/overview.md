@@ -4,9 +4,9 @@ description: Obtenga información acerca de los eventos que  [!DNL Adobe Commerc
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1411'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ La ficha **Recuentos de eventos** hace un seguimiento de las interacciones del c
 
 ## Comprobación de coherencia
 
-La ficha **Comprobación de coherencia** ofrece información sobre el estado de cada evento de comportamiento, lo que garantiza una recopilación de datos y una funcionalidad precisas. palo de golf
+La ficha **Comprobación de coherencia** ofrece información sobre el estado de cada evento de comportamiento, lo que garantiza una recopilación de datos y una funcionalidad precisas. &#x200B;
 
 ![Comprobación de coherencia](../../assets/sanity-check.png){zoomable="yes"}
 
@@ -69,7 +69,7 @@ Se requieren algunos eventos para rellenar el [panel de rendimiento de búsqueda
 | Área de panel | Eventos | Campo de combinación |
 | ------------------- | ------------- | ---------- |
 | Búsquedas únicas | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
-| Búsquedas sin resultados | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Búsquedas sin resultados | `page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId` |
 
 ### Recommendations
 
@@ -86,7 +86,7 @@ Algunos tipos de recomendación utilizan datos de comportamiento de los comprado
 
 ¿Cuándo puede empezar a utilizar tipos de recomendación que utilicen datos de comportamiento? Depende de ti. Este problema se conoce como _Inicio en frío_.
 
-El problema de _arranque en frío_ se refiere al tiempo que tarda un modelo en entrenar y en ser efectivo. En el caso de las recomendaciones, esto significa esperar a que la IA de Adobe recopile datos suficientes para entrenar sus modelos de aprendizaje automático antes de implementar unidades de recomendación en el sitio. Cuantos más datos tengan los modelos, más precisas y útiles serán las recomendaciones. Dado que la recopilación de datos se produce en un sitio activo, es mejor iniciar este proceso antes.
+El problema de _arranque en frío_ se refiere al tiempo que tarda un modelo en entrenar y en ser efectivo. En el caso de las recomendaciones, esto significa esperar a que Adobe AI recopile datos suficientes para entrenar sus modelos de aprendizaje automático antes de implementar unidades de recomendaciones en el sitio. Cuantos más datos tengan los modelos, más precisas y útiles serán las recomendaciones. Dado que la recopilación de datos se produce en un sitio activo, es mejor iniciar este proceso antes.
 
 La siguiente tabla proporciona algunas directrices generales sobre la cantidad de tiempo que se tarda en recopilar suficientes datos para cada tipo de recomendación:
 
@@ -174,4 +174,4 @@ En esta tabla se describen los eventos utilizados por cada tipo de recomendació
 
 ## Asistencia
 
-Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

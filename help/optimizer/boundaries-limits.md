@@ -2,11 +2,11 @@
 title: Límites y límites
 description: Comprenda [!DNL Adobe Commerce Optimizer] los límites y limitaciones para planificar la capacidad y evitar problemas de rendimiento.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 42a877f5bad8bda93ec39b8ad633f6ad0ba6b4a5
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Su uso debe permanecer dentro de estos límites. Excederlos puede causar un aume
 
 Los límites de licencia se pueden aumentar comprando los paquetes de licencia descritos en la sección [Límites de licencia y límites del sistema](#license-limits-and-system-boundaries), o negociando licencias personalizadas para casos de uso únicos. Póngase en contacto con su representante de cuentas de Adobe para hablar sobre sus necesidades.
 
-Si tiene alguna pregunta sobre los límites del sistema, comuníquese con la [atención al cliente de Adobe](https://experienceleague.adobe.com/home?lang=es#support).
+Si tiene alguna pregunta sobre los límites del sistema, comuníquese con la [atención al cliente de Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Evitar problemas de rendimiento
 
@@ -77,36 +77,36 @@ En las tablas siguientes se resumen los límites de licencia y de sistema por á
 | Almacenamiento de imágenes del producto | Espacio de almacenamiento asignado para recursos | Almacenamiento de 1 TB | No |
 | Uso de Dynamic Media | Asignación para operaciones de procesamiento de medios dinámicos, que incluye:<ul><li>Entrega de imágenes</li><li>Imágenes inteligentes</li><li>Entrega de vídeo</li></ul><p>Para obtener más información, consulte *Calcular el uso de Dynamic Media* a continuación. | Basado en GMV<p>Asignación mínima: 5M operaciones/mes</p> | Sí<ul><li>Licencia de compra para operaciones adicionales</li><li>Actualizar a licencia de AEM Assets</li></ul> |
 | Entrega de vídeo | Asignación para descargas o envíos de vídeo | 300 vídeos, 1 minuto por vídeo | Sí<p>Actualizar a licencia de AEM Assets</p> |
-| Generación de recursos | Acceso a la IA generativa de Adobe Express y Adobe Firefly para crear imágenes | Ninguno | Compre créditos de IA generativos por separado |
+| Generación de recursos | Acceso a la IA generativa de Adobe Express y Adobe Firefly para crear imágenes | Ninguno | Purchase Generative AI credits separately |
 
 {style="table-layout:auto"}
 
 
 >[!NOTE]
 >
->**Usuarios avanzados** pueden acceder a Adobe Express directamente o dentro de [!DNL Adobe Commerce Optimizer]. **Los usuarios de Collaborator** pueden acceder directamente a la aplicación de Adobe Express. El uso está regido por [Adobe Express con términos de licencia específicos de productos Firefly](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Power Users** can access Adobe Express directly or within [!DNL Adobe Commerce Optimizer]. **Collaborator Users** can access the Adobe Express application directly. Usage is governed by the [Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
->[!BEGINSHADEBOX &quot;Calcular uso de Dynamic Media&quot;]
+>[!BEGINSHADEBOX &quot;Calculate Dynamic Media usage&quot;]
 
-El uso de Dynamic Media hace un seguimiento de las solicitudes de API que llegan a los componentes de elementos visuales del producto en [!DNL Adobe Commerce Optimizer] para facilitar una de las siguientes acciones:
+Dynamic Media usage tracks API requests coming into the Product Visuals components within [!DNL Adobe Commerce Optimizer] to facilitate one of the following actions:
 
-- **La entrega de imágenes consume una operación de medios dinámicos** por cada ocurrencia de lo siguiente:
-   - **transformación básica de la imagen** de un recurso digital; por ejemplo, operaciones de cambio de tamaño, escala, conversión de formato, compresión o recorte.
-   - **entrega o descarga de imagen estática** de dichos recursos digitales o representación de recursos digitales (que no sean vídeos)
-- **La entrega de imágenes inteligentes consume 20 operaciones de Dynamic Media** para cada entrega optimizada de un único recurso digital al generar automáticamente la representación de imágenes más adecuada para el dispositivo y el explorador del usuario final.
-- **La entrega de vídeo consume 20 operaciones de Dynamic Media** para una sola entrega o descarga de un vídeo o una variante transformada de un vídeo.
+- **Image delivery consumes one dynamic media operation** for each occurrence of the following:
+   - **basic image transformation** of a digital asset, for example resize, scale, format conversion, compression, or crop operations.
+   - **static image delivery or download** of said digital assets or digital asset rendition (other than video)
+- **Smart Image delivery consumes 20 Dynamic Media Operations** for each optimized delivery of a single digital asset by automatically generating the most appropriate image rendition for an end user&#39;s device and browser.
+- **Video delivery consumes 20 Dynamic Media Operations** for a single delivery or download of a video, or a transformed variant of a video.
 
 >[!ENDSHADEBOX]
 
 
-### Vistas de catálogo y políticas
+### Catalog views and policies
 
-| **Capacidad** | **Descripción** | **Asignación base** | **Ampliable?** |
+| **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Vistas de catálogo | Número de subconjuntos configurables del catálogo maestro | Según la cantidad de [variaciones de catálogo](#catalog) | Sí<br>Aumentar las variaciones del catálogo |
-| Políticas por vista de catálogo | Número de filtros de datos permitidos | 10 | No |
-| Valores de atributo en una directiva | Número de características del producto que se pueden configurar para el filtrado | 100 | No |
+| Catalog views | Number of configurable subsets of your master catalog | Based on the number of [Catalog variations](#catalog) | Yes<br>Increase catalog variations |
+| Policies per catalog view | Number of data filters allowed | 10 | No |
+| Attribute values in a policy | Number of product characteristics that can be configured for filtering | 100 | No |
 
 {style="table-layout:auto"}
 
@@ -154,13 +154,14 @@ Las siguientes funciones están disponibles para recomendaciones de productos. A
 
 ### Extensibilidad
 
-| **Capacidad** | **Descripción** | **Asignación base** | **Ampliable?** | **Notas** |
+| **Capacidad** | **Descripción** | **Asignación base** | **Ampliable?** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacidad para crear integraciones y extensiones nativas de la nube | Basado en el nivel de GMV<p>Asignación mínima: 1 paquete/año</p> | Sí<p>Adición de paquetes adicionales</p> | Para los límites definidos por envase, ver:<ul><li>[Descripción del producto App Builder](https://helpx.adobe.com/es/legal/product-descriptions/adobe-developer-app-builder.html) para los límites definidos por paquete.</li><li>[Limitaciones y configuración del sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) en las *Guías de tiempo de ejecución de App Builder*.</li><li>[Requisitos de almacenamiento de App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacity for building cloud-native extensions and integrations | Based on GMV tier<p>Minimum allocation: 1 pack/year</p> | Yes<p>Add additional packs</p> | For limits defined per pack, see:<ul><li>[App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) for limits defined per pack.</li><li>[System Settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.</li><li>[App Builder Storage requirements](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
-<!--## How to size your solution
+<!--
+## How to size your solution
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
@@ -192,4 +193,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) -->
+   * Add-On: 10 × dynamic media packs (1M each) 
+-->

@@ -2,13 +2,13 @@
 title: Responsabilidad compartida
 description: Conozca las responsabilidades de seguridad de cada parte involucrada en su  [!DNL Adobe Commerce as a Cloud Service] proyecto.
 feature: Cloud, Security
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -35,17 +35,17 @@ Las siguientes tablas de resumen utilizan el modelo RACI para mostrar las respon
 | Definición de reglas WAF de origen back-end | RA | |
 | Definición de reglas de WAF de CDN back-end | RA | |
 | Implementación de reglas WAF de plataforma back-end | RA | |
-| Implementación de reglas WAF de CDN back-end | RA | |
-| Corrigiendo errores principales en [!DNL Adobe Commerce as a Cloud Service] | RA | I |
-| Publicando [!DNL Adobe Commerce as a Cloud Service] parches de infraestructura | RA | |
-| Escalado (infraestructura) | RA | |
-| Escala (aplicación principal) | RA | |
-| Integración de aplicaciones externas | | RA |
-| Instalación de aplicaciones de App Builder | | RA |
-| Prueba del rendimiento de todas las aplicaciones de App Builder | | RA |
-| Temática y diseño de aplicaciones de App Builder personalizadas | | RA |
-| Configuración del DNS back-end | RA | I |
-| Incorporación de CDN back-end | RA | I |
+| Deploying backend CDN WAF rules | RA | |
+| Fixing core bugs in [!DNL Adobe Commerce as a Cloud Service] | RA | I |
+| Releasing [!DNL Adobe Commerce as a Cloud Service] infrastructure patches | RA | |
+| Scaling (infrastructure) | RA | |
+| Scaling (core application) | RA | |
+| Integrating external applications | | RA |
+| Installing App Builder apps | | RA |
+| Testing performance of all App Builder apps | | RA |
+| Theming and design of custom App Builder apps | | RA |
+| Configuring backend DNS | RA | I |
+| Onboarding backend CDN | RA | I |
 | Compatibilidad con CDN back-end | RA | I |
 | Obtención de un proveedor DNS back-end | RA | |
 | Aprovisionamiento de los entornos de producción y de zona protegida | A | R |

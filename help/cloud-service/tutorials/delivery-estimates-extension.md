@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 3fc8982613df7b1155cdfb08ac4b56de6d1ce4f6
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3398'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Si alguno de los comandos anteriores no devuelve los resultados esperados, consu
 
 Además, compruebe lo siguiente:
 
-- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview){target="_blank"}.
-- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}.
+- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - La CLI `aem` está instalada:
 
   ```bash
@@ -712,24 +712,24 @@ Utilice las siguientes sugerencias si encuentra problemas durante el tutorial.
 |---------|-------|-----|
 | La estimación de envío de PDP no aparece para los compradores que iniciaron sesión | El bloque PDP no inicializa el complemento `account`, por lo que `getCustomerAddress()` produce un error de forma silenciosa y no se obtiene ninguna estimación. | Use `CORE_FETCH_GRAPHQL.fetchGraphQl()` directamente para consultar las direcciones de los compradores en lugar de depender de la API desplegable de la cuenta. Esto funciona en cualquier página. |
 | La PDP sigue sin mostrarse después de la corrección de GraphQL | Se usó un error tipográfico en el nombre del método: `CORE_FETCH_GRAPHQL.fetch()` en lugar de `CORE_FETCH_GRAPHQL.fetchGraphQl()`. | Utilice el nombre de método correcto: `fetchGraphQl` (Q mayúscula, l minúscula). |
-| Las fechas de envío de cierre de compra no aparecen en la primera carga | El detector de eventos `checkout/updated` se registró después de que `checkout/initialized` se hubiera activado, por lo que se omitieron los datos iniciales. | Agregue un oyente `checkout/initialized` con `{ eager: true }` para capturar los eventos emitidos antes del registro. Mantener la escucha `checkout/updated` para cambios posteriores. |
-| La estimación de envío del carro de compras no aparece | `block.appendChild(fragment)` mueve todos los elementos secundarios fuera del fragmento, por lo que `fragment.querySelector('.cart__delivery-estimate')` devuelve un valor nulo. | Consulte desde `block` en lugar de `fragment` después de la operación de anexar. |
-| El envío con tarifa única no muestra ninguna fecha de envío en el cierre de compra | Por diseño: `CARRIER_MAP` solo asigna DPS a standard y Fedex a express. La tarifa plana no tiene un operador correspondiente en la API externa. | No es un error. Para agregar estimaciones para otros operadores, amplíe `CARRIER_MAP` en `scripts/delivery-estimates.js` y configure el operador en la extensión del servidor. |
+| Las fechas de envío de cierre de compra no aparecen en la primera carga | The `checkout/updated` event listener was registered after `checkout/initialized` had already fired, so the initial data was missed. | Add a `checkout/initialized` listener with `{ eager: true }` to catch events emitted before registration. Keep the `checkout/updated` listener for subsequent changes. |
+| Cart delivery estimate not appearing | `block.appendChild(fragment)` moves all children out of the fragment, so `fragment.querySelector('.cart__delivery-estimate')` returns null. | Query from `block` instead of `fragment` after the append operation. |
+| Flat Rate shipping shows no delivery date at checkout | By design — `CARRIER_MAP` only maps DPS to standard and Fedex to express. Flat Rate has no corresponding carrier in the external API. | Not a bug. To add estimates for other carriers, extend the `CARRIER_MAP` in `scripts/delivery-estimates.js` and configure the carrier in the backend extension. |
 
 {style="table-layout:auto"}
 
-### Entorno aislado SaaS de Commerce
+### Commerce SaaS sandbox
 
-| Síntoma | Causa | Fix |
+| Symptom | Cause | Fix |
 |---------|-------|-----|
-| El webhook devuelve `429 Too Many Requests` | El espacio de trabajo [!DNL App Builder] está en modo de depuración, que tiene límites estrictos de velocidad por minuto. [!DNL Commerce] recalcula las tarifas de envío con frecuencia durante el cierre de compra, agotando la cuota. | Implementar en un espacio de trabajo de producción (`aio app use` para cambiar y después `aio app deploy`). Los espacios de trabajo de producción no tienen límites de velocidad de depuración. |
-| Advertencia de tiempo de espera de software de webhook (>1000 ms) | La acción del webhook de métodos de envío tardó más tiempo que el tiempo de espera del software de 1000 ms de [!DNL Commerce]. | Habilite el almacenamiento en caché del lado del servidor en `aio-lib-state` de forma más agresiva o aumente el tiempo de espera del gancho web en [!DNL Commerce Admin] (configuración de los ganchos web de Commerce). |
+| Webhook returns `429 Too Many Requests` | [!DNL App Builder] workspace is in debug mode, which has strict per-minute rate limits. [!DNL Commerce] recalculates shipping rates frequently during checkout, exhausting the quota. | Deploy to a Production workspace (`aio app use` to switch, then `aio app deploy`). Production workspaces do not have debug rate limits. |
+| Webhook soft timeout warning (>1000ms) | The shipping-methods webhook action took longer than the [!DNL Commerce] 1000ms soft timeout. | Enable server-side caching in `aio-lib-state` more aggressively, or increase the webhook timeout in [!DNL Commerce Admin] (Commerce Webhooks configuration). |
 
 {style="table-layout:auto"}
 
-## Resumen del tutorial
+## Tutorial recap
 
-A continuación se muestra un resumen de los temas tratados en este tutorial:
+Here is a summary of the topics covered in this tutorial:
 
 - **Configuración de API simulada:** Creación de una API de estimación de entrega simulada mediante Pipedream o una acción de tiempo de ejecución de [!DNL App Builder].
 - **Patrón de BFF:** al crear una acción de back-end para front-end que ajusta la API externa, mantiene las credenciales del lado del servidor y centraliza el almacenamiento en caché.
