@@ -21,7 +21,7 @@ ht-degree: 2%
 - [Notas de la versión](release-notes.md)
 - Incorporar [!DNL Payment Services] {#get-started}
    - [Resumen de incorporación](onboard.md)
-   - [Instalar la extensión  [!DNL Payment Services] ](install.md)
+   - [Instalar la extensión  [!DNL Payment Services] &#x200B;](install.md)
    - [Conecte la instancia](connect.md)
    - [Configuración de la zona protegida de pruebas](sandbox.md)
    - [Activar para producción](production.md)
