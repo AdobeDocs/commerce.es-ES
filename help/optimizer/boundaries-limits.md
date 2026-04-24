@@ -2,7 +2,7 @@
 title: Límites y límites
 description: Comprenda [!DNL Adobe Commerce Optimizer] los límites y limitaciones para planificar la capacidad y evitar problemas de rendimiento.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ Su uso debe permanecer dentro de estos límites. Excederlos puede causar un aume
 
 Los límites de licencia se pueden aumentar comprando los paquetes de licencia descritos en la sección [Límites de licencia y límites del sistema](#license-limits-and-system-boundaries), o negociando licencias personalizadas para casos de uso únicos. Póngase en contacto con su representante de cuentas de Adobe para hablar sobre sus necesidades.
 
-Si tiene alguna pregunta sobre los límites del sistema, comuníquese con la [atención al cliente de Adobe](https://experienceleague.adobe.com/home?lang=en#support).
+Si tiene alguna pregunta sobre los límites del sistema, comuníquese con la [atención al cliente de Adobe](https://experienceleague.adobe.com/home?lang=es#support).
 
 ## Evitar problemas de rendimiento
 
@@ -156,7 +156,7 @@ Las siguientes funciones están disponibles para recomendaciones de productos. A
 
 | **Capacidad** | **Descripción** | **Asignación base** | **Ampliable?** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacity for building cloud-native extensions and integrations | Based on GMV tier<p>Minimum allocation: 1 pack/year</p> | Yes<p>Add additional packs</p> | For limits defined per pack, see:<ul><li>[App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) for limits defined per pack.</li><li>[System Settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.</li><li>[App Builder Storage requirements](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacity for building cloud-native extensions and integrations | Based on GMV tier<p>Minimum allocation: 1 pack/year</p> | Yes<p>Add additional packs</p> | For limits defined per pack, see:<ul><li>[App Builder product description](https://helpx.adobe.com/es/legal/product-descriptions/adobe-developer-app-builder.html) for limits defined per pack.</li><li>[System Settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.</li><li>[App Builder Storage requirements](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 

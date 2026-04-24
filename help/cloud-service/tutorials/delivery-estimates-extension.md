@@ -53,8 +53,8 @@ Si alguno de los comandos anteriores no devuelve los resultados esperados, consu
 
 Además, compruebe lo siguiente:
 
-- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
-- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
+- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview){target="_blank"}.
+- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}.
 - La CLI `aem` está instalada:
 
   ```bash
