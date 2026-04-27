@@ -3,9 +3,9 @@ title: '[!DNL SaaS Data Export Guide]'
 description: Obtenga información acerca del uso de la extensión  [!DNL data export] para servicios SaaS de Adobe Commerce que sincroniza datos entre Adobe Commerce y los servicios de Commerce conectados.
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ La exportación de datos SaaS se entrega como una extensión PHP. Admite varios 
 
 - **Sincronización manual desde el administrador o desde la línea de comandos**
 
-   - El [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) del administrador de Commerce proporciona una vista gráfica del estado de sincronización que muestra los datos del producto sincronizados correctamente con los servicios de comercio. Puede usar el tablero para realizar una resincronización completa (_sincronización completa_) de todas las fuentes. Sin embargo, Adobe solo recomienda realizar una sincronización completa la primera vez que conecte Adobe Commerce a un servicio de Commerce. Consulte [Proceso de sincronización](data-synchronization.md).
+   - El [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) del administrador de Commerce proporciona una vista gráfica del estado de sincronización que muestra los datos del producto sincronizados correctamente con los servicios de comercio. Puede usar el tablero para realizar una resincronización completa (_sincronización completa_) de todas las fuentes. Sin embargo, Adobe solo recomienda realizar una sincronización completa la primera vez que conecte Adobe Commerce a un servicio de Commerce. Consulte [Proceso de sincronización](data-synchronization.md).
 
-     {{aco-data-sync-verification}}
+  {{aco-data-sync-verification}}
 
-   - La página [Estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) proporciona información en tiempo real sobre el estado y el rendimiento de las fuentes de exportación de datos que transfieren datos de productos y categorías de Commerce a servicios externos como Product Recommendations, Live Search y Servicio de catálogo, o Adobe Commerce Optimizer.
+   - La página [Estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) proporciona información en tiempo real sobre el estado y el rendimiento de las fuentes de exportación de datos que transfieren datos de productos y categorías de Commerce a servicios externos como Product Recommendations, Live Search y Servicio de catálogo, o Adobe Commerce Optimizer.
 
-   - La [herramienta de línea de comandos de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) proporciona comandos para sincronizar fuentes específicas e incluye opciones adicionales para personalizar el procesamiento de fuentes.
+   - La [herramienta de línea de comandos de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) proporciona comandos para sincronizar fuentes específicas e incluye opciones adicionales para personalizar el procesamiento de fuentes.
 
 - **Sincronización automatizada con trabajos cron**
 

@@ -2,9 +2,9 @@
 title: Administre su aplicación
 description: Asocie, configure y desasocie aplicaciones de App Builder con su instancia de Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 Un administrador de aplicaciones asocia una aplicación de App Builder con su instancia de Commerce. Los formularios de configuración se representan de forma dinámica en función del esquema de la aplicación, por lo que no se requiere el desarrollo de la IU de administración personalizada. El administrador de aplicaciones configura las opciones a través de formularios que Commerce genera automáticamente.
 
 ![Administración de aplicaciones](assets/app-management-view.png){width="500" zoomable="yes"}
+
+## Buscar una aplicación en el administrador
+
+En **[!UICONTROL Apps]** > **[!UICONTROL App Management]**, cada aplicación aparece como una tarjeta. La lista puede incluir todas las aplicaciones asociadas con la instancia de Adobe Commerce para la organización IMS de Adobe seleccionada. Utilice los controles situados encima de las tarjetas para reducir los resultados:
+
+| Control | Descripción |
+| --- | --- |
+| **Filtrar por aplicación...** | Buscar por nombre de aplicación. |
+| **Estado** | Limitar tarjetas por estado de ciclo vital. **Todos los estados** muestra cada aplicación; otros valores incluyen **Asociado**, **Instalado**, **Parcialmente Instalado** y **No Asociado**. El estado de cada tarjeta coincide con el indicador de color de la lista. |
+| **Patrones de extensibilidad** | Limite las tarjetas según las capacidades que utilice la aplicación. **Todos los patrones de extensibilidad** muestran cada aplicación; otros valores se alinean con los distintivos de cada tarjeta, como **Configuración empresarial**, **SDK de la IU de administración**, **Webhooks** y **Eventos**. |
+
+El texto de búsqueda y ambos desplegables se aplican juntos (AND lógico). Para volver a mostrar la lista completa, vuelve a establecer **Status** y **Extensibility patterns** en sus opciones **All ...** y borra el campo de búsqueda.
+
+## Adquirir aplicación
+
+**[!UICONTROL Acquire App]** abre una nueva ficha de explorador (o una vista de explorador independiente) en [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, donde podrá detectar anuncios de Marketplace relacionados con Commerce y agregar aplicaciones a su organización de IMS. Una vez adquirida, aprobada e implementada la aplicación, esta aparece en [!DNL App Management] para [asociación e instalación](#associate-an-app).
 
 ## Requisitos previos
 
@@ -30,7 +46,7 @@ Antes de asociar una aplicación, asegúrese de que dispone de lo siguiente:
 
 Vea este vídeo para aprender a asociar una aplicación a una instancia de Commerce y configurar opciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478958?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Asociar una aplicación
 
