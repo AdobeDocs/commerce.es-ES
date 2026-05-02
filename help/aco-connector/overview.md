@@ -2,10 +2,10 @@
 title: Conector de Adobe Commerce Optimizer
 description: Obtenga información sobre cómo conectar los datos de su proyecto de nube o local de Commerce a Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+source-git-commit: c9cce4766ef3f30390d50f53237328be1cfeefdf
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -13,41 +13,175 @@ ht-degree: 0%
 
 # Conector de Adobe Commerce Optimizer
 
-Adobe Commerce Optimizer Connector es el puente de integración que sincroniza los datos de catálogo y de precios entre Adobe Commerce en la infraestructura en la nube o en la implementación local y [!DNL Adobe Commerce Optimizer]. La sincronización de datos con Adobe Commerce Optimizer habilita funciones como Búsqueda por IA dinámica, Recommendations, optimización de sitios y tiendas sin encabezado de carga rápida, incluidas las tiendas de Adobe Commerce en Edge Delivery Services y análisis de rendimiento en tiempo real.
+Adobe Commerce Optimizer Connector es una integración nativa de origen entre Adobe Commerce (en la nube o de forma local) y Adobe Commerce Optimizer. Sincroniza los datos de catálogo y precios de sus tiendas Adobe Commerce con Commerce Optimizer para que pueda:
 
-## Arquitectura y experiencia
+- Activar **descubrimiento y recomendaciones de productos impulsados por IA**
+- Ejecutar **tiendas sin encabezado de alto rendimiento** (incluidas las tiendas Commerce con tecnología Edge Delivery)
+- Analizar **antes y después de** KPI y el estado de sincronización de datos en un solo lugar
 
-El conector de Adobe Commerce Optimizer funciona asignando sitios web de Commerce y vistas de tienda a un proyecto de Commerce Optimizer, como se muestra en la siguiente ilustración:
+Commerce sigue siendo el sistema de registro para productos, precios y estructura de catálogo. Commerce Optimizer se convierte en su nivel de experiencia y comercialización, y sirve resultados rápidos y relevantes para cualquier tienda o canal conectado.
 
-![Asignación de datos de Commerce a Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="700" zoomable="yes"}
+## Ventajas principales {#key-benefits}
 
-Cuando se exportan datos de Commerce a Commerce Optimizer:
+| Beneficio | Lo que significa para usted |
+| --- | --- |
+| **No hay ningún conector personalizado para compilar** | Utilice una integración de origen admitida en lugar de escribir y mantener fuentes y scripts personalizados. |
+| **Obtención de valor en menos tiempo con Commerce Optimizer** | Active la Búsqueda por IA, las recomendaciones y las tiendas sin encabezado sobre su implementación de Adobe Commerce existente. |
+| **Alineado con ámbitos de Commerce** | Asigna automáticamente sitios web, vistas de tiendas y grupos de clientes en construcciones de catálogo de Commerce Optimizer (fuentes de catálogo y libros de precios). |
+| **Visibilidad operativa** | Monitorice el estado de la fuente, los tiempos de última sincronización y el estado por SKU desde una vista de estado de sincronización de fuente de datos dedicada. |
+| **Ruta preparada para el futuro hacia SaaS** | Proporciona una ruta de modernización de bajo riesgo de PaaS a Adobe Commerce as a Cloud Service + Optimizer, sin una nueva plataforma. |
 
-* Las vistas de la tienda Commerce están asignadas a orígenes de catálogo
-* Los sitios web se asignan a libros de precios
+## Arquitectura del conector {#connector-architecture}
 
-Los datos de catálogo y precio asociados se exportan y se utilizan posteriormente para crear vistas de catálogo y, opcionalmente, definir directivas para filtrar los datos de catálogo y precio para casos de uso empresariales específicos.
+El diagrama siguiente ilustra la arquitectura de extremo a extremo para el conector, desde Adobe Commerce a través de Commerce Optimizer y hacia fuera hasta los sistemas de tiendas y cajas.
 
-Cuando el conector está habilitado, también puede configurar y administrar reglas de comercialización para la detección de productos y reglas para Recommendations mediante [[!DNL Adobe Commerce Optimizer] Herramientas de comercialización](../optimizer/overview.md#quick-tour). La instancia de Adobe Commerce se convierte en la fuente de datos para los datos de catálogos y precios. Cuando los datos se actualizan en Commerce, las actualizaciones se sincronizan con la instancia [!DNL Adobe Commerce Optimizer].
+![Diagrama de arquitectura de extremo a extremo del conector Commerce Optimizer Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
-## Flujos de trabajo
+En esta arquitectura:
 
-Connector permite varios flujos de trabajo clave:
+- Adobe Commerce (en la nube o de forma local) es el sistema de producción de registros y piensos
+- El conector exporta fuentes de catálogo, precio y categoría
+- Commerce Optimizer ingiere y normaliza los datos de fuentes en fuentes de catálogo, libros de precios y vistas de catálogo
+- Las tiendas (tienda de Commerce en Edge Delivery o compilaciones personalizadas sin encabezado) llaman a las API de GraphQL de Commerce Optimizer para obtener información y recomendaciones, y llaman a Commerce u otra plataforma de terceros conectada para realizar operaciones de carrito y cierre de compra
 
-* **Exportar los datos del catálogo de Commerce a[!DNL Adobe Commerce Optimizer]**: los datos del libro de precios y precios se exportan a nivel del sitio web y del grupo de clientes. Los datos de atributos de productos y productos se exportan en el nivel `store view`. De forma predeterminada, la sincronización de datos del catálogo está habilitada para todos los ámbitos de Commerce (sitios web y vistas de tiendas).
+## Cómo funciona el conector con Adobe Commerce {#how-it-works}
 
-  Para habilitar este flujo de trabajo, instale la extensión PHP `adobe-commerce/commerce-data-export-aco-adapter`, revise la configuración del exportador y, a continuación, habilite la integración entre Commerce y Commerce Optimizer desde el administrador de Commerce. Para obtener instrucciones detalladas, consulte [Introducción](get-started.md).
+- Commerce Optimizer ingiere y normaliza los datos de fuente en fuentes de catálogo, libros de precios y vistas de catálogo.
 
-* **Asigne el sitio web de Commerce y almacene los datos de vista para exportar a[!DNL Adobe Commerce Optimizer]**
+- Las tiendas (tienda de Commerce en Edge Delivery o compilaciones personalizadas sin encabezado) llaman a las API de GraphQL de Commerce Optimizer para obtener información y recomendaciones, y llaman a Commerce u otra plataforma de terceros conectada para realizar operaciones de carrito y cierre de compra.
 
-  De forma opcional, personalice la configuración de exportación para sincronizar datos solo para sitios web específicos o vistas de tiendas. Por ejemplo, puede elegir exportar los datos del catálogo para una sola vista de tienda para utilizarlos en un caso de uso específico, como optimizar la experiencia de búsqueda y descubrimiento para un mercado o región específicos.
+## Cómo funciona el conector con Adobe Commerce
 
-* **Configuración y administración de reglas de comercialización**
+El conector de Adobe Commerce Optimizer funciona mediante los ámbitos de Commerce existentes (sitios web y vistas de tiendas) y la segmentación de clientes para rellenar el modelo de catálogo de Commerce Optimizer:
 
-  Cuando el conector está habilitado, las reglas de comercialización para la detección de productos y las recomendaciones se definen y administran desde la interfaz de usuario de [!DNL Adobe Commerce Optimizer], no desde las páginas de [!UICONTROL Live Search] y [!UICONTROL Product Recommendations] en el administrador de Commerce.
+![Asignación de datos de Commerce a Adobe Commerce Optimizer](/help/aco-connector/assets/storeview-to-catalogview-mapping.png){width="750" zoomable="yes"}
 
-* **Implementar tu tienda Commerce en Edge Delivery Services**
+- **Vistas de tienda → Fuentes de catálogo**: cada vista de tienda se convierte en una Source de catálogo independiente en Commerce Optimizer. Esa fuente incluye atributos de productos localizados y datos específicos de vistas de tienda
+- **Sitios web → Libros de precios**: cada sitio web de Commerce se asigna a uno o más Libros de precios en Commerce Optimizer. Exportación de precios de sitio web y precios de grupo de clientes como libros de precios y entradas de precios
+- **Grupos de clientes → Variantes de precios** — Los precios de grupos de clientes de Commerce aparecen como entradas adicionales en los libros de precios correspondientes
 
-  Después de configurar la integración con [!DNL Adobe Commerce Optimizer], puede implementar una Tienda Commerce en Edge Delivery Services. Esto ofrece un rendimiento ultrarrápido, escalabilidad, creación de contenido sin problemas y personalización integrada mediante una arquitectura compuesta y basada en API.
+Una vez que Commerce Optimizer haya introducido los datos, puede configurar lo siguiente:
 
-Para obtener más información sobre cómo configurar la integración y habilitar estos flujos de trabajo, consulte [Introducción](get-started.md).
+- **Vistas de catálogo y directivas** en Commerce Optimizer (para generar región, marca o subconjuntos específicos del cliente)
+- **Descubrimiento de productos** (búsqueda, facetas, reglas de comercialización)
+- **Recomendaciones de productos**
+
+Al habilitar el conector, la instancia de Adobe Commerce sigue siendo el sistema de registro para los datos de catálogo y precio. Al actualizar datos en Commerce, el conector sincroniza esas actualizaciones con la instancia [!DNL Adobe Commerce Optimizer].
+
+>[!NOTE]
+>
+>Para obtener más información sobre la configuración de Commerce Optimizer, consulte [[!DNL Adobe Commerce Optimizer] Herramientas de comercialización](../optimizer/overview.md#quick-tour).
+
+## Flujos de trabajo habituales {#typical-workflows}
+
+Estos flujos de trabajo describen cómo los equipos configuran y utilizan el conector de Adobe Commerce Optimizer. Para obtener más información sobre cómo configurar la integración y habilitar estos flujos de trabajo, consulte [Introducción](get-started.md).
+
+### Configuración y configuración iniciales {#initial-setup}
+
+1. **Instale el paquete del conector en Adobe Commerce** mediante Composer:
+
+   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+
+1. **Configure los detalles de autenticación y entorno** en el administrador de Commerce o a través de CLI:
+
+   ```terminal
+   bin/magento aco:config:init \
+     --org_id=<your-org> \
+     --tenant_id=<your-tenant> \
+     --client_id=<your-client-id> \
+     --client_secret=<your-secret> \
+     --region=na1 \
+     --type=production
+   ```
+
+1. **Asignar ámbitos de Commerce a Commerce Optimizer:**
+
+   - Confirmar qué sitios web y vistas de la tienda deben estar dentro del ámbito
+   - Asegúrese de que los grupos de clientes y las reglas de precios se modelan según lo esperado
+
+1. **Verificar conectividad:**
+
+   - Ejecute una sincronización de prueba y confirme que las fuentes de catálogo, los libros de precios y los productos iniciales aparecen en Commerce Optimizer
+   - Utilice la página Estado de sincronización de fuentes de datos en Commerce y los paneles de sincronización de datos en Commerce Optimizer para la validación
+
+### Sincronización de datos en curso {#ongoing-sync}
+
+Después de la configuración inicial, el conector admite:
+
+- **Sincronización de catálogo completo** para la migración inicial o cambios estructurales grandes
+- **Delta sincroniza** para actualizaciones continuas cuando los productos o precios cambian
+- **Comandos de resincronización** para fuentes de destino (incluidas categorías desde la versión 1.0.12):
+
+   - `bin/magento saas:resync --feed=products`
+   - `bin/magento saas:resync --feed=prices`
+   - `bin/magento saas:resync --feed=categories`
+
+### Configuración de tiendas y comercialización {#merchandising-storefronts}
+
+Una vez que los datos de Commerce estén disponibles en Commerce Optimizer, utilice Commerce Optimizer Studio para conectar las experiencias de comercialización y tienda al catálogo sincronizado.
+
+**Para configurar la comercialización y las tiendas:**
+
+1. **Crear vistas de catálogo y directivas** en Commerce Optimizer Studio:
+
+   - Filtre el catálogo por marca, región, segmento de cliente o canal
+   - Aplicar reglas de acceso a datos por tienda o socio
+
+1. **Configurar Descubrimiento de productos y Recommendations** en la interfaz de usuario de Optimizer:
+
+   - Crear reglas de comercialización, facetas, sinónimos y unidades de recomendación.
+   - El conector descarga toda la configuración de búsqueda y recomendación en Commerce Optimizer (las reglas de Live Search y Product Recommendations del administrador de Commerce ya no se aplican a estos flujos)
+
+1. **Conectar tiendas** a Commerce Optimizer:
+
+   - En el caso de las tiendas Commerce con tecnología Edge Delivery Services, configure la tienda para que utilice el inquilino del Optimizer y la vista de catálogo correctos, y para que invoque los extremos de búsqueda y recomendación mediante la API de comercialización
+   - Para tiendas de terceros, utilice las API públicas o SDK de Optimizer para llamadas de búsqueda y recomendación
+
+   >[!NOTE]
+   >
+   >Para ver un ejemplo de integración de terceros, consulte [Conector de Salesforce Commerce para Commerce Optimizer](../optimizer/developer/salesforce-connector.md).
+
+1. **Mantener cierre de compra** en la plataforma existente:
+
+   - Mantenga las cuentas de carro de compras, cierre de compra, administración de pedidos y clientes en Adobe Commerce o en una plataforma de terceros
+   - Utilice App Builder y API Mesh para el traspaso del carro de compras al integrarse con sistemas de cierre de compra externos
+
+## Escenarios admitidos {#supported-scenarios}
+
+El conector está diseñado para comerciantes B2C con Adobe Commerce en implementaciones en la nube y locales que deseen adoptar Commerce Optimizer sin reconstruir su back-end.
+
+**Casos de uso comunes:**
+
+- **Modernizar solo la tienda**
+Mantenga su backend de Commerce existente, mueva el PLP/Search/PDP a las tiendas de Edge Delivery con tecnología de Commerce Optimizer
+
+- **Escalar el rendimiento del catálogo y la búsqueda**
+Descargue la indexación de catálogos pesados y busque en los servicios SaaS de Commerce Optimizer mientras mantiene la propiedad de productos y precios en Commerce
+
+- **Adopción incremental de SaaS**
+Utilice el conector como un paso hacia Adobe Commerce as a Cloud Service + Optimizer, con un catálogo de Commerce componible y compatible
+
+## Responsabilidades y requisitos previos de implementación {#responsibilities-prerequisites}
+
+Commerce es la fuente fiable de productos, precios y grupos de clientes. Realice cambios en Commerce; el conector los sincroniza con Commerce Optimizer.
+
+**Commerce Optimizer es responsable de:**
+
+- Modelado de catálogos (fuentes de catálogo, libros de precios, vistas de catálogo, directivas)
+- Descubrimiento de productos y recomendaciones
+- Informes de métricas de tienda, paneles de sincronización de datos y métricas de éxito
+
+**El conector no:**
+
+- Modificar el carro de compras, el cierre de compra o los flujos de pedidos de Commerce
+- Aprovisionar automáticamente proyectos de tienda (las herramientas de Commerce Storefront y Edge Delivery se encargan de ello)
+
+**Antes de comenzar:**
+
+- Compruebe que Commerce cumple los requisitos mínimos de versión y conector de servicios. Consulte [Introducción](get-started.md#prerequisites) para obtener más información.
+- Asegúrese de que tiene acceso a la organización de IMS, una instancia de [!DNL Adobe Commerce Optimizer] y las credenciales y los detalles de región necesarios.
+
+## Documentación relacionada {#related-documentation}
+
+- Configure la integración y habilite los flujos de trabajo clave: [Introducción al conector de Adobe Commerce Optimizer](get-started.md)
+- Obtenga información acerca de los conceptos y la arquitectura de Commerce Optimizer: [¿Qué es Adobe Commerce Optimizer?](../optimizer/overview.md)
