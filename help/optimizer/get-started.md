@@ -3,11 +3,11 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 5014b605e1e917e1dfa8992d74d8dc0cb058e65f
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Los desarrolladores gestionan la implementación técnica y la integración de d
 | Tarea | Descripción | Vínculo |
 |---|---|---|
 | **Acceder a Developer Console** | Crear proyectos y generar credenciales | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Ingesta de datos de catálogo** | Importar datos de productos de sistemas existentes | Para introducir datos directamente en Adobe Commerce Optimizer, consulte [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Para ingerir datos de Commerce en la nube, en entornos locales u otros sistemas de terceros, consulte el tema [Integraciones](./integrations/integrations-overview.md){target="_blank"}. |
+| **Ingesta de datos de catálogo** | Importar datos de productos de sistemas existentes | Para ingerir datos directamente en Adobe Commerce Optimizer, consulte la [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Para ingerir datos de Commerce en entornos locales o en la nube u otros sistemas de terceros, consulte el tema [Integraciones](./integrations/integrations-overview.md){target="_blank"}. |
 | **Configurar la tienda** | Configurar la tienda de Edge Delivery Services | [Configuración de tienda](./storefront.md) |
 
 ### Tareas del comerciante
@@ -135,18 +135,22 @@ Una vez abierta la aplicación, cambie fácilmente entre entornos como zona prot
 
    ![Menú desplegable del conmutador de instancias para seleccionar [!DNL Adobe Commerce Optimizer] entornos](./assets/context-switcher.png){zoomable="yes"}
 
+>[!NOTE]
+>
+>Si necesita volver al Administrador de Commerce Cloud para ver los detalles de la instancia o administrar instancias, haga clic en el icono Aplicaciones ![Icono para abrir Aplicaciones Experience Cloud](./assets/apps-icon.png) en la esquina superior izquierda de la navegación superior de Commerce Optimizer.
+
 ### Obtener detalles de la instancia
 
 Vea los detalles de la instancia haciendo clic en el icono de información junto al nombre de la instancia.
 
-![[!DNL Adobe Commerce Optimizer] panel de detalles de instancia que muestra los extremos y el identificador de instancia &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![[!DNL Adobe Commerce Optimizer] panel de detalles de instancia que muestra los extremos y el identificador de instancia ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Tenga en cuenta la siguiente información clave:
 
 - **Extremo de GraphQL** para recuperar datos del catálogo de Commerce mediante la API de comercialización
-- **Punto final del servicio de catálogo** para la ingesta de datos mediante la API de REST
+- **Extremo de catálogo** para la ingesta de datos de catálogo en Commerce Optimizer mediante la API de REST
 - **URL de Commerce Optimizer** para acceder a la aplicación [!DNL Adobe Commerce Optimizer]
-- **ID de instancia**: el ID único de inquilino que identifica la instancia
+- **ID de instancia**: el ID único que identifica la instancia. El identificador de instancia también se conoce como *tenant_id*.
 
 Si es desarrollador, necesita estos detalles para configurar su entorno de desarrollo y conectarse a las API de [!DNL Adobe Commerce Optimizer].
 
@@ -217,6 +221,6 @@ Después de completar la configuración:
 ### Obtener ayuda
 
 - **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/)
-- **Recursos de tienda**: [documentación de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-- **Tutoriales**: [Tutoriales de Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+- **Recursos de tienda**: [documentación de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutoriales**: [Tutoriales de Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
