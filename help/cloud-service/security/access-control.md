@@ -1,0 +1,53 @@
+---
+title: Administración de acceso e identidad
+description: Obtenga información acerca de las funciones de administración de identidades y acceso de Adobe Commerce as a Cloud Service.
+role: Admin, Architect, Leader
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+source-git-commit: 283e9c8b9dd0812bb19640681d1fdf86f0f7fce1
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 0%
+
+---
+
+
+# Administración de acceso e identidad
+
+[!DNL Adobe Commerce as a Cloud Service] aprovecha la infraestructura de identidad empresarial de Adobe para garantizar un control de acceso seguro, escalable y centralizado en todos los entornos. La administración de identidad y acceso (IAM) en [!DNL Adobe Commerce as a Cloud Service] está diseñada para simplificar el aprovisionamiento de usuarios, aplicar el acceso con menos privilegios y admitir el cumplimiento de los estándares de seguridad globales.
+
+- **[!DNL Adobe Identity Management Services (IMS)]**: [!DNL Adobe Commerce as a Cloud Service] utiliza [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) para autenticar a los usuarios y administrar los derechos. Esto incluye compatibilidad con proveedores de identidad federados y [control de acceso basado en roles](../user-management.md).
+
+- **Gobernanza de Admin Console**: Los administradores administran el acceso a la tienda y al servidor a través de [!DNL Adobe Admin Console]. Los permisos se pueden asignar a características y funciones específicas, lo que garantiza un acceso con menos privilegios.
+
+## Servicios de Adobe Identity Management (IMS)
+
+[!DNL Adobe Commerce as a Cloud Service] usa [!DNL Adobe Identity Management Services (IMS)] para autenticar usuarios y administrar derechos en toda la plataforma. IMS proporciona:
+
+- **Compatibilidad con identidad federada**: integre con proveedores de identidad empresariales, como Azure AD y Okta, mediante SAML o OIDC.
+- **Inicio de sesión único (SSO)**: acceso sin problemas a [!DNL Adobe Commerce] y otros [!DNL Adobe Experience Cloud] productos.
+- **Autenticación de varios factores (MFA)**: Se aplica en el nivel de organización para mejorar la seguridad.
+- **Redundancia global**: los datos de identidad se almacenan en una infraestructura de nube de carga equilibrada de varias regiones.
+
+## Control de acceso de Admin Console
+
+[!DNL Adobe Admin Console] es el concentrador central para administrar el acceso de los usuarios a [!DNL Adobe Commerce as a Cloud Service]:
+
+- **Control de acceso basado en roles (RBAC)**: asigne permisos granulares a los usuarios según sus roles, como Desarrollador, Administrador y Analista.
+- **Perfiles de producto**: defina ámbitos de acceso para diferentes entornos, como ensayo y producción.
+- **Administración delegada**: los administradores del sistema y de productos pueden administrar el acceso de los usuarios sin la participación de TI.
+
+Consulte [administración de usuarios](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management) para obtener más información.
+
+## Autenticación de API y seguridad de integración
+
+La autenticación de la API REST de [!DNL Adobe Commerce as a Cloud Service] se administra mediante [!DNL Adobe Identity Management Services (IMS)] de Adobe con protocolos OAuth 2 estandarizados. Este sistema de autenticación admite flujos de trabajo interactivos basados en usuarios e integraciones automatizadas servidor a servidor, lo que garantiza un acceso seguro y adecuado para diferentes casos de uso.
+
+>[!NOTE]
+>
+>Los métodos de administración y generación de tokens de integración de las versiones de PaaS de [!DNL Adobe Commerce] no son compatibles con los entornos SaaS. En su lugar, debe obtener un token de administrador de IMS mediante la autenticación OAuth.
+
+- **Compatibilidad con OAuth 2.0**: autenticación segura basada en tokens para integraciones y servicios de terceros.
+- **Acceso a API con ámbito**: Limite el acceso a API a recursos y operaciones específicos.
+- **Registro de auditoría**: haga un seguimiento de los eventos de autenticación y los cambios de acceso para comprobar el cumplimiento y solucionar problemas.
+
+Consulte [Autenticación REST](https://developer.adobe.com/commerce/webapi/rest/authentication/) para obtener más información.
