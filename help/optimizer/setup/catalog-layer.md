@@ -3,10 +3,10 @@ title: Capa de catálogo
 description: Descubra cómo las capas de catálogo le permiten modificar los datos de producto sin cambiar los datos de origen originales, para que pueda personalizar con seguridad y revertir los cambios en cualquier momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Cuando un cliente ve su tienda, el sistema combina los datos del catálogo base 
    * **Sobrescribir campos**: los campos de texto como nombre, descripción y metatítulos se reemplazan por los valores definidos en la capa, teniendo prioridad la capa de mayor prioridad.
    * **Combinar campos**: los campos de matriz como imágenes, vínculos y atributos se combinan desde varias capas, lo que proporciona una respuesta unificada.
 
-1. **Resolución de prioridad**: el campo de orden determina qué capa tiene prioridad. Cuando varias capas modifican el mismo campo, la capa con el número de orden inferior tiene mayor prioridad (por ejemplo, el orden 1 es el más alto).
+1. **Resolución de prioridad**: el campo de orden determina qué capa tiene prioridad. Cuando varias capas modifican el mismo campo, la capa con el número de orden más alto tiene mayor prioridad (por ejemplo, el orden 10 es el más alto).
 
 ## Casos de uso de capa de catálogo
 
@@ -114,7 +114,7 @@ La IU de vista de catálogo permite crear y administrar capas manualmente, lo qu
 
 >[!NOTE]
 >
->Si no existe una capa de Sites Optimizer en la vista de catálogo, la función de corrección automática de Sites Optimizer crea una y la asigna en el orden 1 (prioridad más alta). Si elimina esta capa, se volverá a crear la próxima vez que se ejecute la función de corrección automática en Sites Optimizer y cambiará las capas existentes a números de orden inferior. Si la capa de Sites Optimizer ya existe en un número de pedido diferente, la función de corrección automática no cambiará su prioridad.
+>Si no existe una capa de Sites Optimizer en la vista de catálogo, la función de corrección automática de Sites Optimizer crea automáticamente una y la asigna a la prioridad más alta (número más alto). Si elimina esta capa, se volverá a crear la próxima vez que se ejecute la función de corrección automática en Sites Optimizer y cambiará las capas existentes a números de orden inferior. Si la capa de Sites Optimizer ya existe en un número de pedido diferente, la función de corrección automática no cambiará su prioridad.
 
 >[!TIP]
 >
@@ -189,8 +189,8 @@ El orden en que se aplican las capas determina qué valores aparecen en la tiend
 **Explicación del orden de prioridad:**
 
 * A cada capa se le asigna un número de orden (1, 2, 3, etc.)
-* El orden 1 tiene la prioridad más alta y anula todas las demás capas
-* Cuando varias capas modifican el mismo campo, la capa con el número de orden inferior tiene prioridad
+* Los números más altos indican una prioridad mayor y anulan todas las demás capas
+* Cuando varias capas modifican el mismo campo, la capa con el número de orden superior tiene prioridad
 * La prioridad solo se aplica a los campos de anulación (nombre, descripción, etiquetas meta)
 * Los campos combinados (imágenes, vínculos, atributos) combinan datos de todas las capas
 
