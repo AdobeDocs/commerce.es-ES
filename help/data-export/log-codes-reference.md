@@ -1,5 +1,5 @@
 ---
-title: Referencia de códigos de registro de [!Data Export]
+title: Referencia de códigos de registro de [ !Data Export]
 description: Lista de referencia de códigos de registro de exportación de datos, mensajes y niveles de gravedad para solucionar problemas de sincronización y decidir cuándo se requiere una resincronización parcial o completa.
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
