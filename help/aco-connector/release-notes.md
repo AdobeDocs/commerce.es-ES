@@ -30,7 +30,7 @@ _6 de mayo de 2026_
 
 _2 de abril de 2026_
 
-![Nuevo](../assets/new.svg) **Se ha agregado compatibilidad con la fuente Categorías en el comando `saas:resync` **-Ahora puede actualizar y ver fácilmente los datos de categoría más recientes mediante el comando CLI `saas:resync`:
+![Nuevo](../assets/new.svg) **Se ha agregado compatibilidad con la fuente Categorías en el comando `saas:resync` &#x200B;**-Ahora puede actualizar y ver fácilmente los datos de categoría más recientes mediante el comando CLI `saas:resync`:
 
 ```terminal
 bin/magento saas:resync --feed=categories
