@@ -3,7 +3,7 @@ title: Límites y límites de integración
 description: Conozca los límites de ámbito de los catálogos de terceros, la cobertura de corrección automática, la rastrea de requisitos previos, las consideraciones de escala empresarial y las restricciones de acceso beta restringidas para LLM Optimizer con Commerce.
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '258'
