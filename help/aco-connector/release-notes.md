@@ -2,9 +2,9 @@
 title: Notas de la versión [!DNL Adobe Commerce Optimizer Connector]
 description: La información de la versión más reciente de  [!DNL Adobe Commerce Optimizer Connector]  para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 205fca38b379f94027a965b58826ffd922577f61
+source-git-commit: e0f7b9b860f8dce18b357d479cbc021f32970c18
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,23 @@ ht-degree: 0%
 Estas notas de la versión describen todas las versiones para [!DNL Adobe Commerce Optimizer Connector] e incluyen:
 
 ![Nuevas](../assets/new.svg) nuevas características
-![Se ha corregido un problema](../assets/fix.svg) Correcciones y mejoras
+![Se corrigió el problema](../assets/fix.svg) Correcciones y mejoras
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
 ## Versiones de 2026
+
+### Versión 1.0.13
+
+_6 de mayo de 2026_
+
+![Corrección](../assets/fix.svg) **Se mejoraron las instrucciones de configuración del conector**- Se ha actualizado la página de configuración de Commerce Optimizer en el Administrador de Commerce para que se vincule a la _Guía del conector de Adobe Commerce_. <!--COMOPT-1922-->
+![Corrección](../assets/fix.svg) **Mejora de metadatos del conector**- El conector ACO ahora incluye su versión instalada en el encabezado de metadatos. Esta mejora permite a los equipos identificar rápidamente qué versión del conector se está usando durante la solución de problemas o las contrataciones de soporte técnico.<!--MDEE-1323-->
 
 ### Versión 1.0.12
 
 _2 de abril de 2026_
 
-![Nuevo](../assets/new.svg) **Se ha agregado compatibilidad con la fuente Categorías en el comando `saas:resync` &#x200B;**-Ahora puede actualizar y ver fácilmente los datos de categoría más recientes mediante el comando CLI `saas:resync`:
+![Nuevo](../assets/new.svg) **Se ha agregado compatibilidad con la fuente Categorías en el comando `saas:resync` **-Ahora puede actualizar y ver fácilmente los datos de categoría más recientes mediante el comando CLI `saas:resync`:
 
 ```terminal
 bin/magento saas:resync --feed=categories
