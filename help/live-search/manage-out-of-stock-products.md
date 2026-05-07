@@ -64,7 +64,7 @@ Utilice este método cuando no enrute la solicitud a través de [Live Search PLP
 Para mantener los productos sin existencias en el conjunto de resultados, pero siempre después de los productos en existencias, al ordenarlos por relevancia, Adobe puede habilitar un indicador de funciones interno para su entorno.
 
 - Esta marca de característica no se expone en la interfaz de usuario del administrador de [!DNL Live Search].
-- Para solicitarlo, [comuníquese con la atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} y haga referencia a la función para mover los productos sin existencias al final de los resultados de búsqueda.
+- Para solicitarlo, [comuníquese con la atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} y haga referencia a la función para mover los productos sin existencias al final de los resultados de búsqueda.
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ Para ocultar o quitar la prioridad a los productos sin existencias en el catálo
 >[!MORELIKETHIS]
 >
 > - [Buscar reglas de comercialización](rules.md)
-> - [Configurar las opciones globales de Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
+> - [Configurar las opciones globales de Inventory management](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/configuration/configuration)
