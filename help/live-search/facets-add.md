@@ -2,18 +2,22 @@
 title: Agregar facetas
 description: Aprenda a agregar atributos de producto filtrables como  [!DNL Live Search] facetas.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
 # Agregar facetas
 
-Cualquier atributo de producto filtrable puede utilizarse como faceta. El panel *Agregar facetas* enumera las facetas actuales y facilita la asignación de atributos de producto adicionales como facetas. Durante este proceso de tres pasos, se elige un atributo para utilizarlo como faceta, las propiedades se editan si es necesario y los cambios se publican en la tienda.
+Cualquier atributo de producto filtrable se puede usar como faceta excepto el estado de las existencias (`quantity_and_stock_status`). El panel *[!UICONTROL Add facets]* enumera las facetas actuales y facilita la asignación de atributos de producto adicionales como facetas. Durante este proceso de tres pasos, se elige un atributo para utilizarlo como faceta, las propiedades se editan si es necesario y los cambios se publican en la tienda.
 
 ![Agregar facetas](assets/facets-add.png)
+
+>[!NOTE]
+>
+>Para obtener información sobre cómo administrar la visualización de productos por estado de existencias, consulte [Administrar productos sin existencias](manage-out-of-stock-products.md).
 
 ## Paso 1: Añadir una faceta
 
