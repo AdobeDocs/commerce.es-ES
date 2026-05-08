@@ -5,7 +5,7 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: c9cd8ca208a22d4166b2271aa11a9e9acd871d3f
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 13%
@@ -17,7 +17,7 @@ ht-degree: 13%
 - [Información general](home.md)
 - Información de versión {#release-information}
    - [Notas de la versión](/help/landing/release-notes-all.md)
-- [Soluciones de productos](product-solutions.md)
+- {hide-from-toc}[Soluciones de productos](product-solutions.md)
 - Servicios de Commerce {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=es)
@@ -28,7 +28,7 @@ ht-degree: 13%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=es)
    - [[!DNL App Management]](https://experienceleague.adobe.com/es/docs/commerce/app-management/overview)
    - [Conector de servicios](/help/landing/saas.md)
-   - [Integrar [!DNL Adobe Commerce] con [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
+   - [Integrar [!DNL Adobe Commerce] con [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=es)
 - Herramientas de datos {#data-services}
    - [Exportación de datos SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=es)
    - [Indexación de precios de SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=es)

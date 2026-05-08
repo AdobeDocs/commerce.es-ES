@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 0%
@@ -135,62 +134,62 @@ El agente genera requisitos y documentos de arquitectura para que los revise. Co
 - Una acción de API de REST para CRUD de suscripción (crear, leer, actualizar y eliminar)
 - Un controlador back-in-stock impulsado por eventos activado por eventos de inventario de Commerce
 - Una acción de stock programada como reserva
-- Persistence using `aio-lib-state`
+- Persistencia al utilizar `aio-lib-state`
 
 >[!NOTE]
 >
->AI agents are non-deterministic and their behaviors differ depending on the model and IDE. You may get a different set of questions that produce a different set of requirements and architecture. If so, try to steer the agent in a direction such that the implementation closely matches what is presented in this tutorial before proceeding.
+>Los agentes de IA son no deterministas y sus comportamientos difieren según el modelo y el IDE. Puede obtener un conjunto diferente de preguntas que producen un conjunto diferente de requisitos y arquitectura. Si es así, intente dirigir el agente en una dirección tal que la implementación coincida estrechamente con lo que se presenta en este tutorial antes de continuar.
 
-### Step 4: Select an implementation plan
+### Paso 4: Selección de un plan de implementación
 
-The agent gives you the option to create a detailed implementation plan, or to complete a direct implementation.
+El agente le da la opción de crear un plan de implementación detallado o de completar una implementación directa.
 
-- If you want a reviewable plan that you can execute in phases with more control, select the first option.
-- If you want the agent to do the full implementation with minimal intervention, select the second option.
+- Si desea un plan revisable que se pueda ejecutar por fases con más control, seleccione la primera opción.
+- Si desea que el agente realice la implementación completa con una intervención mínima, seleccione la segunda opción.
 
-### Step 5: Deploy, onboard, and subscribe to events
+### Paso 5: Implementación, incorporación y suscripción a eventos
 
-After the agent completes the implementation, it provides next steps to deploy the app, onboard the Commerce instance, and subscribe to events using the following commands:
+Una vez que el agente completa la implementación, proporciona los siguientes pasos para implementar la aplicación, incorporar la instancia de Commerce y suscribirse a eventos mediante los siguientes comandos:
 
-1. Deploy the extension:
+1. Implemente la extensión:
 
    ```bash
    aio app deploy
    ```
 
-1. Run the onboarding script to register the event provider with Commerce:
+1. Ejecute el script de incorporación para registrar el proveedor de eventos con Commerce:
 
    ```bash
    npm run onboard
    ```
 
-1. Subscribe to Commerce events:
+1. Suscribirse a eventos de Commerce:
 
    ```bash
    npm run commerce-event-subscribe
    ```
 
-1. Validate the event subscription.
+1. Valide la suscripción al evento.
 
-   Navigate to your Commerce instance and open **[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**.
+   Vaya a la instancia de Commerce y abra **[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**.
 
-   You should see a table of event records.
+   Debería ver una tabla de registros de eventos.
 
-   ![Commerce Admin menu highlighting Event Subscription section](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
+   ![Menú de administración de Commerce que resalta la sección Suscripción a evento](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
 
-   ![Event subscription table with registered event entries](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
+   ![Tabla de suscripción de eventos con entradas de eventos registradas](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
 
-### Step 6: Test the extension
+### Paso 6: Prueba de la extensión
 
-Ask the agent to provide testing steps. Since this is an API service, you can request command-line instructions:
+Pida al agente que proporcione los pasos de la prueba. Como es un servicio API, puede solicitar instrucciones de línea de comandos:
 
 ```shell-session
 Give me step by step instructions to test the API service from the command line.
 ```
 
-Follow the steps the agent provides. The following examples show typical test commands.
+Siga los pasos que proporcione el agente. Los siguientes ejemplos muestran comandos de prueba típicos.
 
-**Subscribe to a SKU:**
+**Suscribirse a un SKU:**
 
 ```bash
 API_URL="https://<your-runtime-url>/api/v1/web/notify-out-of-stock/api"; curl -X POST "$API_URL" \
@@ -198,7 +197,7 @@ API_URL="https://<your-runtime-url>/api/v1/web/notify-out-of-stock/api"; curl -X
   -d '{"email":"test@example.com","sku":"ADB153"}'
 ```
 
-The response looks similar to::
+La respuesta es similar a:
 
 ```json
 {

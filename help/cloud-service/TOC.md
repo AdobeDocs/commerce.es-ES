@@ -3,7 +3,7 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Esta guía proporciona instrucciones detalladas para usar  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: fb7d70be0a9325d20f3e9392a32e896fe1e1e833
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -32,7 +32,7 @@ ht-degree: 4%
    - Herramientas de migración {#migration-tools}
       - [Herramienta de migración masiva de datos](migration/bulk-data.md)
       - [Herramientas de codificación](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-   - [Documentación del servicio RAG](migration/doc-rag.md)
+   - {hide-from-toc}[Servicio RAG de documentación](migration/doc-rag.md)
 - [Iniciar sesión como cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Puntos finales REST de cuenta de tarjeta regalo](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Activación de correo electrónico mediante REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
@@ -40,9 +40,9 @@ ht-degree: 4%
    - [Requisitos previos del tutorial](tutorials/tutorial-prerequisites.md)
    - [Tutorial de extensión de clasificaciones](tutorials/ratings-extension.md)
    - [Tutorial sobre la extensión Método de envío](tutorials/shipping-method-extension.md)
-   - [Tutorial de extensión Delivery Estimates](tutorials/delivery-estimates-extension.md)
-   - [Tutorial sobre la extensión de notificaciones In Stock](tutorials/in-stock-notification-extension.md)
-   - [Tutorial de extensión de críticas de productos](tutorials/product-reviews-extension.md)
+   - {hide-from-toc}[Tutorial de la extensión Delivery Estimates](tutorials/delivery-estimates-extension.md)
+   - {hide-from-toc}[Tutorial de extensión de notificación en existencia](tutorials/in-stock-notification-extension.md)
+   - {hide-from-toc}[Tutorial sobre la extensión de críticas de productos](tutorials/product-reviews-extension.md)
 - Esquemas {#schemas}
    - [Esquema de GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Esquema de API de REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
