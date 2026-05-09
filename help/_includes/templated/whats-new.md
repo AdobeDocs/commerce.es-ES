@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b38ce9b1585fa7414e323b08bf8d09d6da46a6c
+source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
@@ -503,58 +503,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Nuevo tema
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 de marzo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó la integración de tienda al <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/tutorials/ratings-extension">tutorial de clasificaciones</a>.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.es-ES/pull/15">solicitud de extracción</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 3 de marzo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha publicado la <a href="https://experienceleague.adobe.com/es/docs/commerce/aco-optimizer-connector/overview">documentación del Conector de Adobe Commerce Optimizer v1.0.9</a> para la versión de disponibilidad general.</p>
-</td>
-      <td>
-        Actualización principal, nuevo tema, técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de Adobe Commerce as a Cloud Service con la última versión de espacio aislado.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">comprometer</a></td>
     </tr>
   </tbody>
 </table>
