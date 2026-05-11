@@ -1,20 +1,46 @@
 ---
-title: Notas de la versión
-description: La información de la versión más reciente de  [!DNL Adobe Commerce Optimizer].
+title: Notas de la versión de Adobe Commerce Optimizer
+description: Información de versión mensual de  [!DNL Adobe Commerce Optimizer], incluidas las actualizaciones de la API de REST de ingesta de datos y de la API de GraphQL para la recuperación de datos del catálogo de tiendas.
+feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: a42f6b3348eed476095c6d9777ac9486579fe6ea
+source-git-commit: 744a85738ab77cb7d1844a353dacab26f30aec5b
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 1%
+source-wordcount: '1047'
+ht-degree: 0%
 
 ---
 
 # Notas de la versión
 
-Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Commerce Optimizer].
+Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Commerce Optimizer], entre ellas:
+
+* Nuevas características y mejoras en [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour).
+* Actualizaciones a la [API de REST de ingesta de datos](https://developer.adobe.com/commerce/services/reference/rest/) y a la [API de GraphQL para la recuperación de datos del catálogo de tiendas](https://developer.adobe.com/commerce/services/reference/graphql/).
+
+  {{aco-api-updates-and-dropins}}
+
+## Mayo de 2026
+
+Este mes no hay [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) versiones. Consulte Actualizaciones de API a continuación.
+
+>[!BEGINSHADEBOX]
+
+### Actualizaciones de API
+
+_4 de mayo de 2026_
+
+<!--v1.53-->
+
+Los precios de los productos de tienda ahora muestran el código de moneda correcto (por ejemplo, USD) para todos los tipos de productos. Anteriormente, algunos productos mostraban `NONE` en lugar de la moneda esperada, lo que resultaba en la falta de precios.
+
+<!--DATA-7115-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Abril de 2026
 
@@ -24,11 +50,49 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ### Reglas de catálogo (beta)
 
-Las reglas de comercialización ahora incluyen [reglas de categoría](./merchandising/rules/add.md), por lo que puede segmentar una o más categorías y controlar el orden del producto en las páginas de categoría utilizando la misma clasificación inteligente y las mismas acciones manuales (fijar, aumentar, enterrar) que para la búsqueda.
+[Las reglas de categoría](./merchandising/rules/add.md) amplían las reglas de comercialización para que pueda segmentar categorías y controlar el pedido de productos en páginas de categoría con la misma clasificación y acciones (fijar, aumentar, enterrar) que la búsqueda.
 
 ### Filtro de precios (beta)
 
-Los filtros de recomendación ahora admiten un [filtro de precio](./merchandising/recommendations/filters.md#price) que puede usar para establecer un rango de precios mínimo y máximo para los productos.
+Los filtros de recomendación ahora incluyen un [filtro de rango de precios](./merchandising/recommendations/filters.md#price) (mínimo y máximo).
+
+### Actualizaciones de API
+
+_29 de abril de 2026_
+
+<!--v1.52 release-->
+
+**Se requiere el agrupamiento de solicitudes** — La API de GraphQL ahora aplica un máximo de 100 SKU por solicitud al recuperar los datos del catálogo. Ver [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits#product-discovery).
+
+<!--DATA-7156-->
+
+_17 de abril de 2026_
+
+<!--v1.51 release-->
+
+**Buscar categorías por nombre con GraphQL** — La nueva consulta [`searchCategory`](https://developer.adobe.com/commerce/services/reference/graphql/) devuelve categorías coincidentes con paginación para tiendas e integraciones. Consulte la referencia de la API para ver los parámetros y los campos de respuesta. <!--COMOPT-1819-->
+
+_7 de abril de 2026_
+
+<!--v1.50 release-->
+
+**Búsquedas de categoría más sencillas**: la consulta [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) trata a `family` como opcional, de modo que puede resolver categorías mediante slug sin proporcionar una familia.
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## Marzo de 2026
+
+No hubo [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) versiones este mes. Consulte Actualizaciones de API a continuación.
+
+>[!BEGINSHADEBOX]
+
+### Actualizaciones de API
+
+_24 de marzo de 2026_
+
+Los paquetes dinámicos ahora devuelven un intervalo de precios calculado. <!--DATA-7014-->
 
 {{aco-release}}
 
@@ -42,7 +106,37 @@ Los filtros de recomendación ahora admiten un [filtro de precio](./merchandisin
 
 ### Vista de catálogo de reglas y recomendaciones de comercialización (beta)
 
-Se ha agregado la capacidad de especificar una vista de catálogo al [crear unidades de recomendación](./merchandising/recommendations/create.md) o [reglas de comercialización](./merchandising/rules/add.md).
+Ahora puede especificar una vista de catálogo al [crear unidades de recomendación](./merchandising/recommendations/create.md) o [reglas de comercialización](./merchandising/rules/add.md).
+
+### Actualizaciones de API
+
+_19 de febrero de 2026_
+
+<!--v1.48-->
+
+**Contenido de categoría más rico para escaparates** — La consulta [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) ahora devuelve descripciones, imágenes y metaetiquetas SEO para que los escaparates puedan mostrar páginas de categoría más ricas.<!--DATA-6933-->
+
+_12 de febrero de 2026_
+
+<!--v1.49-->
+
+**Datos de productos mejorados por categoría**: la API de GraphQL agrega el tipo [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} para que pueda consultar y filtrar productos por categoría con menos viajes de ida y vuelta.
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## Enero de 2026
+
+No hubo [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) versiones este mes. Consulte Actualizaciones de API a continuación.
+
+>[!BEGINSHADEBOX]
+
+### Actualizaciones de API
+
+_19 de enero de 2026_
+
+* **Compatibilidad con categorías más ricas con la API de REST** — Las operaciones de la API [Categorías](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories) ahora aceptan valores `metaTags`, `images` y `description` opcionales además de `families`, para que pueda proporcionar detalles de comercialización y SEO más completos para las categorías.
 
 {{aco-release}}
 
@@ -56,11 +150,40 @@ Se ha agregado la capacidad de especificar una vista de catálogo al [crear unid
 
 ### Oportunidades
 
-Las recomendaciones de optimización de sitios con tecnología de IA ya están disponibles a través de la [integración de Adobe Sites Optimizer](./manage-results/opportunities.md). Esta función ayuda a los comerciantes a identificar y abordar los problemas que afectan al rendimiento del sitio de comercio mediante la detección automatizada y las recomendaciones inteligentes.
+Los comerciantes ahora pueden obtener recomendaciones con tecnología de IA a través de [Adobe Sites Optimizer](./manage-results/opportunities.md) para detectar problemas en el sitio y sugerir correcciones de rendimiento.
 
 ### Capas de catálogo
 
-Se agregaron [capas de catálogo](./setup/catalog-layer.md) para que pueda modificar los datos de producto sin cambiar los datos de origen, incluida la administración de prioridades de capa y la integración con las funciones de corrección automática de Adobe Sites Optimizer.
+Los comerciantes ahora pueden usar [Capas de catálogo](./setup/catalog-layer.md) para superponer datos de productos sin editar el catálogo de origen, administrar la prioridad de las capas y usar la corrección automática de Adobe Sites Optimizer.
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## Noviembre de 2025
+
+No hubo [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) versiones este mes. Consulte Actualizaciones de API a continuación.
+
+>[!BEGINSHADEBOX]
+
+### Actualizaciones de API
+
+_21 de noviembre de 2025_
+
+**Se han actualizado las instrucciones de autenticación para la API de REST de ingesta de datos**. Las instrucciones ahora hacen referencia a los tokens de acceso de OAuth y a los ámbitos de credenciales de Developer Console correctos para el servicio de ingesta de datos. Si los ámbitos de las credenciales están obsoletos, vuelva a crearlos para mantener el acceso.
+
+_3 de noviembre de 2025_
+
+<!-- v1.43 -->
+
+**Contenido de producto localizado y con capas en GraphQL**: ahora puede entregar contenido de producto específico del canal y según la configuración regional desde [!DNL Adobe Commerce Optimizer].
+
+* Adaptar el contenido del producto por segmento de cliente
+* Aplicar invalidaciones específicas de la configuración regional sin duplicar los datos del catálogo base
+* Controlar las anulaciones de nivel de campo con máscaras de capa
+* Utilice capas de contenido premium, estacionales y optimizadas para dispositivos móviles
+
+Sin cambio de esquema de la API de GraphQL: las capas se aplican a través de los encabezados de solicitud y consulta de `products` existentes. Ver [capa de catálogo](./setup/catalog-layer.md).
 
 {{aco-release}}
 
@@ -74,26 +197,52 @@ Se agregaron [capas de catálogo](./setup/catalog-layer.md) para que pueda modif
 
 ### Conector de Commerce de Commerce Optimizer Salesforce
 
-[!DNL Commerce Optimizer Salesforce Commerce Connector] es un nuevo Starter Kit de integración de App Builder que permite a los administradores y desarrolladores de Commerce conectar sin problemas los datos del catálogo de Commerce B2C de Salesforce con [!DNL Commerce Optimizer].<!--COMOPT-536-->
+[!DNL Commerce Optimizer Salesforce Commerce Connector] es un nuevo Starter Kit de App Builder que sincroniza los datos del catálogo de Salesforce B2C Commerce en [!DNL Commerce Optimizer].<!--COMOPT-536-->
 
 **Para administradores:**
 
-* Las actualizaciones de catálogo de Salesforce (productos, precios, metadatos, libros de precios) se sincronizan automáticamente con Commerce Optimizer, sin necesidad de intervención manual.
-* La integración funciona de forma independiente del Adobe Commerce, lo que reduce la complejidad y los posibles puntos de error.
-* Los administradores pueden confiar en la programación regular de actualizaciones programadas para garantizar datos de catálogo precisos dentro de Commerce Optimizer, lo que mejora la comercialización y las recomendaciones de productos.
+* Los cambios de catálogo de Salesforce (productos, precios, metadatos, libros de precios) se sincronizan automáticamente con [!DNL Commerce Optimizer].
+* Se ejecuta fuera de [!DNL Adobe Commerce] para obtener menos puntos de contacto de integración.
+* Las actualizaciones programadas mantienen actualizados los datos de [!DNL Commerce Optimizer] para la comercialización y las recomendaciones.
 
 **Para desarrolladores:**
 
-* El Starter Kit ofrece un marco de trabajo optimizado y ampliable para la ingesta de datos del catálogo de Salesforce en los servicios de comercialización de SaaS.
-* Hay implementaciones de referencia, documentación de diseño y ejemplos de código disponibles para acelerar las integraciones personalizadas o la solución de problemas.<!--COMOPT-536-->
+* Marco extensible para la ingesta del catálogo de Salesforce en servicios de comercialización de SaaS.
+* Implementaciones de referencia, documentos de diseño y ejemplos de código para generaciones y resolución de problemas más rápidos.
 
 ### Búsqueda por capas
 
-* Versión de GA para las siguientes funciones de búsqueda avanzada: búsqueda por niveles con `startsWith` y `contains`. [Más información](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types).
+* **Búsqueda por niveles (GA)**: la búsqueda de productos ahora admite la coincidencia de `startsWith` y `contains`. Consulte [Búsqueda por niveles y tipos de búsqueda expandida](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types).
 
-### API de categorías
+### Actualizaciones de API
 
-Ya está disponible una nueva API de REST de categorías, que permite a los administradores y desarrolladores crear, actualizar y administrar mediante programación varios árboles de categorías para la navegación y la agrupación de productos. La API admite configuraciones globales y específicas del canal, y está diseñada para proporcionar una alta escalabilidad, admitiendo hasta 10 000 árboles de categorías y 500 categorías por árbol. Para obtener más información, consulte [Categorías](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories) en la _Guía para desarrolladores de servicios de comercialización_.<!--DCAT-2649-->
+* _17 de octubre de 2025_
+
+  **Agregar compatibilidad con la API de REST para ingerir capas de producto** — Use la [API de capas de catálogo](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) para personalizar y anular los datos de productos base para contextos, configuraciones regionales o requisitos empresariales específicos. Después de crear las capas, puede aplicarlas y administrarlas desde [Adobe Commerce Optimizer Studio](./setup/catalog-layer.md).<!--DATA-6632-->
+
+* _14 de octubre de 2025_
+
+  **Árboles de categoría programática**: Cree, actualice y administre árboles de categoría para la navegación y la agrupación mediante REST (global o específico del canal), a escala: hasta 10 000 árboles y 500 categorías por árbol. Consulte [Categorías](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="blank"} en la _Referencia de API de REST de ingesta de datos de catálogo_.<!--DCAT-2649-->
+
+* _8 de octubre de 2025_
+
+  **Asignación de categorías más clara para la ingesta de datos**: las nuevas directrices explican el formato de slug de categoría y las reglas de jerarquía, y aclaran que los valores del producto `routes.path` deben coincidir con un slug de categoría existente (por ejemplo, `men/clothing`).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## Septiembre de 2025
+
+No hubo [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) versiones este mes. Consulte Actualizaciones de API a continuación.
+
+>[!BEGINSHADEBOX]
+
+### Actualizaciones de API
+
+_23 de septiembre de 2025_
+
+* **Administrar categorías mediante la API de REST**: usa la [API de categorías](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories) para crear y administrar categorías. Las categorías organizan los productos en grupos lógicos y admiten jerarquías anidadas a través de rutas basadas en slug. Después de asignar categorías a los productos, recupérelas con las consultas de GraphQL `[navigation](https://developer.adobe.com/commerce/services/reference/graphql/#navigation)` y `[categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)` para representar los menús de tienda y los árboles de categorías.<!--DCAT-2626-->
 
 {{aco-release}}
 
@@ -107,14 +256,14 @@ Ya está disponible una nueva API de REST de categorías, que permite a los admi
 
 ### Región de la UE ya disponible
 
-Ya está disponible la compatibilidad con la región de la Unión Europea (eu1) para las organizaciones de IMS de clientes. Ahora puede seleccionar **European Union** como **región** al [agregar una instancia de Commerce Optimizer](./get-started.md#step-1-create-an-instance) en Cloud Manager. La región de la Unión Europea solo está disponible para entornos de producción.
+La región de producción de la UE (**eu1**) está disponible para las organizaciones IMS. Cuando [agregue una [!DNL Commerce Optimizer] instancia](./get-started.md#step-1-create-an-instance) en Cloud Manager, elija **[!UICONTROL European Union]** como **[!UICONTROL Region]** (solo producción).
 
 Las URL de producción de base para la región de la Unión Europea son:
 
 * Administrador: `https://eu1.admin.commerce.adobe.com`
 * REST y GraphQL: `https://eu1.api.commerce.adobe.com`
 
-![crear instancia](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+![Cuadro de diálogo Crear instancia de Cloud Manager con el campo Región](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
 {{aco-release}}
 
