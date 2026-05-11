@@ -3,9 +3,23 @@ title: Recopilación de datos de Commerce mediante etiquetas de Adobe Experience
 description: Obtenga información sobre cómo recopilar datos de Commerce mediante etiquetas de Adobe Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
+TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: 2655
 ht-degree: 0%
 
 ---
@@ -14,8 +28,8 @@ ht-degree: 0%
 
 Aunque puede usar la extensión [!DNL Data Connection] para publicar y suscribirse a eventos de tienda, es posible que algunos comerciantes ya estén usando una solución de recopilación de datos, como las [etiquetas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=es). Para esos comerciantes, Adobe Commerce proporciona una opción de solo publicación en la extensión [!DNL Data Connection] que utiliza Adobe Commerce Event SDK.
 
-![[!DNL Data Connection] Flujo de datos de extensión](assets/tags-data-flow.png)
-_[!DNL Data Connection]Flujo de datos de extensión con etiquetas_
+Flujo de datos de la extensión ![[!DNL Data Connection]](assets/tags-data-flow.png)
+Flujo de datos de la extensión _[!DNL Data Connection]con etiquetas_
 
 En este tema, aprenderá a asignar los valores de evento de tienda proporcionados por la extensión [!DNL Data Connection] a la solución de etiquetas de Adobe Experience Platform que ya está utilizando.
 
@@ -57,7 +71,7 @@ Dado que la recopilación de datos mediante etiquetas es diferente al uso de Ado
 
 Al actualizar los elementos de datos y las reglas en las etiquetas de Adobe Experience Platform con datos de evento específicos de Adobe Commerce, hay algunos pasos comunes que debe seguir.
 
-Por ejemplo, vamos a agregar el evento de Adobe Commerce `signOut` a las etiquetas de Adobe Experience Platform. Los pasos descritos a continuación, excepto para los valores específicos que ha establecido, describen cómo agregar [elementos de datos](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=es#data-element) y [reglas](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=es#create-a-rule), que se aplican a todos los eventos de Adobe Commerce que está agregando a las etiquetas.
+Por ejemplo, vamos a agregar el evento de Adobe Commerce `signOut` a las etiquetas de Adobe Experience Platform. Los pasos descritos a continuación, excepto para los valores específicos que ha establecido, describen cómo agregar [elementos de datos](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) y [reglas](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), que se aplican a todos los eventos de Adobe Commerce que está agregando a las etiquetas.
 
 1. Crear un elemento de datos:
 
@@ -117,19 +131,19 @@ Repita los pasos anteriores en las etiquetas para cada uno de los eventos de Ado
 Para cada uno de los siguientes eventos, asigne los eventos de Adobe Commerce al XDM siguiendo los pasos anteriores.
 
 - [`signOut`](#signout)
-- [&quot;signIn&quot;](#signin)
-- [&quot;createAccount&quot;](#createaccount)
-- [&quot;editAccount&quot;](#editaccount)
-- [&quot;pageView&quot;](#pageview)
-- [productView](#productview)
-- [&quot;searchRequestSent&quot;](#searchrequestsent)
-- [&quot;searchResponseReceived&quot;](#searchresponsereceived)
-- [addToCart](#addtocart)
+- [`signIn`](#signin)
+- [`createAccount`](#createaccount)
+- [`editAccount`](#editaccount)
+- [`pageView`](#pageview)
+- [`productView`](#productview)
+- [`searchRequestSent`](#searchrequestsent)
+- [`searchResponseReceived`](#searchresponsereceived)
+- [`addToCart`](#addtocart)
 - [`openCart`](#opencart)
-- [&quot;viewCart&quot;](#viewcart)
-- [removeFromCart](#removefromcart)
-- [&quot;startCheckout&quot;](#initiatecheckout)
-- [&quot;placeOrder&quot;](#placeorder)
+- [`viewCart`](#viewcart)
+- [`removeFromCart`](#removefromcart)
+- [`initiateCheckout`](#initiatecheckout)
+- [`placeOrder`](#placeorder)
 
 ### signOut
 
@@ -726,7 +740,7 @@ Cree los siguientes elementos de datos:
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Ruta de acceso ] opcional**: `productContext.pricing.regularPrice`
 
-1. Product  precio:
+1. Precio del producto:
 
    - **Nombre**: `product price`
    - **Extensión**: `Core`
@@ -969,7 +983,7 @@ Cree los siguientes elementos de datos:
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Ruta de acceso ] opcional**: `productContext.pricing.regularPrice`
 
-1. Product  precio:
+1. Precio del producto:
 
    - **Nombre**: `product price`
    - **Extensión**: `Core`
@@ -1378,7 +1392,7 @@ A diferencia de los eventos de tienda que utilizan ECID para identificar y vincu
 
 1. Crear un elemento de mapa de identidad.
 
-   ![Mapa de identidad de la oficina &#x200B;](assets/custom-code-backoffice.png)
+   ![Mapa de identidad de Back Office](assets/custom-code-backoffice.png)
    _Crear mapa de identidad de back office_
 
 1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
@@ -1415,7 +1429,7 @@ Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentim
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%do not track cookie%`) para la cookie `mg_dnt`:
 
-   ![Crear no rastrear elemento de datos](assets/element-dnt-cookie.png)
+   ![Crear elemento de datos no de seguimiento](assets/element-dnt-cookie.png)
    _Crear no rastrear elemento de datos_
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%consent%`) que devuelva `out` si la cookie está establecida y `in` en caso contrario:

@@ -4,9 +4,20 @@ description: Descubra qué datos captura cada evento de comportamiento.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
-source-git-commit: 631dfacd26a333e70a70f354d191d256d90d946f
+TQID: https://experienceleague.adobe.com/YS3jKQ3jmy76aeaqAp1PR8cGpD0euagdhoqL6CoMAnQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: 467
 ht-degree: 0%
 
 ---

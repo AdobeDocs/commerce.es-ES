@@ -4,9 +4,25 @@ description: Aprenda a configurar su  [!DNL Adobe Commerce Optimizer] tienda.
 role: Developer
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
+TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: 1562
 ht-degree: 0%
 
 ---
@@ -210,7 +226,7 @@ Antes de continuar con los siguientes pasos, verifica lo siguiente para asegurar
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Los valores de configuración coinciden con la configuración de la instancia<br>
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) La página principal de la tienda se carga sin errores<br>
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Al menos una página de detalles del producto muestra información completa<br>
-![La funcionalidad de búsqueda Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) devuelve resultados relevantes<br>
+La funcionalidad de búsqueda ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) devuelve resultados relevantes<br>
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Las imágenes del producto se están cargando correctamente<br>
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Los valores de configuración coinciden con la configuración de la instancia<br>
 

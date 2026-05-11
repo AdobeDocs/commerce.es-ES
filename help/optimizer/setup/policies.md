@@ -4,9 +4,18 @@ description: Obtenga información sobre cómo crear y administrar directivas en 
 recommendations: noCatalog
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 917
 ht-degree: 0%
 
 ---
@@ -15,7 +24,7 @@ ht-degree: 0%
 
 Las directivas son filtros de acceso a datos contenidos en vistas de catálogo que refinan aún más los datos enviados a cada vista de catálogo. Las políticas garantizan que el contenido correcto se envíe al destino correcto. Por ejemplo, tiendas físicas, mercados, canalizaciones de publicidad (Google, Facebook, Instagram).
 
-Las directivas se basan en atributos de producto, como marca, modelo o categoría de artículo, y se utilizan para adaptar los datos del catálogo a los requisitos comerciales específicos. palo de golf
+Las directivas se basan en atributos de producto, como marca, modelo o categoría de artículo, y se utilizan para adaptar los datos del catálogo a los requisitos comerciales específicos. &#x200B;
 
 ## Filtros
 
@@ -63,7 +72,7 @@ En esta sección, se crea una directiva nueva. La directiva puede ser **STATIC**
 
 1. Haga clic en el botón **[!UICONTROL Add Policy]**.
 
-   Se abre una nueva página para que rellene los detalles de la directiva. palo de golf
+   Se abre una nueva página para que rellene los detalles de la directiva. &#x200B;
 
 1. Introduzca el nombre de la política, por ejemplo &quot;Celport Part Categories&quot;.
 
@@ -74,22 +83,22 @@ En esta sección, se crea una directiva nueva. La directiva puede ser **STATIC**
 1. Añada los detalles del filtro. Por ejemplo:
 
    1. **Atributo** - Escriba un atributo de su catálogo. Por ejemplo, &quot;part_category&quot;. Este nombre debe coincidir exactamente con el nombre del atributo del catálogo.
-   1. **Operador**: elija el operador. Por ejemplo, **IN**.
-   1. **Valor Source** - Seleccionar **ESTÁTICO**.
+   1. **Operador**: elija el operador. Por ejemplo, **IN**. &#x200B;
+   1. **Valor Source** - Seleccionar **ESTÁTICO**. &#x200B;
    1. **Valor**: escriba un valor de la definición de atributo que especificó anteriormente. Por ejemplo, introduzca &quot;frenos&quot; para crear un filtro para las piezas de freno.
    1. Para guardar el valor, presione **Intro**.
 
       Si la directiva está diseñada para filtrar por varios valores, introduzca cada valor por separado.
 
-1. Haga clic en el botón **[!UICONTROL Save]** en el cuadro de diálogo de detalles del filtro. palo de golf
+1. Haga clic en el botón **[!UICONTROL Save]** en el cuadro de diálogo de detalles del filtro. &#x200B;
 
-1. Haga clic en los puntos de acción (...) junto al filtro que ha creado y seleccione **Habilitar**. Desde aquí, también puedes **Editar**, **Deshabilitar** o **Eliminar** el filtro.
+1. Haga clic en los puntos de acción (...) junto al filtro que creó y seleccione **Habilitar**. Desde aquí, también puedes **Editar**, **Deshabilitar** o **Eliminar** el filtro.
 
    La columna **Estado** muestra un icono verde y la palabra &quot;Habilitado&quot;.
 
-1. Haga clic en el botón **[!UICONTROL Save]** para guardar la nueva directiva&#x200B; Si el botón no está activo, asegúrese de agregar el nombre de la directiva haciendo clic en el icono de lápiz junto a **Nueva directiva**.
+1. Haga clic en el botón **[!UICONTROL Save]** para guardar la nueva directiva.&#x200B; Si el botón no está activo, asegúrese de agregar el nombre de la directiva haciendo clic en el icono de lápiz situado junto a **Nueva directiva**.
 
-1. Para comprobar la nueva directiva, vuelva a la lista de directivas haciendo clic en la flecha hacia atrás. palo de golfVerá su nueva política en la lista.
+1. Para comprobar la nueva directiva, vuelva a la lista de directivas haciendo clic en la flecha hacia atrás. &#x200B;Verá su nueva política en la lista.
 
 ### Crear una política de DÉCLENCHEUR
 
@@ -97,7 +106,7 @@ En esta sección, se crea una directiva nueva. La directiva puede ser **STATIC**
 
 1. Haga clic en el botón **[!UICONTROL Add Policy]**.
 
-   Se abre una nueva página para que rellene los detalles de la directiva. palo de golf
+   Se abre una nueva página para que rellene los detalles de la directiva. &#x200B;
 
 1. Introduzca el nombre de la política, por ejemplo &quot;Celport Part Categories&quot;.
 
@@ -118,18 +127,18 @@ En esta sección, se crea una directiva nueva. La directiva puede ser **STATIC**
 1. Añada los detalles del filtro. Por ejemplo:
 
    1. **Atributo** - Escriba un atributo de su catálogo. Por ejemplo, &quot;part_category&quot;. Este nombre debe coincidir exactamente con el nombre del atributo del catálogo.
-   1. **Operador**: elija el operador. Por ejemplo, **IN**.
-   1. **Valor Source** - Seleccionar **DÉCLENCHEUR**.
+   1. **Operador**: elija el operador. Por ejemplo, **IN**. &#x200B;
+   1. **Valor Source** - Seleccionar **DÉCLENCHEUR**. &#x200B;
    1. **Valor** - Escriba el nombre del déclencheur que creó anteriormente (**AC-Policy-Brand**).
 
-1. Haga clic en el botón **[!UICONTROL Save]** en el cuadro de diálogo de detalles del filtro. palo de golf
+1. Haga clic en el botón **[!UICONTROL Save]** en el cuadro de diálogo de detalles del filtro. &#x200B;
 
-1. Haga clic en los puntos de acción (...) junto al filtro que ha creado y seleccione **Habilitar**. Desde aquí, también puedes **Editar**, **Deshabilitar** o **Eliminar** el filtro.
+1. Haga clic en los puntos de acción (...) junto al filtro que creó y seleccione **Habilitar**. Desde aquí, también puedes **Editar**, **Deshabilitar** o **Eliminar** el filtro.
 
    La columna **Estado** muestra un icono verde y la palabra &quot;Habilitado&quot;.
 
-1. Haga clic en el botón **[!UICONTROL Save]** para guardar la nueva directiva&#x200B; Si el botón no está activo, asegúrese de agregar el nombre de la directiva haciendo clic en el icono de lápiz junto a **Nueva directiva**.
+1. Haga clic en el botón **[!UICONTROL Save]** para guardar la nueva directiva.&#x200B; Si el botón no está activo, asegúrese de agregar el nombre de la directiva haciendo clic en el icono de lápiz situado junto a **Nueva directiva**.
 
-1. Para comprobar la nueva directiva, vuelva a la lista de directivas haciendo clic en la flecha hacia atrás. palo de golfVerá su nueva política en la lista.
+1. Para comprobar la nueva directiva, vuelva a la lista de directivas haciendo clic en la flecha hacia atrás. &#x200B;Verá su nueva política en la lista.
 
 Al seguir estos pasos, la directiva se crea y está lista para vincularse a una vista de catálogo para controlar la visibilidad del producto.

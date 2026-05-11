@@ -3,9 +3,19 @@ title: Migración de archivos multimedia a AEM
 description: Migre los archivos de medios de Adobe Commerce o de un origen externo al DAM de AEM Assets.
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/-fCE7lTivOuhLDzEMNexxGWLTkL52oo9p-sm54HxpQM
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: 1010
 ht-degree: 0%
 
 ---

@@ -5,13 +5,26 @@ role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: 1384
 ht-degree: 0%
 
 ---
-
 
 # Vistas del catálogo de servicios de comercialización
 
@@ -56,14 +69,14 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 
 1. En el menú de la izquierda, ve a _Configuración de tienda_ y haz clic en **[!UICONTROL Catalog views]**.
 
-1. Haga clic en **[!UICONTROL Create catalog view]**.
+1. Haga clic en **[!UICONTROL Create catalog view]**. &#x200B;
 
 1. Configure los detalles de la vista del catálogo:
 
-   - **Nombre**: escriba el nombre de la vista de catálogo, por ejemplo `Celport`.
+   - **Nombre**: escriba el nombre de la vista de catálogo, por ejemplo `Celport`. &#x200B;
    - **Orígenes del catálogo**: seleccione el origen del catálogo (configuración regional), por ejemplo `en-US`.
    - **Capas de catálogo**: revise las capas ingeridas y la prioridad.
-   - **Directivas**: utilice la lista desplegable para seleccionar las directivas relevantes. Por ejemplo, &quot;Marca&quot;, &quot;Modelo&quot;. palo de golfAsegúrese de que ya ha [creado una directiva](policies.md).
+   - **Directivas**: utilice la lista desplegable para seleccionar las directivas relevantes. Por ejemplo, &quot;Marca&quot;, &quot;Modelo&quot;. &#x200B;Asegúrese de que ya ha [creado una directiva](policies.md).
 
 1. Seleccione el libro de precios que desea vincular a la vista de catálogo.
 
@@ -195,7 +208,7 @@ Los datos del catálogo filtrado se envían a varios destinos, incluidos escapar
 
 ### Retailer con varias ubicaciones
 
-**Desafío**: precios e inventario diferentes por ubicación<br>
+**Desafío**: Diferentes precios e inventarios por ubicación<br>
 **Solución**: vistas de catálogo basadas en ubicación con directivas específicas de región
 
 >[!INFO]

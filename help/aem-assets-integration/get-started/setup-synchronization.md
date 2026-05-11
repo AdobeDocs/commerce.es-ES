@@ -3,10 +3,23 @@ title: Configuración de la integración
 description: Obtenga información sobre cómo conectar el proyecto de Adobe Commerce y los proyectos de Experience Manager Assets para habilitar la sincronización de recursos entre estos dos sistemas.
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 0%
+source-wordcount: 904
+ht-degree: 2%
 
 ---
 
@@ -67,7 +80,7 @@ Antes de configurar la integración de AEM Assets, compruebe que ha completado l
    * Seleccionar **[!UICONTROL Match by SKU]** para [coincidencia automática predeterminada](../synchronize/default-match.md),
    * Seleccione **[!UICONTROL Custom match]** para [coincidencia automática personalizada](../synchronize/custom-match.md) (requiere [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
 
-1. Agregue el nombre del campo de metadatos de AEM Assets [definido para las SKU de productos de Commerce en el campo &#x200B;](configure-aem.md#define-the-metadata-profile), **[!UICONTROL Match by product SKU attribute name]** de forma predeterminada.`commerce:skus`
+1. Agregue el nombre del campo de metadatos de AEM Assets [definido para las SKU de productos de Commerce en el campo **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` de forma predeterminada.](configure-aem.md#define-the-metadata-profile)
 
 1. Seleccione **[!UICONTROL Save Config]** para aplicar actualizaciones e iniciar la sincronización de recursos.
 

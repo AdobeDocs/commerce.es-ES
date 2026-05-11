@@ -3,10 +3,21 @@ title: Configuración del proyecto de AEM Assets para que admita metadatos de Co
 description: Habilite la sincronización perfecta de recursos entre Adobe Commerce y los AEM Assets agregando los metadatos necesarios para la integración.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 0%
+source-wordcount: 1450
+ht-degree: 1%
 
 ---
 
@@ -16,13 +27,13 @@ Cuando utiliza AEM Assets como sistema de administración de recursos digitales 
 
 Complete los siguientes pasos para configurar el proyecto de AEM Assets con el código de paquete y los metadatos necesarios para administrar los recursos de Commerce desde el entorno de creación de AEM:
 
-1. [Obtenga información acerca de &#x200B;](#aem-commerce-assets-commerce-package-contents)
+1. [Obtenga información acerca del contenido del paquete `assets-commerce`](#aem-commerce-assets-commerce-package-contents)
 
 1. [Complete los pasos de instalación para configurar el proyecto de AEM Assets para que admita metadatos de Commerce](#step-1-install-the-assets-commerce-package)
 
 ## Contenido del paquete de AEM Commerce assets-commerce
 
-Adobe proporciona un código de paquete de AEM Commerce `assets-commerce` para agregar recursos de espacio de nombres de Commerce y esquema de metadatos a la configuración del entorno de Experience Manager Assets as a Cloud Service.
+Adobe proporciona un código de paquete de AEM Commerce `assets-commerce` para agregar recursos de espacio de nombres de Commerce y esquema de metadatos a la configuración del entorno de as a Cloud Service de Experience Manager Assets.
 
 Este código de paquete añade los siguientes recursos al entorno de creación de AEM Assets:
 

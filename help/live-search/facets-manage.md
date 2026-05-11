@@ -1,9 +1,19 @@
 ---
 title: Administrar facetas
 description: Obtenga información sobre cómo administrar las  [!DNL Live Search] facetas existentes.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
+TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -28,7 +38,7 @@ Consulta [Configuración](settings.md) para configurar los intervalos y agrupaci
 
    ![Facetas de filtro](assets/facets-filter-by-cropped.png)
 
-1. Para editar las propiedades de la faceta, haga clic en las opciones **Más** (...).
+1. Para editar las propiedades de la faceta, haga clic en **Más** (...) opciones.
 1. Haga clic en **Editar**
 
    ![Editar opciones](assets/facet-edit-menu.png)
@@ -85,7 +95,7 @@ El orden de las facetas ancladas se puede cambiar moviendo la fila a una posici�
 
 ## Eliminar faceta
 
-1. Busque la faceta en la lista y haga clic en las opciones **Más** (...).
+1. Busque la faceta en la lista y haga clic en **Más** (...) opciones.
 1. Haga clic en **Eliminar**.
 1. Cuando se le pida que confirme, haga clic en **Eliminar faceta**.
 La faceta se eliminará de la tienda una vez publicados los cambios.
