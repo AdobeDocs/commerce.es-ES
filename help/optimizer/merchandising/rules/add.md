@@ -1,11 +1,16 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización para búsquedas, listados de productos predeterminados y páginas de categorías.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
+TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: 2760
 ht-degree: 0%
 
 ---
@@ -21,7 +26,7 @@ Para generar una regla, abra el editor de reglas, elija un **tipo de regla** (co
 
    >[!IMPORTANT]
    >
-   >Las vistas del catálogo se encuentran actualmente en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las reglas de comercialización existentes para aprovechar el nuevo ámbito de vista de catálogo.
+   >Las vistas del catálogo se encuentran actualmente en [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las reglas de comercialización existentes para aprovechar el nuevo ámbito de vista de catálogo.
 
 1. Haga clic en **[!UICONTROL Create rule]** para iniciar el editor de reglas.
 
@@ -208,7 +213,7 @@ Siga estas instrucciones para actualizar las propiedades de las reglas existente
 
 ### Editar regla
 
-1. En el área de trabajo *Reglas de comercialización*, busque la regla en la cuadrícula que desea editar y haga clic en las opciones **Más** (...).
+1. En el área de trabajo *Reglas de comercialización*, busque la regla en la cuadrícula que desea editar y haga clic en **Más** (...) opciones.
 1. Haga clic en **Editar** para acceder al editor de reglas.
 1. Actualice las condiciones, los operadores y los eventos según sea necesario.
 1. Actualice los campos Nombre, Fecha de inicio y finalización y Descripción según sea necesario. Todos los nombres de reglas deben ser únicos.
@@ -220,13 +225,13 @@ La regla se agrega a la lista del área de trabajo *Reglas*. Aunque las reglas a
 
 Esta opción proporciona una forma rápida de ver todos los parámetros de regla mientras se mantiene en la tabla *Rules*.
 
-1. En el área de trabajo *Reglas de comercialización*, busque la regla en la cuadrícula que desee editar y haga clic en las opciones **Más** (...).
+1. En el área de trabajo *Reglas de comercialización*, busque la regla en la cuadrícula que desea editar y haga clic en **Más** (...) opciones.
 1. Haga clic en **Ver detalles** para ver los parámetros de la regla.
 1. Elija **Editar** o **Eliminar**, o haga clic en la X para cerrar el panel.
 
 ### Eliminar regla
 
-1. En el área de trabajo *Reglas*, busque la regla en la cuadrícula que desea editar y haga clic en las opciones **Más** (...).
+1. En el área de trabajo *Reglas*, busque la regla en la cuadrícula que desea editar y haga clic en **Más** (...) opciones.
 1. Haga clic en **Eliminar**.
 
 ## Descripciones de campos {#field-descriptions}

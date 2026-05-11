@@ -2,9 +2,14 @@
 title: Sincronizar fuentes mediante la CLI de Commerce
 description: Aprenda a utilizar los comandos de la interfaz de la línea de comandos para administrar fuentes y procesos para los servicios SaaS de  [!DNL data export extension] for Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
+TQID: https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: 583
 ht-degree: 0%
 
 ---
@@ -16,7 +21,7 @@ El comando `saas:resync` del paquete `magento/saas-export` le permite administra
 Adobe no recomienda usar el comando `saas:resync` con regularidad. Los escenarios habituales para utilizar el comando son:
 
 - Sincronización inicial
-- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas)
+- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Resolución de problemas
 
 Supervisar operaciones de sincronización en el archivo `var/log/saas-export.log`.

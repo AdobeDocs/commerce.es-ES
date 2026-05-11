@@ -4,9 +4,13 @@ description: Use [!DNL API Mesh] para Adobe Commerce y el servicio de catálogo 
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+TQID: https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: 292
 ht-degree: 0%
 
 ---
@@ -21,8 +25,8 @@ En este tema, API Mesh se utiliza para mostrar los precios de los productos en u
 
 Debe tener los impuestos configurados para que se muestren en la página Detalles del producto.
 
-1. [Configurar tasas de impuestos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=es).
-1. Habilite que los impuestos se [muestren en el catálogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=es#step-1%3A-configure-catalog-prices-display-settings) y configúrelo en `Including and Excluding Tax` o `Including Tax`.
+1. [Configurar tasas de impuestos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Habilite que los impuestos se [muestren en el catálogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) y configúrelo en `Including and Excluding Tax` o `Including Tax`.
 
 Compruebe que el servicio de catálogo funciona en la página de detalles del producto.
 

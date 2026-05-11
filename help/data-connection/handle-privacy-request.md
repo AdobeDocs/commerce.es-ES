@@ -4,10 +4,16 @@ description: Descubra cómo  [!DNL Commerce] services administra las solicitudes
 role: Admin, Leader
 feature: Security, Compliance
 exl-id: 1408ca77-6956-4519-93a6-bc9be9bffeff
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/KhsveSMPR0tKmNzViEaWWHDu8fWve0GZjwsl2oyvx1k
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157
+subfeature_v2: id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: 595
+ht-degree: 1%
 
 ---
 
@@ -17,21 +23,21 @@ Adobe Experience Platform Privacy Service proporciona una API de RESTful y una i
 
 Para obtener más información sobre Privacy Service y cómo crear y administrar solicitudes de privacidad, consulte la documentación de Adobe Experience Platform:
 
-* [Información general de Privacy Service](https://experienceleague.adobe.com/es/docs/experience-platform/privacy/home)
-* [Administración de trabajos de privacidad en la IU de Privacy Service](https://experienceleague.adobe.com/es/docs/experience-platform/privacy/ui/user-guide)
+* [Información general de Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
+* [Administración de trabajos de privacidad en la IU de Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
 
 ## Administrar solicitudes de privacidad de datos individuales
 
 Puede enviar solicitudes individuales para acceder a los datos de consumidores y eliminarlos de [!DNL Commerce] de dos maneras:
 
-* A través de la **IU de Privacy Service**. Consulte la documentación [aquí](https://experienceleague.adobe.com/es/docs/experience-platform/privacy/ui/user-guide#_blank).
+* A través de la **IU de Privacy Service**. Consulte la documentación [aquí](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
 * Mediante la **API de Privacy Service**. Consulte la documentación [aquí](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) y la información de la API [aquí](https://developer.adobe.com/experience-platform-apis/#_blank).
 
 Privacy Service admite dos tipos de solicitudes: **acceso a datos** y **eliminación de datos**.
 
 >[!NOTE]
 >
->Este artículo se centra en realizar solicitudes de privacidad para [!DNL Commerce]. Si planea realizar solicitudes de privacidad para [el lago de datos de Platform](https://experienceleague.adobe.com/es/docs/experience-platform/catalog/privacy), [el perfil del cliente en tiempo real](https://experienceleague.adobe.com/es/docs/experience-platform/profile/privacy) o [el servicio de identidad](https://experienceleague.adobe.com/es/docs/experience-platform/identity/privacy), consulte sus respectivas guías de usuario. Tenga en cuenta que las solicitudes de eliminación y acceso deben realizarse en cada sistema de forma individual, ya que una solicitud de privacidad a Commerce no elimina los datos de todos estos sistemas.
+>Este artículo se centra en realizar solicitudes de privacidad para [!DNL Commerce]. Si planea realizar solicitudes de privacidad para [el lago de datos de Platform](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), [el perfil del cliente en tiempo real](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) o [el servicio de identidad](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), consulte sus respectivas guías de usuario. Tenga en cuenta que las solicitudes de eliminación y acceso deben realizarse en cada sistema de forma individual, ya que una solicitud de privacidad a Commerce no elimina los datos de todos estos sistemas.
 
 ## Acceso a datos
 
@@ -39,7 +45,7 @@ Para **solicitudes de acceso**, especifique &quot;Commerce (Personalization)&quo
 
 ## Eliminación de datos
 
-Para las solicitudes de eliminación, Privacy Service elimina los datos de [!DNL Commerce] almacenados en los servicios SaaS de Commerce con fines de marketing, lo que significa que los perfiles y los pedidos de los interesados ya no se envían a las aplicaciones de marketing de Adobe para su uso en campañas y recorridos de clientes. Sin embargo, Privacy Service no elimina datos en la aplicación [!DNL Commerce], ya que podrían ser necesarios para las necesidades transaccionales de los comerciantes. Los comerciantes son responsables de cualquier solicitud de eliminación/acceso de datos en la aplicación [!DNL Commerce]. Consulte [Modelo operativo y de seguridad de responsabilidad compartida](https://experienceleague.adobe.com/es/docs/commerce-operations/security-and-compliance/shared-responsibility) para obtener más información.
+Para las solicitudes de eliminación, Privacy Service elimina los datos de [!DNL Commerce] almacenados en los servicios SaaS de Commerce con fines de marketing, lo que significa que los perfiles y los pedidos de los interesados ya no se envían a las aplicaciones de marketing de Adobe para su uso en campañas y recorridos de clientes. Sin embargo, Privacy Service no elimina datos en la aplicación [!DNL Commerce], ya que podrían ser necesarios para las necesidades transaccionales de los comerciantes. Los comerciantes son responsables de cualquier solicitud de eliminación/acceso de datos en la aplicación [!DNL Commerce]. Consulte [Modelo operativo y de seguridad de responsabilidad compartida](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) para obtener más información.
 
 [!DNL Commerce] notificará a los comerciantes sobre las solicitudes de eliminación enviándoles información sobre los interesados que soliciten la eliminación de determinados datos.
 
@@ -64,8 +70,8 @@ Para **eliminar solicitudes**, asegúrese de que la casilla &quot;Commerce (Pers
 
 Para enviar solicitudes de acceso y eliminación a través de la API de privacidad, debe autenticar y administrar permisos para Privacy Service:
 
-* [Autenticar y acceder a la API de Privacy Service](https://experienceleague.adobe.com/es/docs/experience-platform/privacy/api/getting-started)
-* [Administrar permisos para Privacy Service](https://experienceleague.adobe.com/es/docs/experience-platform/privacy/permissions)
+* [Autenticar y acceder a la API de Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
+* [Administración de permisos para Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
 
 **Encabezados obligatorios**
 

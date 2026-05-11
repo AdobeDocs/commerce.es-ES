@@ -2,9 +2,14 @@
 title: Headless
 description: Aprenda a integrar [!DNL Product Recommendations] en una tienda sin encabezado.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/J3qXs-SWuDCz7pQwzGm0VcOOFoU1QM2M4qwsTxxPwE8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: 372
 ht-degree: 0%
 
 ---
@@ -15,7 +20,7 @@ Puede integrar a [!DNL Product Recommendations] en una tienda sin encabezado usa
 
 Los integradores personalizados y sin encabezado deben consultar estas instrucciones de Luma y PWA como una implementación sugerida. Existen muchas maneras de implementar Recomendaciones de producto en soluciones sin encabezado, y esta documentación no cubre todos los escenarios. Los integradores deben cubrir eventos, diseño y pruebas para sus implementaciones.
 
-[!DNL Product Recommendations] requiere [datos de catálogo y comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=es) para funcionar. El proceso de sincronización de datos del catálogo permanece sin cambios en una implementación sin encabezado, pero se necesitan cambios para la recopilación de datos de comportamiento.
+[!DNL Product Recommendations] requiere [datos de catálogo y comportamiento](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) para funcionar. El proceso de sincronización de datos del catálogo permanece sin cambios en una implementación sin encabezado, pero se necesitan cambios para la recopilación de datos de comportamiento.
 
 >[!NOTE]
 >
@@ -23,7 +28,7 @@ Los integradores personalizados y sin encabezado deben consultar estas instrucci
 
 Para integrar [!DNL Product Recommendations] en una tienda sin encabezado, debes:
 
-1. Envíe datos de comportamiento a la inteligencia artificial aplicada a Adobe para analizar y calcular los resultados de recomendaciones de productos. También puede enviar datos adicionales para habilitar la recomendación de productos [informes de métricas](workspace.md).
+1. Envíe datos de comportamiento a Adobe AI para analizar y calcular los resultados de recomendaciones de productos. También puede enviar datos adicionales para habilitar la recomendación de productos [informes de métricas](workspace.md).
 
 1. Busque resultados de recomendaciones de productos y procese esos resultados en la página.
 
@@ -56,4 +61,4 @@ Puede realizar ambas acciones utilizando los SDK disponibles como se describe en
 
 1. Use [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) para recuperar las unidades de recomendación en la tienda. SDK devuelve los datos de producto necesarios para procesar las unidades de recomendación en una página.
 
-1. Aprenda a utilizar la consulta de GraphQL [`recommendations` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.
+1. Aprenda a utilizar la consulta de GraphQL [`recommendations` ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.

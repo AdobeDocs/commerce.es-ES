@@ -1,9 +1,14 @@
 ---
 title: Personalizar
 description: Aprenda a personalizar las recomendaciones de productos.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b59932e1-748a-432d-b65b-13cf1c287fb2
+TQID: https://experienceleague.adobe.com/-49Lqkuhnrn5GCQtHLO-9gr1nHwMjEQeEVDRR4cDk5Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -18,7 +23,7 @@ Para obtener más información sobre la modificación de archivos de plantilla, 
 
 Si modifica el archivo `recommendations.html`, debe conservar las siguientes etiquetas en el archivo para asegurarse de que Adobe Commerce pueda recopilar métricas de recomendaciones de su tienda:
 
-| Etiqueta | Uso |
+| Etiqueta | Utilice |
 |---|---|
 | `<div data-bind="attr : {'data-unit-id' : unitId }"...</div>` | Recopila eventos de vista. |
 | `<a data-bind="attr : {'data-sku' : sku, 'data-unit-id'}"...</a>` | Recopila eventos de clic. <br/>**Nota:** Si agrega etiquetas de anclaje, debe incluir estos atributos. |
@@ -112,7 +117,7 @@ Por ejemplo, si su tienda vende algunos productos orgánicos, es posible que ten
 
 ![Agregar insignia](assets/unit-custom.png)
 
-Para asegurarse de que haya un atributo de producto personalizado disponible cuando procese la unidad de recomendación en la página, establezca la propiedad `Used in Product Listing` en `Yes` en la página [Atributos de producto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=es) en el Administrador.
+Para asegurarse de que haya un atributo de producto personalizado disponible cuando procese la unidad de recomendación en la página, establezca la propiedad `Used in Product Listing` en `Yes` en la página [Atributos de producto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) en el Administrador.
 
 Cuando se establece esta propiedad, la carga útil JSON incluye un objeto `attributes` que contiene una matriz de códigos y valores de atributo. A continuación, puede aplicar un estilo de tienda personalizado basado en estos valores de atributo, como agregar tratamientos visuales especiales o insignias, como se mencionó anteriormente.
 

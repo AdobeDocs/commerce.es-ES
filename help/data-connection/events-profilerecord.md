@@ -3,9 +3,14 @@ title: Registros de perfil
 description: Descubra qué datos captura un registro de perfil.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: aaa30886-d9c0-4909-81ee-fad3407cac43
+TQID: https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: 499
 ht-degree: 0%
 
 ---
@@ -24,7 +29,7 @@ A continuación se describen los datos capturados para un registro de perfil.
 
 | Campo | Descripción |
 |---|---|
-| `channel` | Contiene información sobre el origen de los datos. Tanto `_id` como `_type` contienen [valores con espacio de nombres](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Contiene información sobre el origen de los datos. Tanto `_id` como `_type` contienen [valores con espacio de nombres](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | El identificador único del canal, como `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifica el origen de los datos del canal, como `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Contiene información sobre el cliente. |
@@ -59,6 +64,6 @@ A continuación se describen los datos capturados para un registro de perfil.
 
 >[!NOTE]
 >
->Cada registro de perfil también incluye el campo [`identityMap`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/field-groups/profile/identitymap), que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario.
+>Cada registro de perfil también incluye el campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario.
 
 Aprenda a [crear un esquema específico de un registro de perfil](profile-data.md) que pueda ingerir los datos de sus registros de perfil.

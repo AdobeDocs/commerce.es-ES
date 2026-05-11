@@ -1,9 +1,13 @@
 ---
 title: Administrar sinónimos
 description: Aprenda a administrar los  [!DNL Live Search] sinónimos existentes.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
+TQID: https://experienceleague.adobe.com/-B-ixlItkljDDCrau969-DPOvxPxhWM6NWRSG-TFcak
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: 222
 ht-degree: 0%
 
 ---
@@ -26,7 +30,7 @@ Para facilitar la búsqueda de un sinónimo, puede filtrar la lista por tipo y b
 
 ## Editar sinónimo
 
-1. Busque el sinónimo que desea editar y haga clic en las opciones **Más** (...).
+1. Busque el sinónimo que desea editar y haga clic en **Más** (...) opciones.
 
 1. Haga clic en **Editar**.
 La palabra clave es el primer término de la lista y cada término está separado por una coma. La palabra clave y los términos de expansión se pueden actualizar, pero no se puede cambiar el tipo de sinónimo.
@@ -36,7 +40,7 @@ La palabra clave es el primer término de la lista y cada término está separad
 
 ## Eliminar sinónimo
 
-1. Busque el sinónimo que desea eliminar en la lista y haga clic en las opciones **Más** (...).
+1. Busque el sinónimo que desea eliminar en la lista y haga clic en **Más** (...) opciones.
 1. Haga clic en **Eliminar**.
 1. Cuando se le solicite, haga clic en **Eliminar sinónimo** para confirmar.
 

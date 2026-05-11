@@ -2,16 +2,20 @@
 title: Facetas
 description: Las facetas de [!DNL Live Search] utilizan varias dimensiones de valores de atributo como criterios de búsqueda.
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 86484d49aa4b79bfe64455dba18b84bcd9073736
+TQID: https://experienceleague.adobe.com/bTE-Ow8xEDfK-saxGxotnvkgHZI4QThno1dCqRbjvCc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: 452
 ht-degree: 0%
 
 ---
 
 # Facetas
 
-Las facetas son un método de filtrado de alto rendimiento que utiliza varias dimensiones de valores de atributo como criterios de búsqueda. La búsqueda con facetas es similar, pero considerablemente &quot;más inteligente&quot; que la navegación con capas estándar [y &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=es). La lista de filtros disponibles está determinada por los [atributos filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=es#filterable-attributes) de los productos devueltos en los resultados de búsqueda.
+Las facetas son un método de filtrado de alto rendimiento que utiliza varias dimensiones de valores de atributo como criterios de búsqueda. La búsqueda con facetas es similar, pero considerablemente &quot;más inteligente&quot; que la navegación con capas estándar [y ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). La lista de filtros disponibles está determinada por los [atributos filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de los productos devueltos en los resultados de búsqueda.
 
 [!DNL Live Search] usa la consulta `productSearch`, que devuelve facetas y otros datos específicos de [!DNL Live Search]. Consulte [`productSearch` consulta](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) en la documentación para desarrolladores para ver ejemplos de código.
 
@@ -37,8 +41,8 @@ Si tiene un gran número de atributos con los que lidiar, considere la posibilid
 
 | Configuración | Descripción |
 |--- |--- |
-| [Configuración de visualización de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=es) | Anclaje - `Yes` |
-| [Propiedades del atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=es) | [Tipo de entrada de catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=es) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
+| [Configuración de visualización de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anclaje - `Yes` |
+| [Propiedades del atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de entrada de catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
 | Propiedades de tienda de atributos | Usar en la navegación por capas de los resultados de búsqueda - `Yes` |
 
 ## Agregación de facetas

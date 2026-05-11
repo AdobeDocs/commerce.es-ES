@@ -3,10 +3,15 @@ title: Notas de la versión
 description: La información de la versión más reciente para la extensión  [!DNL Data Connection] de Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/kjXCkifzTRTjVJZuy3fb6VPhQkblOaT7-GxwJP4Dv3Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 1%
+source-wordcount: 1350
+ht-degree: 2%
 
 ---
 
@@ -20,13 +25,13 @@ Estas notas de la versión contienen actualizaciones para la extensión [!DNL Da
 
 ![Nuevo](../assets/new.svg) - Nuevas características
 ![Corrección](../assets/fix.svg): correcciones y mejoras
-![Error](../assets/bug.svg): problemas conocidos
+![Error](../assets/bug.svg) - Problemas conocidos
 
 Para ver los cambios y correcciones de características relacionados con las extensiones utilizadas por la extensión [!DNL Data Connection], consulte **Actualizaciones de servicio compatibles**.
 
-Consulte [Próximas versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule) para obtener más información sobre las programaciones de versiones y la compatibilidad.
+Consulte [Próximas versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) para obtener más información sobre las programaciones de versiones y la compatibilidad.
 
-Consulte la documentación para desarrolladores para [saber qué versiones de Commerce admiten este módulo](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
+Consulte la documentación para desarrolladores para [saber qué versiones de Commerce admiten este módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Actualizaciones de servicios compatibles
 
@@ -106,7 +111,7 @@ _21 de marzo de 2025_
 
 ![Nuevo](../assets/new.svg) agregó compatibilidad con PHP 8.4.
 
-## 3.2.1.
+## 3.2.1
 
 _17 de enero de 2025_
 
@@ -134,7 +139,7 @@ _27 de agosto de 2024_
 ![Nuevo](../assets/new.svg) - Si participa en la versión beta, asegúrese de que el archivo `composer.json` tenga lo siguiente en el nivel raíz: `"minimum-stability": "beta"`. Además, agregue `composer require "magento/customers-connector: ^1.2.0"` para enviar perfiles de clientes desde su instancia de Commerce a SaaS.
 ![Nuevo](../assets/new.svg): Esta versión contiene las revisiones publicadas en 3.1.1, 3.1.2, 3.1.3 y 3.1.4.
 
-## 3.1.4.
+## 3.1.4
 
 _9 de agosto de 2024_
 
@@ -142,7 +147,7 @@ _9 de agosto de 2024_
 
 ![Corrección](../assets/fix.svg): se ha actualizado el metapackage `experience-platform-connector` para quitar los exportadores e indexadores de datos adicionales que no se usan.
 
-## 3.1.3.
+## 3.1.3
 
 _22 de julio de 2024_
 
@@ -159,7 +164,7 @@ _5 de junio de 2024_
 ![Corrección](../assets/fix.svg) - Se corrigió un problema en el cual se estaba usando un formato de fecha incorrecto al iniciar una [sincronización histórica](connect-data.md#specify-order-history-date-range).
 ![Corrección](../assets/fix.svg): se ha corregido un problema por el que el evento `startCheckout` no se enviaba en Adobe Commerce 2.4.7.
 
-## 3.1.1.
+## 3.1.1
 
 _4 de abril de 2024_
 

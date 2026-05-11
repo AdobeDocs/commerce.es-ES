@@ -4,10 +4,15 @@ description: 'Aprenda a utilizar la extensión  [!DNL Data Connection] para comp
 role: Admin, Leader
 feature: Security, Compliance
 exl-id: 8851e6d2-c466-4d8e-bfa4-20d0ad6522b5
-source-git-commit: 290e3310bd7940c4ccd11317d273b75cc974223b
+TQID: https://experienceleague.adobe.com/PxrtL1nHtJsRJuAehDVKRk0ZuJz0ta7i84j1K6An1QU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 0%
+source-wordcount: 601
+ht-degree: 1%
 
 ---
 
@@ -27,11 +32,11 @@ En este artículo, aprenderá lo siguiente:
 
 ## Instalación
 
-Si adquirió el complemento de atención médica para Adobe [!DNL Commerce], lo más probable es que ya haya instalado la [extensión compatible con HIPAA](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Para asegurarse de que los datos del evento de back office [!DNL Commerce] estén preparados para HIPAA, también debe instalar la extensión [!DNL Data Connection] con la extensión adicional **Servicios de datos HIPAA**. La extensión **Data Services HIPAA** garantiza que cualquier dato de back office que envíe a Experience Platform esté preparado para HIPAA. Obtenga información [sobre cómo instalar la extensión](install.md#install-the-data-services-hipaa-extension).
+Si adquirió el complemento de atención médica para Adobe [!DNL Commerce], lo más probable es que ya haya instalado la [extensión compatible con HIPAA](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Para asegurarse de que los datos del evento de back office [!DNL Commerce] estén preparados para HIPAA, también debe instalar la extensión [!DNL Data Connection] con la extensión adicional **Servicios de datos HIPAA**. La extensión **Data Services HIPAA** garantiza que cualquier dato de back office que envíe a Experience Platform esté preparado para HIPAA. Obtenga información [sobre cómo instalar la extensión](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
->Al instalar la extensión **Data Services HIPAA**, ya no se capturan los datos de evento de tienda que usan Live Search y Product Recommendations. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para estos servicios. Consulte [configuración general](https://experienceleague.adobe.com/es/docs/commerce-admin/config/general/general#data-services) para obtener más información.
+>Al instalar la extensión **Data Services HIPAA**, ya no se capturan los datos de evento de tienda que usan Live Search y Product Recommendations. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para estos servicios. Consulte [configuración general](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) para obtener más información.
 
 ## Asegurarse de que los datos enviados a Experience Platform están preparados para HIPAA
 
@@ -41,11 +46,11 @@ Para obtener una descripción general de las etiquetas de uso de datos y su func
 
 ### Aplicar etiquetas de uso de datos a [!DNL Commerce] campos
 
-Siga los pasos del tutorial [administrar etiquetas de uso de datos para un esquema](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/tutorials/labels) para aprender a aplicar etiquetas a su esquema [!DNL Commerce].
+Siga los pasos del tutorial [administrar etiquetas de uso de datos para un esquema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) para aprender a aplicar etiquetas a su esquema [!DNL Commerce].
 
-Consulte el [glosario de etiquetas confidenciales](https://experienceleague.adobe.com/es/docs/experience-platform/data-governance/labels/reference#sensitive) para obtener más información sobre las etiquetas disponibles que puede aplicar a los campos del esquema [!DNL Commerce]. Por ejemplo, la etiqueta `RHD` identifica información médica protegida (PHI) o información sobre un paciente que Adobe le permite cargar de manera contractual.
+Consulte el [glosario de etiquetas confidenciales](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive) para obtener más información sobre las etiquetas disponibles que puede aplicar a los campos del esquema [!DNL Commerce]. Por ejemplo, la etiqueta `RHD` identifica información médica protegida (PHI) o información sobre un paciente que Adobe le permite cargar de manera contractual.
 
-Cuando los datos de [!DNL Commerce] están etiquetados como confidenciales, puede aplicar directivas para evitar operaciones de datos que constituyan violaciones de directivas. Más información sobre [aplicación de políticas](https://experienceleague.adobe.com/es/docs/experience-platform/data-governance/enforcement/overview) en Experience Platform.
+Cuando los datos de [!DNL Commerce] están etiquetados como confidenciales, puede aplicar directivas para evitar operaciones de datos que constituyan violaciones de directivas. Más información sobre [aplicación de políticas](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) en Experience Platform.
 
 ## Cifrado de datos en Commerce
 
@@ -57,7 +62,7 @@ Adobe [!DNL Commerce] utiliza cifrado de nivel de bloque. Para almacenamiento, [
 
 ### Cifrado de datos en Experience Platform
 
-Cuando los comerciantes envían sus datos a Experience Platform, estos se envían mediante HTTPS TLS v1.2. Más información sobre cómo [Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/landing/governance-privacy-security/encryption) cifra los datos.
+Cuando los comerciantes envían sus datos a Experience Platform, estos se envían mediante HTTPS TLS v1.2. Más información sobre cómo [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) cifra los datos.
 
 ## Cómo gestiona [!DNL Commerce] las solicitudes de privacidad
 

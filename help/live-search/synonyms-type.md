@@ -2,9 +2,12 @@
 title: Tipos de sinónimos
 description: Los sinónimos unidireccionales  [!DNL Live Search] y bidireccionales amplían la definición de palabras clave.
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: 617
 ht-degree: 0%
 
 ---
@@ -55,4 +58,4 @@ Si no se crea ningún sinónimo y un comprador busca **tabla de cocina**, Commer
 
 Después de crear un sinónimo, el comportamiento de búsqueda cambia para buscar la frase exacta **tabla de cocina**. Esto puede reducir el número de resultados, ya que solo se mostrarán los productos con la frase exacta.
 
-Si quieres que los términos se busquen por separado como antes, puedes [crear un ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Si hay suficiente demanda, Commerce considerará la posibilidad de añadir esta funcionalidad al producto en una versión futura.
+Si quieres que los términos se busquen por separado como antes, puedes [crear un ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Si hay suficiente demanda, Commerce considerará la posibilidad de añadir esta funcionalidad al producto en una versión futura.

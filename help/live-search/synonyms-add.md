@@ -2,9 +2,13 @@
 title: Añadir sinónimos
 description: Agregue  [!DNL Live Search] sinónimos para mejorar la respuesta a las solicitudes de búsqueda.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -18,7 +22,7 @@ Aumente la participación de los clientes agregando su propia lista revisada de 
 ## Paso 1: Añadir un sinónimo
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
-1. Para varias tiendas, establece **Scope** en la [vista de la tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplica la configuración del sinónimo.
+1. Para varias tiendas, establece **Scope** en la [vista de la tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la configuración del sinónimo.
 1. Haga clic en la ficha **Sinónimos**.
 1. Haga clic en el botón **Agregar sinónimos**.
 

@@ -2,9 +2,13 @@
 title: Rendimiento
 description: El área de trabajo  [!DNL Live Search] Rendimiento proporciona insight a los términos de búsqueda que utilizan los compradores.
 exl-id: 07a63df8-b981-4913-841a-7e81ec634281
-source-git-commit: 5978a400d985e3099962af8bcefdd6f29f687d67
+TQID: https://experienceleague.adobe.com/COyaQi4zdeb4Uyf7XV1iYJa-bbDkEP-Os59bmfdLV0w
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: 668
 ht-degree: 0%
 
 ---
@@ -19,7 +23,7 @@ El área de trabajo *Rendimiento* proporciona insight a los términos de búsque
 
 ![Rendimiento](assets/performance-unique-searches.png)
 
-También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es) para obtener más datos sobre la sincronización de datos.
+También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
 
 >[!NOTE]
 >

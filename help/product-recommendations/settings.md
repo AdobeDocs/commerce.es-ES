@@ -2,16 +2,21 @@
 title: Configuración
 description: Aprenda a cambiar el origen de sus  [!DNL Product Recommendations] datos y a habilitar las recomendaciones visuales.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/GJ8h9mX-3vlH1AUxk7FyM0-7rZTt40SGmdwfEMlvLvE
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: 477
 ht-degree: 0%
 
 ---
 
 # Configuración
 
-Al [configurar un espacio de datos SaaS](../landing/saas.md#saas-configuration) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe AI](https://business.adobe.com/es/ai.html) analiza esos datos y calcula las asociaciones de productos que se usan para las recomendaciones de productos.
+Al [configurar un espacio de datos SaaS](../landing/saas.md#saas-configuration) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe AI](https://business.adobe.com/ai.html) analiza esos datos y calcula las asociaciones de productos que se usan para las recomendaciones de productos.
 
 Los entornos que no son de producción para pruebas o ensayo generalmente no tienen la cantidad o calidad de los datos de comportamiento de la tienda para ofrecer recomendaciones de productos realistas. El comportamiento real del comprador a escala solo se puede capturar en un entorno de producción. Para solucionar este problema, Adobe Commerce le permite utilizar recomendaciones de productos de su entorno de producción con otros espacios de datos de SaaS que no sean de producción. El uso de datos reales de la tienda en un entorno que no sea de producción le permite obtener una vista previa de las recomendaciones que ven los compradores y experimentar con diferentes tipos de recomendaciones y ubicaciones. Los compradores pueden obtener una vista previa de las recomendaciones de un espacio de datos de SaaS diferente, pero no hacer clic en ellas.
 
@@ -34,14 +39,14 @@ Para cambiar la fuente de los datos de recomendaciones de productos, elija el es
 
 1. Haga clic en **Configuración**.
 
-   ![configuración de recomendaciones de productos](assets/settings.png)
+   ![configuración de recomendaciones de producto](assets/settings.png)
    _Configuración_
 
 1. En la sección _Origen de recomendaciones_, habilite la opción **Recuperar recomendaciones desde un espacio de datos SaaS diferente**. La sección _Origen de recomendaciones_ solo aparece en un entorno que no sea de producción.
 
    Aparecerá una lista de _espacios de datos SaaS disponibles_.
 
-   ![configuración de recomendaciones de productos](assets/settings-select-saas.png)
+   ![configuración de recomendaciones de producto](assets/settings-select-saas.png)
    _Configuración_
 
 1. Seleccione el espacio de datos SaaS que tenga los datos de comprador que desee utilizar.

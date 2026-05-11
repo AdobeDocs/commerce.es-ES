@@ -2,18 +2,23 @@
 title: Introducción a Recommendations
 description: Recommendations es una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/dTvy4IlHTOcCHpytRxFkGXCZqUvQwYz4-5q1BXjywII
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: 202
 ht-degree: 0%
 
 ---
 
 # Introducción a Recommendations
 
-Recommendations es una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador. Las recomendaciones están impulsadas por [Adobe AI](https://business.adobe.com/es/ai.html), que usa inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados de visitantes. Estos datos, cuando se combinan con su catálogo de Adobe Commerce, resultan en una experiencia muy atractiva, relevante y personalizada.
+Recommendations es una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador. Las recomendaciones están impulsadas por [Adobe AI](https://business.adobe.com/ai.html), que usa inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados de visitantes. Estos datos, cuando se combinan con su catálogo de Adobe Commerce, resultan en una experiencia muy atractiva, relevante y personalizada.
 
 Las recomendaciones aparecen en la tienda como unidades con etiquetas como, por ejemplo, &quot;Los clientes que vieron este producto también vieron&quot;. Puede crear, administrar e implementar recomendaciones en las vistas de su tienda directamente desde [!DNL Adobe Commerce Optimizer].
 

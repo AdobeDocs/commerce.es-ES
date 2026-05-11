@@ -2,16 +2,21 @@
 title: Desarrollo del administrador de recomendaciones de productos
 description: Descripción general de la arquitectura de recomendaciones de productos y las funciones de desarrollo.
 exl-id: 5967259e-c531-4fc7-9abd-cc18433fab33
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/DtPYY7DaB-A7-VyTeXkjL9Y2My-WOQx-9CD-TgrcTmk
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: 319
 ht-degree: 0%
 
 ---
 
 # Desarrollo del administrador de recomendaciones de productos
 
-Las recomendaciones de productos son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador. Las recomendaciones de productos aparecen en la tienda en forma de unidades como &quot;Los clientes que vieron este producto también vieron&quot;, &quot;Los clientes que compraron este producto también compraron&quot;, &quot;Recomendado para ti&quot;, etc. Las recomendaciones de productos de Adobe Commerce están equipadas con [Adobe AI](https://business.adobe.com/es/ai.html), que usa inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados del comprador. Estos datos, cuando se combinan con su catálogo de Commerce, generan experiencias muy atractivas, relevantes y personalizadas para el comprador.
+Las recomendaciones de productos son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador. Las recomendaciones de productos aparecen en la tienda en forma de unidades como &quot;Los clientes que vieron este producto también vieron&quot;, &quot;Los clientes que compraron este producto también compraron&quot;, &quot;Recomendado para ti&quot;, etc. Las recomendaciones de productos de Adobe Commerce están equipadas con la tecnología [Adobe AI](https://business.adobe.com/ai.html), que usa inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados del comprador. Estos datos, cuando se combinan con su catálogo de Commerce, generan experiencias muy atractivas, relevantes y personalizadas para el comprador.
 
 >[!NOTE]
 >
@@ -19,7 +24,7 @@ Las recomendaciones de productos son una potente herramienta de marketing que pu
 
 ## Información general de arquitectura
 
-En un nivel superior, Commerce Product Recommendations se implementa como SaaS. El lado de Commerce incluye la tienda, que contiene el recopilador de eventos y la plantilla de diseño Recommendations, y el back-end, que incluye los servicios de datos, el módulo de exportación de SaaS y la IU de administración. Los servicios de inteligencia artificial aplicada a Adobe se aprovechan del lado del SaaS.
+En un nivel superior, Commerce Product Recommendations se implementa como SaaS. El lado de Commerce incluye la tienda, que contiene el recopilador de eventos y la plantilla de diseño Recommendations, y el back-end, que incluye los servicios de datos, el módulo de exportación de SaaS y la IU de administración. Los servicios de inteligencia de Adobe AI se aprovechan del lado del SaaS.
 
 ![Diagrama de arquitectura de recomendaciones de productos](assets/arch-diag-sensei.svg)
 
