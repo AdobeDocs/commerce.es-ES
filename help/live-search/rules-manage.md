@@ -3,9 +3,12 @@ title: Administrar reglas de comercialización de búsqueda
 description: Obtenga información sobre cómo administrar las reglas de comercialización de búsqueda existentes.
 exl-id: f831e77c-95e3-4d55-bc33-1a1247db22f8
 TQID: https://experienceleague.adobe.com/zXda40dPXU4loN41pLfHO76Q3D1LFLfn34ob0QsGWNY
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 205

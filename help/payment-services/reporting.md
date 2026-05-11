@@ -5,11 +5,21 @@ role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
 TQID: https://experienceleague.adobe.com/G4EOSDBdBepDJG0HyuCcQlq3-megOqpOGzSbEEnT1jc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1391
@@ -39,7 +49,7 @@ Puede descargar el informe Transacciones en formato de archivo .csv para utiliza
 
 La vista Informe de transacciones está disponible en la vista Transacciones de Servicios de pago. Incluye toda la información disponible sobre las transacciones de tu tienda o tiendas.
 
-En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**para ver la vista detallada del informe de transacciones tabulares. Desde **[!UICONTROL Home]**, también puede elegir **[!UICONTROL View Report]**en **[!UICONTROL Transactions]**en [!DNL Adobe Commerce as a Cloud Service] y [!DNL Adobe Commerce Optimizer].
+En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;para ver la vista detallada del informe de transacciones tabulares. Desde **[!UICONTROL Home]**, también puede elegir **[!UICONTROL View Report]**&#x200B;en **[!UICONTROL Transactions]**&#x200B;en [!DNL Adobe Commerce as a Cloud Service] y [!DNL Adobe Commerce Optimizer].
 
 >[!BEGINTABS]
 
@@ -73,7 +83,7 @@ En la vista Informe de transacciones, puede seleccionar el origen de datos (**[!
 
 ![Selección de orígenes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver la información del informe del modo de espacio aislado.
+Si _[!UICONTROL Live]_&#x200B;es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si&#x200B;_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver la información del informe del modo de espacio aislado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -103,14 +113,14 @@ En la vista Informe de transacciones, puede filtrar los resultados de los estado
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Haga clic en el selector **[!UICONTROL Filter]**.
-1. Cambie las opciones _[!UICONTROL Transaction Result]_para ver los resultados del informe solamente para las transacciones de pedidos seleccionadas.
-1. Cambie las opciones _[!UICONTROL Payment Method]_para ver los resultados del informe para el tipo de pago utilizado para la transacción.
-1. Active las opciones _[!UICONTROL Payment Detail]_para ver información adicional sobre el tipo de pago utilizado, cuando esté disponible.
+1. Cambie las opciones _[!UICONTROL Transaction Result]_&#x200B;para ver los resultados del informe solamente para las transacciones de pedidos seleccionadas.
+1. Cambie las opciones _[!UICONTROL Payment Method]_&#x200B;para ver los resultados del informe para el tipo de pago utilizado para la transacción.
+1. Active las opciones _[!UICONTROL Payment Detail]_&#x200B;para ver información adicional sobre el tipo de pago utilizado, cuando esté disponible.
 1. Escriba _Importe mínimo de pedido_ o _Importe máximo de pedido_ para ver los resultados del informe dentro de ese intervalo de importe de pedido.
-1. Escriba un _[!UICONTROL Order ID]_para buscar una transacción específica.
-1. Introduce _[!UICONTROL Card Last Four]_para buscar una tarjeta de crédito o débito específica.
-1. Escriba un _[!UICONTROL Customer ID]_para mostrar todas las transacciones de un cliente específico.
-1. Escriba _[!UICONTROL Customer Email]_para filtrar las transacciones de ese correo electrónico.
+1. Escriba un _[!UICONTROL Order ID]_&#x200B;para buscar una transacción específica.
+1. Introduce _[!UICONTROL Card Last Four]_&#x200B;para buscar una tarjeta de crédito o débito específica.
+1. Escriba un _[!UICONTROL Customer ID]_&#x200B;para mostrar todas las transacciones de un cliente específico.
+1. Escriba _[!UICONTROL Customer Email]_&#x200B;para filtrar las transacciones de ese correo electrónico.
 1. Haga clic en **[!UICONTROL Hide filters]** para ocultar el filtro.
 
 ### Mostrar y ocultar columnas
@@ -125,7 +135,7 @@ El informe Transacciones muestra todas las columnas de información disponibles 
 
 ### Actualización de datos del informe
 
-La vista Informe de transacciones muestra una marca de tiempo _[!UICONTROL Last updated]_que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe de transacciones se actualizan automáticamente cada tres horas.
+La vista Informe de transacciones muestra una marca de tiempo _[!UICONTROL Last updated]_&#x200B;que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe de transacciones se actualizan automáticamente cada tres horas.
 
 También puede forzar manualmente una actualización de los datos del informe para ver la información del informe más actualizada.
 
