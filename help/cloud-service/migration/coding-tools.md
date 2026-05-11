@@ -2,7 +2,7 @@
 title: Herramientas para desarrolladores de codificación de IA para Adobe Commerce App Builder
 description: Aprenda a utilizar las herramientas de IA para crear aplicaciones de Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 TQID: https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY
@@ -346,7 +346,7 @@ Consulte los siguientes recursos para empezar:
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Kit de inicio de compra](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Aplicaciones de muestra de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por qué debería utilizar estos recursos

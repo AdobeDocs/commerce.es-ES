@@ -26,7 +26,7 @@ ht-degree: 0%
 
 # Recopilación de datos de Commerce mediante etiquetas de Adobe Experience Platform
 
-Aunque puede usar la extensión [!DNL Data Connection] para publicar y suscribirse a eventos de tienda, es posible que algunos comerciantes ya estén usando una solución de recopilación de datos, como las [etiquetas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Para esos comerciantes, Adobe Commerce proporciona una opción de solo publicación en la extensión [!DNL Data Connection] que utiliza Adobe Commerce Event SDK.
+Aunque puede usar la extensión [!DNL Data Connection] para publicar y suscribirse a eventos de tienda, es posible que algunos comerciantes ya estén usando una solución de recopilación de datos, como las [etiquetas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=es). Para esos comerciantes, Adobe Commerce proporciona una opción de solo publicación en la extensión [!DNL Data Connection] que utiliza Adobe Commerce Event SDK.
 
 Flujo de datos de la extensión ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Flujo de datos de la extensión _[!DNL Data Connection]con etiquetas_
@@ -47,15 +47,15 @@ Para recopilar datos de evento de Commerce:
 
 Para asignar datos de tienda de Commerce a Adobe Experience Platform, configure e instale lo siguiente desde etiquetas de Adobe Experience Platform:
 
-1. [Configurar una propiedad de etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) en la recopilación de datos de Adobe Experience Platform.
+1. [Configurar una propiedad de etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=es) en la recopilación de datos de Adobe Experience Platform.
 
 1. En **Creación**, seleccione **Extensiones** e instale y configure las siguientes extensiones:
 
-   - [Capa de datos del cliente de Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
+   - [Capa de datos del cliente de Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=es)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=es)
 
-1. [Publicar etiqueta](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) en su entorno de desarrollo.
+1. [Publicar etiqueta](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=es) en su entorno de desarrollo.
 
 1. Siga los pasos de **Asignación de eventos** a continuación para configurar los elementos de datos y las reglas para eventos específicos.
 
@@ -1425,7 +1425,7 @@ return IdentityMap;
 
 ## Configuración del consentimiento
 
-Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de manera predeterminada. La exclusión se administra mediante la cookie [`mg_dnt` &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Puede seguir los pasos descritos aquí si elige usar `mg_dnt` para administrar el consentimiento. La [documentación de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) tiene varias opciones adicionales para administrar el consentimiento.
+Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de manera predeterminada. La exclusión se administra mediante la cookie [`mg_dnt` &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es). Puede seguir los pasos descritos aquí si elige usar `mg_dnt` para administrar el consentimiento. La [documentación de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=es) tiene varias opciones adicionales para administrar el consentimiento.
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%do not track cookie%`) para la cookie `mg_dnt`:
 
