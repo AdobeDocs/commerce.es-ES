@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 118e2865ce9d4903b9a82254e0f56fc76c9fdadf
 workflow-type: tm+mt
-source-wordcount: 1787
+source-wordcount: 1822
 ht-degree: 0%
 
 ---
@@ -53,10 +53,15 @@ Los roles siguientes están disponibles para [!DNL Adobe Commerce as a Cloud Ser
 
 * [**Desarrolladores**](https://helpx.adobe.com/es/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}: Los desarrolladores tienen permisos de usuario y se agregan a la instancia de Commerce como usuarios de desarrollador. Pueden usar [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configurar eventos](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} y [crear enlaces web](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
-* Administradores: existen tres tipos diferentes de administradores:
+* Administradores: existen diferentes tipos de funciones de administrador:
    * [Administradores del sistema](https://helpx.adobe.com/es/enterprise/using/admin-roles.html){target="_blank"}: el administrador del sistema tiene acceso a todos los productos y perfiles de producto de la organización a través de Admin Console.
    * [Administradores de productos](#add-a-product-admin): los administradores de productos pueden [administrar usuarios, roles y permisos para el producto](#add-users) en [!DNL Adobe Admin Console] y [administrar usuarios en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
    * [Administradores de perfil de producto](#add-developers-and-product-profile-admins): los administradores de perfil de producto no tienen acceso al Administrador de Adobe Commerce, pero pueden administrar usuarios para el producto en [!DNL Adobe Admin Console].
+   * Administradores de asistencia: los administradores de asistencia pueden crear y administrar vales de asistencia.
+
+>[!NOTE]
+>
+>Si desea que un usuario tenga la capacidad de crear vales de soporte, se le debe asignar el rol **Administrador de soporte** en Admin Console.
 
 Para obtener información detallada sobre los permisos concedidos a cada función dentro de Adobe Commerce, consulte [recursos de funciones](#role-resources).
 
