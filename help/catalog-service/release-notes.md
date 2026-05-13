@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
 workflow-type: tm+mt
-source-wordcount: 2709
+source-wordcount: 2742
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 ## Servicio de catálogo de tienda
 
 ### Mayo de 2026
+
+**Fecha de la versión**: 13 de mayo de 2026
+<!--v1.54-->
+
+![Nuevo](../assets/new.svg) **criterio de ordenación de categorías en GraphQL**: el tipo de GraphQL `CategoryView` ahora incluye un campo de posición, de modo que los escaparates pueden mostrar las categorías en el orden en que los comerciantes las configuran en la jerarquía del catálogo.
+<!--DATA-7166-->
 
 **Fecha de la versión**: 4 de mayo de 2026
 <!-- v1.53 -->
