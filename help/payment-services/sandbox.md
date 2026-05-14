@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
+source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Cuando se apruebe la incorporación a la zona protegida de PayPal, debería ver 
 
 ### Restablecer la cuenta de zona protegida
 
-Si ha creado una cuenta de zona protegida de PayPal durante el proceso de incorporación a esta zona protegida, debe restablecer su zona protegida de incorporación porque o no puede verificar su correo electrónico.
+Si creó una cuenta de zona protegida de PayPal durante el proceso de incorporación a esta zona protegida, debe restablecer su zona protegida de incorporación porque no puede verificar su correo electrónico.
 
 Para restablecer la cuenta de la zona protegida:
 
