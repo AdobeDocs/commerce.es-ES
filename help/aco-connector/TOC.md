@@ -1,7 +1,8 @@
 ---
 user-guide-title: Guía de integración de [!DNL Adobe Commerce Optimizer Connector]
+breadcrumb-title: '[!DNL Optimizer Connector]'
 user-guide-description: Configure Adobe Commerce Optimizer Connector para exportar datos de catálogo y optimizar el envío a tiendas de Edge Delivery Services mediante Commerce Optimizer y GraphQL.
-source-git-commit: 380d2c91a17a3e6b84d435774de1b05ada7d3a52
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 5%

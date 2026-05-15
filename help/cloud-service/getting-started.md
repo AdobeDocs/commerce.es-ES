@@ -23,7 +23,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: 1343
 ht-degree: 0%
@@ -79,13 +79,13 @@ Seleccione una de las siguientes pestañas para ver los gráficos de flujo de tr
 
 Este diagrama proporciona información general de alto nivel sobre cómo los administradores de sistemas y los comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
 
-![Diagrama de flujo de trabajo de administrador del sistema y comerciante para Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
+![Diagrama de flujo de trabajo de administrador del sistema y comerciante para Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
 >[!TAB Flujo de trabajo para desarrolladores]
 
 Este diagrama proporciona información general de alto nivel sobre cómo los desarrolladores crean integraciones para [!DNL Adobe Commerce as a Cloud Service] mediante App Builder. Consulte la [documentación de la API](https://developer.adobe.com/commerce/webapi/rest/) para obtener más información.
 
-![Diagrama del flujo de trabajo del desarrollador para crear integraciones con Adobe Commerce as a Cloud Service](./assets/developer-flow.svg){zoomable="yes"}
+![Diagrama del flujo de trabajo del desarrollador para crear integraciones con Adobe Commerce as a Cloud Service](./assets/developer-flow.png){zoomable="yes"}
 
 >[!ENDTABS]
 

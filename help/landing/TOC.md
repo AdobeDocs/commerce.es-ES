@@ -1,14 +1,15 @@
 ---
 user-guide-title: Guías de servicios
+breadcrumb-title: Servicios de Commerce
 user-guide-description: Documentación y recursos para servicios alojados que proporcionan funcionalidades ampliadas a Adobe Commerce y Magento Open Source.
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 13%
+source-wordcount: '154'
+ht-degree: 12%
 
 ---
 

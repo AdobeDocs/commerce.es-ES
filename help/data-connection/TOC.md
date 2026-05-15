@@ -1,13 +1,14 @@
 ---
 user-guide-title: Extensión [!DNL Data Connection] para Adobe Commerce
+breadcrumb-title: '[!DNL Data Connection]'
 user-guide-description: Esta guía proporciona instrucciones detalladas para usar la extensión  [!DNL Data Connection] para Adobe Commerce.
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 60a8e8f5cedff0c6fa56c563807b9604e3ae1d21
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '153'
 ht-degree: 1%
 
 ---
@@ -38,4 +39,4 @@ ht-degree: 1%
 - Casos de uso {#use-cases}
    - [Usar Adobe Journey Optimizer para enviar un correo electrónico de carro de compras abandonado](using-ajo.md)
    - [Crear una audiencia en Real-Time CDP mediante datos de evento de Commerce](create-audience.md)
-- [Volver a la página principal de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
