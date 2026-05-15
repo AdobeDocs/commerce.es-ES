@@ -30,4 +30,4 @@ ht-degree: 4%
    - [Coincidencia automática personalizada](synchronize/custom-match.md)
    - [Selección manual de recursos](synchronize/asset-selector-integration.md)
 - [Administrar recursos de medios de Commerce](manage-assets.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)

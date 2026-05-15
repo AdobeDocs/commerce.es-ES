@@ -18,4 +18,4 @@ ht-degree: 7%
 - Adaptador de catálogo {#catalog-adapter}
    - [Información general](catalog-adapter.md)
    - [Notas de la versión](release-notes.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
