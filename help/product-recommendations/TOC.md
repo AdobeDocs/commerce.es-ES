@@ -1,10 +1,11 @@
 ---
 user-guide-title: Guía de [!DNL Product Recommendations]
+breadcrumb-title: '[!DNL Product Recommendations]'
 user-guide-description: Esta guía proporciona instrucciones detalladas para usar  [!DNL Product Recommendations] de Adobe Commerce.
 role: Admin
 feature: Services, Recommendations
 nudge: true
-source-git-commit: f5a75403fd7187a6441ad16f3778bfddbc05c1c2
+source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 10%
@@ -37,4 +38,4 @@ ht-degree: 10%
    - [Recopilar datos](events.md)
    - [Personalizar](customize.md)
    - [Controlar restricciones de cookies](setting-cookie.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

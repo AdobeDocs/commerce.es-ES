@@ -1,10 +1,11 @@
 ---
 user-guide-title: Guía de [!DNL Catalog Service]
+breadcrumb-title: '[!DNL Catalog Service]'
 user-guide-description: Esta guía proporciona instrucciones detalladas para usar  [!DNL Catalog Service] for Adobe Commerce.
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 9%
@@ -22,6 +23,6 @@ ht-degree: 9%
    - [Servicio de catálogo y malla de API](mesh.md)
    - [Caso de uso: Visualización de precios gravados](taxes.md)
 - [Notas de la versión](release-notes.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 
