@@ -1,7 +1,7 @@
 ---
-source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
+source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -429,80 +429,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Nuevo tema
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 de marzo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/manage-assets">Administrar recursos multimedia de Commerce</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/synchronize/default-match">Coincidencia automática predeterminada</a> con instrucciones de navegación más claras para los usuarios que configuran recursos de productos en los AEM Assets.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0eaaf0de53962b37c7b52f3e7e13aac4c62e372">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 11 de marzo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/release-notes">Notas de la versión de la integración de AEM Assets</a> con la versión 1.3.4: compatibilidad con Adobe Commerce 2.4.9-beta1 y PHP 8.5 y completado automático de la asignación de dominios en la interfaz de usuario de la configuración.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/85579e3f2f8fc49f46f9201f31908602ee5d3259">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de marzo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service con la última versión para entornos de producción.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha añadido una nueva guía de documentación de <a href="https://experienceleague.adobe.com/es/docs/commerce/app-management/overview">Administración de aplicaciones</a> para presentar la Administración de aplicaciones y cómo asociar, configurar y administrar aplicaciones de App Builder con su instancia de Commerce.</p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">comprometer</a></td>
     </tr>
   </tbody>
 </table>
