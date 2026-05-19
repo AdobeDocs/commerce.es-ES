@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: 3633
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -42,11 +42,51 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 >
 >Si utiliza Adobe Commerce local o Adobe Commerce en infraestructura en la nube, consulte las [notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview).
 
-## Mayo de 2026: #1 de la versión {#latest}
+## Mayo de 2026: #2 de la versión {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+
+Los siguientes elementos se lanzarán a los entornos de producción el 21 de mayo de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Seguimiento de envíos con transportistas predeterminados y personalizados
+
+El seguimiento de pedidos ahora es confiable para los transportistas de envío predeterminados y personalizados en [!DNL Commerce Admin], lo que ayuda a los comerciantes a ofrecer experiencias de seguimiento posteriores a la compra coherentes. Anteriormente, si se seleccionaba un operador como UPS o FedEx y se aplicaba un ID de seguimiento, el vínculo de seguimiento no se mostraba; no se requiere ninguna acción por parte del comerciante para restaurar este comportamiento. La compatibilidad con vínculos de seguimiento también está disponible para [operadores personalizados](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/) creados con [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
+
+### Ver tipos de entrada de atributos en la cuadrícula Atributos del producto
+
+Ahora se ve una nueva columna [!UICONTROL **Tipo de atributo**] en la cuadrícula Atributos de producto en ([!UICONTROL **Tiendas**] > _[!UICONTROL Attributes]_>[!UICONTROL **Producto**]), que muestra el tipo de entrada (como campo de texto, lista desplegable o sí/no) para cada atributo de producto, incluidos los tipos aportados por las extensiones. Esto facilita la identificación y administración de atributos al trabajar con conjuntos de atributos grandes. <!-- ACCS-925 -->
+
+### Mejoras y correcciones de errores
+
+En esta versión se incluyen las siguientes mejoras, optimizaciones y correcciones de errores seleccionadas:
+
+* Se ha corregido un problema en el cual el extremo REST de POST `V1/async/custom-email/send` devolvía un error de validación `UnstructuredArray`. El extremo asincrónico ahora funciona de manera consistente con el extremo POST sincrónico `V1/custom-email/send`. <!-- ACCS-921 -->
+
+* Se corrigió un problema en el cual los atributos serializables personalizados en entidades como Company se borraban de forma involuntaria al actualizar la entidad a través de REST sin incluir los atributos personalizados en la carga útil. Los atributos personalizados ahora se conservan cuando no se proporcionan. <!-- ACCS-946 -->
+
+* Se ha resuelto un error &quot;el consumidor no está autorizado&quot; que podía impedir los inicios de sesión de GraphQL invitado cuando el encabezado `X-Adobe-Company` estaba presente en la solicitud. <!-- ACCS-949 -->
+
+* Se ha corregido un problema en el cual al editar o eliminar una compañía en [!DNL Commerce Admin] se podía producir el error &quot;No existe esa entidad&quot; después de asignar un cliente a la compañía a través del extremo REST `V1/customers/companies` de PUT. <!-- ACCS-856 -->
+
+* Se ha resuelto un problema con los estados de cuadrícula de pedidos de ventas obsoletos. <!-- CCSAAS-4915 -->
+
+* Se ha corregido un problema en [!DNL Commerce Admin] por el cual los archivos adjuntos como ejemplos y vínculos en productos descargables devolvían un error de `404` al acceder desde la página de edición del producto. <!-- CCSAAS-4394 -->
+
+* Se ha corregido el error &quot;Undefined array key &#39;simple_sku&#39;&quot; que se podía producir al crear un envío para un pedido que contenía productos configurables. <!-- CCSAAS-4877 -->
+
+* La consulta de GraphQL `guestOrderByToken` ahora devuelve un mensaje de error más informativo cuando se llama con un token mal formado, en lugar de un error interno del servidor. <!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Mayo de 2026: #1 de la versión
 
 [!BADGE Producción]{type=Neutral tooltip="Los elementos enumerados están disponibles actualmente en entornos de producción."}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 Los siguientes elementos se lanzaron a los entornos de producción el 7 de mayo de 2026.
 
