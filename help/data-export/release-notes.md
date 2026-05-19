@@ -5,22 +5,13 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
 workflow-type: tm+mt
-source-wordcount: 2840
+source-wordcount: 2868
 ht-degree: 0%
 
 ---
@@ -40,6 +31,12 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026
+
+### Versión 103.4.25
+
+_19 de mayo de 2026_
+
+![Corrección](../assets/fix.svg) **La limpieza optimizada de los datos de fuentes obsoletas**- Los registros de fuentes que dejaron las entidades eliminadas ahora se eliminan de forma más eficaz, lo que reduce el uso del almacenamiento de la base de datos.<!--MDEE-1355-->
 
 ### Versión 103.4.24
 
@@ -80,7 +77,7 @@ _13 de abril de 2026_
 - Se ha corregido un problema en el cual los productos eliminados no se eliminaban correctamente de los servicios de Commerce conectados si el servicio de exportación no estaba disponible durante la eliminación. Las operaciones de reintento y resincronización ahora garantizan que los productos eliminados se reflejen correctamente en el SaaS. <!--MDEE-1319-->
 - Ahora, las entidades de catálogo (productos y categorías) se pueden exportar a los servicios conectados de Commerce aunque falten valores de atributo en la vista del almacén de administración. Esto mejora la compatibilidad con las extensiones de terceros y reduce los errores de exportación debido a la falta de valores predeterminados. <!--MDEE-1333-->
 
-![Corrección](../assets/fix.svg) Se ha resuelto un error en la página Estado de sincronización de fuentes de datos que se podía producir cuando los registros de fuentes contenían datos inesperados o faltaban. El sistema ahora gestiona correctamente estos casos, mejorando la estabilidad y evitando bloqueos. Si está usando el conector de Adobe Commerce Optimizer para sincronizar datos de Adobe Commerce a Adobe Commerce Optimizer, actualice a [versión 1.0.11](https://experienceleague.adobe.com/es/docs/commerce/aco-optimizer-connector/release-notes) o posterior del conector de ACO para obtener la corrección.<!--MDEE-1327-->
+![Corrección](../assets/fix.svg) Se ha resuelto un error en la página Estado de sincronización de fuentes de datos que se podía producir cuando los registros de fuentes contenían datos inesperados o faltaban. El sistema ahora gestiona correctamente estos casos, mejorando la estabilidad y evitando bloqueos. Si está usando el conector de Adobe Commerce Optimizer para sincronizar datos de Adobe Commerce a Adobe Commerce Optimizer, actualice a [versión 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) o posterior del conector de ACO para obtener la corrección.<!--MDEE-1327-->
 
 ### Versión 103.4.21
 
@@ -106,7 +103,7 @@ _6 de febrero de 2026_
 
 _2 de febrero de 2026_
 
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los lotes de elementos podían superar el límite permitido durante las actualizaciones, lo que provocaba `items_limit_exceeded` errores al sincronizar datos con [servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los lotes de elementos podían superar el límite permitido durante las actualizaciones, lo que provocaba `items_limit_exceeded` errores al sincronizar datos con [servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 
 ![Corrección](../assets/fix.svg): se ha mejorado la confiabilidad de las exportaciones de datos de productos al agregar lógica para registrar los elementos con errores durante la recopilación de opciones de productos del paquete. <!--CCSAAS-4458-->
 
@@ -134,7 +131,7 @@ _24 de noviembre de 2025_
 
 _22 de octubre de 2025_
 
-![Nuevo](../assets/new.svg) Se agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de Adobe Commerce a servicios conectados (Servicio de catálogo, Live Search y Recomendaciones de productos). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=es) en la *Guía de administración de Commerce*. <!--MDEE-954-->
+![Nuevo](../assets/new.svg) Se agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de Adobe Commerce a servicios conectados (Servicio de catálogo, Live Search y Recomendaciones de productos). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) en la *Guía de administración de Commerce*. <!--MDEE-954-->
 
 ### Versión 103.4.14
 
@@ -160,7 +157,7 @@ _18 de septiembre de 2025_
 
 _29 de agosto de 2025_
 
-![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+![Nuevo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 Se ha agregado compatibilidad con atributos de producto adicionales para incluir datos de clase de impuestos, juego de atributos e inventario de configuraciones de producto de Commerce en la fuente de productos. Los clientes que deseen incluir estos atributos en las fuentes de exportación de productos deben agregar el módulo Atributos de producto adicionales a su proyecto de Adobe Commerce. Ver [Agregar clase de impuestos, conjunto de atributos y atributos de inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Corrección](../assets/fix.svg) ha resuelto un problema que provocaba una sincronización incorrecta de las actualizaciones de productos eliminadas si se producía un error durante un índice de productos completo. Ahora, todas las eliminaciones de productos se sincronizan correctamente incluso si se produce un error durante el proceso de indexación. <!--MDEE-1144-->
@@ -211,7 +208,7 @@ _20 de junio de 2025_
 
 _27 de mayo de 2025_
 
-![La nueva exportación de datos SaaS de &#x200B;](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
+![La nueva exportación de datos SaaS de ](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
 
 ![Corrección](../assets/fix.svg): se mejoró el informe de errores de exportación de datos. Los registros ahora incluyen mensajes de error más detallados, incluidos detalles técnicos originales para facilitar la depuración y el seguimiento de errores. <!--MDEE-1064-->
 
@@ -257,7 +254,7 @@ _31 de marzo de 2025_
 
 _11 de marzo de 2025_
 
-![Se ha agregado la funcionalidad &#x200B;](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
+![Se ha agregado la funcionalidad ](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
@@ -391,7 +388,7 @@ _5 de junio de 2024_
 
 _31 de mayo de 2024_
 
-!&lbrack;Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce. <!--MDEE-785-->&rbrack;(../assets/fix.svg)
+![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce. <!--MDEE-785-->](../assets/fix.svg)
 
 ### Versión 103.3.3
 
