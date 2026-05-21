@@ -2,30 +2,20 @@
 title: Migración del adaptador de búsqueda al widget PLP
 description: Obtenga información sobre cómo migrar del adaptador de búsqueda obsoleto al widget de página de lista de productos  [!DNL Live Search] .
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 2121
+source-wordcount: 2102
 ht-degree: 0%
 
 ---
 
 # Migración del adaptador de búsqueda al widget PLP
 
-El adaptador de búsqueda ha sido [obsoleto](release-notes.md#live-search-400) a partir de [!DNL Live Search] 4.0.0 y solo recibirá actualizaciones de seguridad. El widget de la página de lista de productos [Product Listing Page (PLP)](plp-styling.md) es la solución compatible con todas las implementaciones de [!DNL Live Search] a partir de ahora. Esta guía le ayuda a comprender cuándo la migración es sencilla y cuándo se requiere trabajo adicional.
+El adaptador de búsqueda ha sido [obsoleto](release-notes.md#live-search-400) desde [!DNL Live Search] 4.0.0. El widget de la página de lista de productos [Product Listing Page (PLP)](plp-styling.md) es la solución compatible con todas las implementaciones de [!DNL Live Search] a partir de ahora. Esta guía le ayuda a comprender cuándo la migración es sencilla y cuándo se requiere trabajo adicional.
 
 ## Requisitos previos
 
@@ -312,7 +302,6 @@ En esta situación, hay un problema conocido en el que habilitar el widget PLP p
 **Opción 1: continuar con el adaptador de búsqueda (sólo provisional)**
 
 - Mantenga el adaptador de búsqueda habilitado si GTM es esencial para la empresa.
-- Tenga en cuenta que solo recibirá actualizaciones de seguridad.
 - Planifique la migración cuando se resuelva la compatibilidad con GTM.
 - Póngase en contacto con el Soporte técnico de Adobe para obtener actualizaciones sobre la compatibilidad con GTM.
 
@@ -334,7 +323,7 @@ En esta situación, hay un problema conocido en el que habilitar el widget PLP p
 
 **Opción 3: reemplazar GTM por Adobe Analytics**
 
-- Considere migrar a [Adobe Analytics](https://business.adobe.com/es/products/adobe-analytics.html) si corresponde.
+- Considere migrar a [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) si corresponde.
 - Póngase en contacto con Ingeniería de clientes para obtener ayuda.
 
 **Con quién ponerte en contacto**: envía un ticket de asistencia para recibir actualizaciones de compatibilidad con GTM o ayuda de ingeniería de clientes.
@@ -459,7 +448,7 @@ Se debe contactar con **socios de desarrollo/integradores de sistemas** para:
 - Implementaciones sin encabezado o de PWA
 - Seguimiento de eventos personalizado
 
-Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## FAQ
 
@@ -467,7 +456,7 @@ Encuentre respuestas a preguntas comunes sobre la migración del adaptador de b�
 
 **Q: ¿Recibirá el adaptador de búsqueda correcciones de errores o actualizaciones de características?**
 
-R: No. El adaptador de búsqueda está obsoleto y solo recibirá actualizaciones de seguridad. Las correcciones de errores, las mejoras de rendimiento y las nuevas funciones solo están disponibles en el widget PLP. Si tiene problemas con el adaptador de búsqueda, la migración al widget PLP es la solución recomendada.
+R: No. El adaptador de búsqueda está obsoleto. Las correcciones de errores, las mejoras de rendimiento y las nuevas funciones solo están disponibles en el widget PLP. Si tiene problemas con el adaptador de búsqueda, la migración al widget PLP es la solución recomendada.
 
 **Q: ¿La migración afectará mi tienda?**
 
