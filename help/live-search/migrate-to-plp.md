@@ -16,16 +16,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 2121
+source-wordcount: 2102
 ht-degree: 0%
 
 ---
 
 # Migración del adaptador de búsqueda al widget PLP
 
-El adaptador de búsqueda ha sido [obsoleto](release-notes.md#live-search-400) a partir de [!DNL Live Search] 4.0.0 y solo recibirá actualizaciones de seguridad. El widget de la página de lista de productos [Product Listing Page (PLP)](plp-styling.md) es la solución compatible con todas las implementaciones de [!DNL Live Search] a partir de ahora. Esta guía le ayuda a comprender cuándo la migración es sencilla y cuándo se requiere trabajo adicional.
+El adaptador de búsqueda ha sido [obsoleto](release-notes.md#live-search-400) desde [!DNL Live Search] 4.0.0. El widget de la página de lista de productos [Product Listing Page (PLP)](plp-styling.md) es la solución compatible con todas las implementaciones de [!DNL Live Search] a partir de ahora. Esta guía le ayuda a comprender cuándo la migración es sencilla y cuándo se requiere trabajo adicional.
 
 ## Requisitos previos
 
@@ -312,7 +312,6 @@ En esta situación, hay un problema conocido en el que habilitar el widget PLP p
 **Opción 1: continuar con el adaptador de búsqueda (sólo provisional)**
 
 - Mantenga el adaptador de búsqueda habilitado si GTM es esencial para la empresa.
-- Tenga en cuenta que solo recibirá actualizaciones de seguridad.
 - Planifique la migración cuando se resuelva la compatibilidad con GTM.
 - Póngase en contacto con el Soporte técnico de Adobe para obtener actualizaciones sobre la compatibilidad con GTM.
 
@@ -467,7 +466,7 @@ Encuentre respuestas a preguntas comunes sobre la migración del adaptador de b�
 
 **Q: ¿Recibirá el adaptador de búsqueda correcciones de errores o actualizaciones de características?**
 
-R: No. El adaptador de búsqueda está obsoleto y solo recibirá actualizaciones de seguridad. Las correcciones de errores, las mejoras de rendimiento y las nuevas funciones solo están disponibles en el widget PLP. Si tiene problemas con el adaptador de búsqueda, la migración al widget PLP es la solución recomendada.
+R: No. El adaptador de búsqueda está obsoleto. Las correcciones de errores, las mejoras de rendimiento y las nuevas funciones solo están disponibles en el widget PLP. Si tiene problemas con el adaptador de búsqueda, la migración al widget PLP es la solución recomendada.
 
 **Q: ¿La migración afectará mi tienda?**
 

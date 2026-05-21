@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: 1167
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Las [reglas](rules.md) de comercialización dan forma a la experiencia de compra
 
 - [!DNL Live Search] [widget de ventana emergente](storefront-popover.md) es el cuadro que se abre debajo del campo de búsqueda que contiene los resultados de la búsqueda.
 - [El widget de página de lista de productos](plp-styling.md) (PLP) proporciona una página de lista de productos en la que se pueden buscar con soporte para facetas y sinónimos. El widget se instala y habilita en Live Search 4.0.0+ y reemplaza al adaptador de búsqueda.
-- (**Obsoleto**) El adaptador de búsqueda era el precursor del widget PLP y se instaló con Live Search &lt; 4.0.0. Si utiliza una versión de Live Search anterior a la 4.0.0, Commerce recomienda actualizar para recibir las ventajas de las funciones del widget PLP y las mejoras futuras. En adelante, el adaptador de búsqueda solo se actualizará para abordar los problemas de seguridad. Consulte la [guía de migración](migrate-to-plp.md) para obtener información detallada sobre la migración al widget PLP.
+- (**Obsoleto**) El adaptador de búsqueda era el precursor del widget PLP y se instaló con Live Search &lt; 4.0.0. Si utiliza una versión de Live Search anterior a la 4.0.0, Commerce recomienda actualizar para recibir las ventajas de las funciones del widget PLP y las mejoras futuras. Consulte la [guía de migración](migrate-to-plp.md) para obtener información detallada sobre la migración al widget PLP.
 
 ## [!DNL Live Search] espacio de trabajo
 

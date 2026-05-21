@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bf3acd889f099a2ee9aed2665b86c37347d10a46
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 3073
+source-wordcount: 3060
 ht-degree: 1%
 
 ---
@@ -279,7 +279,7 @@ _13 de noviembre de 2023_
 ### Actualizaciones
 
 ![Corrección](../assets/fix.svg) El widget PLP [!DNL Live Search] ahora está habilitado de forma predeterminada para las nuevas instalaciones.
-![Corrección](../assets/fix.svg) El adaptador de búsqueda está obsoleto. En adelante, el adaptador de búsqueda solo se actualizará para abordar los problemas de seguridad.
+![Corrección](../assets/fix.svg) El adaptador de búsqueda está obsoleto.
 ![Corregir](../assets/fix.svg) estilos CSS reconfigurados para aislar mejor las clases de widgets.
 ![Corregir](../assets/fix.svg) correcciones de errores menores
 
