@@ -58,7 +58,7 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 **Fecha de la versión**: 20 de mayo de 2026
 <!-- v1.55 -->
 
-![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para clientes de Adobe Commerce y Adobe Commerce as a Cloud Service según [límites y límites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para clientes de Adobe Commerce y Adobe Commerce as a Cloud Service según [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits).
 <!--DATA-7163-->
 
 **Fecha de la versión**: 13 de mayo de 2026
@@ -78,7 +78,7 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 <!--v1.52-->
 
 ![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para Adobe Commerce Optimizer y Adobe Commerce as a Cloud Service
-clientes según [límites y límites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+clientes según [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Fecha de publicación**: 17 de abril de 2026
 <!--v1.51-->
@@ -262,7 +262,7 @@ Se aplica a:
 **Fecha de la versión**: 20 de junio de 2025
 <!-- v1.37 -->
 
-![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nuevas](../assets/new.svg) **claves que no distinguen entre mayúsculas y minúsculas**: las búsquedas de claves en las consultas ahora no distinguen entre mayúsculas y minúsculas, lo que reduce los errores de mayúsculas y minúsculas. <!--DATA-6494, DCAT-2495-->
 
@@ -399,7 +399,7 @@ El esquema ![Nuevo](../assets/new.svg) de GraphQL ahora incluye `lastModifiedAt`
 
 <!--DATA-5033-->
 
-![Corrección](../assets/fix.svg) Se agregó compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) para aplicar las actualizaciones.
+![Corrección](../assets/fix.svg) Se agregó compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) para aplicar las actualizaciones.
 <!--DATA-5033-->
 
 #### Limitaciones conocidas
@@ -436,7 +436,7 @@ Para obtener detalles y ejemplos, consulte [Servicio de catálogo y malla de API
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
+![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
 
 **Fecha de publicación**: 13 de febrero de 2024
 <!-- v1.16 -->
