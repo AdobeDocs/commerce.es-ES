@@ -3,19 +3,15 @@ title: Comercialización por categorías
 description: Utiliza la comercialización de  [!DNL Live Search] categorías para disfrutar de una experiencia de compra más rápida.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -34,7 +30,7 @@ Se accede a la funcionalidad en Administración en **Marketing** > SEO y búsque
 >
 >La comercialización por categorías está disponible con [!DNL Live Search] [3.0.0 o superior](release-notes.md). Si ve el área de trabajo de comercialización de categorías pero no está rellenada con datos, actualice el módulo [!DNL Live Search].
 
-![Comercialización de categorías](assets/category_workspace.png)
+![Espacio de trabajo de comercialización de categorías](assets/category_workspace.png)
 
 La vista Comercialización de categorías muestra las reglas de categoría definidas, con columnas para:
 
@@ -51,7 +47,7 @@ Puede buscar una categoría o subcategoría en el campo &quot;Buscar por categor
 La comercialización de categorías usa los mismos tipos de clasificación que con [productos individuales](rules-workspace.md).
 Existen dos tipos de clasificación: Inteligente y Manual.
 
-**La clasificación inteligente** aprovecha el análisis de datos de comportamiento de la tienda de [Adobe AI](https://business.adobe.com/es/ai.html) para ordenar todos los productos dentro de las categorías elegidas según un algoritmo determinado. Una vez elegida una clasificación inteligente, se espera que el orden específico de los productos cambie con el tiempo, ya que Adobe AI reanaliza los datos subyacentes de forma continua. Por ejemplo, los productos de tendencias principales cambiarán automáticamente con el tiempo a medida que cambien las preferencias del comprador.
+**La clasificación inteligente** aprovecha el análisis de datos de comportamiento de la tienda de [Adobe AI](https://business.adobe.com/ai.html) para ordenar todos los productos dentro de las categorías elegidas según un algoritmo determinado. Una vez elegida una clasificación inteligente, se espera que el orden específico de los productos cambie con el tiempo, ya que Adobe AI reanaliza los datos subyacentes de forma continua. Por ejemplo, los productos de tendencias principales cambiarán automáticamente con el tiempo a medida que cambien las preferencias del comprador.
 Los métodos de clasificación inteligentes son:
 
 * Más comprados: clasifica los productos según la frecuencia con la que fueron comprados por los compradores en los siete días anteriores.
@@ -60,6 +56,9 @@ Los métodos de clasificación inteligentes son:
 * Recomendado para usted: en función del comportamiento previo y actual de cada comprador en el sitio, clasifica los productos según la probabilidad de que el comprador interactúe con cada uno.
 * Tendencia: clasifica los productos según los recientes aumentos de popularidad basados en las vistas.
 * Ninguno: clasifica los productos por su orden predeterminado.
+
+
+Para cualquier método de clasificación inteligente excepto **None**, puede establecer **[!UICONTROL Intelligent Ranking Boost]** en el editor de reglas para ajustar la intensidad con la que las señales de comportamiento afectan el orden del producto. Para obtener más información sobre los valores predeterminados, los límites, el comportamiento de vista previa y cómo se compara el aumento con la **clasificación manual**, consulte [Aumento inteligente de la clasificación](rules-add.md#intelligent-ranking-boost).
 
 **La clasificación manual** permite a los usuarios anular el orden automático de clasificación de productos al definir las reglas de anclaje, ampliación, eliminación y ocultación manuales.
 
@@ -104,7 +103,7 @@ Para crear una regla de categoría:
    ![Seleccionar una categoría](assets/category_select.png)
 
 1. En la vista _Agregar regla de categoría_, seleccione el método de clasificación inteligente que desee aplicar a la categoría.
-La página de vista previa de categorías muestra los resultados reales de la clasificación seleccionada con los datos de Live Search.
+La página Vista previa de categorías muestra los resultados reales de la clasificación seleccionada, usando sus datos de [!DNL Live Search].
 1. Haga clic en **Guardar y publicar** para guardar la regla.
 
 ![Seleccione el método de clasificación inteligente](assets/category_ranking.png)

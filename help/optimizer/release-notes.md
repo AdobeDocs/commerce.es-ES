@@ -4,21 +4,15 @@ description: Información de versión mensual de  [!DNL Adobe Commerce Optimizer
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 1047
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -34,9 +28,11 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ## Mayo de 2026
 
-Este mes no hay [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) versiones. Consulte Actualizaciones de API a continuación.
-
 >[!BEGINSHADEBOX]
+
+### Aumento inteligente de clasificación
+
+[Las reglas de comercialización](./merchandising/rules/add.md#intelligent-ranking-boost) para búsquedas, listados de productos predeterminados y [páginas de categoría](./merchandising/rules/add.md#rule-types) (beta) ahora incluyen **[!UICONTROL Intelligent Ranking Boost]**. Puede ajustar la fuerza con la que estrategias como **Más visitados** o **Tendencias** influyen en el orden del producto en relación con la relevancia textual en las señales de búsqueda y comportamiento en los listados de categorías. La vista previa de la regla refleja su configuración. El aumento se aplica en el momento de la consulta, por lo que no necesita una resincronización del catálogo al cambiarlo.
 
 ### Actualizaciones de API
 
@@ -72,7 +68,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Se requiere el agrupamiento de solicitudes** — La API de GraphQL ahora aplica un máximo de 100 SKU por solicitud al recuperar los datos del catálogo. Ver [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Se requiere el agrupamiento de solicitudes** — La API de GraphQL ahora aplica un máximo de 100 SKU por solicitud al recuperar los datos del catálogo. Ver [límites y límites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
