@@ -1,6 +1,6 @@
 ---
 title: Configuración del proyecto de AEM Assets para que admita metadatos de Commerce
-description: Habilite la sincronización perfecta de recursos entre Adobe Commerce y los AEM Assets agregando los metadatos necesarios para la integración.
+description: Obtenga información sobre cómo sincronizar recursos entre Adobe Commerce y los AEM Assets implementando el paquete de comercio de recursos y configurando los metadatos de Commerce en su proyecto de AEM.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
+source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
-source-wordcount: 1708
+source-wordcount: 1717
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Este código de paquete añade los siguientes recursos al entorno de creación d
 
 >[!NOTE]
 >
-> Consulte la página [readme](https://github.com/ankumalh/assets-commerce) para obtener más información sobre el **código de paquete de AEM Commerce**.
+> Consulte la página [readme](https://github.com/ankumalh/assets-commerce) en GitHub para obtener más información sobre el **código de paquete de AEM Commerce**.
 
 ## Texto alternativo en metadatos de AEM Assets
 
@@ -143,15 +143,15 @@ Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacid
 
 1. Desde su [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copie manualmente el código descargado en el repositorio administrado de Adobe existente.
 
-1. En todos los `filter.xml` y `pom.xml files` de su proyecto, reemplace todas las ocurrencias de `<my-app>` con el nombre de su aplicación.
+1. En todos los archivos de `filter.xml` y `pom.xml` de su proyecto, reemplace todas las ocurrencias de `<my-app>` con el nombre de su aplicación.
 
->[!NOTE]
->
-> También puede instalar el código personalizado en la configuración de su proyecto de AEM Assets como un paquete de **Maven**.
+   >[!NOTE]
+   >
+   > También puede instalar el código personalizado en la configuración de su proyecto de AEM Assets como un paquete de **Maven**.
 
 1. Confirme los cambios e inserte la rama de desarrollo local en el repositorio de Git de Cloud Manager.
 
-1. Desde AEM Cloud Manager, [actualice el entorno de AEM mediante la canalización para implementar su código](https://experienceleague.dobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. Desde AEM Cloud Manager, [actualice el entorno de AEM mediante la canalización para implementar su código](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 1. Vaya a cualquier recurso y edite sus propiedades para validar los cambios:
 
@@ -165,7 +165,7 @@ Si la ficha **Commerce** no aparece en las propiedades, debe crear manualmente u
 
 1. Vaya al editor de esquemas de metadatos.
 
-1. Haga clic en **Editar** para modificar el formulario de esquema de metadatos predeterminado.
+1. Seleccione **Editar** para modificar el formulario de esquema de metadatos predeterminado.
 
 1. Cree una ficha **Commerce** y selecciónela.
 
@@ -239,7 +239,7 @@ El componente de interfaz de usuario de datos del producto se agrega automática
 
 ### Aplicar el perfil de metadatos a la carpeta de origen de los recursos de Commerce
 
-1. En la página [!UICONTROL &#x200B; Metadata Profiles], seleccione el perfil de integración de Commerce.
+1. En la página **[!UICONTROL Metadata Profiles]**, seleccione el perfil de integración de Commerce.
 
 1. En el menú de acción, seleccione **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
@@ -247,10 +247,10 @@ El componente de interfaz de usuario de datos del producto se agrega automática
 
    Cree una carpeta de Commerce si no existe.
 
-1. Haga clic en **[!UICONTROL Apply]**.
+1. Seleccione **[!UICONTROL Apply]**.
 
 ## Pasos siguientes
 
 * [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} [Instalar paquetes de Adobe Commerce](configure-commerce.md).
 
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} [Configure la integración desde el administrador de Commerce](setup-synchronization.md).
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} [Configure la integración desde el administrador](setup-synchronization.md).
