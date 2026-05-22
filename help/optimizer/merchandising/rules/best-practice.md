@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
 workflow-type: tm+mt
-source-wordcount: 360
+source-wordcount: 404
 ht-degree: 0%
 
 ---
@@ -34,6 +34,7 @@ Es crucial establecer una **regla predeterminada** bien pensada. Su [regla prede
 - Resaltar productos que están a la venta o que forman parte de promociones especiales.
 - Defina automáticamente reglas de búsqueda durante los periodos de promoción o ventas utilizando el intervalo de fechas durante el periodo de promoción.
 - Adapte los resultados de búsqueda según el comportamiento de cada comprador mediante [clasificación inteligente](add.md#intelligent-ranking), como &quot;recomendado para usted&quot;, &quot;más visitados&quot;, etc.
+- Cuando se selecciona una estrategia inteligente distinta de **None**, se debe ajustar **[Aumento inteligente de la clasificación](add.md#intelligent-ranking-boost)** por regla y validar en **Probar la regla** antes de publicar.
 - Utilice siempre el panel &quot;Probar la regla&quot; para obtener una vista previa de cómo la estrategia de clasificación inteligente afecta a los resultados de búsqueda reales de diferentes consultas.
 
 ## Sugerencias para reglas de categoría
@@ -43,6 +44,6 @@ Es crucial establecer una **regla predeterminada** bien pensada. Su [regla prede
 >Las reglas de categoría están en versión beta.
 
 - Use [reglas de categoría](add.md#rule-types) en **páginas de categoría** con mucho tráfico o con mucho margen donde los pedidos revisados importen tanto como la búsqueda; por ejemplo, colecciones de temporada o departamentos destacados.
-- Alinee la **clasificación inteligente** (por ejemplo, tendencias, más visitados) con la forma en que los compradores examinan esa categoría; las páginas de categoría no utilizan el texto de consulta de búsqueda como lo hacen las reglas de búsqueda. Consulte [Clasificación inteligente](add.md#intelligent-ranking).
+- Alinee la **clasificación inteligente** (por ejemplo, tendencias, más visitados) con la forma en que los compradores examinan esa categoría; las páginas de categoría no utilizan el texto de consulta de búsqueda como lo hacen las reglas de búsqueda. Consulte [Clasificación inteligente](add.md#intelligent-ranking). Para métodos inteligentes distintos de **None**, use **[Aumento inteligente de clasificación](add.md#intelligent-ranking-boost)** y vista previa de categoría para ajustar la fuerza de comportamiento de esa regla de categoría.
 - Aplique **pin**, **boost** y **bury** de forma coherente con su plan de campaña; recuerde que las posiciones manuales normalmente se aplican únicamente cuando el comprador utiliza el **orden predeterminado** para el anuncio. Ver [Clasificación manual](add.md#manual-ranking).
 - Obtenga una vista previa en el flujo de reglas **category** en el editor y valide en la tienda después de la publicación, la misma disciplina que usa para el panel &quot;Probar la regla&quot; en la búsqueda.

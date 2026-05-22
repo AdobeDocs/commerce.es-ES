@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
 workflow-type: tm+mt
-source-wordcount: 2085
+source-wordcount: 2547
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
 
 1. Para agregar otra condición, haga clic en **Agregar condición** y repita el proceso.
 
-## Clasificación inteligente
+## Clasificación inteligente {#intelligent-ranking}
 
 La clasificación inteligente combina los comportamientos de los usuarios y las estadísticas del sitio para determinar la clasificación del producto.
 Los propietarios de tiendas pueden configurar los siguientes tipos de estrategias de clasificación:
@@ -99,11 +99,38 @@ Los propietarios de tiendas pueden configurar los siguientes tipos de estrategia
 * Tendencia: revisa los eventos de vista de página de las últimas 72 horas para los eventos en segundo plano y 24 horas para los eventos en primer plano.
 * Ninguno: los productos se ordenan por relevancia.
 
-Seleccione el tipo de estrategia para la regla. La ventana **Probar la regla** muestra los resultados esperados.
+Seleccione el tipo de estrategia para la regla. La ventana **[!UICONTROL Test your rule]** muestra los resultados esperados.
 
-### Funcionamiento de la puntuación de clasificación inteligente
+### Aumento de clasificación inteligente {#intelligent-ranking-boost}
 
-La clasificación inteligente determina el orden final del producto combinando dos factores clave: **relevancia textual** y **señales de comportamiento**. Comprender cómo interactúan estos factores le ayuda a establecer expectativas realistas en los resultados de búsqueda.
+Para **Recomendado para ti**, **Más visitado**, **Más comprado**, **Más añadido al carro** y **Tendencia**, el editor muestra **[!UICONTROL Intelligent Ranking Boost]** (el factor de ampliación). No se usa al seleccionar **Ninguno**.
+
+Use este control para equilibrar la fuerza con la que las **señales de comportamiento** influyen en el orden en relación con la **relevancia textual** en la búsqueda y en relación con otras señales de clasificación en las **páginas de categoría** y **listados predeterminados**. El aumento está disponible para **reglas de consulta de búsqueda**, **reglas predeterminadas** y **reglas de comercialización de categoría**; cada regla almacena su propio valor.
+
+| Comportamiento | Detalle |
+| --- | --- |
+| Predeterminado | `5` (equivalente al multiplicador de comportamiento fijo anterior). |
+| Intervalo | Desde `1` (influencia de comportamiento más suave) hasta `100` (influencia más fuerte). |
+| Ámbito | Solo se aplica a consultas o listados a los que se dirige la regla. Otras reglas conservan sus propios valores de ampliación. |
+| Vista previa | La previsualización de regla utiliza el mismo aumento que los resultados en directo para esa regla. |
+| Indexación | Aplicado a las **consultas**; no necesita una resincronización del catálogo ni una reindexación completa solamente porque ha cambiado esta configuración. |
+
+**Cuándo aumentar o reducir el aumento**
+
+* **Aumente** el impulso cuando estrategias como **Más visitados** deberían aparecer SKU de alta participación de forma más agresiva para consultas ambiguas o amplias, sin tener que fijar manualmente cada ranura.
+* **Reduzca** el aumento cuando desea que la calidad de coincidencia de texto impulse la lista de forma más estricta y que los datos de comportamiento solo reduzcan ligeramente el orden.
+
+**Cuándo usar la clasificación manual en su lugar**
+
+Use **pin**, **boost** o **bury** cuando necesite productos específicos en posiciones exactas o visibilidad garantizada, independientemente de las señales de todo el catálogo. **[!UICONTROL Intelligent Ranking Boost]** ajusta un peso de comportamiento **global** para esa regla; no reemplaza el control de nivel SKU.
+
+>[!NOTE]
+>
+> Un **[!UICONTROL Intelligent Ranking Boost]** alto puede pesar más que un **aumento manual** en el mismo producto. Si un SKU potenciado se clasifica por debajo de lo esperado en **[!UICONTROL Test your rule]** o en la tienda, baja **[!UICONTROL Intelligent Ranking Boost]** o **fija** el producto a una posición específica. Cualquier cambio hace que el producto clasificado manualmente pase a una posición superior en los resultados.
+
+### Funcionamiento de la puntuación de clasificación inteligente (búsqueda)
+
+Para **reglas de búsqueda** (y la consulta de prueba en el editor de reglas), la clasificación inteligente determina el orden final del producto combinando dos factores clave: **relevancia textual** y **señales de comportamiento**. Comprender cómo interactúan estos factores le ayuda a establecer expectativas realistas en los resultados de búsqueda.
 
 **Componentes de puntuación:**
 
@@ -112,19 +139,23 @@ La clasificación inteligente determina el orden final del producto combinando d
    * Frecuencia de aparición de palabras coincidentes.
    * Longitud (en palabras) de los nombres y descripciones de los productos.
 
-* **Señales de comportamiento**: un aumento limitado aplicado sobre la puntuación de relevancia de texto. Al seleccionar una estrategia de clasificación inteligente como &quot;Más visitados&quot; o &quot;Más comprados&quot;, los productos con señales de comportamiento más altas reciben un impulso fijo en sus puntuaciones. Sin embargo, este impulso tiene un límite definido.
+* **Señales de comportamiento**: un aumento limitado aplicado sobre la puntuación de relevancia de texto. Al seleccionar una estrategia de clasificación inteligente como &quot;Más visitados&quot; o &quot;Más comprados&quot;, los productos con señales de comportamiento más altas reciben un peso relativo mayor. La fuerza de ese peso está controlada por **[!UICONTROL Intelligent Ranking Boost]** (consulte [Aumento de clasificación inteligente](#intelligent-ranking-boost)); el aumento permanece limitado, pero puede aumentar la cantidad que cambia de orden.
 
 **Es posible que el producto más visitado no aparezca primero:**
 
-La relevancia textual suele dominar la clasificación porque su puntuación es ilimitada, mientras que los aumentos de comportamiento son fijos. Como resultado, los productos con texto fuerte coinciden a menudo con los que tienen señales de participación más altas. Los aumentos de comportamiento por sí solos pueden no compensar las grandes brechas en la relevancia del texto. La clasificación inteligente soluciona esto al tener en cuenta la calidad de las coincidencias y la interacción con el comprador, lo que mejora la relevancia general. Sin embargo, la calidad de la coincidencia de texto sigue siendo el principal motor de la clasificación.
+La relevancia textual a menudo domina la clasificación porque su puntuación es ilimitada, mientras que la influencia conductual está limitada por el modelo de impulso. Los productos con coincidencias de texto muy sólidas aún pueden superar a las SKU con mayor participación a menos que aumente **[!UICONTROL Intelligent Ranking Boost]** para esa regla. Incluso con valores de ampliación más altos, es posible que un espacio de relevancia de texto extremo no invierta completamente la lista, ya que la calidad de coincidencia de texto sigue siendo un controlador principal. Valide siempre los resultados en **[!UICONTROL Test your rule]** para las consultas de destino.
 
 **Ejemplo:**
 
-Un comerciante usa la estrategia de clasificación inteligente &quot;Más visto&quot; y busca &quot;vela&quot;. Se espera que el SKU del producto YAN-K-E-512 aparezca en la parte superior de los resultados porque tiene el recuento de vistas más alto. Sin embargo, otros productos tienen una clasificación más alta:
+Un comerciante usa la estrategia de clasificación inteligente &quot;Más vistos&quot; y busca **vela**. Se espera que el SKU del producto YAN-K-E-512 aparezca en la parte superior de los resultados porque tiene el recuento de vistas más alto. Sin embargo, otros productos tienen una clasificación más alta:
 
-* **Vela de Texas** (primera posición): tiene un nombre de producto más corto y limpio que crea una puntuación de relevancia de texto muy alta. Aunque tiene menos vistas que YAN-K-E-512, su coincidencia de texto superior supera el impulso de comportamiento.
+* **Vela de Texas** (primera posición): tiene un nombre de producto más corto y limpio que crea una puntuación de relevancia de texto muy alta. Aunque tiene menos vistas que **YAN-K-E-512**, su coincidencia de texto superior supera el impulso de comportamiento.
 
-* **YAN-K-E-512** (posición inferior): a pesar de tener el percentil de vista más alto en los datos de comportamiento &quot;Más visitados&quot;, su nombre complejo basado en SKU genera una puntuación de relevancia de texto más baja. El impulso de comportamiento fijo no es suficiente para superar esta brecha de relevancia del texto.
+* **YAN-K-E-512** (posición inferior): a pesar de tener el percentil de vista más alto en los datos de comportamiento &quot;Más visitados&quot;, su nombre complejo basado en SKU genera una puntuación de relevancia de texto más baja. En el valor predeterminado **[!UICONTROL Intelligent Ranking Boost]** (`5`), es posible que la influencia de comportamiento no sea suficiente para superar ese espacio de texto. Si aumenta el aumento, se puede aumentar **YAN-K-E-512** entre los productos que ya coinciden con la consulta. **YAN-K-E-512** también debe coincidir con la consulta: al menos un atributo que se pueda buscar para ese SKU debe incluir **candle** o no aparecerá en los resultados y no se aplicará el aumento.
+
+**Ejemplo (consulta amplia):**
+
+Para una consulta como **wood**, varios productos pueden compartir una relevancia textual similar mientras que los recuentos de vistas son diferentes. Con **Más visitados** seleccionados, al aumentar **[!UICONTROL Intelligent Ranking Boost]** es más probable que el SKU relevante históricamente más visitado aparezca por encima de coincidencias más ligeras. Reducir el impulso mantiene los resultados más cerca del orden textual puro.
 
 Consulte [reglas de búsqueda](./best-practice.md#search-rules) para obtener información sobre cómo mejorar la capacidad de búsqueda de productos mediante el uso de reglas.
 
@@ -245,3 +276,9 @@ La información que se escribe aquí aparece en el panel [Detalles de regla](rul
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |
 | Fecha de finalización | La fecha de finalización de la regla, si está programada. |
 | Descripción | Breve descripción de la regla. |
+
+### Controles inteligentes de clasificación
+
+| Campo | Descripción |
+| --- | --- |
+| [!UICONTROL Intelligent Ranking Boost] | Cuando se selecciona una estrategia inteligente distinta de **None**, esta opción controla la fuerza con que las señales de comportamiento influyen en la clasificación de esa regla. Predeterminado `5`; intervalo permitido `1`-`100`. Se aplica en el momento de la consulta; la previsualización de regla coincide con el comportamiento en directo de la regla configurada. |

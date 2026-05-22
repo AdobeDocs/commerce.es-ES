@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 3060
+source-wordcount: 3098
 ht-degree: 1%
 
 ---
@@ -40,6 +40,10 @@ Las actualizaciones incluyen:
 ## Actualizaciones de servicios alojados
 
 Estas notas describen las actualizaciones que se publicaron fuera de una versión con versiones o las mejoras realizadas en el servicio alojado.
+
+_22 de mayo de 2026_
+
+![Las nuevas](../assets/new.svg) reglas de comercialización de búsqueda, reglas predeterminadas y [comercialización de categorías](./category-merch.md) ahora incluyen **[!UICONTROL Intelligent Ranking Boost]**, para que pueda ajustar la influencia de las estrategias de clasificación muy inteligentes en los resultados en relación con la relevancia textual. La previsualización de reglas coincide con el aumento configurado. [Más información](./rules-add.md#intelligent-ranking-boost).
 
 _1 de octubre de 2025_
 

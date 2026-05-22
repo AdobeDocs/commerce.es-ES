@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 2966
+source-wordcount: 3008
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Es crucial establecer una regla de búsqueda predeterminada bien pensada. La [re
 - Resaltar productos que están a la venta o que forman parte de promociones especiales.
 - Defina automáticamente reglas de búsqueda durante los periodos de promoción o ventas utilizando el intervalo de fechas durante el periodo de promoción.
 - Utilice siempre el panel &quot;Probar la regla&quot; para obtener una vista previa de cómo la estrategia de clasificación inteligente afecta a los resultados de búsqueda reales de diferentes consultas.
+- Cuando habilites la clasificación inteligente, ajusta **[Aumento inteligente de clasificación](rules-add.md#intelligent-ranking-boost)** en el editor de reglas para equilibrar las señales de estilo de popularidad con relevancia textual y verifica los resultados de las consultas de destino en **Prueba tu regla**. El aumento inteligente de clasificación no está disponible para la estrategia **None**.
 - Adapte los resultados de búsqueda según el comportamiento de cada comprador mediante [clasificación inteligente](rules-add.md#intelligent-ranking), como &quot;recomendado para usted&quot;, &quot;más visitados&quot;, etc. Para adaptar el comportamiento del comprador, debe asegurarse de que el evento se implementa correctamente. Para los comerciantes de Luma, los eventos están disponibles de forma predeterminada. Para implementaciones sin encabezado o personalizadas, debe [implementar eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) según sus necesidades específicas.
 
 Más información sobre las reglas de búsqueda:
