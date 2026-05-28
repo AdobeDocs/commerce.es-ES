@@ -2,24 +2,19 @@
 title: Herramienta de migración masiva de datos
 description: Aprenda a utilizar la herramienta de migración masiva de datos para migrar datos de su instancia de Adobe Commerce en la nube existente a  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
 TQID: https://experienceleague.adobe.com/4Zx1cFtsyfuy21Af6Ov9pU7ndMW35NyCwlcdlKNTk6Q
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +47,7 @@ Las secciones siguientes describen estos pasos en detalle.
 
 La disponibilidad de la herramienta de migración masiva de datos es la siguiente:
 
-- **T1 de 2026** (aún no disponible): después del lanzamiento inicial de la herramienta de migración masiva de datos, podrá acceder a ella enviando un ticket de asistencia.
-- **T1 de 2026** (aún no disponible): tras el lanzamiento público de la herramienta de migración masiva de datos, se podrá acceder a ella desde esta página.
+Actualmente, esta herramienta está disponible mediante acuerdos de ingeniería implementados. Si está interesado en utilizar esta herramienta, póngase en contacto con su representante de Adobe.
 
 ## Crear entorno de destino
 
