@@ -4,19 +4,13 @@ description: Obtenga información sobre cómo sincronizar recursos entre Adobe C
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
 workflow-type: tm+mt
-source-wordcount: 1717
+source-wordcount: 1775
 ht-degree: 1%
 
 ---
@@ -61,7 +55,7 @@ Este código de paquete añade los siguientes recursos al entorno de creación d
 
 ## Texto alternativo en metadatos de AEM Assets
 
-El multicampo _[!UICONTROL Alt texts]_&#x200B;está disponible en el editor de metadatos de recursos de AEM Assets en la pestaña **[!UICONTROL Commerce]**&#x200B;cuando edita una imagen elegible.
+El multicampo _[!UICONTROL Alt texts]_está disponible en el editor de metadatos de recursos de AEM Assets en la pestaña **[!UICONTROL Commerce]**cuando edita una imagen elegible.
 
 >[!IMPORTANT]
 >
@@ -77,7 +71,7 @@ Seleccione **[!UICONTROL Add]** para agregar más filas para vistas de tienda ad
 
 ![Varios campos de texto alternativo con entradas de código de vista de tienda y texto alternativo](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-Al guardar, la validación del lado del cliente bloquea el envío si alguna fila tiene un elemento _[!UICONTROL Store View Code]_&#x200B;vacío o si dos filas utilizan el mismo código de vista de almacén (sin distinción de mayúsculas y minúsculas).
+Al guardar, la validación del lado del cliente bloquea el envío si alguna fila tiene un elemento _[!UICONTROL Store View Code]_vacío o si dos filas utilizan el mismo código de vista de almacén (sin distinción de mayúsculas y minúsculas).
 
 Las entradas de texto alternativas persisten en los metadatos de recursos JCR como dos propiedades `String[]` alineadas con el índice:
 
@@ -90,21 +84,21 @@ Cuando estos recursos se sincronizan con Adobe Commerce, el texto alternativo de
 
 Necesita los siguientes recursos y permisos para implementar el código de paquete `assets-commerce` en el entorno as a Cloud Service AEM de AEM Assets:
 
-* [Acceso al Programa Cloud Manager de AEM Assets y a los entornos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) con los roles de Administrador de implementación y Programa.
+* [Acceso al Programa Cloud Manager de AEM Assets y a los entornos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) con los roles de Administrador de implementación y Programa.
 
-* Un [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) y conocimiento del proceso de desarrollo local de AEM.
+* Un [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) y conocimiento del proceso de desarrollo local de AEM.
 
 * Comprenda la [estructura del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) y cómo implementar paquetes de contenido personalizado mediante Cloud Manager.
 
 * La **ID de organización de IMS** para su instancia de Commerce. Tanto la instancia de Commerce como el entorno de creación de AEM Assets deben estar en la misma organización de IMS.
 
-* Para habilitar [Dynamic Media con las funciones de OpenAPI](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis):
+* Para habilitar [Dynamic Media con las funciones de OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis):
 
 >[!BEGINTABS]
 
 >[!TAB Imágenes del producto]
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} Dynamic Media con capacidades OpenAPI es autoservicio para elementos visuales de productos con tecnología de AEM Assets.
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} Dynamic Media con capacidades OpenAPI es autoservicio para elementos visuales de productos con tecnología de AEM Assets.
 
 1. Vaya a Cloud Manager.
 
@@ -133,17 +127,19 @@ Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacid
 
 ## Paso 1: Instalación del paquete de assets-commerce
 
-1. Vaya a AEM Cloud Manager, seleccione un programa y [cree entornos de producción y ensayo](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) que desee integrar con Adobe Commerce.
+1. Vaya a AEM Cloud Manager, seleccione un programa y [cree entornos de producción y ensayo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) que desee integrar con Adobe Commerce.
 
-1. Configure una [canalización de implementación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) o verifique que su canalización pueda implementar cambios en el entorno seleccionado.
+1. [Clonar el repositorio de Git administrado por Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) para el programa seleccionado.
 
-1. [Clonar el repositorio de Git administrado por Adobe](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) para el programa seleccionado.
+   ![Credenciales del repositorio de Cloud Manager y comando para clonar](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+
+   En Cloud Manager **Canalizaciones**, seleccione **[!UICONTROL Access Repo Info]** para abrir **[!UICONTROL Repository Info]**. Copie el valor **[!UICONTROL URL]** o **[!UICONTROL Git command line]**, genere una contraseña de acceso si es necesario y luego clone localmente con su cliente Git.
 
 1. En GitHub, descargue el código del paquete del [repositorio Commerce de AEM Assets](https://github.com/ankumalh/assets-commerce).
 
-1. Desde su [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copie manualmente el código descargado en el repositorio administrado de Adobe existente.
+1. Desde su [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copie manualmente el código descargado en el repositorio administrado de Adobe existente.
 
-1. En todos los archivos de `filter.xml` y `pom.xml` de su proyecto, reemplace todas las ocurrencias de `<my-app>` con el nombre de su aplicación.
+1. En todos los archivos de `filter.xml` y `pom.xml` del proyecto, reemplace todas las apariciones de &lt;my-app> por el nombre de su aplicación.
 
    >[!NOTE]
    >
@@ -151,7 +147,13 @@ Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacid
 
 1. Confirme los cambios e inserte la rama de desarrollo local en el repositorio de Git de Cloud Manager.
 
-1. Desde AEM Cloud Manager, [actualice el entorno de AEM mediante la canalización para implementar su código](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. Configure una [canalización de implementación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) o verifique que su canalización pueda implementar cambios en el entorno seleccionado.
+
+   ![Canalizaciones de Cloud Manager](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+
+   Cuando exista la canalización, abra el menú de acciones (**...**) para **[!UICONTROL Run]**, **[!UICONTROL Edit]**, **[!UICONTROL View/Edit variables]** u otras acciones; consulte la documentación de canalización de Cloud Manager vinculada anteriormente.
+
+1. Desde AEM Cloud Manager, [actualice el entorno de AEM mediante la canalización para implementar su código](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 1. Vaya a cualquier recurso y edite sus propiedades para validar los cambios:
 
@@ -161,7 +163,7 @@ Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacid
 
 ### La pestaña Commerce no está visible en las propiedades
 
-Si la ficha **Commerce** no aparece en las propiedades, debe crear manualmente una en el editor de esquemas de metadatos.
+Si la pestaña **Commerce** no aparece en las propiedades, debe completar manualmente los siguientes pasos en el editor de esquemas de metadatos:
 
 1. Vaya al editor de esquemas de metadatos.
 
@@ -175,7 +177,7 @@ Si la ficha **Commerce** no aparece en las propiedades, debe crear manualmente u
 
 1. Arrastre y suelte un componente **checkbox** en la ficha **Commerce** y asígnelo a la propiedad `commerce:isCommerce`. Defina **Yes** y **No** como las opciones.
 
-Si tiene algún otro problema, cree un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) o póngase en contacto con su representante de ventas de integración de AEM Assets para obtener ayuda.
+Si tiene algún otro problema, cree un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) o póngase en contacto con su representante de ventas de integración de AEM Assets para obtener ayuda.
 
 ## Paso 2: Opcional. Configuración de un perfil de metadatos
 
@@ -233,7 +235,7 @@ El componente de interfaz de usuario de datos del producto se agrega automática
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Opcional. Para sincronizar automáticamente los recursos de Commerce aprobados a medida que se cargan en el entorno de AEM Assets, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_&#x200B;en la pestaña `Basic` en `approved`.
+1. Opcional. Para sincronizar automáticamente los recursos de Commerce aprobados a medida que se cargan en el entorno de AEM Assets, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_en la pestaña `Basic` en `approved`.
 
 1. Guarde la actualización.
 
@@ -253,4 +255,4 @@ El componente de interfaz de usuario de datos del producto se agrega automática
 
 * [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} [Instalar paquetes de Adobe Commerce](configure-commerce.md).
 
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} [Configure la integración desde el administrador](setup-synchronization.md).
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} [Configure la integración desde el administrador](setup-synchronization.md).
