@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
 workflow-type: tm+mt
-source-wordcount: 1717
+source-wordcount: 1775
 ht-degree: 1%
 
 ---
@@ -135,21 +135,29 @@ Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacid
 
 1. Vaya a AEM Cloud Manager, seleccione un programa y [cree entornos de producción y ensayo](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) que desee integrar con Adobe Commerce.
 
-1. Configure una [canalización de implementación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) o verifique que su canalización pueda implementar cambios en el entorno seleccionado.
-
 1. [Clonar el repositorio de Git administrado por Adobe](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) para el programa seleccionado.
+
+   ![Credenciales del repositorio de Cloud Manager y comando para clonar](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+
+   En Cloud Manager **Canalizaciones**, seleccione **[!UICONTROL Access Repo Info]** para abrir **[!UICONTROL Repository Info]**. Copie el valor **[!UICONTROL URL]** o **[!UICONTROL Git command line]**, genere una contraseña de acceso si es necesario y luego clone localmente con su cliente Git.
 
 1. En GitHub, descargue el código del paquete del [repositorio Commerce de AEM Assets](https://github.com/ankumalh/assets-commerce).
 
 1. Desde su [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copie manualmente el código descargado en el repositorio administrado de Adobe existente.
 
-1. En todos los archivos de `filter.xml` y `pom.xml` de su proyecto, reemplace todas las ocurrencias de `<my-app>` con el nombre de su aplicación.
+1. En todos los archivos de `filter.xml` y `pom.xml` del proyecto, reemplace todas las apariciones de &lt;my-app> por el nombre de su aplicación.
 
    >[!NOTE]
    >
    > También puede instalar el código personalizado en la configuración de su proyecto de AEM Assets como un paquete de **Maven**.
 
 1. Confirme los cambios e inserte la rama de desarrollo local en el repositorio de Git de Cloud Manager.
+
+1. Configure una [canalización de implementación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) o verifique que su canalización pueda implementar cambios en el entorno seleccionado.
+
+   ![Canalizaciones de Cloud Manager](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+
+   Cuando exista la canalización, abra el menú de acciones (**...**) para **[!UICONTROL Run]**, **[!UICONTROL Edit]**, **[!UICONTROL View/Edit variables]** u otras acciones; consulte la documentación de canalización de Cloud Manager vinculada anteriormente.
 
 1. Desde AEM Cloud Manager, [actualice el entorno de AEM mediante la canalización para implementar su código](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
@@ -161,7 +169,7 @@ Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacid
 
 ### La pestaña Commerce no está visible en las propiedades
 
-Si la ficha **Commerce** no aparece en las propiedades, debe crear manualmente una en el editor de esquemas de metadatos.
+Si la pestaña **Commerce** no aparece en las propiedades, debe completar manualmente los siguientes pasos en el editor de esquemas de metadatos:
 
 1. Vaya al editor de esquemas de metadatos.
 
