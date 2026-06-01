@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 >
 >Si utiliza Adobe Commerce local o Adobe Commerce en infraestructura en la nube, consulte las [notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview).
 
-## Mayo de 2026: #2 de la versión {#latest}
+## Junio de 2026: #1 de la versión {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
 
-Los siguientes elementos se lanzarán a los entornos de producción el 21 de mayo de 2026.
+Los siguientes elementos se lanzarán a los entornos de producción el 4 de junio de 2026.
 
 >[!BEGINSHADEBOX]
+
+### Añadir y editar códigos de cupones personalizados en Admin
+
+Los comerciantes ahora pueden crear y editar códigos de cupones personalizados directamente desde [!DNL Commerce Admin] en las reglas manuales de precios del carro de compras. Hay un nuevo botón [!UICONTROL **Agregar cupón personalizado**] disponible en la sección [!UICONTROL **Administrar códigos de cupón**] al editar una regla de precios del carro de compras. <!-- CCSAAS-4508 -->
 
 ### Seguimiento de envíos con transportistas predeterminados y personalizados
 
@@ -59,6 +63,14 @@ El seguimiento de pedidos ahora es confiable para los transportistas de envío p
 ### Ver tipos de entrada de atributos en la cuadrícula Atributos del producto
 
 Ahora se ve una nueva columna [!UICONTROL **Tipo de atributo**] en la cuadrícula Atributos de producto en ([!UICONTROL **Tiendas**] > _[!UICONTROL Attributes]_>[!UICONTROL **Producto**]), que muestra el tipo de entrada (como campo de texto, lista desplegable o sí/no) para cada atributo de producto, incluidos los tipos aportados por las extensiones. Esto facilita la identificación y administración de atributos al trabajar con conjuntos de atributos grandes. <!-- ACCS-925 -->
+
+### Personalización del encabezado Responder a para correos electrónicos personalizados
+
+Los comerciantes ahora pueden configurar el encabezado [!UICONTROL **Responder a**] que usa el extremo [POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), de modo que las respuestas de los clientes se puedan enrutar a una dirección diferente que el remitente. <!-- ACCS-1037 -->
+
+### Vea los precios de nivel en la página de edición del producto en entornos de catálogo compartidos grandes
+
+Los comerciantes con un gran número de catálogos compartidos ahora pueden obtener acceso a la ficha [!UICONTROL **Precios de nivel**] de solo lectura en la página de edición de productos de [!DNL Commerce Admin]. <!-- CCSAAS-4922 -->
 
 ### Mejoras y correcciones de errores
 
@@ -70,7 +82,7 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 
 * Se ha resuelto un error &quot;el consumidor no está autorizado&quot; que podía impedir los inicios de sesión de GraphQL invitado cuando el encabezado `X-Adobe-Company` estaba presente en la solicitud. <!-- ACCS-949 -->
 
-* Se ha corregido un problema en el cual al editar o eliminar una compañía en [!DNL Commerce Admin] se podía producir el error &quot;No existe esa entidad&quot; después de asignar un cliente a la compañía a través del extremo REST `V1/customers/companies` de PUT. <!-- ACCS-856 -->
+* Se ha corregido un problema en el cual al editar o eliminar una compañía en [!DNL Commerce Admin] se podía producir el error &quot;No existe esa entidad&quot; después de asignar un cliente a la compañía a través del extremo REST PUT `V1/customers/companies`. <!-- ACCS-856 -->
 
 * Se ha resuelto un problema con los estados de cuadrícula de pedidos de ventas obsoletos. <!-- CCSAAS-4915 -->
 
@@ -79,6 +91,10 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 * Se ha corregido el error &quot;Undefined array key &#39;simple_sku&#39;&quot; que se podía producir al crear un envío para un pedido que contenía productos configurables. <!-- CCSAAS-4877 -->
 
 * La consulta de GraphQL `guestOrderByToken` ahora devuelve un mensaje de error más informativo cuando se llama con un token mal formado, en lugar de un error interno del servidor. <!-- CCSAAS-4921 -->
+
+* La consulta de GraphQL `customer` devuelve ahora un mensaje de error más informativo cuando no se pueden cargar los pedidos de los clientes. <!-- ACCS-867 -->
+
+* El extremo REST GET `V1/customers/{customerId}` ahora devuelve el campo de configuración `assistance_allowed`. <!-- USF-4132 -->
 
 {{accs-release}}
 
@@ -355,7 +371,7 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 
 * Se ha corregido un tiempo de espera de página de edición de producto que podría ocurrir con catálogos compartidos grandes. <!-- CCSAAS-4657 -->
 
-* Se han vuelto a habilitar los extremos de la API REST de GET `/V1/directory/countries` y GET `/V1/directory/countries/:countryId` para las integraciones de administración, lo que permite a los clientes buscar datos válidos de país y región. <!-- ACCS-518 -->
+* Se volvieron a habilitar los extremos de la API REST GET `/V1/directory/countries` y GET `/V1/directory/countries/:countryId` para las integraciones de administración, lo que permite a los clientes buscar datos válidos de país y región. <!-- ACCS-518 -->
 
 * Se ha corregido un problema de tiempo de espera que se podía producir en la API de REST cuando un usuario tenía un catálogo compartido grande. <!-- ACCS-4657 -->
 
