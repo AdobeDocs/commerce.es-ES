@@ -5,11 +5,11 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: d8cd6f543353e1b11f3aa14b3b97b02155d23809
+source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer] incluye integraciones que le permiten sincronizar datos de Adobe Commerce en la nube o de forma local, administrar recursos, mejorar experiencias de tienda y conectar sistemas externos. Las secciones siguientes describen cómo funciona cada integración con [!DNL Adobe Commerce Optimizer]. Siga los vínculos para la instalación, configuración y uso diario.
 
+{{aco-integration-environment-alignment}}
+
 ## Conector de Adobe Commerce Optimizer {#aco-connector}
 
 Adobe Commerce Optimizer Connector es el puente que sincroniza los datos de catálogo y de precios entre Adobe Commerce (en la nube o local) y [!DNL Adobe Commerce Optimizer]. Al habilitar el conector, Commerce permanece como el sistema de registro de los datos del producto mientras que [!DNL Adobe Commerce Optimizer] activa la detección de productos, las recomendaciones, las reglas de comercialización, los análisis y las experiencias de tienda sin encabezado.
 
-- [Descripción general del conector Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
+- [Información general sobre el conector Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
 - [Introducción al conector](../../aco-connector/get-started.md){target="_blank"}
 
 ## Imágenes del producto con AEM Assets {#product-visuals}
@@ -31,7 +33,7 @@ Adobe Commerce Optimizer Connector es el puente que sincroniza los datos de cat�
 Product Visuals permite administrar imágenes de productos a través de Adobe Experience Manager (AEM) Assets. Configure los AEM Assets de Commerce Optimizer para habilitar los elementos visuales del producto. Una vez finalizada la configuración, utilice AEM Assets como solución de administración centralizada de recursos digitales para las imágenes de sus productos, con flujos de trabajo automatizados de revisión y administración de recursos que mantengan las imágenes sincronizadas con su catálogo de Commerce Optimizer. La integración hace coincidir los recursos con los productos por SKU. Las actualizaciones fluyen por los servicios de integración de Adobe para que las tiendas reflejen los medios más recientes sin tener que volver a cargarlas manualmente.
 
 - [Imágenes del producto con AEM Assets](../setup/product-visuals.md)
-- [Configurar AEM Assets para Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
+- [Configuración de AEM Assets para Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 

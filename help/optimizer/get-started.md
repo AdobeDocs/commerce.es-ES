@@ -3,28 +3,17 @@ title: Introducción
 description: Obtenga información sobre cómo empezar a usar  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 TQID: https://experienceleague.adobe.com/1dcKMjOut1GtiOevvGJECsaU7URFmYg-mQ-m9wi7n4Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: dba482e5-29a8-4127-afa2-c4b913512ef8
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: dba482e5-29a8-4127-afa2-c4b913512ef8id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
-source-wordcount: 1181
+source-wordcount: 1332
 ht-degree: 0%
 
 ---
@@ -32,6 +21,17 @@ ht-degree: 0%
 # Primeros pasos
 
 Esta guía lo acompaña en la configuración de [!DNL Adobe Commerce Optimizer] de principio a fin. Aunque esta guía cubre todas las funciones, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/) para obtener contenido detallado específico para desarrolladores.
+
+## Tipos de instancias y aislamiento de entornos
+
+Adobe Commerce Optimizer usa instancias independientes para entornos diferentes, como **sandbox** y **production**. Cada instancia tiene su propio ID de instancia y sus propios datos aislados, incluidas las vistas de catálogo, las directivas, la configuración de búsqueda y las recomendaciones de productos.
+
+Al integrarse con Adobe Commerce as a Cloud Service, plataformas de comercio de terceros o tiendas Edge Delivery Services, siempre coinciden con los entornos:
+
+- Conecte **instancias de sandbox Optimizer** a entornos de comercio y tienda que no sean de producción.
+- Conecte **instancias de production Optimizer** a los entornos de comercio de producción y tienda.
+
+La combinación de entornos de zona protegida con entornos de producción causa datos de catálogo incoherentes, un comportamiento inesperado de búsqueda y comercialización y métricas poco fiables. Utilice el tipo de instancia y el ID de instancia en Commerce Cloud Manager como fuente fiable al configurar integraciones.
 
 ## Requisitos previos
 
@@ -140,34 +140,36 @@ La columna Product indica para qué aplicación de Commerce se aprovisiona la in
 
 Utilice las herramientas Filtro y Búsqueda para buscar rápidamente instancias específicas por fecha de creación, región, creador, tipo de producto, entorno o estado.
 
-### Obtener acceso a la aplicación [!DNL Adobe Commerce Optimizer]
+### Acceder a la interfaz de administración de [!DNL Adobe Commerce Optimizer Studio]
 
 Una vez abierta la aplicación, cambie fácilmente entre entornos como zona protegida y producción para ver los datos y la configuración de cada uno sin volver al Administrador de Commerce Cloud.
 
-1. En Commerce Cloud Manager, haga clic en el nombre de la instancia para abrir la aplicación [!DNL Adobe Commerce Optimizer].
+1. En el Administrador de Commerce Cloud, haga clic en el nombre de la instancia para abrir [!DNL Adobe Commerce Optimizer Studio].
 
 1. Cambiar entre [!DNL Adobe Commerce Optimizer] instancias sin salir de la aplicación.
 
-   La lista desplegable de instancias enumera todas las instancias de Optimizer disponibles en la organización. Seleccione la instancia que desea ver.
+   - Haga clic en la lista desplegable de instancias para ver todas las instancias de Optimizer disponibles en la organización.
 
-   ![Menú desplegable del conmutador de instancias para seleccionar [!DNL Adobe Commerce Optimizer] entornos](./assets/context-switcher.png){zoomable="yes"}
+     ![Menú desplegable del conmutador de instancias para seleccionar [!DNL Adobe Commerce Optimizer] entornos](./assets/context-switcher.png){zoomable="yes"}
+
+- Seleccione la instancia que desea ver.
 
 >[!NOTE]
 >
->Si necesita volver al Administrador de Commerce Cloud para ver los detalles de la instancia o administrar instancias, haga clic en el icono Aplicaciones ![Icono para abrir Aplicaciones Experience Cloud](./assets/apps-icon.png) en la esquina superior izquierda de la navegación superior de Commerce Optimizer.
+>Para volver al Administrador de Commerce Cloud para ver los detalles de las instancias o administrarlas, haga clic en el icono ![Icono para abrir Aplicaciones Experience Cloud](./assets/apps-icon.png) (Aplicaciones) en la esquina superior izquierda de la navegación superior de Commerce Optimizer.
 
 ### Obtener detalles de la instancia
 
 Vea los detalles de la instancia haciendo clic en el icono de información junto al nombre de la instancia.
 
-![[!DNL Adobe Commerce Optimizer] panel de detalles de instancia que muestra los extremos y el identificador de instancia &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![[!DNL Adobe Commerce Optimizer] panel de detalles de instancia que muestra los extremos y el identificador de instancia ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Tenga en cuenta la siguiente información clave:
 
-- **Extremo de GraphQL** para recuperar datos del catálogo de Commerce mediante la API de comercialización
-- **Extremo de catálogo** para la ingesta de datos de catálogo en Commerce Optimizer mediante la API de REST
-- **URL de Commerce Optimizer** para acceder a la aplicación [!DNL Adobe Commerce Optimizer]
-- **ID de instancia**: el ID único que identifica la instancia. El identificador de instancia también se conoce como *tenant_id*.
+- **Extremo de GraphQL** Extremo de GraphQL que usa tu tienda para consultar los datos de catálogo y comercialización de esta instancia mediante la [API del servicio de comercialización](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=&quot;_blank}
+- **Punto final de catálogo** Punto final de API de REST que usa para introducir productos y precios en Adobe Commerce Optimizer desde su sistema de comercio o PIM. Ver la [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
+- **URL de Commerce Optimizer** Abre la interfaz de usuario de administración de [Adobe Commerce Optimizer Studio](overview.md) para configurar y administrar las vistas de catálogo, las directivas y la comercialización.
+- **ID de instancia**: Identificador único (ID de inquilino) de esta instancia de Adobe Commerce Optimizer que usan las tiendas, las API y las herramientas para conectarse al entorno correcto.
 
 Si es desarrollador, necesita estos detalles para configurar su entorno de desarrollo y conectarse a las API de [!DNL Adobe Commerce Optimizer].
 
@@ -238,6 +240,6 @@ Después de completar la configuración:
 ### Obtener ayuda
 
 - **Recursos para desarrolladores**: [Documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/)
-- **Recursos de tienda**: [documentación de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-- **Tutoriales**: [Tutoriales de Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview)
+- **Recursos de tienda**: [documentación de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutoriales**: [Tutoriales de Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Soporte**: [Recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

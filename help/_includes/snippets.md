@@ -1,11 +1,18 @@
 ---
-source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
+source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 # Fragmentos de Commerce
+
+
+## Alineación del entorno de integración de ACO {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Conecte siempre las instancias de sandbox Optimizer a entornos que no sean de producción y las instancias de producción a entornos de producción. Los entornos no coincidentes producen incoherencias en los datos del catálogo, los resultados de búsqueda y las recomendaciones.
 
 
 ## Servicios de comercialización para Optimizer {#aco-merchandising-services}
@@ -24,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[Los componentes integrados](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es) de [!DNL Commerce Storefront on Edge Delivery Services] recopilan automáticamente los cambios más recientes de GraphQL (nuevos campos, límites y comportamiento de las consultas).
+>[Los componentes integrados](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) de [!DNL Commerce Storefront on Edge Delivery Services] recopilan automáticamente los cambios más recientes de GraphQL (nuevos campos, límites y comportamiento de las consultas).
 
 ## Acceso anticipado a ACCS {#accs-early-access}
 
@@ -40,10 +47,10 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=es"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -70,7 +77,7 @@ ht-degree: 0%
 
 La administración y autenticación de la identidad de Adobe Commerce la administra el sistema Identity Management de Adobe (IMS) a través de Adobe Admin Console.
 
-Para obtener información sobre las opciones de configuración de identidad, como Adobe ID, Enterprise ID y Federated ID, así como las instrucciones para configurar el inicio de sesión único (SSO) para el acceso seguro a las aplicaciones de Adobe, consulte [Configurar la identidad y el inicio de sesión único](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html) en la documentación de *Enterprise Admin Console*.
+Para obtener información sobre las opciones de configuración de identidad, como Adobe ID, Enterprise ID y Federated ID, así como las instrucciones para configurar el inicio de sesión único (SSO) para el acceso seguro a las aplicaciones de Adobe, consulte [Configurar la identidad y el inicio de sesión único](https://helpx.adobe.com/enterprise/using/set-up-identity.html) en la documentación de *Enterprise Admin Console*.
 
 ## Notas de la versión de servicios ACCS y extensibilidad {#accs-release}
 
@@ -80,7 +87,7 @@ Para obtener información sobre las opciones de configuración de identidad, com
 
 | Servicios | Extensibilidad | Tienda |
 | --- | --- | --- |
-| <ul><li>[Servicio de catálogo](../catalog-service/release-notes.md)</li><li>[Búsqueda en directo](../live-search/release-notes.md)</li><li>[Servicios de pago](../payment-services/release-notes.md)</li><li>[Recomendaciones de productos](../product-recommendations/release-notes.md)</li><li>[Exportación De Datos SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[IU de administración para SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Malla de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Eventos](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Información de la versión](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=es)</li><li>[Registro de cambios](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=es)</li></ul> |
+| <ul><li>[Servicio de catálogo](../catalog-service/release-notes.md)</li><li>[Búsqueda en directo](../live-search/release-notes.md)</li><li>[Servicios de pago](../payment-services/release-notes.md)</li><li>[Recomendaciones de productos](../product-recommendations/release-notes.md)</li><li>[Exportación De Datos SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[IU de administración para SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Malla de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Eventos](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Información de la versión](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Registro de cambios](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
 
 ## Notas de la versión de Adobe Commerce Optimizer Services {#aco-release}
 
@@ -90,4 +97,4 @@ Para obtener información sobre las opciones de configuración de identidad, com
 
 | Servicios | Tienda |
 | --- | --- |
-| [Integración de AEM Assets](../aem-assets-integration/release-notes.md)<br>[Conector de Commerce Optimizer](../aco-connector/release-notes.md) | [Información de versión de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=es)<br>[Registro de cambios de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=es) |
+| [Integración de AEM Assets](../aem-assets-integration/release-notes.md)<br>[Conector de Commerce Optimizer](../aco-connector/release-notes.md) | [Información de versión de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Registro de cambios de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
