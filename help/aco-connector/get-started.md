@@ -3,9 +3,9 @@ title: Introducción al conector de Adobe Commerce Optimizer
 description: Obtenga información sobre cómo instalar y configurar el conector, personalizar la configuración de exportación, conectarse a Adobe Commerce Optimizer y monitorizar el estado de sincronización de datos.
 feature: Personalization, Integration, Configuration
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+source-git-commit: f041c315da8bf20af7ecc2c869eaf578a767f66d
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Introducción
 
 Instale y configure Commerce Optimizer Connector para sincronizar los datos del catálogo de Adobe Commerce con [!DNL Adobe Commerce Optimizer] y, a continuación, supervise el estado de sincronización de datos para asegurarse de que la tienda esté actualizada.
+
+{{aco-integration-environment-alignment}}
 
 ## Requisitos para utilizar la integración
 
@@ -34,7 +36,7 @@ El usuario de Adobe Commerce que configura la integración debe tener:
 
 * [Acceso desde la línea de comandos al servidor de aplicaciones de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Acceso de desarrollador a la [organización de IMS](https://experienceleague.adobe.com/es/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Adobe Commerce Optimizer].
+* Acceso de desarrollador a la [organización de IMS] (¿https://experienceleague.adobe.com/es/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Adobe Commerce Optimizer].
 
 >[!BEGINSHADEBOX]
 

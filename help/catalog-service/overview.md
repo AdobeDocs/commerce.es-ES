@@ -17,9 +17,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
 workflow-type: tm+mt
-source-wordcount: 1398
+source-wordcount: 1405
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Los datos del modelo de vista enriquecido proporcionados por [!DNL Catalog Servi
 
 >[!NOTE]
 >
->Si va a implementar el catálogo utilizando el catálogo maquetable con Adobe Commerce Optimizer o Adobe Commerce Optimizer Connector, consulte la [Guía de Adobe Commerce Optimizer](../optimizer/overview.md#architecture) y la Guía para desarrolladores de Merchandising Services.
+>Si va a implementar el catálogo utilizando el catálogo maquetable con Adobe Commerce Optimizer o Adobe Commerce Optimizer Connector, consulte la [Guía de Adobe Commerce Optimizer](../optimizer/overview.md#architecture) y la [Guía para desarrolladores de Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
 
 [!DNL Catalog Service] usa [GraphQL](https://graphql.org/) para solicitar y recibir datos de catálogo, incluidos productos, atributos de productos, inventario y precios. GraphQL es un lenguaje de consulta que un cliente de front-end utiliza para comunicarse con la interfaz de programación de aplicaciones (API) definida en un back-end como Adobe Commerce. GraphQL es un método de comunicación popular porque es ligero y permite al integrador de sistemas especificar el contenido y el orden de cada respuesta.
 

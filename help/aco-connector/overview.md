@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +60,6 @@ En esta arquitectura:
 - El conector exporta fuentes de catálogo, precio y categoría
 - Commerce Optimizer ingiere y normaliza los datos de fuentes en fuentes de catálogo, libros de precios y vistas de catálogo
 - Las tiendas (tienda de Commerce en Edge Delivery o compilaciones personalizadas sin encabezado) llaman a las API de GraphQL de Commerce Optimizer para obtener información y recomendaciones, y llaman a Commerce u otra plataforma de terceros conectada para realizar operaciones de carrito y cierre de compra
-
-## Cómo funciona el conector con Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer ingiere y normaliza los datos de fuente en fuentes de catálogo, libros de precios y vistas de catálogo.
-
-- Las tiendas (tienda de Commerce en Edge Delivery o compilaciones personalizadas sin encabezado) llaman a las API de GraphQL de Commerce Optimizer para obtener información y recomendaciones, y llaman a Commerce u otra plataforma de terceros conectada para realizar operaciones de carrito y cierre de compra.
 
 ## Cómo funciona el conector con Adobe Commerce
 

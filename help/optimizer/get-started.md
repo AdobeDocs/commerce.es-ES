@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
-source-wordcount: 1181
+source-wordcount: 1332
 ht-degree: 0%
 
 ---
@@ -32,6 +32,17 @@ ht-degree: 0%
 # Primeros pasos
 
 Esta guía lo acompaña en la configuración de [!DNL Adobe Commerce Optimizer] de principio a fin. Aunque esta guía cubre todas las funciones, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/) para obtener contenido detallado específico para desarrolladores.
+
+## Tipos de instancias y aislamiento de entornos
+
+Adobe Commerce Optimizer usa instancias independientes para entornos diferentes, como **sandbox** y **production**. Cada instancia tiene su propio ID de instancia y sus propios datos aislados, incluidas las vistas de catálogo, las directivas, la configuración de búsqueda y las recomendaciones de productos.
+
+Al integrarse con Adobe Commerce as a Cloud Service, plataformas de comercio de terceros o tiendas Edge Delivery Services, siempre coinciden con los entornos:
+
+- Conecte **instancias de sandbox Optimizer** a entornos de comercio y tienda que no sean de producción.
+- Conecte **instancias de production Optimizer** a los entornos de comercio de producción y tienda.
+
+La combinación de entornos de zona protegida con entornos de producción causa datos de catálogo incoherentes, un comportamiento inesperado de búsqueda y comercialización y métricas poco fiables. Utilice el tipo de instancia y el ID de instancia en Commerce Cloud Manager como fuente fiable al configurar integraciones.
 
 ## Requisitos previos
 
@@ -140,21 +151,23 @@ La columna Product indica para qué aplicación de Commerce se aprovisiona la in
 
 Utilice las herramientas Filtro y Búsqueda para buscar rápidamente instancias específicas por fecha de creación, región, creador, tipo de producto, entorno o estado.
 
-### Obtener acceso a la aplicación [!DNL Adobe Commerce Optimizer]
+### Acceder a la interfaz de administración de [!DNL Adobe Commerce Optimizer Studio]
 
 Una vez abierta la aplicación, cambie fácilmente entre entornos como zona protegida y producción para ver los datos y la configuración de cada uno sin volver al Administrador de Commerce Cloud.
 
-1. En Commerce Cloud Manager, haga clic en el nombre de la instancia para abrir la aplicación [!DNL Adobe Commerce Optimizer].
+1. En el Administrador de Commerce Cloud, haga clic en el nombre de la instancia para abrir [!DNL Adobe Commerce Optimizer Studio].
 
 1. Cambiar entre [!DNL Adobe Commerce Optimizer] instancias sin salir de la aplicación.
 
-   La lista desplegable de instancias enumera todas las instancias de Optimizer disponibles en la organización. Seleccione la instancia que desea ver.
+   - Haga clic en la lista desplegable de instancias para ver todas las instancias de Optimizer disponibles en la organización.
 
-   ![Menú desplegable del conmutador de instancias para seleccionar [!DNL Adobe Commerce Optimizer] entornos](./assets/context-switcher.png){zoomable="yes"}
+     ![Menú desplegable del conmutador de instancias para seleccionar [!DNL Adobe Commerce Optimizer] entornos](./assets/context-switcher.png){zoomable="yes"}
+
+- Seleccione la instancia que desea ver.
 
 >[!NOTE]
 >
->Si necesita volver al Administrador de Commerce Cloud para ver los detalles de la instancia o administrar instancias, haga clic en el icono Aplicaciones ![Icono para abrir Aplicaciones Experience Cloud](./assets/apps-icon.png) en la esquina superior izquierda de la navegación superior de Commerce Optimizer.
+>Para volver al Administrador de Commerce Cloud para ver los detalles de las instancias o administrarlas, haga clic en el icono ![Icono para abrir Aplicaciones Experience Cloud](./assets/apps-icon.png) (Aplicaciones) en la esquina superior izquierda de la navegación superior de Commerce Optimizer.
 
 ### Obtener detalles de la instancia
 
@@ -164,10 +177,10 @@ Vea los detalles de la instancia haciendo clic en el icono de información junto
 
 Tenga en cuenta la siguiente información clave:
 
-- **Extremo de GraphQL** para recuperar datos del catálogo de Commerce mediante la API de comercialización
-- **Extremo de catálogo** para la ingesta de datos de catálogo en Commerce Optimizer mediante la API de REST
-- **URL de Commerce Optimizer** para acceder a la aplicación [!DNL Adobe Commerce Optimizer]
-- **ID de instancia**: el ID único que identifica la instancia. El identificador de instancia también se conoce como *tenant_id*.
+- **Extremo de GraphQL** Extremo de GraphQL que usa tu tienda para consultar los datos de catálogo y comercialización de esta instancia mediante la [API del servicio de comercialización](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}
+- **Punto final de catálogo** Punto final de API de REST que usa para introducir productos y precios en Adobe Commerce Optimizer desde su sistema de comercio o PIM. Ver la [API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
+- **URL de Commerce Optimizer** Abre la interfaz de usuario de administración de [Adobe Commerce Optimizer Studio](overview.md) para configurar y administrar las vistas de catálogo, las directivas y la comercialización.
+- **ID de instancia**: Identificador único (ID de inquilino) de esta instancia de Adobe Commerce Optimizer que usan las tiendas, las API y las herramientas para conectarse al entorno correcto.
 
 Si es desarrollador, necesita estos detalles para configurar su entorno de desarrollo y conectarse a las API de [!DNL Adobe Commerce Optimizer].
 
