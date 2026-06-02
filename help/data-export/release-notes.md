@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
+source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
 workflow-type: tm+mt
-source-wordcount: 2868
+source-wordcount: 2818
 ht-degree: 0%
 
 ---
@@ -40,6 +40,14 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026
+
+### Versión 103.4.26
+
+_2 de junio de 2026_
+
+![Corregir](../assets/fix.svg) **Actualizaciones de fuentes de productos después de cambios de divisa**: cuando cambia la configuración de moneda del almacén, los productos afectados se ponen en cola para su exportación de nuevo, por lo que Live Search, el servicio de catálogo, las recomendaciones de productos y otros servicios conectados de Commerce muestran precios actualizados. <!--MDEE-1376-->
+
+![Corregir](../assets/fix.svg) **Las categorías secundarias reflejan el estado primario deshabilitado**: cuando deshabilita una categoría de nivel superior, las categorías secundarias ahora se exportan como inactivas, de modo que los servicios de Commerce conectados no tratan los productos de esas categorías como detectables. <!--MDEE-1369-->
 
 ### Versión 103.4.25
 
@@ -73,8 +81,8 @@ _5 de mayo de 2026_
 _20 de abril de 2026_
 
 ![Corrección](../assets/fix.svg) **Errores de SQL resueltos al eliminar atributos EAV estáticos**: El complemento ProductAttributeDelete ya no genera errores de SQL al eliminar atributos EAV estáticos, lo que garantiza una administración de atributos más fluida y una fiabilidad del sistema mejorada. <!--MDEE-1336-->
-![Corregir](../assets/fix.svg) **Se ha corregido la exportación de la ruta de la categoría después de que la categoría se mueva**- Garantiza que la fuente de categorías actualice correctamente la `url_path` cuando se mueva una categoría a un elemento principal diferente, lo que evita que falten rutas de categoría o que estén obsoletas en los servicios de Commerce conectados.<!--MDEE-1331-->
-![Corrección](../assets/fix.svg) **Se han mejorado las actualizaciones programadas de categorías para productos relacionados**. Las actualizaciones programadas de las direcciones URL de categorías ahora afectan únicamente a las categorías deseadas, lo que preserva la integridad de los datos y evita cambios no deseados en los productos relacionados. Ahora, los cambios programados en las direcciones URL de las categorías se reflejan correctamente en los datos exportados, lo que mantiene la navegación de la tienda y los servicios vinculados alineados con el catálogo actual.
+![Corrección](../assets/fix.svg) **Se ha corregido la exportación de la ruta de la categoría después de que la categoría se mueva**- Garantiza que la fuente de categorías actualice correctamente la `url_path` cuando se mueva una categoría a un elemento principal diferente, lo que evita rutas de categoría que falten o estén obsoletas en los servicios conectados de Commerce.<!--MDEE-1331-->
+![Corrección](../assets/fix.svg) **Se han mejorado las actualizaciones programadas de categorías para productos relacionados**. Las actualizaciones programadas de las direcciones URL de categorías ahora afectan únicamente a las categorías deseadas, lo que preserva la integridad de los datos y evita cambios no deseados en productos relacionados. Ahora, los cambios programados en las direcciones URL de las categorías se reflejan correctamente en los datos exportados, lo que mantiene la navegación de la tienda y los servicios vinculados alineados con el catálogo actual.
 <!--MDEE-1321-->
 
 ### Versión 103.4.22
