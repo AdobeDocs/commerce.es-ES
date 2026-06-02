@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
 workflow-type: tm+mt
-source-wordcount: 1104
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -42,11 +42,24 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ### Actualizaciones de API
 
+_28 de mayo de 2026_
+
+<!-- v1.2 -->
+
+![Corrección](../assets/fix.svg) **Árboles de navegación completos**: Las categorías descendientes etiquetadas ahora se incluyen correctamente en los árboles `navigation` filtrados por la familia cuando existe un nodo intermedio sin etiquetar en la ruta de acceso. Esta corrección garantiza que los compradores vean todas las categorías relevantes en la navegación, lo que facilita la exploración y la detección de artículos.
+<!--DATA-7183-->
+
+![Corrección](../assets/fix.svg) **Administración de slug vacía en `categoryTree` solicitudes**—Se ha corregido un problema en el cual la consulta [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) devolvía un error interno del servidor cuando el argumento `slugs` incluía una cadena vacía. Ahora se omiten los valores de slug vacíos, por lo que las tiendas y las integraciones siguen resolviendo los datos de categoría sin solicitudes fallidas.
+<!--DATA-7184-->
+
+![Corregir](../assets/fix.svg) **`searchCategory`solicitudes devuelve resultados alfabetizados que no distinguen entre mayúsculas y minúsculas**—La consulta `searchCategory` ahora ordena los resultados de búsqueda alfabéticamente sin distinción entre mayúsculas y minúsculas, lo que garantiza un orden coherente y predecible. Las categorías con prefijos más cortos aparecen primero cuando los nombres son idénticos.
+<!--COMOPT-2142-->
+
 _4 de mayo de 2026_
 
 <!--v1.53-->
 
-Los precios de los productos de tienda ahora muestran el código de moneda correcto (por ejemplo, USD) para todos los tipos de productos. Anteriormente, algunos productos mostraban `NONE` en lugar de la moneda esperada, lo que resultaba en la falta de precios.
+**Visualización correcta de la moneda**: los precios de los productos de tienda ahora muestran el código de moneda correcto (por ejemplo, USD) para todos los tipos de productos. Anteriormente, algunos productos mostraban `NONE` en lugar de la moneda esperada, lo que resultaba en la falta de precios.
 
 <!--DATA-7115-->
 
