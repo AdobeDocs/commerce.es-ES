@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
+source-git-commit: 9e4bf260a145815f97a69251005309edb480ae11
 workflow-type: tm+mt
-source-wordcount: 4189
+source-wordcount: 4182
 ht-degree: 0%
 
 ---
@@ -44,17 +44,17 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ## Junio de 2026: #1 de la versión {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Producción]{type=Neutral tooltip="Los elementos enumerados están disponibles actualmente en entornos de producción."}
 
-[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-Los siguientes elementos se lanzarán a los entornos de producción el 4 de junio de 2026.
+Los siguientes elementos se lanzaron a los entornos de producción el 4 de junio de 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Añadir y editar códigos de cupones personalizados en Admin
 
-Los comerciantes ahora pueden crear y editar códigos de cupones personalizados directamente desde [!DNL Commerce Admin] en las reglas manuales de precios del carro de compras. Hay un nuevo botón [!UICONTROL **Agregar cupón personalizado**] disponible en la sección [!UICONTROL **Administrar códigos de cupón**] al editar una regla de precios del carro de compras. <!-- CCSAAS-4508 -->
+Los comerciantes ahora pueden [crear y editar códigos de cupones personalizados](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes) directamente desde [!DNL Commerce Admin] en las reglas de precios manuales del carro de compras. Hay un nuevo botón [!UICONTROL **Agregar cupón personalizado**] disponible en la sección [!UICONTROL **Administrar códigos de cupón**] al editar una regla de precios del carro de compras. <!-- CCSAAS-4508 -->
 
 ### Seguimiento de envíos con transportistas predeterminados y personalizados
 
