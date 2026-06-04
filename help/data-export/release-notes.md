@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
+source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
 workflow-type: tm+mt
-source-wordcount: 2818
+source-wordcount: 2855
 ht-degree: 0%
 
 ---
@@ -40,6 +40,13 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026
+
+### Versión 103.4.27
+
+_4 de junio de 2026_
+
+![Corregir](../assets/fix.svg) **Los productos agrupados permanecen visibles después de las actualizaciones simultáneas del catálogo**-Se ha corregido un problema por el que los productos agrupados no aparecían en la tienda cuando los productos configurables y agrupados se actualizaban al mismo tiempo. Después de actualizar `magento/module-data-exporter` a la versión 103.4.27, la fuente de productos se programa automáticamente para volver a sincronizar y corregir las incoherencias de datos de paquete existentes en [!DNL Catalog Service], [!DNL Live Search] y otros servicios de Commerce conectados.
+<!--MDEE-1379-->
 
 ### Versión 103.4.26
 
