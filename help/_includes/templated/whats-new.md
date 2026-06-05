@@ -1,7 +1,7 @@
 ---
-source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
+source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1182'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 3 de junio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de producción para Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se ha agregado <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/feed-lock-mechanism">mecanismo de bloqueo de fuente para la exportación de datos SaaS</a> para explicar cómo los bloqueos de fuente evitan los conflictos de sincronización simultáneos y cómo interpretar los mensajes omitidos normales incluidos en el registro de exportación de datos de Commerce (<code>commerce-data-export.log</code>).</p>
+</td>
+      <td>
+        Nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cb045b490482649a65bac9d763062700a90e9ecd">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2 de junio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>El administrador de Commerce agrega una lista <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/sync-status">Estado de sincronización</a> centrada en recursos para buscar, filtrar y solucionar problemas de AEM Assets sincronizados por atributos de recursos.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1cb3a063d9c4595220ca431356d34e6cbe8ea33">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 1 de junio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó espacio aislado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 28 de mayo de 2026
 
@@ -321,80 +395,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7845129c055619e09fbf7c5f860795be6bf81533">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado los <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/recommendations/filters">filtros de recomendación</a> con procedimientos de filtro de precio y producto, comportamiento de precio final basado en el libro de precios para filtrar y mostrar precios y nuevas capturas de pantalla para la interfaz de usuario de productos de filtro.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d67df3c05f1202e361d0c8972d6f1bf7a5b8854">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 1 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha actualizado la página de inicio de <a href="https://experienceleague.adobe.com/es/docs/commerce/payment-services/configure/payments-home">Servicios de pago</a>, <a href="https://experienceleague.adobe.com/es/docs/commerce/payment-services/financial-reports/reporting">Informes</a> y la <a href="https://experienceleague.adobe.com/es/docs/commerce/payment-services/get-started/onboard">descripción general de la incorporación</a> con capturas de pantalla de SaaS/ACCS y directrices de la interfaz de usuario (banner de incorporación, página de inicio centrada en las transacciones, cuadrícula de transacciones).</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de producción de abril para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a28d4b467dc51f70509ab19dbdbaf2cd3f59a208">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 31 de marzo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Actualiza las <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de Adobe Commerce as a Cloud Service con la implementación de zona protegida más reciente.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">comprometer</a></td>
     </tr>
   </tbody>
 </table>
