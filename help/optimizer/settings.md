@@ -4,10 +4,16 @@ description: Configure las opciones de  [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
 TQID: https://experienceleague.adobe.com/9-BMXoWad0bbvsnwgHQrs19ZC9ngGrVE9J7PszcX4Zc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: 867
@@ -127,7 +133,7 @@ Una vez habilitada la búsqueda semántica, puede ajustar lo siguiente en la mis
   >
   > La búsqueda semántica solo es compatible con los catálogos **English**. Si se selecciona otro idioma en la ficha **[Idioma](#language)**, se deshabilita **[!UICONTROL Enable semantic search]**.
 
-- **[!UICONTROL Fuzzy search]** — Activa **2} para buscar coincidencias cercanas para las consultas de búsqueda, lo que ayuda a corregir errores tipográficos y variaciones menores.**
+- **[!UICONTROL Fuzzy search]** — Activa **2&rbrace; para buscar coincidencias cercanas para las consultas de búsqueda, lo que ayuda a corregir errores tipográficos y variaciones menores.**
 - **[!UICONTROL Fuzzy search similarity threshold]**: establezca la similitud mínima (como porcentaje) necesaria para que aparezcan las coincidencias aproximadas. Los umbrales más bajos devuelven coincidencias más aproximadas; eleve el umbral si los resultados difusos parecen demasiado amplios.
 
 Para obtener beneficios, instrucciones de validación, prácticas recomendadas, solución de problemas y limitaciones, vea [Búsqueda semántica](setup/semantic-search.md).
