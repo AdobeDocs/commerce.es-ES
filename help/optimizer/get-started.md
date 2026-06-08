@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 1332
+source-wordcount: 1349
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Los comerciantes optimizan y personalizan la experiencia de compra a través de 
 | Tarea | Descripción | Vínculo |
 |---|---|---|
 | **Descubrimiento de productos** | Configuración de la búsqueda y el filtrado | [Información general de comercialización](./merchandising/overview.md) |
+| **Configuración de búsqueda** | Administrar la búsqueda semántica (habilitada de forma predeterminada) y el ajuste opcional | [Configuración — Búsqueda avanzada](./settings.md#advanced-search) y [Búsqueda semántica](./setup/semantic-search.md) |
 | **Recomendaciones** | Configurar recomendaciones de productos con tecnología de IA | [Recomendaciones de productos](./merchandising/recommendations/overview.md) |
 | **Seguimiento del rendimiento** | Monitorización de métricas de éxito | [Métricas de éxito](./manage-results/success-metrics.md) |
 
@@ -167,7 +168,7 @@ Una vez abierta la aplicación, cambie fácilmente entre entornos como zona prot
 
 >[!NOTE]
 >
->Para volver al Administrador de Commerce Cloud para ver los detalles de las instancias o administrarlas, haga clic en el icono ![Icono para abrir Aplicaciones Experience Cloud](./assets/apps-icon.png) (Aplicaciones) en la esquina superior izquierda de la navegación superior de Commerce Optimizer.
+>Para volver al Administrador de Commerce Cloud para ver los detalles de las instancias o administrarlas, haga clic en el icono ![para abrir las aplicaciones de Experience Cloud](./assets/apps-icon.png) (aplicaciones) en la esquina superior izquierda de la navegación superior de Commerce Optimizer.
 
 ### Obtener detalles de la instancia
 

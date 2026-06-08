@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: 237
 ht-degree: 0%
 
 ---
@@ -35,10 +35,8 @@ La detección de productos proporciona a los comerciantes herramientas potentes 
 
 Con la detección de productos, puede:
 
+* **Usar [búsqueda semántica](../setup/semantic-search.md)** — Habilitado de forma predeterminada en [Configuración](../settings.md#advanced-search) para mejorar la relevancia para consultas basadas en intención y en lenguaje natural. No es necesario configurar atributos ni realizar cambios en la tienda.
 * **Configure [facetas](./facets/overview.md), [reglas de categoría y búsqueda de comercialización](./rules/overview.md) y [sinónimos](./synonyms/overview.md)** para guiar a los compradores hacia los productos más relevantes con fricción mínima.
-* **Cree experiencias de búsqueda intuitivas y orientadas a objetivos** que reflejen su estrategia de comercialización y sus prioridades de temporada.
-* **Use faceteo dinámico impulsado por IA y cambio de clasificación de resultados** para adaptar los resultados de búsqueda en tiempo real en función del comportamiento del comprador, lo que aumenta la participación y las ventas.
-* **Asegúrese de que los elementos promocionales y de alta prioridad aparezcan de forma eficaz** para alinear los resultados de búsqueda con los objetivos empresariales.
 
 ## Recommendations
 

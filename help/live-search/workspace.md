@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admi
 | [Buscar comercialización](rules.md) | Dé forma a la experiencia de búsqueda con reglas lógicas que almacenan en déclencheur las acciones programadas. Impulse, entierre, fije u oculte productos para calibrar los resultados de búsqueda y lograr así sus objetivos empresariales. |
 | [Comercialización de categorías](category-merch.md) | Aplicar reglas y comercialización inteligente en el nivel de categoría. |
 | [GraphQL](graphql.md) | Los desarrolladores que han iniciado sesión en el administrador de su tienda pueden componer y probar consultas con datos de catálogo reales. Para obtener más información, ve a [Información general de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) en la documentación para desarrolladores de [!DNL Live Search]. |
-| [Configuración](settings.md) | Determine cómo se agrupan los valores de faceta de precio por intervalo de precio en la tienda y establezca el idioma de indexación. |
+| [Configuración](settings.md) | Administre la búsqueda semántica (habilitada de forma predeterminada para [!DNL Adobe Commerce as a Cloud Service]), configure la agrupación de facetas de precios para la tienda y establezca el idioma de indización. |
 
 ## Definir atributos como en los que se puede buscar
 

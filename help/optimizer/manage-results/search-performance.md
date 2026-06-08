@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ En la siguiente sección se proporcionan estrategias que puede utilizar para mej
 Existen varios factores clave que determinan la relevancia y eficacia de los resultados de búsqueda:
 
 - Los datos de productos bien estructurados garantizan que los algoritmos de búsqueda puedan hacer coincidir de forma eficaz los productos con las consultas. Los datos de productos de baja calidad conducen a resultados de búsqueda menos relevantes. Para afectar directamente al éxito de su estrategia de comercialización:
+   - Configure [búsqueda semántica](../setup/semantic-search.md) para la coincidencia basada en la intención y en el lenguaje natural.
    - Configure los [atributos correctos según la búsqueda](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) con su peso correspondiente.
    - Asegúrese de que los datos de esos atributos sean relevantes.
 - Una experiencia de búsqueda bien diseñada crea confianza con los clientes e infunde confianza en que encontrarán lo que necesitan.
@@ -92,6 +93,7 @@ Para optimizar los resultados de búsqueda con [!DNL Adobe Commerce Optimizer], 
 
   Para reducir la tasa de resultados cero, puede:
 
+   - Confirmar que la [búsqueda semántica](../setup/semantic-search.md) está habilitada en la ficha **[Búsqueda avanzada](../settings.md#advanced-search)** de Configuración. La búsqueda semántica está habilitada de manera predeterminada para [!DNL Adobe Commerce Optimizer] clientes; no se requieren cambios de tienda o desarrollador. Los resultados se actualizan una vez completada la indexación.
    - Ofrezca términos de búsqueda alternativos o relacionados, como [sinónimos](../merchandising/synonyms/overview.md), cuando no se encuentren coincidencias exactas.
    - Revise con regularidad las consultas de resultados cero para identificar patrones y realizar los ajustes necesarios en el catálogo de productos y la configuración de búsqueda.
 
