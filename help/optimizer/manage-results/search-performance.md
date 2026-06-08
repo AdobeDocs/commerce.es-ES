@@ -1,23 +1,15 @@
 ---
 title: Rendimiento de búsqueda
 description: La página Rendimiento de la búsqueda proporciona a insight los términos de búsqueda que utilizan los compradores.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 TQID: https://experienceleague.adobe.com/dbCSRGA-jOSM37O-6THv0ArNZBD0Jsy4ml-1hSiY7YQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +56,7 @@ En la siguiente sección se proporcionan estrategias que puede utilizar para mej
 Existen varios factores clave que determinan la relevancia y eficacia de los resultados de búsqueda:
 
 - Los datos de productos bien estructurados garantizan que los algoritmos de búsqueda puedan hacer coincidir de forma eficaz los productos con las consultas. Los datos de productos de baja calidad conducen a resultados de búsqueda menos relevantes. Para afectar directamente al éxito de su estrategia de comercialización:
+   - Configure [búsqueda semántica](../setup/semantic-search.md) para la coincidencia basada en la intención y en el lenguaje natural.
    - Configure los [atributos correctos según la búsqueda](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) con su peso correspondiente.
    - Asegúrese de que los datos de esos atributos sean relevantes.
 - Una experiencia de búsqueda bien diseñada crea confianza con los clientes e infunde confianza en que encontrarán lo que necesitan.
@@ -92,6 +85,7 @@ Para optimizar los resultados de búsqueda con [!DNL Adobe Commerce Optimizer], 
 
   Para reducir la tasa de resultados cero, puede:
 
+   - Confirmar que la [búsqueda semántica](../setup/semantic-search.md) está habilitada en la ficha **[Búsqueda avanzada](../settings.md#advanced-search)** de Configuración. La búsqueda semántica está habilitada de manera predeterminada para [!DNL Adobe Commerce Optimizer] clientes; no se requieren cambios de tienda o desarrollador. Los resultados se actualizan una vez completada la indexación.
    - Ofrezca términos de búsqueda alternativos o relacionados, como [sinónimos](../merchandising/synonyms/overview.md), cuando no se encuentren coincidencias exactas.
    - Revise con regularidad las consultas de resultados cero para identificar patrones y realizar los ajustes necesarios en el catálogo de productos y la configuración de búsqueda.
 
