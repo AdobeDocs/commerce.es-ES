@@ -19,7 +19,7 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -69,7 +69,7 @@ Existen dos maneras diferentes de agregar usuarios administradores de productos 
 
 1. Haga clic en **+** para agregar productos.
 
-1. Seleccione la instancia de Commerce Optimizer existente a la que desee agregar al administrador. Las instancias de Commerce Optimizer utilizan el siguiente formato: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Seleccione la instancia de Commerce Optimizer existente a la que desee agregar al administrador. Las instancias de Commerce Optimizer utilizan el siguiente formato: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Seleccione el perfil de producto.
 
@@ -115,7 +115,7 @@ Las siguientes instrucciones proporcionan información sobre cómo agregar usuar
 
 1. Seleccione el producto [!UICONTROL **Adobe Commerce**].
 
-1. Seleccione el producto Commerce Cloud Manager si desea agregar el usuario a la interfaz de Cloud Manager, donde puede crear y administrar instancias de Commerce Optimizer, o bien seleccione la instancia de Commerce Optimizer existente a la que desea agregar el usuario. Las instancias de Commerce Optimizer utilizan el siguiente formato: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Seleccione el producto Commerce Cloud Manager si desea agregar el usuario a la interfaz de Cloud Manager, donde puede crear y administrar instancias de Commerce Optimizer, o bien seleccione la instancia de Commerce Optimizer existente a la que desea agregar el usuario. Las instancias de Commerce Optimizer utilizan el siguiente formato: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Seleccione la ficha [!UICONTROL **Usuarios**] y haga clic en [!UICONTROL **Agregar usuarios**].
 

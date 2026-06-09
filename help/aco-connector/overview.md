@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
+source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1167
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Commerce sigue siendo el sistema de registro para productos, precios y estructur
 
 El diagrama siguiente ilustra la arquitectura de extremo a extremo para el conector, desde Adobe Commerce a través de Commerce Optimizer y hacia fuera hasta los sistemas de tiendas y cajas.
 
-![Diagrama de arquitectura de extremo a extremo del conector Commerce Optimizer Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Diagrama de arquitectura de extremo a extremo del conector Adobe Commerce Optimizer](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 En esta arquitectura:
 
@@ -89,31 +89,18 @@ Estos flujos de trabajo describen cómo los equipos configuran y utilizan el con
 
 ### Configuración y configuración iniciales {#initial-setup}
 
-1. **Instale el paquete del conector en Adobe Commerce** mediante Composer:
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+Los pasos de alto nivel para la instalación y configuración:
 
-1. **Configure los detalles de autenticación y entorno** en el administrador de Commerce o a través de CLI:
+1. Instale el paquete del conector para Adobe Commerce.
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+1. Configure los detalles de autenticación y entorno.
 
-1. **Asignar ámbitos de Commerce a Commerce Optimizer:**
+1. Asigne ámbitos de Commerce a Commerce Optimizer.
 
-   - Confirmar qué sitios web y vistas de la tienda deben estar dentro del ámbito
-   - Asegúrese de que los grupos de clientes y las reglas de precios se modelan según lo esperado
+1. Compruebe la conectividad.
 
-1. **Verificar conectividad:**
-
-   - Ejecute una sincronización de prueba y confirme que las fuentes de catálogo, los libros de precios y los productos iniciales aparecen en Commerce Optimizer
-   - Utilice la página Estado de sincronización de fuentes de datos en Commerce y los paneles de sincronización de datos en Commerce Optimizer para la validación
+Para obtener instrucciones detalladas, consulte [Pasos de configuración](./get-started.md#configuration-steps) en la guía de _Introducción_.
 
 ### Sincronización de datos en curso {#ongoing-sync}
 
@@ -121,11 +108,16 @@ Después de la configuración inicial, el conector admite:
 
 - **Sincronización de catálogo completo** para la migración inicial o cambios estructurales grandes
 - **Delta sincroniza** para actualizaciones continuas cuando los productos o precios cambian
-- **Comandos de resincronización** para fuentes de destino (incluidas categorías desde la versión 1.0.12):
+- **Comandos de resincronización** para fuentes de destino
 
-   - `bin/magento saas:resync --feed=products`
-   - `bin/magento saas:resync --feed=prices`
-   - `bin/magento saas:resync --feed=categories`
+Las siguientes fuentes están disponibles para el conector de Adobe Commerce Optimizer:
+
+- `products` - datos de productos
+- `productAttributes`: metadatos de atributos de producto
+- `priceBooks` - libros de precios
+- `prices` - precios de productos
+- `categories` - datos de categorías
+Para obtener más información sobre el uso de la interfaz de línea de comandos (CLI) de Commerce para operaciones de resincronización, consulte el [comando de resincronización de CLI](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
 
 ### Configuración de tiendas y comercialización {#merchandising-storefronts}
 

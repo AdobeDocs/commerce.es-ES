@@ -22,7 +22,7 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 2205
 ht-degree: 0%
@@ -248,7 +248,7 @@ Cree una nueva vista de catálogo para el distribuidor *Celport* y vincule las s
 
    - **Nombre** = *Celport*
    - **Orígenes de catálogo** = *en-US*
-   - **Políticas** (usar lista desplegable) = *Marcas de East Coast Inc*; *Categorías de piezas de Celport*; *Marca*; *Modelo*
+   - **Políticas** (usar lista desplegable) = *Marcas de East Coast Inc*; *Categorías de partes de Celport*; *Marca*; *Modelo*
                          
 1. Haga clic en **[!UICONTROL Add]** para crear la vista de catálogo.
 
@@ -299,7 +299,7 @@ La parte final de este tutorial implica actualizar la tienda que [ya has creado]
             "base-currency-code": "USD",
             "environment": "Production",
             "store-id": 1,
-            "store-name": "ACO Demo",
+            "store-name": "Commerce Optimizer Demo",
             "store-url": "https://www.aemshop.net",
             "store-view-id": 1,
             "store-view-name": "Default Store View",
@@ -332,14 +332,14 @@ La parte final de este tutorial implica actualizar la tienda que [ya has creado]
 
 1. Reemplazar el valor `ac-price-book-id` por `"east_coast_inc"`.
 
-   Después de realizar estos cambios, el archivo `config.json` debería tener un aspecto similar al siguiente, con los marcadores de posición `ACO-tenant-id` y `celport-catalog-view-id` reemplazados por sus valores:
+   Después de realizar estos cambios, el archivo `config.json` debería tener un aspecto similar al siguiente, con los marcadores de posición `commerce-optimizer-tenant-id` y `celport-catalog-view-id` reemplazados por sus valores:
 
    ```json
    {
      "public": {
         "default": {
         "commerce-core-endpoint": "https://www.aemshop.net/graphql",
-        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
+        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{commerce-optimizer-tenant-id}}/graphql",
         "headers": {
             "cs": {
                 "ac-view-id": "{{celport-catalog-view-id}}",
@@ -351,7 +351,7 @@ La parte final de este tutorial implica actualizar la tienda que [ya has creado]
                 "base-currency-code": "USD",
                 "environment": "Production",
                 "store-id": 1,
-                "store-name": "ACO Demo",
+                "store-name": "Commerce Optimizer Demo",
                 "store-url": "https://www.aemshop.net",
                 "store-view-id": 1,
                 "store-view-name": "Default Store View",

@@ -3,9 +3,9 @@ title: Introducción al conector de Adobe Commerce Optimizer
 description: Obtenga información sobre cómo instalar y configurar el conector, personalizar la configuración de exportación, conectarse a Adobe Commerce Optimizer y monitorizar el estado de sincronización de datos.
 feature: Personalization, Integration, Configuration
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: f041c315da8bf20af7ecc2c869eaf578a767f66d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Introducción
 
-Instale y configure Commerce Optimizer Connector para sincronizar los datos del catálogo de Adobe Commerce con [!DNL Adobe Commerce Optimizer] y, a continuación, supervise el estado de sincronización de datos para asegurarse de que la tienda esté actualizada.
+Instale y configure Adobe Commerce Optimizer Connector para sincronizar los datos del catálogo de Adobe Commerce con [!DNL Adobe Commerce Optimizer] y, a continuación, supervise el estado de sincronización de datos para asegurarse de que la tienda esté actualizada.
 
 {{aco-integration-environment-alignment}}
 
@@ -42,7 +42,7 @@ El usuario de Adobe Commerce que configura la integración debe tener:
 
 ## Requisitos previos
 
-Si tiene instaladas cualquiera de las siguientes extensiones, desinstálelas antes de instalar el conector de Commerce Optimizer:
+Si tiene instaladas cualquiera de las siguientes extensiones, desinstálelas antes de instalar el conector de Adobe Commerce Optimizer:
 
 * Adobe Commerce Live Search (`magento/live-search`)
 * Recomendaciones de productos Adobe Commerce (`magento/product-recommendations`)
@@ -61,18 +61,16 @@ Los datos asociados con estas extensiones siguen estando disponibles en la base 
 
 Siga estos pasos para habilitar el conector y comenzar a sincronizar datos de Commerce con la instancia de Adobe Commerce Optimizer.
 
-1. **[Instale el paquete Commerce Optimizer Connector](#install-the-commerce-optimizer-connector-package)** mediante Composer para conectar su instancia de Commerce a [!DNL Adobe Commerce Optimizer].
+1. **[Instale el paquete Adobe Commerce Optimizer Connector](#install-the-adobe-commerce-optimizer-connector-package)** mediante Composer para conectar su instancia de Commerce a [!DNL Adobe Commerce Optimizer].
 
-1. **[Revise y personalice la configuración de exportación de datos](#customize-the-commerce-data-export-configuration)** del administrador.
-
-1. **[Se requieren credenciales de API para establecer la conexión entre Commerce y Commerce Optimizer](#get-required-connection-details)**.
+1. **[Personalice la configuración de exportación de datos](#customize-the-commerce-scopes-export-configuration)** del administrador.
 
 1. **[Habilitar la [!DNL Adobe Commerce Optimizer] integración](#enable-the-adobe-commerce-optimizer-integration)**.
 
 1. **[Compruebe que la sincronización de datos funciona](#verify-that-the-data-sync-is-working)**.
 
 
-## Instalación del paquete de Commerce Optimizer Connector
+## Instalación del paquete de Adobe Commerce Optimizer Connector {#install-the-adobe-commerce-optimizer-connector-package}
 
 El conector de Adobe Commerce Optimizer se entrega como un metapaquete Composer disponible para todos los comerciantes de Commerce con una licencia activa para [!DNL Adobe Commerce Optimizer].
 
@@ -96,53 +94,23 @@ Una vez finalizada la implementación, la opción Commerce Optimizer está dispo
 >
 >[Instalar la extensión en Adobe Commerce local](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/extensions)
 
-### Obtener los detalles de conexión necesarios
+## Personalizar la configuración de exportación de los ámbitos de Commerce
 
-Desde Adobe Developer Console, cree un proyecto de desarrollador habilitado para el servicio de ingesta [!DNL Adobe Commerce Optimizer] y genere credenciales de servidor a servidor OAuth. Para obtener instrucciones detalladas, consulte [Obtener credenciales de IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) en la *Guía para desarrolladores de comercialización*.
-
->[!TIP]
->
->Si ya tiene un proyecto de desarrollador configurado con la API de ingesta de datos en la misma organización de IMS que la instancia de Commerce Optimizer, puede reutilizar las credenciales de servidor a servidor de OAuth existentes.
-
-Guarde los siguientes valores desde la página de credenciales:
-
-* **ID. de organización** (`org_id`)
-* **ID de cliente** (`client_id`)
-* **Secreto de cliente** (`client_secret`)
-
-### Obtener detalles de instancia de [!DNL Adobe Commerce Optimizer]
-
-Guarde el ID de instancia (también denominado ID de inquilino) de la instancia [!DNL Adobe Commerce Optimizer]. Puede encontrarlo en la dirección URL utilizada para acceder a la instancia. Por ejemplo, en `https://experience.adobe.com/#/@<project-id>/in:TToyu73daQRn66KAYaq8YZ/commerce-optimizer-studio/home`, el identificador de instancia es `TToyu73daQRn66KAYaq8YZ`.
-
-## Personalizar la configuración de exportación de datos de Commerce
-
-De forma predeterminada, la sincronización de datos del catálogo está habilitada para todos los ámbitos de Commerce (sitios web y vistas de tiendas). Puede personalizar la configuración de exportación para sincronizar datos solo para ámbitos específicos según sus necesidades empresariales. Por ejemplo, si tiene varias vistas de tienda, pero solo desea exportar los datos de una de ellas, puede desactivar el exportador de las demás.
+De forma predeterminada, la sincronización de datos del catálogo está habilitada para todos los ámbitos de Commerce (sitios web, grupos de clientes y vistas de tiendas). Puede personalizar la configuración de exportación para sincronizar datos solo para ámbitos específicos según sus necesidades empresariales. Por ejemplo, si tiene varias vistas de tienda que comparten el mismo idioma, puede optar por exportar los datos solo para una de las vistas de tienda y utilizarlos como el [origen de catálogo](../optimizer/setup/catalog-source.md) para varias vistas de catálogo en [!DNL Adobe Commerce Optimizer].
 
 >[!IMPORTANT]
 >
->El cambio de la configuración de exportación déclencheur una reindexación completa, que puede tardar un tiempo considerable en función del tamaño del catálogo. Planifique estos cambios durante los períodos de poco tráfico para minimizar el impacto en el rendimiento.
+>El cambio de la configuración de exportación déclencheur una reindexación completa, que puede tardar un tiempo considerable en función del tamaño del catálogo. Adobe recomienda configurar los ámbitos de Commerce para sincronizar con Commerce Optimizer antes de habilitar la integración e iniciar la sincronización de datos inicial.
 
-### Exportación de datos por ámbito
 
 En la tabla siguiente se describen los datos que se exportan en cada nivel de ámbito:
 
 | Ámbito | Datos exportados | Notas |
-| ------- | --------------- | ------- |
-| Sitio web | Precios y libros de precios | Cada conjunto de precios se exporta como un [libro de precios](../optimizer/setup/pricebooks.md) utilizando la convención de nomenclatura `website::customergroupcode`. Se incluyen todos los grupos de clientes del sitio web. |
-| Vista de tienda | Productos y atributos del producto | Cada vista de tienda crea un origen de catálogo independiente en [!DNL Adobe Commerce Optimizer]. |
+|----------------------------| --------------- |-------|
+| Sitio web y grupo de clientes | Precios y libros de precios | Cada conjunto de precios se exporta como un [libro de precios](../optimizer/setup/pricebooks.md) utilizando la convención de nomenclatura `<website>::<SHA1 of customer group ID>`. Se incluyen todos los grupos de clientes del sitio web. |
+| Vista de tienda | Productos y atributos del producto | Cada vista de tienda crea un [origen de catálogo](../optimizer/setup/catalog-source.md) independiente en [!DNL Adobe Commerce Optimizer]. |
 
-### Habilitar y deshabilitar el comportamiento
-
-| Acción | Resultado |
-| -------- | -------- |
-| Deshabilitar una vista de tienda | El origen del catálogo permanece en [!DNL Adobe Commerce Optimizer], pero se han eliminado todos los datos. |
-| Deshabilitar y volver a habilitar una vista de tienda | El mismo origen de catálogo se vuelve a rellenar con una resincronización de datos completa. |
-
-### Actualizar la configuración de exportación
-
-Después de instalar el paquete Connector, la cuadrícula Store en Admin ahora muestra los ajustes de configuración de exportación para Commerce Optimizer.
-
-![Almacenar cuadrícula con configuración de sincronización de Commerce Optimizer](./assets/aco-connector-sync-config.png){width="600" zoomable="yes"}
+![Almacenar cuadrícula con configuración de sincronización de Commerce Optimizer](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 
 **Para cambiar la configuración de un sitio web o vista de una tienda:**
 
@@ -152,17 +120,38 @@ Después de instalar el paquete Connector, la cuadrícula Store en Admin ahora m
 
 1. En la configuración del exportador **[!DNL Adobe Commerce Optimizer]**, utilice la casilla de verificación para habilitar o deshabilitar la sincronización de datos según sea necesario.
 
-   ![Actualizar configuración de sincronización de datos](./assets/aco-connector-store-website-export-settings.png){width="500" zoomable="yes"}
+   ![Actualizar configuración de sincronización de datos](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
 
 1. Guarde los cambios.
+
+### Habilitar y deshabilitar el comportamiento
+
+| Acción | Resultado |
+| -------- | -------- |
+| Deshabilitar una vista de tienda | El origen del catálogo permanece en [!DNL Adobe Commerce Optimizer], pero se han eliminado todos los datos. |
+| Deshabilitar y volver a habilitar una vista de tienda | El mismo origen de catálogo se vuelve a rellenar con una resincronización de datos completa. |
 
 ## Habilitar la integración [!DNL Adobe Commerce Optimizer]
 
 >[!IMPORTANT]
 >
->El procesamiento de la sincronización de datos se inicia en cuanto se ejecuta el comando de configuración. De forma predeterminada, la sincronización de datos del catálogo está habilitada para todos los ámbitos de Commerce (sitios web y vistas de tiendas). Según el tamaño del catálogo, el proceso de sincronización de datos puede tardar entre unos minutos y varias horas.
+>El procesamiento de la sincronización de datos se iniciará en segundo plano en cuanto complete la configuración. Según el tamaño del catálogo, el proceso de sincronización de datos puede tardar entre unos minutos y varias horas.
 
-Con las credenciales de servidor a servidor de OAuth y los detalles de instancia que [recopiló en los pasos anteriores](#get-required-connection-details), ahora puede configurar la integración entre las instancias de Commerce y [!DNL Adobe Commerce Optimizer].
+### Obtener los detalles de conexión necesarios
+
+Desde [Adobe Developer Console](https://developer.adobe.com/console), cree un nuevo proyecto habilitado para el servicio de ingesta [!DNL Adobe Commerce Optimizer] y genere las credenciales de servidor a servidor de OAuth. Para obtener instrucciones detalladas, consulte [Obtener credenciales de IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) en la *Guía para desarrolladores de comercialización*.
+
+Guarde los siguientes valores desde la página de credenciales:
+
+* **ID. de organización** (`org_id`)
+* **ID de cliente** (`client_id`)
+* **Secreto de cliente** (`client_secret`)
+
+![Obtener detalles de credenciales](assets/developer-console-project-credentials.png){width="500" zoomable="yes"}
+
+### Obtener detalles de instancia de [!DNL Adobe Commerce Optimizer]
+
+Obtenga el _id. de inquilino_ del campo _[!DNL Instance Id]_&#x200B;en la instancia [!DNL Adobe Commerce Optimizer] [[!DNL Instance details] página](../optimizer/get-started.md#manage-instances), o de la URL utilizada para acceder a la instancia. Por ejemplo, en `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
 
 1. En el Administrador de Commerce, seleccione **[!UICONTROL Adobe Commerce Optimizer]** para mostrar la página de configuración con instrucciones.
 
@@ -182,7 +171,6 @@ bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_i
 
 ## Compruebe que la sincronización de datos funciona
 
-Después de habilitar la integración, la sincronización de datos se inicia automáticamente. Según el tamaño del catálogo, la sincronización inicial puede tardar entre unos minutos y varias horas.
 Puede monitorizar y verificar que la sincronización funcione desde la página [Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) disponible en el administrador.
 
 1. **Comprobar el estado de sincronización en el administrador de Commerce:**
@@ -209,7 +197,7 @@ Puede monitorizar y verificar que la sincronización funcione desde la página [
 
 1. **Configurar [!DNL Adobe Commerce Optimizer] vistas de catálogo y directivas**
 
-   Crear vistas de catálogo y directivas en la interfaz de usuario de [!DNL Adobe Commerce Optimizer]. Tenga en cuenta que los libros de precios se crean automáticamente a partir de los grupos de clientes de Adobe Commerce. Para obtener instrucciones, consulte la documentación de [vistas de catálogo](../optimizer/setup/catalog-view.md) y [Directivas](../optimizer/setup/catalog-view.md) en la *Guía del usuario de Commerce Optimizer*.
+   Crear vistas de catálogo y directivas en la interfaz de usuario de [!DNL Adobe Commerce Optimizer]. Tenga en cuenta que los libros de precios se crean automáticamente a partir de los grupos de clientes de Adobe Commerce. Para obtener instrucciones, consulte la documentación de [vistas de catálogo](../optimizer/setup/catalog-view.md) y [Directivas](../optimizer/setup/policies.md) en la *Guía del usuario de Commerce Optimizer*.
 
 1. **Configurar una tienda Commerce en Edge Delivery Services**
 

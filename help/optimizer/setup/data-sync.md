@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Si no ve productos específicos en la página **Sincronización de datos**, debe
 
 ## Monitorización del estado de sincronización de datos
 
-En el caso de los proyectos que usan Adobe Commerce como fuente de datos de flujo ascendente a través de Commerce Optimizer Connector, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la [página Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) del administrador de Commerce.
+En el caso de los proyectos que usan Adobe Commerce como fuente de datos de flujo ascendente a través de Adobe Commerce Optimizer Connector, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la [página Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) del administrador de Commerce.
 
 ## Temas relacionados
 
