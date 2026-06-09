@@ -1,14 +1,14 @@
 ---
-source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 # Fragmentos de Commerce
 
 
-## Alineación del entorno de integración de ACO {#aco-integration-environment-alignment}
+## Alineación del entorno de integración de Adobe Commerce Optimizer {#aco-integration-environment-alignment}
 
 >[!IMPORTANT]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Para las soluciones de Commerce que usan Adobe Commerce Optimizer o el conector de Adobe Commerce Optimizer, usa la [API de GraphQL de servicios de comercialización](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) en lugar de la API de GraphQL del servicio de catálogo.
+>Para las soluciones de Commerce que usan Adobe Commerce Optimizer o Adobe Commerce Optimizer Connector, use la [API de GraphQL de servicios de comercialización](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) en lugar de la API de GraphQL de servicios de catálogo.
 
 ## Comprobación de sincronización de datos para Optimizer {#aco-data-sync-verification}
 
@@ -27,11 +27,11 @@ ht-degree: 0%
 >
 >Si ha instalado el [Conector de Adobe Commerce Optimizer](../aco-connector/overview.md) para exportar los datos del catálogo a Adobe Commerce Optimizer, use la [página Estado de sincronización de fuentes de datos](../optimizer/setup/data-sync.md) en Commerce Optimizer Studio para comprobar que los datos se hayan sincronizado correctamente con Adobe Commerce Optimizer en lugar del panel de administración de datos.
 
-## Nota desplegable de ACO para actualizaciones de la API {#aco-api-updates-and-dropins}
+## Nota desplegable de Adobe Commerce Optimizer para actualizaciones de la API {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >
->[Los componentes integrados](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es) de [!DNL Commerce Storefront on Edge Delivery Services] recopilan automáticamente los cambios más recientes de GraphQL (nuevos campos, límites y comportamiento de las consultas).
+>[Los componentes integrados](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) de [!DNL Commerce Storefront on Edge Delivery Services] recopilan automáticamente los cambios más recientes de GraphQL (nuevos campos, límites y comportamiento de las consultas).
 
 ## Acceso anticipado a ACCS {#accs-early-access}
 
@@ -47,10 +47,10 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=es"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 La administración y autenticación de la identidad de Adobe Commerce la administra el sistema Identity Management de Adobe (IMS) a través de Adobe Admin Console.
 
-Para obtener información sobre las opciones de configuración de identidad, como Adobe ID, Enterprise ID y Federated ID, así como las instrucciones para configurar el inicio de sesión único (SSO) para el acceso seguro a las aplicaciones de Adobe, consulte [Configurar la identidad y el inicio de sesión único](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html) en la documentación de *Enterprise Admin Console*.
+Para obtener información sobre las opciones de configuración de identidad, como Adobe ID, Enterprise ID y Federated ID, así como las instrucciones para configurar el inicio de sesión único (SSO) para el acceso seguro a las aplicaciones de Adobe, consulte [Configurar la identidad y el inicio de sesión único](https://helpx.adobe.com/enterprise/using/set-up-identity.html) en la documentación de *Enterprise Admin Console*.
 
 ## Notas de la versión de servicios ACCS y extensibilidad {#accs-release}
 
@@ -87,7 +87,7 @@ Para obtener información sobre las opciones de configuración de identidad, com
 
 | Servicios | Extensibilidad | Tienda |
 | --- | --- | --- |
-| <ul><li>[Servicio de catálogo](../catalog-service/release-notes.md)</li><li>[Búsqueda en directo](../live-search/release-notes.md)</li><li>[Servicios de pago](../payment-services/release-notes.md)</li><li>[Recomendaciones de productos](../product-recommendations/release-notes.md)</li><li>[Exportación De Datos SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[IU de administración para SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Malla de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Eventos](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Información de la versión](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=es)</li><li>[Registro de cambios](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=es)</li></ul> |
+| <ul><li>[Servicio de catálogo](../catalog-service/release-notes.md)</li><li>[Búsqueda en directo](../live-search/release-notes.md)</li><li>[Servicios de pago](../payment-services/release-notes.md)</li><li>[Recomendaciones de productos](../product-recommendations/release-notes.md)</li><li>[Exportación De Datos SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[IU de administración para SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Malla de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Eventos](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Información de la versión](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Registro de cambios](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
 
 ## Notas de la versión de Adobe Commerce Optimizer Services {#aco-release}
 
@@ -97,4 +97,4 @@ Para obtener información sobre las opciones de configuración de identidad, com
 
 | Servicios | Tienda |
 | --- | --- |
-| [Integración de AEM Assets](../aem-assets-integration/release-notes.md)<br>[Conector de Commerce Optimizer](../aco-connector/release-notes.md) | [Información de versión de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=es)<br>[Registro de cambios de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=es) |
+| [Integración de AEM Assets](../aem-assets-integration/release-notes.md)<br>[Conector de Commerce Optimizer](../aco-connector/release-notes.md) | [Información de versión de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Registro de cambios de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |

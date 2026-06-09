@@ -3,10 +3,10 @@ title: Imágenes del producto con AEM Assets
 description: Aprenda a utilizar AEM Assets para imágenes de productos en  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ La integración tiene dos flujos principales:
 
 * **De AEM Assets**: cuando se aprueba, rechaza o elimina un recurso, el evento fluye a través de la canalización de Adobe al servicio de integración de Assets. El servicio hace coincidir recursos con productos mediante una estrategia de coincidencia de `match-by-SKU` o personalizada y, a continuación, envía las asignaciones de `product-asset` a [!DNL Commerce Optimizer], donde se almacenan como capas de producto.
 
-* **Desde ACO**: Cuando se actualiza un producto en [!DNL Commerce Optimizer], el evento fluye a través de la canalización de Adobe hasta el servicio de integración de Assets. El servicio sincroniza cualquier asignación de recursos coincidente con ACO.
+* **Desde[!DNL Commerce Optimizer]**: cuando se actualiza un producto en [!DNL Commerce Optimizer], el evento fluye a través de la canalización de Adobe hasta el servicio de integración de Assets. El servicio sincroniza todas las asignaciones de recursos coincidentes con [!DNL Commerce Optimizer].
 
 Las imágenes actualizadas están disponibles a través de las API de tienda (servicio de catálogo, Live Search, recomendaciones de productos).
 
@@ -56,7 +56,7 @@ Antes de habilitar los elementos visuales del producto, asegúrese de cumplir lo
 
 ## Configurar
 
-Para habilitar la integración, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con los detalles de [!DNL Commerce Optimizer] y los AEM Assets. El Soporte de Adobe configura la integración y registra su inquilino con el Servicio de integración de Assets.
+Para habilitar la integración, [cree un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con los detalles de [!DNL Commerce Optimizer] y los AEM Assets. El Soporte de Adobe configura la integración y registra su inquilino con el Servicio de integración de Assets.
 
 Consulte [Configuración de AEM Assets para Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) para obtener información sobre la incorporación.
 
