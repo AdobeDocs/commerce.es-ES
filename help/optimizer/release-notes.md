@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 * Actualizaciones a la [API de REST de ingesta de datos](https://developer.adobe.com/commerce/services/reference/rest/) y a la [API de GraphQL para la recuperación de datos del catálogo de tiendas](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Junio de 2026
+
+>[!BEGINSHADEBOX]
+
+### Búsqueda semántica
+
+[!DNL Adobe Commerce Optimizer] ahora admite **[búsqueda semántica]** en la ficha [**Búsqueda avanzada**](./settings.md#advanced-search) de **[!UICONTROL Settings]**. La búsqueda semántica utiliza IA para hacer coincidir productos por significado y contexto junto con la búsqueda de palabras clave, lo que reduce las páginas de búsqueda vacías para consultas en lenguaje natural. Está activada de forma predeterminada para los catálogos en inglés aptos. Opcionalmente, puede ajustar **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** y **[!UICONTROL Fuzzy search]** en la misma ficha. No es necesario configurar atributos ni realizar cambios en la tienda. [Más información](./setup/semantic-search.md).
+
+### Filtros de precios de recomendación (beta)
+
+Las unidades de recomendación de productos ahora admiten [**filtros de precio**](./merchandising/recommendations/filters.md#price) en el paso **[!UICONTROL Filter products]**. Incluya o excluya candidatos que usen los rangos mínimo y máximo de **static** o las reglas de **dynamic** en la página de detalles del producto que comparen productos recomendados con el **precio calculado final** del producto que se está viendo actualmente en el libro de precios activo de la tienda. Las reglas de precios filtran el conjunto de candidatos. No vuelven a clasificar los productos. [Más información](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Mayo de 2026
 
