@@ -4,23 +4,13 @@ description: Descubra cómo  [!DNL SaaS Data Export] recopila y sincroniza datos
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
 TQID: https://experienceleague.adobe.com/wM71qxvduDr77EW6Y8mSNfBXlqkloC-PGOOBOl-mZQM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -41,6 +31,10 @@ Los componentes principales del flujo de exportación de datos de SaaS incluyen:
 - Módulos de exportación de datos SaaS que recopilan los datos de las fuentes de Adobe Commerce, ensamblan elementos de fuentes, escuchan actualizaciones y conservan el estado de la fuente.
 - Los módulos de exportación SaaS exportan datos, configuran el enrutamiento y publican las fuentes en servicios conectados.
 - El servicio Adobe Commerce administra el proceso de ingesta de datos para validar las fuentes entrantes y mantener las actualizaciones de los servicios conectados.
+
+>[!NOTE]
+>
+>Para implementaciones de [!DNL Adobe Commerce Optimizer Connector], [!DNL SaaS Data Export] administra la detección de cambios de entidad y el ensamblado de fuentes. A continuación, el conector asigna fuentes al formato [!DNL Catalog Data Ingestion API] y las envía a [!DNL Adobe Commerce Optimizer]. Consulte [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md) para el control de ámbito, el envío y la administración de errores.
 
 >[!NOTE]
 >
@@ -79,9 +73,11 @@ El proceso de exportación de datos utiliza los siguientes trabajos cron para au
 
 Estos trabajos se ejecutan cada minuto.
 
+Se ejecutaron los mismos trabajos cron de sincronización parcial para [!DNL Adobe Commerce Optimizer Connector] fuentes. Para el envío y la administración de errores específicos del conector, consulte [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md).
+
 Para que funcione la sincronización parcial, la aplicación de Commerce requiere la siguiente configuración:
 
-- [La programación de tareas se habilita mediante trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=es)
+- [La programación de tareas se habilita mediante trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
 - Todos los indexadores de exportación de datos SaaS están configurados en el modo `Update by Schedule`.
 
@@ -98,25 +94,25 @@ La sincronización de elementos con errores de reintento utiliza un proceso inde
 
 La mayoría de las actividades de sincronización se procesan automáticamente según la configuración de la aplicación. Sin embargo, la exportación de datos de SaaS también proporciona herramientas para monitorizar y administrar el proceso.
 
-- [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."} **[Panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: los usuarios administradores pueden ver y rastrear los datos sincronizados con los servicios de Commerce y disponibles para los servicios de tienda. Este panel muestra el producto sincronizado con los servicios de Commerce.
+- [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."} **[Panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: los usuarios administradores pueden ver y rastrear los datos sincronizados con los servicios de Commerce y disponibles para los servicios de tienda. Este panel muestra el producto sincronizado con los servicios de Commerce.
 
   {{aco-data-sync-verification}}
 
-- [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica a los proyectos de Adobe Commerce integrados con Adobe Commerce Optimizer (infraestructura SaaS administrada por Adobe)."} **[Página de estado de sincronización de fuentes de sincronización de datos](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/data-sync)**: en el caso de proyectos de Commerce que usen [!DNL Adobe Commerce Optimizer], comprueba la disponibilidad de los datos del catálogo para tu tienda desde la página de estado de sincronización de fuentes de datos en Adobe Commerce Optimizer. Este panel muestra el estado de sincronización de las fuentes de exportación de datos.
+- [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica a los proyectos de Adobe Commerce integrados con Adobe Commerce Optimizer (infraestructura SaaS administrada por Adobe)."} **[Página de estado de sincronización de fuentes de sincronización de datos](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**: en el caso de proyectos de Commerce que usen [!DNL Adobe Commerce Optimizer], comprueba la disponibilidad de los datos del catálogo para tu tienda desde la página de estado de sincronización de fuentes de datos en Adobe Commerce Optimizer. Este panel muestra el estado de sincronización de las fuentes de exportación de datos.
 
 >[!NOTE]
 >
->El panel de administración de datos solo está disponible si tiene instalado Live Search, Product Recommendations o el servicio de catálogo. El panel Estado de sincronización de fuentes de datos está disponible si tiene estos servicios o el [conector de Adobe Commerce Optimizer](../aco-connector/overview.md) instalado.
+>El panel de administración de datos solo está disponible si tiene instalado Live Search, Product Recommendations o el servicio de catálogo. El panel Estado de sincronización de fuentes de datos está disponible si tiene estos servicios o el [conector de Adobe Commerce Optimizer](../aco-connector/overview.md) instalado. Para conocer el comportamiento de la canalización del conector del Optimizador, incluidos los errores de control de ámbito y envío, consulte [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md).
 
 ### Verifique la configuración de la aplicación Commerce
 
 La sincronización parcial y la sincronización de elementos con error de reintento solo funcionan si la instancia de Commerce se ha configurado correctamente. Normalmente, la configuración se completa al configurar el servicio de Commerce. Si la exportación de datos no funciona correctamente, compruebe la siguiente configuración.
 
-- [Confirme que los trabajos cron se están ejecutando](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Confirme que los trabajos cron se están ejecutando](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 
-- Compruebe que los indexadores se estén ejecutando desde [Admin](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management) o mediante el comando `bin/magento indexer:info` de la CLI de Commerce.
+- Compruebe que los indexadores se estén ejecutando desde [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) o mediante el comando `bin/magento indexer:info` de la CLI de Commerce.
 
-- Compruebe que los indizadores de las siguientes fuentes estén establecidos en `Update by Schedule`: Atributos de catálogo, Producto, Anulaciones de producto y Variante de producto. Puede comprobar los indizadores desde [Administración de índices](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management) en el administrador o usando la CLI (`bin/magento indexer:show-mode | grep -i feed`).
+- Compruebe que los indizadores de las siguientes fuentes estén establecidos en `Update by Schedule`: Atributos de catálogo, Producto, Anulaciones de producto y Variante de producto. Puede comprobar los indizadores desde [Administración de índices](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) en el administrador o usando la CLI (`bin/magento indexer:show-mode | grep -i feed`).
 
 ### Notificaciones del administrador de eventos para el registro de transferencia de datos
 
