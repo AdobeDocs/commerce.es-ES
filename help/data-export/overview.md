@@ -15,20 +15,20 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: 571
 ht-degree: 0%
 
 ---
 
 # Guía de [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] sincroniza datos entre una instancia de Adobe Commerce y los servicios de Commerce conectados. Al agregar Live Search, Product Recommendations o el servicio de catálogo a una instalación de Adobe Commerce, la extensión [!DNL Data export] se instala automáticamente.
+[!DNL SaaS data export] sincroniza datos entre una instancia de Adobe Commerce y los servicios de Commerce conectados. Al agregar Live Search, Product Recommendations, el servicio de catálogo o [!DNL Adobe Commerce Optimizer Connector] a una instalación de Adobe Commerce, la extensión [!DNL Data export] se instala automáticamente.
 
 >[!NOTE]
 >
->Si instala el conector de Adobe Commerce Optimizer, se utiliza la misma extensión de exportación de datos para enviar fuentes de catálogo y de precios a Adobe Commerce Optimizer mediante el modelo de datos de catálogo maquetable (CCDM). Consulte la [guía del conector de Adobe Commerce Optimizer](../aco-connector/overview.md) para obtener detalles de arquitectura y configuración.
+>Si instala [!DNL Adobe Commerce Optimizer Connector], la misma extensión [!DNL Data Export] recopila las fuentes de catálogo y de precios de [!DNL Adobe Commerce]. A continuación, el conector asigna y envía esas fuentes a [!DNL Adobe Commerce Optimizer] mediante el Modelo de datos de catálogo maquetable (CCDM). Consulte [[!DNL Adobe Commerce Optimizer Connector] descripción general](../aco-connector/overview.md) para la configuración y arquitectura, y [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md) para ver el comportamiento de sincronización después de la exportación.
 
 La exportación de datos SaaS recopila y exporta varios tipos de datos, denominados _fuentes_, que agregan tipos de información específicos. Según los servicios de Commerce que estén instalados, las fuentes de exportación de datos SaaS incluyen:
 

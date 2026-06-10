@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ Los componentes principales del flujo de exportación de datos de SaaS incluyen:
 - Módulos de exportación de datos SaaS que recopilan los datos de las fuentes de Adobe Commerce, ensamblan elementos de fuentes, escuchan actualizaciones y conservan el estado de la fuente.
 - Los módulos de exportación SaaS exportan datos, configuran el enrutamiento y publican las fuentes en servicios conectados.
 - El servicio Adobe Commerce administra el proceso de ingesta de datos para validar las fuentes entrantes y mantener las actualizaciones de los servicios conectados.
+
+>[!NOTE]
+>
+>Para implementaciones de [!DNL Adobe Commerce Optimizer Connector], [!DNL SaaS Data Export] administra la detección de cambios de entidad y el ensamblado de fuentes. A continuación, el conector asigna fuentes al formato [!DNL Catalog Data Ingestion API] y las envía a [!DNL Adobe Commerce Optimizer]. Consulte [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md) para el control de ámbito, el envío y la administración de errores.
 
 >[!NOTE]
 >
@@ -79,6 +83,8 @@ El proceso de exportación de datos utiliza los siguientes trabajos cron para au
 
 Estos trabajos se ejecutan cada minuto.
 
+Se ejecutaron los mismos trabajos cron de sincronización parcial para [!DNL Adobe Commerce Optimizer Connector] fuentes. Para el envío y la administración de errores específicos del conector, consulte [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md).
+
 Para que funcione la sincronización parcial, la aplicación de Commerce requiere la siguiente configuración:
 
 - [La programación de tareas se habilita mediante trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=es)
@@ -106,7 +112,7 @@ La mayoría de las actividades de sincronización se procesan automáticamente s
 
 >[!NOTE]
 >
->El panel de administración de datos solo está disponible si tiene instalado Live Search, Product Recommendations o el servicio de catálogo. El panel Estado de sincronización de fuentes de datos está disponible si tiene estos servicios o el [conector de Adobe Commerce Optimizer](../aco-connector/overview.md) instalado.
+>El panel de administración de datos solo está disponible si tiene instalado Live Search, Product Recommendations o el servicio de catálogo. El panel Estado de sincronización de fuentes de datos está disponible si tiene estos servicios o el [conector de Adobe Commerce Optimizer](../aco-connector/overview.md) instalado. Para conocer el comportamiento de la canalización del conector del Optimizador, incluidos los errores de control de ámbito y envío, consulte [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md).
 
 ### Verifique la configuración de la aplicación Commerce
 

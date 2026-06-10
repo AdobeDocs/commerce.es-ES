@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 # Sincronizar fuentes mediante la CLI de Commerce
 
 El comando `saas:resync` del paquete `magento/saas-export` le permite administrar la sincronización de datos para los servicios SaaS de Adobe Commerce.
+
+>[!NOTE]
+>
+>El comando `saas:resync` también se aplica a [!DNL Adobe Commerce Optimizer Connector] fuentes como `products`, `categories` y `priceBooks`. Consulte [Fuentes compatibles](../aco-connector/reference/connector-reference.md#supported-feeds) para obtener la lista completa de fuentes de conector y nombres de indizador.
 
 Adobe no recomienda usar el comando `saas:resync` con regularidad. Los escenarios habituales para utilizar el comando son:
 
