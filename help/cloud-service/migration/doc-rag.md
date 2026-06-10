@@ -1,25 +1,15 @@
 ---
 title: Servicio RAG de documentación
 description: Aprenda a utilizar el servicio de búsqueda de documentación con tecnología de IA para el desarrollo de Adobe Commerce.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 hide: true
-TQID: https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/Sh2qzDm-gTh-ugtuHxLq8maftPM4vVyeFNf0RI31rPY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1027
 ht-degree: 0%
@@ -44,9 +34,9 @@ En la tabla siguiente se describe qué documentación está indexada actualmente
 
 | Categoría | Índice | Contenido incluido | Palabras clave |
 |-------|---------|---------|------------------------|
-| [Tienda](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) | commerce-storefront-docs | Edge Delivery Services, complementos, componentes de tienda | tienda, lista desplegable, EDS, lista de productos, cierre de compra |
+| [Tienda](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, complementos, componentes de tienda | tienda, lista desplegable, EDS, lista de productos, cierre de compra |
 | [Extensibilidad](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, eventos, extensiones, integraciones | webhook, evento, extensión, API mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, producto, cliente, pedido, inventario |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, producto, cliente, pedido, inventario |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, acciones en tiempo de ejecución, extensiones de IU | creador de aplicaciones, acción de tiempo de ejecución, React Spectrum |
 
 Para obtener más información sobre la selección de índices, consulte [Selección automática de índices](#automatic-index-selection-recommended) y [Selección explícita de índices](#explicit-index-selection).
@@ -141,7 +131,7 @@ Antes de instalar, asegúrese de que dispone de lo siguiente:
 
 ## Uso
 
-Una vez instalado, puede llamar a los índices [automáticamente](#automatic-index-selection-recommended) o [explícitamente](#explicit-index-selection). También puede usar el comando [`/search-commerce-docs` &#x200B;](#command-based-search).
+Una vez instalado, puede llamar a los índices [automáticamente](#automatic-index-selection-recommended) o [explícitamente](#explicit-index-selection). También puede usar el comando [`/search-commerce-docs` ](#command-based-search).
 
 >[!NOTE]
 >

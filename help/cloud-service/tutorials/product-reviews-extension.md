@@ -8,9 +8,13 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/vsy2xSV-3oVjPNc0JUzsunl3ooiWjWrWo1poXHB1TgY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: 2533
 ht-degree: 0%
 
 ---
@@ -52,8 +56,8 @@ Si alguno de los comandos anteriores no devuelve los resultados esperados, vea l
 
 Además, compruebe lo siguiente:
 
-- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview){target="_blank"}.
-- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}.
+- Tiene una instancia de [!DNL Adobe Commerce as a Cloud Service] con datos del producto. Ver [instancias del servicio Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Tiene un proyecto de tienda conectado a la instancia [!DNL Commerce]. Si no tienes una, sigue los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - La CLI `aem` está instalada:
 
   ```bash
@@ -235,7 +239,7 @@ Cree un archivo de datos ficticios y utilice curl para rellenar previamente la A
      -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it comes in blue and red.","user":"seller@example.com"}'
    ```
 
-1. Compruebe los datos con solicitudes de GET:
+1. Compruebe los datos con solicitudes GET:
 
    ```bash
    curl -s "$API_URL/reviews-get?sku=ADB153"
@@ -437,7 +441,7 @@ Utilice las siguientes sugerencias si encuentra problemas durante el tutorial.
 
 | Síntoma | Causa | Fix |
 |---------|-------|-----|
-| GET o POST devuelven 500 &quot;No se encuentra el módulo&quot; | Las acciones de revisiones de productos utilizan `require("../../utils")` o `require("../../constants")`, que escapan del paquete de paquetes. Estos archivos no se incluyen cuando se implementa el paquete. | Haga que el paquete de revisiones de productos sea independiente. Agregue `actions/product-reviews/lib/constants.js` y `actions/product-reviews/lib/utils.js`, y actualice las cuatro acciones para requerir de `../lib/...` en lugar de `../../`. |
+| GET o POST devuelve 500 &quot;No se encuentra el módulo&quot; | Las acciones de revisiones de productos utilizan `require("../../utils")` o `require("../../constants")`, que escapan del paquete de paquetes. Estos archivos no se incluyen cuando se implementa el paquete. | Haga que el paquete de revisiones de productos sea independiente. Agregue `actions/product-reviews/lib/constants.js` y `actions/product-reviews/lib/utils.js`, y actualice las cuatro acciones para requerir de `../lib/...` en lugar de `../../`. |
 | GET devuelve 500 con &quot;la clave debe coincidir con el patrón&quot; | Las claves de estado utilizan dos puntos (por ejemplo, `reviews:ADB153`). `aio-lib-state` solo permite `[a-zA-Z0-9-_.]`. | Cambie los prefijos de `reviews:` y `qa:` a `reviews.` y `qa.`. Agregue un asistente de `stateKey(prefix, sku)` que limpie el SKU (reemplace los caracteres no válidos por `_`). |
 | POST devuelve 500 con &quot;el valor debe ser una cadena&quot; | `aio-lib-state` solo acepta valores de cadena. El código pasa matrices u objetos a `state.put()`. | Serialice con `JSON.stringify()` al escribir y `JSON.parse()` al leer. Actualice las cuatro acciones. |
 

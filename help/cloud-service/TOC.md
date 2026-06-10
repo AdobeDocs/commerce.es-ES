@@ -4,9 +4,9 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Esta guía proporciona instrucciones detalladas para usar  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 80c6dce4dfe95623fd22434e5bec765d1b95aba7
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '188'
 ht-degree: 4%
 
 ---
@@ -32,9 +32,10 @@ ht-degree: 4%
    - [Información general](migration/overview.md)
    - Herramientas de migración {#migration-tools}
       - [Herramienta de migración masiva de datos](migration/bulk-data.md)
+      - [Evaluación de migración](migration/assessment.md)
       - [Herramientas de codificación](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - {hide-from-toc}[Servicio RAG de documentación](migration/doc-rag.md)
-- [Iniciar sesión como cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Iniciar sesión como cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Puntos finales REST de cuenta de tarjeta regalo](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Activación de correo electrónico mediante REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutoriales {#tutorials}
@@ -48,6 +49,6 @@ ht-degree: 4%
    - [Esquema de GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Esquema de API de REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Agente de desarrollador](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Tutoriales en vídeo](https://experienceleague.adobe.com/es/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriales en vídeo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notas de la versión](release-notes.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
