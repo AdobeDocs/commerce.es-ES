@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: Obtenga información acerca de la integración de  [!DNL Adobe Commerce Optimizer Connector] entre [!DNL Adobe Commerce] y [!DNL Adobe Commerce Optimizer] para la sincronización de catálogos, la búsqueda y la entrega de tiendas.
 feature: Integration, Storefront, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
@@ -118,7 +118,7 @@ Para obtener más información, consulte los temas siguientes:
 
 ### Configuración de tiendas y comercialización {#merchandising-storefronts}
 
-Una vez que los datos de [!DNL Adobe Commerce] estén disponibles en [!DNL Adobe Commerce Optimizer], usa [[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour) para conectar las experiencias de comercialización y tienda a tu catálogo sincronizado.
+Una vez que los datos de [!DNL Adobe Commerce] estén disponibles en [!DNL Adobe Commerce Optimizer], usa [[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/es/docs/commerce/optimizer/overview#quick-tour) para conectar las experiencias de comercialización y tienda a tu catálogo sincronizado.
 
 **Para configurar la comercialización y las tiendas en [!DNL Commerce Optimizer] Studio:**
 

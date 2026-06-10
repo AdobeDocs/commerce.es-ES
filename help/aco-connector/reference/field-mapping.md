@@ -3,7 +3,7 @@ title: Asignación de campos para  [!DNL Adobe Commerce Optimizer Connector] fue
 description: Obtenga información acerca de la asignación de campos  [!DNL Adobe Commerce Optimizer Connector] de [!DNL Adobe Commerce] datos de catálogo a [!DNL Adobe Commerce Optimizer] formatos de API de ingesta para todas las fuentes.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
