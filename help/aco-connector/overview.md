@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector]'
-description: Obtenga información acerca de la integración de  [!DNL Adobe Commerce Optimizer Connector] entre [!DNL Adobe Commerce] y [!DNL Adobe Commerce Optimizer] para la sincronización de catálogos, la búsqueda y la entrega de tiendas.
+description: Obtenga información acerca de [!DNL Adobe Commerce Optimizer Connector] para la sincronización de catálogos, la búsqueda y la entrega de tiendas entre [!DNL Adobe Commerce] y [!DNL Adobe Commerce Optimizer].
 feature: Integration, Storefront, Configuration
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T19:00:00.000Z'
@@ -24,14 +24,14 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 23e4f419628a7838357752ecef0c242f1dcdd4c4
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 990
 ht-degree: 0%
 
 ---
 
-# Conector de Adobe Commerce Optimizer
+# [!DNL Adobe Commerce Optimizer Connector]
 
 [!DNL Adobe Commerce Optimizer Connector] es una integración de origen nativa entre [!DNL Adobe Commerce] (en la nube o local) y [!DNL Adobe Commerce Optimizer]. Sincroniza los datos de catálogo y de precios de sus tiendas [!DNL Adobe Commerce] en [!DNL Adobe Commerce Optimizer] para que pueda:
 
@@ -62,19 +62,19 @@ En esta arquitectura:
 - [!DNL Adobe Commerce] (en la nube o de forma local) es el sistema de producción de registros y fuentes
 - El conector exporta fuentes de catálogo, precio y categoría
 - [!DNL Adobe Commerce Optimizer] ingiere y normaliza los datos de fuente en orígenes de catálogo, libros de precios y vistas de catálogo
-- Las tiendas (tienda de Commerce en [!DNL Edge Delivery Services] o compilaciones personalizadas sin encabezado) llaman a las API de GraphQL [!DNL Commerce Optimizer] para el descubrimiento y las recomendaciones y llaman a [!DNL Adobe Commerce] u otra plataforma de terceros conectada para operaciones de carrito y cierre de compra
+- Las tiendas (tienda de Commerce en [!DNL Edge Delivery Services] o compilaciones personalizadas sin encabezado) llaman a las API de GraphQL [!DNL Adobe Commerce Optimizer] para el descubrimiento y las recomendaciones y llaman a [!DNL Adobe Commerce] u otra plataforma de terceros conectada para operaciones de carrito y cierre de compra
 
-## Cómo funciona el conector con [!DNL Adobe Commerce]
+## Cómo funciona el conector con [!DNL Adobe Commerce] {#how-the-connector-works-with-adobe-commerce}
 
 [!DNL Adobe Commerce Optimizer Connector] funciona con los ámbitos de Commerce existentes (sitios web y vistas de tiendas) y la segmentación de clientes para rellenar el modelo de catálogo [!DNL Adobe Commerce Optimizer]:
 
 ![Asignación de datos de Commerce a Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="750" zoomable="yes"}
 
-- **Vistas de tienda → Fuentes de catálogo**: cada vista de tienda se convierte en una Source de catálogo independiente en [!DNL Adobe Commerce Optimizer]. Esa fuente incluye atributos de productos localizados y datos específicos de vistas de tienda
-- **Sitios web → Libros de precios** — Cada sitio web de [!DNL Adobe Commerce] se asigna a uno o más Libros de precios en [!DNL Commerce Optimizer]. Exportación de precios de sitio web y precios de grupo de clientes como libros de precios y entradas de precios
-- **Grupos de clientes → Variantes de precios** — Los precios de grupos de clientes de [!DNL Adobe Commerce] aparecen como entradas adicionales en los Libros de precios correspondientes
+- **Vista de tienda → Orígenes de catálogo**: cada vista de tienda se convierte en un Source de catálogo independiente en [!DNL Adobe Commerce Optimizer]. Esa fuente incluye atributos de productos localizados y datos específicos de vistas de tienda
+- **Libros de precios → del sitio web** — Cada sitio web de [!DNL Adobe Commerce] se asigna a uno o más Libros de precios en [!DNL Adobe Commerce Optimizer]. Exportación de precios de sitio web y precios de grupo de clientes como libros de precios y entradas de precios
+- **Variantes de precios → grupo de clientes** — Los precios de grupo de clientes [!DNL Adobe Commerce] aparecen como entradas adicionales en los libros de precios correspondientes
 
-Después de que [!DNL Commerce Optimizer] ingrese los datos, puede configurar lo siguiente:
+Después de que [!DNL Adobe Commerce Optimizer] ingrese los datos, puede configurar lo siguiente:
 
 - **Vistas de catálogo y directivas** en el estudio [!DNL Adobe Commerce Optimizer] (para generar región, marca o subconjuntos específicos del cliente)
 - **Descubrimiento de productos** (búsqueda, facetas, reglas de comercialización)
@@ -84,15 +84,15 @@ Al habilitar el conector, la instancia [!DNL Adobe Commerce] permanece como el s
 
 >[!NOTE]
 >
->Para obtener más información sobre la configuración de [!DNL Adobe Commerce Optimizer], consulte [[!DNL Adobe Commerce Optimizer] Herramientas de comercialización](../optimizer/overview.md#quick-tour).
+>Para obtener más información sobre la configuración de [!DNL Adobe Commerce Optimizer], consulte [[!DNL Adobe Commerce Optimizer] Herramientas de comercialización](/help/optimizer/overview.md#quick-tour).
 
 ## Flujos de trabajo habituales {#typical-workflows}
 
-Estos flujos de trabajo describen cómo los equipos configuran y usan [!DNL Adobe Commerce Optimizer Connector]. Para obtener más información sobre cómo configurar la integración y habilitar estos flujos de trabajo, consulte [Introducción](get-started.md).
+Estos flujos de trabajo describen cómo los equipos configuran y usan [!DNL Adobe Commerce Optimizer Connector]. Para obtener más información sobre cómo configurar la integración y habilitar estos flujos de trabajo, consulte [Introducción](/help/aco-connector/get-started.md).
 
 ### Configuración y configuración iniciales {#initial-setup}
 
-Consulte [Pasos de configuración](./get-started.md#configuration-steps) en la guía de _Introducción_.
+Consulte [Pasos de configuración](/help/aco-connector/get-started.md#configuration-steps) en la guía de _Introducción_.
 
 ### Sincronización de datos en curso {#ongoing-sync}
 
@@ -112,39 +112,20 @@ Las siguientes fuentes están disponibles para [!DNL Adobe Commerce Optimizer Co
 
 Para obtener más información, consulte los temas siguientes:
 
-- Para las operaciones de resincronización de CLI de [!DNL Adobe Commerce], consulte el [comando de resincronización de CLI](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
-- [[!DNL Commerce Optimizer Connector] módulos y extremos de fuentes](reference/connector-reference.md)
-- [Asignación de campos para fuentes de conector](reference/field-mapping.md)
+- Para las operaciones de resincronización de CLI de [!DNL Adobe Commerce], consulte el [comando de resincronización de CLI](/help/data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
+- [[!DNL Adobe Commerce Optimizer Connector] módulos y extremos de fuentes](/help/aco-connector/reference/connector-reference.md)
+- [Asignación de campos para fuentes de conector](/help/aco-connector/reference/field-mapping.md)
 
 ### Configuración de tiendas y comercialización {#merchandising-storefronts}
 
-Una vez que los datos de [!DNL Adobe Commerce] estén disponibles en [!DNL Adobe Commerce Optimizer], usa [[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/es/docs/commerce/optimizer/overview#quick-tour) para conectar las experiencias de comercialización y tienda a tu catálogo sincronizado.
+Una vez que los datos de [!DNL Adobe Commerce] estén disponibles en [!DNL Adobe Commerce Optimizer], usa [[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour) para conectar las experiencias de comercialización y tienda a tu catálogo sincronizado. Los pasos siguientes habituales incluyen:
 
-**Para configurar la comercialización y las tiendas en [!DNL Commerce Optimizer] Studio:**
+- **Vistas de catálogo y políticas**: defina subconjuntos y reglas de acceso específicas de la región, marca o cliente desde el menú [!UICONTROL Store setup]
+- **Descubrimiento de productos y recomendaciones**: configure la búsqueda, las facetas, las reglas de comercialización, los sinónimos y las unidades de recomendación en el menú [!UICONTROL Merchandising]. El comportamiento de búsqueda y recomendación se administra en [!DNL Adobe Commerce Optimizer]; la configuración de [!DNL Live Search] y [!DNL Product Recommendations] en el administrador de [!DNL Adobe Commerce] ya no se aplica a estos flujos
+- **Conexiones de tienda**: coloque tiendas Commerce en [!DNL Edge Delivery Services] o compilaciones de terceros sin encabezado en los extremos de inquilino, vista de catálogo y API de comercialización correctos [!DNL Adobe Commerce Optimizer]. Para ver un ejemplo de integración de terceros, consulte [Conector de Salesforce Commerce para [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
+- **Cierre de compra**: mantenga las cuentas de carro de compras, cierre de compra, administración de pedidos y clientes en [!DNL Adobe Commerce] o en una plataforma de terceros conectada. Usar [!DNL App Builder] y [!DNL API Mesh] para el traspaso del carro de compras cuando sea necesario
 
-1. **Crear vistas de catálogo y directivas** desde el menú [!UICONTROL Store setup].
-
-   - Filtre el catálogo por marca, región, segmento de cliente o canal
-   - Aplicar reglas de acceso a datos por tienda o socio
-
-1. **Configurar Descubrimiento de productos y Recommendations** desde el menú [!UICONTROL Merchandising].
-
-   - Crear reglas de comercialización, facetas, sinónimos y unidades de recomendación.
-   - El conector descarga toda la configuración de búsqueda y recomendación a [!DNL Commerce Optimizer] ([!DNL Live Search] reglas y [!DNL Product Recommendations] en el administrador de Commerce ya no se aplican a estos flujos)
-
-1. **Conectar tiendas** a [!DNL Commerce Optimizer]:
-
-   - Para una tienda Commerce con tecnología [!DNL Edge Delivery Services], configure la tienda para que use el inquilino y la vista de catálogo de Optimizer correctos y para llamar a los extremos de búsqueda y recomendación mediante la API de comercialización
-   - Para tiendas de terceros, utilice las API públicas o SDK de Optimizer para llamadas de búsqueda y recomendación
-
-   >[!NOTE]
-   >
-   >Para ver un ejemplo de integración de terceros, consulte [Conector de Salesforce Commerce para [!DNL Adobe Commerce Optimizer]](../optimizer/developer/salesforce-connector.md).
-
-1. **Mantener cierre de compra** en la plataforma existente:
-
-   - Mantener las cuentas de carro de compras, cierre de compra, administración de pedidos y clientes en [!DNL Adobe Commerce] o una plataforma de terceros
-   - Utilice [!DNL App Builder] y [!DNL API Mesh] para el traspaso del carro de compras al integrarse con sistemas de cierre de compra externos
+Para obtener instrucciones de configuración detalladas, consulte [Introducción](/help/aco-connector/get-started.md) y las [[!DNL Adobe Commerce Optimizer] herramientas de comercialización](/help/optimizer/overview.md#quick-tour).
 
 ## Escenarios admitidos {#supported-scenarios}
 
@@ -178,14 +159,14 @@ Utilice el conector como un trampolín hacia [!DNL Adobe Commerce as a Cloud Ser
 
 **Antes de comenzar:**
 
-- Compruebe que [!DNL Adobe Commerce] cumple los requisitos de versión mínima y [!DNL Commerce Optimizer Connector]. Consulte [Introducción](get-started.md#requirements-to-use-the-integration) para obtener más información.
+- Compruebe que [!DNL Adobe Commerce] cumple los requisitos de versión mínima y [!DNL Adobe Commerce Optimizer Connector]. Consulte [Introducción](/help/aco-connector/get-started.md#requirements-to-use-the-integration) para obtener más información.
 - Asegúrese de que tiene acceso a la organización de IMS, una instancia de [!DNL Adobe Commerce Optimizer] y las credenciales y los detalles de región necesarios.
 
-## Documentación relacionada {#related-documentation}
+## Más ayuda sobre este tema {#more-help-on-this-topic}
 
-- Configure la integración y habilite los flujos de trabajo clave: [Empiece con [!DNL Commerce Optimizer Connector]](get-started.md)
-- Obtenga información acerca de [!DNL Adobe Commerce Optimizer] conceptos y arquitectura: [Qué es [!DNL Adobe Commerce Optimizer]?](../optimizer/overview.md)
-- Comprenda el mecanismo de sincronización, la inicialización y la administración de errores: [Canalización de sincronización del conector](connector-sync-pipeline.md)
-- Asignación de datos de nivel de campo para todas las fuentes: [Asignación de campo para fuentes de conector](reference/field-mapping.md)
-- Integrar escaparates sin encabezado mediante GraphQL y la codificación de paquetes: [Integración de escaparates sin encabezado](headless-storefront.md)
-- Diagnosticar problemas de sincronización y configuración: [Solución de problemas](troubleshooting.md)
+- Configure la integración y habilite los flujos de trabajo clave: [Empiece con [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md)
+- Obtenga información acerca de [!DNL Adobe Commerce Optimizer] conceptos y arquitectura: [Qué es [!DNL Adobe Commerce Optimizer]?](/help/optimizer/overview.md)
+- Comprenda el mecanismo de sincronización, la inicialización y la administración de errores: [Canalización de sincronización del conector](/help/aco-connector/connector-sync-pipeline.md)
+- Asignación de datos de nivel de campo para todas las fuentes: [Asignación de campo para fuentes de conector](/help/aco-connector/reference/field-mapping.md)
+- Integrar escaparates sin encabezado mediante GraphQL y la codificación de paquetes: [Integración de escaparates sin encabezado](/help/aco-connector/headless-storefront.md)
+- Diagnosticar problemas de sincronización y configuración: [Solución de problemas](/help/aco-connector/troubleshooting.md)
