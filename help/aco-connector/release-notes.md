@@ -3,23 +3,14 @@ title: Notas de la versión [!DNL Adobe Commerce Optimizer Connector]
 description: Obtenga información acerca de  [!DNL Adobe Commerce Optimizer Connector] notas de la versión, incluidas las nuevas características, las correcciones de errores y los problemas conocidos de la sincronización y exportación del catálogo.
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: f08fa0de-a550-4acd-b570-f81cf1d03aafid: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: dad884f1-e840-49a1-970e-2f965bdbc410id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +24,18 @@ Estas notas de la versión describen todas las versiones para [!DNL Adobe Commer
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
 ## Versiones de 2026
+
+### Versión 1.0.14
+
+_11 de junio de 2026_
+
+![Corrección](../assets/fix.svg) **Compatibilidad con PHP 8.5** - [!DNL Adobe Commerce Optimizer Connector] ahora es compatible con PHP 8.5, por lo que puede actualizar su entorno [!DNL Adobe Commerce] sin interrumpir la funcionalidad del conector o la sincronización del catálogo. <!--MDEE-1388-->
+
+![Corrección](../assets/fix.svg) **Los libros de precios se actualizan después de cambiar de divisa** - Los precios actualizados se reflejan automáticamente en Adobe Commerce Optimizer después de cambiar de divisa. <!--MDEE-1384-->
+
+![Corrección](../assets/fix.svg) **La navegación respeta las categorías principales deshabilitadas u ocultas**: los productos de las jerarquías de categorías deshabilitadas u ocultas ya no aparecen inesperadamente en las experiencias de navegación.<!--MDEE-1385-->
+
+![Corregir](../assets/fix.svg) **URL de categoría coherentes después de las actualizaciones de ensayo**: los vínculos de categoría y la navegación siguen siendo precisos después de aplicar las actualizaciones de ensayo. <!--MDEE-1395-->
 
 ### Versión 1.0.13
 
