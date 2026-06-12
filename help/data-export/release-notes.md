@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: fad62add01dfb6155f30bcfe791eb66de210b7a1
 workflow-type: tm+mt
-source-wordcount: 2857
+source-wordcount: 2903
 ht-degree: 0%
 
 ---
@@ -40,6 +40,12 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026
+
+### Versión 103.4.28
+
+_11 de junio de 2026_
+
+![Corregir](../assets/fix.svg) **URL de categoría precisas después de actualizaciones programadas**: se ha corregido un problema por el que los cambios programados en la URL de categoría podían dejar slugs duplicados o antiguos en los servicios conectados de Commerce. Los vínculos Navegación de categorías y Categoría de productos ahora muestran la URL actualizada después de aplicar el cambio.
 
 ### Versión 103.4.27
 
