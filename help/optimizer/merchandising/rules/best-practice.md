@@ -2,26 +2,22 @@
 title: Prácticas recomendadas de reglas de comercialización
 description: Conozca las prácticas recomendadas para implementar reglas de comercialización en las páginas de búsqueda, listados predeterminados y categorías.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: 398
 ht-degree: 0%
 
 ---
 
 # Prácticas recomendadas de reglas de comercialización
 
-Para optimizar la conversión y los ingresos, implemente **reglas de búsqueda** efectivas, una regla de **listado predeterminado** sólida y **[reglas de categoría](add.md#rule-types)** (beta). Ajuste las clasificaciones con los datos de ventas, las existencias, las promociones y la [clasificación inteligente](add.md#intelligent-ranking).
+Para optimizar la conversión y los ingresos, implemente **reglas de búsqueda** efectivas, una regla de **listado predeterminado** sólida y **[reglas de categoría](add.md#rule-types)**. Ajuste las clasificaciones con los datos de ventas, las existencias, las promociones y la [clasificación inteligente](add.md#intelligent-ranking).
 
 Es crucial establecer una **regla predeterminada** bien pensada. Su [regla predeterminada](overview.md#default-rule) determina cómo se ordenan inicialmente los resultados de búsqueda cuando no se aplica ninguna regla de búsqueda más específica, lo que mejora la probabilidad de detección y compra. Revíselo regularmente para que siga el ritmo de las necesidades y campañas del comprador.
 
@@ -38,10 +34,6 @@ Es crucial establecer una **regla predeterminada** bien pensada. Su [regla prede
 - Utilice siempre el panel &quot;Probar la regla&quot; para obtener una vista previa de cómo la estrategia de clasificación inteligente afecta a los resultados de búsqueda reales de diferentes consultas.
 
 ## Sugerencias para reglas de categoría
-
->[!IMPORTANT]
->
->Las reglas de categoría están en versión beta.
 
 - Use [reglas de categoría](add.md#rule-types) en **páginas de categoría** con mucho tráfico o con mucho margen donde los pedidos revisados importen tanto como la búsqueda; por ejemplo, colecciones de temporada o departamentos destacados.
 - Alinee la **clasificación inteligente** (por ejemplo, tendencias, más visitados) con la forma en que los compradores examinan esa categoría; las páginas de categoría no utilizan el texto de consulta de búsqueda como lo hacen las reglas de búsqueda. Consulte [Clasificación inteligente](add.md#intelligent-ranking). Para métodos inteligentes distintos de **None**, use **[Aumento inteligente de clasificación](add.md#intelligent-ranking-boost)** y vista previa de categoría para ajustar la fuerza de comportamiento de esa regla de categoría.

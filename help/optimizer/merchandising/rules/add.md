@@ -1,24 +1,16 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización para búsquedas, listados de productos predeterminados y páginas de categorías.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 3222
+source-wordcount: 3074
 ht-degree: 0%
 
 ---
@@ -32,10 +24,6 @@ Para generar una regla, abra el editor de reglas, elija un **tipo de regla** (co
 1. En el carril izquierdo, vaya a _Reglas de comercialización_ > **Reglas de comercialización**.
 1. (Opcional) Utilice la lista desplegable **Vista de catálogo** para seleccionar la vista de catálogo donde se debe aplicar la regla. La regla que cree se vinculará a la vista seleccionada (o a todas las vistas de catálogo si está seleccionada la opción **Todas las vistas**). Consulte [Seleccionar vista de catálogo](workspace.md#select-catalog-view) para ver cómo funciona el ámbito de la vista de catálogo.
 
-   >[!IMPORTANT]
-   >
-   >Las vistas del catálogo se encuentran actualmente en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Los participantes de Beta deberán volver a crear las reglas de comercialización existentes para aprovechar el nuevo ámbito de vista de catálogo.
-
 1. Haga clic en **[!UICONTROL Create rule]** para iniciar el editor de reglas.
 
 ![Crear regla](../../assets/create-rule.png)
@@ -47,7 +35,7 @@ Cada tipo de regla tiene un icono de información en el editor con una breve exp
 | Tipo de regla | Finalidad |
 | --- | --- |
 | **Regla de todos los productos** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
-| **Regla de categoría** (Beta) | Aplica la comercialización y la clasificación a una o varias categorías seleccionadas y controla el orden de los productos en esas páginas de categorías. |
+| **Regla de categoría** | Aplica la comercialización y la clasificación a una o varias categorías seleccionadas y controla el orden de los productos en esas páginas de categorías. |
 | **Regla de búsqueda** | Aplica la comercialización y la clasificación cuando los compradores ejecutan una búsqueda que coincide con las condiciones de consulta de la regla. |
 
 En la sección **Generar la regla**, define el nombre de la regla, la programación, si la regla se aplica a todos los listados o a condiciones de búsqueda específicas y los tipos de clasificación.
@@ -103,10 +91,6 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
 1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
 
 >[!TAB Regla de categoría]
-
->[!IMPORTANT]
->
->Las reglas de categoría están en versión beta.
 
 Las reglas de categoría controlan cómo se ordenan los productos en **páginas de categoría**. Combinas **reglas de categoría** con **clasificación inteligente** (incluidas las señales controladas por IA) y **acciones manuales** como fijar, impulsar y enterrar, para que puedas revisar la detección, ejecutar promociones y alinear las páginas de categoría con tu estrategia sin depender de herramientas externas.
 
