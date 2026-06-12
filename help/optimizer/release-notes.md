@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Las unidades de recomendación de productos ahora admiten [**filtros de precio**
 
 ### Aumento inteligente de clasificación
 
-[Las reglas de comercialización](./merchandising/rules/add.md#intelligent-ranking-boost) para búsquedas, listados de productos predeterminados y [páginas de categoría](./merchandising/rules/add.md#rule-types) (beta) ahora incluyen **[!UICONTROL Intelligent Ranking Boost]**. Puede ajustar la fuerza con la que estrategias como **Más visitados** o **Tendencias** influyen en el orden del producto en relación con la relevancia textual en las señales de búsqueda y comportamiento en los listados de categorías. La vista previa de la regla refleja su configuración. El aumento se aplica en el momento de la consulta, por lo que no necesita una resincronización del catálogo al cambiarlo.
+[Las reglas de comercialización](./merchandising/rules/add.md#intelligent-ranking-boost) para búsquedas, listados de productos predeterminados y [páginas de categoría](./merchandising/rules/add.md#rule-types) ahora incluyen **[!UICONTROL Intelligent Ranking Boost]**. Puede ajustar la fuerza con la que estrategias como **Más visitados** o **Tendencias** influyen en el orden del producto en relación con la relevancia textual en las señales de búsqueda y comportamiento en los listados de categorías. La vista previa de la regla refleja su configuración. El aumento se aplica en el momento de la consulta, por lo que no necesita una resincronización del catálogo al cambiarlo.
 
 ### Actualizaciones de API
 
@@ -89,7 +89,7 @@ _4 de mayo de 2026_
 
 >[!BEGINSHADEBOX]
 
-### Reglas de catálogo (beta)
+### Reglas de catálogo
 
 [Las reglas de categoría](./merchandising/rules/add.md) amplían las reglas de comercialización para que pueda segmentar categorías y controlar el pedido de productos en páginas de categoría con la misma clasificación y acciones (fijar, aumentar, enterrar) que la búsqueda.
 
@@ -145,7 +145,7 @@ Los paquetes dinámicos ahora devuelven un intervalo de precios calculado. <!--D
 
 >[!BEGINSHADEBOX]
 
-### Vista de catálogo de reglas y recomendaciones de comercialización (beta)
+### Vista de catálogo de reglas y recomendaciones de comercialización
 
 Ahora puede especificar una vista de catálogo al [crear unidades de recomendación](./merchandising/recommendations/create.md) o [reglas de comercialización](./merchandising/rules/add.md).
 

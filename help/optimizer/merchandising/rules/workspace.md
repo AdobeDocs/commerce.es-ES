@@ -12,10 +12,10 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 969
-ht-degree: 0%
+source-wordcount: 963
+ht-degree: 1%
 
 ---
 
@@ -100,10 +100,6 @@ El panel de detalles muestra el nombre de la regla, el estado, las condiciones y
 | Habilitado | Control que cambia el estado de la regla. Opciones: Habilitado / Deshabilitado |
 
 ## Seleccionar vista de catálogo
-
->[!IMPORTANT]
->
->Esta función se encuentra actualmente en fase beta.
 
 El selector **[!UICONTROL Catalog view]** de la página Reglas de comercialización hace dos cosas:
 

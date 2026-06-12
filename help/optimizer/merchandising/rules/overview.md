@@ -14,16 +14,16 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: 760
 ht-degree: 0%
 
 ---
 
 # Reglas de comercialización
 
-Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** (**Todos los listados de productos**) y en **páginas de categoría** ([reglas de categoría](#category-rules) están en versión beta). Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales.
+Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** (**Todos los listados de productos**) y en **páginas de categorías**. Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales.
 
 Cada **regla de búsqueda** tiene tres componentes principales:
 
@@ -36,10 +36,6 @@ Cada **regla de búsqueda** tiene tres componentes principales:
 Puede combinar varias condiciones y acciones para las reglas de búsqueda y programar cualquier regla para que esté activa durante un periodo. También puede establecer una **regla predeterminada** (**Todos los listados de productos**) que se aplique cuando no se aplique ninguna regla de categoría o búsqueda más específica.
 
 ## Reglas de categoría {#category-rules}
-
->[!IMPORTANT]
->
->Las reglas de categoría están en versión beta.
 
 **Reglas de categoría** controlan el pedido de productos en **páginas de categoría**. Selecciona una o más categorías y, a continuación, aplica una clasificación inteligente (por ejemplo, más visitados, tendencias) y acciones manuales como anclar, aumentar y enterrar. No utilizan condiciones de consulta de búsqueda. Para ver los pasos de configuración, los tipos de reglas y cómo se aplica la clasificación en la categoría en comparación con la búsqueda, consulte [Crear y administrar reglas](add.md).
 
