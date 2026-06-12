@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->La siguiente característica está en [versión beta privada](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>La siguiente característica está en [versión beta privada](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta).
 
 [!DNL Live Search] clasifica los resultados para que los compradores vean primero los productos más relevantes. El servicio da el mayor impulso a los productos cuyo texto de catálogo **coincide de cerca** con lo que el comprador escribe; a continuación, favorece las coincidencias donde los términos de consulta aparecen juntos de manera significativa y, finalmente, incluye coincidencias más amplias (incluido el comportamiento que admite la coincidencia de estilo autocompletado).
 
@@ -81,7 +81,7 @@ La relevancia no está determinada únicamente por la coincidencia de frases. In
 - Aumento desde **exacto / cerca de** coincidencia de frase
 - Aumentar cuando **todos los términos de consulta** aparezcan en el campo **igual**
 - **Clasificación inteligente** (cuando está habilitada), que mezcla la relevancia textual con señales de comportamiento. Vea [Cómo funciona la puntuación de clasificación inteligente](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[Busque peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** en cada atributo y otros factores de relevancia textual (por ejemplo, la frecuencia con la que se producen los términos y la longitud del nombre o la descripción). En el administrador de [!DNL Adobe Commerce], configure **Usar en la búsqueda** y **Peso de búsqueda** para los atributos del producto.
+- **[Busque peso](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results)** en cada atributo y otros factores de relevancia textual (por ejemplo, la frecuencia con la que se producen los términos y la longitud del nombre o la descripción). En el administrador de [!DNL Adobe Commerce], configure **Usar en la búsqueda** y **Peso de búsqueda** para los atributos del producto.
 - **[Buscar reglas de comercialización](rules.md)** como fijar, aumentar y enterrar
 
 Debido a que estas señales interactúan, un producto que coincide solamente en el nivel más amplio a veces puede clasificarse por encima de una coincidencia de frase más ajustada; por ejemplo, cuando **los pesos de búsqueda** o la frecuencia de término en un campo de alto peso superan a una coincidencia de frase más débil en cualquier otra parte.
