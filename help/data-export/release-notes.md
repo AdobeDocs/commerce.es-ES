@@ -5,10 +5,19 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: fad62add01dfb6155f30bcfe791eb66de210b7a1
 workflow-type: tm+mt
 source-wordcount: 2903
@@ -229,7 +238,7 @@ _20 de junio de 2025_
 
 _27 de mayo de 2025_
 
-![La nueva exportación de datos SaaS de ](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
+![La nueva exportación de datos SaaS de &#x200B;](../assets/new.svg) ahora es compatible con el tipo de producto Adobe Commerce `giftcard`. En la fuente de datos, los productos de tarjeta de regalo se exportan como productos simples con el tipo de atributo de producto `ac_giftcard`. <!--MDEE-1042-->
 
 ![Corrección](../assets/fix.svg): se mejoró el informe de errores de exportación de datos. Los registros ahora incluyen mensajes de error más detallados, incluidos detalles técnicos originales para facilitar la depuración y el seguimiento de errores. <!--MDEE-1064-->
 
@@ -275,7 +284,7 @@ _31 de marzo de 2025_
 
 _11 de marzo de 2025_
 
-![Se ha agregado la funcionalidad ](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
+![Se ha agregado la funcionalidad &#x200B;](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
@@ -409,7 +418,7 @@ _5 de junio de 2024_
 
 _31 de mayo de 2024_
 
-![Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce. <!--MDEE-785-->](../assets/fix.svg)
+!&lbrack;Se ha agregado compatibilidad con el registro de auditoría de transferencia de datos al agregar un mecanismo para enviar un evento `data_sent_outside` cada vez que se transmiten datos de la instancia de Commerce a un servicio de Commerce. <!--MDEE-785-->&rbrack;(../assets/fix.svg)
 
 ### Versión 103.3.3
 
