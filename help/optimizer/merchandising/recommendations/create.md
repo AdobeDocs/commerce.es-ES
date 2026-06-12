@@ -4,10 +4,18 @@ description: Obtenga información sobre cómo crear y administrar recomendacione
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
 source-wordcount: 1573
@@ -24,7 +32,7 @@ _Unidad de recomendación_
 
 Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](../../manage-results/recommendation-performance.md) para medir impresiones, vistas, clics, etc. La tabla Recommendations muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundadas.
 
-1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**para mostrar el área de trabajo de_ Recommendations _.
+1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**&#x200B;para mostrar el área de trabajo de_ Recommendations _.
 
 1. En el campo **Vista de catálogo**, seleccione la vista de catálogo en la que desea que la recomendación esté disponible. Más información acerca de [usar vistas de catálogo para recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -98,7 +106,7 @@ Después de crear una recomendación, debe recuperar su ID para implementar la u
 
 1. En la sección **ID de recomendación**, copie el ID.
 
-1. Use este identificador para configurar la [recomendación ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
+1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
