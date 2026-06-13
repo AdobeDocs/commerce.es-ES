@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ La página *Rendimiento de la búsqueda* proporciona a insight los términos de 
 >[!IMPORTANT]
 >
 >Si no ve ninguna métrica de rendimiento de búsqueda, asegúrese de que los datos de evento de búsqueda se estén [recopilando](../setup/events/overview.md).
+
+>[!NOTE]
+>
+>Para comprender cómo la detección de productos clasifica **coincidencias exactas y cercanas**, coincidencias del mismo campo y coincidencias más amplias (y cómo interactúa con los pesos de palabras clave y las reglas de comercialización), consulte [Coincidencia y clasificación de búsquedas](../search-relevance-matching.md).
 
 ## Elija la **vista de catálogo**
 

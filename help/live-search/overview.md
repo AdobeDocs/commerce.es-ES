@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 1167
+source-wordcount: 1195
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ Con [!DNL Live Search], puede:
 
 - Cree experiencias de búsqueda significativas para ayudar a los compradores y compradores a encontrar lo que desean con el menor esfuerzo posible.
 - Aproveche el faceteo dinámico con tecnología de IA y la reclasificación de los resultados de búsqueda en respuesta a los comportamientos de los compradores durante la sesión.
+- Priorice **coincidencias exactas y cercanas** y coincidencias del mismo campo para garantizar que las consultas de alta intención devuelvan primero los productos más relevantes. Para obtener más información, consulte *[Coincidencia de búsquedas y clasificación](search-relevance-matching.md)*.
 - Utilice un servicio ligero basado en SaaS que ofrezca actualizaciones sencillas y esté incluido en su licencia, lo que reduce el coste total de propiedad.
 - Obtenga información técnica habilitando la API de GraphQL, la flexibilidad sin encabezado, los entornos de zona protegida de API y el SaaS ultrarrápido.
 
