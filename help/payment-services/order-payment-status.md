@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Informe Estado de Pago del Pedido
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de las [transacciones](reporting.md), pedidos y pagos de su tienda.
+
+>[!NOTE]
+>
+>Las vistas de estado de pago de pedido que se muestran a continuación están disponibles en [!DNL Payment Services] **[!UICONTROL Home]** en Adobe Commerce en la nube y de forma local. No se muestran en el panel [!DNL Payment Services] para [!DNL Adobe Commerce as a Cloud Service] o [!DNL Adobe Commerce Optimizer]; consulte [[!DNL Payment Services] Inicio](payments-home.md).
 
 Existen dos vistas de informes de estado de pagos de pedidos disponibles para que pueda consultar rápidamente el estado de pago de sus pedidos:
 
@@ -71,7 +75,7 @@ La vista de visualización de datos de estado de pago del pedido incluye la sigu
 
 La vista Informe de estado de pago del pedido está disponible en la vista Inicio de Servicios de pago. Incluye estados detallados (pago, facturado, enviado, reembolso, disputa y más) de todas las transacciones.
 
-En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;para ver la tabla detallada del informe de estado del pago de pedidos.
+En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**para ver la tabla detallada del informe de estado del pago de pedidos.
 
 ![Ordenar transacciones de estado de pago en el administrador](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -106,7 +110,7 @@ Detectar cuándo una transacción de captura pendiente introduce un estado `Comp
 
 Para asegurarse de que este proceso funciona según lo esperado, los comerciantes deben configurar un nuevo trabajo cron. Una vez configurado el trabajo para que se ejecute automáticamente, no se esperan otras intervenciones del comerciante.
 
-Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=es). Una vez configurado, el nuevo trabajo se ejecuta cada 30 minutos para recuperar las actualizaciones de los pedidos que están en estado `Payment Review`.
+Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Una vez configurado, el nuevo trabajo se ejecuta cada 30 minutos para recuperar las actualizaciones de los pedidos que están en estado `Payment Review`.
 
 Los comerciantes pueden comprobar el estado de pago actualizado a través de la vista Informe de estado de pago del pedido.
 
@@ -114,11 +118,11 @@ Los comerciantes pueden comprobar el estado de pago actualizado a través de la 
 
 [!DNL Payment Services] usa datos de pedidos y los combina con datos de pagos agregados de otras fuentes (incluido PayPal) para ofrecer informes significativos y muy útiles.
 
-Los datos de pedidos se exportan y se mantienen en el servicio de pago. Al [cambiar o agregar estados de pedidos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) o [editar una vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/store-details#store-information) o nombre de sitio web, esos datos se combinan con los datos de pago y el informe de estado de pago de pedidos se rellena con la información combinada.
+Los datos de pedidos se exportan y se mantienen en el servicio de pago. Al [cambiar o agregar estados de pedidos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) o [editar una vista de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) o nombre de sitio web, esos datos se combinan con los datos de pago y el informe de estado de pago de pedidos se rellena con la información combinada.
 
 Este proceso consta de dos pasos:
 
-1. El índice cambia los datos `ON SAVE` (cada vez que se cambia la información de pedido o la información de almacén) o `BY SCHEDULE` (en una programación cron preconfigurada), según cómo se configure en [Administración de índices](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management) en el administrador.
+1. El índice cambia los datos `ON SAVE` (cada vez que se cambia la información de pedido o la información de almacén) o `BY SCHEDULE` (en una programación cron preconfigurada), según cómo se configure en [Administración de índices](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) en el administrador.
 
    De manera predeterminada, la indexación de datos se produce `ON SAVE`, lo que significa que siempre que algo cambia en el pedido, el estado del pedido, la vista del almacén, el almacén o el sitio web, el proceso de reindexación se produce inmediatamente.
 
@@ -134,7 +138,7 @@ Los únicos datos que se exportan y recopilan con fines informativos son los dat
 
 Aunque, de forma predeterminada, la reindexación se produce en el modo `ON SAVE`, se recomienda indexar en el modo `BY SCHEDULE`. El índice `BY SCHEDULE` se ejecuta según una programación cron de un minuto, y cualquier dato modificado aparece en el informe de estado del pedido en un plazo de dos minutos a partir de cualquier cambio de datos. Esta reindexación programada le ayuda a reducir cualquier tensión en su tienda, especialmente si tiene un gran volumen de pedidos entrantes, ya que se produce en una programación (no como cada pedido se realiza).
 
-Puede cambiar el modo de índice—`ON SAVE` o `BY SCHEDULE`—[en el administrador](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Puede cambiar el modo de índice—`ON SAVE` o `BY SCHEDULE`—[en el administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Para obtener información sobre cómo configurar la exportación de datos, vea [Configuración de la línea de comandos](configure-cli.md#configure-data-export).
 
@@ -144,7 +148,7 @@ En la vista Informe de estado de pago del pedido, puede seleccionar el origen de
 
 ![Selección de orígenes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_&#x200B;es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si&#x200B;_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver información del informe para el modo de espacio aislado.
+Si _[!UICONTROL Live]_es el origen de datos seleccionado, puede ver información de informes de las tiendas que usan [!DNL Payment Services] en el modo de producción. Si_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver información del informe para el modo de espacio aislado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -155,7 +159,7 @@ Las selecciones de fuentes de datos funcionan de la siguiente manera:
 Para seleccionar el origen de datos de su informe [!UICONTROL Order Payment Status]:
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Haga clic en el filtro selector _[!UICONTROL Data source]_&#x200B;y seleccione **[!UICONTROL Live]**&#x200B;o **[!UICONTROL Sandbox]**.
+1. Haga clic en el filtro selector _[!UICONTROL Data source]_y seleccione **[!UICONTROL Live]**o **[!UICONTROL Sandbox]**.
 
    Los resultados del informe se regeneran en función del origen de datos seleccionado.
 
@@ -175,7 +179,7 @@ En la vista Informe de estado de pagos de pedidos, puede filtrar los resultados 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Haga clic en el selector **[!UICONTROL Filter]**.
 1. Cambie las opciones _Estado de pago_ para ver los resultados del informe solo para los estados de pago de pedidos seleccionados.
-1. Ver los resultados del informe dentro de un intervalo de importe de pedido introduciendo un _[!UICONTROL Min Order Amount]_&#x200B;o _[!UICONTROL Max Order Amount_].
+1. Ver los resultados del informe dentro de un intervalo de importe de pedido introduciendo un _[!UICONTROL Min Order Amount]_o _[!UICONTROL Max Order Amount_].
 1. Haga clic en **[!UICONTROL Hide filters]** para ocultar el filtro.
 
 ### Mostrar y ocultar columnas
@@ -208,7 +212,7 @@ La columna Estado de reembolso muestra el estado actual de cualquier reembolso. 
 
 ### Actualización de datos del informe
 
-La vista del informe Estado de pago del pedido muestra una marca de tiempo _[!UICONTROL Last updated]_&#x200B;que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe Estado de los pagos de los pedidos se actualizan automáticamente cada tres horas.
+La vista del informe Estado de pago del pedido muestra una marca de tiempo _[!UICONTROL Last updated]_que indica la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe Estado de los pagos de los pedidos se actualizan automáticamente cada tres horas.
 
 También puede forzar manualmente la actualización de los datos del informe de estado de los pagos de pedidos para ver la información del informe más actualizada.
 
@@ -245,10 +249,10 @@ Los informes de estado de pago del pedido incluyen la siguiente información.
 
 | Columna | Descripción |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de pedido de Commerce <br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionada, haga clic en el identificador. |
+| [!UICONTROL Order ID] | ID de pedido de Commerce <br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionada, haga clic en el identificador. |
 | [!UICONTROL Order Date] | Marca de fecha y hora del pedido |
 | [!UICONTROL Authorized Date] | Fecha y hora de la autorización de pago |
-| [!UICONTROL Order Status] | Estado de pedido [actual de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Estado de pedido [actual de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Estado de factura del pedido—*[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Estado de envío del pedido: *[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Importe total general del pedido |
@@ -256,7 +260,7 @@ Los informes de estado de pago del pedido incluyen la siguiente información.
 | [!UICONTROL Pay Status] | Estado del pago de un pedido específico |
 | [!UICONTROL Paid Amt] | Importe pagado en un pedido |
 | [!UICONTROL Cur] | Tipo de divisa del importe pagado de un pedido |
-| [!UICONTROL Refund Status] | Estado de un reembolso de un pedido (por ejemplo, información de devoluciones, autorizaciones de devolución de material y notas de abono)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* o *[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | Estado de un reembolso en un pedido (como información de devoluciones, RMA y notas de abono): *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* o *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Total del importe reembolsado de un pedido |
 | [!UICONTROL Cur] | Tipo de divisa del importe reembolsado de un pedido |
 | [!UICONTROL Disputes] | Estado de cualquier disputa en un pedido (información de disputas y rechazos de cargos)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* o *[!UICONTROL Other]* |
