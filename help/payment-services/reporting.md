@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d0d0634283493f61faae94bebb9da1c8bd177e55
 workflow-type: tm+mt
-source-wordcount: 1391
+source-wordcount: 1439
 ht-degree: 0%
 
 ---
@@ -59,9 +59,13 @@ En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL
 
 >[!TAB Adobe Commerce as a Cloud Service y Commerce Optimizer]
 
-Las mismas capacidades de informes se aplican a las implementaciones de SaaS. Las rutas de exploración muestran **[!UICONTROL Home]** > **[!UICONTROL Transactions]** y la cuadrícula incluye columnas como **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** y **[!UICONTROL Response Code]**.
+Para estas implementaciones de SaaS, el informe de transacciones tabulares del panel coincide con las funcionalidades descritas en este tema (filtros, columnas, fuentes de datos, descargas, etc.). Las rutas de exploración muestran **[!UICONTROL Home]** > **[!UICONTROL Transactions]** y la cuadrícula incluye columnas como **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** y **[!UICONTROL Response Code]**.
 
 ![Vista de informe de transacciones en SaaS](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!NOTE]
+>
+>El panel SaaS [!DNL Payment Services] no incluye todos los informes o puntos de entrada de inicio que aparecen para Adobe Commerce en la nube y de forma local. Consulte [[!DNL Payment Services] Inicio](payments-home.md) para ver lo que está disponible por implementación.
 
 >[!ENDTABS]
 

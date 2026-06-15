@@ -23,7 +23,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ecff841c8e88c3897358eaf91e54c732d1edcfe4
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 450
 ht-degree: 0%
@@ -64,3 +64,4 @@ Siga estas directrices a la hora de decidir cómo estructurar los orígenes de c
 > * [Capas de catálogo](catalog-layer.md): modifique la presentación del producto sin cambiar los datos de origen
 > * [Directivas](policies.md) - Crear filtros basados en atributos para vistas de catálogo
 > * [Libros de precios](pricebooks.md): administre estructuras de precios para diferentes segmentos de clientes
+

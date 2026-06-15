@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Informe de pagos
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de las transacciones, pedidos y pagos de su tienda.
+
+>[!NOTE]
+>
+>Las vistas de pagos siguientes están disponibles desde [!DNL Payment Services] **[!UICONTROL Home]** en Adobe Commerce en la nube y de forma local. No se muestran en el panel [!DNL Payment Services] para [!DNL Adobe Commerce as a Cloud Service] o [!DNL Adobe Commerce Optimizer]; consulte [[!DNL Payment Services] Inicio](payments-home.md).
 
 Hay dos vistas de informes de pagos disponibles para que pueda ver información detallada sobre todos los pagos:
 
@@ -185,19 +189,19 @@ Estos tipos de transacciones se pueden anotar en las transacciones de pago.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Dinero movido entre un comprador y un vendedor para un pedido |
 | [!UICONTROL AUTH] | Transacciones de anulación de autorización y autorización |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Transacciones de reversión de comisión y comisión de reintegro |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Comisiones de socios, cuotas de pago y transacciones de inversión de cuotas |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Recuperaciones de cuentas bancarias o de pérdidas |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |
