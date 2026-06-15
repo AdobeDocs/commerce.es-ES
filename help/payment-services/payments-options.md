@@ -201,14 +201,14 @@ Para **capturar pagos con _solo_ botones de pago de PayPal (_no_ la opción de p
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#general-configuration).
 1. [Configura los botones de pago de PayPal que desees](configure-admin.md#paypal-payment-buttons) en Configuración.
-1. Desactive _1} la opción **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**en la sección_[!UICONTROL Payment buttons]_._
+1. Desactive _1&rbrace; la opción **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;en la sección&#x200B;_[!UICONTROL Payment buttons]_._
 
 Para **capturar pagos con tu proveedor de tarjetas de crédito _y_ botones de pago de PayPal**:
 
 1. Asegúrese de que su tienda esté [en modo de producción](configure-admin.md#general-configuration).
 1. [Configurar los botones de pago de PayPal](configure-admin.md#paypal-payment-buttons) deseados.
-1. Desactive _1} la opción **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**en la sección_[!UICONTROL Payment buttons]_._
-1. Desactiva _1} la opción **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**de la sección_[!UICONTROL Credit card fields]_ y usa tu [cuenta de proveedor de tarjeta de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
+1. Desactive _1&rbrace; la opción **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;en la sección&#x200B;_[!UICONTROL Payment buttons]_._
+1. Desactiva _1&rbrace; la opción **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;de la sección&#x200B;_[!UICONTROL Credit card fields]_ y usa tu [cuenta de proveedor de tarjeta de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
 
 ## Métodos de pago locales
 
