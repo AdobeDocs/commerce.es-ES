@@ -2,9 +2,9 @@
 title: ¿Qué es  [!DNL Adobe Commerce Optimizer]?
 description: Obtenga información acerca de  [!DNL Adobe Commerce Optimizer]  y sus características clave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,12 +21,12 @@ Con [!DNL Adobe Commerce Optimizer], puede:
 - Introduzca datos de catálogo de cualquier fuente.
 - Defina las vistas y directivas del catálogo empresarial.
 - Cree búsquedas y recomendaciones personalizadas con IA y ML.
-- Mejore la relevancia de la detección de productos con una clasificación que dé prioridad a **coincidencias exactas y cercanas** y coincidencias del mismo campo; consulte [Coincidencia de búsquedas y clasificación](search-relevance-matching.md).
+- Mejore la relevancia de la detección de productos con una clasificación que dé prioridad a **coincidencias exactas y cercanas** y coincidencias del mismo campo; consulte [Coincidencia de búsquedas y clasificación](./manage-results/search-relevance-matching.md).
 - Vea la disponibilidad de datos de productos cruciales, incluido el estado de sincronización y los datos de eventos de tienda para una implementación y solución de problemas precisas.
 
 Vea el siguiente vídeo para obtener información general de alto nivel sobre [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 
