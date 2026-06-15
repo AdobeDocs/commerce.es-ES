@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ Para una frase de búsqueda como `Brauseschlauch chrom`:
 - **Todas las palabras del mismo campo** — Busca **brauseschlauch** y **chrom** en el atributo **same** en el que se puede buscar, sin descomponer (por ejemplo, ambos en **name**).
 - **Palabras en diferentes campos** — Descompone **Brauseschlauch** en **brause** y **schlauch**. Estos tokens deben aparecer en el campo **same** (no necesariamente como una frase adyacente). **chrom** puede coincidir en un campo **diferente** (por ejemplo, **brause** y **schlauch** en **name**, **chrom** en **color**).
 
-Establece **Idioma** a **Alemán** en la ficha [Idioma](./settings.md#language) de [Configuración](./settings.md), de modo que se apliquen las reglas de descomposición. Valide consultas alemanas de alto valor en una tienda de ensayo antes de habilitar los cambios en la producción.
+Establece **Idioma** a **Alemán** en la ficha [Idioma](../settings.md#language) de [Configuración](../settings.md), de modo que se apliquen las reglas de descomposición. Valide consultas alemanas de alto valor en una tienda de ensayo antes de habilitar los cambios en la producción.
 
 La descomposición se basa en reglas y puede añadir casos extremos en esta capa. Si falta una subpalabra en el diccionario, la tokenización puede estar incompleta y devolver coincidencias más amplias de lo esperado; por ejemplo, **gas** que falta en **gaszähler** puede emitir solamente **zahl**, o **stat** que falta en **thermostat**. El stemmer también puede producir raíces inesperadas (por ejemplo, **schrauber** que se derivan de **schraub** o **schelle** a **schell**). Adobe actualiza el diccionario y las invalidaciones de sistema para los casos conocidos a medida que se identifican problemas.
 
@@ -81,9 +81,9 @@ La relevancia no está determinada únicamente por la coincidencia de frases. In
 
 - Aumento desde **exacto / cerca de** coincidencia de frase
 - Aumentar cuando **todos los términos de consulta** aparezcan en el campo **igual**
-- **Clasificación inteligente** (cuando está habilitada), que mezcla la relevancia textual con señales de comportamiento. Vea [Cómo funciona la puntuación de clasificación inteligente](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Busque peso](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results)** en cada atributo y otros factores de relevancia textual (por ejemplo, la frecuencia con la que se producen los términos y la longitud del nombre o la descripción). En *Configuración*, configure qué atributos participan en la búsqueda de palabras clave y sus **[pesos relativos de búsqueda de palabras clave](./settings.md)**.
-- **[Reglas de comercialización](./merchandising/rules/overview.md)** como fijar, aumentar y enterrar
+- **Clasificación inteligente** (cuando está habilitada), que mezcla la relevancia textual con señales de comportamiento. Vea [Cómo funciona la puntuación de clasificación inteligente](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[Busque peso](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results)** en cada atributo y otros factores de relevancia textual (por ejemplo, la frecuencia con la que se producen los términos y la longitud del nombre o la descripción). En *Configuración*, configure qué atributos participan en la búsqueda de palabras clave y sus **[pesos relativos de búsqueda de palabras clave](../settings.md)**.
+- **[Reglas de comercialización](../merchandising/rules/overview.md)** como fijar, aumentar y enterrar
 
 Debido a que estas señales interactúan, un producto que coincide solamente en el nivel más amplio a veces puede clasificarse por encima de una coincidencia de frase más ajustada; por ejemplo, cuando **los pesos de búsqueda** o la frecuencia de término en un campo de alto peso superan a una coincidencia de frase más débil en cualquier otra parte.
 
@@ -97,8 +97,8 @@ Los atributos configurados con **peso mínimo de búsqueda** (peso **1**) y **no
 
 ## Temas relacionados
 
-- [Configuración](./settings.md)
-- [Rendimiento de búsqueda](./manage-results/search-performance.md)
-- [Resumen sobre reglas de comercialización](./merchandising/rules/overview.md)
-- [Agregar reglas de búsqueda](./merchandising/rules/add.md)
-- [Resumen de sinónimos](./merchandising/synonyms/overview.md)
+- [Configuración](../settings.md)
+- [Rendimiento de búsqueda](search-performance.md)
+- [Resumen sobre reglas de comercialización](../merchandising/rules/overview.md)
+- [Agregar reglas de búsqueda](../merchandising/rules/add.md)
+- [Resumen de sinónimos](../merchandising/synonyms/overview.md)
