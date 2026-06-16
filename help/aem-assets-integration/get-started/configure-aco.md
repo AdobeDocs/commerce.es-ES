@@ -97,7 +97,7 @@ Lea esta sección **antes de** para elegir un nombre de capa de catálogo en su 
 
 ## Incorporación
 
-Para integrar la integración de AEM Assets con [!DNL Commerce Optimizer], debe [Crear un vale de soporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Para integrar la integración de AEM Assets con [!DNL Commerce Optimizer], debe [Crear un vale de soporte](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 El Soporte de Adobe utiliza la información de su ticket para registrar su inquilino con el Servicio de integración de Assets y configurar la integración.
 
@@ -123,7 +123,7 @@ Una vez completada la incorporación:
    * Eventos de AEM Assets (recursos aprobados, actualizados y eliminados)
    * [!DNL Commerce Optimizer] eventos de catálogo (producto creado, actualizado)
 
-Configure la [vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) para que las API y la tienda muestren datos de imagen generados por AEM:
+Configure la [vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-view) para que las API y la tienda muestren datos de imagen generados por AEM:
 
 * **Origen del catálogo (configuración regional)**: seleccione la misma configuración regional especificada en su vale de soporte técnico (por ejemplo, **`en-US`**). La integración registra una configuración regional por inquilino; una discrepancia impide que las imágenes sincronizadas aparezcan en la vista de catálogo deseada.
 * **Capa de catálogo** — Asigne la capa **`AEM-Assets`** (o su nombre de capa personalizado del ticket) a esa vista de catálogo.
