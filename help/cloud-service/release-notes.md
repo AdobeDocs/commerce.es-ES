@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
 workflow-type: tm+mt
-source-wordcount: 4182
+source-wordcount: 4439
 ht-degree: 0%
 
 ---
@@ -47,7 +47,45 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 >
 >Si utiliza Adobe Commerce local o Adobe Commerce en infraestructura en la nube, consulte las [notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview).
 
-## Junio de 2026: #1 de la versión {#latest}
+## Junio de 2026: #2 de la versión {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+
+Actualmente, los siguientes elementos solo están disponibles en entornos de espacio aislado y su traslado a entornos de producción está programado para julio.
+
+>[!BEGINSHADEBOX]
+
+### Filtrar pedidos y facturas por empresa
+
+Los extremos de la API REST `GET /V1/orders` y `GET /V1/invoices` ahora admiten el filtrado por `company_id` y `company_name`, lo que permite que las integraciones B2B recuperen pedidos o facturas de una compañía específica en una sola solicitud. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Ver el historial de modificaciones de pedidos en el administrador
+
+La página de detalles de pedido [!DNL Commerce Admin] ahora muestra la cadena de modificación completa de un pedido que incluye el pedido original y todos los pedidos secundarios creados mediante ediciones posteriores. Los comerciantes pueden desplazarse entre pedidos, cambiar la visibilidad de los pedidos cancelados y acceder a todas las facturas, envíos, notas de abono y comentarios de pedidos asociados desde la vista de cadena.<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>Para habilitar esta función, póngase en contacto con el administrador de satisfacción del cliente de Adobe Commerce.
+
+### Ver recursos sincronizados en [!DNL AEM Assets]
+
+La integración de [!DNL AEM Assets] ahora incluye una página de [!UICONTROL **Estado de sincronización**] ([!UICONTROL **Almacenes**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **Estado de sincronización**]) con una vista de lista centrada en recursos de todos los recursos sincronizados, incluidos el filtrado, las columnas que se pueden ordenar, como la fecha de la última sincronización y los detalles de error de las sincronizaciones fallidas.<!-- ACAP-1246 -->
+
+### Mejoras y correcciones de errores
+
+En esta versión se incluyen las siguientes mejoras, optimizaciones y correcciones de errores seleccionadas:
+
+* Los catálogos compartidos grandes ahora son más fáciles de administrar en el administrador, con tiempos de carga mejorados y menor probabilidad de tiempos de espera. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* Se ha corregido un error de creación de envío que se producía al crear envíos para pedidos que contenían productos configurables. <!-- ACCS-1095 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Junio de 2026: #1 de la versión
 
 [!BADGE Producción]{type=Neutral tooltip="Los elementos enumerados están disponibles actualmente en entornos de producción."}
 
