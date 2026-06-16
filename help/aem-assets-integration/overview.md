@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: 802
+source-wordcount: 805
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Vea este vídeo para conocer cómo Adobe Commerce y los AEM Assets trabajan junt
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447886?captions=spa)
 
->[!TAB Tutorial de ACCS]
+>[!TAB Tutorial de Adobe Commerce as a Cloud Service]
 
 Aprenda a utilizar Adobe Commerce as a Cloud Service con la integración de AEM Assets.
 
@@ -113,7 +113,7 @@ Habilitar la integración de Commerce con Experience Manager Assets es un proces
 
 1. Configure la integración para su entorno:
 
-   * [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} [Adobe Commerce (PaaS/ACCS)](get-started/setup-synchronization.md)
+   * [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} [Adobe Commerce](get-started/setup-synchronization.md)
    * [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} [Adobe Commerce Optimizer](get-started/configure-aco.md)
 
 ## Asistencia

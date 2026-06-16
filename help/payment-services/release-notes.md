@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5400'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Estas notas de la versión describen los cambios y correcciones de característi
 
 _8 de junio de 2026_
 
-![Nuevo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Para [!DNL Adobe Commerce as a Cloud Service], la interfaz de usuario del panel [!DNL Payment Services] en [!DNL Commerce Admin] permite que los comerciantes abran el [informe de transacciones](reporting.md#transactions-report-view) directamente desde el panel. Este panel SaaS expone solamente **los informes seleccionados** (no todos los informes o puntos de entrada de inicio disponibles en Adobe Commerce en la nube y de forma local); consulte [[!DNL Payment Services] Inicio](payments-home.md). Para ver las notas de la versión de ACCS y el momento en que se realizó, consulte [Ver el informe Transacciones de servicios de pago](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
+![Nuevo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Para [!DNL Adobe Commerce as a Cloud Service], la interfaz de usuario del panel [!DNL Payment Services] en [!DNL Commerce Admin] permite que los comerciantes abran el [informe de transacciones](reporting.md#transactions-report-view) directamente desde el panel. Este panel SaaS expone solamente **los informes seleccionados** (no todos los informes o puntos de entrada de inicio disponibles en Adobe Commerce en la nube y de forma local); consulte [[!DNL Payment Services] Inicio](payments-home.md). Para ver las notas de la versión y el tiempo de [!DNL Adobe Commerce as a Cloud Service], consulte [Ver el informe Transacciones de servicios de pago](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21 de enero de 2026_
 
