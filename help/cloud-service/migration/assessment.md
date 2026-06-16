@@ -15,9 +15,9 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 62f30cb267191c76f77d077b9ea07022c9cc9abe
+source-git-commit: fcbf661a05f5d7ff33a885e3f86dbb3a551d09df
 workflow-type: tm+mt
-source-wordcount: 2365
+source-wordcount: 2505
 ht-degree: 0%
 
 ---
@@ -25,17 +25,17 @@ ht-degree: 0%
 
 # Evaluación de migración
 
->[!TIP]
+>[!IMPORTANT]
 >
->Póngase en contacto con el administrador de cuentas de su solución para solicitar una evaluación de migración de su instancia existente.
+> La evaluación de migración solo está disponible cuando se migran [!DNL Adobe Commerce on Cloud Infrastructure] o [!DNL Adobe Commerce on-premises] proyectos a [!DNL Adobe Commerce as a Cloud Service].
 
 Una evaluación de la migración de Commerce es un análisis automatizado de la implementación de Adobe Commerce existente. Las herramientas de Adobe analizan el código base de Commerce y generan un informe estructurado que crea un inventario de todo lo creado, personalizado o modificado. A continuación, el informe indica cómo afectan las personalizaciones realizadas en la base de código a la migración a [!DNL Adobe Commerce as a Cloud Service].
 
 El informe se entrega como un archivo HTML que se puede abrir con cualquier explorador. No se requiere acceso al entorno de producción, excepto que inicialmente se compartió el código base del proyecto.
 
->[!IMPORTANT]
+>[!TIP]
 >
-> La evaluación de migración solo está disponible cuando se migran [!DNL Adobe Commerce on Cloud Infrastructure] o [!DNL Adobe Commerce on-premises] proyectos a [!DNL Adobe Commerce as a Cloud Service].
+>Póngase en contacto con el administrador de cuentas de su solución para solicitar una evaluación de migración de su instancia existente.
 
 **La evaluación proporciona:**
 
@@ -68,6 +68,8 @@ La sección Complejidad de la migración contiene la clasificación de evaluaci�
 
 **Puntuación de complejidad y complejidad de la migración**
 
+![Sección de complejidad de la migración que muestra la puntuación ponderada, los controladores de riesgo principales y las métricas clave](../assets/assessment-migration-complexity.png){width="600" zoomable="yes"}
+
 La puntuación de complejidad pondera cada entrada según lo difícil que sea migrar. La puntuación se asigna a una clasificación de complejidad de la migración mediante umbrales fijos:
 
 | Clasificación | Intervalo de puntuación | Enfoque de migración habitual |
@@ -78,6 +80,8 @@ La puntuación de complejidad pondera cada entrada según lo difícil que sea mi
 
 **Proporción de módulo personalizado**
 
+![Fila de métricas de proporción de módulos personalizados que muestra porcentaje de módulos personalizados, módulos de terceros, recuento de temas personalizados, enlaces críticos, archivos totales y tamaño de base de código PHP](../assets/assessment-custom-module-ratio.png){width="600" zoomable="yes"}
+
 El porcentaje de los módulos creados específicamente para su implementación. Una proporción mayor significa que se debe auditar y migrar más código personalizado. La proporción de módulos personalizados del cliente promedio es de aproximadamente el 62 %.
 
 >[!TIP]
@@ -86,13 +90,19 @@ El porcentaje de los módulos creados específicamente para su implementación. 
 
 **Desglose de tipo de archivo**
 
+![Tabla de desglose de tipos de archivos que enumera las extensiones de archivo con recuentos de archivos y líneas de código](../assets/assessment-file-type-breakdown.png){width="600" zoomable="yes"}
+
 Una lista del número de archivos de la base de código, organizados por tipo.
 
 **Módulos de mayor impacto**
 
+![Lista de módulos de mayor impacto que muestra nombres de módulos, descripciones, clasificaciones de impacto y recuentos de ganchos](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
+
 Una lista revisada de los módulos específicos de su tienda que requieren la mayor atención de la migración. Estos módulos suelen ser módulos que interactúan con el cierre de compra, los pagos o la gestión de pedidos. Cada módulo de alto impacto necesita su propio plan de migración. Esta lista es el mejor punto de partida para las conversaciones con su equipo técnico.
 
 ### Complejidad de tienda
+
+![Sección Complejidad de la tienda que muestra áreas de nombres de temas personalizados, recuento total de bloques, archivos XML de diseño, invalidaciones de controladores principales y señales procesables](../assets/assessment-storefront-complexity.png){width="600" zoomable="yes"}
 
 La sección Complejidad de la tienda presenta el esfuerzo necesario para migrar la capa de presentación del front-end de la tienda. Este flujo de trabajo es distinto al de la migración de código back-end, y lo suelen abordar los desarrolladores de front-end, que suelen requerir conversaciones de planificación independientes.
 
@@ -110,8 +120,9 @@ La sección Complejidad de la tienda presenta el esfuerzo necesario para migrar 
 | 100-300 | Medium: planificar una ola de front-end estructurada |
 | Más de 300 | Alto: dé prioridad como flujo de trabajo dedicado |
 
-
 ### Controladores de migración
+
+![Sección de controladores de migración que muestra la huella de personalización, los complementos y observadores y las tarjetas de preferencias de clase con clasificaciones de esfuerzo](../assets/assessment-migration-drivers.png){width="600" zoomable="yes"}
 
 La sección Controladores de migración muestra los principales factores que determinan la clasificación de complejidad.
 
@@ -127,6 +138,8 @@ Cada controlador aparece con un esfuerzo Alto, Medium o Bajo. Aborde primero los
 
 ### Modelo de datos
 
+![Sección del modelo de datos que muestra recuentos de tablas personalizadas, modificaciones de tablas principales y atributos EAV críticos](../assets/assessment-data-model.png){width="600" zoomable="yes"}
+
 La sección Modelo de datos muestra un recuento de tablas personalizadas, modificaciones en las tablas de la base de datos principal [!DNL Adobe Commerce] y atributos críticos Entity-Attribute-Value (EAV).
 
 Las modificaciones de la tabla principal son la categoría más difícil de migrar, ya que crean dependencias en una versión de esquema de plataforma específica y tienen un alto impacto en la fórmula de puntuación de complejidad.
@@ -136,6 +149,8 @@ Las modificaciones de la tabla principal son la categoría más difícil de migr
 >Si el informe enumera más de 15 modificaciones de tablas principales, planifique un flujo de trabajo de migración de datos dedicado antes de abordar la migración de módulos back-end.
 
 ## Desglose por personalización
+
+![Desglose de personalización que enumera todas las categorías de personalización con recuentos e indicadores de impacto](../assets/assessment-customization-breakdown.png){width="600" zoomable="yes"}
 
 La sección Desglose de personalización proporciona métricas detalladas en todas las categorías de personalización de la tienda.
 
@@ -196,6 +211,8 @@ El campo [!UICONTROL Drop-in migration required] indica qué áreas de tienda re
 >Si **Cierre de compra** aparece como un requisito de migración de elementos integrados, planifique un flujo de trabajo de elementos desplegables de cierre de compra dedicado. Esta tarea es la tarea de migración de tiendas más compleja y crítica para la empresa.
 
 ## Pestaña Informes del módulo
+
+![Pestaña Informes de módulo que muestra una lista de módulos en los que se puede buscar con filtros de impacto y panel detallado de análisis de módulos](../assets/assessment-module-reports-tab.png){width="600" zoomable="yes"}
 
 La ficha **[!UICONTROL Module Reports]** contiene una entrada dedicada para cada módulo personalizado de su tienda. Comparta esta información con su equipo técnico.
 
