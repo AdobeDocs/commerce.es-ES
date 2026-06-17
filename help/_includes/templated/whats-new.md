@@ -1,7 +1,7 @@
 ---
-source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
+source-git-commit: 2cae607e49298fa07c35e59bfc1e8388fe3b58cf
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1184'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se ha agregado <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/feed-lock-mechanism">mecanismo de bloqueo de fuente para la exportación de datos SaaS</a> para explicar cómo los bloqueos de fuente evitan los conflictos de sincronización simultáneos y cómo interpretar los mensajes omitidos normales incluidos en el registro de exportación de datos de Commerce (<code>commerce-data-export.log</code>).</p>
+      <td><p>Se ha agregado <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">mecanismo de bloqueo de fuente para la exportación de datos SaaS</a> para explicar cómo los bloqueos de fuente evitan los conflictos de sincronización simultáneos y cómo interpretar los mensajes omitidos normales incluidos en el registro de exportación de datos de Commerce (<code>commerce-data-export.log</code>).</p>
 </td>
       <td>
         Nuevo tema

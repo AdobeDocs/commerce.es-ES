@@ -1,11 +1,15 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
 description: Obtenga información acerca del uso de la extensión  [!DNL data export] para servicios SaaS de Adobe Commerce que sincroniza datos entre Adobe Commerce y los servicios de Commerce conectados.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -15,16 +19,16 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 571
+source-wordcount: 402
 ht-degree: 0%
 
 ---
 
 # Guía de [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] sincroniza datos entre una instancia de Adobe Commerce y los servicios de Commerce conectados. Al agregar Live Search, Product Recommendations, el servicio de catálogo o [!DNL Adobe Commerce Optimizer Connector] a una instalación de Adobe Commerce, la extensión [!DNL Data export] se instala automáticamente.
+[!DNL SaaS data export] sincroniza datos entre una instancia de Adobe Commerce y los servicios de Commerce conectados. Al agregar Live Search, Product Recommendations, el servicio de catálogo o [!DNL Adobe Commerce Optimizer Connector] a una instalación de Adobe Commerce, la extensión [!DNL Data Export] se instala automáticamente.
 
 >[!NOTE]
 >
@@ -37,29 +41,24 @@ La exportación de datos SaaS recopila y exporta varios tipos de datos, denomina
 - **Fuente de pedidos de ventas** agrega datos de pedidos, incluidas las entidades relacionadas como facturas, envíos, notas de abono, etc.
 - **Fuente de inventario de varios Source** agrega datos sobre los elementos de estado de inventario de stock.
 
-La exportación de datos SaaS se entrega como una extensión PHP. Admite varios métodos para iniciar y administrar el proceso de sincronización de datos.
+La exportación de datos SaaS se entrega como una extensión PHP que admite sincronización automática y manual:
 
-- **Sincronización manual desde el administrador o desde la línea de comandos**
+- **Sincronización automatizada**: después de la sincronización completa inicial al conectar un servicio de Commerce, los trabajos cron mantienen actualizados los servicios conectados mediante la sincronización parcial y el reintento automático de los elementos con errores, sin que se requiera ninguna acción por parte del usuario administrador o del integrador del sistema.
 
-   - El [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) del administrador de Commerce proporciona una vista gráfica del estado de sincronización que muestra los datos del producto sincronizados correctamente con los servicios de comercio. Puede usar el tablero para realizar una resincronización completa (_sincronización completa_) de todas las fuentes. Sin embargo, Adobe solo recomienda realizar una sincronización completa la primera vez que conecte Adobe Commerce a un servicio de Commerce. Consulte [Proceso de sincronización](data-synchronization.md).
+- **Sincronización manual**: ejecute una sincronización completa o vuelva a sincronizar las fuentes seleccionadas desde el administrador de Commerce o desde la [CLI de Commerce](data-export-cli-commands.md).
 
-     {{aco-data-sync-verification}}
+- **Supervisión**: efectúe el seguimiento del estado, el estado y el envío de la fuente desde la página [!UICONTROL Data Feed Sync Status] y el panel de administración de datos en el administrador de Commerce. Consulte [Administrar sincronización](data-sync-manage.md) para ver los pasos de verificación y resincronización.
 
-   - La página [Estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) proporciona información en tiempo real sobre el estado y el rendimiento de las fuentes de exportación de datos que transfieren datos de productos y categorías de Commerce a servicios externos como Product Recommendations, Live Search y Servicio de catálogo, o Adobe Commerce Optimizer.
+Para ver el comportamiento de sincronización, los modos y el diagrama de flujo de exportación, consulte [Funcionamiento de la sincronización](sync-overview.md).
 
-   - La [herramienta de línea de comandos de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) proporciona comandos para sincronizar fuentes específicas e incluye opciones adicionales para personalizar el procesamiento de fuentes.
+La exportación de datos de SaaS también proporciona herramientas para planificar y solucionar problemas del proceso de sincronización:
 
-- **Sincronización automatizada con trabajos cron**
+- **Programación y rendimiento**: calcule el tiempo de sincronización para programar el procesamiento y evitar la interrupción del sitio, y personalice el procesamiento de exportación para mejorar el rendimiento. Ver [Calcular volumen de datos y tiempo de transmisión](estimate-data-volume-sync-time.md) y [Mejorar rendimiento de exportación de datos](customize-export-processing.md).
 
-   - [Sincronización parcial de datos](data-synchronization.md#partial-sync): los trabajos Cron almacenan en déclencheur una sincronización parcial de datos cuando un usuario administrador de Commerce actualiza una entidad. El proceso de exportación de datos envía solamente estas actualizaciones a los servicios de Commerce conectados. El proceso de sincronización parcial se basa en el mecanismo MView y no requiere acciones por parte del usuario administrador o del integrador de sistemas.
+- **Seguimiento y solución de problemas**: revise el estado de sincronización y las cargas útiles de fuentes mediante los registros de exportación de datos y saas. Ver [Revisar registros y solucionar problemas](troubleshooting/logging.md).
 
-   - [Reintento automático para errores de sincronización](data-synchronization.md#retry-failed-items-sync): los trabajos Cron déclencheur el reintento automático del proceso de sincronización cuando se producen errores durante el proceso de sincronización de datos.
-
-- **Programación y rendimiento de exportación**
-
-   - Los desarrolladores e integradores de sistemas pueden calcular el tiempo necesario para que la exportación de datos SaaS sincronice los datos entre Adobe Commerce y los servicios conectados. Esta estimación puede ayudar a programar el procesamiento de exportación de datos para evitar interrupciones en el sitio. Ver [Estimar el volumen de datos y el tiempo de transmisión](estimate-data-volume-sync-time.md).
-
-   - En los casos en los que la sincronización debe realizarse más rápidamente, la exportación de datos SaaS proporciona opciones de personalización para mejorar el rendimiento del procesamiento de exportación. Consulte [Mejorar el rendimiento de la exportación de datos](customize-export-processing.md).
-
-- **Rastrear y solucionar problemas de actividades de exportación de datos**: utilice los registros de exportación de datos y saas para revisar el estado de sincronización y las cargas útiles de fuentes durante el proceso de sincronización e indexación. Consulte [Registro y solución de problemas](troubleshooting-logging.md).
-
+>[!MORELIKETHIS]
+>
+> - [Ampliar y personalizar fuentes de exportación de datos SaaS](extensibility-and-customizations.md): agregue o modifique datos de fuentes.
+> - [Situaciones de solución de problemas](troubleshooting/troubleshooting-scenarios.md): diagnostique la configuración incorrecta y los resultados de sincronización inesperados.
+> - [Notas de la versión](release-notes.md): actualizaciones de la extensión y problemas conocidos.

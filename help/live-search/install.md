@@ -1,6 +1,7 @@
 ---
 title: Introducción a  [!DNL Live Search]
 description: Conozca los requisitos del sistema y los pasos de instalación para  [!DNL Live Search] desde Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
@@ -24,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 2934
+source-wordcount: 2883
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Este artículo está dirigido al desarrollador o integrador de sistemas de su eq
 >
 > **Preparación para HIPAA**
 >
->Si utiliza Adobe Commerce con la extensión compatible con HIPAA y el complemento para atención médica, no procese ninguna información médica protegida (PHI) a través de LiveSearch> Live Search no es un servicio compatible con HIPAA.
+>Si usa Adobe Commerce con la extensión compatible con HIPAA y el complemento para atención médica, no procese ninguna información médica protegida (PHI) mediante LiveSearch> Live Search no es un servicio compatible con HIPAA.
 >
 >Para obtener más información, consulte [Preparación para HIPAA en Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) y la guía [Operaciones](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), que enumera Live Search entre los servicios de Commerce no preparados para HIPAA.
 
@@ -238,7 +239,7 @@ Use [Tablero de administración de datos](https://experienceleague.adobe.com/es/
 
 ![Panel de administración de datos](assets/data-management-dashboard.png)
 
-También puede ejecutar comandos de sincronización y solucionar problemas del proceso de sincronización mediante la [CLI de Commerce](../data-export/data-export-cli-commands.md#troubleshooting) y los registros de extensión de exportación de datos.
+También puede ejecutar comandos de sincronización y solucionar problemas del proceso de sincronización mediante [Commerce CLI](../data-export/data-export-cli-commands.md) y los [registros de extensión de exportación de datos](../data-export/troubleshooting/logging.md).
 
 #### Futuras actualizaciones de productos
 

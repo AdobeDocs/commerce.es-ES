@@ -1,6 +1,7 @@
 ---
 title: Instalar y configurar
 description: Obtenga información sobre cómo instalar, actualizar y desinstalar  [!DNL Product Recommendations].
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
@@ -17,7 +18,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 641
 ht-degree: 0%
@@ -79,7 +80,7 @@ Después de vincular correctamente la aplicación de Commerce a los servicios de
 
 ## Monitorización y solución de problemas de sincronización de datos
 
-Desde Commerce Admin, puede supervisar el proceso de sincronización mediante [el tablero de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use la [CLI de Commerce](../data-export/data-export-cli-commands.md#troubleshooting) y los registros para administrar y solucionar problemas del proceso.
+Desde Commerce Admin, puede supervisar el proceso de sincronización mediante [el tablero de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Utilice [Commerce CLI](../data-export/data-export-cli-commands.md) y [registros](../data-export/troubleshooting/logging.md) para administrar y solucionar problemas del proceso.
 
 Entonces puedes [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) que los datos de comportamiento se están enviando a tu tienda.
 

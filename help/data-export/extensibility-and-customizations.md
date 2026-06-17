@@ -1,11 +1,15 @@
 ---
 title: Ampliación y personalización de los datos de exportación de fuentes de SaaS
 description: Obtenga información sobre cómo ampliar y personalizar los datos de la fuente  [!DNL SaaS Data Export] .
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 542
+source-wordcount: 815
 ht-degree: 0%
 
 ---
@@ -25,7 +29,7 @@ ht-degree: 0%
 
 La extensión [!DNL Commerce Data Export] proporciona una forma de exportar datos desde la aplicación [!DNL Commerce] a servicios de Commerce como Live Search, Servicio de catálogo y Recomendaciones de productos. Si es necesario, puede ampliar y personalizar los datos de fuente para incluir datos de atributo adicionales o modificar los datos recopilados.
 
-Después de agregar los datos de atributo, se puede obtener acceso a ellos desde el [campo de atributos](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) en el esquema de GraphQL para el servicio de tienda.
+Después de agregar los datos de atributo, se puede obtener acceso a ellos desde el [campo de atributos](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) en el esquema de GraphQL para los servicios de tienda.
 
 >[!NOTE]
 >
@@ -85,4 +89,99 @@ Para obtener información sobre cómo crear parches de datos, consulte [Desarrol
 
 ### Añadir el atributo de producto de forma dinámica
 
-Para obtener más información sobre cómo crear atributos de producto de forma dinámica sin introducir nuevos atributos EAV, consulte [Agregar atributo de forma dinámica](add-attribute-dynamically.md).
+Para obtener más información sobre cómo crear atributos de producto de forma dinámica sin introducir nuevos atributos EAV, consulte [Agregar atributos de producto de forma dinámica](add-attribute-dynamically.md).
+
+## Resumen del esquema de fuentes (`et_schema.xml`) {#feed-schema-overview}
+
+Cada estructura de datos de fuente se declara en `etc/et_schema.xml` mediante un DSL XML simple. El marco de trabajo lee este archivo para determinar qué campos recopilar y a qué clases de proveedor PHP llamar.
+
+```xml
+<record name="Product">
+  <field name="sku" type="ID" />
+  <field name="name" type="String" />
+  <field name="attributes" type="Attribute" repeated="true"
+         provider="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
+    <using field="productId" />
+    <using field="storeViewCode" />
+  </field>
+</record>
+```
+
+Elementos clave:
+
+- `<record>`: define la entidad de fuente
+- `<field>` - declara un campo de datos; el atributo `provider` señala a una clase PHP que implementa `DataProcessorInterface` que recupera los datos
+- `repeated="true"`: el campo es una matriz de objetos
+- `<using>`: parámetros de entrada pasados desde el contexto de registro principal al proveedor
+
+>[!IMPORTANT]
+>
+>Al agregar un nuevo campo a `et_schema.xml` solo se cambia lo que [!DNL Adobe Commerce] recopila localmente. El servicio SaaS de recepción también debe actualizarse para aceptar y procesar el nuevo campo antes de que tenga algún efecto en la tienda.
+
+## Observar datos después del envío {#observe-data-after-submission}
+
+[!DNL SaaS Data Export] distribuye el evento `data_sent_outside` después de cada envío de lotes correcto a un servicio SaaS. Utilice este evento para el registro de auditoría, los déclencheur de webhook o la recopilación de métricas.
+
+**Evento:** `data_sent_outside`
+
+**Datos disponibles:**
+
+| Clave | Descripción |
+|---|---|
+| `timestamp` | Marca de tiempo Unix del envío |
+| `type` | Nombre de fuente (por ejemplo, `products`, `prices`) |
+| `data` | La carga útil de fuente enviada |
+
+**Observador de ejemplo:**
+
+```php
+<?php
+namespace My\Module\Observer;
+
+use Magento\Framework\Event\Observer;
+use Magento\Framework\Event\ObserverInterface;
+
+class DataSentOutsideObserver implements ObserverInterface
+{
+    public function execute(Observer $observer): void
+    {
+        $feedName = $observer->getData('type');
+        $timestamp = $observer->getData('timestamp');
+        $data = $observer->getData('data');
+
+        // Custom logic: audit logging, webhook, metrics
+    }
+}
+```
+
+Registrar al observador en `etc/events.xml`:
+
+```xml
+<event name="data_sent_outside">
+    <observer name="my_module_data_sent_outside"
+              instance="My\Module\Observer\DataSentOutsideObserver" />
+</event>
+```
+
+Para obtener información general sobre eventos y observadores, consulte [Eventos y observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} en la documentación para desarrolladores de Adobe Commerce.
+
+## Filtrado de datos antes del envío
+
+Utilice el punto de extensión `Magento\SaaSCommon\Model\DataFilter` para redactar campos confidenciales u omitir entidades específicas antes de que se envíen datos al servicio SaaS. Esto resulta útil para los requisitos de cumplimiento, como RGPD o PCI, en los que determinados campos no deben salir de la instancia de Commerce.
+
+Implemente la interfaz y conéctela a través de una preferencia de ID en `etc/di.xml`:
+
+```xml
+<preference for="Magento\SaaSCommon\Model\DataFilter"
+            type="My\Module\Model\MyDataFilter" />
+```
+
+>[!NOTE]
+>
+>El filtrado se aplica después de la recopilación de datos. Si se establece `PERSIST_EXPORTED_FEED=1`, la tabla de fuentes almacena la carga útil sin filtrar antes de que se produzca el filtrado.
+
+>[!MORELIKETHIS]
+>
+> - [Agregar atributo de producto dinámicamente](add-attribute-dynamically.md)
+> - [Agregar metadatos de inventario, conjunto de atributos y clase de impuestos](add-tax-attribute-set-inventory-attributes.md)
+> - [Funcionamiento de la sincronización](sync-overview.md)

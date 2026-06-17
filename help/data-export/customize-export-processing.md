@@ -1,17 +1,23 @@
 ---
 title: Mejora del rendimiento de exportación de datos SaaS
 description: Obtenga información sobre cómo mejorar el rendimiento de exportación de datos SaaS para Commerce Services mediante el uso de un modo de exportación de datos de varios subprocesos.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
 TQID: https://experienceleague.adobe.com/k-gizR-v-zQjQiN5IZm1Mv87J6j9eMsxH8vl-K1Co2M
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 669
 ht-degree: 0%
@@ -47,10 +53,14 @@ Recuerde que una planificación cuidadosa, que incluya la estimación del volume
 
 ## Configurar subprocesamiento múltiple
 
-Se admite el modo multiproceso para todos los [métodos de sincronización](data-synchronization.md#view-and-manage-the-synchronization-process): sincronización completa, sincronización parcial y sincronización de elementos con errores. Para configurar subprocesos múltiples, especifique el número de subprocesos y el tamaño del lote que se utilizarán durante la sincronización.
+Se admite el modo multiproceso para todos los [métodos de sincronización](sync-overview.md#synchronization-types): sincronización completa, sincronización parcial y sincronización de elementos con errores. Para configurar subprocesos múltiples, especifique el número de subprocesos y el tamaño del lote que se utilizarán durante la sincronización.
 
 - `thread-count` es el número de subprocesos activados para procesar entidades. El valor predeterminado `thread-count` es `1`.
 - `batch-size` es el número de entidades procesadas en una iteración. El valor predeterminado `batch-size` es `100` registros para todas las fuentes, excepto la fuente de precios. Para la fuente de precios, el valor predeterminado es `500` registros.
+
+>[!NOTE]
+>
+>Para implementaciones de [!DNL Adobe Commerce Optimizer Connector], revise las fuentes admitidas específicas del conector y los límites por lotes en [Módulos del conector y extremos de la fuente](../aco-connector/reference/connector-reference.md#supported-feeds).
 
 Puede configurar el subprocesamiento múltiple como una opción temporal al ejecutar un comando de resincronización o agregando la configuración de subprocesamiento múltiple a la configuración de la aplicación de Adobe Commerce.
 
@@ -62,7 +72,7 @@ Puede configurar el subprocesamiento múltiple como una opción temporal al ejec
 
 Cuando ejecute un comando de sincronización completa desde la línea de comandos, especifique el procesamiento de subprocesos múltiples agregando las opciones `thread-count` y `batch-size` al comando CLI.
 
-```
+```shell
 bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
@@ -95,3 +105,9 @@ return [
             ],
 //   ...
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Estimar el volumen de datos y el tiempo de transmisión](estimate-data-volume-sync-time.md)
+> - [Funcionamiento de la sincronización](sync-overview.md)
+> - [Esquema de tabla de fuentes](reference/feed-table-reference.md)

@@ -1,11 +1,15 @@
 ---
 title: Estimar el volumen de datos y el tiempo de transmisión
 description: Aprenda a calcular el volumen de datos y el tiempo de transmisión necesarios para que la herramienta  [!DNL data export]  sincronice los datos de fuente entre Adobe Commerce y los servicios conectados.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
 TQID: https://experienceleague.adobe.com/nhVfGHgrsvqIjUcWfsVDcriEFwUhRQa9D-4xAU-cAnU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 559
+source-wordcount: 585
 ht-degree: 0%
 
 ---
@@ -24,6 +28,10 @@ ht-degree: 0%
 # Calcular el volumen de datos y el tiempo de transmisión para la sincronización de datos
 
 Adobe recomienda estimar el volumen de datos y el tiempo de sincronización antes de iniciar cualquier sincronización de fuente de datos para garantizar una programación sin problemas y evitar interrupciones en las operaciones del sitio. Esta estimación es importante a la hora de planificar sincronizaciones iniciales o actualizaciones de catálogos a gran escala, como cambios masivos de precios.
+
+>[!NOTE]
+>
+>Para implementaciones de [!DNL Adobe Commerce Optimizer Connector], revise las fuentes admitidas específicas del conector y los límites por lotes en [Módulos del conector y extremos de la fuente](../aco-connector/reference/connector-reference.md#supported-feeds).
 
 De forma predeterminada, la herramienta de exportación de datos procesa los datos en modo de subproceso único con un tamaño de lote predeterminado. Con la configuración predeterminada, no hay paralelización del proceso de envío de fuentes. Además, este componente acepta solicitudes por segundo (RPS) que se traducen en lo siguiente:
 
@@ -57,3 +65,9 @@ Utilice los valores y las fórmulas de la tabla siguiente para calcular el volum
 | Permisos de categoría | Recuento de todos los permisos de categoría + 4 registros de reserva (CP): 10000 | CP = 10000 | 10000 / Tamaño del lote (100) = 100 solicitudes | (100 solicitudes * 0,5 segundos por solicitud) / 60 = 0,8 minutos (50 segundos) |
 | Estado de stock de inventario | Productos (P): 10000, Existencias Productos asignados a (S): 5 (suponiendo que cada producto se asigna a cada stock) | P * S = 50000 | 50000 / Tamaño del lote (100) = 500 solicitudes | (500 solicitudes * 0,5 segundos por solicitud) / 60 = 4,2 minutos |
 | Pedidos de venta | Todos los registros de pedidos (facturas, envíos, etc.) (PC): 10000 | SO = 10000 | 10000 / Tamaño del lote (100) = 100 solicitudes | (100 solicitudes * 0,5 segundos por solicitud) / 60 = 0,8 minutos (50 segundos) |
+
+>[!MORELIKETHIS]
+>
+> - [Mejorar el rendimiento de la exportación de datos](customize-export-processing.md)
+> - [Administrar sincronización](data-sync-manage.md)
+> - [Funcionamiento de la sincronización](sync-overview.md)

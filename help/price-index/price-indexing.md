@@ -1,6 +1,7 @@
 ---
 title: Indexación de precios de SaaS
 description: Uso de la indexación de precios SaaS para mejorar el rendimiento
+autotag-review: '2026-06-17T15:08:59.000Z'
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
@@ -12,7 +13,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 398
 ht-degree: 0%
@@ -27,7 +30,7 @@ El diagrama siguiente muestra el flujo de datos de indexación a los servicios S
 
 ![Flujo de datos predeterminado](assets/old_way.png)
 
-Con la indexación de precios SaaS habilitada, el flujo de datos cambia. La indexación de precios se realiza mediante [exportación de datos SaaS de Commerce](../data-export/data-synchronization.md).
+Con la indexación de precios SaaS habilitada, el flujo de datos cambia. La indexación de precios se realiza mediante [exportación de datos SaaS de Commerce](../data-export/sync-overview.md).
 
 ![Flujo de datos de indexación de precios SaaS](assets/new_way.png)
 

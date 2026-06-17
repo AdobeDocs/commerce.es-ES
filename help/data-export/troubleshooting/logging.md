@@ -1,11 +1,15 @@
 ---
 title: Revisar registros y solucionar problemas
 description: Obtenga información sobre cómo solucionar  [!DNL data export] errores mediante los registros de exportación de datos y exportación de saas.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 1155
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -46,7 +50,7 @@ Si no ve los datos esperados para un servicio de Adobe Commerce, utilice los reg
 
 Cada registro tiene la siguiente estructura.
 
-```
+```text
 [<log record datetime>] report.<log level>:
 {
    "feed": "<feed name>",
@@ -99,7 +103,7 @@ En este ejemplo, los valores `status` proporcionan información sobre la operaci
 
 +++ **Ejemplo: registro de resincronización completo para la fuente de precios**
 
-```
+```text
 Price feed full resync:
 
 [2024-03-05T21:00:51.754687+00:00] report.INFO: {"feed":"prices","operation":"full sync","status":"Initialize","elapsed":"383 ms","pid":"14469","caller":"bin\/magento saas:resync --feed=prices"} [] []
@@ -148,22 +152,7 @@ Si observa errores no relacionados con la configuración o con extensiones de te
 
 ### Resolver problemas de sincronización del catálogo {#resolvesync}
 
-Cuando se sincroniza en déclencheur una sincronización de datos, los datos pueden tardar hasta una hora en actualizarse y se reflejarán en componentes de la interfaz de usuario como la búsqueda en directo y las unidades de recomendación. Si sigue viendo discrepancias entre el catálogo y los datos de la tienda de Commerce o si la sincronización del catálogo falla, consulte lo siguiente:
-
-#### Discrepancia de datos
-
-1. Mostrar la vista detallada del producto en cuestión en los resultados de búsqueda.
-1. Copie la salida JSON y verifique que el contenido coincida con lo que tiene en el catálogo [!DNL Commerce].
-1. Si el contenido no coincide, realice un cambio menor en el producto del catálogo, como añadir un espacio o un punto.
-1. Espere a que se realice una resincronización o almacene en déclencheur una resincronización manual desde la CLI o el tablero de administración.
-
-#### La sincronización no se está ejecutando
-
-Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte este artículo de [KnowledgeBase](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
-
-#### Error de sincronización
-
-Si la sincronización del catálogo tiene el estado **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Para la solución de problemas basada en problemas de sincronización de catálogos (incluidas discrepancias de datos, sincronización no ejecutándose y estado de sincronización fallido), consulte [Escenarios de solución de problemas](troubleshooting-scenarios.md).
 
 ## Registro extendido
 
@@ -173,7 +162,7 @@ Utilice variables de entorno para ampliar los registros con datos adicionales pa
 
 Incluya la carga útil de la fuente en el registro de exportación de SaaS agregando la variable de entorno `EXPORTER_EXTENDED_LOG=1` al volver a sincronizar la fuente.
 
-```shell script
+```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
@@ -185,7 +174,7 @@ Para la extensión de exportación de datos SaaS de Commerce (`magento/module-da
 
 No se recomienda conservar los datos de carga útil en la tabla de índices en los entornos de producción, pero puede resultar útil en un entorno de desarrollo. Incluya la carga útil de la fuente en el índice agregando la variable de entorno `PERSIST_EXPORTED_FEED=1` al resincronizar la fuente.
 
-```shell script
+```shell
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
@@ -195,12 +184,18 @@ Si el proceso de reindexación de una fuente específica lleva una cantidad de t
 
 Ejecute el generador de perfiles agregando la variable de entorno `EXPORTER_PROFILER=1` al ejecutar el comando reindex.
 
-```
+```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
 Los datos del analizador se almacenan en el registro de exportación de datos (`var/log/commerce-data-export.log`) con el siguiente formato:
 
-```
+```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Escenarios de solución de problemas](troubleshooting-scenarios.md): resuelva los problemas de sincronización del catálogo y las discrepancias de datos.
+> - [Referencia de códigos de registro](log-codes-reference.md): busque códigos de registro de exportación.
+> - [Sincronizar fuentes mediante la CLI de Commerce](../data-export-cli-commands.md): ejecute resincronizaciones de fuentes de destino.

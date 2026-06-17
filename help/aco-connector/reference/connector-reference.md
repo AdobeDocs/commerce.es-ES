@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -18,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 296
 ht-degree: 1%
 
 ---
@@ -45,7 +47,7 @@ El conector incluye varios módulos de Magento que recopilan datos de catálogo,
 
 ## Fuentes compatibles
 
-El conector envía varios tipos de fuentes a [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. En la tabla siguiente se muestra cada fuente con su extremo, límite de lotes, nombre de indizador y tabla de fuentes en [!DNL Adobe Commerce].
+El conector envía varios tipos de fuentes a [!DNL Commerce Optimizer] [[!DNL Catalog Data Ingestion API]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}. En la tabla siguiente se muestra cada fuente con su extremo, límite de lotes, nombre de indizador y tabla de fuentes en [!DNL Adobe Commerce].
 
 | Fuente | Extremo de API [!DNL Commerce Optimizer] | Límite de lotes | Nombre de índice de AC | Tabla de fuentes |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
@@ -58,6 +60,7 @@ El conector envía varios tipos de fuentes a [!DNL Commerce Optimizer] [!DNL Cat
 Las fuentes `products`, `productAttributes`, `categories` y `prices` reutilizan los datos recopilados por los indizadores [!DNL SaaS Data Export]. El conector genera la fuente `priceBooks` a partir de la configuración del sitio web y del grupo de clientes y no depende de un indizador [!DNL SaaS Data Export].
 
 Para obtener detalles de asignación de nivel de campo para cada fuente, consulte [Asignación de campo para [!DNL Commerce Optimizer Connector] fuentes](field-mapping.md).
+Para calcular cuánto tiempo tardará una sincronización en función del tamaño del catálogo, consulte [Estimar el volumen de datos y el tiempo de sincronización](estimate-data-volume-sync-time.md).
 
 ## Rutas de configuración
 

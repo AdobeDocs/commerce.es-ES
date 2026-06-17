@@ -1,6 +1,7 @@
 ---
 title: Instalación
 description: Obtenga información sobre cómo instalar  [!DNL Catalog Service]
+autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 TQID: https://experienceleague.adobe.com/qVI-zFFljrUZzjSMmBxs5jRCsKbxfivQV1xzzpBS2uw
@@ -13,7 +14,7 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 972
 ht-degree: 0%
@@ -179,4 +180,4 @@ Para asegurarse de que la exportación del catálogo se ejecuta correctamente:
 
 ### Monitorización y solución de problemas de sincronización de datos
 
-Desde Commerce Admin, puede supervisar el proceso de sincronización mediante [el tablero de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use la [CLI de Commerce](../data-export/data-export-cli-commands.md#troubleshooting) y los registros para administrar y solucionar problemas del proceso.
+Desde Commerce Admin, puede supervisar el proceso de sincronización mediante [el tablero de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Utilice [Commerce CLI](../data-export/data-export-cli-commands.md) y [registros](../data-export/troubleshooting/logging.md) para administrar y solucionar problemas del proceso.

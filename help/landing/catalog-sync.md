@@ -1,6 +1,7 @@
 ---
 title: Sincronización de catálogo
 description: Obtenga información sobre cómo exportar datos de productos del servidor  [!DNL Commerce] a [!DNL Commerce Services].
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
 TQID: https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA
@@ -16,9 +17,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 565
 ht-degree: 0%
 
 ---
@@ -93,4 +94,4 @@ La tabla **Productos de catálogo sincronizados** muestra la siguiente informaci
 
 ## Resolver problemas de sincronización del catálogo {#resolvesync}
 
-Consulte [Registros y solución de problemas](../data-export/troubleshooting-logging.md#troubleshooting) en la _Guía de exportación de datos SaaS_.
+Consulte [Solución de problemas](../data-export/troubleshooting/logging.md#troubleshooting) en la _Guía de exportación de datos SaaS_.
