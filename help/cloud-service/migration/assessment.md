@@ -15,8 +15,8 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-nudge: true
-source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
+nudge: true1
+source-git-commit: 99ad11aa255d35dcee4ffa80b4a38916d0c21766
 workflow-type: tm+mt
 source-wordcount: 2505
 ht-degree: 0%
@@ -33,10 +33,6 @@ ht-degree: 0%
 Una evaluación de la migración de Commerce es un análisis automatizado de la implementación de Adobe Commerce existente. Las herramientas de Adobe analizan el código base de Commerce y generan un informe estructurado que crea un inventario de todo lo creado, personalizado o modificado. A continuación, el informe indica cómo afectan las personalizaciones realizadas en la base de código a la migración a [!DNL Adobe Commerce as a Cloud Service].
 
 El informe se entrega como un archivo HTML que se puede abrir con cualquier explorador. No se requiere acceso al entorno de producción, excepto que inicialmente se compartió el código base del proyecto.
-
->[!TIP]
->
->Póngase en contacto con el administrador de cuentas de su solución para solicitar una evaluación de migración de su instancia existente.
 
 **La evaluación proporciona:**
 
@@ -321,3 +317,7 @@ Manages custom shipping rate calculations based on customer account tier and ord
 - Desarrollo de tiendas
    - [Información general](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
    - [Aptitudes de Storefront AI](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=es)
+
+>[!TIP]
+>
+>Póngase en contacto con el administrador de cuentas de su solución para solicitar una evaluación de migración de su instancia existente.
