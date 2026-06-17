@@ -32,10 +32,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
+source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
 workflow-type: tm+mt
-source-wordcount: 4439
-ht-degree: 0%
+source-wordcount: null
+ht-degree: null
 
 ---
 
@@ -60,6 +60,10 @@ Actualmente, los siguientes elementos solo están disponibles en entornos de esp
 ### Filtrar pedidos y facturas por empresa
 
 Los extremos de la API REST `GET /V1/orders` y `GET /V1/invoices` ahora admiten el filtrado por `company_id` y `company_name`, lo que permite que las integraciones B2B recuperen pedidos o facturas de una compañía específica en una sola solicitud. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Enumerar plantillas de correo electrónico personalizadas mediante la API
+
+El nuevo extremo de la API REST `GET /V1/custom-email/templates` devuelve sus [plantillas de correo electrónico personalizadas](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), incluidos el identificador, el código y el asunto de cada plantilla. Las integraciones pueden utilizar un ID de plantilla devuelto con el extremo `POST /V1/custom-email/send` en lugar de buscar el ID manualmente. <!-- CCSAAS-5089 -->
 
 ### Ver el historial de modificaciones de pedidos en el administrador
 
