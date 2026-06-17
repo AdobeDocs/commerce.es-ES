@@ -41,7 +41,7 @@ Cada operación de sincronización de fuentes (desencadenada por un trabajo cron
 1. Si el bloqueo es **adquirido**, el proceso registra su nombre y PID con fines diagnósticos y luego ejecuta la sincronización.
 1. Cuando la sincronización se completa o falla, el bloqueo se libera incondicionalmente para que el siguiente trabajo cron programado pueda continuar normalmente.
 
-Solo una operación de sincronización puede mantener el bloqueo de fuente a la vez, independientemente de si lo inició cron o la CLI. El bloqueo de fuente se implementó mediante `LockManagerInterface` de [!DNL Adobe Commerce]. El servidor predeterminado es MySQL, que usa las funciones `GET_LOCK` y `RELEASE_LOCK`. Para configurar un proveedor de bloqueo diferente, consulte [Configurar el proveedor de bloqueo](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
+Solo una operación de sincronización puede mantener el bloqueo de fuente a la vez, independientemente de si lo inició cron o la CLI. El bloqueo de fuente se implementó mediante `LockManagerInterface` de [!DNL Adobe Commerce]. El servidor predeterminado es MySQL, que usa las funciones `GET_LOCK` y `RELEASE_LOCK`. Para configurar un proveedor de bloqueo diferente, consulte [Configurar el proveedor de bloqueo](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
 
 ## Mensajes de registro esperados
 
@@ -62,4 +62,4 @@ Este mensaje aparece cuando una sincronización parcial desencadenada por cron i
 > - [Sincronizar datos con la exportación de datos SaaS](sync-overview.md)
 > - [Sincronizar fuentes usando la CLI de Commerce](data-export-cli-commands.md)
 > - [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md)
-> - [Configurar el proveedor de bloqueo](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+> - [Configurar el proveedor de bloqueo](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

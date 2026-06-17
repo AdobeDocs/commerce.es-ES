@@ -35,4 +35,4 @@ ht-degree: 2%
    - [Administración de la extensión de exportación de datos SaaS](manage-extension.md)
    - [Sincronizar fuentes mediante la CLI de Commerce](data-export-cli-commands.md)
    - [Esquema de tabla de fuentes](reference/feed-table-reference.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
