@@ -2,31 +2,17 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: Obtenga información acerca de [!DNL Adobe Commerce Optimizer Connector] para la sincronización de catálogos, la búsqueda y la entrega de tiendas entre [!DNL Adobe Commerce] y [!DNL Adobe Commerce Optimizer].
 feature: Integration, Storefront, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 23e4f419628a7838357752ecef0c242f1dcdd4c4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: c32adafa-ed01-4b31-997e-2413013911b0id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56id: dad884f1-e840-49a1-970e-2f965bdbc410
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1075
 ht-degree: 0%
 
 ---
@@ -49,7 +35,7 @@ ht-degree: 0%
 | **Obtención de valor en menos tiempo con[!DNL Adobe Commerce Optimizer]** | Activa la Búsqueda por IA, las recomendaciones y las tiendas sin encabezado sobre tu implementación de [!DNL Adobe Commerce] existente. |
 | **Alineado con ámbitos de Commerce** | Asigna automáticamente sitios web, vistas de tiendas y grupos de clientes en [!DNL Adobe Commerce Optimizer] construcciones de catálogo (fuentes de catálogo y libros de precios). |
 | **Visibilidad operativa** | Monitorice el estado de las fuentes, los tiempos de última sincronización y el estado por SKU desde una vista [!UICONTROL Data Feed Sync Status] dedicada. |
-| **Ruta preparada para el futuro hacia SaaS** | Proporciona una ruta de modernización de bajo riesgo de PaaS hacia [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], sin una nueva plataforma. |
+| **Ruta preparada para el futuro hacia SaaS** | Proporciona una ruta de migración por fases desde Commerce en la nube o local a [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], sin necesidad de volver a configurar la plataforma. |
 
 ## Arquitectura del conector {#connector-architecture}
 
@@ -63,6 +49,8 @@ En esta arquitectura:
 - El conector exporta fuentes de catálogo, precio y categoría
 - [!DNL Adobe Commerce Optimizer] ingiere y normaliza los datos de fuente en orígenes de catálogo, libros de precios y vistas de catálogo
 - Las tiendas (tienda de Commerce en [!DNL Edge Delivery Services] o compilaciones personalizadas sin encabezado) llaman a las API de GraphQL [!DNL Adobe Commerce Optimizer] para el descubrimiento y las recomendaciones y llaman a [!DNL Adobe Commerce] u otra plataforma de terceros conectada para operaciones de carrito y cierre de compra
+
+Compilado en [[!DNL SaaS Data Export]](/help/data-export/overview.md), el conector asigna las fuentes recopiladas al formato [!DNL Catalog Data Ingestion API] y administra la autenticación y el envío. Consulte [Canalización de sincronización de conectores](/help/aco-connector/connector-sync-pipeline.md) para obtener información sobre el comportamiento de sincronización, el control de ámbito y la administración de errores.
 
 ## Cómo funciona el conector con [!DNL Adobe Commerce] {#how-the-connector-works-with-adobe-commerce}
 
@@ -102,6 +90,8 @@ Después de la configuración inicial, el conector admite:
 - **Delta sincroniza** para actualizaciones continuas cuando los productos o precios cambian
 - **Comandos de resincronización** para fuentes de destino
 
+Para obtener información sobre el comportamiento de sincronización automatizada, las programaciones de cron y la administración de errores, consulte [Canalización de sincronización de conectores](/help/aco-connector/connector-sync-pipeline.md). Antes de sincronizar todo el catálogo o de realizar una actualización grande, usa [Estimar el volumen de datos y el tiempo de sincronización](/help/aco-connector/reference/estimate-data-volume-sync-time.md) para planificar el tiempo y evitar que el sitio se interrumpa.
+
 Las siguientes fuentes están disponibles para [!DNL Adobe Commerce Optimizer Connector]:
 
 - `products` - datos de productos
@@ -112,7 +102,8 @@ Las siguientes fuentes están disponibles para [!DNL Adobe Commerce Optimizer Co
 
 Para obtener más información, consulte los temas siguientes:
 
-- Para las operaciones de resincronización de CLI de [!DNL Adobe Commerce], consulte el [comando de resincronización de CLI](/help/data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
+- Compruebe la sincronización de datos del catálogo y vuelva a sincronizar manualmente las fuentes del conector: [Administrar la sincronización](/help/aco-connector/data-sync-manage.md)
+- Para operaciones de resincronización de CLI de [!DNL Adobe Commerce], consulte [Sincronizar fuentes mediante la CLI de Commerce](/help/data-export/data-export-cli-commands.md)
 - [[!DNL Adobe Commerce Optimizer Connector] módulos y extremos de fuentes](/help/aco-connector/reference/connector-reference.md)
 - [Asignación de campos para fuentes de conector](/help/aco-connector/reference/field-mapping.md)
 
@@ -122,7 +113,7 @@ Una vez que los datos de [!DNL Adobe Commerce] estén disponibles en [!DNL Adobe
 
 - **Vistas de catálogo y políticas**: defina subconjuntos y reglas de acceso específicas de la región, marca o cliente desde el menú [!UICONTROL Store setup]
 - **Descubrimiento de productos y recomendaciones**: configure la búsqueda, las facetas, las reglas de comercialización, los sinónimos y las unidades de recomendación en el menú [!UICONTROL Merchandising]. El comportamiento de búsqueda y recomendación se administra en [!DNL Adobe Commerce Optimizer]; la configuración de [!DNL Live Search] y [!DNL Product Recommendations] en el administrador de [!DNL Adobe Commerce] ya no se aplica a estos flujos
-- **Conexiones de tienda**: coloque tiendas Commerce en [!DNL Edge Delivery Services] o compilaciones de terceros sin encabezado en los extremos de inquilino, vista de catálogo y API de comercialización correctos [!DNL Adobe Commerce Optimizer]. Para ver un ejemplo de integración de terceros, consulte [Conector de Salesforce Commerce para [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
+- **Conexiones de tienda**: coloque tiendas Commerce en [!DNL Edge Delivery Services] o compilaciones de terceros sin encabezado en los extremos de inquilino, vista de catálogo y API de comercialización correctos [!DNL Adobe Commerce Optimizer]. Para integraciones sin encabezado personalizadas, consulte [Integración de tienda sin encabezado](/help/aco-connector/headless-storefront.md). Para ver un ejemplo de integración de terceros, consulte [Conector de Salesforce Commerce para [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
 - **Cierre de compra**: mantenga las cuentas de carro de compras, cierre de compra, administración de pedidos y clientes en [!DNL Adobe Commerce] o en una plataforma de terceros conectada. Usar [!DNL App Builder] y [!DNL API Mesh] para el traspaso del carro de compras cuando sea necesario
 
 Para obtener instrucciones de configuración detalladas, consulte [Introducción](/help/aco-connector/get-started.md) y las [[!DNL Adobe Commerce Optimizer] herramientas de comercialización](/help/optimizer/overview.md#quick-tour).
@@ -133,7 +124,7 @@ El conector está diseñado para comerciantes B2C con [!DNL Adobe Commerce] en i
 
 **Casos de uso comunes:**
 
-- **Modernizar solo la tienda**
+- **Migración de tienda a Edge Delivery**
 Mantener el servidor [!DNL Adobe Commerce] existente, mover el PLP/Search/PDP a [!DNL Edge Delivery Services] tiendas con tecnología [!DNL Adobe Commerce Optimizer]
 
 - **Escalar el rendimiento del catálogo y la búsqueda**
@@ -144,7 +135,7 @@ Utilice el conector como un trampolín hacia [!DNL Adobe Commerce as a Cloud Ser
 
 ## Responsabilidades y requisitos previos de implementación {#responsibilities-prerequisites}
 
-[!DNL Adobe Commerce] es la fuente fiable para productos, precios y grupos de clientes. Realice cambios en [!DNL Adobe Commerce]; el conector los sincroniza con [!DNL Adobe Commerce Optimizer].
+[!DNL Adobe Commerce] es la fuente fiable para productos, precios y grupos de clientes. Realice cambios en [!DNL Adobe Commerce] y el conector los sincronizará con [!DNL Adobe Commerce Optimizer].
 
 **[!DNL Adobe Commerce Optimizer]es responsable de:**
 
@@ -162,11 +153,11 @@ Utilice el conector como un trampolín hacia [!DNL Adobe Commerce as a Cloud Ser
 - Compruebe que [!DNL Adobe Commerce] cumple los requisitos de versión mínima y [!DNL Adobe Commerce Optimizer Connector]. Consulte [Introducción](/help/aco-connector/get-started.md#requirements-to-use-the-integration) para obtener más información.
 - Asegúrese de que tiene acceso a la organización de IMS, una instancia de [!DNL Adobe Commerce Optimizer] y las credenciales y los detalles de región necesarios.
 
-## Más ayuda sobre este tema {#more-help-on-this-topic}
-
-- Configure la integración y habilite los flujos de trabajo clave: [Empiece con [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md)
-- Obtenga información acerca de [!DNL Adobe Commerce Optimizer] conceptos y arquitectura: [Qué es [!DNL Adobe Commerce Optimizer]?](/help/optimizer/overview.md)
-- Comprenda el mecanismo de sincronización, la inicialización y la administración de errores: [Canalización de sincronización del conector](/help/aco-connector/connector-sync-pipeline.md)
-- Asignación de datos de nivel de campo para todas las fuentes: [Asignación de campo para fuentes de conector](/help/aco-connector/reference/field-mapping.md)
-- Integrar escaparates sin encabezado mediante GraphQL y la codificación de paquetes: [Integración de escaparates sin encabezado](/help/aco-connector/headless-storefront.md)
-- Diagnosticar problemas de sincronización y configuración: [Solución de problemas](/help/aco-connector/troubleshooting.md)
+>[!MORELIKETHIS]
+>
+> - [Introducción a [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md): configure la integración y habilite los flujos de trabajo clave.
+> - [Canalización de sincronización del conector](/help/aco-connector/connector-sync-pipeline.md): comprenda el mecanismo de sincronización, la inicialización y la administración de errores.
+> - [Administrar sincronización](/help/aco-connector/data-sync-manage.md): compruebe la sincronización de datos del catálogo y vuelva a sincronizar las fuentes manualmente.
+> - [Asignación de campos para fuentes de conector](/help/aco-connector/reference/field-mapping.md): revise la asignación de datos de nivel de campo para todas las fuentes.
+> - [Situaciones de solución de problemas](/help/aco-connector/troubleshooting/troubleshooting-scenarios.md): resuelva la configuración incorrecta o los resultados de sincronización inesperados.
+> - [Notas de la versión](/help/aco-connector/release-notes.md): revise las actualizaciones del conector y los problemas conocidos.

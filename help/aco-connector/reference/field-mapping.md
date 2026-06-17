@@ -3,28 +3,17 @@ title: Asignación de campos para  [!DNL Adobe Commerce Optimizer Connector] fue
 description: Obtenga información acerca de la asignación de campos  [!DNL Adobe Commerce Optimizer Connector] de [!DNL Adobe Commerce] datos de catálogo a [!DNL Adobe Commerce Optimizer] formatos de API de ingesta para todas las fuentes.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 1f901b4a72c10dc4e710742b98c03e88cbc8739f
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e0eb8757-182f-49f3-94a4-1587d16f5094id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 665
 ht-degree: 0%
 
 ---
@@ -35,6 +24,8 @@ ht-degree: 0%
 Esta página documenta cómo [!DNL Adobe Commerce Optimizer Connector] transforma los campos del catálogo [!DNL Adobe Commerce] en el formato requerido por [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. Consulte la [referencia de conector](connector-reference.md#supported-feeds) para ver la lista de fuentes admitidas y sus extremos de API.
 
 ## Productos
+
+La fuente `products` envía datos al extremo [Products](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
 
 | [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Notas |
 | ----------------------------------------------- | -------------- | ------- |
@@ -62,6 +53,9 @@ Esta página documenta cómo [!DNL Adobe Commerce Optimizer Connector] transform
 
 ## Metadatos de atributos de producto
 
+La fuente `productAttributes` envía datos a [extremo de metadatos](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
+
+
 | [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Notas |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
@@ -78,7 +72,9 @@ Esta página documenta cómo [!DNL Adobe Commerce Optimizer Connector] transform
 | `searchWeight` | `searchWeight` | |
 | `searchTypes` | `searchTypes` | |
 
-**Conversión de tipo de datos:**
+### Conversión de tipo de datos
+
+El conector deriva la API `dataType` de los campos Commerce `dataType` y `frontendInput` de la tabla de asignación anterior. La siguiente tabla muestra las reglas de conversión que aplica el conector.
 
 | [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API `dataType` |
 | -------------------- | -------------------------- | ------------------- |
@@ -90,7 +86,13 @@ Esta página documenta cómo [!DNL Adobe Commerce Optimizer Connector] transform
 | `OBJECT` | - | `OBJECT` |
 | cualquier otro | - | `TEXT` |
 
+>[!NOTE]
+>
+>Cuando la `dataType` de un atributo se establece en `OBJECT`, la API de [productos](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} trata el valor del atributo como un objeto estructurado en lugar de como una cadena sin formato. En el momento de la consulta, la API intenta analizar el valor almacenado como JSON. Si el análisis se realiza correctamente, el resultado se devuelve como un objeto anidado en la respuesta. **Este comportamiento es especialmente útil** cuando se proporcionan atributos personalizados de forma dinámica, por ejemplo, para transportar datos estructurados o de varios campos que no se pueden representar como un valor escalar. Para obtener instrucciones, consulte [Agregar atributos de producto dinámicamente](../../data-export/add-attribute-dynamically.md).
+
 ## Libros de precios
+
+La fuente `priceBooks` envía datos al [extremo de libros de precios](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.
 
 A diferencia de otras fuentes de conector, la fuente `priceBooks` no la recopila un indizador [!DNL SaaS Data Export] en [!DNL Adobe Commerce]. El conector genera esta fuente a partir del sitio web y la configuración del grupo de clientes en el Administrador.
 
@@ -112,6 +114,8 @@ La fuente de precios utiliza la misma fórmula al resolver a qué libro de preci
 
 ## Precios
 
+La fuente `prices` envía datos al extremo [Prices](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+
 | [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Notas |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | |
@@ -121,6 +125,8 @@ La fuente de precios utiliza la misma fórmula al resolver a qué libro de preci
 | `tierPrices[]` | `tierPrices[]` | |
 
 ## Categorías
+
+La fuente `categories` envía datos al extremo [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Los elementos con un `urlPath` vacío (categorías raíz lógicas) se omiten y nunca se envían.
 

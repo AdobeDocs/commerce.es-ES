@@ -1,25 +1,17 @@
 ---
 title: Vista de catálogo
 description: Conozca cuáles son las vistas de catálogo y cómo crearlas para organizar el catálogo de productos por estructura empresarial, políticas y precios.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1210
 ht-degree: 0%
@@ -37,7 +29,7 @@ Las vistas de catálogo definen cómo se organiza y muestra el catálogo de prod
 - **Qué productos son visibles** según la estructura de la empresa (marcas, regiones, distribuidores)
 - **Qué precios se muestran** a través de los libros de precios vinculados
 - **Cómo se filtran los productos** mediante directivas (atributos como marca, modelo y categoría)
-- **El [origen del catálogo](catalog-source.md) que se usa** según atributos como la configuración regional
+- **El [origen del catálogo](catalog-sources.md) que se usa** según atributos como la configuración regional
 
 Considere las vistas de catálogo como &quot;lentes&quot; diferentes a través de las cuales los clientes ven el catálogo. Por ejemplo:
 
@@ -64,7 +56,7 @@ Antes de crear una vista de catálogo, asegúrese de lo siguiente:
 1. Configure los detalles de la vista del catálogo:
 
    - **Nombre**: escriba el nombre de la vista de catálogo, por ejemplo `Celport`.
-   - **Orígenes de catálogo**: seleccione el [origen de catálogo](catalog-source.md), por ejemplo `en-US`.
+   - **Orígenes de catálogo**: seleccione el [origen de catálogo](catalog-sources.md), por ejemplo `en-US`.
    - **Capas de catálogo**: revise las capas ingeridas y la prioridad.
    - **Directivas**: utilice la lista desplegable para seleccionar las directivas relevantes. Por ejemplo, &quot;Marca&quot;, &quot;Modelo&quot;. &#x200B;Asegúrese de que ya ha [creado una directiva](policies.md).
 
@@ -203,7 +195,7 @@ Los datos del catálogo filtrado se envían a varios destinos, incluidos escapar
 
 ## Más parecido a esto
 
-- [Fuentes de catálogo](catalog-source.md): defina el ámbito autoritativo de productos, atributos y categorías para el comportamiento de búsqueda, filtro y ordenación
+- [Fuentes de catálogo](catalog-sources.md): defina el ámbito autoritativo de productos, atributos y categorías para el comportamiento de búsqueda, filtro y ordenación
 - [Capas de catálogo](catalog-layer.md): aprenda a modificar los datos de productos sin cambiar el origen original
 - [Directivas](policies.md): cree directivas para filtrar productos en las vistas de catálogo
 - [Libros de precios](pricebooks.md): administre estructuras de precios para diferentes segmentos de clientes
