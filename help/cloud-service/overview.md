@@ -6,9 +6,11 @@ role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-TQID: 'https://experienceleague.adobe.com/RWF0BsS24AJtkoPNxRtvTNyM971IBEEt-NTbPT5Nub8'
+autotag-review: '2026-06-18T16:02:31.185Z'
+TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
@@ -34,8 +36,7 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
 workflow-type: tm+mt
 source-wordcount: 1444
 ht-degree: 0%
@@ -91,11 +92,11 @@ Vea el siguiente vídeo para obtener una breve introducción a la arquitectura d
 
 Este diagrama ilustra el flujo de datos entre [!DNL Adobe Commerce as a Cloud Service] y todas las soluciones de Adobe Experience Cloud.
 
-![Diagrama de flujo de datos que muestra [!DNL Adobe Commerce as a Cloud Service] integración con [!DNL Adobe Experience Cloud] soluciones](./assets/data-flow.svg){zoomable="yes"}
+![Diagrama de flujo de datos que muestra [!DNL Adobe Commerce as a Cloud Service] integración con [!DNL Adobe Experience Cloud] soluciones](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce Storefront
 
-Use [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=es) de Adobe con tecnología de [!DNL Edge Delivery Services] para crear experiencias enriquecidas en minutos con la creación simple basada en documentos o la edición visual con [!DNL Storefront Builder].
+Use [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) de Adobe con tecnología de [!DNL Edge Delivery Services] para crear experiencias enriquecidas en minutos con la creación simple basada en documentos o la edición visual con [!DNL Storefront Builder].
 
 [!DNL Commerce Storefront] no tiene encabezado con una arquitectura disociada que proporciona todos los datos y servicios de comercialización a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
 
