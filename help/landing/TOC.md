@@ -21,8 +21,8 @@ ht-degree: 12%
 - {hide-from-toc}[Soluciones de productos](product-solutions.md)
 - Servicios de Commerce {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/overview)
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=es)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=es)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=es)
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=es)
 - Servicios de integración {#integration-services}
@@ -33,5 +33,5 @@ ht-degree: 12%
    - [Integrar [!DNL Adobe Commerce] con [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=es)
 - Herramientas de datos {#data-services}
    - [Exportación de datos SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=es)
-   - [Indexación de precios de SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
+   - [Indexación de precios de SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=es)
    - [Sincronización de catálogo](/help/landing/catalog-sync.md)

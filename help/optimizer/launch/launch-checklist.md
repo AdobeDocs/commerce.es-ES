@@ -213,7 +213,7 @@ Las direcciones URL de ▢ están en minúsculas, por lo que el procesamiento pr
 
 Confirme las líneas de base de rendimiento y el cableado de Analytics.
 
-▢ Tu tienda sigue [las prácticas recomendadas de rendimiento](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/){target="_blank"} en la documentación de _Adobe Commerce Storefront_.
+▢ Tu tienda sigue [las prácticas recomendadas de rendimiento](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=es){target="_blank"} en la documentación de _Adobe Commerce Storefront_.
 Se han configurado ▢ (opcional) Google Analytics y Google Tag Manager.
 La implementación de ▢ [Storefront events](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger) es válida y los datos aparecen en los paneles de [!DNL Live Search] y [!DNL Product Recommendations] en Adobe Commerce *Admin*.
 ▢ El parámetro de análisis `environment` en [configuración de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=es){target="_blank"} es `"Testing"` durante el desarrollo y `"Production"` durante el lanzamiento. Consulte [Instrumentación de Analytics](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=es){target="_blank"}.
@@ -235,7 +235,7 @@ Confirme el comportamiento de CDN, DNS y caché.
 
 ▢: la configuración de CDN utiliza el extremo de GraphQL de producción (`yourproject.com/graphql`) para las extensiones y scripts de Sidekick (por ejemplo, la generación de mapas del sitio y el importador de imágenes).
 ▢ Cuando usa Adobe Commerce Fastly, hay disponible un token de purga de CDN y [la configuración del sitio](https://tools.aem.live/tools/cdn-setup/index.html) incluye `authToken` y `serviceId`.
-▢ [La configuración de CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"} valida el almacenamiento en caché y la invalidación.
+▢ [La configuración de CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=es){target="_blank"} valida el almacenamiento en caché y la invalidación.
 ▢ Para [configuraciones de varias tiendas](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=es#multi-store-setups){target="_blank"}, el servicio de catálogo y las solicitudes de [!DNL Live Search] incluyen una eliminación de caché específica de la tienda (por ejemplo, un parámetro de consulta o una regla de CDN).
 ▢ La invalidación push funciona de extremo a extremo (publica un cambio y verifica en el dominio de producción).
 ▢ TTL de DNS es lo suficientemente bajo antes de la migración.
