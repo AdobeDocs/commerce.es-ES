@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 0bfd368c50707692c7a0adda6e70e3776bd9692a
 workflow-type: tm+mt
-source-wordcount: 287
+source-wordcount: 349
 ht-degree: 0%
 
 ---
@@ -54,3 +54,5 @@ Cuando la sincronización parcial y los reintentos automáticos no resuelven los
 > - [Estimar el volumen de datos y el tiempo de sincronización](reference/estimate-data-volume-sync-time.md) — Calcular la duración de sincronización esperada
 > - [Solución de problemas](troubleshooting.md): Diagnostique problemas de exportación de credenciales, sincronización y ámbito
 > - [Módulos de conector y extremos de fuente](reference/connector-reference.md): revise módulos, extremos de API y fuentes admitidas
+> - [Página de estado de sincronización de fuentes de datos en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}: Más información acerca de los campos y las funciones disponibles para supervisar el estado de las fuentes
+> - [Panel de sincronización de datos en [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"}: Documentación de referencia para campos y acciones disponibles para supervisar la sincronización de datos del catálogo

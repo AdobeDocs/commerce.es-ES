@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -81,12 +81,8 @@ Consulte el tema [[!DNL Catalog Service] y API Mesh](mesh.md) para obtener detal
 
 ## Monitorización y solución de problemas de exportación de datos
 
-El administrador de Commerce proporciona herramientas para monitorizar y solucionar problemas relacionados con la exportación de datos de Commerce a servicios conectados:
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[Panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: supervise la sincronización de datos entre [!DNL Catalog Service] y su instancia de Adobe Commerce. El panel muestra el estado de sincronización general y enumera todos los productos sincronizados.
+Use la [CLI de Commerce](../data-export/data-export-cli-commands.md) para resincronizar fuentes manualmente cuando sea necesario. Para ver las opciones de resincronización y los pasos adicionales de solución de problemas, consulte [Administrar sincronización](../data-export/data-sync-manage.md) en la _Guía de exportación de datos SaaS_.
 
-- **[Página de estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**: realice un seguimiento del estado de exportación de todas las fuentes de datos para garantizar la coherencia de los datos. Esta página alerta sobre problemas que se producen durante el proceso de exportación para que pueda resolverlos rápidamente. El estado &quot;Correcto&quot; indica que los datos se han exportado y estarán disponibles en los servicios conectados de Commerce cuando finalice el proceso de sincronización de datos.
-
->[!NOTE]
->
->Si la página Estado de sincronización de fuentes de datos no está disponible en Commerce Admin para Commerce en la nube o en implementaciones locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) para habilitarla.
+{{install-data-sync-feed-status}}

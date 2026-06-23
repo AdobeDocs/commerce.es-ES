@@ -1,11 +1,17 @@
 ---
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 # Fragmentos de Commerce
+
+## Nota de instalación para la extensión de estado de sincronización de fuente de datos {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>Si la página Estado de sincronización de fuentes de datos no está disponible en Commerce Admin para Commerce en la nube o en implementaciones locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} para habilitarla.
 
 
 ## Alineación del entorno de integración de Adobe Commerce Optimizer {#aco-integration-environment-alignment}
@@ -25,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Si ha instalado el [Conector de Adobe Commerce Optimizer](../aco-connector/overview.md) para exportar los datos del catálogo a Adobe Commerce Optimizer, use la [página Estado de sincronización de fuentes de datos](../optimizer/setup/data-sync.md) en Commerce Optimizer Studio para comprobar que los datos se hayan sincronizado correctamente con Adobe Commerce Optimizer en lugar del panel de administración de datos.
+>Para implementaciones que usan [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) para exportar datos del catálogo a [!DNL Adobe Commerce Optimizer], compruebe la sincronización de datos del catálogo mediante la [página Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el administrador de Commerce y la [página de sincronización de datos](../optimizer/setup/data-sync.md) en [!DNL Adobe Commerce Optimizer Studio], no el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Nota desplegable de Adobe Commerce Optimizer para actualizaciones de la API {#aco-api-updates-and-dropins}
 

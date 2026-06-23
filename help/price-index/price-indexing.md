@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -71,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### Precios para tipos de productos personalizados
+## Monitorización del progreso de sincronización
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Use la [CLI de Commerce](../data-export/data-export-cli-commands.md) para resincronizar fuentes manualmente cuando sea necesario. Para ver las opciones de resincronización y los pasos adicionales de solución de problemas, consulte [Administrar sincronización](../data-export/data-sync-manage.md) en la _Guía de exportación de datos SaaS_.
+
+>[!NOTE]
+>
+>Si la página Estado de sincronización de fuentes de datos no está disponible en Commerce Admin para Commerce en la nube o en implementaciones locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) para habilitarla.
+
+## Precios para tipos de productos personalizados
 
 Los cálculos de precios se admiten para tipos de productos personalizados, como precio base, precio especial, precio de grupo, precio de regla de catálogo, etc.
 
@@ -102,7 +112,7 @@ Si tiene un tipo de producto personalizado que utiliza una fórmula específica 
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }
