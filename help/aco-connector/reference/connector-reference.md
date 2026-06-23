@@ -20,14 +20,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: 301
 ht-degree: 1%
 
 ---
 
-# Módulos de conector y extremos de fuente
+# Módulos de conector y extremos de fuente para el conector de Adobe Commerce Optimizer
 
 Esta referencia enumera los paquetes de módulos [!DNL Adobe Commerce Optimizer Connector], los extremos de API de fuentes compatibles y las rutas de acceso de claves de configuración almacenados en `core_config_data`. Para saber cómo funcionan juntos estos componentes durante la sincronización, consulte [Canalización de sincronización de conectores](../connector-sync-pipeline.md).
 

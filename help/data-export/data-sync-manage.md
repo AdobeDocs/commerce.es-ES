@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Utilice las siguientes opciones para resincronizar manualmente los datos de las 
 | Tarea | Opción | Notas |
 | --- | --- | --- |
 | Resincronizar los elementos de fuente seleccionados con errores o problemas | **[!UICONTROL Data Feed Sync Status]página** | Monitorice y vuelva a sincronizar los elementos de fuente seleccionados desde el administrador de Commerce. Ver [Verificar que la sincronización de datos funcione](#verify-that-the-data-sync-is-working). |
-| Sincronización completa de todas las fuentes | **[!UICONTROL Data Management Dashboard]** | Realice una resincronización completa de todas las fuentes desde el administrador de Commerce; Adobe recomienda esto principalmente al conectarse por primera vez a un servicio de Commerce. Ver [Verificar que la sincronización de datos funcione](#verify-that-the-data-sync-is-working). |
+| Sincronización completa de todas las fuentes | **[!UICONTROL Data Management Dashboard]** | Realice una resincronización completa de todas las fuentes desde el administrador de Commerce; Adobe recomienda esto principalmente al conectarse por primera vez a un servicio de Commerce. Se omiten los elementos cuyo hash de contenido no ha cambiado desde la última exportación. Ver [Verificar que la sincronización de datos funcione](#verify-that-the-data-sync-is-working). |
 | Sincronización de fuentes de destino con control operativo | **CLI de Commerce** | Utilice el comando `saas:resync` para resincronizar fuentes de destino. Consulte [Sincronizar fuentes mediante la CLI de Commerce](data-export-cli-commands.md). |
 
 >[!MORELIKETHIS]

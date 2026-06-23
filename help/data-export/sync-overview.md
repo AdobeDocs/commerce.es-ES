@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 879
+source-wordcount: 907
 ht-degree: 0%
 
 ---
@@ -76,6 +76,10 @@ Después de conectar una instancia de Adobe Commerce al servicio de Commerce, re
 >[!NOTE]
 >
 >La sincronización completa se realiza principalmente en la fase de incorporación. Evite el uso regular para evitar la sobrecarga de la base de datos. Después de la sincronización inicial, los cambios en curso se sincronizan automáticamente mediante la sincronización parcial.
+
+>[!NOTE]
+>
+>El comando `saas:resync` solo transmite elementos nuevos, elementos actualizados y elementos que anteriormente no se pudieron exportar. Se omiten los elementos cuyo hash de contenido no ha cambiado desde la última exportación.
 
 ### Sincronización parcial {#partial-sync}
 

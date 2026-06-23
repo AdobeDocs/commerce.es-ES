@@ -16,9 +16,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ Requerido. Especifica la entidad de fuente que se va a resincronizar.
 >
 >Los módulos instalados determinan qué fuentes se pueden volver a sincronizar. Por ejemplo, `productOverrides` requiere [!DNL Adobe Commerce] en la nube, de forma local o Commerce as a Cloud Service, y `orders` requiere el módulo Pedidos de venta.
 
+>[!NOTE]
+>
+>El comando `saas:resync` solo transmite elementos nuevos, elementos actualizados y elementos que anteriormente no se pudieron exportar. Se omiten los elementos cuyo hash de contenido no ha cambiado desde la última exportación.
+
 **Ejemplo:**
 
 ```shell
@@ -107,6 +111,10 @@ bin/magento saas:resync --feed products
 Resincronizar parcialmente entidades específicas mediante sus ID. Admite fuentes de `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` y `categoryPermissions`.
 
 De manera predeterminada, al usar la opción `--by-ids`, se especifican valores mediante los valores de SKU del producto. Para usar identificadores de producto, agregue la opción `--id-type=productId`.
+
+>[!NOTE]
+>
+>A diferencia de una resincronización estándar, `--by-ids` omite la verificación mediante hash y fuerza a las entidades especificadas a enviarse a los servicios de Commerce conectados, independientemente de si el contenido ha cambiado desde la última exportación.
 
 **Ejemplos:**
 
