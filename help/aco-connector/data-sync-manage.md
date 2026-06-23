@@ -4,7 +4,7 @@ description: Aprenda a verificar la sincronización de datos del catálogo y a r
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -54,5 +54,5 @@ Cuando la sincronización parcial y los reintentos automáticos no resuelven los
 > - [Estimar el volumen de datos y el tiempo de sincronización](reference/estimate-data-volume-sync-time.md) — Calcular la duración de sincronización esperada
 > - [Solución de problemas](troubleshooting.md): Diagnostique problemas de exportación de credenciales, sincronización y ámbito
 > - [Módulos de conector y extremos de fuente](reference/connector-reference.md): revise módulos, extremos de API y fuentes admitidas
-> - [Página de estado de sincronización de fuentes de datos en el administrador de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}: Más información acerca de los campos y las funciones disponibles para supervisar el estado de las fuentes
+> - [Página de estado de sincronización de fuentes de datos en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}: Más información acerca de los campos y las funciones disponibles para supervisar el estado de las fuentes
 > - [Panel de sincronización de datos en [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"}: Documentación de referencia para campos y acciones disponibles para supervisar la sincronización de datos del catálogo
