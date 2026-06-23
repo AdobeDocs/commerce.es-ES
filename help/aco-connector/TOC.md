@@ -29,4 +29,4 @@ ht-degree: 5%
    - [Asignación de campos para fuentes de conector](reference/field-mapping.md)
    - [Calcular el volumen de datos y el tiempo de sincronización](reference/estimate-data-volume-sync-time.md)
 - [Notas de la versión](release-notes.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es)
