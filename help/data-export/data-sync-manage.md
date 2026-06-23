@@ -3,23 +3,13 @@ title: Ver y administrar el proceso de sincronización
 description: Obtenga información sobre cómo ver y administrar el proceso de sincronización  [!DNL SaaS Data Export] mediante el panel de administración de datos y la página de estado de sincronización de fuentes de datos.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -34,9 +24,9 @@ La mayoría de las actividades de sincronización se procesan automáticamente m
 
 Para implementaciones de Adobe Commerce en la nube, locales o de Adobe Commerce as a Cloud Service, vea y administre el proceso de sincronización desde estos recursos de administración de Commerce:
 
-- **[Página de estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**: compruebe el estado de exportación de fuentes para implementaciones conectadas con [!DNL Live Search], [!DNL Product Recommendations] o [!DNL Catalog Service]. Este panel muestra el estado de exportación de la fuente de cada fuente, incluidos los errores encontrados. Una vista de detalles muestra el estado de exportación de las fuentes de los elementos de fuente individuales.
+- **[Página de estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**: compruebe el estado de exportación de fuentes para implementaciones conectadas con [!DNL Live Search], [!DNL Product Recommendations] o [!DNL Catalog Service]. Este panel muestra el estado de exportación de la fuente de cada fuente, incluidos los errores encontrados. Una vista de detalles muestra el estado de exportación de las fuentes de los elementos de fuente individuales.
 
-- **[Panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: los usuarios administradores pueden ver y rastrear los datos que se han exportado y sincronizado correctamente con los servicios de Commerce conectados. Este panel muestra los datos del producto sincronizados con los servicios de Commerce.
+- **[Panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: los usuarios administradores pueden ver y rastrear los datos que se han exportado y sincronizado correctamente con los servicios de Commerce conectados. Este panel muestra los datos del producto sincronizados con los servicios de Commerce.
 
 >[!NOTE]
 >
@@ -46,7 +36,7 @@ Para implementaciones de Adobe Commerce en la nube, locales o de Adobe Commerce 
 
 Para implementaciones locales o en la nube de Commerce integradas con [!DNL Commerce Optimizer], vea y administre el proceso de sincronización con los siguientes recursos:
 
-- **[Página de estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**: supervise el estado de exportación de la fuente del conector desde el administrador de Commerce. Esta página muestra si los datos del catálogo se exportaron correctamente desde [!DNL Adobe Commerce], incluidos los detalles de error por fuente y por elemento.
+- **[Página de estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**: supervise el estado de exportación de la fuente del conector desde el administrador de Commerce. Esta página muestra si los datos del catálogo se exportaron correctamente desde [!DNL Adobe Commerce], incluidos los detalles de error por fuente y por elemento.
 
 - **[Página de sincronización de datos](../optimizer/setup/data-sync.md)**: La página de sincronización de datos ofrece una descripción general del estado de sincronización de los datos de producto procedentes del origen del catálogo ascendente a [!DNL Commerce Optimizer].
 
@@ -70,7 +60,7 @@ Utilice las siguientes opciones para resincronizar manualmente los datos de las 
 | Tarea | Opción | Notas |
 | --- | --- | --- |
 | Resincronizar los elementos de fuente seleccionados con errores o problemas | **[!UICONTROL Data Feed Sync Status]página** | Monitorice y vuelva a sincronizar los elementos de fuente seleccionados desde el administrador de Commerce. Ver [Verificar que la sincronización de datos funcione](#verify-that-the-data-sync-is-working). |
-| Sincronización completa de todas las fuentes | **[!UICONTROL Data Management Dashboard]** | Realice una resincronización completa de todas las fuentes desde el administrador de Commerce; Adobe recomienda esto principalmente al conectarse por primera vez a un servicio de Commerce. Ver [Verificar que la sincronización de datos funcione](#verify-that-the-data-sync-is-working). |
+| Sincronización completa de todas las fuentes | **[!UICONTROL Data Management Dashboard]** | Realice una resincronización completa de todas las fuentes desde el administrador de Commerce; Adobe recomienda esto principalmente al conectarse por primera vez a un servicio de Commerce. Se omiten los elementos cuyo hash de contenido no ha cambiado desde la última exportación. Ver [Verificar que la sincronización de datos funcione](#verify-that-the-data-sync-is-working). |
 | Sincronización de fuentes de destino con control operativo | **CLI de Commerce** | Utilice el comando `saas:resync` para resincronizar fuentes de destino. Consulte [Sincronizar fuentes mediante la CLI de Commerce](data-export-cli-commands.md). |
 
 >[!MORELIKETHIS]

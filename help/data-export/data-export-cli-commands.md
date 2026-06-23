@@ -4,21 +4,13 @@ description: Aprenda a utilizar comandos CLI de Commerce para administrar fuente
 autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -34,7 +26,7 @@ El comando `saas:resync` del paquete `magento/saas-export` le permite administra
 Adobe no recomienda usar el comando `saas:resync` con regularidad. Los escenarios habituales para utilizar el comando son:
 
 - Sincronización inicial
-- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas)
+- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Resolución de problemas
 
 Supervisar operaciones de sincronización en el archivo `var/log/saas-export.log`.
@@ -96,6 +88,10 @@ Requerido. Especifica la entidad de fuente que se va a resincronizar.
 >
 >Los módulos instalados determinan qué fuentes se pueden volver a sincronizar. Por ejemplo, `productOverrides` requiere [!DNL Adobe Commerce] en la nube, de forma local o Commerce as a Cloud Service, y `orders` requiere el módulo Pedidos de venta.
 
+>[!NOTE]
+>
+>El comando `saas:resync` solo transmite elementos nuevos, elementos actualizados y elementos que anteriormente no se pudieron exportar. Se omiten los elementos cuyo hash de contenido no ha cambiado desde la última exportación.
+
 **Ejemplo:**
 
 ```shell
@@ -107,6 +103,10 @@ bin/magento saas:resync --feed products
 Resincronizar parcialmente entidades específicas mediante sus ID. Admite fuentes de `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` y `categoryPermissions`.
 
 De manera predeterminada, al usar la opción `--by-ids`, se especifican valores mediante los valores de SKU del producto. Para usar identificadores de producto, agregue la opción `--id-type=productId`.
+
+>[!NOTE]
+>
+>A diferencia de una resincronización estándar, `--by-ids` omite la verificación mediante hash y fuerza a las entidades especificadas a enviarse a los servicios de Commerce conectados, independientemente de si el contenido ha cambiado desde la última exportación.
 
 **Ejemplos:**
 
