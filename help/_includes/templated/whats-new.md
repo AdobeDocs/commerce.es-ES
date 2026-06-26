@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
+source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 1%
+source-wordcount: '1783'
+ht-degree: 0%
 
 ---
 # Novedades de la plantilla
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 23 de junio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se han actualizado las directrices de verificación de sincronización de datos de catálogo en la documentación del servicio Commerce. Los temas de instalación y configuración del servicio ahora usan un flujo de trabajo consistente de dos pasos: confirmar la exportación en la página <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Estado de sincronización de fuentes de datos</a> y confirmar la entrega en el <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Tablero de administración de datos</a>, con instrucciones actualizadas en <a href="https://experienceleague.adobe.com/es/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">Introducción al servicio de catálogo</a>, <a href="https://experienceleague.adobe.com/es/docs/commerce/live-search/install#monitor-sync-progress">Instalación de Live Search</a>, <a href="https://experienceleague.adobe.com/es/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">Instalación de recomendaciones de productos</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">Administrar la sincronización</a> en la <em>Guía de exportación de datos SaaS</em>.</p>
+</td>
+      <td>
+        Comentarios
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se ha agregado una nueva referencia de esquema de la tabla de fuentes de Adobe Commerce Optimizer Connector <a href="https://experienceleague.adobe.com/es/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">1&rbrace; y se ha actualizado la sincronización de exportación de datos SaaS <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/data-synchronization/sync-overview">3&rbrace;, la <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">administración manual de sincronización</a>, los <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/reference/data-export-cli-commands">comandos de resincronización de Commerce CLI</a> y la guía de <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/reference/feed-table-reference">esquema de tabla de fuentes</a>.</a></a></p>
+</td>
+      <td>
+        Actualización principal, nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 17 de junio de 2026
 
@@ -385,66 +415,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Comentarios, actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó una página <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview">observability</a> para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Comentarios, nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/app-management/manage-app/manage-app">Administre su aplicación</a> con información sobre cómo encontrar aplicaciones en el Administrador (filtros de patrones de búsqueda, estado y extensibilidad) y la ruta de acceso de Adquirir aplicación a Adobe Exchange, con vínculos de la <a href="https://experienceleague.adobe.com/es/docs/commerce/app-management/overview">descripción general de administración de aplicaciones</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/app-management/install">Instalar y acceder a Administración de aplicaciones</a>.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de producción para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 24 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó espacio aislado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">comprometer</a></td>
     </tr>
   </tbody>
 </table>
