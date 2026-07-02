@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c87bcff49f3c17379331e18fb9a0e890a5b9717c
+source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
 workflow-type: tm+mt
-source-wordcount: 2682
+source-wordcount: 2946
 ht-degree: 0%
 
 ---
@@ -53,19 +53,25 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 
 ## Servicio de catálogo de tienda
 
+## Junio de 2026
+
+**Fecha de la versión**: 1 de julio de 2026
+
+![Nuevo](../assets/new.svg) **Nuevo campo `canEditQuantity`**—Se agregó `canEditQuantity` a `ProductViewOptionValueProduct` en el GraphQL del servicio de catálogo. Expone la configuración de cantidad **definida por el usuario** opcional para las selecciones de paquetes del administrador de Commerce, de modo que los consumidores de tienda puedan determinar si la cantidad de una selección de paquetes es editable.
+
 ### Mayo de 2026
 
 **Fecha de la versión**: 20 de mayo de 2026
 <!-- v1.55 -->
 
 ![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para clientes de Adobe Commerce y Adobe Commerce as a Cloud Service según [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits).
-<!--DATA-7163-->
+
 
 **Fecha de la versión**: 13 de mayo de 2026
-<!--v1.54-->
+
 
 ![Nuevo](../assets/new.svg) **criterio de ordenación de categorías en GraphQL**: el tipo de GraphQL `CategoryView` ahora incluye un campo de posición, de modo que los escaparates pueden mostrar las categorías en el orden en que los comerciantes las configuran en la jerarquía del catálogo.
-<!--DATA-7166-->
+
 
 **Fecha de la versión**: 4 de mayo de 2026
 <!-- v1.53 -->
@@ -75,13 +81,13 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 ### Abril de 2026
 
 **Fecha de publicación**: 29 de abril de 2026
-<!--v1.52-->
+
 
 ![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para Adobe Commerce Optimizer y Adobe Commerce as a Cloud Service
 clientes según [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Fecha de publicación**: 17 de abril de 2026
-<!--v1.51-->
+
 
 ![Nuevo](../assets/new.svg) agregó una nueva consulta de GraphQL `searchCategory` que permite a los clientes buscar categorías por nombre con resultados paginados. La consulta acepta los parámetros `searchTerm` (mínimo 3 caracteres) y `family`, `pageSize` y `currentPage` opcionales. Los resultados incluyen `CategoryTreeView` objetos coincidentes con metadatos de categoría completa, un `totalCount` y `pageInfo` para la paginación. <!--COMOPT-1819-->
 
@@ -90,10 +96,10 @@ Esta consulta solo está disponible para clientes que utilizan Adobe Commerce Op
 ### Marzo de 2026
 
 **Fecha de la versión**: 24 de marzo de 2026
-<!--v1.49-->
+
 
 ![Nuevo](../assets/new.svg) Se agregó compatibilidad para calcular y devolver el rango de precios de los paquetes dinámicos.
-<!--DATA-7115-->
+
 
 ### Diciembre de 2025
 
@@ -101,7 +107,7 @@ Esta consulta solo está disponible para clientes que utilizan Adobe Commerce Op
 <!-- v1.46 -->
 
 ![Corrección](../assets/fix.svg): mejoras de infraestructura y nivel de sistema para mejorar el rendimiento y la estabilidad.
-<!--DATA-6852, DATA-6864-->
+
 
 ### Noviembre de 2025
 
@@ -310,7 +316,7 @@ Se aplica a:
 ![Corregir](../assets/fix.svg) Los atributos sin funciones ya no se indizan de forma predeterminada para el catálogo maquetable, lo que mejora el tiempo de indización y reduce el almacenamiento. El comportamiento heredado se puede volver a habilitar mediante un indicador de funcionalidad.
 
 ![Solucionar](../assets/fix.svg) mejoras en la infraestructura y el nivel de sistema para mejorar la seguridad, el rendimiento y la estabilidad.
-<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
+
 
 ### Febrero de 2025
 
@@ -349,7 +355,7 @@ Versión principal: [modelo de datos de catálogo maquetable](https://developer.
 <!-- v1.28 -->
 
 ![Solucionar](../assets/fix.svg) mejoras en la infraestructura y el nivel de sistema para mejorar la seguridad, el rendimiento y la estabilidad.
-<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
+
 
 ### Octubre de 2024
 
@@ -359,7 +365,7 @@ Versión principal: [modelo de datos de catálogo maquetable](https://developer.
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
 El esquema ![Nuevo](../assets/new.svg) de GraphQL ahora incluye `lastModifiedAt` en la información del producto para obtener mapas del sitio y reindexación de motores de búsqueda precisos (por ejemplo, Google).
-<!--DATA-6209-->
+
 
 ### Septiembre de 2024
 
@@ -367,7 +373,7 @@ El esquema ![Nuevo](../assets/new.svg) de GraphQL ahora incluye `lastModifiedAt`
 <!-- v1.27 -->
 
 ![Solucionar](../assets/fix.svg) mejoras en la infraestructura y el nivel de sistema para mejorar la seguridad, el rendimiento y la estabilidad.
-<!--DATA-6243-->
+
 
 ### Agosto de 2024
 
@@ -376,8 +382,7 @@ El esquema ![Nuevo](../assets/new.svg) de GraphQL ahora incluye `lastModifiedAt`
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Corrección](../assets/fix.svg): ahora se puede recuperar la información del producto sin los datos de invalidación (precios) del producto. Anteriormente, estas consultas arrojaban: `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
-<!--DATA-6121-->
+![Corrección](../assets/fix.svg): ahora se puede recuperar la información del producto sin los datos de invalidación (precios) del producto. Anteriormente, estas consultas devolvían: 
 
 **Fecha de lanzamiento**: 13 de agosto de 2024
 <!-- v1.22 -->
@@ -385,7 +390,6 @@ El esquema ![Nuevo](../assets/new.svg) de GraphQL ahora incluye `lastModifiedAt`
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
 ![Nuevo](../assets/new.svg) se agregó soporte para recuperar todas las variantes por SKU del producto. Consulte la [Referencia de API del servicio de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/).
-<!--DATA-6067-->
 
 ### Mayo de 2024
 
@@ -400,7 +404,6 @@ El esquema ![Nuevo](../assets/new.svg) de GraphQL ahora incluye `lastModifiedAt`
 <!--DATA-5033-->
 
 ![Corrección](../assets/fix.svg) Se agregó compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) para aplicar las actualizaciones.
-<!--DATA-5033-->
 
 #### Limitaciones conocidas
 
@@ -443,8 +446,7 @@ Para obtener detalles y ejemplos, consulte [Servicio de catálogo y malla de API
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-La API del servicio de catálogo admite ahora ![nuevos](../assets/new.svg) vídeos de producto.
-![Corrección](../assets/fix.svg) Las opciones sin existencias ahora se muestran en el widget PDP.
+La API del servicio de catálogo admite ahora ![nuevos](../assets/new.svg) vídeos de producto.![Corregir](../assets/fix.svg) Las opciones sin existencias ahora se muestran en el widget PDP.
 
 #### Limitaciones conocidas
 
@@ -466,9 +468,7 @@ Utilice API Mesh y la API principal de GraphQL para lo siguiente:
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-El servicio de catálogo ![New](../assets/new.svg) admite el indicador `inStock` para las variantes de producto.
-![Nuevo](../assets/new.svg): los campos `urlKey` y `externalId` se han agregado al esquema de GraphQL.
-Ahora se admiten ![nuevos](../assets/new.svg) productos descargables y tarjetas regalo.
+El servicio de catálogo ![New](../assets/new.svg) admite el indicador `inStock` para las variantes de producto.![Nuevo](../assets/new.svg) Los campos `urlKey` y `externalId` se han agregado al esquema de GraphQL.Ahora se admiten ![nuevos](../assets/new.svg) productos descargables y tarjetas regalo.
 
 ### Septiembre de 2023
 
@@ -477,8 +477,7 @@ Ahora se admiten ![nuevos](../assets/new.svg) productos descargables y tarjetas 
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-El servicio de catálogo ![New](../assets/new.svg) ahora usa [indización de precios SaaS](../price-index/price-indexing.md).
-![Corrección](../assets/fix.svg) Esta versión contiene correcciones de errores y mejoras en el servicio.
+El servicio de catálogo ![New](../assets/new.svg) ahora usa [indización de precios SaaS](../price-index/price-indexing.md).![Corrección](../assets/fix.svg) Esta versión contiene correcciones de errores y mejoras en el servicio.
 
 ### Julio de 2023
 
@@ -505,8 +504,7 @@ El servicio de catálogo ![New](../assets/new.svg) admite ahora la consulta de G
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-El servicio de catálogo ![New](../assets/new.svg) ahora limpia las variantes de producto eliminadas.
-![Corrección](../assets/fix.svg): mejoras de rendimiento y escalabilidad de la infraestructura.
+El servicio de catálogo ![New](../assets/new.svg) ahora limpia las variantes de producto eliminadas.![Corregir](../assets/fix.svg) mejoras de rendimiento y escalabilidad de la infraestructura.
 
 ### Marzo de 2023
 
@@ -515,16 +513,14 @@ El servicio de catálogo ![New](../assets/new.svg) ahora limpia las variantes de
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) agregó muestras a la consulta [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/).
-![Nuevo](../assets/new.svg) agregó la capacidad para obtener `entityId` usando [API Mesh](mesh.md).
+![Nuevo](../assets/new.svg) agregó muestras a la consulta [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/).![Nuevo](../assets/new.svg) agregó la capacidad para obtener `entityId` mediante [API Mesh](mesh.md).
 
 **Fecha de la versión**: 6 de marzo de 2023
 <!-- v1.5 -->
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) agregó la funcionalidad de GraphQL [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/).
-![Corrección](../assets/fix.svg): rendimiento y escalabilidad de API mejorados.
+![Nuevo](../assets/new.svg) agregó la funcionalidad de GraphQL [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/).![Corrección](../assets/fix.svg): rendimiento y escalabilidad de API mejorados.
 
 ### Febrero de 2023
 
@@ -533,8 +529,7 @@ El servicio de catálogo ![New](../assets/new.svg) ahora limpia las variantes de
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Nuevo](../assets/new.svg) paquete de servicio de catálogo publicado para simplificar los pasos de instalación.
-![Corrección](../assets/fix.svg) de escalabilidad y mejoras de rendimiento de API.
+![Nuevo](../assets/new.svg) paquete de servicio de catálogo publicado para simplificar los pasos de instalación.![Corrección](../assets/fix.svg) de escalabilidad y mejoras de rendimiento de API.
 
 ### Enero de 2023
 
@@ -543,10 +538,7 @@ El servicio de catálogo ![New](../assets/new.svg) ahora limpia las variantes de
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Nuevo](../assets/new.svg) ha simplificado y mejorado la experiencia de incorporación.
-![Nuevos](../assets/new.svg) nuevos extremos de zona protegida del cliente disponibles para pruebas previas a la producción.
-![Se ha agregado soporte](../assets/new.svg) para productos virtuales.
-![Corrección](../assets/fix.svg) de escalabilidad de API y mejoras de rendimiento.
+![Nuevo](../assets/new.svg) ha simplificado y mejorado la experiencia de incorporación.![Nuevos](../assets/new.svg) nuevos extremos de zona protegida del cliente disponibles para pruebas previas a la producción.![Se ha agregado compatibilidad con New](../assets/new.svg) para productos virtuales.![Corrección](../assets/fix.svg) de escalabilidad y mejoras de rendimiento de API.
 
 ### Noviembre de 2022
 
@@ -555,8 +547,7 @@ El servicio de catálogo ![New](../assets/new.svg) ahora limpia las variantes de
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-El servicio de catálogo ![New](../assets/new.svg) ahora es compatible con la [malla de API](https://developer.adobe.com/graphql-mesh-gateway/) de Adobe.
-![Corrección](../assets/fix.svg): se mejoró la escalabilidad de la API y el rendimiento general.
+El servicio de catálogo ![New](../assets/new.svg) ahora es compatible con la [malla de API](https://developer.adobe.com/graphql-mesh-gateway/) de Adobe.![Corrección](../assets/fix.svg): se mejoró la escalabilidad de la API y el rendimiento general.
 
 ### Octubre de 2022
 
@@ -565,9 +556,7 @@ El servicio de catálogo ![New](../assets/new.svg) ahora es compatible con la [m
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Nuevo](../assets/new.svg) soporte para productos agrupados y agrupados.
-![Nuevo](../assets/new.svg) agregó invalidaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
-El servicio ![Fix](../assets/fix.svg) es ahora más estable y ha mejorado el rendimiento.
+![Nuevo](../assets/new.svg) soporte para productos agrupados y agrupados.![Nuevo](../assets/new.svg) agregó invalidaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.El servicio ![Fix](../assets/fix.svg) es ahora más estable y ha mejorado el rendimiento.
 
 ### Septiembre de 2022
 
@@ -576,10 +565,7 @@ El servicio ![Fix](../assets/fix.svg) es ahora más estable y ha mejorado el ren
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Nuevas](../assets/new.svg) imágenes de variante: las imágenes de producto devueltas se basan en las opciones seleccionadas.
-![Nuevos](../assets/new.svg) roles de precio: solo los miembros de grupos de clientes específicos pueden ver los precios de los productos.
-![Corrección](../assets/fix.svg): se ha mejorado la estabilidad y el rendimiento del servicio.
-![Se reciben nuevas](../assets/new.svg) actualizaciones cuando los productos se eliminan del catálogo.
+![Nuevas](../assets/new.svg) imágenes de variante: las imágenes de producto devueltas se basan en las opciones seleccionadas.![Nuevos](../assets/new.svg) roles de precio: solo los miembros de grupos de clientes específicos pueden ver los precios de los productos.![Corrección](../assets/fix.svg) Se mejoró la estabilidad y el rendimiento del servicio.![Se reciben nuevas](../assets/new.svg) actualizaciones cuando los productos se eliminan del catálogo.
 
 ### Agosto de 2022
 
