@@ -3,7 +3,7 @@ title: Búsqueda semántica
 description: Habilite la búsqueda semántica de IA para  [!DNL Live Search]  desde Configuración. No se requiere configuración de atributos ni cambios de tienda.
 role: Admin
 recommendations: noCatalog
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -106,3 +106,4 @@ Una vez que la búsqueda semántica esté activa y la indexación se complete, A
 - [Configuración](settings.md#semantic-search)
 - [Sinónimos](synonyms.md)
 - [Rendimiento](performance.md)
+
