@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: f1c7779558406641972e9c690d0f508d46da3e0c
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
-source-wordcount: 1325
+source-wordcount: 1404
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ _24 de junio de 2026_
 <!-- v1.3 -->
 
 ![Nuevo](../assets/new.svg) **Nuevo campo `canEditQuantity`**—Se agregó `canEditQuantity` a `ProductViewOptionValueProduct` en el GraphQL del servicio de catálogo. Expone la configuración de cantidad **definida por el usuario** opcional para las selecciones de paquetes del administrador de Commerce, de modo que los consumidores de tienda puedan determinar si la cantidad de una selección de paquetes es editable.
-<!--COMOPT-2050-->
 
 ### Búsqueda semántica
 
@@ -70,13 +69,10 @@ _28 de mayo de 2026_
 <!-- v1.2 -->
 
 ![Corrección](../assets/fix.svg) **Árboles de navegación completos**: Las categorías descendientes etiquetadas ahora se incluyen correctamente en los árboles `navigation` filtrados por la familia cuando existe un nodo intermedio sin etiquetar en la ruta de acceso. Esta corrección garantiza que los compradores vean todas las categorías relevantes en la navegación, lo que facilita la exploración y la detección de artículos.
-<!--DATA-7183-->
 
 ![Corrección](../assets/fix.svg) **Administración de slug vacía en `categoryTree` solicitudes**—Se ha corregido un problema en el cual la consulta [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) devolvía un error interno del servidor cuando el argumento `slugs` incluía una cadena vacía. Ahora se omiten los valores de slug vacíos, por lo que las tiendas y las integraciones siguen resolviendo los datos de categoría sin solicitudes fallidas.
-<!--DATA-7184-->
 
 ![Corregir](../assets/fix.svg) **`searchCategory`solicitudes devuelve resultados alfabetizados que no distinguen entre mayúsculas y minúsculas**—La consulta `searchCategory` ahora ordena los resultados de búsqueda alfabéticamente sin distinción entre mayúsculas y minúsculas, lo que garantiza un orden coherente y predecible. Las categorías con prefijos más cortos aparecen primero cuando los nombres son idénticos.
-<!--COMOPT-2142-->
 
 _4 de mayo de 2026_
 
@@ -316,3 +312,4 @@ Las URL de producción de base para la región de la Unión Europea son:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
+
