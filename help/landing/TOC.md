@@ -6,9 +6,9 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
+source-git-commit: 08581e17d291b1900ff8826a36edeaf97a9c0d3c
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '155'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 12%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=es)
    - [[!DNL App Management]](https://experienceleague.adobe.com/es/docs/commerce/app-management/overview)
    - [Conector de servicios](/help/landing/saas.md)
-   - [Integrar [!DNL Adobe Commerce] con [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=es)
 - Herramientas de datos {#data-services}
    - [Exportación de datos SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=es)
    - [Indexación de precios de SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=es)
