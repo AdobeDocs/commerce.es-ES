@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 >
 >Si utiliza Adobe Commerce local o Adobe Commerce en infraestructura en la nube, consulte las [notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview).
 
-## Junio de 2026: #2 de la versión {#latest}
+## Julio de 2026: #1 de la versión {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ Los extremos de la API REST `GET /V1/orders` y `GET /V1/invoices` ahora admiten 
 ### Enumerar plantillas de correo electrónico personalizadas mediante la API
 
 El nuevo extremo de la API REST `GET /V1/custom-email/templates` devuelve sus [plantillas de correo electrónico personalizadas](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), incluidos el identificador, el código y el asunto de cada plantilla. Las integraciones pueden utilizar un ID de plantilla devuelto con el extremo `POST /V1/custom-email/send` en lugar de buscar el ID manualmente. <!-- CCSAAS-5089 -->
+
+### Administrar la cadena de pedidos completa a través de la API de REST
+
+>[!IMPORTANT]
+>
+>Esta función es experimental y debe habilitarse poniéndose en contacto con el administrador de éxito del cliente de Adobe Commerce o creando un ticket de asistencia.
+
+Los nuevos extremos de la API REST `orderChain` permiten que las integraciones modifiquen un pedido mediante su ID y resuelvan automáticamente la cadena completa de pedidos editados:
+
+| Método | Extremo | Descripción |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Cree una factura para el pedido y resuelva los artículos que desea facturar en toda la cadena de pedidos. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Cancela el pedido actual en la cadena. |
+| `POST` | `/V1/orderChain/{id}/hold` | Ponga el pedido en espera. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Elimine la retención del pedido. |
+| `POST` | `/V1/orderChain/{id}/emails` | Envíe una notificación de pedido por correo electrónico. |
+| `POST` | `/V1/orderChain/{id}/comments` | Añada un comentario al pedido. |
+| `GET` | `/V1/orderChain/{id}/comments` | Recupere los comentarios del pedido. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Recupera el estado del pedido actual. |
+
+Los extremos de `GET` que admiten el filtrado en facturas, envíos, notas de abono y devoluciones ahora admiten el filtrado por `order_original_id`. Filtrar por `order_original_id` devuelve detalles sobre toda la cadena de pedidos, no solo sobre el pedido único. Un extremo de ejemplo que admite esta característica es `GET /V1/invoices`. <!-- ACCS-1004, ACCS-1005 -->
 
 ### Ver el historial de modificaciones de pedidos en el administrador
 
@@ -84,6 +105,10 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 * Los catálogos compartidos grandes ahora son más fáciles de administrar en el administrador, con tiempos de carga mejorados y menor probabilidad de tiempos de espera. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * Se ha corregido un error de creación de envío que se producía al crear envíos para pedidos que contenían productos configurables. <!-- ACCS-1095 -->
+
+* Se corrigió un problema en [!DNL Commerce Admin] en el cual el menú de navegación izquierdo podía desaparecer. <!-- ACCS-1035 -->
+
+* Se ha mejorado el rendimiento de asignación y cancelación de asignación en catálogos compartidos. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
