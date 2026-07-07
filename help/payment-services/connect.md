@@ -16,7 +16,7 @@ ht-degree: 0%
 
 La instancia de Commerce se conecta mediante una clave de API y una clave privada, y se especifica el espacio de datos en la configuración mediante [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=es). **Solo configuró esta conexión una vez.**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448020?captions=spa)
 
 >[!INFO]
 >
