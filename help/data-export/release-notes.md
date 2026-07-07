@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
 workflow-type: tm+mt
-source-wordcount: 2903
+source-wordcount: 3115
 ht-degree: 0%
 
 ---
@@ -45,6 +45,13 @@ Las actualizaciones incluyen:
 
 ## Versiones de 2026
 
+### Versión 103.4.29
+
+_6 de julio de 2026_
+
+![Corregir](../assets/fix.svg) Ordenar vínculos de productos para evitar la sincronización aleatoria. <!--MDEE-1391-->
+![Corrección](../assets/fix.svg) La fuente de precios envía el precio base en lugar del precio de regla de catálogo para los sitios web UTC negativos después de la medianoche UTC. <!--MDEE-1401-->
+
 ### Versión 103.4.28
 
 _11 de junio de 2026_
@@ -55,8 +62,7 @@ _11 de junio de 2026_
 
 _4 de junio de 2026_
 
-![Corregir](../assets/fix.svg) **Los productos agrupados permanecen visibles después de las actualizaciones simultáneas del catálogo**-Se ha corregido un problema por el que los productos agrupados no aparecían en la tienda cuando los productos configurables y agrupados se actualizaban al mismo tiempo. Después de actualizar `magento/module-data-exporter` a la versión 103.4.27, la fuente de productos se programa automáticamente para volver a sincronizar y corregir las incoherencias de datos de paquete existentes en [!DNL Catalog Service], [!DNL Live Search] y otros servicios de Commerce conectados.
-<!--MDEE-1379-->
+![Corregir](../assets/fix.svg) **Los productos agrupados permanecen visibles después de las actualizaciones simultáneas del catálogo**-Se ha corregido un problema por el que los productos agrupados no aparecían en la tienda cuando los productos configurables y agrupados se actualizaban al mismo tiempo. Después de actualizar `magento/module-data-exporter` a la versión 103.4.27, la fuente de productos se programa automáticamente para volver a sincronizar y corregir las incoherencias de datos de paquete existentes en [!DNL Catalog Service], [!DNL Live Search] y otros servicios conectados de Commerce.
 
 ### Versión 103.4.26
 
@@ -76,11 +82,9 @@ _19 de mayo de 2026_
 
 _5 de mayo de 2026_
 
-![Corrección](../assets/fix.svg) **Es más fácil solucionar problemas de los registros de exportación**. Muchos errores y advertencias relacionados con la exportación ahora incluyen códigos de registro coherentes. Estos códigos le ayudan a rastrear los problemas más rápido cuando trabaja con soporte técnico o documentación. Para obtener más información, consulte la [Referencia de códigos de registro](troubleshooting/log-codes-reference.md).
-<!--MDEE-1276-->
+![Corrección](../assets/fix.svg) **Es más fácil solucionar problemas de los registros de exportación**. Muchos errores y advertencias relacionados con la exportación ahora incluyen códigos de registro coherentes. Estos códigos le ayudan a rastrear los problemas más rápido cuando trabaja con soporte técnico o documentación. Para obtener más información, consulte [Referencia de códigos de registro](troubleshooting/log-codes-reference.md).
 
 ![Corregir](../assets/fix.svg) **Sincronizar automáticamente cuando cambian las etiquetas de opciones de atributos**-Cambiar las etiquetas de opciones de atributos de productos para una vista de tienda (incluidos los atributos de selección múltiple) ahora pone en cola de nuevo los productos afectados para exportarlos de modo que Live Search, Product Recommendations, Catalog Service y otros servicios conectados de Commerce muestren las etiquetas de faceta y filtro actualizadas en las vistas de comprador. Anteriormente, las ediciones solo de etiquetas podían hacer que los catálogos SaaS mostraran frases antiguas hasta que un cambio de producto más amplio activara una sincronización.
-<!--MDEE-1337-->
 
 ![Corrección](../assets/fix.svg) **Estado confiable y visibilidad cuando faltan datos de ámbito predeterminado**. La exportación del producto administra los huecos en el ámbito de administración predeterminado para que los servicios conectados tengan un comportamiento correcto de habilitado, deshabilitado y visibilidad. Los valores específicos del almacén que establezca seguirán teniendo prioridad.
 
@@ -98,9 +102,7 @@ _5 de mayo de 2026_
 _20 de abril de 2026_
 
 ![Corrección](../assets/fix.svg) **Errores de SQL resueltos al eliminar atributos EAV estáticos**: El complemento ProductAttributeDelete ya no genera errores de SQL al eliminar atributos EAV estáticos, lo que garantiza una administración de atributos más fluida y una fiabilidad del sistema mejorada. <!--MDEE-1336-->
-![Corrección](../assets/fix.svg) **Se ha corregido la exportación de la ruta de la categoría después de que la categoría se mueva**- Garantiza que la fuente de categorías actualice correctamente la `url_path` cuando se mueva una categoría a un elemento principal diferente, lo que evita rutas de categoría que falten o estén obsoletas en los servicios conectados de Commerce.<!--MDEE-1331-->
-![Corrección](../assets/fix.svg) **Se han mejorado las actualizaciones programadas de categorías para productos relacionados**. Las actualizaciones programadas de las direcciones URL de categorías ahora afectan únicamente a las categorías deseadas, lo que preserva la integridad de los datos y evita cambios no deseados en productos relacionados. Ahora, los cambios programados en las direcciones URL de las categorías se reflejan correctamente en los datos exportados, lo que mantiene la navegación de la tienda y los servicios vinculados alineados con el catálogo actual.
-<!--MDEE-1321-->
+![Corregir](../assets/fix.svg) **Se ha corregido la exportación de la ruta de la categoría después de que la categoría se mueva**- Garantiza que la fuente de categorías actualice correctamente la `url_path` cuando se mueva una categoría a un elemento principal diferente, lo que evita que falten rutas de categoría o que estén obsoletas en los servicios de Commerce conectados.![Corrección](../assets/fix.svg) **Se han mejorado las actualizaciones programadas de categorías para productos relacionados**. Las actualizaciones programadas de las direcciones URL de categorías ahora afectan únicamente a las categorías deseadas, lo que preserva la integridad de los datos y evita cambios no deseados en los productos relacionados. Ahora, los cambios programados en las direcciones URL de las categorías se reflejan correctamente en los datos exportados, lo que mantiene la navegación de la tienda y los servicios vinculados alineados con el catálogo actual.
 
 ### Versión 103.4.22
 
