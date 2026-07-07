@@ -6,7 +6,7 @@ feature: Payments, Checkout, Configuration, Paas
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
