@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ Actualizaciones al metapaquete PHP del servicio de catálogo (`magento/catalog-s
 - Para los clientes de Adobe Commerce as a Cloud Service, la versión más reciente está instalada en su entorno.
 
 - Para Adobe Commerce en la nube o de forma local, Adobe recomienda utilizar Composer para actualizar el metapaquete del servicio de catálogo en los entornos de nube en la última versión.
+
+### Versión 3.5.0
+
+**Fecha de la versión**: 10 de julio de 2026
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
+
+![Nuevo](../assets/new.svg) **Sincronización de clave de URL de categoría de ensayo**: se han actualizado las dependencias del metapaquete del servicio de catálogo para incluir el módulo del exportador de datos de ensayo del catálogo (`magento/module-catalog-staging-data-exporter`). Este módulo vuelve a exportar las fuentes de productos cuando se aplica un cambio de categoría `url_key` ensayada, por lo que los cambios de catálogo ensayados se propagan correctamente al catálogo SaaS (Servicio de catálogo, Live Search y Recomendaciones de productos).
+
+![Nuevo](../assets/new.svg) Se han actualizado las dependencias para mantener la compatibilidad entre el servicio de catálogo y la pila de Commerce.
 
 ### Versión 3.4.0
 

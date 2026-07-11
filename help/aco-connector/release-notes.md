@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
 workflow-type: tm+mt
-source-wordcount: 353
+source-wordcount: 366
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ Estas notas de la versión describen todas las versiones para [!DNL Adobe Commer
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
 ## Versiones de 2026
+
+### Versión 1.0.15
+
+_10 de julio de 2026_
+
+![Corrección](../assets/fix.svg) Se agregó compatibilidad de ordenación a la fuente Categorías. <!--MDEE-1409-->
 
 ### Versión 1.0.14
 
@@ -57,7 +63,7 @@ _11 de junio de 2026_
 _6 de mayo de 2026_
 
 ![Corrección](../assets/fix.svg) **Se mejoraron las instrucciones de configuración de [!DNL Adobe Commerce Optimizer Connector]** - Se ha actualizado la página de configuración de [!DNL Adobe Commerce Optimizer] en el administrador de Commerce para vincular a la guía de integración de _[!DNL Adobe Commerce Optimizer Connector]_.
-<!--COMOPT-1922-->
+
 
 ![Corrección](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector]mejora de metadatos**: [!DNL Adobe Commerce Optimizer Connector] ahora incluye su versión instalada en el encabezado de metadatos. Esta mejora permite a los equipos identificar rápidamente qué versión del conector se está usando durante la solución de problemas o las contrataciones de soporte técnico.<!--MDEE-1323-->
 
