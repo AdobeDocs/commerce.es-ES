@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ Las actualizaciones incluyen:
 
 ## Versiones de 2026
 
+### Versión 103.4.30
+
+_10 de julio de 2026_
+
+![Corrección](../assets/fix.svg) Se ha corregido la función Filtrar cuadrícula de estado de fuente por ID en la página Estado de sincronización de fuente de datos del Administrador de Commerce para que los registros de fuente coincidentes se muestren correctamente al filtrar por ID de fuente. <!--MDEE-1396-->
+![Nuevo](../assets/new.svg) agregó una opción `--force` al comando `bin/magento saas:resync` para resincronizar todas las fuentes de datos seleccionadas aunque ya se muestren como sincronizadas, lo que facilita la resincronización completa y los escenarios de recuperación. <!--MDEE-1334-->
+
 ### Versión 103.4.29
 
 _6 de julio de 2026_
 
-![Corregir](../assets/fix.svg) Ordenar vínculos de productos para evitar la sincronización aleatoria. <!--MDEE-1391-->
-![Corrección](../assets/fix.svg) La fuente de precios envía el precio base en lugar del precio de regla de catálogo para los sitios web UTC negativos después de la medianoche UTC. <!--MDEE-1401-->
+![Corregir](../assets/fix.svg) Se ha corregido un problema por el cual el orden de los vínculos de productos relacionados, de mejora de venta y de venta cruzada en la fuente de productos podía variar de una ejecución a otra, lo que provocaba que los productos no modificados se volvieran a enviar en cada ejecución de `bin/magento saas:resync --feed products`. Estos vínculos ahora se exportan en un orden coherente, por lo que los productos se vuelven a sincronizar solo cuando cambian realmente. <!--MDEE-1391-->
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que la fuente de precios enviaba precios base completos en lugar de precios de reglas de catálogo para sitios web en zonas horarias detrás de UTC (por ejemplo, EE. UU. y Canadá) durante las primeras horas de la mañana en UTC. El precio de las reglas del catálogo ahora se entrega correctamente, independientemente del huso horario de un sitio web. <!--MDEE-1401-->
 
 ### Versión 103.4.28
 
