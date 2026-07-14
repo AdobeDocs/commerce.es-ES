@@ -5,9 +5,15 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
 TQID: https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
 source-wordcount: 1028
@@ -85,7 +91,7 @@ Si desea introducir los datos de evento de perfil del cliente en Experience Plat
 
 ### Enviar datos de eventos de perfil de series temporales a Experience Platform mediante el conjunto de datos existente
 
-Si desea agregar datos de evento de perfil del lado del servidor [de la serie temporal ](events-backoffice.md#customer-profile-events) a su secuencia de datos de Commerce existente, agregue el grupo de campos `Demographic Details` al esquema. El esquema ahora contiene los siguientes grupos de campos específicos de Commerce:
+Si desea agregar datos de evento de perfil del lado del servidor [de la serie temporal &#x200B;](events-backoffice.md#customer-profile-events) a su secuencia de datos de Commerce existente, agregue el grupo de campos `Demographic Details` al esquema. El esquema ahora contiene los siguientes grupos de campos específicos de Commerce:
 
 - Búsqueda del sitio
 - Visite la página web
