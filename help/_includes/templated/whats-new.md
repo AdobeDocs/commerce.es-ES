@@ -1,8 +1,8 @@
 ---
-source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
+source-git-commit: c99194b2eb7111a593cfe7c4ba1b4917e38589d2
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 0%
+source-wordcount: '1799'
+ht-degree: 1%
 
 ---
 # Novedades de la plantilla
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 7 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó espacio aislado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 6 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha eliminado la documentación sobre la integración de LLM Optimizer y Commerce. Se ha cambiado el ámbito de la característica y se ha movido a la <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/catalog-enrichment">guía de administración de Commerce</a>.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 23 de junio de 2026
 
@@ -393,28 +437,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 30 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha ampliado la <a href="https://experienceleague.adobe.com/es/docs/commerce/aco-optimizer-connector/overview">descripción general del conector Adobe Commerce Optimizer</a> con ventajas clave, arquitectura de extremo a extremo (nuevo diagrama), asignación de ámbito más clara, flujos de trabajo de configuración y sincronización típicos, escenarios admitidos y requisitos previos o responsabilidades para que los equipos puedan evaluar y utilizar la integración con mayor facilidad.</p>
-</td>
-      <td>
-        Comentarios, actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">comprometer</a></td>
     </tr>
   </tbody>
 </table>

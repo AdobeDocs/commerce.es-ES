@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
+source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
 workflow-type: tm+mt
-source-wordcount: 4655
+source-wordcount: 4657
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 [!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
 
-Actualmente, los siguientes elementos solo están disponibles en entornos de espacio aislado y su traslado a entornos de producción está programado para julio.
+Actualmente, los siguientes elementos solo están disponibles en entornos de espacio aislado y su traslado a entornos de producción está programado para el 28 de julio de 2026.
 
 >[!BEGINSHADEBOX]
 
