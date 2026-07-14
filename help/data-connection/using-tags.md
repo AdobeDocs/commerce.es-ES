@@ -5,28 +5,20 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 2655
+source-wordcount: 2684
 ht-degree: 0%
 
 ---
 
 # Recopilación de datos de Commerce mediante etiquetas de Adobe Experience Platform
 
-Aunque puede usar la extensión [!DNL Data Connection] para publicar y suscribirse a eventos de tienda, es posible que algunos comerciantes ya estén usando una solución de recopilación de datos, como las [etiquetas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=es). Para esos comerciantes, Adobe Commerce proporciona una opción de solo publicación en la extensión [!DNL Data Connection] que utiliza Adobe Commerce Event SDK.
+Aunque puede usar la extensión [!DNL Data Connection] para publicar y suscribirse a eventos de tienda, es posible que algunos comerciantes ya estén usando una solución de recopilación de datos, como las [etiquetas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Para esos comerciantes, Adobe Commerce proporciona una opción de solo publicación en la extensión [!DNL Data Connection] que utiliza Adobe Commerce Event SDK.
 
 Flujo de datos de la extensión ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Flujo de datos de la extensión _[!DNL Data Connection]con etiquetas_
@@ -41,21 +33,21 @@ Para recopilar datos de evento de Commerce:
 
   >[!NOTE]
   >
-  > **no** [configura](connect-data.md) el ID de organización y el ID de flujo de datos.
+  > **no** [configure](connect-data.md) el identificador de organización y el identificador de flujo de datos en el administrador de Commerce cuando use etiquetas para la recopilación. Los comerciantes de varios sitios web configuran flujos de datos por propiedad o entorno en Etiquetas. Para ver el comportamiento del ámbito de administración de Commerce, consulte [Ámbito de configuración](connect-data.md#configuration-scope).
 
 ## Asignar datos de tienda de Commerce a Adobe Experience Platform
 
 Para asignar datos de tienda de Commerce a Adobe Experience Platform, configure e instale lo siguiente desde etiquetas de Adobe Experience Platform:
 
-1. [Configurar una propiedad de etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=es) en la recopilación de datos de Adobe Experience Platform.
+1. [Configurar una propiedad de etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) en la recopilación de datos de Adobe Experience Platform.
 
 1. En **Creación**, seleccione **Extensiones** e instale y configure las siguientes extensiones:
 
-   - [Capa de datos del cliente de Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=es)
+   - [Capa de datos del cliente de Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=es)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
-1. [Publicar etiqueta](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=es) en su entorno de desarrollo.
+1. [Publicar etiqueta](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) en su entorno de desarrollo.
 
 1. Siga los pasos de **Asignación de eventos** a continuación para configurar los elementos de datos y las reglas para eventos específicos.
 
@@ -75,7 +67,7 @@ Por ejemplo, vamos a agregar el evento de Adobe Commerce `signOut` a las etiquet
 
 1. Crear un elemento de datos:
 
-   ![Crear nuevo elemento de datos](assets/create-new-data-elements.png)
+   ![Crear nuevo elemento de datos
    _Crear nuevo elemento de datos_
 
 1. Establezca **Name** en `sign out`.
@@ -88,14 +80,14 @@ Por ejemplo, vamos a agregar el evento de Adobe Commerce `signOut` a las etiquet
 
 1. En **userAccount** > **logout**, establezca **value** en **Logout de visitantes** en `1`.
 
-   ![Actualizar valor de cierre de sesión](assets/signout-value.png)
+   ![Actualizar valor de cierre de sesión
    _Actualizar valor de cierre de sesión_
 
 1. Seleccione **Guardar**.
 
 1. Crear una regla:
 
-   ![Crear nueva regla](assets/create-new-rule.png)
+   ![Crear nueva regla
    _Crear nueva regla_
 
 1. Seleccione **Agregar** en **EVENTOS**.
@@ -1351,7 +1343,7 @@ Los siguientes pasos muestran cómo configurar un evento `pageView` con `identit
 
 1. Configure el elemento de datos con el código personalizado para ECID:
 
-   ![Configurar elemento de datos con código personalizado](assets/set-custom-code-ecid.png)
+   ![Configurar elemento de datos con código personalizado
    _Configurar elemento de datos con código personalizado_
 
 1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
@@ -1378,12 +1370,12 @@ Los siguientes pasos muestran cómo configurar un evento `pageView` con `identit
 
 1. Actualizar esquema XDM con `identityMap` establecido como ECID:
 
-   ![Establecer identityMap como ECID](assets/identity-map-data-element.png)
+   ![Establecer identityMap como ECID
    _Establecer identityMap como ECID_
 
 1. Defina acciones de regla que recuperen ECID:
 
-   ![Recuperar ECID](assets/rule-retrieve-ecid.png)
+   ![Recuperar ECID
    _Recuperar ECID_
 
 ## Definir identidad en eventos de back office
@@ -1392,7 +1384,7 @@ A diferencia de los eventos de tienda que utilizan ECID para identificar y vincu
 
 1. Crear un elemento de mapa de identidad.
 
-   ![Mapa de identidad de Back Office](assets/custom-code-backoffice.png)
+   ![Mapa de identidad de Back Office
    _Crear mapa de identidad de back office_
 
 1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
@@ -1420,26 +1412,26 @@ return IdentityMap;
 
 1. Agregue este nuevo elemento a cada campo `identityMap`.
 
-   ![Actualizar cada identityMap](assets/add-element-back-office.png)
+   ![Actualizar cada identityMap
    _Actualizar cada identityMap_
 
 ## Configuración del consentimiento
 
-Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de manera predeterminada. La exclusión se administra mediante la cookie [`mg_dnt` &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es). Puede seguir los pasos descritos aquí si elige usar `mg_dnt` para administrar el consentimiento. La [documentación de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=es) tiene varias opciones adicionales para administrar el consentimiento.
+Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de manera predeterminada. La exclusión se administra mediante la cookie [`mg_dnt` ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Puede seguir los pasos descritos aquí si elige usar `mg_dnt` para administrar el consentimiento. La [documentación de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) tiene varias opciones adicionales para administrar el consentimiento.
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%do not track cookie%`) para la cookie `mg_dnt`:
 
-   ![Crear elemento de datos no de seguimiento](assets/element-dnt-cookie.png)
+   ![Crear elemento de datos no de seguimiento
    _Crear no rastrear elemento de datos_
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%consent%`) que devuelva `out` si la cookie está establecida y `in` en caso contrario:
 
-   ![Crear elemento de datos de consentimiento](assets/element-consent-dnt-cookie.png)
+   ![Crear elemento de datos de consentimiento
    _Crear elemento de datos de consentimiento_
 
 1. Configurar la extensión de Adobe Experience Platform Web SDK con `%consent%` elemento de datos:
 
-   ![Actualizar SDK con consentimiento](assets/config-sdk-consent.png)
+   ![Actualizar SDK con consentimiento
    _Actualizar SDK con consentimiento_
 
 ## Advertencias

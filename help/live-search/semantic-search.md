@@ -3,14 +3,18 @@ title: Búsqueda semántica
 description: Habilite la búsqueda semántica de IA para  [!DNL Live Search]  desde Configuración. No se requiere configuración de atributos ni cambios de tienda.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # Búsqueda semántica
+
+>[!AVAILABILITY]
+>
+>La búsqueda semántica está disponible para los comerciantes que utilizan las versiones 2.4.4 y posteriores de Adobe Commerce.
 
 La búsqueda semántica utiliza IA para comprender qué significan los compradores, no solo las palabras exactas que escriben. Consultas como &quot;vestido para una boda en la playa&quot; o &quot;zapatos cómodos para estar de pie todo el día&quot; pueden devolver productos relevantes incluso cuando su catálogo no utiliza esas frases exactas.
 
