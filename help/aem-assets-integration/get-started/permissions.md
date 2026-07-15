@@ -16,7 +16,7 @@ ht-degree: 0%
 * Para Adobe Commerce as a Cloud Service, el administrador habilita la autenticación IMS de forma predeterminada.
 * Para Adobe Commerce en la nube o local, IMS es opcional.
 
-  [Al habilitar IMS para Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}, se proporciona una interfaz de usuario de configuración mejorada (Selector de recursos, listas desplegables rellenadas automáticamente), pero puede configurar la integración sin IMS si escribe manualmente **ID de programa** e **ID de entorno**.
+  [Al habilitar IMS para Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}, se proporciona una interfaz de usuario de configuración mejorada (Selector de recursos, listas desplegables rellenadas automáticamente), pero puede configurar la integración sin IMS si escribe manualmente **ID de programa** e **ID de entorno**.
 
 Al utilizar IMS, la integración de AEM Assets también requiere **perfiles de producto de Adobe Admin Console** específicos. Los usuarios que configuran la integración en Commerce Admin necesitan el perfil de producto **Usuarios de DM OpenAPI AEM Assets - entrega** o el perfil de producto **autor** como reserva. Este acceso se controla mediante perfiles de producto de Admin Console en la organización IMS del usuario y permite lo siguiente:
 
@@ -62,7 +62,7 @@ Agregue el usuario al perfil de producto **Usuarios de OpenAPI de DM de AEM Asse
 
 >[!NOTE]
 >
-> Los usuarios también deben añadirse a Commerce y a los AEM Assets. Consulte [Agregar un usuario a AEM Assets o a elementos visuales del producto](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} en la guía de _Usuario y Identity Management_ para obtener la configuración completa.
+> Los usuarios también deben añadirse a Commerce y a los AEM Assets. Consulte [Agregar un usuario a AEM Assets o a elementos visuales del producto](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} en la guía de _Usuario y Identity Management_ para obtener la configuración completa.
 
 ![Perfil de producto de Admin Console para la entrega de AEM Assets](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
@@ -74,9 +74,9 @@ Se requiere el **ID de cliente de IMS** para que PaaS habilite el Selector de re
 
 Para utilizar el Selector de recursos y los campos de configuración rellenados automáticamente (ID de programa, ID de entorno, asignación de dominio):
 
-1. [Habilite Adobe IMS para Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} para que el administrador de Commerce utilice la autenticación IMS y pueda leer los perfiles de producto de Admin Console del usuario.
+1. [Habilite Adobe IMS para Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} para que el administrador de Commerce utilice la autenticación IMS y pueda leer los perfiles de producto de Admin Console del usuario.
 
-1. Para solicitar un identificador de cliente IMS personalizado para el Selector de recursos, [Abra un ticket de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+1. Para solicitar un identificador de cliente IMS personalizado para el Selector de recursos, [Abra un ticket de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 1. Desde [Adobe Admin Console](https://adminconsole.adobe.com/), agregue el usuario al perfil de producto **Usuarios de OpenAPI de DM AEM Assets - delivery** o al perfil de producto **author** como reserva.
 
@@ -88,6 +88,6 @@ Sin IMS, aún puede configurar la integración introduciendo manualmente el ID d
 
 * [Configuración de permisos de usuario de IMS para la integración de AEM Assets](setup-synchronization.md): conecte Commerce a los AEM Assets y configure las reglas coincidentes.
 * [Selección manual de recursos](../synchronize/asset-selector-integration.md): utilice el Selector de recursos para imágenes de categoría y Page Builder.
-* [Agregar un usuario a AEM Assets o a elementos visuales del producto](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}: para [!DNL Adobe Commerce as a Cloud Service], primero agregue usuarios a Commerce y a AEM Cloud Manager (Propietario del negocio, Administrador de implementación). El perfil **Usuarios de DM OpenAPI de AEM Assets - delivery** (o el perfil **author** como reserva) es un requisito adicional para el Selector de recursos y las funciones de rellenado automático.
-* [Asignar integrantes del equipo a la capa de entrega de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentación de AEM para el acceso a envíos.
+* [Agregar un usuario a AEM Assets o a elementos visuales del producto](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}: para [!DNL Adobe Commerce as a Cloud Service], primero agregue usuarios a Commerce y a AEM Cloud Manager (Propietario del negocio, Administrador de implementación). El perfil **Usuarios de DM OpenAPI de AEM Assets - delivery** (o el perfil **author** como reserva) es un requisito adicional para el Selector de recursos y las funciones de rellenado automático.
+* [Asignar integrantes del equipo a la capa de entrega de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentación de AEM para el acceso a envíos.
 

@@ -3,7 +3,7 @@ title: Imágenes del producto con AEM Assets
 description: Aprenda a utilizar AEM Assets para imágenes de productos en  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
 workflow-type: tm+mt
 source-wordcount: '634'
@@ -18,7 +18,7 @@ Product Visuals permite que [!DNL Adobe Commerce Optimizer] comerciantes adminis
 
 >[!NOTE]
 >
->**Product Visuals** es el nombre del paquete proporcionado con [!DNL Adobe Commerce as a Cloud Service] y [!DNL Adobe Commerce Optimizer]. Combina [Dynamic Media con funciones OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) y [Prime para AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>**Product Visuals** es el nombre del paquete proporcionado con [!DNL Adobe Commerce as a Cloud Service] y [!DNL Adobe Commerce Optimizer]. Combina [Dynamic Media con funciones OpenAPI](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) y [Prime para AEM Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
 >Los clientes con una licencia de AEM Assets diferente (por ejemplo, **AEM Assets Ultimate**) pueden usar la misma integración; solo la versión de AEM afecta a los pasos de incorporación, no al tipo de licencia.
 
@@ -62,7 +62,7 @@ Antes de habilitar los elementos visuales del producto, asegúrese de cumplir lo
 
 ## Configurar
 
-Para habilitar la integración, [cree un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) con los detalles de [!DNL Commerce Optimizer] y los AEM Assets. El Soporte de Adobe configura la integración y registra su inquilino con el Servicio de integración de Assets.
+Para habilitar la integración, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) con los detalles de [!DNL Commerce Optimizer] y los AEM Assets. El Soporte de Adobe configura la integración y registra su inquilino con el Servicio de integración de Assets.
 
 Consulte [Configuración de AEM Assets para Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) para obtener información sobre la incorporación.
 
