@@ -2,10 +2,15 @@
 title: Metadatos de Commerce en AEM Assets
 description: Obtenga información sobre el área de nombres de Commerce, el esquema de metadatos y el texto alternativo que la integración de AEM Assets añade al entorno de creación de AEM Assets.
 feature: CMS, Media, Integration
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
 source-wordcount: 749
@@ -66,7 +71,7 @@ Este código de paquete añade los siguientes recursos al entorno de creación d
 
 ## Texto alternativo localizado en metadatos de AEM Assets
 
-El multicampo _[!UICONTROL Alt texts]_está disponible en el editor de metadatos de recursos de AEM Assets en la pestaña **[!UICONTROL Commerce]**cuando edita una imagen elegible.
+El multicampo _[!UICONTROL Alt texts]_&#x200B;está disponible en el editor de metadatos de recursos de AEM Assets en la pestaña **[!UICONTROL Commerce]**&#x200B;cuando edita una imagen elegible.
 
 >[!IMPORTANT]
 >
@@ -82,7 +87,7 @@ Seleccione **[!UICONTROL Add]** para agregar más filas para vistas de tienda ad
 
 ![Varios campos de texto alternativo con entradas de código de vista de tienda y texto alternativo](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-Al guardar, la validación del lado del cliente bloquea el envío si alguna fila tiene un elemento _[!UICONTROL Store View Code]_vacío o si dos filas utilizan el mismo código de vista de almacén (sin distinción de mayúsculas y minúsculas).
+Al guardar, la validación del lado del cliente bloquea el envío si alguna fila tiene un elemento _[!UICONTROL Store View Code]_&#x200B;vacío o si dos filas utilizan el mismo código de vista de almacén (sin distinción de mayúsculas y minúsculas).
 
 Las entradas de texto alternativas persisten en los metadatos de recursos JCR como dos propiedades `String[]` alineadas con el índice:
 
