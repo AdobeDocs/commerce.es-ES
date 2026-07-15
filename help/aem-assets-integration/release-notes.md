@@ -3,9 +3,9 @@ title: Notas de la versión de AEM Assets Integration
 description: Revise las notas de la versión para obtener información acerca de todas las versiones de integración de AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
+source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _14 de mayo de 2026_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-1268 -->: ahora, cuando las imágenes o los recursos se importan desde AEM a una galería multimedia de productos de Commerce, el texto alternativo se transfiere como parte de la sincronización. Se puede definir texto alternativo por vista de tienda en los AEM Assets. Ver [texto alternativo en los metadatos de los AEM Assets](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
+![Nuevo problema](../assets/new.svg)<!-- Issue ACAP-1268 -->: ahora, cuando las imágenes o los recursos se importan desde AEM a una galería multimedia de productos de Commerce, el texto alternativo se transfiere como parte de la sincronización. Se puede definir texto alternativo por vista de tienda en los AEM Assets. Ver [texto alternativo localizado en los metadatos de los AEM Assets](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## Versión 1.3.5
 
