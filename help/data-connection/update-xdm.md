@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # Actualización de esquemas de eventos de series temporales para la ingesta de datos de Commerce
 
-Uno de los [pasos de incorporación](overview.md#onboarding-steps) para usar la extensión [!DNL Data Connection] es tener acceso al espacio de trabajo de la secuencia de datos y [crear una secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=es) específica de Adobe Commerce. Al crear ese conjunto de datos, también debe seleccionar un esquema que describa los datos que desea introducir. Ese esquema debe incluir grupos de campos específicos del comercio.
+Uno de los pasos al [habilitar la extensión [!DNL Data Connection]](overview.md#enable-extension) es obtener acceso al espacio de trabajo del flujo de datos y [crear un flujo de datos](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=es) específico de Adobe Commerce. Al crear ese conjunto de datos, también debe seleccionar un esquema que describa los datos que desea introducir. Ese esquema debe incluir grupos de campos específicos del comercio.
 
 Este artículo proporciona los grupos de campos que debe incluir el esquema para recopilar correctamente los siguientes datos de series temporales proporcionados por los eventos de Adobe Commerce:
 
-- [Comportamiento](events.md): incluye eventos de tienda, perfil, búsqueda y B2B.
-- [Back office](events-backoffice.md): incluye el estado del pedido y los eventos de perfil.
+- [Comportamiento](events.md): incluye eventos de tienda, búsqueda y B2B.
+- [Back office](events-backoffice.md): incluye estado de pedido y serie temporal [eventos de perfil](events-backoffice.md#customer-profile-events).
+
+Para los *registros* del perfil, consulte [Actualizar esquema de registro de perfil](profile-data.md).
 
 Más información sobre [datos de series temporales](data-ingestion.md).
 

@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 3071
+source-wordcount: 3511
 ht-degree: 0%
 
 ---
@@ -54,9 +54,36 @@ Después de configurar el conector de Commerce Services, configure la extensión
 
 En esta sección, aprenderá a configurar la extensión [!DNL Data Connection].
 
+### Ámbito de configuración {#configuration-scope}
+
+La configuración de [!DNL Data Connection] usa una combinación de valores globales y de ámbito de sitio web. La configuración global se aplica a toda la instancia de Adobe Commerce. La configuración con alcance de sitio web permite que los comerciantes de varias marcas y sitios web enruten datos a diferentes zonas protegidas y conjuntos de datos de Adobe Experience Platform por sitio web.
+
+Antes de configurar la recopilación de datos de tienda, back office o perfil, establezca el menú desplegable **[!UICONTROL Scope]** de la pestaña **[!UICONTROL Settings]** en el sitio web que desee configurar. Repita la configuración para cada sitio web que necesite un enrutamiento de Experience Platform diferente.
+
+| Configuración o campo | Ámbito | Notas |
+| --- | --- | --- |
+| ID de organización | Global | Un ID de organización por cada instancia de Adobe Commerce. Ya está configurado en el [conector de servicios de Commerce](../landing/saas.md#organizationid). |
+| Credenciales de cuenta de servicio | Global | Introduzca los detalles de la cuenta de servicio una vez. Las mismas credenciales autentican las llamadas de API de Experience Platform para todos los sitios web a menos que la implementación requiera lo contrario. |
+| Nombre de zona protegida | Sitio web | Seleccione la zona protegida de Experience Platform para el sitio web en el ámbito. Configuración principal con ámbito de sitio web para [!DNL Data Connection] eventos de back office. |
+| **[!UICONTROL Test connection]** | Sitio web | Valida las credenciales de la cuenta de servicio y la zona protegida del sitio web seleccionado actualmente en **Ámbito**. |
+| ID de flujo de datos | Sitio web | Enruta los datos de evento de comportamiento y de back office del sitio web seleccionado. |
+| ID de conjunto de datos | Sitio web | Identifica el conjunto de datos que almacena datos de Commerce para el sitio web seleccionado. |
+| Eventos de tienda, eventos de back office, perfiles de cliente | Sitio web | Las opciones de recopilación de datos se aplican al sitio web seleccionado en **ámbito**. |
+
+#### Ejemplo en varios sitios web {#multi-website-example}
+
+Un comerciante gestiona dos sitios web desde una instancia de Adobe Commerce:
+
+- El **sitio web A (marca A)** envía datos de la tienda y del back office a una zona protegida de **producción** de Experience Platform.
+- El **sitio web B (marca B)** envía datos a una zona protegida de Experience Platform de **desarrollo** para realizar pruebas.
+
+El comerciante ingresa las credenciales de la cuenta de servicio una vez en la página **[!UICONTROL Service Account/Credential details]**. En la ficha **[!UICONTROL Settings]**, el comerciante establece **[!UICONTROL Scope]** en **Sitio web A**, selecciona el nombre de la zona protegida de producción y la guarda. A continuación, el comerciante establece **[!UICONTROL Scope]** en **Sitio web B**, selecciona el nombre de la zona protegida de desarrollo y la guarda. **[!UICONTROL Test connection]** se ejecuta para cada sitio web a fin de confirmar la zona protegida y las credenciales correctas.
+
 ### Agregar detalles de cuenta de servicio y credenciales
 
 Si planea recopilar y enviar [datos históricos de pedidos](#send-historical-order-data) o [datos de perfil del cliente](#send-customer-profile-data), debe agregar detalles de cuenta de servicio y credenciales. Además, si está configurando la extensión [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=es), debe completar estos pasos.
+
+Las credenciales de la cuenta de servicio se configuran en el ámbito **Configuración predeterminada** y se aplican globalmente. Consulte [Ámbito de configuración](#configuration-scope) para ver la configuración de ámbito de sitio web, como el nombre de la zona protegida.
 
 Si solo está recopilando y enviando datos de tienda u oficina, puede saltar a la sección [general](#general).
 
@@ -86,9 +113,9 @@ Descargar el [archivo de configuración del área de trabajo](https://developer.
 
 1. Copie el contenido del archivo `<workspace-name>.json` en los campos **Detalles de cuenta de servicio/credencial**, como `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"`, etc.
 
-1. Haga clic en **Guardar configuración**.
+1. Haga clic en **[!UICONTROL Save Config]**.
 
-1. Haga clic en el botón **[!UICONTROL Test connection]** para asegurarse de que la información de cuenta de servicio y credenciales que ha introducido es correcta.
+   Después de guardar, complete la configuración de ámbito de sitio web (incluidos **[!UICONTROL Sandbox name]** y **[!UICONTROL Test connection]**) en la ficha **[!UICONTROL Settings]**. Ver [General](#general).
 
 ### General
 
@@ -96,9 +123,13 @@ Descargar el [archivo de configuración del área de trabajo](https://developer.
 
    Configuración de ![[!DNL Data Connection]](./assets/epc-settings.png){width="700" zoomable="yes"}
 
-1. En la ficha **Configuración** en **General**, compruebe el identificador asociado a su cuenta de Adobe Experience Platform, según la configuración de [Commerce Services Connector](../landing/saas.md#organizationid). El ID de organización es global. Solo se puede asociar un ID de organización por cada instancia de Adobe Commerce.
+1. En la ficha **[!UICONTROL Settings]**, en **[!UICONTROL General]**, compruebe el identificador asociado con su cuenta de Adobe Experience Platform, tal como se ha configurado en [Conector de servicios de Commerce](../landing/saas.md#organizationid). El ID de organización es global. Solo se puede asociar un ID de organización por cada instancia de Adobe Commerce.
 
-1. En el menú desplegable **Ámbito**, establezca el contexto en **Sitio web**.
+1. En la lista desplegable **[!UICONTROL Scope]**, establezca el contexto en **Sitio web**. Consulte [Ámbito de configuración](#configuration-scope) para el que se aplican configuraciones globales y por sitio web.
+
+1. Escriba **[!UICONTROL Sandbox name]** para el sitio web en el ámbito.
+
+1. Haga clic en **[!UICONTROL Test connection]** para validar las credenciales de la cuenta de servicio y la zona protegida del sitio web seleccionado actualmente en **[!UICONTROL Scope]**. Repita el proceso para cada sitio web que utilice una zona protegida diferente.
 
 1. (Opcional) Si ya tiene [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=es) implementado en su sitio, habilite la casilla de verificación y agregue el nombre de su AEP Web SDK. De lo contrario, deje estos campos en blanco y la extensión [!DNL Data Connection] implementará uno por usted.
 
@@ -118,7 +149,7 @@ En esta sección, especifique el tipo de datos que desea recopilar y enviar al p
 
 Para asegurarse de que la instancia de Adobe Commerce pueda iniciar la recopilación de datos, revise los [requisitos previos](overview.md#prerequisites).
 
-Consulte el tema de eventos para obtener más información sobre los eventos de [tienda](events.md#storefront-events), [back office](events-backoffice.md) y [perfil](events-backoffice.md#customer-profile-events).
+Consulte el tema de eventos para obtener más información sobre los datos de [tienda](events.md#storefront-events), [back office](events-backoffice.md) y [registros de perfil](events-profilerecord.md). Para la serie temporal [eventos de perfil](events-backoffice.md#customer-profile-events), consulte la referencia de eventos de back office.
 
 >[!NOTE]
 >
@@ -162,16 +193,18 @@ Consulte el tema de eventos para obtener más información sobre los eventos de 
 
 | Campo | Descripción |
 |--- |--- |
-| Ámbito | Sitio web específico donde desea aplicar los ajustes de configuración. |
-| ID de organización (global) | ID que pertenece a la organización que compró el producto Adobe DX. Este ID vincula su instancia de Adobe Commerce con Adobe Experience Platform. |
+| Ámbito | Sitio web donde se aplica la configuración de ámbito de sitio web. Cambie el ámbito para configurar el nombre de la zona protegida, el ID del flujo de datos, el ID del conjunto de datos y las opciones de recopilación de datos para cada sitio web. |
+| ID de organización (global) | ID que pertenece a la organización que compró el producto Adobe DX. Este ID vincula su instancia de Adobe Commerce con Adobe Experience Platform. Configurado globalmente; no se establece por sitio web. |
+| Nombre de la zona protegida (sitio web) | Nombre del simulador para pruebas de Experience Platform donde Commerce envía los datos del sitio web seleccionado. Configure por separado para cada sitio web cuando las implementaciones de varias marcas o de varios sitios web enruten los datos a diferentes zonas protegidas. |
 | ¿AEP Web SDK ya se ha implementado en el sitio? | Seleccione esta casilla de verificación si ha implementado su propio AEP Web SDK en el sitio |
 | Nombre de AEP Web SDK (global) | Si ya tiene una Experience Platform Web SDK implementada en el sitio, especifique el nombre de esa SDK en este campo. Esto permite que el Recopilador de eventos de tienda y el SDK de eventos de tienda utilicen su Experience Platform Web SDK en lugar de la versión implementada por la extensión [!DNL Data Connection]. Si no tiene un Experience Platform Web SDK implementado en el sitio, deje este campo en blanco y la extensión [!DNL Data Connection] lo implementará por usted. |
 | Eventos de tienda | Está activada de forma predeterminada siempre que el ID de organización y el ID de flujo de datos sean válidos. Los eventos de tienda recopilan datos de comportamiento anónimos de sus compradores a medida que navegan por el sitio. |
 | Eventos de back office | Si se selecciona, la carga útil de evento contiene información anónima del estado del pedido, como si se ha realizado, cancelado, reembolsado o enviado un pedido. |
 | ID de flujo de datos (sitio web) | ID que permite que los datos fluyan desde Adobe Experience Platform a otros productos Adobe DX. Este ID debe estar asociado a un sitio web específico dentro de la instancia de Adobe Commerce específica. Si especifica su propio Experience Platform Web SDK, no especifique ningún ID de flujo de datos en este campo. La extensión [!DNL Data Connection] utiliza el ID de flujo de datos asociado con ese SDK e ignora cualquier ID de flujo de datos especificado en este campo (si corresponde). |
 | ID del conjunto de datos (sitio web) | ID del conjunto de datos que contiene los datos de Commerce. Este campo es obligatorio a menos que haya anulado la selección de las casillas de verificación de **Eventos de tienda** o **Eventos de oficina**. Además, si está utilizando su propio Experience Platform Web SDK y, por lo tanto, no especificó un ID de conjunto de datos, debe agregar el ID del conjunto de datos asociado a su conjunto de datos. De lo contrario, no podrá guardar este formulario. |
+| **[!UICONTROL Test connection]** | Valida las credenciales de la cuenta de servicio y el nombre de la zona protegida del sitio web seleccionado actualmente en **Ámbito**. Ejecute la prueba después de configurar las credenciales y después de cambiar el nombre o el ámbito de la zona protegida de un sitio web. |
 
-Después de la incorporación, los datos de la tienda comienzan a fluir al perímetro de Experience Platform. Los datos del back office tardan unos cinco minutos en aparecer en el perímetro. Las actualizaciones posteriores son visibles en el perímetro en función de la programación de cron.
+Después de configurar la extensión, los datos de la tienda comienzan a fluir al perímetro de Experience Platform. Los datos del back office tardan unos cinco minutos en aparecer en el perímetro. Las actualizaciones posteriores son visibles en el perímetro en función de la programación de cron.
 
 ### Envío de datos de perfil de cliente
 
@@ -301,9 +334,9 @@ Más información sobre cómo [configurar atributos personalizados](custom-attri
 | Experience Platform | Muestra cualquier atributo personalizado especificado en el esquema [!DNL Commerce] en Experience Platform. |
 | Actualizar | Recupera cualquier nombre de atributo personalizado del esquema [!DNL Commerce] en Experience Platform. |
 
-## Confirmar que se recopilan los datos del evento
+## Confirmar que se recopilan los datos del evento {#confirm-that-event-data-is-collected}
 
-Para confirmar que se están recopilando datos de tu tienda Commerce, usa [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es) para examinar tu sitio Commerce. Después de confirmar que se están recopilando los datos, puede comprobar que los datos de evento de la tienda y del back office aparecen en el perímetro ejecutando una consulta que devuelva datos del [conjunto de datos que creó](overview.md#prerequisites).
+Para confirmar que se están recopilando datos de tu tienda Commerce, usa [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es) para examinar tu sitio Commerce. Después de confirmar que se están recopilando los datos, puede comprobar que los datos de evento de la tienda y del back office aparecen en el perímetro ejecutando una consulta que devuelva datos del [conjunto de datos que creó durante la configuración](overview.md#enable-extension).
 
 1. Seleccione **Consultas** en el panel de navegación izquierdo de Experience Platform y haga clic en [!UICONTROL Create Query].
 
@@ -329,8 +362,8 @@ Si los resultados no son los esperados, abra el conjunto de datos y busque las i
 
 ### Verificar que los datos de perfil aparezcan en Experience Platform
 
-Si no ve datos de perfil en Experience Platform, consulte la [Base de conocimiento de Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) para obtener sugerencias sobre solución de problemas.
+Para obtener sugerencias para solucionar problemas, consulte la sugerencia en [Enviar datos de perfil del cliente](#send-customer-profile-data).
 
 ## Pasos siguientes
 
-Cuando los datos de Commerce se envían al perímetro de Experience Platform, otros productos de Adobe Experience Cloud, como Adobe Journey Optimizer, pueden utilizar esos datos. Por ejemplo, puede configurar Journey Optimizer para que escuche ciertos eventos y, en función de esos datos de evento, almacenar en déclencheur un correo electrónico para un usuario primerizo o si hay un carro de compras abandonado. Aprenda a ampliar su plataforma de Commerce [creando recorridos de cliente](using-ajo.md) en Journey Optimizer.
+Cuando los datos de Commerce se envían a Experience Platform Edge, otros productos de Adobe Experience Cloud, como Adobe Journey Optimizer, pueden utilizar esos datos. Por ejemplo, puede configurar Journey Optimizer para que escuche ciertos eventos y, en función de esos datos de evento, almacenar en déclencheur un correo electrónico para un usuario primerizo o si hay un carro de compras abandonado. Aprenda a ampliar su plataforma de Commerce [creando recorridos de cliente](using-ajo.md) en Journey Optimizer.

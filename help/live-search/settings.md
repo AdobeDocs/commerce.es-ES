@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: 1f5246b6f5853f8b53a356ae2d6d58077b07a9a5
 workflow-type: tm+mt
-source-wordcount: 650
+source-wordcount: 679
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Use el área de trabajo **Configuración** para configurar la búsqueda semánti
 ![Configuración](assets/settings.png)
 
 ## Búsqueda semántica {#semantic-search}
+
+>[!AVAILABILITY]
+>
+>La búsqueda semántica está disponible para los comerciantes que utilizan las versiones 2.4.4 y posteriores de Adobe Commerce.
 
 La búsqueda semántica utiliza IA para hacer coincidir productos en función del significado y el contexto, no solo palabras clave exactas. Si se habilita **[!UICONTROL Semantic search]**, los compradores que usen lenguaje natural o palabras que no coincidan literalmente con el catálogo podrán encontrar productos relevantes. [!DNL Live Search] ofrece coincidencias semánticas y de palabras clave en una experiencia de búsqueda unificada en la tienda. La búsqueda semántica funciona junto con la configuración existente; [reglas de búsqueda](rules.md), [sinónimos](synonyms.md), [facetas](facets.md), amplificaciones y [comercialización de categorías](category-merch.md) siguen aplicándose.
 
@@ -72,8 +76,7 @@ Puede especificar el número de grupos de intervalos de precios y cómo se distr
 
 La configuración de idioma indica a [!DNL Live Search] qué idioma esperar al leer el catálogo y escribir el índice.
 
-Los idiomas tienen diferentes conjuntos de reglas gramaticales: cómo se separan las palabras, tiempos verbales y formas de palabras, por ejemplo.
-La configuración Idioma garantiza que se aplique el conjunto correcto de reglas al mecanismo de indexación.
+Los idiomas tienen diferentes conjuntos de reglas gramaticales: cómo se separan las palabras, tiempos verbales y formas de palabras, por ejemplo.La configuración Idioma garantiza que se aplique el conjunto correcto de reglas al mecanismo de indexación.
 
 Establezca la configuración Idioma en el idioma principal del catálogo. Al cambiar el idioma del índice, puede tardar entre 5 y 60 minutos en reflejar el cambio en la tienda, según el tamaño y la complejidad del catálogo.
 

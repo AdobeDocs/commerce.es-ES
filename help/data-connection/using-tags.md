@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 2655
+source-wordcount: 2684
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Para recopilar datos de evento de Commerce:
 
   >[!NOTE]
   >
-  > **no** [configura](connect-data.md) el ID de organización y el ID de flujo de datos.
+  > **no** [configure](connect-data.md) el identificador de organización y el identificador de flujo de datos en el administrador de Commerce cuando use etiquetas para la recopilación. Los comerciantes de varios sitios web configuran flujos de datos por propiedad o entorno en Etiquetas. Para ver el comportamiento del ámbito de administración de Commerce, consulte [Ámbito de configuración](connect-data.md#configuration-scope).
 
 ## Asignar datos de tienda de Commerce a Adobe Experience Platform
 
@@ -75,7 +75,7 @@ Por ejemplo, vamos a agregar el evento de Adobe Commerce `signOut` a las etiquet
 
 1. Crear un elemento de datos:
 
-   ![Crear nuevo elemento de datos](assets/create-new-data-elements.png)
+   !&lbrack;Crear nuevo elemento de datos
    _Crear nuevo elemento de datos_
 
 1. Establezca **Name** en `sign out`.
@@ -88,14 +88,14 @@ Por ejemplo, vamos a agregar el evento de Adobe Commerce `signOut` a las etiquet
 
 1. En **userAccount** > **logout**, establezca **value** en **Logout de visitantes** en `1`.
 
-   ![Actualizar valor de cierre de sesión](assets/signout-value.png)
+   !&lbrack;Actualizar valor de cierre de sesión
    _Actualizar valor de cierre de sesión_
 
 1. Seleccione **Guardar**.
 
 1. Crear una regla:
 
-   ![Crear nueva regla](assets/create-new-rule.png)
+   !&lbrack;Crear nueva regla
    _Crear nueva regla_
 
 1. Seleccione **Agregar** en **EVENTOS**.
@@ -1351,7 +1351,7 @@ Los siguientes pasos muestran cómo configurar un evento `pageView` con `identit
 
 1. Configure el elemento de datos con el código personalizado para ECID:
 
-   ![Configurar elemento de datos con código personalizado](assets/set-custom-code-ecid.png)
+   !&lbrack;Configurar elemento de datos con código personalizado
    _Configurar elemento de datos con código personalizado_
 
 1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
@@ -1378,12 +1378,12 @@ Los siguientes pasos muestran cómo configurar un evento `pageView` con `identit
 
 1. Actualizar esquema XDM con `identityMap` establecido como ECID:
 
-   ![Establecer identityMap como ECID](assets/identity-map-data-element.png)
+   !&lbrack;Establecer identityMap como ECID
    _Establecer identityMap como ECID_
 
 1. Defina acciones de regla que recuperen ECID:
 
-   ![Recuperar ECID](assets/rule-retrieve-ecid.png)
+   !&lbrack;Recuperar ECID
    _Recuperar ECID_
 
 ## Definir identidad en eventos de back office
@@ -1392,7 +1392,7 @@ A diferencia de los eventos de tienda que utilizan ECID para identificar y vincu
 
 1. Crear un elemento de mapa de identidad.
 
-   ![Mapa de identidad de Back Office](assets/custom-code-backoffice.png)
+   !&lbrack;Mapa de identidad de Back Office
    _Crear mapa de identidad de back office_
 
 1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
@@ -1420,7 +1420,7 @@ return IdentityMap;
 
 1. Agregue este nuevo elemento a cada campo `identityMap`.
 
-   ![Actualizar cada identityMap](assets/add-element-back-office.png)
+   !&lbrack;Actualizar cada identityMap
    _Actualizar cada identityMap_
 
 ## Configuración del consentimiento
@@ -1429,17 +1429,17 @@ Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentim
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%do not track cookie%`) para la cookie `mg_dnt`:
 
-   ![Crear elemento de datos no de seguimiento](assets/element-dnt-cookie.png)
+   !&lbrack;Crear elemento de datos no de seguimiento
    _Crear no rastrear elemento de datos_
 
 1. Crear un elemento de datos de **Código personalizado principal** (`%consent%`) que devuelva `out` si la cookie está establecida y `in` en caso contrario:
 
-   ![Crear elemento de datos de consentimiento](assets/element-consent-dnt-cookie.png)
+   !&lbrack;Crear elemento de datos de consentimiento
    _Crear elemento de datos de consentimiento_
 
 1. Configurar la extensión de Adobe Experience Platform Web SDK con `%consent%` elemento de datos:
 
-   ![Actualizar SDK con consentimiento](assets/config-sdk-consent.png)
+   !&lbrack;Actualizar SDK con consentimiento
    _Actualizar SDK con consentimiento_
 
 ## Advertencias
