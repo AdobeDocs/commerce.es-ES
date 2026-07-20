@@ -4,21 +4,15 @@ description: Información de versión mensual de  [!DNL Adobe Commerce Optimizer
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: 1365
 ht-degree: 0%
 
 ---
@@ -32,6 +26,19 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
   {{aco-api-updates-and-dropins}}
 
+## Julio de 2026
+
+>[!BEGINSHADEBOX]
+
+_20 de julio de 2026_
+
+![Corregir](../assets/fix.svg) **Rendimiento de navegación de categoría**: se aplicaron optimizaciones de rendimiento al servicio de categoría, lo que dio como resultado un mayor rendimiento y una menor latencia P99 para la consulta `CategoryNavigation`, lo que mejoró la capacidad de respuesta del servicio y la experiencia general del usuario con una carga alta.
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## Junio de 2026
 
 >[!BEGINSHADEBOX]
@@ -41,6 +48,7 @@ _24 de junio de 2026_
 <!-- v1.3 -->
 
 ![Nuevo](../assets/new.svg) **Nuevo campo `canEditQuantity`**—Se agregó `canEditQuantity` a `ProductViewOptionValueProduct` en el GraphQL del servicio de catálogo. Expone la configuración de cantidad **definida por el usuario** opcional para las selecciones de paquetes del administrador de Commerce, de modo que los consumidores de tienda puedan determinar si la cantidad de una selección de paquetes es editable.
+<!--COMOPT-2050-->
 
 ### Búsqueda semántica
 
@@ -69,10 +77,13 @@ _28 de mayo de 2026_
 <!-- v1.2 -->
 
 ![Corrección](../assets/fix.svg) **Árboles de navegación completos**: Las categorías descendientes etiquetadas ahora se incluyen correctamente en los árboles `navigation` filtrados por la familia cuando existe un nodo intermedio sin etiquetar en la ruta de acceso. Esta corrección garantiza que los compradores vean todas las categorías relevantes en la navegación, lo que facilita la exploración y la detección de artículos.
+<!--DATA-7183-->
 
 ![Corrección](../assets/fix.svg) **Administración de slug vacía en `categoryTree` solicitudes**—Se ha corregido un problema en el cual la consulta [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) devolvía un error interno del servidor cuando el argumento `slugs` incluía una cadena vacía. Ahora se omiten los valores de slug vacíos, por lo que las tiendas y las integraciones siguen resolviendo los datos de categoría sin solicitudes fallidas.
+<!--DATA-7184-->
 
 ![Corregir](../assets/fix.svg) **`searchCategory`solicitudes devuelve resultados alfabetizados que no distinguen entre mayúsculas y minúsculas**—La consulta `searchCategory` ahora ordena los resultados de búsqueda alfabéticamente sin distinción entre mayúsculas y minúsculas, lo que garantiza un orden coherente y predecible. Las categorías con prefijos más cortos aparecen primero cuando los nombres son idénticos.
+<!--COMOPT-2142-->
 
 _4 de mayo de 2026_
 
@@ -106,7 +117,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Se requiere el agrupamiento de solicitudes** — La API de GraphQL ahora aplica un máximo de 100 SKU por solicitud al recuperar los datos del catálogo. Ver [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Se requiere el agrupamiento de solicitudes** — La API de GraphQL ahora aplica un máximo de 100 SKU por solicitud al recuperar los datos del catálogo. Ver [límites y límites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
