@@ -1,7 +1,7 @@
 ---
-source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
+source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Si forma parte de la comunidad de Adobe y desea crear un artículo nuevo o envia
 
 ### Cambios importantes de los empleados de Adobe
 
-Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y debe contribuir o crear artículos técnicos, debe utilizar el repositorio privado en `https://git.corp.adobe.com/AdobeDocs`.
+Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y debe contribuir a artículos técnicos o crearlos, debe utilizar el repositorio privado en `https://git.corp.adobe.com/AdobeDocs`.
 
 ## Herramientas y configuración
 
@@ -60,10 +60,11 @@ Después de clonar el repositorio, ejecute:
 
 ### Qué hacen los ganchos
 
-- Detectar automáticamente archivos de imagen clasificados (PNG, JPG, JPEG, GIF, SVG)
-- Ejecutar `image_optim` para comprimir y optimizar imágenes
+- Detectar automáticamente archivos de imagen clasificados (PNG, JPEG, GIF, SVG)
+- Ejecute `image_optim` para comprimir y optimizar imágenes rasterizadas (PNG, JPEG, GIF)
 - Volver a almacenar automáticamente las imágenes optimizadas
-- Asegúrese de que todas las imágenes confirmadas estén optimizadas correctamente
+- Asegúrese de que todas las imágenes rasterizadas confirmadas estén optimizadas correctamente
+- Compruebe los SVG clasificados con un límite de tamaño y anule la confirmación si algún SVG lo supera
 
 ### Ventajas
 
@@ -76,7 +77,9 @@ Para obtener instrucciones de instalación, solución de problemas y configuraci
 
 ## Tareas de rastrillo disponibles
 
-Este repositorio usa las tareas de rastrillado proporcionadas por la joya `adobe-comdox-exl-rake-tasks`. Para ver todas las tareas disponibles, ejecute:
+Este repositorio utiliza las tareas de rastreo proporcionadas por el
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+joya. Para ver todas las tareas disponibles, ejecute:
 
 ```bash
 cd _jekyll
