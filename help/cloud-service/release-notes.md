@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
+source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
 workflow-type: tm+mt
-source-wordcount: 4657
+source-wordcount: 5265
 ht-degree: 0%
 
 ---
@@ -57,13 +57,42 @@ Actualmente, los siguientes elementos solo están disponibles en entornos de esp
 
 >[!BEGINSHADEBOX]
 
+### Editar pedidos con REST
+
+>[!IMPORTANT]
+>
+>Esta función está desactivada de forma predeterminada. Para habilitarlo, póngase en contacto con el administrador de satisfacción del cliente de Adobe Commerce o cree un ticket de asistencia.
+
+Los nuevos extremos de la API de REST replican la característica [!DNL Commerce Admin] [!UICONTROL **Editar pedido**], que permite a las integraciones editar un pedido mediante programación:
+
+| Método | Extremo | Descripción |
+| --- | --- | --- |
+| `POST` | `/V1/orders/{orderId}/edit/start` | Copie el pedido en un nuevo carro de compras editable y devuelva el ID del carro de compras. |
+| `POST` | `/V1/orders/{orderId}/edit/submit` | Envíe el carro de compras modificado como un pedido nuevo y cancele el pedido original. |
+
+Después de llamar a `edit/start`, modifique el carro devuelto usando los extremos REST estándar del carro y llame a `edit/submit`. El nuevo pedido hereda el método de pago del pedido original a menos que lo sustituya a través del carro de compras y se cree como un reemplazo vinculado para el original cancelado. Ambos extremos requieren el recurso ACL `Magento_Sales::actions_edit`. <!-- ACCS-1284 -->
+
 ### Filtrar pedidos y facturas por empresa
 
 Los extremos de la API REST `GET /V1/orders` y `GET /V1/invoices` ahora admiten el filtrado por `company_id` y `company_name`, lo que permite que las integraciones B2B recuperen pedidos o facturas de una compañía específica en una sola solicitud. <!-- ACCS-1111, CCSAAS-5076 -->
 
-### Enumerar plantillas de correo electrónico personalizadas mediante la API
+### Importar más códigos de cupones por archivo
 
-El nuevo extremo de la API REST `GET /V1/custom-email/templates` devuelve sus [plantillas de correo electrónico personalizadas](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), incluidos el identificador, el código y el asunto de cada plantilla. Las integraciones pueden utilizar un ID de plantilla devuelto con el extremo `POST /V1/custom-email/send` en lugar de buscar el ID manualmente. <!-- CCSAAS-5089 -->
+El límite máximo de importación de cupones en bloque por archivo se puede ajustar poniéndose en contacto con el administrador de éxito del cliente de Adobe Commerce o creando un ticket de asistencia. <!-- CCSAAS-5176 -->
+
+### Administrar plantillas de correo electrónico personalizadas mediante la API
+
+Los siguientes nuevos extremos de API de REST permiten que las integraciones incluyan, recuperen y creen [plantillas de correo electrónico personalizadas](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/):
+
+| Método | Extremo | Descripción |
+| --- | --- | --- |
+| `GET` | `/V1/custom-email/templates` | Enumere sus plantillas de correo electrónico personalizadas y devuelva el ID, el código, el asunto y el tipo de cada plantilla. |
+| `GET` | `/V1/custom-email/templates/{id}` | Recupere una sola plantilla, incluidos el cuerpo y los estilos. |
+| `POST` | `/V1/custom-email/templates` | Cree una plantilla de correo electrónico personalizada y devuelva su ID asignado por el servidor. |
+
+Use un identificador de plantilla devuelto con el extremo `POST /V1/custom-email/send` en lugar de buscar el identificador manualmente.
+
+Todos los extremos de `custom-email` requieren acceso al `Marketing > Communications > Email template` [recurso de rol](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources). <!-- CCSAAS-5089, CCSAAS-5090 -->
 
 ### Administrar la cadena de pedidos completa a través de la API de REST
 
@@ -85,6 +114,26 @@ Los nuevos extremos de la API REST `orderChain` permiten que las integraciones m
 | `GET` | `/V1/orderChain/{id}/statuses` | Recupera el estado del pedido actual. |
 
 Los extremos de `GET` que admiten el filtrado en facturas, envíos, notas de abono y devoluciones ahora admiten el filtrado por `order_original_id`. Filtrar por `order_original_id` devuelve detalles sobre toda la cadena de pedidos, no solo sobre el pedido único. Un extremo de ejemplo que admite esta característica es `GET /V1/invoices`. <!-- ACCS-1004, ACCS-1005 -->
+
+### Buscar en la cuadrícula de pedidos por valores de atributo personalizados
+
+>[!IMPORTANT]
+>
+>Esta función está desactivada de forma predeterminada. Para habilitarlo, póngase en contacto con el administrador de satisfacción del cliente de Adobe Commerce o cree un ticket de asistencia.
+
+Los comerciantes ahora pueden filtrar la cuadrícula de pedidos [!DNL Commerce Admin] según los valores almacenados en atributos personalizados de pedidos. Hay un filtro de [!UICONTROL **Atributos personalizados**] disponible en la fila de filtro de cuadrícula de orden.<!-- ACCS-923 -->
+
+### Establecer un origen de inventario designado en los artículos del carro de compras
+
+La nueva mutación de GraphQL `setNominatedSourceOnCartItems` asigna un origen de inventario específico a los artículos del carro de compras, lo que admite escenarios como la recogida en la tienda (BOPIS) y el envío desde la tienda. La mutación acepta un(a) `cart_id` y una lista de elementos, cada uno con un(a) `cart_item_uid` y un(a) `source_code`, y devuelve cualquier(a) `rejected_items` con un código de error estructurado: `UNKNOWN_SOURCE`, `SOURCE_DISABLED`, `NOT_ENOUGH_QTY` o `SKU_SOURCE_CONFLICT`. Cada SKU de un carro de compras se resuelve en un único origen designado, y al pasar un `source_code` nulo o vacío, se borra la nominación. <!-- ACCS-932 -->
+
+### Suscribirse a un evento para que los carros de compras coincidan con las reglas de recordatorio
+
+Se emite un nuevo evento `observer.reminder_matched_carts` después de que las reglas de recordatorio de correo electrónico ejecuten su lógica correspondiente y lleven información sobre los carros de compras que coinciden. Las integraciones pueden suscribirse a este evento y reenviar los datos a un sistema externo, como una plataforma de marketing, en lugar de depender de los correos electrónicos de recordatorio nativos. <!-- CCSAAS-5173 -->
+
+### Suprimir correos electrónicos transaccionales por área o plantilla
+
+Una nueva configuración de [!UICONTROL **Supresión de correo electrónico**] ([!UICONTROL **Tiendas**] > [!UICONTROL **Configuración**] > [!UICONTROL **Servicios de Adobe**] > [!UICONTROL **Supresión de correo electrónico**]) permite a los administradores detener selectivamente [!DNL Commerce] de enviar correos electrónicos transaccionales. Puede suprimir correos electrónicos por área funcional (como Cuenta de cliente, Order Management, Devoluciones, Cierre de compra, Marketing o B2B) o por una lista exacta de identificadores de plantilla.<!-- ACCS-1025 -->
 
 ### Ver el historial de modificaciones de pedidos en el administrador
 
@@ -109,6 +158,28 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 * Se corrigió un problema en [!DNL Commerce Admin] en el cual el menú de navegación izquierdo podía desaparecer. <!-- ACCS-1035 -->
 
 * Se ha mejorado el rendimiento de asignación y cancelación de asignación en catálogos compartidos. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
+
+* Se mejoró el rendimiento de la integración [!DNL AEM Assets]. <!-- ACAP-1242 -->
+
+* Se ha corregido un error que se podía producir al agregar un SKU de producto simple a un producto configurable en [!DNL Commerce Admin]. <!-- ACCS-1132 -->
+
+* Se ha corregido un problema en el cual la cola de mensajes podía dejar de procesar nuevos mensajes cuando acumulaba demasiados registros obsoletos. <!-- ACCS-1292 -->
+
+* Se ha corregido un problema en el cual la creación del pedido de administración fallaba con un error de &quot;SKU no disponible en el catálogo compartido&quot;. <!-- ACCS-1318 -->
+
+* Se ha resuelto un bloqueo que se producía al crear o editar productos agrupados. <!-- CCSAAS-5211 -->
+
+* Se ha corregido un problema en el cual la colocación de pedidos no reservaba inventario en el origen designado para artículos que usaban recogida en tienda o envío desde tienda. <!-- ACCS-1374 -->
+
+* Las tarifas personalizadas antiguas ahora se eliminan de la respuesta de consulta del carro de compras. <!-- ACCS-1400 -->
+
+* Se ha resuelto un problema en la integración de [!DNL AEM Assets] en el cual los atributos de función de recurso de producto perdían datos de configuración regional durante la exportación del catálogo. <!-- ACCS-1401 -->
+
+* Se mejoró la advertencia recibida al guardar una integración que indica que [!DNL Dynamic Media] no está habilitado. <!-- ACAP-1298 -->
+
+* Los campos Nombre del evento y Alias ahora se validan para que aparezcan en minúsculas al suscribirse a un evento. <!-- CEXT-6164 -->
+
+* Los patrones de regla regex de webhook ahora se validan al guardar un webhook condicional. <!-- CEXT-6287 -->
 
 {{accs-release}}
 
@@ -598,11 +669,11 @@ Se han realizado los siguientes cambios en los componentes desplegables B2B:
 
 * [!DNL Commerce Storefront on Edge Delivery Services] ahora incluye [componentes integrados B2B](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=es). Ya están disponibles los siguientes complementos B2B:
 
-   * **[Administración de la empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=es)**: habilita la administración de perfiles de empresa y permisos basados en roles para tiendas Adobe Commerce.
-   * **[Conmutador de empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=es)**: proporciona un componente de interfaz de usuario para que los usuarios cambien entre varias empresas con las que están asociados.
-   * **[Pedidos de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=es)**: administra los flujos de trabajo de los pedidos de compra, las reglas de aprobación y el historial de pedidos de compra de las transacciones B2B.
-   * **[Administración de ofertas](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=es)**: habilita ofertas negociables para clientes B2B con flujos de trabajo de solicitud de ofertas, negociación y aprobación.
-   * **[Listas de solicitudes](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=es)**: proporciona herramientas para crear y administrar listas de solicitudes para compras repetidas y pedidos masivos.
+  * **[Administración de la empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=es)**: habilita la administración de perfiles de empresa y permisos basados en roles para tiendas Adobe Commerce.
+  * **[Conmutador de empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=es)**: proporciona un componente de interfaz de usuario para que los usuarios cambien entre varias empresas con las que están asociados.
+  * **[Pedidos de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=es)**: administra los flujos de trabajo de los pedidos de compra, las reglas de aprobación y el historial de pedidos de compra de las transacciones B2B.
+  * **[Administración de ofertas](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=es)**: habilita ofertas negociables para clientes B2B con flujos de trabajo de solicitud de ofertas, negociación y aprobación.
+  * **[Listas de solicitudes](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=es)**: proporciona herramientas para crear y administrar listas de solicitudes para compras repetidas y pedidos masivos.
 
 * Se ha lanzado el paquete de compatibilidad de B2B Storefront. Este paquete mejora el esquema de GraphQL B2B [!DNL Adobe Commerce] para ayudar a mejorar el desarrollo en los sistemas B2B.
 

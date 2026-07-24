@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
-source-wordcount: 1822
+source-wordcount: 1816
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ Los roles siguientes están disponibles para [!DNL Adobe Commerce as a Cloud Ser
 * [**Desarrolladores**](https://helpx.adobe.com/es/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}: Los desarrolladores tienen permisos de usuario y se agregan a la instancia de Commerce como usuarios de desarrollador. Pueden usar [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configurar eventos](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} y [crear enlaces web](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Administradores: existen diferentes tipos de funciones de administrador:
-   * [Administradores del sistema](https://helpx.adobe.com/es/enterprise/using/admin-roles.html){target="_blank"}: el administrador del sistema tiene acceso a todos los productos y perfiles de producto de la organización a través de Admin Console.
-   * [Administradores de productos](#add-a-product-admin): los administradores de productos pueden [administrar usuarios, roles y permisos para el producto](#add-users) en [!DNL Adobe Admin Console] y [administrar usuarios en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
-   * [Administradores de perfil de producto](#add-developers-and-product-profile-admins): los administradores de perfil de producto no tienen acceso al Administrador de Adobe Commerce, pero pueden administrar usuarios para el producto en [!DNL Adobe Admin Console].
-   * Administradores de asistencia: los administradores de asistencia pueden crear y administrar vales de asistencia.
+  * [Administradores del sistema](https://helpx.adobe.com/es/enterprise/using/admin-roles.html){target="_blank"}: el administrador del sistema tiene acceso a todos los productos y perfiles de producto de la organización a través de Admin Console.
+  * [Administradores de productos](#add-a-product-admin): los administradores de productos pueden [administrar usuarios, roles y permisos para el producto](#add-users) en [!DNL Adobe Admin Console] y [administrar usuarios en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+  * [Administradores de perfil de producto](#add-developers-and-product-profile-admins): los administradores de perfil de producto no tienen acceso al Administrador de Adobe Commerce, pero pueden administrar usuarios para el producto en [!DNL Adobe Admin Console].
+  * Administradores de asistencia: los administradores de asistencia pueden crear y administrar vales de asistencia.
 
 >[!NOTE]
 >
@@ -194,49 +194,49 @@ En la lista siguiente se describen los recursos a los que los roles predetermina
 **Usuarios**
 
 * Catálogo
-   * Inventario
-      * Productos
-         * Leer precio del producto
+  * Inventario
+    * Productos
+      * Leer precio del producto
 
 **Desarrolladores**
 
 * Catálogo
-   * Inventario
-      * Productos
-         * Leer precio del producto
+  * Inventario
+    * Productos
+      * Leer precio del producto
 * Sistema
-   * Transferencia de datos
-      * Importar historial
+  * Transferencia de datos
+    * Importar historial
 * Configuración de eventos de Adobe IO
-   * Comprobación de configuración
-   * Crear proveedor de eventos
-   * Actualización de configuración
-   * Sincronización de eventos
-   * Obtener lista de proveedores de eventos
+  * Comprobación de configuración
+  * Crear proveedor de eventos
+  * Actualización de configuración
+  * Sincronización de eventos
+  * Obtener lista de proveedores de eventos
 * Marco de eventos
-   * Lista de eventos
-   * Probar conexión de evento
-   * Suscripción a un evento
-   * Cancelar la suscripción a un evento
-   * Estado del evento
-   * API para obtener suscripciones a eventos
-   * Ver IU de administración de suscripciones a eventos
-   * IU de administración Crear suscripciones a eventos
-   * Solicitar nueva IU de administración de eventos
+  * Lista de eventos
+  * Probar conexión de evento
+  * Suscripción a un evento
+  * Cancelar la suscripción a un evento
+  * Estado del evento
+  * API para obtener suscripciones a eventos
+  * Ver IU de administración de suscripciones a eventos
+  * IU de administración Crear suscripciones a eventos
+  * Solicitar nueva IU de administración de eventos
 * Webhooks
-   * Firma digital de webhooks
-      * Configuración de firma digital de Webhooks
-      * Firma digital Generar claves
-   * Administración de webhooks
-      * Cuadrícula de webhooks
-      * Edición de webhooks
-      * Probar webhooks
-      * Suscripción de API al webhook
-      * Cancelar suscripción a API desde webhook
-      * Lista de webhooks
-      * Solicitar nuevo webhook
-      * Registros de webhooks
-      * Obtener lista de webhooks
+  * Firma digital de webhooks
+    * Configuración de firma digital de Webhooks
+    * Firma digital Generar claves
+  * Administración de webhooks
+    * Cuadrícula de webhooks
+    * Edición de webhooks
+    * Probar webhooks
+    * Suscripción de API al webhook
+    * Cancelar suscripción a API desde webhook
+    * Lista de webhooks
+    * Solicitar nuevo webhook
+    * Registros de webhooks
+    * Obtener lista de webhooks
 
 **Administradores**
 
@@ -256,13 +256,13 @@ Si su cuenta tiene acceso a [[!DNL Adobe Experience Manager as a Cloud Service]]
 >
 >Para agregar varios usuarios simultáneamente, puede realizar una [carga CSV en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
->También puede agregar varios usuarios a un rol creando un [grupo de usuarios](https://helpx.adobe.com/es/enterprise/using/user-groups.html){target="_blank"}. A continuación, puede agregar el producto [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] al grupo de usuarios.
+>También puede agregar varios usuarios a un rol creando un [grupo de usuarios](https://helpx.adobe.com/es/enterprise/using/user-groups.html){target="_blank"}. A continuación, puede agregar el producto [!DNL **Adobe Experience Manager as a Cloud Service**] al grupo de usuarios.
 
 1. Vaya a <https://adminconsole.adobe.com> e inicie sesión con su Adobe ID.
 
 1. Seleccione su organización.
 
-1. En la ficha [!UICONTROL **Productos**], en [!UICONTROL **Productos y servicios**], seleccione el producto [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**].
+1. En la ficha [!UICONTROL **Productos**], en [!UICONTROL **Productos y servicios**], seleccione el producto [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
 
    ![Selección de productos de AEM Cloud Manager en Admin Console](./assets/backend-aem.png){width="600" zoomable="yes"}
 
@@ -291,7 +291,7 @@ Si su cuenta tiene acceso a [[!DNL Adobe Experience Manager as a Cloud Service]]
 
 1. Haga clic en [!UICONTROL **Guardar**].
 
-Para confirmar que el usuario tiene acceso, haga clic en el nombre del usuario para abrir su página de perfil. En la sección [!UICONTROL **Productos**] debería decir [!UICONTROL **Completados**] bajo el producto [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]. Puede tardar unos segundos después de agregar el usuario en ver el estado actualizado en su perfil. Actualice la página para ver el estado actualizado.
+Para confirmar que el usuario tiene acceso, haga clic en el nombre del usuario para abrir su página de perfil. En la sección [!UICONTROL **Productos**] debería decir [!UICONTROL **Completados**] bajo el producto [!UICONTROL **Adobe Experience Manager as a Cloud Service**]. Puede tardar unos segundos después de agregar el usuario en ver el estado actualizado en su perfil. Actualice la página para ver el estado actualizado.
 
 ![Perfil de usuario que muestra el estado de acceso al producto completado](./assets/product-access.png){width="600" zoomable="yes"}
 
