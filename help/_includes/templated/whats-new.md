@@ -1,7 +1,7 @@
 ---
-source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
+source-git-commit: 64d5e1d1ee41241bce36faa31db7c436e018037c
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1665'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 23 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha actualizado la zona protegida <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 15 de julio de 2026
 
@@ -399,66 +421,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 22 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han agregado notas de la versión para actualizaciones de la API en <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> y el <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/release-notes">servicio de catálogo</a> de Commerce para la versión del 20 de mayo de 2026, la cual ahora aplica el límite documentado de 100 SKU por solicitud al recuperar datos de productos.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha documentado el aumento de clasificación inteligente (peso de comportamiento configurable por regla, predeterminado 5.0) para [!DNL Live Search] en <a href="https://experienceleague.adobe.com/es/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">Agregar reglas</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/live-search/best-practice">Prácticas recomendadas</a>, con una referencia cruzada de <a href="https://experienceleague.adobe.com/es/docs/commerce/live-search/live-search-admin/category-merch">Comercialización de categorías</a>. Se ha agregado la misma guía para [!DNL Adobe Commerce Optimizer] en <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Crear y administrar</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/best-practice">Prácticas recomendadas de reglas de comercialización</a>.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>La guía de integración de AEM Assets describe cómo los editores establecen <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">texto alternativo</a> en la integración de <a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/release-notes">AEM Assets v1.3.6 </a>.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó espacio aislado <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">comprometer</a></td>
     </tr>
   </tbody>
 </table>
