@@ -54,7 +54,7 @@ Antes de empezar, confirme que ha completado todos los elementos de la [lista de
 
 Configure el entorno para la migración masiva de datos:
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496125?captions=spa)
 
 1. Extraiga el contenido de `ccsaas-migration-tools.tar.gz`.
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Configurar credenciales de OAuth de origen
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496145?captions=spa)
 
 Estos cuatro valores firman solicitudes desde la herramienta de migración a las API del almacén de origen. Para obtenerlas, abra el origen [!UICONTROL Admin] y vaya a [!UICONTROL **Sistema**] > [!UICONTROL **Extensiones**] > [!UICONTROL **Integraciones**]. Cree o abra una integración y copie los valores en `.env`:
 
@@ -142,7 +142,7 @@ Antes de la migración, asegúrese de que las siguientes configuraciones sean co
 
 ### Configuración de las credenciales de SaaS e IMS de Target
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496170?captions=spa)
 
 Estas son las configuraciones de IMS y API de [!DNL Adobe Commerce as a Cloud Service] para el destino. Necesita el ID de inquilino, el ID de organización, las credenciales de servidor a servidor de IMS OAuth y el host de IMS correcto para su entorno. Coordine con su equipo de Adobe el acceso a la organización, al inquilino y al perfil. No intente inferir ni estimar valores sensibles.
 
@@ -247,7 +247,7 @@ CDMS_PORT=443
 
 ## Configurar el archivo de conexión a base de datos
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496160?captions=spa)
 
 El archivo `.my.cnf` proporciona la configuración de conexión [!DNL MySQL] para la extracción de la herramienta de migración. Créelo copiando `.my.cnf.example` a `.my.cnf` en la raíz del proyecto. El nombre de sección debe coincidir con `SOURCE_CONNECTION_NAME` en `.env`.
 
