@@ -2,7 +2,7 @@
 title: Ejecución de una migración masiva de datos
 description: Obtenga información sobre cómo configurar y ejecutar una migración de datos en lotes desde una Adobe Commerce PaaS o una instancia local a Adobe Commerce as a Cloud Service con la CLI.
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -130,7 +130,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Si es la primera vez que utiliza la CLI de nube, también debe agregar su clave pública SSH a la cuenta. Consulte la [Guía de conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obtener instrucciones.
+>Si es la primera vez que utiliza la CLI de nube, también debe agregar su clave pública SSH a la cuenta. Consulte la [Guía de conexiones seguras](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obtener instrucciones.
 
 ### Alinear configuración de administración de Commerce
 

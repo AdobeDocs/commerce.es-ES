@@ -2,7 +2,7 @@
 title: Verificar acceso al servicio de migración
 description: Obtenga información sobre cómo comprobar el acceso completo a la API del servicio de migración de datos de Commerce, confirmando la accesibilidad de la red, la autenticación IMS y la autorización de inquilinos.
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:18:53.554Z'
