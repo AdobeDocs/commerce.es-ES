@@ -1,7 +1,7 @@
 ---
-source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
+source-git-commit: 9de8e747353a9042d5b6d7c150688e705c21d2c6
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ Después de clonar el repositorio, ejecute:
 
 ### Qué hacen los ganchos
 
-- Detectar automáticamente archivos de imagen clasificados (PNG, JPEG, GIF, SVG)
-- Ejecute `image_optim` para comprimir y optimizar imágenes rasterizadas (PNG, JPEG, GIF)
+- Detectar automáticamente archivos de imagen clasificados (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Ejecute `image_optim` para comprimir y optimizar las imágenes rasterizadas (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Volver a almacenar automáticamente las imágenes optimizadas
 - Asegúrese de que todas las imágenes rasterizadas confirmadas estén optimizadas correctamente
-- Compruebe los SVG clasificados con un límite de tamaño y anule la confirmación si algún SVG lo supera
+- Comprobar los SVG clasificados con un límite de tamaño y anular la confirmación si se hace referencia a un SVG de gran tamaño desde `help/` (de lo contrario, advertir)
 
 ### Ventajas
 
