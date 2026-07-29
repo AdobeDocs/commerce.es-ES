@@ -6,27 +6,22 @@ seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
 TQID: https://experienceleague.adobe.com/dfZjgp5wR6H4c7WkNNhjLYUgKNTPIqPWxKiShlTU1yA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 475
+source-wordcount: 491
 ht-degree: 0%
 
 ---
 
 # Indexación de precios de SaaS
 
-La indexación de precios SaaS optimiza el rendimiento del sitio al descargar tareas que requieren muchos recursos, como la indexación y el cálculo de precios, de la aplicación Commerce a la infraestructura en la nube de Adobe. Este enfoque permite a los comerciantes ampliar rápidamente los recursos para acelerar los tiempos de indexación de precios y ofrecer actualizaciones de precios a la tienda y a los servicios de Commerce conectados más rápidamente.
+La indexación de precios SaaS optimiza el rendimiento del sitio al descargar tareas que requieren muchos recursos, como la indexación y el cálculo de precios, de la aplicación Commerce a la infraestructura en la nube de Adobe. Este enfoque permite a los comerciantes ampliar sus recursos rápidamente para acelerar los tiempos de indexación de precios y ofrecer actualizaciones de precios a la tienda y a los servicios de Commerce conectados más rápidamente.
 
-El diagrama siguiente muestra el flujo de datos de indexación a los servicios SaaS cuando Commerce utiliza el proceso [indexación de precios](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluido en la aplicación Commerce:
+El diagrama siguiente muestra el flujo de datos de indexación a los servicios SaaS cuando Commerce utiliza el proceso [indexación de precios](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluido en la aplicación Commerce:
 
 ![Flujo de datos predeterminado](assets/old_way.png)
 
@@ -38,7 +33,7 @@ Todos los comerciantes pueden beneficiarse del uso de la indexación de precios 
 
 * **Cambios constantes en los precios**: los comerciantes que necesitan cambios repetidos en sus precios para cumplir objetivos estratégicos como promociones frecuentes, descuentos estacionales o reducciones de existencias.
 * **Varios sitios web o grupos de clientes**: comerciantes con catálogos de productos compartidos en varios sitios web (dominios/marcas) o grupos de clientes.
-* **Muchos precios únicos en sitios web o grupos de clientes**-Comerciantes con catálogos de productos compartidos que contienen precios únicos en sitios web o grupos de clientes. Algunos ejemplos son los comerciantes B2B que han negociado previamente precios o marcas con diferentes estrategias de precios.
+* **Muchos precios únicos en sitios web o grupos de clientes** - Comerciantes con amplios catálogos de productos compartidos que contienen precios únicos en sitios web o grupos de clientes. Algunos ejemplos son los comerciantes B2B que han negociado previamente precios o marcas con diferentes estrategias de precios.
 
 ## Usar indexación de precios SaaS
 
@@ -46,16 +41,15 @@ La indexación de precios SaaS se activa automáticamente al instalar Adobe Comm
 
 ### Requisitos
 
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Para obtener más información, consulte [Requisitos del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Requisitos previos
 
 * Uno de los siguientes servicios de Commerce debe instalarse con la última versión de la extensión de Commerce:
 
-   * [Servicio de catálogo](../catalog-service/overview.md)
-   * [Live Search](../live-search/overview.md)
-   * [Recomendaciones de productos](../product-recommendations/guide-overview.md)
-
+  * [Servicio de catálogo](../catalog-service/overview.md)
+  * [Live Search](../live-search/overview.md)
+  * [Recomendaciones de productos](../product-recommendations/guide-overview.md)
 
 >[!NOTE]
 >
@@ -79,11 +73,11 @@ Use la [CLI de Commerce](../data-export/data-export-cli-commands.md) para resinc
 
 >[!NOTE]
 >
->Si la página Estado de sincronización de fuentes de datos no está disponible en Commerce Admin para Commerce en la nube o en implementaciones locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) para habilitarla.
+>Para habilitar la página Estado de sincronización de fuentes de datos si no está disponible en Commerce Admin para Commerce en implementaciones en la nube o locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Precios para tipos de productos personalizados
 
-Los cálculos de precios se admiten para tipos de productos personalizados, como precio base, precio especial, precio de grupo, precio de regla de catálogo, etc.
+Los cálculos de precios son compatibles con los tipos de producto personalizados, como precios base, especiales, de grupo y de reglas de catálogo.
 
 Si tiene un tipo de producto personalizado que utiliza una fórmula específica para calcular el precio final, puede ampliar el comportamiento de la fuente de precios del producto.
 
