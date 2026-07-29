@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
+source-git-commit: 155703001fc049470266874e0f519ab060248b31
 workflow-type: tm+mt
-source-wordcount: 5265
+source-wordcount: 5259
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ## Julio de 2026: #1 de la versión {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Producción]{type=Neutral tooltip="Los elementos enumerados están disponibles actualmente en entornos de producción."}
 
-[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-Actualmente, los siguientes elementos solo están disponibles en entornos de espacio aislado y su traslado a entornos de producción está programado para el 28 de julio de 2026.
+Los siguientes elementos están disponibles en los entornos de producción a partir del 28 de julio de 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -63,7 +63,7 @@ Actualmente, los siguientes elementos solo están disponibles en entornos de esp
 >
 >Esta función está desactivada de forma predeterminada. Para habilitarlo, póngase en contacto con el administrador de satisfacción del cliente de Adobe Commerce o cree un ticket de asistencia.
 
-Los nuevos extremos de la API de REST replican la característica [!DNL Commerce Admin] [!UICONTROL **Editar pedido**], que permite a las integraciones editar un pedido mediante programación:
+Los nuevos [extremos de API REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) replican la característica [!DNL Commerce Admin] [!UICONTROL **Editar pedido**], que permite a las integraciones editar un pedido mediante programación:
 
 | Método | Extremo | Descripción |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ Todos los extremos de `custom-email` requieren acceso al `Marketing > Communicat
 >
 >Esta función es experimental y debe habilitarse poniéndose en contacto con el administrador de éxito del cliente de Adobe Commerce o creando un ticket de asistencia.
 
-Los nuevos extremos de la API REST `orderChain` permiten que las integraciones modifiquen un pedido mediante su ID y resuelvan automáticamente la cadena completa de pedidos editados:
+Los nuevos extremos de la API REST [`orderChain` &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) permiten que las integraciones modifiquen un pedido con su ID y resuelvan automáticamente la cadena completa de pedidos editados:
 
 | Método | Extremo | Descripción |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ Se emite un nuevo evento `observer.reminder_matched_carts` después de que las r
 
 ### Suprimir correos electrónicos transaccionales por área o plantilla
 
-Una nueva configuración de [!UICONTROL **Supresión de correo electrónico**] ([!UICONTROL **Tiendas**] > [!UICONTROL **Configuración**] > [!UICONTROL **Servicios de Adobe**] > [!UICONTROL **Supresión de correo electrónico**]) permite a los administradores detener selectivamente [!DNL Commerce] de enviar correos electrónicos transaccionales. Puede suprimir correos electrónicos por área funcional (como Cuenta de cliente, Order Management, Devoluciones, Cierre de compra, Marketing o B2B) o por una lista exacta de identificadores de plantilla.<!-- ACCS-1025 -->
+Una nueva configuración de [Supresión de correo electrónico](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Tiendas**] > [!UICONTROL **Configuración**] > [!UICONTROL **Servicios de Adobe**] > [!UICONTROL **Supresión de correo electrónico**]) permite a los administradores detener selectivamente [!DNL Commerce] de enviar correos electrónicos transaccionales. Puede suprimir correos electrónicos por área funcional (como Cuenta de cliente, Order Management, Devoluciones, Cierre de compra, Marketing o B2B) o por una lista exacta de identificadores de plantilla.<!-- ACCS-1025 -->
 
 ### Ver el historial de modificaciones de pedidos en el administrador
 

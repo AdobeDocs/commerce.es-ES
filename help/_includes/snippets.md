@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ Para obtener información sobre las opciones de configuración de identidad, com
 | Servicios | Tienda |
 | --- | --- |
 | [Integración de AEM Assets](../aem-assets-integration/release-notes.md)<br>[Conector de Commerce Optimizer](../aco-connector/release-notes.md) | [Información de versión de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=es)<br>[Registro de cambios de tienda](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=es) |
+
+## Herramienta de migración masiva de datos Acceso anticipado {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>La herramienta de migración masiva de datos se encuentra actualmente en Acceso anticipado. El acceso se proporciona exclusivamente a través del proceso de participación de ingeniería implementada de Commerce (CDE). Para obtener una descripción general de la herramienta y sus requisitos de elegibilidad, consulte [Herramienta de migración masiva de datos](../cloud-service/migration/bulk-data/migration-tool.md).
