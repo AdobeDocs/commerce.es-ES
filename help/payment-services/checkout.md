@@ -5,7 +5,7 @@ feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Aparece un mensaje de error en la página de cierre de compra del comprador. El 
 
 ![Error al comprobar](assets/user-checkout-error.png "Error al desproteger"){width="600" zoomable="yes"}
 
-También se muestra un comentario sobre el pedido cancelado en el Administrador para un [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=es) específico.
+También se muestra un comentario sobre el pedido cancelado en el Administrador para un [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) específico.
 
 ![Comentario de pedido cancelado en el administrador del pedido](assets/admin-checkout-error.png "Comentario de pedido cancelado en el administrador del pedido"){width="600" zoomable="yes"}
 

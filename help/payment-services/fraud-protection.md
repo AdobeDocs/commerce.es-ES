@@ -7,7 +7,7 @@ feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ Debido a que Signifyd realiza alguna acción sobre sus pedidos, es necesario con
 
 Estas opciones de configuración no son compatibles con Payment Services ni con la integración de Signifyd:
 
-* Cuando [!DNL Payment Services] está configurado con la acción de pago `Authorize` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_&#x200B;establecida en **Crear nota de crédito**.
+* Cuando [!DNL Payment Services] está configurado con la acción de pago `Authorize` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_establecida en **Crear nota de crédito**.
 
   Motivo: [!DNL Payment Services] crea una transacción de autorización que Signify intenta devolver.
 
 
-* [!DNL Payment Services] está configurado con la acción de pago `Authorize and Capture` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_&#x200B;establecida en **Cancelar pedido**.
+* [!DNL Payment Services] está configurado con la acción de pago `Authorize and Capture` _y_ Signifyd está en modo `PostAuth` con la opción _[!UICONTROL Decline Guarantees]_establecida en **Cancelar pedido**.
 
   Razón: [!DNL Payment Services] crea una transacción de captura que Signifyd intenta anular.
 
