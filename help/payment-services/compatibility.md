@@ -6,17 +6,13 @@ level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
 TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -35,7 +31,7 @@ Para usar [!DNL Payment Services], primero tendrá que conectar su instancia de 
 
    >[!TIP]
    >
-   > Vea nuestro tutorial de [Adobe Commerce Services Connector](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obtener más información.
+   > Vea nuestro tutorial de [Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obtener más información.
 
 1. Si ya ha conectado su instancia, vaya a la página [incorporación](onboard.md) para ver los pasos siguientes.
 
@@ -53,7 +49,7 @@ Para usar [!DNL Payment Services], primero tendrá que conectar su instancia de 
 
 ### ¿Qué opción de [!DNL Payment Services] es adecuada para usted?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447921?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 Consulte [Connect](connect.md) para obtener más información sobre cómo configurar la extensión de [!DNL Payment Services].
 
@@ -69,7 +65,7 @@ Consulte [Connect](connect.md) para obtener más información sobre cómo config
 
 ![comprobar](assets/icon-check.png) precio estándar
 
-![comprobar](assets/icon-check.png) **Disponible en XX países**
+![comprobar](assets/icon-check.png) **Disponible en más de 200 países**
 
 [![más información](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,19 +95,19 @@ Consulte [Connect](connect.md) para obtener más información sobre cómo config
 
 ![comprobar](assets/icon-check.png) (capacidades de precios L2/L3 - solo EE. UU.)
 
-![comprobar](assets/icon-check.png) **Solo disponible en Estados Unidos (EE.UU.), Canadá (CA) y Australia (AUS). Francia (FR), Reino Unido (UK)**
+![comprobar](assets/icon-check.png) disponible en 37 países. Alemania, Australia, Austria, Bélgica, Bulgaria, Canadá, China, Chipre, Dinamarca, Eslovaquia, Eslovenia, España, Estados Unidos, Estonia, Finlandia, Francia, Grecia, Hong Kong, Hungría, Irlanda, Italia, Japón, Letonia, Liechtenstein, Lituania, Luxemburgo, Malta, México, Noruega, Países Bajos, Polonia, Portugal, Reino Unido, República Checa, Rumania, Singapur, Suecia. **Tarifas negociadas disponibles en Estados Unidos (US), Canadá (CA), Australia (AU), Francia (FR), Reino Unido (GB), Italia (IT), Países Bajos (NL), Alemania (DE)**
 
 [![más información](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
-Consulte las páginas [Política del ciclo vital](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=es) y [[!DNL Payment Services] Notas de la versión](release-notes.md) para obtener más información específica de la versión y la versión.
+Consulte las páginas [Política del ciclo vital](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) y [[!DNL Payment Services] Notas de la versión](release-notes.md) para obtener más información específica de la versión y la versión.
 
 Para obtener las instrucciones completas e iniciar el proceso de incorporación, consulta [Introducción a [!DNL Payment Services]](onboard.md).
 
 ### Tarjetas de crédito y divisas aceptadas
 
-[!DNL Payment Services] acepta las monedas de los países en los que está disponible. Consulte [Configuración de moneda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=es) para obtener más información sobre la configuración de tasas de moneda.
+[!DNL Payment Services] acepta las monedas de los países en los que está disponible. Consulte [Configuración de moneda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) para obtener más información sobre la configuración de tasas de moneda.
 
 Para obtener más información sobre las divisas y los métodos de pago disponibles con los productos y servicios de PayPal, consulte las siguientes páginas:
 
