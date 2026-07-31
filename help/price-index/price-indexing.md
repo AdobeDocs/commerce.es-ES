@@ -27,7 +27,7 @@ ht-degree: 0%
 
 La indexación de precios SaaS optimiza el rendimiento del sitio al descargar tareas que requieren muchos recursos, como la indexación y el cálculo de precios, de la aplicación Commerce a la infraestructura en la nube de Adobe. Este enfoque permite a los comerciantes ampliar sus recursos rápidamente para acelerar los tiempos de indexación de precios y ofrecer actualizaciones de precios a la tienda y a los servicios de Commerce conectados más rápidamente.
 
-El diagrama siguiente muestra el flujo de datos de indexación a los servicios SaaS cuando Commerce utiliza el proceso [indexación de precios](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluido en la aplicación Commerce:
+El diagrama siguiente muestra el flujo de datos de indexación a los servicios SaaS cuando Commerce utiliza el proceso [indexación de precios](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluido en la aplicación Commerce:
 
 ![Flujo de datos predeterminado](assets/old_way.png)
 
@@ -47,7 +47,7 @@ La indexación de precios SaaS se activa automáticamente al instalar Adobe Comm
 
 ### Requisitos
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Para obtener más información, consulte [Requisitos del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+* [Adobe Commerce](https://business.adobe.com/es/products/magento/magento-commerce.html) 2.4.4+. Para obtener más información, consulte [Requisitos del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Requisitos previos
 
@@ -79,7 +79,7 @@ Use la [CLI de Commerce](../data-export/data-export-cli-commands.md) para resinc
 
 >[!NOTE]
 >
->Para habilitar la página Estado de sincronización de fuentes de datos si no está disponible en Commerce Admin para Commerce en implementaciones en la nube o locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
+>Para habilitar la página Estado de sincronización de fuentes de datos si no está disponible en Commerce Admin para Commerce en implementaciones en la nube o locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Precios para tipos de productos personalizados
 
