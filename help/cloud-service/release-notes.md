@@ -133,7 +133,7 @@ Se emite un nuevo evento `observer.reminder_matched_carts` después de que las r
 
 ### Suprimir correos electrónicos transaccionales por área o plantilla
 
-Una nueva configuración de [Supresión de correo electrónico](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Tiendas**] > [!UICONTROL **Configuración**] > [!UICONTROL **Servicios de Adobe**] > [!UICONTROL **Supresión de correo electrónico**]) permite a los administradores detener selectivamente [!DNL Commerce] de enviar correos electrónicos transaccionales. Puede suprimir correos electrónicos por área funcional (como Cuenta de cliente, Order Management, Devoluciones, Cierre de compra, Marketing o B2B) o por una lista exacta de identificadores de plantilla.<!-- ACCS-1025 -->
+Una nueva configuración de [Supresión de correo electrónico](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Tiendas**] > [!UICONTROL **Configuración**] > [!UICONTROL **Servicios de Adobe**] > [!UICONTROL **Supresión de correo electrónico**]) permite a los administradores detener selectivamente [!DNL Commerce] de enviar correos electrónicos transaccionales. Puede suprimir correos electrónicos por área funcional (como Cuenta de cliente, Order Management, Devoluciones, Cierre de compra, Marketing o B2B) o por una lista exacta de identificadores de plantilla.<!-- ACCS-1025 -->
 
 ### Ver el historial de modificaciones de pedidos en el administrador
 
