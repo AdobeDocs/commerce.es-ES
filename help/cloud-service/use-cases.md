@@ -5,30 +5,18 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 autotag-review: '2026-06-18T16:06:00.993Z'
 TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 04f966aca4d7ce85990b42ad958938a186629af1
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: 1452
 ht-degree: 0%
 
 ---
@@ -46,7 +34,7 @@ Antes de intentar cualquiera de estos casos de uso, debe completar los siguiente
 1. [Cree su instancia de Cloud Service](./getting-started.md#create-an-instance) con las siguientes opciones:
    1. Seleccione [!UICONTROL **espacio aislado**] en la lista desplegable [!UICONTROL **Entorno**].
    1. Seleccione [!UICONTROL **Tienda Adobe**] en el menú desplegable [!UICONTROL **Datos de prueba**].
-1. [Inicia sesión en tu cuenta de  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
+1. [Inicia sesión en tu cuenta de  [!DNL Adobe Experience Cloud] ](https://experience.adobe.com)
 1. [Configura tu tienda Cloud Service](./storefront.md) con las siguientes opciones:
    1. Seleccione [!UICONTROL `adobe-commerce/adobe-demo-store`] para la plantilla.
    1. Seleccione [!UICONTROL **Elegir una instancia disponible (Malla -> SaaS)**] para el método de conexión.
@@ -59,7 +47,7 @@ Este flujo de trabajo muestra el proceso de cierre de compra de un cliente que c
 
 1. En el Administrador de Commerce, vaya a [!UICONTROL **Tiendas**] > [!UICONTROL Settings] > [!UICONTROL **Configuración**] > [!UICONTROL **Métodos de pago**].
 
-1. En la sección [!UICONTROL **Configuración general**], escriba sus `Payment Services Sandbox ID` y `Payment Services Sandbox Key`. Puede obtener estos identificadores siguiendo los pasos descritos en [Incorporación a espacio aislado](../payment-services/sandbox.md#sandbox-onboarding)
+1. En la sección [!UICONTROL **Configuración general**], escriba sus `Payment Services Sandbox ID` y `Payment Services Sandbox Key`. Puede obtener estos identificadores siguiendo los pasos descritos en [Incorporación a espacio aislado](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}
 
 1. Establezca el menú desplegable [!UICONTROL **Habilitar**] en [!UICONTROL **Sí**].
 
@@ -83,7 +71,7 @@ Este flujo de trabajo muestra el proceso de cierre de compra de un cliente que c
 
 1. Introduzca los datos de contacto y la información de envío necesarios. Puede utilizar información ficticia para este pedido.
 
-1. Para pagar, selecciona [!UICONTROL **Cheque / giro postal**]. Si quieres usar una tarjeta de crédito, usa una de las [tarjetas de prueba proporcionadas por Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers). Puede utilizarlas con cualquier fecha de caducidad futura y con cualquier CVC.
+1. Para pagar, selecciona [!UICONTROL **Cheque / giro postal**]. Si quieres usar una tarjeta de crédito, usa una de las [tarjetas de prueba proporcionadas por PayPal](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers). Puede utilizarlas con cualquier fecha de caducidad futura y con cualquier CVC.
 
    ![Formulario de cierre de compra con campos de información de contacto y envío](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -125,7 +113,7 @@ Cree, edite y publique contenido directamente en la tienda.
 
 ## Experimentación contextual
 
-La característica de experimentación contextual de [!DNL Adobe Commerce] le permite crear y administrar experimentos en su tienda para probar contenido y configuraciones diferentes.
+La función de experimentación contextual de Adobe le permite crear y administrar experimentos en la tienda para probar diferentes contenidos y configuraciones.
 
 ### Requisitos previos
 
@@ -139,9 +127,9 @@ La característica de experimentación contextual de [!DNL Adobe Commerce] le pe
 
 1. Pegue las dos copias de la página de índice en la carpeta **1234**.
 
-1. Abra cada página y cambie el nombre a &quot;homev1&quot; y &quot;homev2&quot;. Estos son sus [aspirantes](https://www.aem.live/docs/experimentation#create-your-challenger-page).
+1. Abra cada página y cambie el nombre a &quot;homev1&quot; y &quot;homev2&quot;. Estas páginas son sus [aspirantes](https://www.aem.live/docs/experimentation#create-your-challenger-page).
 
-1. Modifique cada página para incluir contenido diferente. Por ejemplo, cambie la imagen a pantalla completa o el texto. Debe poder identificar las diferencias entre cada página.
+1. Para incluir contenido diferente, modifique cada página. Por ejemplo, cambie la imagen a pantalla completa o el texto. Debe poder identificar las diferencias entre cada página.
 
 1. Publique cada una de las páginas de aspirante.
 
@@ -155,14 +143,14 @@ La característica de experimentación contextual de [!DNL Adobe Commerce] le pe
    * Descripción: Una tienda web
    * Experimento - 1234
    * Variantes del experimento
-      * `https://<your-site>.aem.live/experiments/1234/indexv1`
-      * `https://<your-site>.aem.live/experiments/1234/indexv2`
+     * `https://<your-site>.aem.live/experiments/1234/indexv1`
+     * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
    ![Configuración de bloque de metadatos para experimentación contextual](./assets/metadata-block.png){width="600" zoomable="yes"}
 
 1. Abra una ventana de navegación privada o de incógnito y vaya a la página principal.
 
-1. Cierre la ventana de exploración privada y repita el paso anterior. Cada vez que abra la página, verá una variante aleatoria que ha creado.
+1. Cierre la ventana de exploración privada y repita el paso anterior. Cada vez que abre la página, ve una variante aleatoria que ha creado.
 
 ## Mejora del contenido de tienda
 
@@ -174,9 +162,9 @@ Con [!DNL AEM Assets], [!DNL Adobe Express] y [!DNL Firefly], puede realizar cam
 
 ### Personalizar el fondo de una imagen
 
-Imagine un escenario en el que desee modificar rápidamente el fondo de una imagen de producto. La combinación de [!DNL Adobe Commerce], [!DNL AEM Assets] y [!DNL Adobe Express] le permite completar este cambio en unos sencillos pasos.
+Imagine un escenario en el que desee modificar rápidamente el fondo de una imagen de producto. La combinación de [!DNL Adobe Commerce], [!DNL AEM Assets] y [!DNL Adobe Express] le permite completar este cambio en unos pocos pasos.
 
-1. Abra la [tienda](./storefront.md) que creó en los requisitos previos y vaya al elemento que desee cambiar. Anote el SKU o el código de producto de los artículos.
+1. Abra la [tienda](./storefront.md) que creó en los requisitos previos y vaya al elemento que desee cambiar. Anote el SKU o el código de producto del artículo.
 
 1. Abra [!DNL AEM Assets], seleccionándolo en [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
@@ -200,7 +188,7 @@ Imagine un escenario en el que desee modificar rápidamente el fondo de una imag
 
    ![Cuadro de texto para describir la imagen que se generará con IA](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
-1. Ajuste [!UICONTROL Brush size] y dibuje donde desee agregar la imagen generada. Para este ejemplo, dibuje alrededor del objeto existente para seleccionar el fondo.
+1. Ajuste [!UICONTROL Brush size] y dibuje donde desee agregar la imagen generada. Para seleccionar el fondo para este ejemplo, dibuje alrededor del objeto existente.
 
 1. Haga clic en [!UICONTROL **Generar**] para ver los resultados.
 
@@ -220,7 +208,7 @@ Imagine un escenario en el que desee modificar rápidamente el fondo de una imag
 
 #### Agregar la imagen a [!DNL Commerce AEM Assets]
 
-1. En el [panel de navegación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], seleccione [!UICONTROL **Assets**] > [!UICONTROL **Archivos**] > [!UICONTROL **Commerce**] y haga clic en el recurso que creó en la sección anterior.
+1. En el [panel de navegación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], seleccione [!UICONTROL **Assets**] > [!UICONTROL **Archivos**] > [!UICONTROL **Commerce**] y haga clic en el recurso que creó en la sección anterior.
 
    ![Carpeta de Commerce en [!DNL AEM Assets] con imágenes de productos](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -270,7 +258,7 @@ Generate Variations de [!DNL Adobe Commerce] aprovecha la IA generativa para aut
 
 ### Generar texto
 
-1. Abra el sitio de la tienda con el [Editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Abra el sitio de la tienda con el [Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Seleccione el bloque de texto que desee editar.
 
@@ -284,7 +272,7 @@ Generate Variations de [!DNL Adobe Commerce] aprovecha la IA generativa para aut
 
 ### Generación de contenido e imágenes
 
-1. Abrir [[!DNL Generate Variations]](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Abrir [[!DNL Generate Variations]](/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)
 
 1. Seleccione la plantilla [!UICONTROL **Hero Banner**].
 
@@ -300,11 +288,11 @@ Generate Variations de [!DNL Adobe Commerce] aprovecha la IA generativa para aut
 
 1. En el menú desplegable [!UICONTROL **Tipo de contenido**], seleccione [!UICONTROL **Foto**].
 
-1. Para la imagen de referencia [!UICONTROL **Style**], seleccione el titular de la tienda Adobe existente.
+1. Para la imagen de referencia [!UICONTROL **Style**], seleccione el titular existente de la Tienda Adobe.
 
 1. Seleccione la imagen generada que desee usar y haga clic en [!UICONTROL **Guardar**].
 
-1. Repita este proceso con otras imágenes de referencia para generar más variaciones.
+1. Para generar más variaciones, repita este proceso con otras imágenes de referencia.
 
 
 ## Resolución de problemas
@@ -313,35 +301,35 @@ Utilice las siguientes sugerencias para resolver cualquier problema que tenga al
 
 * Si necesita instrucciones sobre comandos o indicadores:
 
-   1. Ejecute `aio --help` para ver todos los comandos y indicadores disponibles.
-   1. Para comandos específicos, use el indicador `--help`. Por ejemplo:
-      * `aio console --help`
-      * `aio commerce --help`
+  1. Ejecute `aio --help` para ver todos los comandos y indicadores disponibles.
+  1. Para comandos específicos, use el indicador `--help`. Por ejemplo:
+     * `aio console --help`
+     * `aio commerce --help`
 
 * Si encuentra problemas de inicio de sesión no válidos:
 
-   1. Ejecutar `aio config clear`.
-   1. Ejecutar `aio auth login --force`.
-   1. Inicie sesión en su explorador.
-   1. Seleccione su perfil.
-   1. Vuelva al terminal para continuar.
+  1. Ejecutar `aio config clear`.
+  1. Ejecutar `aio auth login --force`.
+  1. Inicie sesión en su explorador.
+  1. Seleccione su perfil.
+  1. Vuelva al terminal para continuar.
 
 * Si el comando `init` falla:
 
-   1. Ejecutar `aio api-mesh delete`.
-   1. Volver a ejecutar `aio commerce init`.
+  1. Ejecutar `aio api-mesh delete`.
+  1. Volver a ejecutar `aio commerce init`.
 
 * Si seleccionó la organización, proyecto o espacio de trabajo incorrecto antes de ejecutar el comando `init`:
 
-   1. Ejecutar `aio console org select`.
-   1. Ejecutar `aio console project select`.
-   1. Ejecutar `aio console workspace select`.
+  1. Ejecutar `aio console org select`.
+  1. Ejecutar `aio console project select`.
+  1. Ejecutar `aio console workspace select`.
 
 * Si tiene una selección de inquilino no válida:
 
-   1. Cancele la ejecución de CLI actual presionando **Ctrl-C**.
-   1. Ejecutar `aio commerce init`.
+  1. Cancele la ejecución de CLI actual presionando **Ctrl-C**.
+  1. Ejecutar `aio commerce init`.
 
 * Si encuentra una instalación de API Mesh no válida:
 
-   * Ejecutar `aio api-mesh update mesh-config.json`.
+  * Ejecutar `aio api-mesh update mesh-config.json`.
