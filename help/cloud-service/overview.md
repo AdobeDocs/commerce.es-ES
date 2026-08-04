@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
+source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
 workflow-type: tm+mt
-source-wordcount: 1444
+source-wordcount: 1461
 ht-degree: 0%
 
 ---
@@ -96,22 +96,27 @@ Este diagrama ilustra el flujo de datos entre [!DNL Adobe Commerce as a Cloud Se
 
 ## Commerce Storefront
 
-Use [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=es) de Adobe con tecnología de [!DNL Edge Delivery Services] para crear experiencias enriquecidas en minutos con la creación simple basada en documentos o la edición visual con [!DNL Storefront Builder].
+Para crear experiencias enriquecidas en minutos con la creación simple basada en documentos o la edición visual con [!DNL Storefront Builder], usa [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) de Adobe con tecnología [!DNL Edge Delivery Services].
 
 [!DNL Commerce Storefront] no tiene encabezado con una arquitectura disociada que proporciona todos los datos y servicios de comercialización a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] no admite tiendas Luma. Si está migrando desde Adobe Commerce en la nube o local, consulte [escaparates existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=es#existing-storefronts) para obtener instrucciones sobre la transición.
+>[!DNL Adobe Commerce as a Cloud Service] no admite tiendas Luma. Si está migrando desde Adobe Commerce en la nube o de forma local, consulte [escaparates existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=es#existing-storefronts) para obtener instrucciones sobre la transición.
 
 ## Servicios de comercialización y servicios de pago
 
 Adobe proporciona un completo conjunto de servicios de comercialización inteligentes y componibles para ayudarle a lograr sus objetivos comerciales clave. Estos servicios también proporcionan API esenciales para optimizar el rendimiento a escala.
 
-- [Live Search](../live-search/overview.md): ofrece resultados más inteligentes, rápidos y relevantes a los compradores con esta herramienta de búsqueda con tecnología de IA.
-- [Recomendaciones de productos](../optimizer/merchandising/recommendations/overview.md): agregue recomendaciones impulsadas por IA en función del comportamiento del comprador, las tendencias populares, la similitud del producto y mucho más.
+- [[!DNL Live Search]](../live-search/overview.md): ofrece resultados más inteligentes, rápidos y relevantes a los compradores con esta herramienta de búsqueda con tecnología de IA. Para obtener instrucciones de configuración, consulte [Configuración [!DNL Live Search]](../live-search/workspace.md).
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md): agregue recomendaciones alimentadas por IA en función del comportamiento del comprador, las tendencias populares, la similitud del producto y mucho más. Para obtener instrucciones de configuración, consulte [[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md).
 - [Servicio de catálogo](../catalog-service/guide-overview.md): ofrezca a sus clientes una experiencia de producto optimizada a la vez que aumenta el rendimiento, mejora la escalabilidad y aumenta las conversiones.
-- [Servicios de pago](../payment-services/guide-overview.md): Mejore la satisfacción del cliente ofreciendo varios métodos de pago, incluidos pagos a plazos sin intereses, y una sola vista del procesamiento de pagos, pedidos y facturas.
+
+  >[!NOTE]
+  >
+  >El servicio de catálogo se incluye automáticamente con [!DNL Live Search] y [!DNL Product Recommendations].
+
+- [Servicios de pago](../payment-services/guide-overview.md): Mejore la satisfacción del cliente ofreciendo varios métodos de pago, incluidos pagos a plazos sin intereses, y una sola vista del procesamiento de pagos, pedidos y facturas. Para obtener instrucciones de configuración, consulte [Página principal de servicios de pago](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -119,7 +124,7 @@ La visualización de productos ayuda a simplificar la administración de recurso
 
 La integración garantiza que los recursos digitales, como las imágenes de los productos o el contenido de marketing, se vinculen dinámicamente a las entidades de comercialización adecuadas, incluidos los productos y las categorías de Adobe Commerce, en función del SKU u otros atributos clave.
 
-[!DNL Product Visuals] está disponible de forma predeterminada con [!DNL Adobe Commerce as a Cloud Service], lo que proporciona algunas de las capacidades de [!DNL AEM Assets].
+[!DNL Product Visuals] está disponible de forma nativa con [!DNL Adobe Commerce as a Cloud Service], proporcionando algunas de las capacidades de [!DNL AEM Assets].
 
 Como alternativa, las capacidades nativas de [!DNL Adobe Commerce as a Cloud Service] proporcionan herramientas básicas de administración de recursos para almacenar y administrar recursos digitales.
 
@@ -189,7 +194,7 @@ Adobe proporciona a los desarrolladores puntos de extensión y herramientas comp
 Adobe proporciona las siguientes herramientas para desarrolladores para crear integraciones y personalizaciones:
 
 - [**Mesh de API para Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/): coordina y combina varias fuentes de API, GraphQL, REST y otras en un único extremo de GraphQL consultable.
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/): cree e implemente aplicaciones web seguras y escalables que amplíen la funcionalidad de Commerce y se integren con soluciones de terceros.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/intro_and_overview/): cree e implemente aplicaciones web seguras y escalables que amplíen la funcionalidad de Commerce y se integren con soluciones de terceros.
 - [**Eventos**](https://developer.adobe.com/commerce/extensibility/events/): utilice déclencheur de eventos personalizados para interactuar con otras herramientas de desarrollo ampliables.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/): utilice los webhooks para almacenar en déclencheur automáticamente las interacciones entre Commerce y sistemas de terceros.
 - [**IU de administración SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/): personalice y mejore la administración de Commerce con nuevas páginas y características para sus comerciantes.
