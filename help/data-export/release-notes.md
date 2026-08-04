@@ -22,14 +22,14 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
+source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
 workflow-type: tm+mt
-source-wordcount: 3256
+source-wordcount: 3237
 ht-degree: 0%
 
 ---
 
-# Notas de la versión de la extensión [!DNL SaaS Data Export]
+# Notas de la versión [!DNL SaaS Data Export Extension]
 
 Estas notas de la versión describen las versiones más recientes de la extensión [!DNL SaaS data export]. Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
 
@@ -41,9 +41,9 @@ Las actualizaciones incluyen:
 
 >[!NOTE]
 >
->La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en su sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
+>La extensión [!DNL SaaS data export] es una colección de módulos que se instalan automáticamente con [!DNL Live Search], [!DNL Product Recommendations] y [!DNL Catalog Service]. Puede comprobar la versión instalada en el sistema mediante [!DNL Composer]. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
-## Versiones de 2026
+## Versiones de 2026 {#release-notes-2026}
 
 ### Versión 103.4.30
 
@@ -70,6 +70,7 @@ _11 de junio de 2026_
 _4 de junio de 2026_
 
 ![Corregir](../assets/fix.svg) **Los productos agrupados permanecen visibles después de las actualizaciones simultáneas del catálogo**-Se ha corregido un problema por el que los productos agrupados no aparecían en la tienda cuando los productos configurables y agrupados se actualizaban al mismo tiempo. Después de actualizar `magento/module-data-exporter` a la versión 103.4.27, la fuente de productos se programa automáticamente para volver a sincronizar y corregir las incoherencias de datos de paquete existentes en [!DNL Catalog Service], [!DNL Live Search] y otros servicios conectados de Commerce.
+<!--MDEE-1379-->
 
 ### Versión 103.4.26
 
@@ -90,8 +91,10 @@ _19 de mayo de 2026_
 _5 de mayo de 2026_
 
 ![Corrección](../assets/fix.svg) **Es más fácil solucionar problemas de los registros de exportación**. Muchos errores y advertencias relacionados con la exportación ahora incluyen códigos de registro coherentes. Estos códigos le ayudan a rastrear los problemas más rápido cuando trabaja con soporte técnico o documentación. Para obtener más información, consulte [Referencia de códigos de registro](troubleshooting/log-codes-reference.md).
+<!--MDEE-1276-->
 
 ![Corregir](../assets/fix.svg) **Sincronizar automáticamente cuando cambian las etiquetas de opciones de atributos**-Cambiar las etiquetas de opciones de atributos de productos para una vista de tienda (incluidos los atributos de selección múltiple) ahora pone en cola de nuevo los productos afectados para exportarlos de modo que Live Search, Product Recommendations, Catalog Service y otros servicios conectados de Commerce muestren las etiquetas de faceta y filtro actualizadas en las vistas de comprador. Anteriormente, las ediciones solo de etiquetas podían hacer que los catálogos SaaS mostraran frases antiguas hasta que un cambio de producto más amplio activara una sincronización.
+<!--MDEE-1337-->
 
 ![Corrección](../assets/fix.svg) **Estado confiable y visibilidad cuando faltan datos de ámbito predeterminado**. La exportación del producto administra los huecos en el ámbito de administración predeterminado para que los servicios conectados tengan un comportamiento correcto de habilitado, deshabilitado y visibilidad. Los valores específicos del almacén que establezca seguirán teniendo prioridad.
 
@@ -108,8 +111,10 @@ _5 de mayo de 2026_
 
 _20 de abril de 2026_
 
-![Corrección](../assets/fix.svg) **Errores de SQL resueltos al eliminar atributos EAV estáticos**: El complemento ProductAttributeDelete ya no genera errores de SQL al eliminar atributos EAV estáticos, lo que garantiza una administración de atributos más fluida y una fiabilidad del sistema mejorada. <!--MDEE-1336-->
-![Corregir](../assets/fix.svg) **Se ha corregido la exportación de la ruta de la categoría después de que la categoría se mueva**- Garantiza que la fuente de categorías actualice correctamente la `url_path` cuando se mueva una categoría a un elemento principal diferente, lo que evita que falten rutas de categoría o que estén obsoletas en los servicios de Commerce conectados.![Corrección](../assets/fix.svg) **Se han mejorado las actualizaciones programadas de categorías para productos relacionados**. Las actualizaciones programadas de las direcciones URL de categorías ahora afectan únicamente a las categorías deseadas, lo que preserva la integridad de los datos y evita cambios no deseados en los productos relacionados. Ahora, los cambios programados en las direcciones URL de las categorías se reflejan correctamente en los datos exportados, lo que mantiene la navegación de la tienda y los servicios vinculados alineados con el catálogo actual.
+![Corrección](../assets/fix.svg) **Errores SQL resueltos al eliminar atributos EAV estáticos**: El complemento ProductAttributeDelete ya no genera errores SQL al eliminar atributos EAV estáticos, lo que garantiza una administración de atributos más fluida y una fiabilidad del sistema mejorada. <!--MDEE-1336-->
+![Corregir](../assets/fix.svg) **Se ha corregido la exportación de la ruta de la categoría después de que la categoría se mueva**- Garantiza que la fuente de categorías actualice correctamente la `url_path` cuando se mueva una categoría a un elemento principal diferente, lo que evita que falten rutas de categoría o que estén obsoletas en los servicios de Commerce conectados.<!--MDEE-1331-->
+![Corrección](../assets/fix.svg) **Se han mejorado las actualizaciones programadas de categorías para productos relacionados**. Las actualizaciones programadas de las direcciones URL de categorías ahora afectan únicamente a las categorías deseadas, lo que preserva la integridad de los datos y evita cambios no deseados en los productos relacionados. Ahora, los cambios programados en las direcciones URL de las categorías se reflejan correctamente en los datos exportados, lo que mantiene la navegación de la tienda y los servicios vinculados alineados con el catálogo actual.
+<!--MDEE-1321-->
 
 ### Versión 103.4.22
 
@@ -174,7 +179,7 @@ _24 de noviembre de 2025_
 
 _22 de octubre de 2025_
 
-![Nuevo](../assets/new.svg) Se agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de Adobe Commerce a servicios conectados (Servicio de catálogo, Live Search y Recomendaciones de productos). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=es) en la *Guía de administración de Commerce*. <!--MDEE-954-->
+![Nuevo](../assets/new.svg) agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de [!DNL Adobe Commerce] a servicios conectados ([!DNL Catalog Service], [!DNL Live Search] y [!DNL Product Recommendations]). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=es) en la *Guía de administración de Commerce*. <!--MDEE-954-->
 
 ### Versión 103.4.14
 
@@ -300,7 +305,7 @@ _11 de marzo de 2025_
 ![Se ha agregado la funcionalidad &#x200B;](../assets/new.svg) para sincronizar parcialmente las fuentes de `products`, `productOverrides` y `productAttributes` en función de una lista especificada de SKU de productos. Use la nueva funcionalidad agregando la opción `--by-ids` al comando resincronizar CLI: <!--MDEE-606-->
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![Corrección](../assets/fix.svg) Se han reducido los posibles problemas de compatibilidad con PHP 8.4 al abordar la funcionalidad obsoleta. <!--MDEE-1002-->
@@ -468,12 +473,12 @@ _30 de abril de 2024_
 
 - tablas de fuentes (e ID de vistas de indizador):
 
-   - `catalog_data_exporter_products` -> `cde_products_feed`
-   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
-   - `catalog_data_exporter_categories` -> `cde_categories_feed`
-   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
-   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
-   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+  - `catalog_data_exporter_products` -> `cde_products_feed`
+  - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+  - `catalog_data_exporter_categories` -> `cde_categories_feed`
+  - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+  - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+  - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
 - nombres de tabla de registro de cambios: sigue el mismo patrón de nomenclatura que las tablas de fuentes, pero los nombres de tabla de registro de cambios agregan un sufijo `_cl`. Por ejemplo `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
