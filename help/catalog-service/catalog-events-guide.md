@@ -157,7 +157,7 @@ Para habilitar los eventos de catálogo de principio a fin, siga estos pasos.
 >* [La conexión [!DNL Adobe I/O] está configurada para Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce).
 >* Acceso a [!DNL Adobe Developer Console] en la misma organización de IMS donde se aprovisiona el entorno de Commerce.
 >* Para comprobar la sincronización con los servicios SaaS de Commerce, use **[!UICONTROL Data Management Dashboard]** en el Administrador.
->* Se requiere Product Recommendations v6.0, [!DNL Live Search] v4.1.0+ o [!DNL Catalog Service] v1.17+ para la verificación del panel. Adobe recomienda actualizar el proyecto de Commerce a las últimas versiones compatibles de estos servicios. Para versiones de servicio anteriores, usa [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) para la verificación de sincronización.
+>* Se requiere Product Recommendations v6.0, [!DNL Live Search] v4.1.0+ o [!DNL Catalog Service] v1.17+ para la verificación del panel. Adobe recomienda actualizar el proyecto de Commerce a las últimas versiones compatibles de estos servicios. Para versiones de servicio anteriores, usa [Catalog Sync](https://experienceleague.adobe.com/es/docs/commerce/user-guides/data-services/catalog-sync) para la verificación de sincronización.
 
 
 >[!NOTE]
@@ -172,11 +172,11 @@ Antes de configurar, compruebe que [!DNL Catalog Service] tenga los datos actual
 
 1. Confirmar la exportación correcta de la fuente **desde Commerce**.
 
-   Desde el administrador de [!DNL Adobe Commerce], abra la página [Estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**) y confirme que el último estado de exportación es correcto para cada fuente de [!DNL Catalog Service].
+   Desde el administrador de [!DNL Adobe Commerce], abra la página [Estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**) y confirme que el último estado de exportación es correcto para cada fuente de [!DNL Catalog Service].
 
 1. Confirmar la **sincronización correcta con los servicios conectados de Commerce** del administrador de [!DNL Adobe Commerce].
 
-   Desde el administrador de [!DNL Adobe Commerce], abra [el tablero de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**) y compruebe que los datos de los productos sincronizados incluyan los productos esperados.
+   Desde el administrador de [!DNL Adobe Commerce], abra [el tablero de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**) y compruebe que los datos de los productos sincronizados incluyan los productos esperados.
 
 ### Registrar y suscribirse a [!DNL Adobe I/O Events] {#register-events}
 
@@ -295,9 +295,9 @@ Si faltan o se retrasan los eventos de catálogo, siga estos pasos.
 
    Los eventos de catálogo requieren datos actuales en [!DNL Catalog Service]. Confirme ambas fases de la ruta de exportación:
 
-   * **Exportación de fuente desde Commerce**: en la página [Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) o en `var/log/saas-export.log`, confirme que [!DNL Catalog Service] fuentes se exportaron correctamente desde [!DNL Commerce].
+   * **Exportación de fuente desde Commerce**: en la página [Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) o en `var/log/saas-export.log`, confirme que [!DNL Catalog Service] fuentes se exportaron correctamente desde [!DNL Commerce].
 
-   * **Sincronizar con los servicios SaaS de Commerce conectados**: en el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [sincronización de catálogos](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) o en los registros de exportación, confirme que los datos se sincronizaron correctamente con [!DNL Catalog Service].
+   * **Sincronizar con los servicios SaaS de Commerce conectados**: en el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [sincronización de catálogos](https://experienceleague.adobe.com/es/docs/commerce/user-guides/data-services/catalog-sync) o en los registros de exportación, confirme que los datos se sincronizaron correctamente con [!DNL Catalog Service].
 
    Para solucionar problemas con los trabajos de exportación y sincronización, consulte [Sincronizar datos con la exportación de datos SaaS](../data-export/data-sync-manage.md) y [Registro y solución de problemas](../data-export/troubleshooting/logging.md).
 
@@ -319,7 +319,7 @@ Si faltan o se retrasan los eventos de catálogo, siga estos pasos.
    * [!DNL Adobe I/O Events] detalles de suscripción.
    * Hora aproximada y descripción de los eventos que faltan.
 
-   Para obtener ayuda adicional, consulte [tickets de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+   Para obtener ayuda adicional, consulte [tickets de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 >[!MORELIKETHIS]
 >
