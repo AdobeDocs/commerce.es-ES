@@ -1,20 +1,15 @@
 ---
 title: Filtros de recomendación
 description: Aprenda a utilizar filtros para controlar qué productos aparecen en  [!DNL Adobe Commerce Optimizer] recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -98,7 +93,7 @@ Use un filtro de precio **estático** cuando quiera un precio mínimo o máximo 
 
 Use un filtro de precio **dinámico** cuando las recomendaciones deban limitarse en relación con el **producto visualizado actualmente** en una página de detalles del producto (PDP). El filtro usa el precio final de ese producto como **anclaje** y compara los productos recomendados con los límites definidos.
 
-Los operadores dinámicos solo están disponibles para [tipos de recomendaciones relacionadas con SKU](types.md) que se ejecutan en un contexto de producto, como:
+Los operadores dinámicos solo están disponibles para [tipos de recomendaciones relacionadas con SKU](types.md) que se ejecutan en un contexto de producto:
 
 - Vio esto, vio aquello.
 - Vio esto, compró aquello.
@@ -106,7 +101,16 @@ Los operadores dinámicos solo están disponibles para [tipos de recomendaciones
 - Más parecido a esto
 - Similitud visual
 
-Están **no** disponibles para los tipos basados en popularidad (por ejemplo, **Más visitados** o **Más comprados**) porque esas unidades no tienen un solo producto actual para anclar el filtro.
+No están disponibles **ni** para los tipos basados en popularidad porque esas unidades no tienen un solo producto actual para anclar el filtro:
+
+- Más visitados
+- Más comprados
+- Más añadidos al carro
+- Tendencia
+- Recomendado para usted
+- Vistos recientemente
+- Ver conversión al carro de compras
+- Ver para adquirir la conversión
 
 En la tienda, la lista desplegable de recomendaciones lee el precio del producto actual del contexto de PDP y lo envía con la solicitud de recomendación. [!DNL Adobe Commerce Optimizer] utiliza ese valor como anclaje al evaluar reglas de precios dinámicas. Para los productos configurables, el anclaje es la **variante más baja** del precio final (`priceRange.minimum`).
 
