@@ -1,10 +1,9 @@
 ---
-title: Evaluación de migración
+title: Herramienta de evaluación de migración
 description: Obtenga información sobre cómo leer un informe de evaluación de migración de Adobe Commerce PaaS, interpretar las señales de complejidad de tienda y back-end, y utilizar las herramientas para desarrolladores de Adobe AI para empezar a crear extensiones para Adobe Commerce as a Cloud Service.
 feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
-nudge: true1
 autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
 product_v2:
@@ -26,15 +25,15 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
+source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
 workflow-type: tm+mt
-source-wordcount: 2497
+source-wordcount: 2499
 ht-degree: 0%
 
 ---
 
 
-# Evaluación de migración
+# Herramienta de evaluación de migración
 
 >[!IMPORTANT]
 >
@@ -308,25 +307,25 @@ Manages custom shipping rate calculations based on customer account tier and ord
 ## Recursos
 
 - [!DNL Adobe Commerce as a Cloud Service]
-   - [Información general](../overview.md)
-   - [Resumen de migración](./overview.md)
-   - [Tutorial de extensión de clasificaciones](../tutorials/ratings-extension.md)
-   - [Tutorial del método de envío](../tutorials/shipping-method-extension.md)
+  - [Información general](../overview.md)
+  - [Resumen de migración](./overview.md)
+  - [Tutorial de extensión de clasificaciones](../tutorials/ratings-extension.md)
+  - [Tutorial del método de envío](../tutorials/shipping-method-extension.md)
 - Extensibilidad
-   - [Información general](https://developer.adobe.com/commerce/extensibility/)
-   - [Herramientas para desarrolladores de IA](https://developer.adobe.com/commerce/extensibility/developer-agent/)
-      - [Prácticas recomendadas](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
-      - [Configurar](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
-      - [Aptitudes e indicaciones](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
-      - [Casos de uso](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
-   - [Información general de App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder para Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
-   - Starter kits
-      - [Kit de inicio de integración back-end](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
-      - [Kit de inicio de compra](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
+  - [Información general](https://developer.adobe.com/commerce/extensibility/)
+  - [Herramientas para desarrolladores de IA](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+    - [Prácticas recomendadas](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
+    - [Configurar](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
+    - [Aptitudes e indicaciones](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
+    - [Casos de uso](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
+  - [Información general de App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
+  - [App Builder para Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+  - Starter kits
+    - [Kit de inicio de integración back-end](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
+    - [Kit de inicio de compra](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Desarrollo de tiendas
-   - [Información general](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
-   - [Aptitudes de Storefront AI](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=es)
+  - [Información general](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
+  - [Aptitudes de Storefront AI](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=es)
 
 >[!TIP]
 >
