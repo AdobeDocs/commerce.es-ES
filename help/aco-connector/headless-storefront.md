@@ -2,7 +2,7 @@
 title: Integración de tienda sin encabezado [!DNL Adobe Commerce Optimizer Connector]
 description: Aprenda a integrar tiendas sin encabezado con la API de  [!DNL Adobe Commerce Optimizer Connector] GraphQL, las ID de los libros de precios y la codificación de los complementos al carro de compras.
 feature: Storefront, Integration, GraphQL
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
 product_v2:
