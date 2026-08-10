@@ -9,19 +9,12 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:24:27.547Z'
 TQID: 'https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1738
@@ -318,7 +311,7 @@ Utilice el agente para integrar la API de clasificaciones en la página de detal
    Debería ver los siguientes cambios en su entorno de desarrollo y explorador:
 
    * Se crea automáticamente un componente de clasificación de productos.
-   * El componente está integrado en el PDP mediante [ranuras de colocación](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=es) o como bloque independiente, según la arquitectura elegida.
+   * El componente está integrado en el PDP mediante [ranuras de colocación](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) o como bloque independiente, según la arquitectura elegida.
    * Las estrellas se muestran con las proporciones de relleno adecuadas en función de los valores de clasificación de la API.
 
    ![Página de detalles del producto que muestra las clasificaciones en estrellas integradas debajo del título del producto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

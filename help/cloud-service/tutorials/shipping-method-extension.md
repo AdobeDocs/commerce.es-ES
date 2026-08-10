@@ -6,28 +6,12 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:22:26.484Z'
 TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
-product_v2:
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1893
@@ -266,10 +250,10 @@ Después de la implementación, complete los siguientes pasos para registrar el 
 
    - Vaya a **Tiendas** > Configuración > **Configuración** > **Servicios de Adobe** > **Webhooks de Commerce**.
    - Añadir un webhook:
-      - **Método webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Tipo de webhook:** **después de**
-      - **URL:** la URL de acción web **shipping-methods** implementada (desde la salida de implementación o [!DNL Adobe Developer Console]).
-      - **Obligatorio:** **Opcional**: esto permite que el cierre de compra siga funcionando si la API externa no devuelve tasas.
+     - **Método webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Tipo de webhook:** **después de**
+     - **URL:** la URL de acción web **shipping-methods** implementada (desde la salida de implementación o [!DNL Adobe Developer Console]).
+     - **Obligatorio:** **Opcional**: esto permite que el cierre de compra siga funcionando si la API externa no devuelve tasas.
 
    ![Configuración del webhook de administración de Commerce para las tarifas de envío simuladas](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +271,9 @@ Después de la implementación, complete los siguientes pasos para registrar el 
    - Abra **Aplicaciones** y seleccione su aplicación.
    - Abra la ficha **Envío ficticio** (o equivalente).
    - Introduzca la siguiente información:
-      - **URL del servicio:** la URL del flujo de trabajo de Pipedream que copió (por ejemplo: `https://123456.m.pipedream.net`).
-      - **Clave de API:** cualquier valor no vacío para el simulacro, por ejemplo `tutorial-key`.
-      - **Dirección de origen del almacén:** nombre, teléfono, calle, ciudad, estado, código postal, país.
+     - **URL del servicio:** la URL del flujo de trabajo de Pipedream que copió (por ejemplo: `https://123456.m.pipedream.net`).
+     - **Clave de API:** cualquier valor no vacío para el simulacro, por ejemplo `tutorial-key`.
+     - **Dirección de origen del almacén:** nombre, teléfono, calle, ciudad, estado, código postal, país.
    - Haga clic en **Guardar**. La configuración se almacena en el estado de tiempo de ejecución y la utiliza la acción shipping-methods.
 
    ![Formulario de configuración de envío simulado con dirección URL de servicio, clave de API y dirección de almacén](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
