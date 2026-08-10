@@ -5,11 +5,11 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Conector de Adobe Commerce Optimizer {#aco-connector}
 
-Adobe Commerce Optimizer Connector es el puente que sincroniza los datos de catálogo y de precios entre Adobe Commerce (en la nube o local) y [!DNL Adobe Commerce Optimizer]. Al habilitar el conector, Commerce permanece como el sistema de registro de los datos del producto mientras que [!DNL Adobe Commerce Optimizer] activa la detección de productos, las recomendaciones, las reglas de comercialización, los análisis y las experiencias de tienda sin encabezado.
+Adobe Commerce Optimizer Connector es el puente que sincroniza los datos de catálogo y de precios entre Adobe Commerce (en la nube o local) y [!DNL Adobe Commerce Optimizer]. Al habilitar el conector, Commerce permanece como el sistema de registro de los datos del producto mientras que [!DNL Adobe Commerce Optimizer] activa la detección de productos, las recomendaciones, las reglas de comercialización, los análisis y las experiencias de tienda sin encabezado. Para restringir quién puede consultar una vista de catálogo sincronizada, consulte [Vistas de catálogo privado](../setup/private-catalog-view.md).
 
 - [Información general sobre el conector Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
 - [Introducción al conector](../../aco-connector/get-started.md){target="_blank"}

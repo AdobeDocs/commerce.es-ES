@@ -4,28 +4,16 @@ description: Diagnosticar y resolver el comportamiento inesperado en  [!DNL Adob
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-subfeature_v2:
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2: id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +57,17 @@ Esta página describe los comportamientos que puede observar al trabajar con [!D
 
 - Compruebe que el sitio web esté configurado para la sincronización en la configuración de exportación del conector. Ver [Personalizar la configuración de exportación de datos](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirme que el Id. de libro de precios utilizado en [!DNL Commerce Optimizer] está presente en la configuración de [vista de catálogo](../../optimizer/setup/catalog-view.md){target="_blank"} utilizada para realizar la consulta de productos.
+
+## Las solicitudes de tienda devuelven un error de acceso denegado o los datos del catálogo desaparecen por completo
+
+**Problema:** Las solicitudes a la API de comercialización para una vista de catálogo que anteriormente devolvía datos ahora fallan con un error de `access-key-invalid` o una tienda que estaba trabajando deja de mostrar datos de catálogo.
+
+**Causa:** La vista del catálogo tiene habilitada la [protección del catálogo](../../optimizer/setup/private-catalog-view.md) y a la solicitud le falta el encabezado `AC-Catalog-View-Access-Token` necesario o han caducado todas las claves de acceso restringido asignadas a la vista. [!DNL Adobe Commerce Optimizer Connector] no crea, asigna ni gira automáticamente las claves de acceso restringido; la administración de claves la gestiona totalmente la aplicación cliente.
+
+**Solución:**
+
+- Confirme que la vista del catálogo aún tenga asignada al menos una [clave de acceso restringido](../../optimizer/setup/restricted-access-keys.md) sin caducar, y rote o agregue una clave si es necesario.
+- Compruebe que la tienda o el cliente envíen un encabezado `AC-Catalog-View-Access-Token` firmado válido con cada solicitud. Ver [vistas de catálogo privado](../../optimizer/setup/private-catalog-view.md).
 
 ## Los datos de [!DNL Adobe Commerce Optimizer] se sobrescriben o se modifican inesperadamente después de la sincronización
 

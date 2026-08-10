@@ -1,39 +1,30 @@
 ---
-title: Capa de catálogo
+title: Capas de catálogo
 description: Descubra cómo las capas de catálogo le permiten modificar los datos de producto sin cambiar los datos de origen originales, para que pueda personalizar con seguridad y revertir los cambios en cualquier momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1555
+source-wordcount: 1533
 ht-degree: 0%
 
 ---
 
-# Capa de catálogo
+# Capas de catálogo
 
-Las capas de catálogo permiten modificar los datos del producto sin cambiar los datos de origen originales. Las capas aplican cambios a atributos de producto específicos, como nombre, descripción, imágenes, vínculos y metadatos, creando una capa sobre el catálogo base. Los datos originales del producto permanecen intactos, lo que permite personalizar los productos de forma segura y revertir los cambios en cualquier momento.
+Las capas de catálogo permiten modificar los datos del producto sin cambiar los datos de origen originales. Las capas modifican los atributos del producto, como el nombre, la descripción, las imágenes, los vínculos y los metadatos, mediante la creación de una capa sobre el catálogo base. Los datos originales del producto permanecen intactos, lo que permite personalizar los productos de forma segura y revertir los cambios en cualquier momento.
 
 ![Capas de catálogo](../assets/catalog-layers.png)
 
 ## Cómo funcionan las capas del catálogo
 
-Cuando un cliente ve su tienda, el sistema combina los datos del catálogo base con las capas de catálogo activas para mostrar la información final del producto. Así es como funciona el proceso:
+Cuando un cliente ve su tienda, el sistema combina los datos del catálogo base con las capas de catálogo activas para mostrar la información final del producto. El proceso funciona de la siguiente manera:
 
 1. **Aplicación de capa**: cuando se realiza una solicitud con un ID de canal y un ID de entorno, el servicio de tienda recupera la vista de catálogo correspondiente.
 
@@ -41,7 +32,7 @@ Cuando un cliente ve su tienda, el sistema combina los datos del catálogo base 
 
 1. **Control de campos**: los distintos tipos de campos se procesan de forma diferente:
 
-   * **Sobrescribir campos**: los campos de texto como nombre, descripción y metatítulos se reemplazan por los valores definidos en la capa, teniendo prioridad la capa de mayor prioridad.
+   * **Sobrescribir campos**: los campos de texto como nombre, descripción y metatítulos se reemplazan por valores de capa, y la capa de mayor prioridad tiene prioridad.
    * **Combinar campos**: los campos de matriz como imágenes, vínculos y atributos se combinan desde varias capas, lo que proporciona una respuesta unificada.
 
 1. **Resolución de prioridad**: el campo de orden determina qué capa tiene prioridad. Cuando varias capas modifican el mismo campo, la capa con el número de orden más alto tiene mayor prioridad (por ejemplo, el orden 10 es el más alto).
@@ -59,7 +50,7 @@ Las capas de catálogo se utilizan comúnmente para:
 
 ## AEM-Assets layer
 
-Al habilitar [Imágenes del producto](product-visuals.md), la integración de AEM Assets crea y administra automáticamente una capa de catálogo dedicada exclusivamente al contenido de los AEM Assets. El nombre de capa predeterminado es `AEM-Assets`, pero puede especificar un nombre personalizado durante la [incorporación en la integración de AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
+Al habilitar [Imágenes del producto](product-visuals.md), la integración de AEM Assets crea y administra automáticamente una capa de catálogo dedicada exclusivamente al contenido de los AEM Assets. El nombre de capa predeterminado es `AEM-Assets`; sin embargo, puede especificar un nombre personalizado durante la [incorporación en la integración de AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
 
 Esta capa contiene imágenes de productos sincronizadas desde los AEM Assets. Al igual que otras capas de catálogo, se rellena mediante la [API de capas de producto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. El servicio de integración de Assets transforma los metadatos de recursos de AEM y las direcciones URL de entrega en el formato API y envía los datos automáticamente cuando los recursos se aprueban en los AEM Assets.
 
@@ -67,7 +58,7 @@ La integración admite una fuente por inquilino (una configuración regional + u
 
 >[!CAUTION]
 >
-> Asigne la capa AEM-Assets a la vista de catálogo. Si la capa no está asignada, los datos de imagen del producto pueden sobrescribirse inesperadamente.
+> Asigne la capa AEM-Assets a la vista de catálogo. Si la capa no está asignada, los datos de imagen del producto se sobrescriben inesperadamente.
 
 ### Funcionamiento de la capa AEM-Assets
 
@@ -81,13 +72,13 @@ La integración admite una fuente por inquilino (una configuración regional + u
 
 Para mostrar imágenes de AEM Assets en la tienda:
 
-1. Vaya a _Configuración de la tienda_ y haga clic en **[!UICONTROL Catalog views]**.
+1. Vaya a **[!UICONTROL Store setup]** y haga clic en **[!UICONTROL Catalog views]**.
 
 1. Seleccione la vista de catálogo en la que desea aplicar la capa.
 
 1. En la sección de capas de catálogo, busque la capa **AEM-Assets**.
 
-1. Active la capa para habilitarla para esta vista de catálogo.
+1. Para habilitar la capa para esta vista de catálogo, actívela.
 
 1. Haga clic en **[!UICONTROL Save]** para aplicar los cambios.
 
@@ -128,7 +119,7 @@ La IU de vista de catálogo permite crear y administrar capas manualmente, lo qu
 
 >[!NOTE]
 >
->Si no existe una capa de Sites Optimizer en la vista de catálogo, la función de corrección automática de Sites Optimizer crea automáticamente una y la asigna a la prioridad más alta (número más alto). Si elimina esta capa, se volverá a crear la próxima vez que se ejecute la función de corrección automática en Sites Optimizer y cambiará las capas existentes a números de orden inferior. Si la capa de Sites Optimizer ya existe en un número de pedido diferente, la función de corrección automática no cambiará su prioridad.
+>Si no existe una capa de Sites Optimizer en la vista de catálogo, la función de corrección automática de Sites Optimizer crea automáticamente una y la asigna a la prioridad más alta (número más alto). Si elimina esta capa, se volverá a crear la próxima vez que se ejecute la función de corrección automática en Sites Optimizer y se cambiarán las capas existentes por números de orden inferior. Si la capa de Sites Optimizer ya existe en un número de pedido diferente, la función de corrección automática no cambia su prioridad.
 
 >[!TIP]
 >
@@ -136,7 +127,7 @@ La IU de vista de catálogo permite crear y administrar capas manualmente, lo qu
 
 **Para crear una capa manual:**
 
-1. Vaya a **Configuración de tienda** > **Vistas de catálogo**.
+1. Vaya a **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Seleccione la vista de catálogo en la que desea aplicar la capa.
 
@@ -149,7 +140,7 @@ La IU de vista de catálogo permite crear y administrar capas manualmente, lo qu
    * **Atributos**: elija qué atributos de producto desea modificar (nombre, descripción, imágenes, etiquetas meta, etc.).
    * **Valores**: introduzca los nuevos valores para cada atributo seleccionado.
 
-1. Haga clic en **Guardar** para crear la capa.
+1. Haga clic en **[!UICONTROL Save]** para crear la capa.
 
 La nueva capa se añade a la vista de catálogo y se asigna automáticamente al siguiente número de pedido disponible.
 
@@ -163,7 +154,7 @@ Antes de activar capas o cambiar prioridades, puede obtener una vista previa de 
 
 **Para obtener una vista previa de los cambios de capa:**
 
-1. Vaya a **Configuración de tienda** > **Vistas de catálogo**.
+1. Vaya a **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Seleccione la vista de catálogo con las capas que desee previsualizar.
 
@@ -173,13 +164,13 @@ Antes de activar capas o cambiar prioridades, puede obtener una vista previa de 
 
 1. Realice los ajustes necesarios en el contenido de la capa o en el orden de prioridad.
 
-## Activar, desactivar o eliminar capas
+## Administrar la activación y eliminación de capas
 
 Puede activar o desactivar las capas de catálogo sin eliminarlas, lo que le permite controlar cuándo se aplican personalizaciones específicas.
 
 **Para activar o desactivar una capa:**
 
-1. Vaya a **Configuración de tienda** > **Vistas de catálogo**.
+1. Vaya a **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Seleccione la vista de catálogo que contiene la capa.
 
@@ -210,7 +201,7 @@ El orden en que se aplican las capas determina qué valores aparecen en la tiend
 
 **Para reordenar las prioridades de la capa:**
 
-1. Vaya a **Configuración de tienda** > **Vistas de catálogo**.
+1. Vaya a **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Seleccione la vista de catálogo que contiene las capas que desea reordenar.
 
@@ -220,11 +211,11 @@ El orden en que se aplican las capas determina qué valores aparecen en la tiend
 
 1. El sistema actualiza automáticamente los números de pedido en función de la nueva secuencia.
 
-1. Haga clic en **Guardar** para aplicar el nuevo orden de prioridad.
+1. Haga clic en **[!UICONTROL Save]** para aplicar el nuevo orden de prioridad.
 
 >[!IMPORTANT]
 >
->Los cambios en la prioridad de las capas se aplican inmediatamente y pueden afectar a lo que los clientes ven en la tienda. Revise la vista previa antes de guardar para asegurarse de que se aplican los valores correctos (**vista previa aún no está disponible**).
+>Los cambios en la prioridad de las capas se aplican inmediatamente y afectan a lo que los clientes ven en la tienda. Revise la vista previa antes de guardar para asegurarse de que se aplican los valores correctos (**vista previa aún no está disponible**).
 
 ## Prácticas recomendadas
 
@@ -234,16 +225,16 @@ Siga estas recomendaciones al trabajar con capas de catálogo:
 
 * **Limitar capas**: aunque el sistema admite varias capas, el uso de demasiadas puede afectar al rendimiento. Consolide las capas siempre que sea posible.
 
-<!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-* **Lógica de prioridad de documento**: haga un seguimiento de las capas que deben tener prioridad para evitar invalidaciones no deseadas.
+* **Lógica de prioridad de documento**: haga un seguimiento de las capas que tienen prioridad para evitar invalidaciones no deseadas.
 
-* **Revisar capas de Sites Optimizer**: cuando se utiliza la corrección automática desde Sites Optimizer, el sistema crea capas con la máxima prioridad. Tenga en cuenta al añadir capas manuales que puedan anular las recomendaciones de IA. Más información sobre cómo usar [Sites Optimizer](../manage-results/opportunities.md).
+* **Revisar capas de Sites Optimizer**: cuando se utiliza la corrección automática desde Sites Optimizer, el sistema crea capas con la máxima prioridad. Tenga en cuenta al añadir capas manuales que anulen las recomendaciones de IA. Más información sobre cómo usar [Sites Optimizer](../manage-results/opportunities.md).
 
 * **Supervisar el rendimiento**: si observa cargas lentas en la página del producto, revise la configuración de la capa y considere la posibilidad de consolidar las capas.
 
 ## Más parecido a esto
 
-* [Vistas de catálogo](catalog-view.md) - Configurar vistas de catálogo para diferentes tiendas
-* [Imágenes de productos](product-visuals.md) - Usar AEM Assets para imágenes de productos
+* [Vistas de catálogo](catalog-view.md): configure las vistas de catálogo para diferentes tiendas
+* [Imágenes del producto](product-visuals.md): utilice AEM Assets para las imágenes del producto
 * [Oportunidades](../manage-results/opportunities.md): obtenga información acerca de la optimización con tecnología de IA mediante capas de catálogo
+* [Claves de acceso restringido](restricted-access-keys.md): proteja una vista de catálogo con autenticación de token firmado

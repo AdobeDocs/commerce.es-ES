@@ -2,27 +2,17 @@
 title: Configurar tu tienda
 description: Aprenda a configurar su  [!DNL Adobe Commerce Optimizer] tienda.
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +27,20 @@ Esta guía le explica cómo configurar una tienda para la instancia de [!DNL Ado
 
 * **Cuenta de GitHub** que puede crear repositorios y está configurada para el desarrollo local (github.com)
 * **[!DNL Adobe Commerce Optimizer]instancia** con datos de ejemplo y vistas de catálogo y directivas configuradas
-   * Consulte [Agregar datos de ejemplo](get-started.md#add-sample-data) para obtener instrucciones de configuración.
+  * Consulte [Agregar datos de ejemplo](get-started.md#add-sample-data) para obtener instrucciones de configuración.
 
 ### Datos de instancia requeridos
 
 Antes de empezar, recopile la siguiente información de su instancia de [!DNL Adobe Commerce Optimizer]:
 
 * **ID de inquilino** (también denominado ID de instancia)
-   * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
+  * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
 * **Punto final de GraphQL** para su instancia
-   * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
+  * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
 * **Id. de vista de catálogo** para la vista de catálogo global
-   * Disponible en la [página de detalles del catálogo](./setup/catalog-view.md#manage-catalog-view)
+  * Disponible en la [página de detalles del catálogo](./setup/catalog-view.md#manage-catalog-views)
 * **Configuración regional de Source** para su vista de catálogo
-   * El valor predeterminado para los datos de ejemplo es `en-US`
+  * El valor predeterminado para los datos de ejemplo es `en-US`
 
 >[!NOTE]
 >
@@ -73,7 +63,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
 * **Sitio**: página de aterrizaje de tienda con contenido de plantillas
 * **Código**: repositorio con archivos de origen de plantillas
 * **Contenido**: entorno de creación de documentos con archivos de contenido de sitio
-* **Configuración de Commerce**: [Configuración de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=es){target="_blank"} para la configuración específica de instancia
+* **Configuración de Commerce**: [Configuración de tienda Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} para la configuración específica de instancia
 
 ### Paso 1: Generación del proyecto
 
@@ -81,7 +71,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Seleccione **Crear nuevo sitio (código y contenido)**.
+1. Seleccione **[!UICONTROL Create New Site (Code & Content)]**.
 
 1. Complete la configuración del sitio:
 
@@ -89,7 +79,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
    * **Nombre del sitio**: elige un nombre descriptivo para tu tienda
    * **Punto final de Commerce GraphQL (opcional)**: escriba el punto final de GraphQL para su instancia de [!DNL Adobe Commerce Optimizer]
 
-1. Haga clic en **Crear sitio** para crear el repositorio de GitHub con el código de plantilla de tienda.
+1. Haga clic en **[!UICONTROL Create Site]** para crear el repositorio de GitHub con el código de plantilla de tienda.
 
    Cuando se crea el repositorio, el creador del sitio actualiza y le solicita que instale la aplicación de sincronización de código.
 
@@ -103,7 +93,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
    * Haga clic en el menú **[!UICONTROL Select repositories]** y, a continuación, seleccione el repositorio de código de tienda que ha creado.
    * Haga clic en **[!UICONTROL Save]** para registrar su repositorio.
 
-1. Vuelva a la ventana del explorador donde está abierto el Creador del sitio y haga clic en **Crear sitio**.
+1. Vuelva a la ventana del explorador donde está abierto el Creador del sitio y haga clic en **[!UICONTROL Create Site]**.
 
    El creador del sitio copia el contenido de las plantillas de tienda en el entorno de creación de documentos. Este proceso tarda de 1 a 2 minutos.
 
@@ -115,7 +105,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
 
    Use estos vínculos para administrar el código, el contenido y la configuración de la tienda.
 
-1. Copie y guarde estos vínculos para referencia futura: haga clic en **[!UICONTROL Copy].
+1. Copie y guarde estos vínculos para referencia futura: haga clic en **[!UICONTROL Copy]**.
 
 ## Configurar tu tienda
 
@@ -140,6 +130,10 @@ Actualice la configuración de la tienda para conectarse a la instancia de [!DNL
    >[!NOTE]
    >
    >Para encontrar el ID del libro de precios, consulte los [detalles de configuración de la vista del catálogo](./setup/catalog-view.md) en [!DNL Adobe Commerce Optimizer] para ver los libros de precios asignados. Si no se ha asignado ningún libro de precios, puede eliminar esta cabecera del fichero de configuración. Vuelva a añadirlo cuando se haya asignado un libro de precios a la vista de catálogo.
+
+   >[!NOTE]
+   >
+   >Si la vista de catálogo tiene [!UICONTROL Catalog Protection] habilitado, agregue un encabezado `AC-Catalog-View-Access-Token` con un token firmado válido o se denegarán las solicitudes de tienda a esa vista de catálogo. Ver [vistas de catálogo privado](./setup/private-catalog-view.md).
 
 1. Guarde el archivo de configuración.
 
@@ -228,31 +222,31 @@ Antes de continuar con los siguientes pasos, verifica lo siguiente para asegurar
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Al menos una página de detalles del producto muestra información completa<br>
 La funcionalidad de búsqueda ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) devuelve resultados relevantes<br>
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Las imágenes del producto se están cargando correctamente<br>
-![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Los valores de configuración coinciden con la configuración de la instancia<br>
+<br>
 
 ### Obtener ayuda
 
 Si los problemas persisten:
 
-* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es){target="_blank"}
+* Revise la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
 * Consulte la [guía para desarrolladores de Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
-* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+* Visite los [recursos de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Pasos siguientes
 
-* **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#set-up-local-environment){target="_blank"}**: crea un entorno local para personalizar el código y el contenido de la tienda.
-* **[Habilitar el editor universal](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=es){target="_blank"}**: el editor universal permite editar el contenido de la tienda en el contexto de la página representada. A continuación, el contenido se guarda en el proyecto de creación de documentos (DA.live), donde puede utilizar la mayoría de las aplicaciones de orquestación de contenido, como localización, publicación masiva, instantáneas y más.
+* **[Configurar un entorno de desarrollo local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**: crea un entorno local para personalizar el código y el contenido de la tienda.
+* **[Habilitar el editor universal](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**: el editor universal permite editar el contenido de la tienda en el contexto de la página representada. A continuación, el contenido se guarda en el proyecto de creación de documentos (DA.live), donde puede utilizar la mayoría de las aplicaciones de orquestación de contenido, como localización, publicación masiva, instantáneas y más.
 
 ### Aprender y explorar
 
 * **[Completa el caso de uso de extremo a extremo](./use-case/admin-use-case.md)**—Más información acerca de la configuración de la tienda y la administración del catálogo con [!DNL Adobe Commerce Optimizer].
 
-* **[Explorar la personalización de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=es){target="_blank"}**: aprende las opciones avanzadas de configuración.
+* **[Explorar la personalización de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**: aprende las opciones avanzadas de configuración.
 
-* **[Usa complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es){target="_blank"}**: agrega componentes creados previamente para mejorar tu experiencia con la tienda.
+* **[Usa complementos de Commerce para personalizar la experiencia de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**: agrega componentes creados previamente para mejorar tu experiencia con la tienda.
 
 * **Migrar al servicio de configuración de tienda**: después de crear tu tienda inicial, puedes migrar la configuración para usar el servicio de configuración que admite casos de uso avanzados como reposes de configuración y superposiciones. Para obtener más información, consulte la documentación de [Servicio de configuración](https://www.aem.live/docs/config-service-setup){target="_blank"} en Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es){target="_blank"} para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.
+> Consulte la [documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"} para obtener más información sobre la actualización del contenido del sitio y la integración con los componentes de front-end y los datos del back-end de Commerce.

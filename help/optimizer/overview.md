@@ -2,11 +2,11 @@
 title: ¿Qué es  [!DNL Adobe Commerce Optimizer]?
 description: Obtenga información acerca de  [!DNL Adobe Commerce Optimizer]  y sus características clave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ Con [!DNL Adobe Commerce Optimizer], puede:
 - Introduzca datos de catálogo de cualquier fuente.
 - Defina las vistas y directivas del catálogo empresarial.
 - Cree búsquedas y recomendaciones personalizadas con IA y ML.
-- Mejore la relevancia de la detección de productos con una clasificación que dé prioridad a **coincidencias exactas y cercanas** y coincidencias del mismo campo; consulte [Coincidencia de búsquedas y clasificación](./manage-results/search-relevance-matching.md).
+- Mejore la relevancia de la detección de productos con una clasificación que dé prioridad a **coincidencias exactas y cercanas** y coincidencias del mismo campo. Ver [Coincidencia de búsqueda y clasificación](./manage-results/search-relevance-matching.md).
 - Vea la disponibilidad de datos de productos cruciales, incluido el estado de sincronización y los datos de eventos de tienda para una implementación y solución de problemas precisas.
 
 Vea el siguiente vídeo para obtener información general de alto nivel sobre [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450466?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## ¿Quién se beneficia más de [!DNL Adobe Commerce Optimizer]?
 
@@ -72,6 +72,7 @@ Defina las vistas de catálogo y las políticas. El catálogo no solo contiene l
 - **Vistas de catálogo**: le ayuda a definir su estructura comercial en grupos empresariales significativos. Por ejemplo, los concesionarios de la industria del automóvil, las filiales de conglomerados de marcas múltiples o las ubicaciones de fabricación de los proveedores.
 - **Capas de catálogo**: modifique los datos del producto sin cambiar los datos de origen. Cuando se usan AEM Assets para imágenes de productos, el nivel AEM-Assets se aplica a través de [Product Visuals](setup/product-visuals.md). Consulte [Capas de catálogo](setup/catalog-layer.md) para obtener más información.
 - **Directivas**: filtros de acceso a datos alojados en vistas de catálogo. Las políticas ayudan a garantizar que el contenido correcto se envíe al destino correcto. Por ejemplo, tiendas físicas, mercados, canalizaciones de publicidad (Google, Facebook, Instagram).
+- **Vistas de catálogo privado**: restrinja una vista de catálogo para que solo las solicitudes que lleven un token firmado válido puedan recuperar sus datos. Consulte [Vistas del catálogo privado](setup/private-catalog-view.md) para obtener información sobre la configuración.
 - **Sincronización de datos**: muestra una descripción general del estado de sincronización de los datos de producto transferidos desde su origen de datos (PIM, ERP, etc.) a [!DNL Adobe Commerce Optimizer]. Los datos del producto se muestran en las fichas **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** y **[!UICONTROL Recommendations]**.
 - **Eventos**: muestra datos de evento de tienda que alimentan el Descubrimiento de productos y las recomendaciones. La página **Events** permite al comerciante comprobar que ha implementado correctamente los eventos de tienda y que los eventos se han capturado correctamente. Los comerciantes pueden utilizar esta página para identificar posibles problemas y tomar medidas para resolver cualquier problema relacionado con el evento.
 
