@@ -266,10 +266,10 @@ Después de la implementación, complete los siguientes pasos para registrar el 
 
    - Vaya a **Tiendas** > Configuración > **Configuración** > **Servicios de Adobe** > **Webhooks de Commerce**.
    - Añadir un webhook:
-      - **Método webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Tipo de webhook:** **después de**
-      - **URL:** la URL de acción web **shipping-methods** implementada (desde la salida de implementación o [!DNL Adobe Developer Console]).
-      - **Obligatorio:** **Opcional**: esto permite que el cierre de compra siga funcionando si la API externa no devuelve tasas.
+     - **Método webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Tipo de webhook:** **después de**
+     - **URL:** la URL de acción web **shipping-methods** implementada (desde la salida de implementación o [!DNL Adobe Developer Console]).
+     - **Obligatorio:** **Opcional**: esto permite que el cierre de compra siga funcionando si la API externa no devuelve tasas.
 
    ![Configuración del webhook de administración de Commerce para las tarifas de envío simuladas](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +287,9 @@ Después de la implementación, complete los siguientes pasos para registrar el 
    - Abra **Aplicaciones** y seleccione su aplicación.
    - Abra la ficha **Envío ficticio** (o equivalente).
    - Introduzca la siguiente información:
-      - **URL del servicio:** la URL del flujo de trabajo de Pipedream que copió (por ejemplo: `https://123456.m.pipedream.net`).
-      - **Clave de API:** cualquier valor no vacío para el simulacro, por ejemplo `tutorial-key`.
-      - **Dirección de origen del almacén:** nombre, teléfono, calle, ciudad, estado, código postal, país.
+     - **URL del servicio:** la URL del flujo de trabajo de Pipedream que copió (por ejemplo: `https://123456.m.pipedream.net`).
+     - **Clave de API:** cualquier valor no vacío para el simulacro, por ejemplo `tutorial-key`.
+     - **Dirección de origen del almacén:** nombre, teléfono, calle, ciudad, estado, código postal, país.
    - Haga clic en **Guardar**. La configuración se almacena en el estado de tiempo de ejecución y la utiliza la acción shipping-methods.
 
    ![Formulario de configuración de envío simulado con dirección URL de servicio, clave de API y dirección de almacén](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
