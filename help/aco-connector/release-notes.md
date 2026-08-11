@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
+source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 460
 ht-degree: 0%
 
 ---
@@ -39,6 +39,14 @@ Estas notas de la versión describen todas las versiones para [!DNL Adobe Commer
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
 ## Versiones de 2026
+
+### Versión 1.0.16
+
+_7 de agosto de 2026_
+
+![Corrección](../assets/fix.svg) **La sincronización del catálogo ya no se detiene en una configuración no válida**-Se ha corregido un problema por el que la sincronización del catálogo podría ejecutarse indefinidamente si faltaba la configuración de [!DNL Adobe Commerce Optimizer Connector] o no era válida. La sincronización ahora se completa y registra una advertencia en lugar de seguir ejecutándose. <!--MDEE-1413-->
+![Corregir](../assets/fix.svg) **Solicitudes de administrador [!DNL Adobe Commerce Optimizer] más confiables**-Se corrigió un problema en el que [!DNL Adobe Commerce Optimizer Connector] podría usar una dirección URL incorrecta para [!DNL Adobe Commerce Optimizer] solicitudes de administrador, lo que podría provocar que esas solicitudes fallaran. <!--COMOPT-2288-->
+![Corrección](../assets/fix.svg) **Operaciones de actualización y revisión más fiables**: se ha corregido un problema por el que las operaciones de actualización y revisión podrían dirigirse al entorno incorrecto, lo que podría provocar un error en las solicitudes. <!--COMOPT-2288-->
 
 ### Versión 1.0.15
 
@@ -63,7 +71,7 @@ _11 de junio de 2026_
 _6 de mayo de 2026_
 
 ![Corrección](../assets/fix.svg) **Se mejoraron las instrucciones de configuración de [!DNL Adobe Commerce Optimizer Connector]** - Se ha actualizado la página de configuración de [!DNL Adobe Commerce Optimizer] en el administrador de Commerce para vincular a la guía de integración de _[!DNL Adobe Commerce Optimizer Connector]_.
-
+<!--COMOPT-1922-->
 
 ![Corrección](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector]mejora de metadatos**: [!DNL Adobe Commerce Optimizer Connector] ahora incluye su versión instalada en el encabezado de metadatos. Esta mejora permite a los equipos identificar rápidamente qué versión del conector se está usando durante la solución de problemas o las contrataciones de soporte técnico.<!--MDEE-1323-->
 

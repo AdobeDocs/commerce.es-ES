@@ -5,9 +5,9 @@ role: Admin, Developer
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -93,8 +93,8 @@ En las tablas siguientes se resumen los límites de licencia y de sistema por á
 El uso de Dynamic Media hace un seguimiento de las solicitudes de API que llegan a los componentes de elementos visuales del producto en [!DNL Adobe Commerce Optimizer] para facilitar una de las siguientes acciones:
 
 - **La entrega de imágenes consume una operación de medios dinámicos** por cada ocurrencia de lo siguiente:
-   - **transformación básica de la imagen** de un recurso digital; por ejemplo, operaciones de cambio de tamaño, escala, conversión de formato, compresión o recorte.
-   - **entrega o descarga de imagen estática** de dichos recursos digitales o representación de recursos digitales (que no sean vídeos)
+  - **transformación básica de la imagen** de un recurso digital; por ejemplo, operaciones de cambio de tamaño, escala, conversión de formato, compresión o recorte.
+  - **entrega o descarga de imagen estática** de dichos recursos digitales o representación de recursos digitales (que no sean vídeos)
 - **La entrega de imágenes inteligentes consume 20 operaciones de Dynamic Media** para cada entrega optimizada de un único recurso digital al generar automáticamente la representación de imágenes más adecuada para el dispositivo y el explorador del usuario final.
 - **La entrega de vídeo consume 20 operaciones de Dynamic Media** para una sola entrega o descarga de un vídeo o una variante transformada de un vídeo.
 
@@ -111,6 +111,10 @@ El uso de Dynamic Media hace un seguimiento de las solicitudes de API que llegan
 | Vistas de catálogo | Número de subconjuntos configurables del catálogo maestro | Según la cantidad de [variaciones de catálogo](#catalog) | Sí<br>Aumentar las variaciones del catálogo |
 | Políticas por vista de catálogo | Número de filtros de datos permitidos | 10 | No |
 | Valores de atributo en una directiva | Número de características del producto que se pueden configurar para el filtrado | 100 | No |
+| [Asignación restringida de clave de acceso](setup/private-catalog-view.md) | Número de claves de acceso restringido que se pueden asignar a una sola vista de catálogo | 3 | No |
+| [Claves de acceso restringido](setup/restricted-access-keys.md) | Número de claves por entorno | Máximo de 100 | No |
+| Tamaño de clave RSA (claves de acceso restringido) | Se acepta la seguridad mínima y máxima de una clave de acceso restringido. | Mínimo de 2048 bits, máximo de 8192 bits | No |
+| Claves de acceso restringido | Retraso de propagación de revocación de claves | Hasta 5 minutos debido al almacenamiento en caché. Los tokens firmados con una clave eliminada se deniegan una vez transcurrido el tiempo de espera. | No aplicable |
 
 {style="table-layout:auto"}
 

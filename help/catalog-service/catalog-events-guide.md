@@ -1,5 +1,5 @@
 ---
-title: Guía de integración de catálogos y Adobe I/O Events
+title: Guía de configuración e integración de eventos de catálogo
 description: Obtenga información sobre cómo comprobar los datos del catálogo, configurar  [!DNL Adobe I/O Events] for Adobe Commerce, suscribirse a tipos de eventos de catálogo y validar la entrega para consumidores.
 level: Intermediate
 recommendations: noCatalog
@@ -16,14 +16,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d8e9d612392967d19d0da56e81337362f9006c2c
+source-git-commit: 818efacb8dbf63e48cdc83506d228c665d7a8b22
 workflow-type: tm+mt
-source-wordcount: 1566
+source-wordcount: 1568
 ht-degree: 0%
 
 ---
 
-# Eventos de catálogo y guía de integración de [!DNL Adobe I/O Events]
+# Activación y configuración de eventos de catálogo con Adobe I/O
 
 Los eventos de catálogo son notificaciones generadas por el equipo que describen los cambios de catálogo admitidos disponibles mediante [!DNL Catalog Service]. Permiten flujos de trabajo impulsados por eventos como:
 

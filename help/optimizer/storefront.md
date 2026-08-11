@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ Esta guía le explica cómo configurar una tienda para la instancia de [!DNL Ado
 
 * **Cuenta de GitHub** que puede crear repositorios y está configurada para el desarrollo local (github.com)
 * **[!DNL Adobe Commerce Optimizer]instancia** con datos de ejemplo y vistas de catálogo y directivas configuradas
-   * Consulte [Agregar datos de ejemplo](get-started.md#add-sample-data) para obtener instrucciones de configuración.
+  * Consulte [Agregar datos de ejemplo](get-started.md#add-sample-data) para obtener instrucciones de configuración.
 
 ### Datos de instancia requeridos
 
 Antes de empezar, recopile la siguiente información de su instancia de [!DNL Adobe Commerce Optimizer]:
 
 * **ID de inquilino** (también denominado ID de instancia)
-   * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
+  * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
 * **Punto final de GraphQL** para su instancia
-   * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
+  * Disponible en la [página de detalles de instancia](get-started.md#manage-instances)
 * **Id. de vista de catálogo** para la vista de catálogo global
-   * Disponible en la [página de detalles del catálogo](./setup/catalog-view.md#manage-catalog-view)
+  * Disponible en la [página de detalles del catálogo](./setup/catalog-view.md#manage-catalog-views)
 * **Configuración regional de Source** para su vista de catálogo
-   * El valor predeterminado para los datos de ejemplo es `en-US`
+  * El valor predeterminado para los datos de ejemplo es `en-US`
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Seleccione **Crear nuevo sitio (código y contenido)**.
+1. Seleccione **[!UICONTROL Create New Site (Code & Content)]**.
 
 1. Complete la configuración del sitio:
 
@@ -89,7 +89,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
    * **Nombre del sitio**: elige un nombre descriptivo para tu tienda
    * **Punto final de Commerce GraphQL (opcional)**: escriba el punto final de GraphQL para su instancia de [!DNL Adobe Commerce Optimizer]
 
-1. Haga clic en **Crear sitio** para crear el repositorio de GitHub con el código de plantilla de tienda.
+1. Haga clic en **[!UICONTROL Create Site]** para crear el repositorio de GitHub con el código de plantilla de tienda.
 
    Cuando se crea el repositorio, el creador del sitio actualiza y le solicita que instale la aplicación de sincronización de código.
 
@@ -103,7 +103,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
    * Haga clic en el menú **[!UICONTROL Select repositories]** y, a continuación, seleccione el repositorio de código de tienda que ha creado.
    * Haga clic en **[!UICONTROL Save]** para registrar su repositorio.
 
-1. Vuelva a la ventana del explorador donde está abierto el Creador del sitio y haga clic en **Crear sitio**.
+1. Vuelva a la ventana del explorador donde está abierto el Creador del sitio y haga clic en **[!UICONTROL Create Site]**.
 
    El creador del sitio copia el contenido de las plantillas de tienda en el entorno de creación de documentos. Este proceso tarda de 1 a 2 minutos.
 
@@ -115,7 +115,7 @@ La herramienta Creador de sitios crea un proyecto de tienda completo con los sig
 
    Use estos vínculos para administrar el código, el contenido y la configuración de la tienda.
 
-1. Copie y guarde estos vínculos para referencia futura: haga clic en **[!UICONTROL Copy].
+1. Copie y guarde estos vínculos para referencia futura: haga clic en **[!UICONTROL Copy]**.
 
 ## Configurar tu tienda
 
@@ -140,6 +140,10 @@ Actualice la configuración de la tienda para conectarse a la instancia de [!DNL
    >[!NOTE]
    >
    >Para encontrar el ID del libro de precios, consulte los [detalles de configuración de la vista del catálogo](./setup/catalog-view.md) en [!DNL Adobe Commerce Optimizer] para ver los libros de precios asignados. Si no se ha asignado ningún libro de precios, puede eliminar esta cabecera del fichero de configuración. Vuelva a añadirlo cuando se haya asignado un libro de precios a la vista de catálogo.
+
+   >[!NOTE]
+   >
+   >Si la vista de catálogo tiene [!UICONTROL Catalog Protection] habilitado, agregue un encabezado `AC-Catalog-View-Access-Token` con un token firmado válido o se denegarán las solicitudes de tienda a esa vista de catálogo. Ver [vistas de catálogo privado](./setup/private-catalog-view.md).
 
 1. Guarde el archivo de configuración.
 
@@ -228,7 +232,7 @@ Antes de continuar con los siguientes pasos, verifica lo siguiente para asegurar
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Al menos una página de detalles del producto muestra información completa<br>
 La funcionalidad de búsqueda ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) devuelve resultados relevantes<br>
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Las imágenes del producto se están cargando correctamente<br>
-![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Los valores de configuración coinciden con la configuración de la instancia<br>
+<br>
 
 ### Obtener ayuda
 

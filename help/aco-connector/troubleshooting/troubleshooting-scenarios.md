@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ Esta página describe los comportamientos que puede observar al trabajar con [!D
 
 - Compruebe que el sitio web esté configurado para la sincronización en la configuración de exportación del conector. Ver [Personalizar la configuración de exportación de datos](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirme que el Id. de libro de precios utilizado en [!DNL Commerce Optimizer] está presente en la configuración de [vista de catálogo](../../optimizer/setup/catalog-view.md){target="_blank"} utilizada para realizar la consulta de productos.
+
+## Las solicitudes de tienda devuelven un error de acceso denegado o los datos del catálogo desaparecen por completo
+
+**Problema:** Las solicitudes a la API de comercialización para una vista de catálogo que anteriormente devolvía datos ahora fallan con un error de `access-key-invalid` o una tienda que estaba trabajando deja de mostrar datos de catálogo.
+
+**Causa:** La vista del catálogo tiene habilitada la [protección del catálogo](../../optimizer/setup/private-catalog-view.md) y a la solicitud le falta el encabezado `AC-Catalog-View-Access-Token` necesario o han caducado todas las claves de acceso restringido asignadas a la vista. [!DNL Adobe Commerce Optimizer Connector] no crea, asigna ni gira automáticamente las claves de acceso restringido; la administración de claves la gestiona totalmente la aplicación cliente.
+
+**Solución:**
+
+- Confirme que la vista del catálogo aún tenga asignada al menos una [clave de acceso restringido](../../optimizer/setup/restricted-access-keys.md) sin caducar, y rote o agregue una clave si es necesario.
+- Compruebe que la tienda o el cliente envíen un encabezado `AC-Catalog-View-Access-Token` firmado válido con cada solicitud. Ver [vistas de catálogo privado](../../optimizer/setup/private-catalog-view.md).
 
 ## Los datos de [!DNL Adobe Commerce Optimizer] se sobrescriben o se modifican inesperadamente después de la sincronización
 

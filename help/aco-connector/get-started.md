@@ -26,10 +26,10 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: fb025e5232902ba9fea7e858085ea85abeb11720
 workflow-type: tm+mt
-source-wordcount: 1059
-ht-degree: 0%
+source-wordcount: 1106
+ht-degree: 3%
 
 ---
 
@@ -202,7 +202,7 @@ Obtenga el _id. de inquilino_ del campo _[!DNL Instance Id]_&#x200B;en la instan
 
 1. **Configurar [!DNL Commerce Optimizer] vistas de catálogo y directivas**
 
-   Crear vistas de catálogo y directivas en la interfaz de usuario de [!DNL Commerce Optimizer]. Tenga en cuenta que los libros de precios se crean automáticamente a partir de [!DNL Adobe Commerce] grupos de clientes. Para obtener instrucciones, consulte la documentación de [Vistas de catálogo](../optimizer/setup/catalog-view.md) y [Directivas](../optimizer/setup/policies.md) en la Guía del usuario de *[!DNL Commerce Optimizer]*.
+   Crear vistas de catálogo y directivas en la interfaz de usuario de [!DNL Commerce Optimizer]. Tenga en cuenta que los libros de precios se crean automáticamente a partir de [!DNL Adobe Commerce] grupos de clientes. Para obtener instrucciones, consulte la documentación de [Vistas de catálogo](../optimizer/setup/catalog-view.md) y [Directivas](../optimizer/setup/policies.md) en la Guía del usuario de *[!DNL Commerce Optimizer]*. Para restringir el acceso a una vista de catálogo, consulte [Vistas de catálogo privadas](../optimizer/setup/private-catalog-view.md).
 
 1. **Configurar una tienda Commerce en[!DNL Edge Delivery Services]**
 

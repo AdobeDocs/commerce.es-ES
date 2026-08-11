@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Las siguientes tablas de resumen utilizan el modelo RACI para mostrar las respon
 | Realización de exploraciones ASV PCI | RA | I |
 | Remediando análisis PCI de infraestructura [!DNL Adobe Commerce Optimizer] | R | |
 | Administración de secretos de plataforma y sistema operativo | RA | |
+| Generando, girando y revocando [claves de acceso restringido](setup/restricted-access-keys.md) y firmando tokens para [!UICONTROL Catalog Protection] | | RA |
 | Supervisión de registros de seguridad back-end | RA | |
 | Control de la asistencia al cliente y acceso | A | R |
 | Pruebas y documentación anuales del plan de recuperación ante desastres de Adobe, así como de las copias de seguridad y restauración | RA | |
