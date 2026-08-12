@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
+source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
 workflow-type: tm+mt
-source-wordcount: 5371
+source-wordcount: 5345
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ## Agosto de 2026: #1 de la versión {#latest}
 
-[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Producción]{type=Neutral tooltip="Los elementos enumerados están disponibles actualmente en entornos de producción."}
 
-Los siguientes elementos se publicarán en el entorno de producción el 11 de agosto de 2026.
+Los siguientes elementos se publicaron en Production el 12 de agosto de 2026.
 
 >[!BEGINSHADEBOX]
 
