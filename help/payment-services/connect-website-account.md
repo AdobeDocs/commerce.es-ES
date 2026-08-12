@@ -30,7 +30,7 @@ Para las instancias de Commerce con **varios sitios web**, es posible que necesi
 
 La incorporación a nivel de sitio web solo está disponible una vez que su tienda cumple estos requisitos:
 
-- La instalación de [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) se ha completado.
+- La instalación de [Commerce Services Connector](https://experienceleague.adobe.com/es/docs/commerce/user-guides/integration-services/saas) se ha completado.
 - Hay una cuenta PayPal conectada en el ámbito global (configuración predeterminada).
 
 Puede confirmarlo comprobando que los siguientes campos se rellenen en el ámbito predeterminado:
