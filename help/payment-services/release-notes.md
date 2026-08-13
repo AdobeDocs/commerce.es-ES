@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '5400'
+source-wordcount: '5483'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,19 @@ _28 de junio de 2021_
 >[!NOTE]
 >
 > Las versiones se producen con frecuencia para ofrecer nuevas funciones y correcciones según sea necesario. La programación de versiones no está fija.
+
+
+## Versión 2.16.1
+
+_10 de agosto de 2026_
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- PAY-6769 --> que corregía un problema intermitente en las tiendas EDS que usan botones inteligentes de PayPal y que hacía que algunos métodos de pago no estuvieran disponibles en la página de pago.
+
+## Versión 2.16.0
+
+_27 de julio de 2026_
+
+![Nuevo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Los comerciantes ahora pueden usar automáticamente la incorporación de una cuenta PayPal diferente en el ámbito del sitio web directamente desde [!DNL Commerce Admin]. [!DNL Payment Services] La página de inicio ahora incluye un botón **[!UICONTROL Connect a different PayPal account for a website]** que redirige a la página de configuración de administración para los métodos de pago. Consulta [Conectar una cuenta PayPal diferente para un sitio web](connect-website-account.md) para obtener más información.
 
 ## Versión 2.15.0
 
