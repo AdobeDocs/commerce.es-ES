@@ -3,9 +3,9 @@ title: Notas de la versión de AEM Assets Integration
 description: Revise las notas de la versión para obtener información acerca de todas las versiones de integración de AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
+source-git-commit: afef108e512c69047a0420566a498dab164c207e
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,29 @@ _11 de febrero de 2025_
 
 +++
 
+## Versión 1.4.4
+
+_30 de julio de 2026_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
+
+![Nuevo problema](../assets/new.svg) Ahora, los comerciantes pueden ocultar vistas específicas de tiendas para un recurso de AEM. Cuando los AEM Assets marcan una imagen como oculta para una o varias vistas de tiendas, Commerce excluye esa imagen de la tienda en esas vistas de tiendas. La galería multimedia de productos de administración ahora incluye un campo **[!UICONTROL Store View Visibility]** que muestra qué vistas de tienda ocultan la imagen. <!-- Issue ACAP-1308 -->
+
+## Versión 1.4.2
+
+_10 de julio de 2026_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
+
+![Se ha corregido un problema](../assets/fix.svg) por el que los atributos de función de recursos (imagen, imagen pequeña, miniatura e imagen de muestra) podían acumular valores vacíos en el nivel de vista de tienda, lo que provocaba que las imágenes aparecieran sin aparecer en las vistas de tienda no predeterminadas. Ahora, estos atributos son de ámbito global y las filas vacías existentes de la vista de tienda se eliminan para que las imágenes hereden correctamente de la vista de tienda predeterminada. <!-- Issue ACCS-1401 -->
+
 ## Versión 1.4.1
 
 _15 de junio de 2026_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Se ha corregido un problema](../assets/fix.svg) en el que el encabezado de sección **[!UICONTROL OBSERVABILITY]** no aparecía en el menú Administrador **[!UICONTROL System]** cuando la integración de AEM Assets estaba habilitada, lo que dejaba el vínculo **[!UICONTROL Subscription List]** sin encabezado. <!--ACAP-1302 -->
+![Se ha corregido un problema](../assets/fix.svg) en el que el encabezado de sección **[!UICONTROL OBSERVABILITY]** no aparecía en el menú Administrador **[!UICONTROL System]** cuando la integración de AEM Assets estaba habilitada, lo que dejaba el vínculo **[!UICONTROL Subscription List]** sin encabezado. <!-- Issue ACAP-1302 -->
 
 ![Se ha corregido un problema](../assets/fix.svg) que causaba que al guardar la configuración de la integración de AEM Assets se mostrara una advertencia de PHP sin procesar en lugar de un mensaje claro en las instancias en las que la API de apertura de Dynamic Media no estaba habilitada. Ahora aparece un mensaje de error claro y genérico. <!-- ACAP-1298 -->
 
