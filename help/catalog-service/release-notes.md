@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,7 +53,13 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 
 ## Servicio de catálogo de tienda
 
-## Junio de 2026
+### Agosto de 2026
+
+**Fecha de lanzamiento**: 7 de agosto de 2026
+
+![Corrección](../assets/fix.svg) Se ha corregido un problema con la consulta GraphQL `products` en el que el campo `title` para las opciones personalizables (`inputOptions` y `options`) devolvía incorrectamente `null` en lugar del título propio de la opción cuando el campo `sku` de la opción estaba vacío o no estaba indizado. <!--DATA-7304-->
+
+### Julio de 2026
 
 **Fecha de la versión**: 1 de julio de 2026
 
@@ -77,7 +83,7 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 **Fecha de la versión**: 4 de mayo de 2026
 <!-- v1.53 -->
 
-![Corregir](../assets/fix.svg) Los precios de los productos de tienda ahora muestran el código de moneda correcto (por ejemplo, USD) para todos los tipos de productos. Anteriormente, algunos productos mostraban `NONE` en lugar de la moneda esperada, lo que resultaba en la falta de precios. Esta actualización garantiza un procesamiento de precios coherente y preciso en toda la tienda.<!--DATA-7115-->
+![Corregir](../assets/fix.svg) Los precios de los productos de tienda ahora muestran el código de divisa correcto (por ejemplo, USD) para todos los tipos de producto. Anteriormente, algunos productos mostraban `NONE` en lugar de la moneda esperada, lo que resultaba en la falta de precios. Esta actualización garantiza un procesamiento de precios coherente y preciso en toda la tienda.<!--DATA-7115-->
 
 ### Abril de 2026
 

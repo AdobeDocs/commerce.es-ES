@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
+source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: 1522
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 * Actualizaciones a la [API de REST de ingesta de datos](https://developer.adobe.com/commerce/services/reference/rest/) y a la [API de GraphQL para la recuperación de datos del catálogo de tiendas](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Agosto de 2026
+
+>[!BEGINSHADEBOX]
+
+_7 de agosto de 2026_
+
+![Nuevo](../assets/new.svg) **Nuevo campo `externalIds`**—Se agregó `externalIds` al GraphQL del servicio de catálogo, exponiendo la fuente de datos externa asociada con un producto para que los consumidores de tienda e integración puedan identificar la fuente de datos de origen. Ver [Devolver identificadores externos de un producto](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![Corrección](../assets/fix.svg) **Corrección de la respuesta de `refineProduct` para los productos configurables**: se ha corregido un problema por el que la consulta de `refineProduct` devolvía `priceRange: null` y `roles: ["hidden"]` para productos configurables específicos, lo que garantiza una información precisa de precios y visibilidad para los consumidores de tiendas.
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Julio de 2026
 
@@ -95,7 +111,7 @@ _4 de mayo de 2026_
 
 <!--v1.53-->
 
-**Visualización correcta de la moneda**: los precios de los productos de tienda ahora muestran el código de moneda correcto (por ejemplo, USD) para todos los tipos de productos. Anteriormente, algunos productos mostraban `NONE` en lugar de la moneda esperada, lo que resultaba en la falta de precios.
+**Visualización correcta de la divisa**: los precios de los productos de tienda ahora muestran el código de divisa correcto (por ejemplo, USD) para todos los tipos de producto. Anteriormente, algunos productos mostraban `NONE` en lugar de la moneda esperada, lo que resultaba en la falta de precios.
 
 <!--DATA-7115-->
 
