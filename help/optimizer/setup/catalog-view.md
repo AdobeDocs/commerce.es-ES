@@ -21,9 +21,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ En esta sección, crea una vista de catálogo, selecciona una [política](polici
 
    - **Usar todos los libros de precios disponibles**: esta opción extrae los datos de precios de todos los libros de precios disponibles.
    - **Permitir solo los libros de precios seleccionados**—Esta opción muestra el cuadro de diálogo **Agregar libros de precios permitidos**. Utilice este cuadro de diálogo para seleccionar qué libro de precios específico se utilizará para la vista de catálogo.
+   - **Sólo libro de precios individual**—Seleccione esta opción si sólo se aplica un libro de precios. Esta opción es necesaria si desea configurar una vista de catálogo privado, que sólo puede hacer referencia a un libro de precios. Ver [Restricción del libro de precios en las vistas del catálogo privado](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
    - **Deshabilitar precios**: esta opción no está disponible en este momento.
 
    >[!NOTE]

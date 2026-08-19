@@ -17,9 +17,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -28,15 +28,30 @@ ht-degree: 0%
 
 De manera predeterminada, [la vista de catálogo](catalog-view.md) es pública. Habilite la protección del catálogo en una vista de catálogo para restringir el acceso a las solicitudes que incluyen un token firmado válido.
 
-La protección del catálogo solo se aplica a la vista de catálogo seleccionada. No cambia las directivas, las capas ni los libros de precios de la vista.
+La protección del catálogo solo se aplica a la vista de catálogo seleccionada. No cambia las políticas ni las capas de la vista. Restringe la vista a un único libro de precios; consulte [Restricción del libro de precios en vistas de catálogo privado](#price-book-restriction-on-private-catalog-views).
 
 Consulte [Casos de uso de claves de acceso restringido](restricted-access-keys.md#restricted-access-key-use-cases) para ver ejemplos de cuándo proteger una vista de catálogo.
 
 ## Comprender el límite de protección
 
-La protección del catálogo solo se aplica a la vista de catálogo en la que está activada. Protege las solicitudes de catálogo y búsqueda, pero no cambia las directivas de la vista ni los libros de precios, ni protege otras vistas de catálogo, ni protege las operaciones de pedido, cierre de compra o carro de compras.
+La protección del catálogo solo se aplica a la vista de catálogo en la que está activada. Protege las solicitudes de catálogo y de búsqueda, pero no cambia las directivas ni las capas de la vista, protege otras vistas de catálogo ni protege el carro de compras, las operaciones de cierre de compra o de pedido.
 
 El backend de comercio conectado debe aplicar de forma independiente la idoneidad de la compra.
+
+## Restricción de libro de precios en vistas de catálogo privado
+
+Una vista de catálogo privado sólo puede hacer referencia a un libro de precios. Esto difiere de una vista de catálogo público, que puede utilizar varios libros de precios.
+
+Cuando se habilita [!UICONTROL Catalog Protection], el selector de libro de precios del formulario de vista de catálogo cambia de un control de selección múltiple a un control de selección única (botón de opción).
+
+![Restricción del libro de precios de vista de catálogo privado](../assets/catalog-view-private-pricebook-restrictions.png)
+
+- Si activa [!UICONTROL Catalog Protection] en una vista de catálogo que tiene varios libros de precios asignados, no podrá guardar la vista hasta que elimine todos los libros de precios excepto uno.
+- Si anteriormente ha guardado una vista de catálogo privado con varias asignaciones de libro de precios antes de que existiera esta restricción, la configuración de la vista de catálogo no cambia automáticamente. Sin embargo, la próxima vez que edite la vista, deberá eliminar todos los libros de precios excepto uno para poder guardar las actualizaciones.
+
+En cada uno de estos casos, [!DNL Adobe Commerce Optimizer] muestra el siguiente mensaje de validación: `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+
+Las vistas de catálogo público no se ven afectadas por esta restricción y pueden seguir haciendo referencia a varios libros de precios.
 
 ## Proteger una vista de catálogo
 

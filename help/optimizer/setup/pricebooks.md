@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Agrega libros de precios a [!DNL Adobe Commerce Optimizer] mediante la API de li
 
 Después de ingerir libros de precios en [!DNL Adobe Commerce Optimizer], puede ver la lista de libros de precios y sus identificadores correspondientes en la página **Vista de catálogo**.
 
+>[!NOTE]
+>
+>Una vista de catálogo privado (una con [!UICONTROL Catalog Protection] habilitado) sólo puede hacer referencia a un libro de precios. Ver [Restricción del libro de precios en las vistas del catálogo privado](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
+
 1. Vaya a _Configuración de la tienda_ y haga clic en **[!UICONTROL Catalog views]**.
 
 1. Haga clic en **[!UICONTROL Create catalog view]**. &#x200B;
@@ -52,6 +56,6 @@ Después de ingerir libros de precios en [!DNL Adobe Commerce Optimizer], puede 
 | **Reserva de precios de reserva** | El libro de precios más alto de una jerarquía. No tiene principal y es el libro de precios *solamente* que define la moneda para sí mismo y para todos sus libros de precios descendientes.<br/><br/>Si no se define ningún libro principal durante la creación del libro de precios (a través de la API), se crea un nuevo libro de precios de reserva. |
 | **Libro de precios principal** | Un libro de precios de nivel superior del que un libro de precios para niños puede heredar los precios si no se establecen explícitamente en el niño. |
 | **Profundidad de jerarquía** | No se aplica un máximo de tres niveles (Alternativa -> Secundario -> Nieto)<br/><br/>en el momento de la ingesta. |
-| **Moneda** | Definido solo para el libro de precios de reserva. Heredado de todos los libros de precios secundarios.<br/><br/>Si no se especifica la divisa durante la creación del libro de precios de reserva (a través de la API), el valor predeterminado de la divisa es USD. |
+| **Moneda** | Definido solo para el libro de precios de reserva. Heredado de todos los libros de precios secundarios.<br/><br/>Si no se especifica la divisa durante la creación del libro de precios de reserva (a través de la API), el valor predeterminado de la divisa será USD. |
 | **Precio del producto** | El precio específico asignado a un producto (SKU) dentro de un libro de precios en particular. |
 | **Descuentos** | Los descuentos se definen en el precio del producto. No heredado. |

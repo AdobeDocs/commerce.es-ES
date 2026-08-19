@@ -14,22 +14,22 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
+source-git-commit: 4235bf48bb5f24a076621ee5985e9e7316fcb1cc
 workflow-type: tm+mt
-source-wordcount: 506
+source-wordcount: 498
 ht-degree: 0%
 
 ---
 
 # Compatibilidad para [!DNL Payment Services]
 
-[!DNL Payment Services] está disponible para Adobe Commerce y Magento Open Source. [!DNL Payment Services] ahora es compatible con las versiones 2.4.x de Adobe Commerce.
+[!DNL Payment Services] está disponible para [!DNL Adobe Commerce as a Cloud Service], todas las versiones compatibles de [!DNL Adobe Commerce on Cloud], las versiones locales y Magento Open Source. Consulte la página [Política del ciclo vital](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy) para obtener información específica de la versión.
 
 ## Requisitos previos
 
-Para usar [!DNL Payment Services], primero tendrá que conectar su instancia de Commerce. **Solo configuró esta conexión una vez**.
+Para usar [!DNL Payment Services], primero debe conectar la instancia de Commerce. **Solo realiza esta conexión una vez**.
 
-1. Si no está seguro de si la instancia está conectada, vaya a **Sistema** > Servicios > **Conector de servicios de Commerce** y vea los valores de las claves API públicas y privadas en las secciones Claves de espacio aislado y Claves de producción, y los campos Proyecto y Espacio de datos en la sección Identificador de SaaS. Si esos valores están presentes, la instancia está conectada.
+1. Si no está seguro de si la instancia está conectada, vaya a **Sistema** > Servicios > **Conector de servicios de Commerce** para ver las claves de API y los detalles del Identificador SaaS. Si esos valores están presentes, la instancia está conectada.
 
 1. Si todavía necesita conectar su instancia, consulte las instrucciones en la página [Conector de servicios de Commerce](../landing/saas.md).
 
@@ -105,16 +105,16 @@ Consulte [Connect](connect.md) para obtener más información sobre cómo config
 
 >[!ENDTABS]
 
-Consulte las páginas [Política del ciclo vital](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=es) y [[!DNL Payment Services] Notas de la versión](release-notes.md) para obtener más información específica de la versión y la versión.
+Consulte las páginas [Política del ciclo vital](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy) y [[!DNL Payment Services] Notas de la versión](release-notes.md) para obtener más información específica de la versión y la versión.
 
 Para obtener las instrucciones completas e iniciar el proceso de incorporación, consulta [Introducción a [!DNL Payment Services]](onboard.md).
 
 ### Tarjetas de crédito y divisas aceptadas
 
-[!DNL Payment Services] acepta las monedas de los países en los que está disponible. Consulte [Configuración de moneda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=es) para obtener más información sobre la configuración de tasas de moneda.
+[!DNL Payment Services] acepta las monedas de los países en los que está disponible. Consulte [Configuración de moneda](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) para obtener más información sobre la configuración de tasas de moneda.
 
 Para obtener más información sobre las divisas y los métodos de pago disponibles con los productos y servicios de PayPal, consulte las siguientes páginas:
 
-* [Documentación sobre monedas admitidas](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+* [Documentación sobre monedas admitidas](https://developer.paypal.com/reports/reference/supported-currencies).
 
-* [Documentación sobre métodos de pago](https://developer.paypal.com/docs/checkout/payment-methods/).
+* [Documentación sobre métodos de pago](https://developer.paypal.com/payment-methods).
