@@ -5,33 +5,18 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 autotag-review: '2026-06-18T16:01:44.084Z'
 TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1343
+source-wordcount: 1337
 ht-degree: 0%
 
 ---
@@ -47,7 +32,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service] consta de los siguientes componentes:
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)**: tu punto de entrada central a todos los productos de [!DNL Adobe Commerce] en [experience.adobe.com](https://experience.adobe.com/)
-   * Haga clic en [!UICONTROL **Commerce**] en [!UICONTROL **Acceso rápido**] para abrir Commerce Cloud Manager
+  * Haga clic en [!UICONTROL **Commerce**] en [!UICONTROL **Acceso rápido**] para abrir Commerce Cloud Manager
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)**: cree y administre instancias, acceda a direcciones URL de API y a su administrador de Commerce
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Administrar usuarios y funciones
 * **Administrador de Commerce**: administre productos, pedidos, clientes y configuración de tiendas
@@ -83,7 +68,7 @@ Seleccione una de las siguientes pestañas para ver los gráficos de flujo de tr
 
 >[!TAB Flujo de trabajo de administrador del sistema y comerciante]
 
-Este diagrama proporciona información general de alto nivel sobre cómo los administradores de sistemas y los comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
+Este diagrama proporciona información general de alto nivel sobre cómo los administradores de sistemas y los comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/business/enterprise.html) para obtener más información sobre los flujos de trabajo de administrador.
 
 ![Diagrama de flujo de trabajo de administrador del sistema y comerciante para Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -143,7 +128,7 @@ Después de completar las tareas de configuración específicas de su rol:
 
 * **Administradores del sistema**: revise las directrices de [responsabilidad compartida](./security/shared-responsibility.md)
 * **Comerciantes**: explore [casos de uso](use-cases.md) para escenarios comerciales comunes
-* **Desarrolladores**: Consulte la [documentación para desarrolladores de Adobe Commerce](https://developer.adobe.com/commerce/docs)
+* **Desarrolladores**: Consulte la [documentación para desarrolladores de Adobe Commerce](https://developer.adobe.com/commerce/docs/)
 
 ## Conceptos básicos de Adobe Commerce as a Cloud Service
 
@@ -173,7 +158,7 @@ Las secciones siguientes describen los procesos básicos que debe completar para
 
 1. Elija [!UICONTROL **Tipo de entorno**] para su instancia. Puede elegir entre las siguientes opciones:
 
-   * [!UICONTROL **Espacio aislado**]: solo con fines de diseño y prueba. Debe comenzar el recorrido de [!DNL Adobe Commerce as a Cloud Service] usando el entorno de espacio aislado.
+   * [!UICONTROL **Espacio aislado**]: solo con fines de diseño y prueba. Adobe recomienda comenzar el recorrido de [!DNL Adobe Commerce as a Cloud Service] usando el entorno de espacio aislado.
 
    >[!NOTE]
    >
@@ -215,18 +200,18 @@ Después de crear una instancia, puede obtener acceso a ella desde el [!UICONTRO
 
 >[!TIP]
 >
->Para ver información sobre la instancia, incluidos los extremos de REST y GraphQL y la URL del administrador, haga clic en el icono de información situado junto al nombre de la instancia.
+>Para ver información de la instancia, incluidos los extremos de REST y GraphQL y la URL de administración, haga clic en el icono de información junto al nombre de la instancia.
 
 Las direcciones URL base para el administrador y los puntos de conexión difieren según la región y el entorno, y utilizan el siguiente patrón:
 
 * Administrador
-   * Administrador de producción de Norteamérica: `https://na1.admin.commerce.adobe.com`
-   * Administrador de zona protegida de Norteamérica: `https://na1-sandbox.admin.commerce.adobe.com`
-   * Administrador de producción de Europa: `https://eu1.admin.commerce.adobe.com`
+  * Administrador de producción de Norteamérica: `https://na1.admin.commerce.adobe.com`
+  * Administrador de zona protegida de Norteamérica: `https://na1-sandbox.admin.commerce.adobe.com`
+  * Administrador de producción de Europa: `https://eu1.admin.commerce.adobe.com`
 * REST y GRAPHQL
-   * GraphQL de producción de Norteamérica: `https://na1.api.commerce.adobe.com`
-   * GraphQL de zona protegida de Norteamérica: `https://na1-sandbox.api.commerce.adobe.com`
-   * GraphQL de producción de Europa: `https://eu1.api.commerce.adobe.com`
+  * GraphQL de producción de Norteamérica: `https://na1.api.commerce.adobe.com`
+  * GraphQL de zona protegida de Norteamérica: `https://na1-sandbox.api.commerce.adobe.com`
+  * GraphQL de producción de Europa: `https://eu1.api.commerce.adobe.com`
 
 ### Importar el catálogo
 
@@ -234,7 +219,7 @@ De manera predeterminada, las instancias de [!DNL Adobe Commerce as a Cloud Serv
 
 Existen dos maneras de importar el catálogo en [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador de Commerce**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
+* [**Administrador de Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import): Una interfaz fácil de usar que le permite importar los datos del catálogo en unos pocos clics.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api): una API de REST que le permite importar los datos del catálogo mediante programación.
 
 ### Configurar la tienda
@@ -245,4 +230,4 @@ Ahora que has creado una instancia, estás listo para [configurar tu tienda](sto
 
 * [Notas de la versión](release-notes.md)
 * [Guía de migración](migration/overview.md)
-* [Documentación de Commerce Store](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es)
+* [Documentación de Commerce Store](https://experienceleague.adobe.com/developer/commerce/storefront/)

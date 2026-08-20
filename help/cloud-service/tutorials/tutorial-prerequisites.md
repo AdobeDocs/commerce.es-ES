@@ -9,26 +9,15 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:21:35.357Z'
 TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: e7840a7b-a94f-4256-aed0-4e94b08e157b
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,10 +44,10 @@ En este tutorial, se requieren las siguientes herramientas tanto para el desarro
   ```
 
 * Bash shell
-   * macOS/Linux: no se requiere instalación
-   * Windows: use [Git Bash](https://git-scm.com/install) o [Subsistema de Windows para Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux: no se requiere instalación
+  * Windows: use [Git Bash](https://git-scm.com/install) o [Subsistema de Windows para Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-* Descargue un IDE asistido por IA, como [Cursor](https://cursor.com/download) (recomendado). También se admiten otros IDE, como Claude Code, Gemini CLI o Copilot, pero podrían requerir modificaciones en las indicaciones y otros pasos del tutorial.
+* Descargue un IDE asistido por IA, como [Cursor](https://cursor.com/download) (recomendado). Otros IDE, como Claude Code, Gemini CLI o Copilot, también son compatibles, pero podrían requerir modificaciones en las indicaciones y otros pasos del tutorial.
 
 ## [!DNL Adobe Commerce as a Cloud Service] requisitos previos
 
@@ -74,7 +63,7 @@ En este tutorial, se requieren las siguientes herramientas tanto para el desarro
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-Después de instalar [!DNL Adobe I/O CLI] y los complementos necesarios, configure el área de trabajo de extensibilidad. Adobe recomienda utilizar la configuración automatizada para disfrutar de la experiencia más rápida.
+Después de instalar [!DNL Adobe I/O CLI] y los complementos necesarios, configure el área de trabajo de extensibilidad. Adobe recomienda utilizar la configuración automatizada para obtener la experiencia más eficiente.
 
 * **[Configuración automatizada](#automated-setup) (recomendada)**: ejecute un solo comando para configurar el área de trabajo automáticamente.
 * **[Configuración manual](#manual-setup)**: siga las instrucciones paso a paso para configurar cada componente de forma individual.
@@ -202,7 +191,7 @@ Configure un proyecto en Adobe Developer Console con las API y credenciales requ
 
 #### Creación de un nuevo proyecto
 
-Cree un proyecto de App Builder en Adobe Developer Console para alojar la extensión.
+Para hospedar la extensión, cree un proyecto [!DNL App Builder] en Adobe Developer Console.
 
 1. Vaya a [Adobe Developer Console](https://developer.adobe.com/).
 1. Haga clic en **[!UICONTROL Create project from a template]**.
@@ -227,10 +216,10 @@ Añada las API necesarias al espacio de trabajo de ensayo para la administració
 1. Seleccione una de las siguientes API. Repita este proceso para cada API enumerada a continuación:
 
    * Filtro **[!UICONTROL Adobe Services]**:
-      * **[!UICONTROL I/O Management API]**
-      * API **[!UICONTROL I/O Events]**
+     * **[!UICONTROL I/O Management API]**
+     * API **[!UICONTROL I/O Events]**
    * Filtro **[!UICONTROL Experience Cloud]**:
-      * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
+     * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
 
 1. Haga clic en **[!UICONTROL Next]**.
 
@@ -342,7 +331,7 @@ EVENT_PREFIX=test
 
 ### Descargar la configuración de Workspace
 
-Ejecute el siguiente comando para descargar el archivo de configuración de Workspace:
+Para descargar el archivo de configuración de Workspace, ejecute el siguiente comando:
 
 ```bash
 aio console workspace download workspace.json
@@ -407,9 +396,9 @@ Este proceso crea la configuración de MCP (`.<agent>/mcp.json`), el directorio 
 
 ## Configuración manual de la tienda
 
-En esta sección se describe cómo configurar manualmente la tienda para el [tutorial de extensión de clasificación](./ratings-extension.md) y otros tutoriales de tienda.
+En esta sección se describe cómo configurar la tienda manualmente para el [tutorial de extensión de clasificación](./ratings-extension.md) y otros tutoriales de tienda.
 
-Para configurar automáticamente su tienda, ejecute el comando `app-setup` descrito en la sección [Configuración automatizada](#automated-setup) y seleccione el Starter Kit [!DNL AEM Boilerplate Commerce].
+Para configurar la tienda automáticamente, ejecute el comando `app-setup` descrito en la sección [Configuración automatizada](#automated-setup) y seleccione el Starter Kit [!DNL AEM Boilerplate Commerce].
 
 ### Requisitos previos
 
@@ -417,7 +406,7 @@ Se requieren los siguientes elementos para completar la sección [tienda](./rati
 
 * [Google Chrome](https://www.google.com/chrome/) - Necesario para probar la tienda
 
-* Un proyecto de tienda conectado a su instancia [!DNL Commerce]. Si no tiene un proyecto de tienda, siga los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es){target="_blank"}, incluida la sección [Vincular repositorio a los datos de comercio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=es#link-repo-to-commerce-data){target="_blank"}.
+* Un proyecto de tienda conectado a su instancia [!DNL Commerce]. Si no tiene un proyecto de tienda, siga los pasos de [Crear una tienda](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, incluida la sección [Vincular repositorio a los datos de comercio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
 ### Clonar el repositorio de la tienda
 

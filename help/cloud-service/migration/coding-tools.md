@@ -2,27 +2,20 @@
 title: Herramientas para desarrolladores de codificación de IA para Adobe Commerce App Builder
 description: Aprenda a utilizar las herramientas de IA para crear aplicaciones de Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
 TQID: 'https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 2635
+source-wordcount: 2611
 ht-degree: 0%
 
 ---
@@ -52,22 +45,22 @@ Después de [instalar la herramienta para desarrolladores de programación de IA
 aio commerce extensibility tools-setup
 ```
 
-Esto actualizará las herramientas a la versión más reciente.
+Este comando actualiza las herramientas a la versión más reciente.
 
 ## Requisitos previos
 
 * Cualquier agente de codificación que admita [aptitudes de agente](https://agentskills.io/home#adoption), como:
 
   * [Cursor](https://cursor.com/download)
-  * [Código Claude](https://www.claude.com/product/claude-code)
+  * [Código Claude](https://claude.com/product/claude-code)
   * [Copiloto de GitHub](https://github.com/features/copilot)
-  * [Windsurf](https://windsurf.com)
+  * [Desarrollar escritorio](https://devin.ai/desktop)
   * [CLI de Gemini](https://github.com/google-gemini/gemini-cli)
   * [Códice OpenAI](https://openai.com/index/introducing-codex/)
   * [Cline](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download): versión LTS
-* Administrador de paquetes: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) o [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* Administrador de paquetes: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) o [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): para la clonación del repositorio y el control de versiones
 
 ## Instalación
@@ -114,7 +107,7 @@ Esto actualizará las herramientas a la versión más reciente.
    aio commerce extensibility tools-setup
    ```
 
-   El proceso de instalación le pedirá que especifique las opciones de configuración. Siga las indicaciones para completar la instalación. Las herramientas se instalarán en el directorio seleccionado.
+   El proceso de instalación le pedirá que especifique las opciones de configuración. Para completar la instalación, siga las indicaciones. Las herramientas se instalan en el directorio seleccionado.
 
    * Seleccione el Starter Kit que desee utilizar para el proyecto.
 
@@ -138,7 +131,7 @@ Esto actualizará las herramientas a la versión más reciente.
         ...
      ```
 
-   * El instalador detectará si tiene instalado NPM o Yarn y realizará la selección adecuada automáticamente. Sin embargo, si no tiene ninguno instalado, se le pedirá que seleccione el administrador de paquetes, Adobe recomienda utilizar `npm` para mantener la coherencia:
+   * El instalador detecta si tiene instalado NPM o Yarn y realiza automáticamente la selección adecuada. Sin embargo, si no tiene ninguno instalado, se le pedirá que seleccione el administrador de paquetes; Adobe recomienda utilizar `npm` para mantener la coherencia:
 
      ```shell-session
      ? Which package manager would you like to use?
@@ -156,13 +149,13 @@ Esto actualizará las herramientas a la versión más reciente.
 
 >[!NOTE]
 >
->Antes de implementar el proyecto, deberá completar las siguientes tareas de configuración:
+>Antes de implementar el proyecto, complete las siguientes tareas de configuración:
 >
 >* Inicie sesión en [Adobe Developer Console](https://developer.adobe.com/console) mediante la CLI de Adobe I/O.
 >* Cree un proyecto de App Builder (consulte [Configuración del proyecto](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurar variables de entorno en un archivo de `.env`.
 >
->Puede completar estos pasos de configuración manualmente o aprovechar las herramientas de codificación de IA para guiarle a través del proceso. Consulte [Crear una integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) para obtener instrucciones de configuración detalladas.
+>Puede completar estas tareas de configuración manualmente o aprovechar las herramientas de codificación de IA para guiarle a través del proceso. Consulte [Crear una integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) para obtener instrucciones de configuración detalladas.
 
 ## Configuración posterior a la instalación
 
@@ -189,7 +182,7 @@ aio auth login
 
 >[!NOTE]
 >
->Algunas funciones del servidor MCP funcionarán sin iniciar sesión, pero el servicio RAG (Retrieval-Augmented Generation) no funcionará. El servicio RAG proporciona al agente de codificación de IA acceso en tiempo real al conjunto completo de documentación de Adobe Commerce, lo que le permite responder preguntas y generar código basado en las prácticas de desarrollo, API y patrones arquitectónicos actuales de Commerce.
+>Algunas características del servidor MCP funcionan sin iniciar sesión, pero el servicio RAG (Retrieval-Augmented Generation) no funciona. El servicio RAG proporciona al agente de codificación de IA acceso en tiempo real al conjunto completo de documentación de Adobe Commerce, lo que le permite responder preguntas y generar código basado en las prácticas de desarrollo, API y patrones arquitectónicos actuales de Commerce.
 
 ### Cursor
 
@@ -204,7 +197,7 @@ aio auth login
    * Busque **commerce-extensibility MCP Server** en la lista
    * Active el servidor **ON** para habilitar las herramientas de codificación
 
-1. Comprobar el estado del servidor: el servidor MCP de extensibilidad de Commerce debe aparecer de la siguiente manera:
+1. Comprobar el estado del servidor: el servidor MCP de extensibilidad de Commerce aparece de la siguiente manera:
 
    ```shell-session
    Status: Connected/Active
@@ -226,12 +219,12 @@ aio auth login
 
 1. Habilite el servidor MCP:
 
-   * Abra el panel Extensiones haciendo clic en el icono **Extensiones** en la barra de actividades de la barra lateral izquierda, o bien, use **Cmd+Mayús+X** (macOs) o **Ctrl+Mayús+X** (Windows y Linux).
+   * Abra el panel Extensiones haciendo clic en el icono **Extensiones** en la barra de actividades de la barra lateral izquierda, o bien, use **Cmd+Mayús+X** (macOS) o **Ctrl+Mayús+X** (Windows y Linux).
    * Haga clic en [!UICONTROL **SERVIDORES MCP - INSTALADOS**].
    * Haga clic en el icono de engranaje situado junto a [!UICONTROL **commerce-extensibility MCP Server**] y seleccione [!UICONTROL **Start Server**], si el servidor está detenido.
    * Vuelva a hacer clic en el icono de engranaje y seleccione [!UICONTROL **Mostrar salida**].
 
-1. Compruebe el estado del servidor. La salida `MCP:commerce-extensibility` debe coincidir con lo siguiente:
+1. Compruebe el estado del servidor. La salida `MCP:commerce-extensibility` coincide con lo siguiente:
 
    ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
@@ -287,7 +280,7 @@ Además de preguntar, puede usar el comando `/search-commerce-docs` para buscar 
 
 ## Aptitudes
 
-Aunque las habilidades se invocarán automáticamente al conversar con el agente de codificación, también puede invocarlas manualmente con los siguientes comandos:
+Aunque las habilidades se invocan automáticamente al conversar con el agente de codificación, también puede invocarlas manualmente con los siguientes comandos:
 
 * `/architect`: diseña la arquitectura para las extensiones de Adobe Commerce usando [!DNL App Builder] y el Starter Kit seleccionado. Se utiliza para planificar integraciones, seleccionar eventos, diseñar flujos de datos o tomar decisiones de arquitectura.
 * `/developer`: implementa extensiones de Adobe Commerce siguiendo [!DNL App Builder] patrones y la estructura de archivos. Se utiliza al generar código, actualizar archivos de configuración o implementar acciones de tiempo de ejecución.
@@ -299,15 +292,15 @@ Aunque las habilidades se invocarán automáticamente al conversar con el agente
 
 ## Prácticas recomendadas
 
-Adobe recomienda seguir las siguientes prácticas recomendadas al utilizar las herramientas de codificación de IA:
+Adobe recomienda las siguientes prácticas recomendadas al utilizar las herramientas de codificación de IA:
 
 ### Modo de planificación
 
-Al conversar con su agente de codificación, debería seleccionar el modo **Plan** para crear un plan de implementación detallado para su proyecto.
+Cuando converse con su agente de codificación, seleccione el modo **Plan** para crear un plan de implementación detallado para su proyecto.
 
 El método para seleccionar el modo **Plan** varía según el agente que esté usando. Consulte la documentación de su agente para obtener instrucciones. Por ejemplo:
 
-* [Cursor](https://cursor.com/docs/agent/modes)
+* [Cursor](https://cursor.com/docs/agent/plan-mode)
 * [Código Claude](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [CLI de Gemini](https://geminicli.com/docs/cli/plan-mode/)
 
@@ -340,7 +333,7 @@ Al iniciar un nuevo chat:
 
 ### Flujo de trabajo
 
-Al desarrollar con las herramientas de codificación de IA, comience con proyectos de código de muestra o andamios. Este enfoque garantiza que se esté construyendo sobre una base sólida en lugar de empezar desde la nada, al tiempo que optimiza el flujo de trabajo de desarrollo de IA.
+Al desarrollar con las herramientas de codificación de IA, comience con proyectos de código de muestra o andamios. Este enfoque garantiza que se esté construyendo sobre una base establecida en lugar de empezar desde la nada, al tiempo que optimiza el flujo de trabajo de desarrollo de IA.
 
 Esto también le permite aprovechar las plantillas de Adobe y basarse en patrones y arquitecturas probados, al tiempo que mantiene estructuras y convenciones de directorio establecidas.
 
@@ -349,10 +342,10 @@ Consulte los siguientes recursos para empezar:
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Kit de inicio de compra](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [Aplicaciones de muestra de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Aplicaciones de muestra de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
-#### Por qué debería utilizar estos recursos
+#### Razones para utilizar estos recursos
 
 * **Patrones comprobados**: los Starter Kits representan las prácticas recomendadas y las decisiones de arquitectura de Adobe
 * **Desarrollo más rápido**: reduce el tiempo invertido en plantillas y configuración
@@ -365,7 +358,7 @@ Consulte los siguientes recursos para empezar:
 
 ### Protocol
 
-Las habilidades instaladas aplican automáticamente el siguiente protocolo de cuatro fases. Las herramientas deben seguir este protocolo automáticamente al desarrollar aplicaciones:
+Las habilidades instaladas aplican automáticamente el siguiente protocolo de cuatro fases. Las herramientas siguen este protocolo automáticamente al desarrollar aplicaciones:
 
 * Fase 1: Análisis y aclaración de los requisitos
   * Cuando se le pregunte para aclarar preguntas, proporcione respuestas completas.
@@ -435,7 +428,7 @@ Siga estas prácticas recomendadas al realizar pruebas:
 Después de completar el desarrollo de una función en el plan de implementación, pruébela inmediatamente. Las pruebas tempranas evitan problemas compuestos y facilitan la depuración.
 
 * No espere hasta que se hayan completado todas las funciones
-* Realizar pruebas de forma incremental para detectar problemas de forma temprana
+* Para detectar los problemas de forma temprana, realice pruebas incrementales.
 * Valide la funcionalidad antes de pasar a la siguiente función
 
 #### Probar localmente primero
@@ -522,7 +515,7 @@ Help me debug why this action is returning 500 errors
 
 ### Depuración
 
-Deténgase y evalúe cuándo las cosas salen mal. Si tiene problemas:
+Detener y evaluar cuándo se producen errores. Si tiene problemas:
 
 * Detener y evaluar: no continuar en estado roto
 * Comprobar registros: utilice registros de activación para identificar problemas
@@ -602,11 +595,11 @@ Evite los siguientes antipatrones al utilizar las herramientas de codificación 
 
 Los desarrolladores interesados en proporcionar comentarios sobre las herramientas de codificación de IA pueden utilizar el comando `/feedback`.
 
-Este comando le permite proporcionar comentarios de texto y enviar registros a Adobe. Cualquier registro que envíe se saneará para eliminar cualquier información privada o personal.
+Este comando le permite proporcionar comentarios de texto y enviar registros a Adobe. Todos los registros que envíe se sanean para eliminar la información privada o personal.
 
 >[!TIP]
 >
->La experiencia del usuario variará ligeramente según el IDE que utilice. El siguiente proceso describe la experiencia en Cursor.
+>La experiencia del usuario varía ligeramente según el IDE que utilice. El siguiente proceso describe la experiencia en Cursor.
 
 1. En su agente, escriba `/feedback` y seleccione el comando `commerce-extensibility/feedback`.
 
@@ -624,4 +617,4 @@ Este comando le permite proporcionar comentarios de texto y enviar registros a A
 
 >[!NOTE]
 >
->Si no ve el comando `/feedback`, es posible que tenga que [actualizar a la versión más reciente](#updating-to-the-latest-version).
+>Si no ve el comando `/feedback`, [actualice a la versión más reciente](#updating-to-the-latest-version).
