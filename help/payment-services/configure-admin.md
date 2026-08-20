@@ -16,19 +16,19 @@ ht-degree: 0%
 
 Puede personalizar [!DNL Payment Services] según sus necesidades con opciones de configuración útiles en el Administrador.
 
-Cuando configura [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] en el administrador, esas configuraciones se aplican únicamente al entorno establecido en el campo _[!UICONTROL Method]_de_[!UICONTROL General Configuration]_. Cualquier cambio que realice en los campos de configuración es independiente de cambiar la selección de _[!UICONTROL Method]_; si cambia el método, las selecciones no se restablecerán.
+Cuando configura [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] en el administrador, esas configuraciones se aplican únicamente al entorno establecido en el campo _[!UICONTROL Method]_&#x200B;de&#x200B;_[!UICONTROL General Configuration]_. Cualquier cambio que realice en los campos de configuración es independiente de cambiar la selección de _[!UICONTROL Method]_; si cambia el método, las selecciones no se restablecerán.
 
 Si ejecuta una sola instancia de Commerce con **varios sitios web** (y vistas de tiendas), es posible que necesite una **cuenta comercial de PayPal diferente** para algunos sitios web. [!DNL Payment Services] le permite completar la incorporación de PayPal de **ámbito de sitio web** en el administrador después de que la instancia se haya configurado e incorporado en el ámbito **global** (predeterminado). Ver [Conectar una cuenta PayPal diferente para un sitio web](connect-website-account.md) para conocer los requisitos previos y los pasos necesarios para incorporar una cuenta PayPal con alcance de sitio web.
 
 ## Configuración general
 
-Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchant Location]_, y habilitar la prueba de zona protegida o los pagos activos en la sección_[!UICONTROL General Configuration]_.
+Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchant Location]_, y habilitar la prueba de zona protegida o los pagos activos en la sección&#x200B;_[!UICONTROL General Configuration]_.
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
-1. Establezca el campo _[!UICONTROL Merchant Country]_en_[!UICONTROL Merchant Location]_. Si no se especifica un(a) _[!UICONTROL Merchant Country]_, se utiliza el(la)_[!UICONTROL Default Country]_ de la configuración general.
-1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_para tener acceso a la sección_[!UICONTROL [!DNL Payment Services]]_.
-1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección_[!UICONTROL General Configuration]_.
+1. Establezca el campo _[!UICONTROL Merchant Country]_&#x200B;en&#x200B;_[!UICONTROL Merchant Location]_. Si no se especifica un(a) _[!UICONTROL Merchant Country]_, se utiliza el(la)_[!UICONTROL Default Country]_ de la configuración general.
+1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;para tener acceso a la sección&#x200B;_[!UICONTROL [!DNL Payment Services]]_.
+1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección&#x200B;_[!UICONTROL General Configuration]_.
 1. Para **Habilitar**, establézcalo en `Yes` para habilitar [!DNL Payment Services] en tu tienda.
 1. Para **Método**, establézcalo en `Sandbox` si todavía estás probando [!DNL Payment Services] para tu tienda o `Production` si estás listo para habilitar los pagos activos.
 1. Los valores de **[!UICONTROL Payment Services Sandbox ID]** y **[!UICONTROL Payment Services Production ID]** se rellenan automáticamente una vez que configura [Commerce Services Connector](../landing/saas.md){target=_blank} y visita el panel [!DNL Payment Services] por primera vez. Haga esto para finalizar la incorporación para su zona protegida o entornos de producción. Estos valores asocian su ID de SaaS a [!DNL Payment Services].
@@ -83,7 +83,7 @@ Consulte [Opciones de pago](payments-options.md#paypal-payment-buttons) para obt
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL Credit Card Fields]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL Credit Card Fields]_.
 1. Para **[!UICONTROL Title]**, escriba texto (si es necesario) para cambiar el nombre del método de pago como se muestra durante el cierre de compra.
 1. Para [establecer la acción de pago](production.md#set-payment-services-as-payment-method), seleccione **[!UICONTROL Authorize]** o **Autorizar y capturar**.
 1. Para priorizar un método de pago en la página de cierre de compra, proporcione un valor `Numeric Only` en el campo **[!UICONTROL Sort order]**.
@@ -117,7 +117,7 @@ Consulte [Opciones de pago](payments-options.md#fastlane-button) para obtener m�
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL Fastlane]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL Fastlane]_.
 1. Para habilitarlo, seleccione `Yes` para **[!UICONTROL Enable Fastlane]** (`No` lo deshabilita).
 
    >[!NOTE]
@@ -142,7 +142,7 @@ Consulte [Opciones de pago](payments-options.md#fastlane-button) para obtener m�
 | [!UICONTROL Enable Fastlane] | vista de tienda | Habilitar o deshabilitar [!DNL Fastlane] en la página de cierre de compra. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | vista de tienda | Añada el texto que se mostrará como título para esta opción de pago en la vista Método de pago durante el cierre de compra. El valor predeterminado es `Credit Card (via Fastlane)`. Opciones: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods) para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL 3D Secure authentication] | vista de tienda | Habilitar o deshabilitar la autenticación segura en 3D para Fastlane](security.md#3ds). [Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | vista de tienda | Habilitar o deshabilitar la autenticación segura en 3D para Fastlane[&#128279;](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | vista de tienda | El criterio de ordenación para el método de pago especificado en la página de pago. Valor `Numeric Only` |
 | [!UICONTROL Enable messaging] | vista de tienda | Especifique si la marca [!UICONTROL Fastlane] está habilitada durante el cierre de compra en Adobe Commerce. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
@@ -154,7 +154,7 @@ Esta configuración opcional puede personalizar el modo en que [!UICONTROL Fastl
 >
 >Los estilos que no cumplen las directrices de accesibilidad vuelven a la configuración predeterminada.
 
-1. En la sección _[!UICONTROL Payment Services]_, vaya a la sección_[!UICONTROL Fastlane]_.
+1. En la sección _[!UICONTROL Payment Services]_, vaya a la sección&#x200B;_[!UICONTROL Fastlane]_.
 1. Expanda la sección _[!UICONTROL Advanced Style Settings (optional)]_.
 1. Modifique la configuración según sea necesario.
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
@@ -201,7 +201,7 @@ Consulte [Opciones de pago](payments-options.md#apple-pay-button) para obtener m
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección_[!UICONTROL Apple Pay]_.
+1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección&#x200B;_[!UICONTROL Apple Pay]_.
 1. Para **[!UICONTROL Title]**, escriba texto (si es necesario) para cambiar el nombre del método de pago como se muestra durante el cierre de compra.
 1. Para [establecer la acción de pago](production.md#set-payment-services-as-payment-method), seleccione **[!UICONTROL Authorize]** o **[!UICONTROL Authorize and Capture]**.
 1. Especifique si la opción [!DNL Apple Pay] está habilitada en Adobe Commerce seleccionando `Yes` en las siguientes opciones según sea necesario:
@@ -237,7 +237,7 @@ Consulte [Opciones de pago](payments-options.md#google-pay-button) para obtener 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección_[!UICONTROL Google Pay]_.
+1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección&#x200B;_[!UICONTROL Google Pay]_.
 1. (Opcional) Cambie el nombre del método de pago mostrado durante el cierre de compra introduciendo el nuevo nombre en el campo **[!UICONTROL Title]**.
 1. [Establece la acción de pago](production.md#set-payment-services-as-payment-method) seleccionando **[!UICONTROL Authorize]** o **[!UICONTROL Authorize and Capture]**.
 1. Especifique si la opción [!DNL Google Pay] está habilitada en Adobe Commerce seleccionando `Yes` en las siguientes opciones según sea necesario:
@@ -249,7 +249,7 @@ Consulte [Opciones de pago](payments-options.md#google-pay-button) para obtener 
 1. Para elegir si los compradores ven una página de **revisión de Google Pay** independiente después de la hoja de pago de Google Pay, establece **[!UICONTROL Skip Review]** en `Yes` o `No`. Cuando se establece en `Yes`, los flujos urgentes admitidos muestran **métodos de envío en la hoja Google Pay** (devoluciones de llamadas de envío del lado del cliente) y pueden completarse sin el paso de revisión adicional. Cuando se establece en `No`, los compradores pueden confirmar el envío y los totales en la página de revisión antes de pagar.
 1. Para habilitar **[!UICONTROL 3D Secure authentication]** (`Off` de forma predeterminada), elija `Always` o `When required`.
 1. Para habilitar el modo de depuración, seleccione `Yes` para **[!UICONTROL Debug Mode]** (`No` lo deshabilita).
-1. Configure el aspecto del botón _[!UICONTROL Google Pay]_seleccionando **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**y **[!UICONTROL Button Style]**según sea necesario.
+1. Configure el aspecto del botón _[!UICONTROL Google Pay]_&#x200B;seleccionando **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**&#x200B;y **[!UICONTROL Button Style]**&#x200B;según sea necesario.
 1. Para establecer la altura, utilice el valor predeterminado para la altura definida en **[!UICONTROL Button Style]**.
 1. Para guardar los cambios, haga clic en **[!UICONTROL Save Config]**
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y, a continuación, haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
@@ -287,7 +287,7 @@ Puede activar y configurar las opciones de pago de los botones de pago de PayPal
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL PayPal payment buttons]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL PayPal payment buttons]_.
 1. Para cambiar el nombre de la forma de pago como se muestra durante el cierre de compra, edite el campo _[!UICONTROL Title]_.
 1. Para [establecer la acción de pago](production.md#set-payment-services-as-payment-method), seleccione **[!UICONTROL Authorize]** o **[!UICONTROL Authorize and Capture]**.
 1. Para priorizar un método de pago en la página de cierre de compra, proporcione un valor `Numeric Only` en el campo **[!UICONTROL Sort order]**.
@@ -336,7 +336,7 @@ Los métodos de pago locales (LPM) proporcionan soporte para métodos de pago es
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL Local Payment Methods]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL Local Payment Methods]_.
 1. Para **[!UICONTROL Active]**, seleccione `Yes` para habilitar los LPM o `No` para deshabilitarlos.
 1. Para **[!UICONTROL Title]**, escriba el texto que se mostrará como nombre de método de pago durante el cierre de compra. Este título también aparece en la cuadrícula del pedido de ventas.
 1. Para **[!UICONTROL Allowed Payment Methods]**, selecciona los métodos de pago que deseas ofrecer. Los métodos disponibles dependen de la dirección de facturación del comprador y de la divisa base del sitio web.
@@ -369,12 +369,12 @@ Los artículos de línea envían información detallada del pedido a PayPal, inc
 
 ## Estilo de botón
 
-También puede configurar las opciones _[!UICONTROL Button style]_de los botones de pago:
+También puede configurar las opciones _[!UICONTROL Button style]_&#x200B;de los botones de pago:
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección_[!UICONTROL PayPal Smart Button Styling]_.
+1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección&#x200B;_[!UICONTROL PayPal Smart Button Styling]_.
 1. Para establecer el diseño, seleccione `Vertical` o `Horizontal` para **[!UICONTROL Layout]**
 1. Para establecer el color, seleccione uno de los colores disponibles en **[!UICONTROL Color]**.
 1. Para establecer la forma, seleccione `Rectangular` o `Pill` para **[!UICONTROL Shape]**.
