@@ -2,27 +2,20 @@
 title: Herramientas para desarrolladores de codificación de IA para Adobe Commerce App Builder
 description: Aprenda a utilizar las herramientas de IA para crear aplicaciones de Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
 TQID: 'https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 2634
+source-wordcount: 2635
 ht-degree: 0%
 
 ---
@@ -58,13 +51,13 @@ Esto actualizará las herramientas a la versión más reciente.
 
 * Cualquier agente de codificación que admita [aptitudes de agente](https://agentskills.io/home#adoption), como:
 
-   * [Cursor](https://cursor.com/download)
-   * [Código Claude](https://www.claude.com/product/claude-code)
-   * [Copiloto de GitHub](https://github.com/features/copilot)
-   * [Windsurf](https://windsurf.com)
-   * [CLI de Gemini](https://github.com/google-gemini/gemini-cli)
-   * [Códice OpenAI](https://openai.com/index/introducing-codex/)
-   * [Cline](https://cline.bot)
+  * [Cursor](https://cursor.com/download)
+  * [Código Claude](https://www.claude.com/product/claude-code)
+  * [Copiloto de GitHub](https://github.com/features/copilot)
+  * [Windsurf](https://windsurf.com)
+  * [CLI de Gemini](https://github.com/google-gemini/gemini-cli)
+  * [Códice OpenAI](https://openai.com/index/introducing-codex/)
+  * [Cline](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download): versión LTS
 * Administrador de paquetes: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) o [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
@@ -349,7 +342,7 @@ Consulte los siguientes recursos para empezar:
 * [Kit de inicio de integración](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Kit de inicio de compra](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [plantillas de Adobe Commerce starter kit](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Aplicaciones de muestra de App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por qué debería utilizar estos recursos
@@ -368,9 +361,9 @@ Consulte los siguientes recursos para empezar:
 Las habilidades instaladas aplican automáticamente el siguiente protocolo de cuatro fases. Las herramientas deben seguir este protocolo automáticamente al desarrollar aplicaciones:
 
 * Fase 1: Análisis y aclaración de los requisitos
-   * Cuando se le pregunte para aclarar preguntas, proporcione respuestas completas.
+  * Cuando se le pregunte para aclarar preguntas, proporcione respuestas completas.
 * Fase 2: Planificación arquitectónica y aprobación de usuarios
-   * Cuando se presente un plan, revíselo cuidadosamente antes de aprobarlo.
+  * Cuando se presente un plan, revíselo cuidadosamente antes de aprobarlo.
 * Fase 3: Generación e implementación de código
 * Fase 4: Documentación y validación
 

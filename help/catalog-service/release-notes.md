@@ -4,18 +4,13 @@ description: La información de la versión más reciente de  [!DNL Catalog Serv
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 3063
+source-wordcount: 3064
 ht-degree: 0%
 
 ---
@@ -71,7 +66,7 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 **Fecha de la versión**: 20 de mayo de 2026
 <!-- v1.55 -->
 
-![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para clientes de Adobe Commerce y Adobe Commerce as a Cloud Service según [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits).
+![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para clientes de Adobe Commerce y Adobe Commerce as a Cloud Service según [límites y límites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
 <!--DATA-7163-->
 
 **Fecha de la versión**: 13 de mayo de 2026
@@ -91,7 +86,7 @@ Se proporciona soporte para la versión más reciente. Las notas de la versión 
 <!--v1.52-->
 
 ![Nuevo](../assets/new.svg) límite obligatorio máximo de 100 SKU por solicitud para Adobe Commerce Optimizer y Adobe Commerce as a Cloud Service
-clientes según [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+clientes según [límites y límites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Fecha de publicación**: 17 de abril de 2026
 <!--v1.51-->
@@ -275,7 +270,7 @@ Se aplica a:
 **Fecha de la versión**: 20 de junio de 2025
 <!-- v1.37 -->
 
-![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/pricebooks).
+![Nuevo](../assets/new.svg) **Configuración jerárquica del libro de precios**: intervalos de precios precisos para libros de precios principal-secundario. Los cálculos respetan la jerarquía y las reglas heredadas; reduce los errores de asignación de precios cuando se vinculan varios libros de precios. Solo Adobe Commerce Optimizer. Ver [Libros de precios](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nuevas](../assets/new.svg) **claves que no distinguen entre mayúsculas y minúsculas**: las búsquedas de claves en las consultas ahora no distinguen entre mayúsculas y minúsculas, lo que reduce los errores de mayúsculas y minúsculas. <!--DATA-6494, DCAT-2495-->
 
@@ -412,7 +407,7 @@ El esquema ![Nuevo](../assets/new.svg) de GraphQL ahora incluye `lastModifiedAt`
 
 <!--DATA-5033-->
 
-![Corrección](../assets/fix.svg) Se agregó compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) para aplicar las actualizaciones.
+![Corrección](../assets/fix.svg) Se agregó compatibilidad con precios de productos con hasta 16 dígitos y 4 decimales. Resincronice desde el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) para aplicar las actualizaciones.
 <!--DATA-5033-->
 
 #### Limitaciones conocidas
@@ -449,7 +444,7 @@ Para obtener detalles y ejemplos, consulte [Servicio de catálogo y malla de API
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
+![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
 
 **Fecha de publicación**: 13 de febrero de 2024
 <!-- v1.16 -->
@@ -637,7 +632,7 @@ Actualizaciones al metapaquete PHP del servicio de catálogo (`magento/catalog-s
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) **Soporte para la supervisión del estado de sincronización de fuentes de datos**—Se han actualizado las dependencias del metapaquete del servicio de catálogo para incluir la extensión de estado del exportador de datos (`magento/module-data-exporter-status`). Esto habilita la [supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) desde el administrador de Commerce sin requerir ningún paso adicional de instalación o configuración
+![Nuevo](../assets/new.svg) **Soporte para la supervisión del estado de sincronización de fuentes de datos**—Se han actualizado las dependencias del metapaquete del servicio de catálogo para incluir la extensión de estado del exportador de datos (`magento/module-data-exporter-status`). Esto habilita la [supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) desde el administrador de Commerce sin requerir ningún paso adicional de instalación o configuración
 
 ![Nuevo](../assets/new.svg) Se han actualizado las dependencias para mantener la compatibilidad entre el servicio de catálogo y la pila de Commerce.
 
@@ -694,9 +689,9 @@ Siempre que use Composer para actualizar `magento/catalog-service`, el paquete d
 
   - [Guía del servicio de catálogo](overview.md)
   - [Referencia de API de GraphQL del servicio de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Guía de administración de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-  - [Guía de Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-  - [Guía de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [Guía de administración de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+  - [Guía de Adobe Commerce as a Cloud Service](../cloud-service/overview.md)
+  - [Guía de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 
 - Para proyectos que usan **Adobe Commerce Optimizer** o **Conector de Adobe Commerce Optimizer**, consulte la siguiente documentación:
 

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Puede [descargar transacciones de pago](#download-transactions) en formato de ar
 
 >[!NOTE]
 >
->Los informes de pagos solo muestran los pedidos capturados (la acción de pago se ha establecido en [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=es#set-payment-services-as-payment-method)) o [marcados como `Invoiced`](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Los informes de pagos solo muestran los pedidos capturados (la acción de pago se ha establecido en [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) o [marcados como `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Vista de visualización de datos de pagos
 
@@ -73,7 +73,7 @@ La vista de visualización de datos Pagos incluye la siguiente información.
 
 La vista Informe de pagos está disponible en la vista Pagos de Payment Services. Incluye toda la información disponible sobre los pagos de tu tienda.
 
-En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;para ver la vista detallada del informe Pagos en tablas.
+En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**para ver la vista detallada del informe Pagos en tablas.
 
 ![Transacciones de pago en el administrador](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -93,7 +93,7 @@ En la vista Informe de pagos, puede seleccionar el origen de datos (**[!UICONTRO
 
 ![Selección de orígenes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_&#x200B;es el origen de datos seleccionado, puede ver la información de informes de las tiendas en el modo de producción. Si&#x200B;_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver los almacenes de información de informes en el modo de espacio aislado.
+Si _[!UICONTROL Live]_es el origen de datos seleccionado, puede ver la información de informes de las tiendas en el modo de producción. Si_[!UICONTROL Sandbox]_ es el origen de datos seleccionado, puede ver los almacenes de información de informes en el modo de espacio aislado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -159,7 +159,7 @@ Los informes de pago incluyen la siguiente información.
 | [!UICONTROL Code] | Código de transacción que indica crédito (*CR*) o débito (*DR*) |
 | [!UICONTROL Reference ID] | ID de transacción original con el que se relaciona este evento |
 | [!UICONTROL Invoice] | ID de factura (uno por pedido) de la transacción |
-| [!UICONTROL Commerce order] | ID de pedido de Commerce <br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionada, haga clic en el identificador. |
+| [!UICONTROL Commerce order] | ID de pedido de Commerce <br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionada, haga clic en el identificador. |
 | [!UICONTROL Commerce trans] | ID de transacción de Commerce |
 | [!UICONTROL Pay method] | Tipo de tarjeta de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—y proveedor de tarjeta asociado (como *Visa* o *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Importe de la transacción |

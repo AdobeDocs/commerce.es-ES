@@ -3,18 +3,13 @@ title: Añadir reglas
 description: Obtenga información sobre cómo crear reglas de comercialización de búsqueda.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: 2561
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 ## Añadir una regla
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
-1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplica la regla.
+1. Establezca **Scope** para identificar la [vista del almacén](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) donde se aplica la regla.
 1. Haga clic en el área de trabajo **Buscar comercialización**.
 1. Haga clic en **Agregar regla** para iniciar el editor de reglas.
 
@@ -136,8 +131,8 @@ Para **reglas de búsqueda** (y la consulta de prueba en el editor de reglas), l
 
 * **Relevancia textual**: El factor dominante en la puntuación. Esto mide en qué medida coinciden el nombre, la descripción y los atributos de un producto con la consulta de búsqueda. La puntuación de relevancia del texto es ilimitada (no tiene un límite superior específico) y se ve afectada por factores como:
 
-   * Frecuencia de aparición de palabras coincidentes.
-   * Longitud (en palabras) de los nombres y descripciones de los productos.
+  * Frecuencia de aparición de palabras coincidentes.
+  * Longitud (en palabras) de los nombres y descripciones de los productos.
 
 * **Señales de comportamiento**: un aumento limitado aplicado sobre la puntuación de relevancia de texto. Al seleccionar una estrategia de clasificación inteligente como &quot;Más visitados&quot; o &quot;Más comprados&quot;, los productos con señales de comportamiento más altas reciben un peso relativo mayor. La fuerza de ese peso está controlada por **[!UICONTROL Intelligent Ranking Boost]** (consulte [Aumento de clasificación inteligente](#intelligent-ranking-boost)); el aumento permanece limitado, pero puede aumentar la cantidad que cambia de orden.
 
@@ -164,11 +159,11 @@ Consulte [reglas de búsqueda](./best-practice.md#search-rules) para obtener inf
 * Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
 * Para asegurarse de que la clasificación inteligente funciona correctamente, asegúrese de que **Peso de búsqueda** para cualquier atributo de producto que se utilice para la búsqueda o el filtrado (facetas) sea `5` o menos. Para encontrar esta configuración en el administrador de [!DNL Commerce]:
 
-   1. Seleccione **Tiendas** > _Atributos_ > **Producto**.
-   1. Busque el atributo como, por ejemplo, &quot;nombre&quot;.
-   1. En la página **Información de atributo** > **Propiedades de tienda**, establezca el valor de la búsqueda en `5` o menos.
+  1. Seleccione **Tiendas** > _Atributos_ > **Producto**.
+  1. Busque el atributo como, por ejemplo, &quot;nombre&quot;.
+  1. En la página **Información de atributo** > **Propiedades de tienda**, establezca el valor de la búsqueda en `5` o menos.
 
-      ![Producto - Peso de búsqueda](assets/set-search-weight.png)
+     ![Producto - Peso de búsqueda](assets/set-search-weight.png)
 
 >[!NOTE]
 >

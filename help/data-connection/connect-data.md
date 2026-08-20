@@ -4,29 +4,13 @@ description: Obtenga información sobre cómo conectar los datos de Commerce a A
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
 TQID: https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 3511
+source-wordcount: 3527
 ht-degree: 0%
 
 ---
@@ -81,7 +65,7 @@ El comerciante ingresa las credenciales de la cuenta de servicio una vez en la p
 
 ### Agregar detalles de cuenta de servicio y credenciales
 
-Si planea recopilar y enviar [datos históricos de pedidos](#send-historical-order-data) o [datos de perfil del cliente](#send-customer-profile-data), debe agregar detalles de cuenta de servicio y credenciales. Además, si está configurando la extensión [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=es), debe completar estos pasos.
+Si planea recopilar y enviar [datos históricos de pedidos](#send-historical-order-data) o [datos de perfil del cliente](#send-customer-profile-data), debe agregar detalles de cuenta de servicio y credenciales. Además, si está configurando la extensión [Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation), debe completar estos pasos.
 
 Las credenciales de la cuenta de servicio se configuran en el ámbito **Configuración predeterminada** y se aplican globalmente. Consulte [Ámbito de configuración](#configuration-scope) para ver la configuración de ámbito de sitio web, como el nombre de la zona protegida.
 
@@ -91,12 +75,12 @@ Si solo está recopilando y enviando datos de tienda u oficina, puede saltar a l
 
 Cree un proyecto en Adobe Developer Console que autentique Commerce para que pueda realizar llamadas a la API de Experience Platform.
 
-Para crear el proyecto, sigue los pasos descritos en el tutorial [Autenticar y acceder a las API de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=es).
+Para crear el proyecto, sigue los pasos descritos en el tutorial [Autenticar y acceder a las API de Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication).
 
 A medida que avance en el tutorial, asegúrese de que su proyecto tenga lo siguiente:
 
-- Acceso a los siguientes [perfiles de producto](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=es#select-product-profiles): **Acceso predeterminado para todo tipo de producción** y **Acceso predeterminado para todo AEP**.
-- Se han configurado [funciones y permisos correctos](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=es#assign-api-to-a-role).
+- Acceso a los siguientes [perfiles de producto](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#select-product-profiles): **Acceso predeterminado para todo tipo de producción** y **Acceso predeterminado para todo AEP**.
+- Se han configurado [funciones y permisos correctos](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role).
 - Si ha decidido utilizar JSON Web Tokens (JWT) como método de autenticación de servidor a servidor, también debe cargar una clave privada.
 
 El resultado de este paso crea un archivo de configuración que se utiliza en el siguiente paso.
@@ -131,7 +115,7 @@ Descargar el [archivo de configuración del área de trabajo](https://developer.
 
 1. Haga clic en **[!UICONTROL Test connection]** para validar las credenciales de la cuenta de servicio y la zona protegida del sitio web seleccionado actualmente en **[!UICONTROL Scope]**. Repita el proceso para cada sitio web que utilice una zona protegida diferente.
 
-1. (Opcional) Si ya tiene [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=es) implementado en su sitio, habilite la casilla de verificación y agregue el nombre de su AEP Web SDK. De lo contrario, deje estos campos en blanco y la extensión [!DNL Data Connection] implementará uno por usted.
+1. (Opcional) Si ya tiene [AEP Web SDK (alloy)](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) implementado en su sitio, habilite la casilla de verificación y agregue el nombre de su AEP Web SDK. De lo contrario, deje estos campos en blanco y la extensión [!DNL Data Connection] implementará uno por usted.
 
    >[!NOTE]
    >
@@ -161,9 +145,9 @@ Consulte el tema de eventos para obtener más información sobre los datos de [t
 
    >[!NOTE]
    >
-   >Si selecciona **Eventos de back office**, todos los datos de back office se enviarán al perímetro de Experience Platform. Si un comprador decide excluirse de la recopilación de datos, debe establecer explícitamente la preferencia de privacidad del comprador en Experience Platform. Esto es diferente a los eventos de tienda en los que el coleccionista ya gestiona el consentimiento en función de las preferencias del comprador. Obtenga [más información](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=es) sobre cómo establecer las preferencias de privacidad de un comprador en Experience Platform.
+   >Si selecciona **Eventos de back office**, todos los datos de back office se enviarán al perímetro de Experience Platform. Si un comprador decide excluirse de la recopilación de datos, debe establecer explícitamente la preferencia de privacidad del comprador en Experience Platform. Esto es diferente a los eventos de tienda en los que el coleccionista ya gestiona el consentimiento en función de las preferencias del comprador. Obtenga [más información](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset) sobre cómo establecer las preferencias de privacidad de un comprador en Experience Platform.
 
-1. (Omita este paso si utiliza su propio AEP Web SDK). [Cree](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=es#create) un conjunto de datos en Adobe Experience Platform o seleccione un conjunto de datos existente que desee usar para la recopilación. Escriba el id. de secuencia de datos en el campo **id. de secuencia de datos**.
+1. (Omita este paso si utiliza su propio AEP Web SDK). [Cree](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#create) un conjunto de datos en Adobe Experience Platform o seleccione un conjunto de datos existente que desee usar para la recopilación. Escriba el id. de secuencia de datos en el campo **id. de secuencia de datos**.
 
 1. Escriba el **ID del conjunto de datos** que desea que contenga sus datos de Commerce. Para encontrar la ID del conjunto de datos:
 
@@ -171,7 +155,7 @@ Consulte el tema de eventos para obtener más información sobre los datos de [t
    1. Abra el conjunto de datos asociado al conjunto de datos.
    1. En el panel derecho, vea los detalles sobre el conjunto de datos. Copie el ID del conjunto de datos.
 
-1. Para garantizar que las actualizaciones de datos de eventos de back office se basen en una programación según un trabajo de [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=es), debe cambiar el índice de `Sales Orders Feed` a `Update by Schedule`.
+1. Para garantizar que las actualizaciones de datos de eventos de back office se basen en una programación según un trabajo de [cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron), debe cambiar el índice de `Sales Orders Feed` a `Update by Schedule`.
 
    1. En la barra lateral _Admin_, vaya a **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
 
@@ -179,7 +163,7 @@ Consulte el tema de eventos para obtener más información sobre los datos de [t
 
    1. Establezca **[!UICONTROL Actions]** en `Update by Schedule`.
 
-   1. Si está habilitando los datos del back office por primera vez, ejecute los siguientes comandos para reindexar y almacenar en déclencheur una resincronización. Las resincronizaciones posteriores se producen automáticamente siempre y cuando el trabajo de [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=es) esté configurado correctamente.
+   1. Si está habilitando los datos del back office por primera vez, ejecute los siguientes comandos para reindexar y almacenar en déclencheur una resincronización. Las resincronizaciones posteriores se producen automáticamente siempre y cuando el trabajo de [cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) esté configurado correctamente.
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -210,7 +194,7 @@ Después de configurar la extensión, los datos de la tienda comienzan a fluir a
 
 Existen dos tipos de datos de perfil que puede enviar a Experience Platform: registros de perfil y eventos de perfil de series temporales.
 
-Un registro de perfil contiene datos que se guardan cuando un comprador crea un perfil en su instancia de Commerce, como el nombre del comprador. Cuando el esquema y el conjunto de datos están [correctamente configurados](profile-data.md), se envía un registro de perfil a Experience Platform y se reenvía al servicio de segmentación y administración de perfiles de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=es).
+Un registro de perfil contiene datos que se guardan cuando un comprador crea un perfil en su instancia de Commerce, como el nombre del comprador. Cuando el esquema y el conjunto de datos están [correctamente configurados](profile-data.md), se envía un registro de perfil a Experience Platform y se reenvía al servicio de segmentación y administración de perfiles de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 Los eventos de perfil de series temporales contienen datos sobre la información de perfil del comprador; por ejemplo, si crean, editan o eliminan una cuenta del sitio. Cuando los datos de evento de perfil se envían a Experience Platform, residen en un conjunto de datos donde otros productos DX pueden utilizarlos.
 
@@ -230,7 +214,7 @@ Un registro de perfil puede tardar unos 10 minutos en estar disponible en Real-T
 
 >[!TIP]
 >
->Si no ve datos de perfil en Experience Platform, consulte la [Base de conocimiento de Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) para obtener sugerencias sobre solución de problemas.
+>Si no ve datos de perfil en Experience Platform, consulte la [Base de conocimiento de Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) para obtener sugerencias sobre solución de problemas.
 
 #### Descripciones de campos
 
@@ -249,7 +233,7 @@ Aunque Commerce ya recopila los datos del historial de pedidos, debe completar v
 
 Vea este vídeo para obtener más información sobre los pedidos históricos y, a continuación, complete los siguientes pasos para implementar la recopilación de pedidos históricos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3450230?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 #### Configuración del servicio de sincronización de pedidos
 
@@ -257,7 +241,7 @@ El servicio de sincronización de pedidos usa [Message Queue Framework](https://
 
 1. Asegúrese de que ha [proporcionado](#add-service-account-and-credential-details) detalles de cuenta de servicio y credenciales.
 
-1. [Activar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html?lang=es) RabbitMQ.
+1. [Activar](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) RabbitMQ.
 
    >[!NOTE]
    >
@@ -274,7 +258,7 @@ El servicio de sincronización de pedidos usa [Message Queue Framework](https://
 
    >[!NOTE]
    >
-   >Consulte la [documentación de variables de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#cron_consumers_runner) para obtener más información sobre todas las opciones de configuración disponibles.
+   >Consulte la [documentación de variables de implementación](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) para obtener más información sobre todas las opciones de configuración disponibles.
 
 Con el servicio de sincronización de pedidos habilitado, puede especificar el intervalo de fechas de pedidos históricos en la página **[!UICONTROL [!DNL Data Connection]]**.
 
@@ -336,7 +320,7 @@ Más información sobre cómo [configurar atributos personalizados](custom-attri
 
 ## Confirmar que se recopilan los datos del evento {#confirm-that-event-data-is-collected}
 
-Para confirmar que se están recopilando datos de tu tienda Commerce, usa [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es) para examinar tu sitio Commerce. Después de confirmar que se están recopilando los datos, puede comprobar que los datos de evento de la tienda y del back office aparecen en el perímetro ejecutando una consulta que devuelva datos del [conjunto de datos que creó durante la configuración](overview.md#enable-extension).
+Para confirmar que se están recopilando datos de tu tienda Commerce, usa [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home) para examinar tu sitio Commerce. Después de confirmar que se están recopilando los datos, puede comprobar que los datos de evento de la tienda y del back office aparecen en el perímetro ejecutando una consulta que devuelva datos del [conjunto de datos que creó durante la configuración](overview.md#enable-extension).
 
 1. Seleccione **Consultas** en el panel de navegación izquierdo de Experience Platform y haga clic en [!UICONTROL Create Query].
 
@@ -358,7 +342,7 @@ Para confirmar que se están recopilando datos de tu tienda Commerce, usa [Adobe
 
 En este ejemplo, verá datos de evento de `commerce.productListAdds`, `commerce.productViews`, `web.webpagedetails.pageViews`, etc. Esta vista le permite comprobar que los datos de Commerce llegaron al perímetro de.
 
-Si los resultados no son los esperados, abra el conjunto de datos y busque las importaciones de lotes fallidas. Obtenga más información sobre [solución de problemas con las importaciones por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html?lang=es).
+Si los resultados no son los esperados, abra el conjunto de datos y busque las importaciones de lotes fallidas. Obtenga más información sobre [solución de problemas con las importaciones por lotes](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting).
 
 ### Verificar que los datos de perfil aparezcan en Experience Platform
 

@@ -5,20 +5,11 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +30,7 @@ Después de agregar los datos de atributo, se puede obtener acceso a ellos desde
 
 La fuente de productos incluye atributos de sistema predeterminados que son necesarios para el procesamiento del producto o que suelen utilizar los consumidores. Puede incluir atributos del sistema adicionales en la fuente de productos añadiéndolos a la fuente.
 
-Para completar esta tarea, actualice el módulo `magento/catalog-data-exporter` para agregar los atributos de sistema adicionales al [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`).
+Para completar esta tarea, actualice el módulo `magento/catalog-data-exporter` para agregar los atributos de sistema adicionales al [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`).
 
 Agregue los atributos a la consulta de atributos del producto (`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`).
 
@@ -74,7 +65,7 @@ Puede añadir un atributo de producto desde el administrador de Commerce o, medi
 
 1. Agregue el atributo a un conjunto de atributos según sea necesario.
 
-Consulte [Crear atributos de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
+Consulte [Crear atributos de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) en la *Guía de administración de Adobe Commerce*.
 
 #### Crear el atributo de producto mediante programación
 
@@ -85,7 +76,7 @@ Al definir las opciones de atributo, todos los parámetros de atributo excepto `
 - **`user_defined`=`1`**: exporta el atributo a los servicios de tienda durante la sincronización de datos
 - **`used_in_product_listing`=`1`**: permite acceder al atributo desde la consulta de base de datos de listado de productos
 
-Para obtener información sobre cómo crear parches de datos, consulte [Desarrollo de parches de datos y esquemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) en la *Guía para desarrolladores de PHP*.
+Para obtener información sobre cómo crear parches de datos, consulte [Desarrollo de parches de datos y esquemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) en la *Guía para desarrolladores de PHP*.
 
 ### Añadir el atributo de producto de forma dinámica
 
@@ -163,7 +154,7 @@ Registrar al observador en `etc/events.xml`:
 </event>
 ```
 
-Para obtener información general sobre eventos y observadores, consulte [Eventos y observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} en la documentación para desarrolladores de Adobe Commerce.
+Para obtener información general sobre eventos y observadores, consulte [Eventos y observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"} en la documentación para desarrolladores de Adobe Commerce.
 
 ## Filtrado de datos antes del envío
 

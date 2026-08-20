@@ -2,38 +2,24 @@
 title: Canalización de sincronización de catálogos
 description: Aprenda cómo funciona la canalización de sincronización  [!DNL Adobe Commerce Optimizer Connector] incluyendo la transformación de fuentes, las programaciones de cron, el control de ámbito y la gestión de errores.
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: cc250cf1-34eb-4863-80d0-d170d45ea067id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
 
 # Canalización de sincronización de conector
 
-Compilado en [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/overview), **[!DNL Adobe Commerce Optimizer Connector]** asigna los datos recopilados por los indizadores [!DNL SaaS Data Export] al formato requerido por [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] y administra la autenticación, el envío por lotes y el control de sincronización basado en el ámbito. Las secciones siguientes describen cómo funciona esa sincronización.
+Compilado en [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), **[!DNL Adobe Commerce Optimizer Connector]** asigna los datos recopilados por los indizadores [!DNL SaaS Data Export] al formato requerido por [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] y administra la autenticación, el envío por lotes y el control de sincronización basado en el ámbito. Las secciones siguientes describen cómo funciona esa sincronización.
 
 Contexto relacionado:
 
@@ -70,7 +56,7 @@ La extensión **[!DNL SaaS Data Export]** administra la colección de fuentes y 
 
 #### Requisitos
 
-- [Commerce cron debe estar ejecutándose](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- [Commerce cron debe estar ejecutándose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Los indexadores de fuente deben utilizar el modo **[!UICONTROL Update by Schedule]**. Consulte [Sincronización parcial](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Control de sincronización basado en el ámbito
@@ -93,7 +79,7 @@ Para obtener más información sobre cómo personalizar el ámbito de sincroniza
 | Errores transitorios | Se vuelve a intentar cada 5 minutos |
 | Sincronización completa para catálogos grandes | De minutos a horas |
 
-Monitorice el estado de cada fuente desde la página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el administrador de Commerce. Ver [Verificar que la sincronización de datos funcione](./data-sync-manage.md#verify-that-the-data-sync-is-working).
+Monitorice el estado de cada fuente desde la página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el administrador de Commerce. Ver [Verificar que la sincronización de datos funcione](./data-sync-manage.md#verify-that-the-data-sync-is-working).
 
 ## Envío de fuentes y gestión de errores
 

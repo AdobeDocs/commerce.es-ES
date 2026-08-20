@@ -4,29 +4,16 @@ description: Aprenda a diagnosticar y resolver el comportamiento de sincronizaci
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-subfeature_v2:
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2: id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: 983
 ht-degree: 0%
 
 ---
@@ -84,9 +71,9 @@ La solución inmediata para este problema es una solución alternativa: Configur
 1. En la tienda Commerce, abra los resultados de búsqueda. A continuación, seleccione el producto en cuestión para abrir su vista detallada.
 1. Copie la salida JSON y compruebe que coincide con lo que tiene en el catálogo [!DNL Commerce].
 1. Si el contenido no coincide, realice una edición menor del producto en el catálogo, como añadir un espacio o un punto, para forzar la detección del cambio.
-1. Espere a que se realice una resincronización o ponga en déclencheur una resincronización manual desde la CLI o la página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el administrador.
+1. Espere a que se realice una resincronización o ponga en déclencheur una resincronización manual desde la CLI o la página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el administrador.
 
-Para obtener información adicional sobre la solución de problemas de los datos del catálogo en [!DNL Product Recommendations], consulte [Solución de problemas del módulo de recomendaciones de productos](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) en la Base de conocimiento de Commerce.
+Para obtener información adicional sobre la solución de problemas de los datos del catálogo en [!DNL Product Recommendations], consulte [Solución de problemas del módulo de recomendaciones de productos](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095) en la Base de conocimiento de Commerce.
 
 ## La sincronización de datos no se está ejecutando según lo programado {#sync-not-on-schedule}
 
@@ -96,8 +83,8 @@ Para obtener información adicional sobre la solución de problemas de los datos
 
 **Solución:**
 
-- [Confirme que los trabajos cron se están ejecutando](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- Compruebe que los indizadores de las siguientes fuentes estén establecidos en **[!UICONTROL Update by Schedule]**: Atributos de catálogo, Producto, Anulaciones de producto y Variante de producto. Compruebe [[!UICONTROL Index Management]](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management) en el administrador de Commerce o use la CLI: `bin/magento indexer:show-mode | grep -i feed`.
+- [Confirme que los trabajos cron se están ejecutando](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832).
+- Compruebe que los indizadores de las siguientes fuentes estén establecidos en **[!UICONTROL Update by Schedule]**: Atributos de catálogo, Producto, Anulaciones de producto y Variante de producto. Compruebe [[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) en el administrador de Commerce o use la CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
 ## La sincronización del catálogo tiene el estado Error {#catalog-sync-failed}
 
@@ -110,7 +97,7 @@ Para obtener información adicional sobre la solución de problemas de los datos
 1. Revise los registros de errores de exportación de datos para obtener más información sobre el error. Consulte [Revisar registros y solucionar problemas](logging.md) para ver las opciones de formato de registro y registro extendido:
    - `var/log/commerce-data-export-errors.log` para detectar errores durante la recopilación de datos.
    - `var/log/saas-export-errors.log` para errores durante el envío de datos.
-1. Si el error no está relacionado con la configuración o una extensión de terceros, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con las entradas de registro relevantes.
+1. Si el error no está relacionado con la configuración o una extensión de terceros, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) con las entradas de registro relevantes.
 
 ## El registro muestra mensajes &quot;operación omitida: proceso bloqueado&quot; {#process-locked}
 

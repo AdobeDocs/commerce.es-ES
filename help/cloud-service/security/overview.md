@@ -2,31 +2,18 @@
 title: Información general de seguridad
 description: Obtenga información acerca de las funciones de seguridad de Adobe Commerce as a Cloud Service.
 role: Admin, Developer, Leader
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 autotag-review: '2026-06-18T16:18:52.695Z'
 TQID: 'https://experienceleague.adobe.com/AmkzZgLeOa9zJkPE8kWM6lFcFNtBAAOmJeULI-y4gOw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: 577
 ht-degree: 0%
 
 ---
@@ -58,7 +45,7 @@ Los comerciantes pueden optar por implementar una CDN administrada por Adobe o c
 
 La capa CDN de [!DNL API Mesh] termina TLS, ejecuta la puerta de enlace de GraphQL como Workers, proporciona almacenamiento en caché perimetral global y DDoS/WAF automático, y expone `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` como extremos de malla pública; los clientes pueden agregar su propia CDN delante, pero la CDN de [!DNL API Mesh] se corrige y administra mediante Adobe y los clientes no pueden configurar sus propias reglas de WAF.
 
-Para obtener más información sobre las características de seguridad de [!DNL API Mesh], consulte la [documentación de API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}.
+Para obtener más información sobre las características de seguridad de [!DNL API Mesh], consulte la [documentación de API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
 
 ### CDN back-end
 
@@ -87,6 +74,6 @@ La CDN y WAF integrados proporcionan protección DDoS en la capa de red y en la 
 
 Si los datos se almacenan en [!DNL App Builder], un comerciante puede consultar las [!DNL App Builder] [opciones de almacenamiento](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] aplica el aislamiento de inquilinos y el acceso a los datos almacenados en estos servicios está restringido al espacio de nombres de tiempo de ejecución en el que se ejecuta la acción. No hay cifrado de datos en el almacenamiento.
 
-Al usar [!DNL API Mesh], los secretos deben almacenarse en el archivo `secrets.yaml` de la configuración de mesh. [!DNL API Mesh] cifra estos secretos usando el cifrado AES-256 ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
+Al usar [!DNL API Mesh], los secretos deben almacenarse en el archivo `secrets.yaml` de la configuración de mesh. [!DNL API Mesh] cifra estos secretos usando el cifrado AES-256 (consulte la [documentación de API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}).
 
 Cualquier dato almacenado en [!DNL Adobe Commerce as a Cloud Service] se cifra en reposo usando el cifrado AES de 256 bits y todos los datos se cifran a través de HTTPS usando TLS 1.2 o superior en tránsito.

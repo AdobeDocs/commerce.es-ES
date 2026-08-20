@@ -2,9 +2,9 @@
 title: Límites y límites
 description: Conozca los límites y limitaciones de [!DNL Product Recommendations] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
-source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Revise los límites y limitaciones siguientes para asegurarse de que [!DNL Produ
 
 - **Tipos de productos** - Los tipos de productos admitidos son _simples_, _configurables_, _virtuales_, _descargables_ y _tarjetas regalo_. No se admiten los tipos de producto _Paquete_, _agrupado_ y personalizado. Si el catálogo contiene un gran número de tipos de productos no compatibles, recibirá una baja [puntuación de preparación](create.md#readiness-indicators). Ver [Filtrar por tipo de producto](filters.md#type).
 - **SKU con espacios**: las SKU que contienen espacios pueden reducir la relevancia de las recomendaciones y se deben evitar cuando sea posible.
-- **Página del carro de compras**: las recomendaciones de productos no se admiten en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Ver [Crear recomendaciones](create.md).
+- **Página del carro de compras**: las recomendaciones de productos no se admiten en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Ver [Crear recomendaciones](create.md).
 - **Productos secundarios**: los productos secundarios de un producto configurable (visibilidad _No visible de forma individual_) no se muestran en una unidad de recomendación. Solo puede aparecer el producto configurable (principal). Ver [Filtrar productos](filters.md#product).
 - **Productos deshabilitados o no visibles**: los productos deshabilitados o no visibles individualmente nunca aparecerán en las recomendaciones y no se podrán seleccionar en los filtros de productos.
-- **Precios especiales** - [Los precios especiales](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/pricing/product-price-special) con fechas de inicio y finalización no son compatibles con las unidades de recomendación. Un producto con un precio especial puede aparecer en las recomendaciones, pero la unidad no muestra el precio especial, la fecha de inicio ni la fecha de finalización. Los compradores ven el precio normal (u otros datos de precios proporcionados por su catálogo/fuente de precios) hasta que abren la página del producto.
+- **Precios especiales** - [Los precios especiales](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) con fechas de inicio y finalización no son compatibles con las unidades de recomendación. Un producto con un precio especial puede aparecer en las recomendaciones, pero la unidad no muestra el precio especial, la fecha de inicio ni la fecha de finalización. Los compradores ven el precio normal (u otros datos de precios proporcionados por su catálogo/fuente de precios) hasta que abren la página del producto.
 
 ## Unidades de recomendación
 
@@ -54,7 +54,7 @@ Revise los límites y limitaciones siguientes para asegurarse de que [!DNL Produ
 
 ## B2B
 
-- Product Recommendations respeta [los permisos de categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html), [los catálogos compartidos](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) y los precios específicos de grupos de clientes. Los compradores solo ven recomendaciones de productos a los que pueden acceder según su asignación de segmento y catálogo. Consulte [Incorporación](onboarding.md).
+- Product Recommendations respeta [los permisos de categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions), [los catálogos compartidos](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) y los precios específicos de grupos de clientes. Los compradores solo ven recomendaciones de productos a los que pueden acceder según su asignación de segmento y catálogo. Consulte [Incorporación](onboarding.md).
 
 ## Datos y preparación
 
@@ -63,4 +63,4 @@ Revise los límites y limitaciones siguientes para asegurarse de que [!DNL Produ
 
 ## Resolución de problemas
 
-Para obtener ayuda con la sincronización del catálogo, recomendaciones que no se muestran u otros problemas comunes, busca en [Commerce Knowledge Base](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview) o ponte en contacto con el [servicio de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para obtener ayuda con la sincronización del catálogo, recomendaciones que no se muestran u otros problemas comunes, busca en [Commerce Knowledge Base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) o ponte en contacto con el [servicio de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
