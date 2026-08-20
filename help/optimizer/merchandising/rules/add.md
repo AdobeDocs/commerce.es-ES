@@ -1,24 +1,16 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización para búsquedas, listados de productos predeterminados y páginas de categorías.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 3ee9822b069504343f69f5b1dd36713e7dcbf3d8
 workflow-type: tm+mt
-source-wordcount: 3074
+source-wordcount: 3378
 ht-degree: 0%
 
 ---
@@ -42,7 +34,7 @@ Cada tipo de regla tiene un icono de información en el editor con una breve exp
 
 | Tipo de regla | Finalidad |
 | --- | --- |
-| **Regla de todos los productos** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
+| **Todos los listados de productos** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
 | **Regla de categoría** | Aplica la comercialización y la clasificación a una o varias categorías seleccionadas y controla el orden de los productos en esas páginas de categorías. |
 | **Regla de búsqueda** | Aplica la comercialización y la clasificación cuando los compradores ejecutan una búsqueda que coincide con las condiciones de consulta de la regla. |
 
@@ -102,13 +94,32 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
 
 Las reglas de categoría controlan cómo se ordenan los productos en **páginas de categoría**. Combinas **reglas de categoría** con **clasificación inteligente** (incluidas las señales controladas por IA) y **acciones manuales** como fijar, impulsar y enterrar, para que puedas revisar la detección, ejecutar promociones y alinear las páginas de categoría con tu estrategia sin depender de herramientas externas.
 
-1. En **Categorías**, seleccione la categoría o categorías a las que se debe aplicar la regla. Las categorías seleccionadas aparecen debajo del control para que pueda confirmar el ámbito.
-1. En la lista de categorías que aparecen, puede hacer clic en los tres puntos y seleccionar lo siguiente:
+**Seleccionar categorías**
+
+En **Categorías**, seleccione una o más categorías a las que se debe aplicar la regla. Las categorías seleccionadas aparecen debajo del control para que pueda confirmar el ámbito. Seleccione las categorías de cualquiera de las siguientes maneras:
+
+- **Examinar el árbol de categorías**: expanda una categoría para cargar sus categorías secundarias inmediatas. Para ir a un nivel más profundo, expanda la categoría secundaria. El árbol carga un nivel a la vez.
+- **Buscar por nombre de categoría** - Escriba un nombre de categoría en el campo **Buscar y seleccionar categorías**. Los resultados de búsqueda incluyen nombres de categoría coincidentes de todo el catálogo, incluidas las categorías fuera de la rama expandida actualmente. La búsqueda no coincide con el texto de ruta de categoría.
+
+Cuando varias categorías tengan nombres similares, utilice la ruta de acceso a la categoría mostrada con cada resultado (por ejemplo, `brakes/aurora`) para seleccionar la categoría correcta.
+
+>[!NOTE]
+>
+>Al expandir una categoría, solo se cargan sus categorías secundarias para su exploración. No selecciona la categoría ni aplica la regla a sus subcategorías. Seleccione una categoría para añadirla a la regla. Para aplicar la regla a las subcategorías de una categoría, use **Aplicar a las subcategorías** del menú de acción de la categoría, que se describe a continuación.
+
+>[!TIP]
+>
+>Si una categoría secundaria no está visible, expanda su categoría principal para cargar el siguiente nivel. Si conoce el nombre de la categoría, utilice el campo de búsqueda en lugar de navegar por el árbol. Esto resulta útil para catálogos grandes, ya que los niveles de categoría se cargan bajo demanda.
+
+1. En la lista de categorías seleccionadas, haga clic en los tres puntos junto a una categoría y seleccione:
 
    - **Eliminar** - Elimina la categoría de la regla.
    - **Aplicar a subcategorías**: aplica la regla a subcategorías que aún no tienen definida una regla de comercialización activa.
    - **Vista previa**: muestra cómo aparecería la página de la categoría en tu tienda.
 
+   ![Menú de acción de categoría](../../assets/category-action-menu.png)
+
+1. Verifique la ruta de categoría mostrada para cada categoría seleccionada para confirmar que seleccionó la correcta.
 1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las reglas de búsqueda, con cualquier diferencia destacada.
 
 >[!ENDTABS]
@@ -165,8 +176,8 @@ Para **resultados de búsqueda** (y la consulta de prueba en el editor de reglas
 
 - **Relevancia textual**: El factor dominante en la puntuación. Esto mide en qué medida coinciden el nombre, la descripción y los atributos de un producto con la consulta de búsqueda. La puntuación de relevancia del texto es ilimitada (no tiene un límite superior específico) y se ve afectada por factores como:
 
-   - Frecuencia de aparición de palabras coincidentes.
-   - Longitud (en palabras) de los nombres y descripciones de los productos.
+  - Frecuencia de aparición de palabras coincidentes.
+  - Longitud (en palabras) de los nombres y descripciones de los productos.
 
 - **Señales de comportamiento**: un aumento limitado aplicado sobre la puntuación de relevancia de texto. Al seleccionar una estrategia de clasificación inteligente como &quot;Más visitados&quot; o &quot;Más comprados&quot;, los productos con señales de comportamiento más altas reciben un peso relativo mayor. La fuerza de ese peso está controlada por **[!UICONTROL Intelligent Ranking Boost]** (consulte [Aumento de clasificación inteligente](#intelligent-ranking-boost)); el aumento permanece limitado, pero puede aumentar la cantidad que cambia de orden.
 
