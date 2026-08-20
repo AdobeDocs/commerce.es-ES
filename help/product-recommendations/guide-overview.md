@@ -43,12 +43,12 @@ Esta guía no cubre las funciones principales de Adobe Commerce y Magento Open S
 
 | Guía | Descripción |
 |------ | ----------- |
-| [Guía del usuario de Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Documentación centrada en el comerciante para Adobe Commerce y Magento Open Source |
+| [Guía del usuario de Adobe Commerce 2.4](https://experienceleague.adobe.com/es/docs/commerce-admin/user-guides/home) | Documentación centrada en el comerciante para Adobe Commerce y Magento Open Source |
 | [Guía para desarrolladores de Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentación centrada en el desarrollador que se utiliza para crear y personalizar Adobe Commerce o Magento Open Source |
 
 ## Asistencia
 
 Si necesita información o tiene preguntas que no se tratan en esta guía, utilice los siguientes recursos:
 
-* [Centro de ayuda](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"}: consulte los artículos de solución de problemas relacionados con [!DNL Product Recommendations].
-* [Entradas de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"}: envía un ticket para recibir ayuda adicional.
+* [Centro de ayuda](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"}: consulte los artículos de solución de problemas relacionados con [!DNL Product Recommendations].
+* [Entradas de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"}: envía un ticket para recibir ayuda adicional.

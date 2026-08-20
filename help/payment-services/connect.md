@@ -3,7 +3,7 @@ title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: '698'
@@ -20,7 +20,7 @@ La instancia de Commerce se conecta mediante una clave de API y una clave privad
 
 >[!INFO]
 >
-> Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obtener más información.
+> Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obtener más información.
 
 * Si ya ha conectado *su instancia*, al obtener y utilizar sus credenciales de la API y configurar los servicios de Commerce, puede continuar con [la configuración de su zona protegida de pruebas](sandbox.md).
 * Si todavía *necesita conectar su instancia*, vea la información en este tema sobre [obtención de credenciales de API](#obtain-api-credentials) y [configuración de los servicios de Commerce](#configure-commerce-services).
@@ -32,11 +32,11 @@ La instancia de Commerce se conecta mediante una clave de API y una clave privad
 
 ## Obtener credenciales de API
 
-Para consumir un servicio SaaS de Commerce, debe usar las claves de API de su instancia (clave de API pública de Commerce y clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Panel de Mi cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) se puede crear para una cuenta de Commerce (una para zona protegida y otra para producción), aunque solo se puede usar activamente un par a la vez.
+Para consumir un servicio SaaS de Commerce, debe usar las claves de API de su instancia (clave de API pública de Commerce y clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Panel de Mi cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas) se puede crear para una cuenta de Commerce (una para zona protegida y otra para producción), aunque solo se puede usar activamente un par a la vez.
 
 >[!NOTE]
 >
->¿Necesita ayuda para acceder a su panel de [!UICONTROL My Account]? Consulte [Crear una cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
+>¿Necesita ayuda para acceder a su panel de [!UICONTROL My Account]? Consulte [Crear una cuenta de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Una vez creada, siempre encontrará una clave de API pública en el panel de Mi cuenta. Se puede copiar o eliminar según sea necesario. La clave de API privada se vuelve visible al crear una clave de API pública para simulación de pruebas o producción; solo está disponible para copiarla o guardarla en el cuadro de diálogo siguiente y no se puede acceder a ella posteriormente.
 
@@ -73,7 +73,7 @@ Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el e
 
    >[!INFO]
    >
-   > Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) para obtener más información.
+   > Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) para obtener más información.
 
 ## Extremo
 

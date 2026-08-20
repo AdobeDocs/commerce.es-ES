@@ -5,7 +5,7 @@ user-guide-description: Esta guía proporciona instrucciones detalladas para usa
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: '154'
@@ -39,4 +39,4 @@ ht-degree: 1%
 - Casos de uso {#use-cases}
   - [Usar Adobe Journey Optimizer para enviar un correo electrónico de carro de compras abandonado](using-ajo.md)
   - [Crear una audiencia en Real-Time CDP mediante datos de evento de Commerce](create-audience.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)

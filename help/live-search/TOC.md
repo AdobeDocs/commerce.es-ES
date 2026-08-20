@@ -50,4 +50,4 @@ ht-degree: 7%
   - [Configuración](settings.md)
   - [Búsqueda semántica](semantic-search.md)
 - [Guía para desarrolladores](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)

@@ -48,7 +48,7 @@ Si utiliza una tienda sin encabezado, consulte la siguiente documentación para 
 
 ## Establecer el ámbito
 
-Inicialmente, el [ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) de toda la configuración de recomendaciones está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) donde se aplican las recomendaciones.
+Inicialmente, el [ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views) de toda la configuración de recomendaciones está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) donde se aplican las recomendaciones.
 
 ## Definir intervalo de fechas de métricas
 

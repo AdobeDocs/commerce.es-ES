@@ -24,7 +24,7 @@ ht-degree: 0%
 
 # Controlar restricciones de cookies
 
-Tanto Adobe Commerce como Magento Open Source solicitan consentimiento antes de almacenar los datos en las cookies del explorador. Para obtener más información, consulte [Modo de restricción de cookies](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law).
+Tanto Adobe Commerce como Magento Open Source solicitan consentimiento antes de almacenar los datos en las cookies del explorador. Para obtener más información, consulte [Modo de restricción de cookies](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law).
 
 ## Cómo gestionan las recomendaciones de productos las restricciones de cookies
 

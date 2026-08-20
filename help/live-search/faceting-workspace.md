@@ -26,7 +26,7 @@ El área de trabajo *Faceting* enumera todas las facetas que están disponibles 
 
 ## Establecer el ámbito
 
-Si la instalación de Adobe Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) donde se aplique la configuración de faceta.
+Si la instalación de Adobe Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) donde se aplique la configuración de faceta.
 
 ## Filtrado de la lista
 

@@ -29,8 +29,8 @@ En este tema, API Mesh se utiliza para mostrar los precios de los productos en u
 
 Debe tener los impuestos configurados para que se muestren en la página Detalles del producto.
 
-1. [Configurar tasas de impuestos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
-1. Habilite que los impuestos se [muestren en el catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) y configúrelo en `Including and Excluding Tax` o `Including Tax`.
+1. [Configurar tasas de impuestos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
+1. Habilite que los impuestos se [muestren en el catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) y configúrelo en `Including and Excluding Tax` o `Including Tax`.
 
 Compruebe que el servicio de catálogo funciona en la página de detalles del producto.
 

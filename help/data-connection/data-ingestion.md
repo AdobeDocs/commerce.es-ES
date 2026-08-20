@@ -23,7 +23,7 @@ ht-degree: 0%
 
 La [extensión de conexión de datos](overview.md) conecta los datos de Commerce con Experience Platform. Los datos que se van a usar en Experience Platform se agrupan en dos tipos de comportamiento: datos de series temporales, que pertenecen a la clase **Experience Event**, y datos de registros, que pertenecen a la clase **Individual Profile**.
 
-Obtenga más información acerca de [comportamiento de los datos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors) y [clases](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class) en Experience Platform.
+Obtenga más información acerca de [comportamiento de los datos](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/schema/composition#data-behaviors) y [clases](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/schema/composition#class) en Experience Platform.
 
 ## Datos de series temporales
 
@@ -39,7 +39,7 @@ Aprenda a [crear un esquema](update-xdm.md) que pueda ingerir datos de eventos d
 
 ## Registrar datos
 
-Los datos de registro proporcionan información sobre los atributos de un asunto. Un sujeto podría ser una organización o un individuo. Por ejemplo, un comprador del sitio crea una cuenta de y que genera datos de registro. Estos datos se incorporan en Experience Platform mediante un esquema que tiene la clase establecida en **Perfil individual**. Puede enviar esos datos de registro al servicio de segmentación y administración de perfiles de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
+Los datos de registro proporcionan información sobre los atributos de un asunto. Un sujeto podría ser una organización o un individuo. Por ejemplo, un comprador del sitio crea una cuenta de y que genera datos de registro. Estos datos se incorporan en Experience Platform mediante un esquema que tiene la clase establecida en **Perfil individual**. Puede enviar esos datos de registro al servicio de segmentación y administración de perfiles de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/es/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Datos de registro de perfil capturados
 
