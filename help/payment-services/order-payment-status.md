@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2255'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Habilitar supervisión asincrónica: [!BADGE Solo PaaS]{type=Informative tooltip
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. Habilite y programe el trabajo cron `sync_order_payment_status` para que las actualizaciones de estado se recuperen automáticamente. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=es).
+1. Habilite y programe el trabajo cron `sync_order_payment_status` para que las actualizaciones de estado se recuperen automáticamente. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 Una vez que la configuración y el trabajo cron están habilitados, el trabajo cron se ejecuta cada 10 minutos para obtener actualizaciones para pedidos en estado `Payment Review`. Después de la configuración, no se requiere ninguna acción comercial adicional bajo el funcionamiento normal.
 

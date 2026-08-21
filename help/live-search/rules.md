@@ -9,9 +9,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 695
+source-wordcount: 697
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ Las solicitudes realizadas en el Administrador funcionan de forma ligeramente di
 ## Asignaciones de productos de comercialización y categorías
 
 [!DNL Live Search] le permite filtrar por categorías. Consulte [Comercialización por categorías](category-merch.md) para obtener más información.
-Sin embargo, en Adobe Commerce puede crear una categoría virtual con [asignaciones de productos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=es). Este tipo de categoría se crea durante la ejecución y no existe en la base de datos de categorías. Por lo tanto, [!DNL Live Search] no puede leer ni utilizar este tipo de categoría.
+Sin embargo, en Adobe Commerce puede crear una categoría virtual con [asignaciones de productos de categoría](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments). Este tipo de categoría se crea durante la ejecución y no existe en la base de datos de categorías. Por lo tanto, [!DNL Live Search] no puede leer ni utilizar este tipo de categoría.

@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e03840ea9e0e43a005f385914e8599804383e79d
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 3305
+source-wordcount: 3302
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Este flujo de trabajo compartido consolida el descubrimiento, alinea los equipos
   >
   >[Modelo de responsabilidad compartida](https://experienceleague.adobe.com/es/docs/commerce-operations/security-and-compliance/shared-responsibility) para servicios (MySQL, Elasticsearch y otros).
 
-- [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} **SaaS (Nuevo - [!DNL Adobe Commerce as a Cloud Service])**: Adobe administra completamente la aplicación, la infraestructura y las actualizaciones principales. Los comerciantes se centran en la personalización a través de puntos de extensibilidad (API, App Builder, SDK de IU). Código de la aplicación principal bloqueado.
+- [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} **SaaS (Nuevo — [!DNL Adobe Commerce as a Cloud Service])**: Adobe administra completamente la aplicación, la infraestructura y las actualizaciones principales. Los comerciantes se centran en la personalización a través de puntos de extensibilidad (API, App Builder, SDK de IU). Código de la aplicación principal bloqueado.
 
 **Implicaciones arquitectónicas**
 
@@ -118,7 +118,7 @@ Cada uno de los flujos de trabajo siguientes tiene su propia herramienta. Utilí
 | [Modernización de aplicaciones y tiendas](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | Modernización asistida por IA de la aplicación Commerce, que acelera la migración de las personalizaciones a [!DNL App Builder], admite la transformación de tiendas a Edge Delivery Services (EDS) y guía a los desarrolladores a través del recorrido más amplio de modernización de aplicaciones con implementación revisada y validada por equipos de ingeniería. |
 | [Migración de datos](#data-migration-commerce-data-migration-service) | **Servicio de migración de datos de Commerce** | Extracción, carga y verificación de integridad de datos de catálogo, cliente y pedido en [!DNL Adobe Commerce as a Cloud Service]. |
 
-Estas pistas no son independientes. Utilícelos juntos en el orden correcto para minimizar las modificaciones.
+Estas pistas no son independientes. El uso conjunto en el orden correcto minimiza la reutilización.
 
 - **Ejecute primero la evaluación**: al ejecutar primero la evaluación se identifican las personalizaciones no admitidas, se estima el esfuerzo de migración, se exponen las consideraciones sobre la migración de datos y se resaltan las dependencias de la integración antes de que comience la implementación. La evaluación se convierte en el modelo de migración utilizado por los flujos de trabajo de modernización de aplicaciones y migración de datos.
 - **Modernización de aplicaciones**: el MCP para desarrolladores de Commerce usa la evaluación de migración para determinar qué personalizaciones modernizar y cómo hacerlo. A continuación, el MCP genera las [!DNL App Builder] aplicaciones y componentes de tienda correspondientes.
@@ -169,7 +169,7 @@ La evaluación no es sólo un punto de partida. La herramienta de migración des
 
 ### Ámbito de evaluación
 
-La herramienta de evaluación de la migración se centra en comprender el panorama completo de la migración. Analiza módulos personalizados, complementos, eventos, API, trabajos cron, colas, integraciones con sistemas externos, características de tienda y el esquema de base de datos del que dependen esas personalizaciones. La evaluación asigna lo que detecta a las capacidades disponibles de [!DNL Adobe Commerce as a Cloud Service] e identifica dónde se debe modernizar la funcionalidad mediante [!DNL App Builder] o rediseñarla para la arquitectura SaaS.
+La herramienta de evaluación de la migración se centra en comprender el panorama completo de la migración. Analiza módulos personalizados, complementos, eventos, API, trabajos cron, colas, integraciones con sistemas externos, características de tienda y el esquema de base de datos del que dependen esas personalizaciones. La evaluación asigna lo que detecta a las capacidades disponibles de [!DNL Adobe Commerce as a Cloud Service] e identifica dónde debe rediseñar para la arquitectura SaaS o modernizar la funcionalidad mediante [!DNL App Builder].
 
 La evaluación es más una herramienta de planificación que de ejecución. Identifica lo que debe modernizarse, estima la complejidad de la implementación y proporciona recomendaciones. Las decisiones de implementación y la validación de arquitectura siguen siendo actividades de colaboración entre Adobe, socios y equipos de ingeniería de clientes.
 
@@ -184,7 +184,7 @@ También puede volver a ejecutar las evaluaciones a medida que evolucionen las a
 
 ### Pasos siguientes
 
-Cada migración de [!DNL Adobe Commerce as a Cloud Service] debe comenzar con una evaluación. Es una forma económica de establecer el ámbito, reducir la incertidumbre y crear un modelo de migración compartida antes de que comience la implementación.
+Cada migración de [!DNL Adobe Commerce as a Cloud Service] comienza con una evaluación. Es una forma rentable de establecer el ámbito, reducir la incertidumbre y crear un modelo de migración compartida antes de que comience la implementación.
 
 Para obtener más información sobre las herramientas de evaluación y el flujo de trabajo para desarrolladores descendente, consulte [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/).
 
@@ -263,7 +263,7 @@ Para obtener más información sobre cómo instalar y usar el MCP, consulte la [
 
 ## Migración de datos (servicio de migración de datos de Commerce)
 
-La migración a [!DNL Adobe Commerce as a Cloud Service] puede requerir la migración de años de datos, que incluyen: catálogos, pedidos, clientes y configuración.
+La migración a [!DNL Adobe Commerce as a Cloud Service] requiere migrar años de datos, incluidos catálogos, pedidos, clientes y configuración.
 
 El servicio de migración de datos de Commerce sustituye a la migración manual por un proceso único, repetible y automatizado. Hace que las migraciones de bases de datos complejas sean más predecibles y eficientes.
 

@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1461
+source-wordcount: 1456
 ht-degree: 0%
 
 ---
@@ -98,13 +98,13 @@ Este diagrama ilustra el flujo de datos entre [!DNL Adobe Commerce as a Cloud Se
 
 Para crear experiencias enriquecidas en minutos con la creación simple basada en documentos o la edición visual con [!DNL Storefront Builder], usa [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) de Adobe con tecnología [!DNL Edge Delivery Services].
 
-[!DNL Commerce Storefront] no tiene encabezado con una arquitectura disociada que proporciona todos los datos y servicios de comercialización a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
+[!DNL Commerce Storefront] carece totalmente de encabezado con una arquitectura disociada que proporciona todos los servicios y datos de Adobe Merchandising a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] no admite tiendas Luma. Si está migrando desde Adobe Commerce en la nube o de forma local, consulte [escaparates existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=es#existing-storefronts) para obtener instrucciones sobre la transición.
+>[!DNL Adobe Commerce as a Cloud Service] no admite tiendas Luma. Si está migrando desde [!DNL Adobe Commerce on Cloud] o local, consulte [escaparates existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=es#existing-storefronts) para obtener instrucciones sobre la transición.
 
-## Servicios de comercialización y servicios de pago
+## Servicios de Adobe Merchandising y servicios de pago
 
 Adobe proporciona un completo conjunto de servicios de comercialización inteligentes y componibles para ayudarle a lograr sus objetivos comerciales clave. Estos servicios también proporcionan API esenciales para optimizar el rendimiento a escala.
 
@@ -116,7 +116,7 @@ Adobe proporciona un completo conjunto de servicios de comercialización intelig
   >
   >El servicio de catálogo se incluye automáticamente con [!DNL Live Search] y [!DNL Product Recommendations].
 
-- [Servicios de pago](../payment-services/guide-overview.md): Mejore la satisfacción del cliente ofreciendo varios métodos de pago, incluidos pagos a plazos sin intereses, y una sola vista del procesamiento de pagos, pedidos y facturas. Para obtener instrucciones de configuración, consulte [Página principal de servicios de pago](../payment-services/payments-home.md).
+- [Servicios de pago](../payment-services/guide-overview.md): Mejore la satisfacción del cliente ofreciendo varios métodos de pago, incluidos pagos a plazos sin intereses, y una sola vista del procesamiento, los pedidos y las facturas. Para obtener instrucciones de configuración, consulte [Página principal de servicios de pago](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -224,7 +224,7 @@ El proceso de actualización típico de Adobe Commerce en la nube implicaba la c
 
 >[!NOTE]
 >
->Adobe garantiza la compatibilidad con versiones anteriores de todas las actualizaciones. Esto significa que, cuando se aplican actualizaciones, no se rompen la funcionalidad o las personalizaciones existentes que se adhieren al modelo de extensibilidad [API-First](https://developer.adobe.com/commerce/extensibility/).
+>Adobe garantiza la compatibilidad con versiones anteriores de todas las actualizaciones. Esto significa que, cuando se aplican actualizaciones, no rompen la funcionalidad ni las personalizaciones existentes que se adhieren al modelo de extensibilidad [API-First](https://developer.adobe.com/commerce/extensibility/).
 
 ### Integraciones de terceros
 
@@ -245,13 +245,13 @@ Las secciones siguientes proporcionan información sobre los beneficios que [!DN
 ### Líderes empresariales
 
 - **Aumentar los ingresos**: Impulse el tráfico orgánico con una tienda de alto rendimiento que impulse el SEO. Cree experiencias personalizadas que impulsen la conversión mediante datos enriquecidos.
-- **Escalar operaciones**: Los servicios de escalado automático satisfacen las demandas máximas de su empresa con una disponibilidad del 99,9%. Despliegue varias marcas y regiones y admita B2B y B2C desde una sola instancia. Admitir catálogos de productos grandes y complejos con modelado de datos flexible.
+- **Escalar operaciones**: Los servicios de escalado automático satisfacen las demandas máximas de su empresa con una disponibilidad del 99,9%. Despliegue varias marcas y regiones y soporte B2B y B2C desde una sola instancia. Admitir catálogos de productos grandes y complejos con modelado de datos flexible.
 - **Aumentar la productividad de los comerciantes**: use los servicios de comercialización con tecnología de IA para mejorar la conversión. Experimente de forma nativa, directamente en la tienda. Administre la experiencia de la tienda para crear experiencias enriquecidas en minutos con la creación sencilla basada en documentos o un editor visual.
-- **Reducción del coste total de propiedad (TCO) y aceleración de la innovación**: Los servicios siempre actualizados le proporcionan acceso inmediato a las nuevas funciones. Active nuevas funcionalidades instalando fácilmente aplicaciones desde el mercado. Libere recursos del tedioso mantenimiento para centrarse en la creación de nuevas funciones.
+- **Reducción del coste total de propiedad (TCO) y aceleración de la innovación**: Los servicios siempre actualizados le proporcionan acceso inmediato a las nuevas funciones. Active nuevas funcionalidades instalando fácilmente aplicaciones desde el mercado. Reasigne recursos del mantenimiento rutinario para centrarse en la creación de nuevas funciones.
 
 ### Líderes en tecnología de la información (TI)
 
 - **Aprovisionamiento rápido**: Empiece rápidamente con el aprovisionamiento de autoservicio en minutos. Todos los servicios están preconfigurados para funcionar juntos sin problemas para comenzar más rápido. Aprovisionar zonas protegidas para la experimentación del desarrollador según sea necesario.
 - **Bajo costo de propiedad**: No más actualizaciones con servicios siempre actualizados. Manténgase seguro y cumpla con los parches de seguridad más recientes aplicados automáticamente. Escalar automáticamente para satisfacer las cargas de trabajo más exigentes.
 - **Tienda de alto rendimiento**: crea experiencias enriquecidas en minutos con la creación simple basada en documentos o un editor visual. Utilice servicios de comercialización con tecnología de IA para mejorar la conversión. Experimentación nativa integrada en la tienda.
-- **Innovación más rápida**: Libere recursos de un mantenimiento tedioso para centrarse en crear nuevas capacidades que ofrezcan valor empresarial. Utilice tecnologías completas basadas en estándares y extensibilidad (JavaScript, HTML, CSS y herramientas de código bajo) para crear experiencias diferenciadas. Instale aplicaciones de terceros con un clic para agregar nuevas funciones a su plataforma de comercio.
+- **Innovación más rápida**: reasigne recursos del mantenimiento de rutina para centrarse en crear nuevas capacidades que ofrezcan valor empresarial. Utilice tecnologías completas basadas en estándares y extensibilidad (JavaScript, HTML, CSS y herramientas de código bajo) para crear experiencias diferenciadas. Instale aplicaciones de terceros con un clic para agregar nuevas funciones a su plataforma de comercio.

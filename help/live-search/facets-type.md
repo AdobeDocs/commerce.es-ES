@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ En el momento de la consulta, [!DNL Live Search] genera los resultados de la bú
 
 El adaptador de búsqueda procesa las facetas representadas para la tienda [!DNL Commerce], que enruta las solicitudes y procesa los resultados en la tienda. Todas las facetas de tienda de [!DNL Commerce] se ordenan alfabéticamente con opciones de selección única, independientemente del tipo de entrada asignado al atributo correspondiente. Las facetas disponibles en la tienda se procesan según la temática actual y reflejan las personalizaciones realizadas en la presentación de la navegación por capas.
 
-Por el contrario, las implementaciones de [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) son procesadas por la API y admiten opciones adicionales. Las facetas sin encabezado se pueden ordenar alfabéticamente o por recuento, y pueden tener opciones de selección única o múltiple.
+Por el contrario, las implementaciones de [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api) son procesadas por la API y admiten opciones adicionales. Las facetas sin encabezado se pueden ordenar alfabéticamente o por recuento, y pueden tener opciones de selección única o múltiple.
 
 ### Etiquetas de faceta
 
-Para las tiendas de [!DNL Commerce], la etiqueta de faceta está determinada por las [*propiedades de atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=es). En tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [espacio de trabajo de facetas](faceting-workspace.md).
+Para las tiendas de [!DNL Commerce], la etiqueta de faceta está determinada por las [*propiedades de atributo*](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create). En tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [espacio de trabajo de facetas](faceting-workspace.md).
 
 ### Tipo de orden
 

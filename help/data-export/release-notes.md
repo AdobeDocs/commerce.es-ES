@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 0c38384dc0b8c9c964402cd3d363ff784d7a0cf5
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 3270
+source-wordcount: 3271
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ _24 de noviembre de 2025_
 
 _22 de octubre de 2025_
 
-![Nuevo](../assets/new.svg) agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de [!DNL Adobe Commerce] a servicios conectados ([!DNL Catalog Service], [!DNL Live Search] y [!DNL Product Recommendations]). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=es) en la *Guía de administración de Commerce*. <!--MDEE-954-->
+![Nuevo](../assets/new.svg) agregó compatibilidad con la extensión de estado de sincronización de fuentes de datos para supervisar y solucionar problemas de transferencias de datos de [!DNL Adobe Commerce] a servicios conectados ([!DNL Catalog Service], [!DNL Live Search] y [!DNL Product Recommendations]). Para obtener más información sobre cómo instalar y usar esta extensión, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en la *Guía de administración de Commerce*. <!--MDEE-954-->
 
 ### Versión 103.4.14
 

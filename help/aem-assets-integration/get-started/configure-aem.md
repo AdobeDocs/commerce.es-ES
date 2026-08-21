@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1741
+source-wordcount: 1744
 ht-degree: 1%
 
 ---
@@ -146,12 +146,12 @@ Para implementar el código del paquete `assets-commerce` en el entorno de AEM d
 
 * Título: Habilite la API de apertura de Dynamic Media para integrar Adobe Commerce completamente con los AEM Assets
 
-   * Contenido del ticket de asistencia:
+  * Contenido del ticket de asistencia:
 
-      * **[!UICONTROL AEM Program ID]**
-      * **[!UICONTROL Adobe Commerce URL]**
-      * **[!UICONTROL AEM Environment ID]**
-      * **[!UICONTROL IMS Org ID]**
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]**
 
 Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacidades de OpenAPI en su entorno de Cloud Services y comparte los detalles, como el ID de cliente de IMS, para que pueda continuar con la integración.
 
@@ -209,7 +209,7 @@ Si la pestaña **Commerce** no aparece en las propiedades, debe completar manual
 
 1. Arrastre y suelte un componente **checkbox** en la ficha **Commerce** y asígnelo a la propiedad `commerce:isCommerce`. Defina **Yes** y **No** como las opciones.
 
-Si tiene algún otro problema, cree un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) o póngase en contacto con su representante de ventas de integración de AEM Assets para obtener ayuda.
+Si tiene algún otro problema, cree un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) o póngase en contacto con su representante de ventas de integración de AEM Assets para obtener ayuda.
 
 ## Configuración de un perfil de metadatos (opcional)
 

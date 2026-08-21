@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1395
+source-wordcount: 1404
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Este caso de uso en particular se centra en la creación de un correo electróni
 
 ### ¿Qué es Adobe Journey Optimizer?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=es) le ayuda a personalizar la experiencia comercial de sus compradores. Por ejemplo, puede utilizar Journey Optimizer para crear y enviar campañas de marketing programadas, como promociones semanales de una tienda minorista, o generar un correo electrónico de carro de compras abandonado si un cliente agregó un producto a un carro de compras pero luego no completó el proceso de cierre de compra.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/get-started/essentials/get-started) le ayuda a personalizar la experiencia comercial de sus compradores. Por ejemplo, puede utilizar Journey Optimizer para crear y enviar campañas de marketing programadas, como promociones semanales de una tienda minorista, o generar un correo electrónico de carro de compras abandonado si un cliente agregó un producto a un carro de compras pero luego no completó el proceso de cierre de compra.
 
 En este tema, aprenderá a generar un correo electrónico de carro de compras abandonado al escuchar un evento `checkout` generado desde la instancia [!DNL Commerce] y al responder a ese evento en Journey Optimizer.
 
@@ -96,7 +96,7 @@ Cree un usuario en el entorno de zona protegida y confirme que la información d
 
 En su entorno de espacio aislado [!DNL Commerce], déclencheur eventos en su tienda mediante la visualización de páginas de productos, la adición de elementos a un carro de compras y la realización de otras actividades que realizaría un comprador. A continuación, confirme que estos eventos fluyen a Journey Optimizer.
 
-1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=es).
+1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 1. Seleccione **[!UICONTROL Profiles]**.
 1. Establezca **[!UICONTROL Identity namespace]** en `Email`.
 1. Establezca **[!UICONTROL Identity value]** en su dirección de correo electrónico.
@@ -125,7 +125,7 @@ Configure dos eventos en Journey Optimizer: un evento escucha el evento `commerc
 
 ### Crear un evento de escucha
 
-1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=es).
+1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 
 1. Haga clic en **[!UICONTROL Configurations]** en la sección **[!UICONTROL Administration]** del panel izquierdo.
 
@@ -198,7 +198,7 @@ Cree un correo electrónico de carro de compras abandonado que se enviará cuand
 
 1. En el recorrido que creó anteriormente, haga doble clic en el icono **[!UICONTROL Email]** del lienzo.
 
-1. Siga los [pasos](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=es#configure-email) de la guía de Journey Optimizer para crear el correo electrónico del carro de compras abandonado.
+1. Siga los [pasos](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) de la guía de Journey Optimizer para crear el correo electrónico del carro de compras abandonado.
 
 Ahora tiene un recorrido en Journey Optimizer que escucha el evento `commerce.checkouts` desde su tienda [!DNL Commerce] y un mensaje de correo electrónico del carro de compras abandonado que se envía después de que transcurra un período de tiempo. La siguiente sección muestra cómo probar el recorrido.
 

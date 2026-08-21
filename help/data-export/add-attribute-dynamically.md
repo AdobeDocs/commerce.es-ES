@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -37,7 +37,7 @@ Puede ampliar los atributos de producto sin registrarlos en [!DNL Adobe Commerce
 
 Cree un complemento que agregue `customer_attribute` a la clase `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`.
 
-1. Actualice el [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) para definir el complemento.
+1. Actualice el [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) para definir el complemento.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +110,7 @@ Cree un complemento que agregue `customer_attribute` a la clase `Magento\Catalog
 
 Si crea dinámicamente un atributo de producto personalizado y desea utilizarlo para su visualización, búsqueda o filtrado en los servicios de tienda, agregue los metadatos del atributo de producto para configurar el comportamiento de la tienda.
 
-1. Actualice el [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) para definir el complemento para los metadatos de atributos del producto.
+1. Actualice el [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) para definir el complemento para los metadatos de atributos del producto.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Vea a continuación su versión de Adobe Commerce específica para incorporar co
 
 ## Ayudarme a encontrar mi instancia y versión
 
-### Adobe Commerce o Magento Open Source | versión 2.4.7+
+### ADOBE COMMERCE o MAGENTO OPEN SOURCE | v2.4.7+
 
 Estos diagramas de flujo muestran el proceso general de incorporación de [!DNL Payment Services] con un Adobe Commerce o Magento Open Source posterior a la versión 2.4.7.
 
@@ -63,7 +63,7 @@ Este diagrama de flujo muestra los pasos de producción necesarios para habilita
 
 >[!ENDTABS]
 
-### Adobe Commerce o Magento Open Source | v2.4.0-2.4.6 [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."}
+### ADOBE COMMERCE o MAGENTO OPEN SOURCE | v2.4.0-2.4.6 [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."}
 
 Estos diagramas de flujo muestran el proceso general de incorporación de [!DNL Payment Services] con Adobe Commerce o Magento Open Source versiones 2.4.0 a 2.4.6. Es necesario descargar e instalar [!DNL Payment Services] para comenzar la incorporación.
 
@@ -110,8 +110,8 @@ Este diagrama de flujo muestra el proceso general para habilitar [!DNL Payment S
 
 >[!MORELIKETHIS]
 >
-> * [Solucionar problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=es)
-> * [Cuenta de zona protegida de PayPal no verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=es)
-> * [Datos de informe [!DNL Payment Services] aplazados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=es)
-> * [La tarjeta de crédito de prueba falla con PayPal al procesar pagos en un entorno limitado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=es)
+> * [Solucionar problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [Cuenta de zona protegida de PayPal no verificada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Datos de informe [!DNL Payment Services] aplazados](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [La tarjeta de crédito de prueba falla con PayPal al procesar pagos en un entorno limitado](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26825)
 > * [Deshabilitar la [!DNL Payment Services] extensión](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

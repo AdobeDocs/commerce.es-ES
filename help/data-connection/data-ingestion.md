@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 339
-ht-degree: 2%
+source-wordcount: 342
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 La [extensión de conexión de datos](overview.md) conecta los datos de Commerce con Experience Platform. Los datos que se van a usar en Experience Platform se agrupan en dos tipos de comportamiento: datos de series temporales, que pertenecen a la clase **Experience Event**, y datos de registros, que pertenecen a la clase **Individual Profile**.
 
-Obtenga más información acerca de [comportamiento de los datos](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es#data-behaviors) y [clases](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es#class) en Experience Platform.
+Obtenga más información acerca de [comportamiento de los datos](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/schema/composition#data-behaviors) y [clases](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/schema/composition#class) en Experience Platform.
 
 ## Datos de series temporales
 
@@ -39,7 +39,7 @@ Aprenda a [crear un esquema](update-xdm.md) que pueda ingerir datos de eventos d
 
 ## Registrar datos
 
-Los datos de registro proporcionan información sobre los atributos de un asunto. Un sujeto podría ser una organización o un individuo. Por ejemplo, un comprador del sitio crea una cuenta de y que genera datos de registro. Estos datos se incorporan en Experience Platform mediante un esquema que tiene la clase establecida en **Perfil individual**. Puede enviar esos datos de registro al servicio de segmentación y administración de perfiles de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=es).
+Los datos de registro proporcionan información sobre los atributos de un asunto. Un sujeto podría ser una organización o un individuo. Por ejemplo, un comprador del sitio crea una cuenta de y que genera datos de registro. Estos datos se incorporan en Experience Platform mediante un esquema que tiene la clase establecida en **Perfil individual**. Puede enviar esos datos de registro al servicio de segmentación y administración de perfiles de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/es/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Datos de registro de perfil capturados
 

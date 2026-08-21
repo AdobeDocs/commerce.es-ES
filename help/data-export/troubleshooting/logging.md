@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -98,8 +98,8 @@ En este ejemplo, los valores `status` proporcionan información sobre la operaci
 - **`"Progress 2/5"`** indica que se han completado 2 de 5 iteraciones. El número de iteraciones depende del número de entidades exportadas.
 - **`"processed: 200"`** indica que se han procesado 200 elementos.
 - **`"synced: 100"`** indica que se enviaron 100 elementos a SaaS. Se espera que `"synced"` no sea igual a `"processed"`. A continuación se muestra un ejemplo:
-   - **`"synced" < "processed"`** significa que la tabla de fuentes no detectó ningún cambio en el elemento, en comparación con la versión sincronizada anteriormente. Estos elementos se omiten durante la operación de sincronización.
-   - **`"synced" > "processed"`** el mismo id. de entidad (por ejemplo, `Product ID`) puede tener varios valores en distintos ámbitos. Por ejemplo, se puede asignar un producto a cinco sitios web. En este caso, es posible que tenga &quot;1 elemento procesado&quot; y &quot;5 sincronizados&quot; elementos.
+  - **`"synced" < "processed"`** significa que la tabla de fuentes no detectó ningún cambio en el elemento, en comparación con la versión sincronizada anteriormente. Estos elementos se omiten durante la operación de sincronización.
+  - **`"synced" > "processed"`** el mismo id. de entidad (por ejemplo, `Product ID`) puede tener varios valores en distintos ámbitos. Por ejemplo, se puede asignar un producto a cinco sitios web. En este caso, es posible que tenga &quot;1 elemento procesado&quot; y &quot;5 sincronizados&quot; elementos.
 
 +++ **Ejemplo: registro de resincronización completo para la fuente de precios**
 
@@ -148,7 +148,7 @@ Si faltan datos o estos son incorrectos en Commerce Services, compruebe en los r
 - El registro de errores de exportación de datos (`commerce-data-export-errors.log`) captura los errores que se producen durante la fase de recopilación.
 - El registro de errores de exportación de SaaS (`saas-export-errors.log`) registra los errores que se producen durante la fase de transmisión.
 
-Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con la mayor información posible.
+Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) con la mayor información posible.
 
 ### Resolver problemas de sincronización del catálogo {#resolvesync}
 

@@ -9,9 +9,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 668
+source-wordcount: 673
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ El área de trabajo *Rendimiento* proporciona insight a los términos de búsque
 
 ![Rendimiento](assets/performance-unique-searches.png)
 
-También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es) para obtener más datos sobre la sincronización de datos.
+También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) para obtener más datos sobre la sincronización de datos.
 
 >[!NOTE]
 >

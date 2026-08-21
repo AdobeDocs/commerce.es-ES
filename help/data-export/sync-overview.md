@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Después de conectar una instancia de Adobe Commerce al servicio de Commerce, re
 Con la sincronización parcial, la exportación de datos de SaaS envía automáticamente actualizaciones desde la aplicación de Commerce, como cambios de nombre de producto o actualizaciones de precios, a los servicios de comercio conectados.
 Para que funcione la sincronización parcial, la aplicación de Commerce requiere la siguiente configuración:
 
-- [La programación de tareas se habilita mediante trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=es)
+- [La programación de tareas se habilita mediante trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/next-steps/configuration)
 - Todos los indexadores de exportación de datos SaaS están configurados en el modo `Update by Schedule`.
 
 ### Reintentar sincronización de elementos con errores {#retry-failed-items-sync}

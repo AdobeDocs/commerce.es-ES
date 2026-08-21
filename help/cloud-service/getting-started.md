@@ -29,9 +29,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1343
+source-wordcount: 1337
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service] consta de los siguientes componentes:
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)**: tu punto de entrada central a todos los productos de [!DNL Adobe Commerce] en [experience.adobe.com](https://experience.adobe.com/)
-   * Haga clic en [!UICONTROL **Commerce**] en [!UICONTROL **Acceso rápido**] para abrir Commerce Cloud Manager
+  * Haga clic en [!UICONTROL **Commerce**] en [!UICONTROL **Acceso rápido**] para abrir Commerce Cloud Manager
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)**: cree y administre instancias, acceda a direcciones URL de API y a su administrador de Commerce
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Administrar usuarios y funciones
 * **Administrador de Commerce**: administre productos, pedidos, clientes y configuración de tiendas
@@ -83,7 +83,7 @@ Seleccione una de las siguientes pestañas para ver los gráficos de flujo de tr
 
 >[!TAB Flujo de trabajo de administrador del sistema y comerciante]
 
-Este diagrama proporciona información general de alto nivel sobre cómo los administradores de sistemas y los comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html) para obtener más información sobre los flujos de trabajo de administrador.
+Este diagrama proporciona información general de alto nivel sobre cómo los administradores de sistemas y los comerciantes acceden y administran [!DNL Adobe Commerce as a Cloud Service] instancias. Consulte la [Guía de Adobe Admin Console](https://helpx.adobe.com/es/business/enterprise.html) para obtener más información sobre los flujos de trabajo de administrador.
 
 ![Diagrama de flujo de trabajo de administrador del sistema y comerciante para Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -143,7 +143,7 @@ Después de completar las tareas de configuración específicas de su rol:
 
 * **Administradores del sistema**: revise las directrices de [responsabilidad compartida](./security/shared-responsibility.md)
 * **Comerciantes**: explore [casos de uso](use-cases.md) para escenarios comerciales comunes
-* **Desarrolladores**: Consulte la [documentación para desarrolladores de Adobe Commerce](https://developer.adobe.com/commerce/docs)
+* **Desarrolladores**: Consulte la [documentación para desarrolladores de Adobe Commerce](https://developer.adobe.com/commerce/docs/)
 
 ## Conceptos básicos de Adobe Commerce as a Cloud Service
 
@@ -173,7 +173,7 @@ Las secciones siguientes describen los procesos básicos que debe completar para
 
 1. Elija [!UICONTROL **Tipo de entorno**] para su instancia. Puede elegir entre las siguientes opciones:
 
-   * [!UICONTROL **Espacio aislado**]: solo con fines de diseño y prueba. Debe comenzar el recorrido de [!DNL Adobe Commerce as a Cloud Service] usando el entorno de espacio aislado.
+   * [!UICONTROL **Espacio aislado**]: solo con fines de diseño y prueba. Adobe recomienda comenzar el recorrido de [!DNL Adobe Commerce as a Cloud Service] usando el entorno de espacio aislado.
 
    >[!NOTE]
    >
@@ -215,18 +215,18 @@ Después de crear una instancia, puede obtener acceso a ella desde el [!UICONTRO
 
 >[!TIP]
 >
->Para ver información sobre la instancia, incluidos los extremos de REST y GraphQL y la URL del administrador, haga clic en el icono de información situado junto al nombre de la instancia.
+>Para ver información de la instancia, incluidos los extremos de REST y GraphQL y la URL de administración, haga clic en el icono de información junto al nombre de la instancia.
 
 Las direcciones URL base para el administrador y los puntos de conexión difieren según la región y el entorno, y utilizan el siguiente patrón:
 
 * Administrador
-   * Administrador de producción de Norteamérica: `https://na1.admin.commerce.adobe.com`
-   * Administrador de zona protegida de Norteamérica: `https://na1-sandbox.admin.commerce.adobe.com`
-   * Administrador de producción de Europa: `https://eu1.admin.commerce.adobe.com`
+  * Administrador de producción de Norteamérica: `https://na1.admin.commerce.adobe.com`
+  * Administrador de zona protegida de Norteamérica: `https://na1-sandbox.admin.commerce.adobe.com`
+  * Administrador de producción de Europa: `https://eu1.admin.commerce.adobe.com`
 * REST y GRAPHQL
-   * GraphQL de producción de Norteamérica: `https://na1.api.commerce.adobe.com`
-   * GraphQL de zona protegida de Norteamérica: `https://na1-sandbox.api.commerce.adobe.com`
-   * GraphQL de producción de Europa: `https://eu1.api.commerce.adobe.com`
+  * GraphQL de producción de Norteamérica: `https://na1.api.commerce.adobe.com`
+  * GraphQL de zona protegida de Norteamérica: `https://na1-sandbox.api.commerce.adobe.com`
+  * GraphQL de producción de Europa: `https://eu1.api.commerce.adobe.com`
 
 ### Importar el catálogo
 

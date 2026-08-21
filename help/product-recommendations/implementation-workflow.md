@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 563
+source-wordcount: 546
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Al instalar `magento/product-recommendations module`, Adobe AI agrega los datos 
 
    La implementación de [!DNL Product Recommendations] requiere dos [fuentes de datos](type.md) principales: catálogo y comportamiento. Dado que la producción es el único entorno en el que se capturan y analizan las acciones de los compradores, comience la recopilación de datos sobre la producción lo antes posible. [Descubra](events.md) cómo Adobe AI entrena modelos de aprendizaje automático que resultan en recomendaciones de mayor calidad. Como beneficio adicional, cuando empiece a recopilar datos de comportamiento en producción, puede [recuperar recomendaciones](staging-environment.md#fetch-recommendations-from-production-environment-recommended) basadas en estos datos de producción mientras opera en entornos que no son de producción. A continuación, puede probar y experimentar con diferentes recomendaciones que se calculan en función de los datos reales del comprador recopilados en la producción.
 
-   Para implementar la recopilación de datos en producción, debe [instalar y configurar](install-configure.md) el módulo [!DNL Product Recommendations] proporcionando una [clave de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es).
+   Para implementar la recopilación de datos en producción, debe [instalar y configurar](install-configure.md) el módulo [!DNL Product Recommendations] proporcionando una [clave de API](../landing/saas.md).
 
    >[!TIP]
    >
@@ -57,7 +57,7 @@ Al instalar `magento/product-recommendations module`, Adobe AI agrega los datos 
    >
    > Al personalizar la plantilla, puede especificar la hoja de estilo, sobrescribir dónde aparece una unidad de recomendación en una página, etc.
 
-   Consulte [Personalizar](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=es) en la documentación para desarrolladores para obtener información sobre cómo completar este paso.
+   Consulte [Personalizar](customize.md) en la documentación para desarrolladores para obtener información sobre cómo completar este paso.
 
 1. **Recomendaciones de prueba en su entorno que no sea de producción**
 

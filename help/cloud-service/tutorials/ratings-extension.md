@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Esta sección le guía a través del desarrollo de una extensión de clasificaci
 
 1. Revise el archivo `requirements.md` y compruebe el plan.
 
-   Si todo parece correcto, indique al agente que pase a **Phase 2 - Architecture Planning**.
+   Si todo parece correcto, indique al agente que pase a **Phase 2 — Architecture Planning**.
 
 1. Revise el plan de arquitectura.
 
@@ -233,7 +233,7 @@ Prepare su entorno de tienda local para el desarrollo.
 
 1. Abra la carpeta de la tienda en una nueva ventana Cursor.
 
-   Alternativamente, si tiene instalado el [CLI de cursor](https://cursor.com/docs/configuration/shell#installing-cli-commands), abra la ventana usando el siguiente comando en su terminal:
+   Alternativamente, si tiene instalado el [CLI de cursor](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands), abra la ventana usando el siguiente comando en su terminal:
 
    ```bash
    cursor .
@@ -266,8 +266,8 @@ Utilice el agente para integrar la API de clasificaciones en la página de detal
 1. El agente evalúa la complejidad de la tarea e invoca un flujo de trabajo por fases. Durante la **fase 1 (recopilación de requisitos)**, el agente crea un documento de requisitos y hace preguntas que aclaran cuestiones como las siguientes:
 
    * ¿En qué punto del PDP deben aparecer las clasificaciones?
-   * ¿Debería ser un nuevo bloque independiente o una personalización de ranura dentro del componente desplegable PDP existente?
-   * ¿Cuál debería ser la reserva si la API no está disponible o no devuelve datos?
+   * ¿Se trata de un nuevo bloque independiente o de una personalización de ranura dentro del componente desplegable PDP existente?
+   * ¿Cuál es la reserva si la API no está disponible o no devuelve datos?
    * ¿Las clasificaciones también deben aparecer en el PLP (lista de productos) o solo en el PDP?
    * ¿Hay especificaciones de diseño o maquetas?
 
@@ -318,7 +318,7 @@ Utilice el agente para integrar la API de clasificaciones en la página de detal
    Debería ver los siguientes cambios en su entorno de desarrollo y explorador:
 
    * Se crea automáticamente un componente de clasificación de productos.
-   * El componente está integrado en el PDP mediante [ranuras de colocación](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=es) o como bloque independiente, según la arquitectura elegida.
+   * El componente está integrado en el PDP mediante [ranuras de colocación](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=es) o como bloque independiente, según la arquitectura elegida.
    * Las estrellas se muestran con las proporciones de relleno adecuadas en función de los valores de clasificación de la API.
 
    ![Página de detalles del producto que muestra las clasificaciones en estrellas integradas debajo del título del producto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

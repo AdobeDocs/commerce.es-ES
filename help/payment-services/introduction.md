@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 334
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ La demanda de una experiencia Commerce de calidad es alta, y para lograrla es es
 
 1. **Flujos de cierre de compra personalizados**: ofrece opciones de cierre de compra en varias etapas del recorrido comercial para reducir la fricción durante el proceso de compra y aumentar las tasas de conversión.
 
-1. **[Compatibilidad sin encabezado con GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)**: los comerciantes tienen alternativas a las API web de REST y SOAP para el desarrollo de front-end.
+1. **[Compatibilidad sin encabezado con GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)**: los comerciantes tienen alternativas a las API web de REST y SOAP para el desarrollo de front-end.
 
 1. **Financial reporting**: sincroniza [detalles de pago](order-payment-status.md) con pedidos para obtener total transparencia en el volumen procesado, el saldo de pago, [pagos](payouts.md) y [informes detallados a nivel de transacción](reporting.md) para la reconciliación financiera y lo mejor en visibilidad de transacciones.
 

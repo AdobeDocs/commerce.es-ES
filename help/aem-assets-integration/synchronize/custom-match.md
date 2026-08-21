@@ -12,16 +12,16 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 603
+source-wordcount: 605
 ht-degree: 0%
 
 ---
 
 # Coincidencia automática personalizada
 
-Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
+Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
 
 ## Configurar la coincidencia automática personalizada
 
@@ -123,7 +123,7 @@ Puede descargar el archivo de `workspace.json` desde [Adobe Developer Console](h
 
 ## Extremos de API de emparejador personalizados
 
-Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
+Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
 
 * **Extremo de recurso de App Builder a dirección URL del producto**
 * Extremo de **App Builder product to asset URL**

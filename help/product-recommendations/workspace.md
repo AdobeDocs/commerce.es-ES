@@ -15,9 +15,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 919
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Si utiliza una tienda sin encabezado, consulte la siguiente documentación para 
 
 ## Establecer el ámbito
 
-Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es) de toda la configuración de recomendaciones está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) donde se aplican las recomendaciones.
+Inicialmente, el [ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views) de toda la configuración de recomendaciones está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) donde se aplican las recomendaciones.
 
 ## Definir intervalo de fechas de métricas
 

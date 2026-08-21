@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +39,7 @@ Después de agregar los datos de atributo, se puede obtener acceso a ellos desde
 
 La fuente de productos incluye atributos de sistema predeterminados que son necesarios para el procesamiento del producto o que suelen utilizar los consumidores. Puede incluir atributos del sistema adicionales en la fuente de productos añadiéndolos a la fuente.
 
-Para completar esta tarea, actualice el módulo `magento/catalog-data-exporter` para agregar los atributos de sistema adicionales al [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`).
+Para completar esta tarea, actualice el módulo `magento/catalog-data-exporter` para agregar los atributos de sistema adicionales al [archivo de configuración de inyección de dependencia](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`).
 
 Agregue los atributos a la consulta de atributos del producto (`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`).
 
@@ -85,7 +85,7 @@ Al definir las opciones de atributo, todos los parámetros de atributo excepto `
 - **`user_defined`=`1`**: exporta el atributo a los servicios de tienda durante la sincronización de datos
 - **`used_in_product_listing`=`1`**: permite acceder al atributo desde la consulta de base de datos de listado de productos
 
-Para obtener información sobre cómo crear parches de datos, consulte [Desarrollo de parches de datos y esquemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) en la *Guía para desarrolladores de PHP*.
+Para obtener información sobre cómo crear parches de datos, consulte [Desarrollo de parches de datos y esquemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) en la *Guía para desarrolladores de PHP*.
 
 ### Añadir el atributo de producto de forma dinámica
 
@@ -163,7 +163,7 @@ Registrar al observador en `etc/events.xml`:
 </event>
 ```
 
-Para obtener información general sobre eventos y observadores, consulte [Eventos y observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} en la documentación para desarrolladores de Adobe Commerce.
+Para obtener información general sobre eventos y observadores, consulte [Eventos y observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"} en la documentación para desarrolladores de Adobe Commerce.
 
 ## Filtrado de datos antes del envío
 

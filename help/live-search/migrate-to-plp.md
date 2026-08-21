@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
@@ -358,11 +358,11 @@ En esta situación, tiene una tienda sin encabezado o de PWA que requiere una re
 1. **Implementar colección de eventos**:
    - Revise [Documentación de eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search).
    - Implemente los eventos necesarios:
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - Prueba de flujos de datos de evento en Adobe Commerce.
 
 1. **Configurar ordenación de facetas**:
@@ -458,7 +458,7 @@ Se debe contactar con **socios de desarrollo/integradores de sistemas** para:
 - Implementaciones sin encabezado o de PWA
 - Seguimiento de eventos personalizado
 
-Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQ
 

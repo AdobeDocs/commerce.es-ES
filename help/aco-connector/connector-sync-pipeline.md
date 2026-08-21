@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ La extensión **[!DNL SaaS Data Export]** administra la colección de fuentes y 
 
 #### Requisitos
 
-- [Commerce cron debe estar ejecutándose](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- [Commerce cron debe estar ejecutándose](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Los indexadores de fuente deben utilizar el modo **[!UICONTROL Update by Schedule]**. Consulte [Sincronización parcial](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Control de sincronización basado en el ámbito

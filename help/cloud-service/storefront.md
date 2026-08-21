@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
 workflow-type: tm+mt
-source-wordcount: 300
+source-wordcount: 332
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para obtener un tutorial más personalizable y detallado, consulte la [documenta
 
 1. En el campo **[!UICONTROL Commerce GraphQL Endpoint (optional)]**, introduzca su extremo de GraphQL [!DNL Adobe Commerce as a Cloud Service] (SaaS), al cual puede acceder en el Administrador de Commerce Cloud después de [crear su instancia](./getting-started.md#create-an-instance).
 
-   Alternativamente, si está usando [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), ingrese su extremo de GraphQL [!DNL API Mesh] en el campo **[!UICONTROL Commerce GraphQL Endpoint (optional)]**. Consulte [crear una malla](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) para obtener más información.
+   Alternativamente, si está usando [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/), ingrese su extremo de GraphQL [!DNL API Mesh] en el campo **[!UICONTROL Commerce GraphQL Endpoint (optional)]**. Consulte [crear una malla](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) para obtener más información.
 
 1. Haga clic en **[!UICONTROL Create Site]**. Siga las instrucciones en pantalla para autorizar el acceso al repositorio de GitHub.
 
@@ -53,7 +53,7 @@ Una vez completado el proceso, puede personalizar la tienda mediante los siguien
 
 * Personalice su código: `https://github.com/<username or org>/<repo name>`
 * Edite el contenido: `https://da.live/#/<username or org>/<repo name>`
-* Administrar su configuración: `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
+* Administrar la configuración: `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
 * Vista previa de tu tienda: `https://main--<repo name>--<username or org>.aem.page/`
 
 ## Pasos siguientes
@@ -65,3 +65,4 @@ Consulte los siguientes artículos para obtener más información:
 * [Generar variaciones](./use-cases.md#generate-variations): utilice IA generativa para automatizar la generación de contenido de alta calidad.
 * [Documentación de Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es): obtenga información detallada sobre cómo actualizar el contenido del sitio e integrarlo con componentes de front-end y datos de back-end de Commerce.
 * [Servicio de configuración](https://www.aem.live/docs/config-service-setup): obtenga información sobre cómo migrar la configuración de la tienda de `config.json` para que use el servicio de configuración, que admite casos de uso avanzados como reposta la configuración y las superposiciones.
+* [Características B2B de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=es#major-features): obtenga información sobre las características B2B disponibles en el paquete de compatibilidad de storefront, que se instala automáticamente en todas las instancias de [!DNL Adobe Commerce as a Cloud Service].

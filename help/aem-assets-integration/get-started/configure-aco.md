@@ -2,9 +2,9 @@
 title: Configuración de AEM Assets para Commerce Optimizer
 description: Obtenga información sobre cómo configurar la integración de AEM Assets para  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Para integrar la integración de AEM Assets con [!DNL Commerce Optimizer], el So
 * Eventos de AEM Assets (recursos aprobados, actualizados y eliminados)
 * [!DNL Commerce Optimizer] eventos de catálogo (producto creado, actualizado)
 
-Para iniciar este proceso, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) que incluya la siguiente información:
+Para iniciar este proceso, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) que incluya la siguiente información:
 
 * **[!DNL Adobe Commerce Optimizer]ID de inquilino** (ID de instancia) encontrado en su URL [!DNL Commerce Optimizer] o IU de Commerce Cloud Manager.
 * **ID de programa AEM e ID de entorno** que configuró al [configurar AEM Assets](#configure-aem-assets-first) para la integración.

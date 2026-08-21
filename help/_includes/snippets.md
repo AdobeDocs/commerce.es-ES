@@ -1,5 +1,5 @@
 ---
-source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Para obtener información sobre las opciones de configuración de identidad, com
 
 | Servicios | Extensibilidad | Tienda |
 | --- | --- | --- |
-| <ul><li>[Servicio de catálogo](../catalog-service/release-notes.md)</li><li>[Búsqueda en directo](../live-search/release-notes.md)</li><li>[Servicios de pago](../payment-services/release-notes.md)</li><li>[Recomendaciones de productos](../product-recommendations/release-notes.md)</li><li>[Exportación De Datos SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[IU de administración para SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Malla de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Eventos](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Información de la versión](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=es)</li><li>[Registro de cambios](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=es)</li></ul> |
+| <ul><li>[Servicio de catálogo](../catalog-service/release-notes.md)</li><li>[Búsqueda en directo](../live-search/release-notes.md)</li><li>[Servicios de pago](../payment-services/release-notes.md)</li><li>[Recomendaciones de productos](../product-recommendations/release-notes.md)</li><li>[Exportación De Datos SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[IU de administración para SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Malla de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[Eventos](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Información de la versión](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=es)</li><li>[Registro de cambios](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=es)</li></ul> |
 
 ## Notas de la versión de Adobe Commerce Optimizer Services {#aco-release}
 

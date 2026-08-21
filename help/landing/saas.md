@@ -21,9 +21,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 1662
+source-wordcount: 1665
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ En las secciones siguientes se analiza cada uno de estos elementos con más deta
 
 ## Credenciales {#apikey}
 
-Las claves API de producción y de zona protegida se generan a partir de la cuenta [!DNL Commerce] del [propietario de la licencia](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/start/onboarding). La cuenta de Commerce está identificada por un ID único de [!DNL Commerce] (MageID). El propietario de la licencia de la organización del comerciante puede generar claves de API para servicios como Product Recommendations o Live Search, siempre y cuando la cuenta esté al día.
+Las claves API de producción y de zona protegida se generan a partir de la cuenta [!DNL Commerce] del [propietario de la licencia](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/start/onboarding). La cuenta de Commerce está identificada por un ID único de [!DNL Commerce] (MageID). El propietario de la licencia de la organización del comerciante puede generar claves de API para servicios como Product Recommendations o Live Search, siempre y cuando la cuenta esté al día.
 
 Las claves se pueden compartir según sea necesario con el integrador de sistemas o el equipo de desarrollo que gestiona los proyectos y entornos en nombre del titular de la licencia. Los desarrolladores a los que el propietario de la licencia ha concedido [!DNL Shared Access] no pueden generar las claves en nombre del propietario de la licencia aunque la organización del comerciante esté presente en el menú desplegable [!DNL Switch Accounts] de su cuenta.
 
@@ -153,7 +153,7 @@ Para seleccionar o crear un proyecto SaaS, solicite las claves de API [!DNL Comm
 
 1. Seleccione el **espacio de datos** que se usará para la configuración actual de su almacén de [!DNL Commerce].
 
-   Si tiene instancias independientes para integrar con los servicios de Commerce, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar un nuevo proyecto de SaaS para cada instancia adicional. Una vez que la compatibilidad haya creado el proyecto SaaS, configure Commerce Services Connector para la instancia **con las mismas claves de API** y seleccione el nuevo proyecto SaaS y el espacio de datos.
+   Si tiene instancias independientes para integrar con los servicios de Commerce, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) para solicitar un nuevo proyecto de SaaS para cada instancia adicional. Una vez que la compatibilidad haya creado el proyecto SaaS, configure Commerce Services Connector para la instancia **con las mismas claves de API** y seleccione el nuevo proyecto SaaS y el espacio de datos.
 
 >[!WARNING]
 >

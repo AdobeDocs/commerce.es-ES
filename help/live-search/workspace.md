@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2318
+source-wordcount: 2323
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Si es cliente de atención médica e instaló la extensión HIPAA de [Data Servi
 
 ## Establecer el ámbito
 
-Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings) de toda la configuración de [!DNL Live Search] se ha establecido en `Default Store View`. Si su instalación de [!DNL Commerce] incluye varias vistas de tienda, establezca **Ámbito** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es) donde se aplique la configuración de faceta.
+Inicialmente, el [ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) de toda la configuración de [!DNL Live Search] se ha establecido en `Default Store View`. Si su instalación de [!DNL Commerce] incluye varias vistas de tienda, establezca **Ámbito** en la [vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views) donde se aplique la configuración de faceta.
 
 ## Opciones de menú
 
@@ -61,7 +61,7 @@ Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admi
 
 ## Definir atributos como en los que se puede buscar
 
-Para generar resultados de alto nivel de segmentación, revise el conjunto de atributos de producto [en los que se puede buscar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=es) (`searchable=true`). Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
+Para generar resultados de alto nivel de segmentación, revise el conjunto de atributos de producto [en los que se puede buscar](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`). Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
 
 Para permitir que se puedan buscar los atributos, complete los siguientes pasos:
 
@@ -69,7 +69,7 @@ Para permitir que se puedan buscar los atributos, complete los siguientes pasos:
 1. Seleccione el atributo en el que desea que se puedan realizar búsquedas, como `color`.
 1. Seleccione **Propiedades de tienda** y establezca **Usar en búsqueda** en `yes`.
 
-[!DNL Live Search] también respeta el [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=es#weighted-search) de un atributo de producto, tal como se establece en Adobe Commerce. Los atributos con un peso mayor aparecerán más arriba en los resultados de búsqueda.
+[!DNL Live Search] también respeta el [peso](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) de un atributo de producto, tal como se establece en Adobe Commerce. Los atributos con un peso mayor aparecerán más arriba en los resultados de búsqueda.
 
 Siempre se pueden buscar los atributos siguientes:
 
@@ -104,21 +104,21 @@ Las funcionalidades de búsqueda avanzada se implementan a través del parámetr
 
 - **Búsqueda por niveles** - Buscar en otro contexto de búsqueda - Con esta capacidad, puede realizar hasta dos niveles de búsqueda para sus consultas de búsqueda. Por ejemplo:
 
-   - **Búsqueda de nivel 1** - Busque &quot;motor&quot; en `product_attribute_1`.
-   - **Búsqueda de nivel 2** - Busque &quot;número de pieza 123&quot; en `product_attribute_2`. En este ejemplo se busca &quot;número de pieza 123&quot; dentro de los resultados para &quot;motor&quot;.
+  - **Búsqueda de nivel 1** - Busque &quot;motor&quot; en `product_attribute_1`.
+  - **Búsqueda de nivel 2** - Busque &quot;número de pieza 123&quot; en `product_attribute_2`. En este ejemplo se busca &quot;número de pieza 123&quot; dentro de los resultados para &quot;motor&quot;.
 
   La búsqueda por capas está disponible tanto para la indexación de búsqueda `startsWith` como para la indexación de búsqueda `contains` en la segunda capa de la búsqueda por capas, como se describe a continuación:
 
 - **comienza con la indexación de búsqueda** - La búsqueda usa la indexación `startsWith`. Esta nueva capacidad permite:
 
-   - Buscando productos en los que el valor del atributo comience con una cadena especificada.
-   - Configuración de una búsqueda &quot;termina con&quot; para que los compradores puedan buscar productos en los que el valor del atributo termine con una cadena en particular. Para habilitar una búsqueda &quot;termina con&quot;, el atributo del producto debe ingerirse a la inversa y la llamada de API también debe ser una cadena invertida. Por ejemplo, si desea buscar un nombre de producto que termine con &quot;pantalones&quot;, debe enviarlo como &quot;stnap&quot;.
+  - Buscando productos en los que el valor del atributo comience con una cadena especificada.
+  - Configuración de una búsqueda &quot;termina con&quot; para que los compradores puedan buscar productos en los que el valor del atributo termine con una cadena en particular. Para habilitar una búsqueda &quot;termina con&quot;, el atributo del producto debe ingerirse a la inversa y la llamada de API también debe ser una cadena invertida. Por ejemplo, si desea buscar un nombre de producto que termine con &quot;pantalones&quot;, debe enviarlo como &quot;stnap&quot;.
 
 - **contiene indización de búsqueda** - La búsqueda de un atributo mediante contiene indización. Esta nueva capacidad permite:
 
-   - Búsqueda de una consulta dentro de una cadena más grande. Por ejemplo, si un comprador busca el número de producto PE-123 en la cadena HAPE-123.
+  - Búsqueda de una consulta dentro de una cadena más grande. Por ejemplo, si un comprador busca el número de producto PE-123 en la cadena HAPE-123.
 
-      - Nota: este tipo de búsqueda es diferente de la búsqueda de frases [existente](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), que realiza una búsqueda de autocompletar. Por ejemplo, si el valor de atributo del producto es &quot;pantalones de exterior&quot;, una búsqueda de frase devuelve una respuesta para &quot;sin bandeja&quot;, pero no devuelve una respuesta para &quot;u hormigas&quot;. Sin embargo, una búsqueda contiene sí devuelve una respuesta para &quot;o hormigas&quot;.
+    - Nota: este tipo de búsqueda es diferente de la búsqueda de frases [existente](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), que realiza una búsqueda de autocompletar. Por ejemplo, si el valor de atributo del producto es &quot;pantalones de exterior&quot;, una búsqueda de frase devuelve una respuesta para &quot;sin bandeja&quot;, pero no devuelve una respuesta para &quot;u hormigas&quot;. Sin embargo, una búsqueda contiene sí devuelve una respuesta para &quot;o hormigas&quot;.
 
 Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal.
 
@@ -203,7 +203,7 @@ Los precios de la página Widget de Lista de Productos y de la ventana emergente
 
 ## Valores de atributo predeterminados
 
-Los atributos de producto siguientes tienen [propiedades de tienda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=es) que usa [!DNL Live Search] y que están habilitadas de manera predeterminada.
+Los atributos de producto siguientes tienen [propiedades de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes) que usa [!DNL Live Search] y que están habilitadas de manera predeterminada.
 
 | Propiedad | Propiedad Storefront | Atributo |
 |---|---|---|

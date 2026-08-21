@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo administrar productos sin existenc
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bc8f35434c9f01f1a920745fe42617df2003ca60
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Utilice este método cuando no enrute la solicitud a través de [Live Search PLP
 Para mantener los productos sin existencias en el conjunto de resultados, pero siempre después de los productos en existencias, al ordenarlos por relevancia, Adobe puede habilitar un indicador de funciones interno para su entorno.
 
 - Esta marca de característica no se expone en la interfaz de usuario del administrador de [!DNL Live Search].
-- Para solicitarlo, [comuníquese con la atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} y haga referencia a la función para mover los productos sin existencias al final de los resultados de búsqueda.
+- Para solicitarlo, [comuníquese con la atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} y haga referencia a la función para mover los productos sin existencias al final de los resultados de búsqueda.
 
 >[!NOTE]
 >

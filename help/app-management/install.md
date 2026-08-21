@@ -2,9 +2,9 @@
 title: Instalar y obtener acceso a  [!DNL App Management]
 description: Requisitos previos y requisitos de acceso para usar Adobe Commerce [!DNL App Management].
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Se muestra la vista [!DNL App Management]. Aquí puede asociar, configurar y adm
 
 ## Instalación de aplicaciones de App Builder
 
-Si necesita instalar una aplicación de App Builder desde Adobe Exchange (por ejemplo, una aplicación prediseñada de integración o Marketplace), consulte [Instalar aplicaciones de App Builder desde Adobe Exchange](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obtener instrucciones paso a paso.
+Si necesita instalar una aplicación de App Builder desde Adobe Exchange (por ejemplo, una aplicación prediseñada de integración o Marketplace), consulte [Instalar aplicaciones de App Builder desde Adobe Exchange](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obtener instrucciones paso a paso.
 
 Después de instalar e implementar una aplicación, usa [!DNL App Management] para [asociarla a tu instancia de Commerce](manage-app.md#associate-an-app) y configurar su configuración.
 

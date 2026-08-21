@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ En la tabla siguiente se enumeran las páginas de tienda en las que puede coloca
 | Detalles del producto | En la parte inferior del contenido principal (predeterminado) | Más vistos<br>Más comprados<br>Más añadidos al carrito<br>Más vistos esto, más vistos<br>Más vistos esto, más comprados<br>Más comprados<br>Más así<br>Tendencias<br>Similitud visual |
 | Carrito | En la parte inferior del contenido principal (predeterminado) | Más vistos<br>Más comprados<br>Más añadidos al carro<br>Más vistos esto, más vistos<br>Más vistos esto, más comprados<br>Comprados esto, más comprados<br>Más así<br>Tendencias |
 | Confirmación | En la parte inferior del contenido principal (predeterminado) | Más vistos<br>Más comprados<br>Más añadidos al carro<br>Más vistos esto, más vistos<br>Más vistos esto, más comprados<br>Comprados esto, más comprados<br>Más así<br>Tendencias |
-| Page Builder | [Arrastrar y soltar](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=es) para colocar el tipo de contenido | Más vistos<br>Más comprados<br>Más añadidos al carro<br>Recomendado para ti<br>Tendencia |
+| Page Builder | [Arrastrar y soltar](https://experienceleague.adobe.com/es/docs/commerce-admin/page-builder/add-content/recommendations) para colocar el tipo de contenido | Más vistos<br>Más comprados<br>Más añadidos al carro<br>Recomendado para ti<br>Tendencia |

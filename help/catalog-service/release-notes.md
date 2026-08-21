@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 3063
+source-wordcount: 3064
 ht-degree: 0%
 
 ---
@@ -449,7 +449,7 @@ Para obtener detalles y ejemplos, consulte [Servicio de catálogo y malla de API
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=es) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
+![Nuevo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ya está disponible para las secuencias de datos (Recomendaciones de productos, Live Search, Servicio de catálogo). Requiere `catalog-service` metapackage v3.1.0+.
 
 **Fecha de publicación**: 13 de febrero de 2024
 <!-- v1.16 -->
@@ -694,9 +694,9 @@ Siempre que use Composer para actualizar `magento/catalog-service`, el paquete d
 
   - [Guía del servicio de catálogo](overview.md)
   - [Referencia de API de GraphQL del servicio de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Guía de administración de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-  - [Guía de Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-  - [Guía de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [Guía de administración de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/user-guides/home)
+  - [Guía de Adobe Commerce as a Cloud Service](../cloud-service/overview.md)
+  - [Guía de Adobe Commerce en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview)
 
 - Para proyectos que usan **Adobe Commerce Optimizer** o **Conector de Adobe Commerce Optimizer**, consulte la siguiente documentación:
 
