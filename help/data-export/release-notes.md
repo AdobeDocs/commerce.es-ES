@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ Las actualizaciones incluyen:
 >La extensión [!DNL SaaS data export] es una colección de módulos que se instalan automáticamente con [!DNL Live Search], [!DNL Product Recommendations] y [!DNL Catalog Service]. Puede comprobar la versión instalada en el sistema mediante [!DNL Composer]. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026 {#release-notes-2026}
+
+### Versión 103.4.32
+
+_25 de agosto de 2026_
+
+![Nuevas](../assets/new.svg) **opciones personalizables incluidas en la fuente del producto**: las opciones personalizables del producto, como muestras de color, selecciones de tamaño o campos de personalización, ahora se exportan como un atributo de producto de `customizable_options`. El atributo incluye el título de cada opción, si es necesario, y sus valores disponibles, para que los servicios de Commerce conectados puedan mostrar datos de opciones personalizables y precisos en la tienda. <!--MDEE-1029-->
+
+![Corrección](../assets/fix.svg) **Sincronización fiable de permisos de categoría**: se ha corregido un problema por el que la fuente de permisos de categoría no se podía volver a sincronizar completamente para las configuraciones sin un ID de sitio web, lo que daba como resultado errores de sincronización. <!--MDEE-1411-->
 
 ### Versión 103.4.31
 

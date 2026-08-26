@@ -4,9 +4,9 @@ description: Aprenda a utilizar AEM Assets para imágenes de productos en  [!DNL
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -103,3 +103,4 @@ Para mostrar imágenes de AEM Assets en tu tienda, [asigna la capa `AEM-Assets` 
 * [Capas de catálogo](catalog-layer.md)
 * [Vistas de catálogo](catalog-view.md)
 * [Guía de integración de AEM Assets](../../aem-assets-integration/overview.md)
+* [Límites y límites en la visualización del producto](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
