@@ -1,7 +1,7 @@
 ---
 title: Métricas de éxito
 description: Las métricas de éxito proporcionan a insight las métricas de rendimiento clave para tu tienda  [!DNL Adobe Commerce Optimizer] Store.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
 product_v2:
@@ -89,7 +89,7 @@ Los metadatos de C2PA son evidentes y legibles por el equipo y se basan en el [e
 
 ![Inspeccionar muestra](../assets/inspect-sample.png)
 
-Más información sobre [Transparencia del contenido de IA generativa](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+Más información sobre [Transparencia del contenido de IA generativa](https://experienceleague.adobe.com/es/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Uso conjunto de métricas de éxito y Sites Optimizer
 
