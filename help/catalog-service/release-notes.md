@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
+source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
 workflow-type: tm+mt
-source-wordcount: 3099
+source-wordcount: 3190
 ht-degree: 0%
 
 ---
@@ -624,6 +624,16 @@ Actualizaciones al metapaquete PHP del servicio de catálogo (`magento/catalog-s
 - Para los clientes de Adobe Commerce as a Cloud Service, la versión más reciente está instalada en su entorno.
 
 - Para Adobe Commerce en la nube o de forma local, Adobe recomienda utilizar Composer para actualizar el metapaquete del servicio de catálogo en los entornos de nube en la última versión.
+
+### Versión 3.6.0
+
+**Fecha de lanzamiento**: 31 de agosto de 2026
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
+
+![Nuevo](../assets/new.svg) **Exportación de opciones personalizables**: se han actualizado las dependencias del metapaquete del servicio de catálogo para incluir el módulo del exportador de datos de opciones personalizables (`magento/module-customizable-options-data-exporter`). Este módulo exporta las opciones personalizables de Adobe Commerce de un producto, tanto las opciones seleccionables (lista desplegable, botón de opción, casilla de verificación, selección múltiple) como las opciones de entrada de comprador (campo de texto, área de texto, archivo, fecha, fecha y hora, hora), de modo que se propagan al catálogo SaaS consumido por el servicio de catálogo. <!--DATA-7366-->
+
+![Nuevo](../assets/new.svg) Se han actualizado las dependencias para mantener la compatibilidad entre el servicio de catálogo y la pila de Commerce.
 
 ### Versión 3.5.0
 

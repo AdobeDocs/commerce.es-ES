@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
+source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
 workflow-type: tm+mt
-source-wordcount: 460
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -40,12 +40,20 @@ Estas notas de la versión describen todas las versiones para [!DNL Adobe Commer
 
 ## Versiones de 2026
 
+### Versión 1.0.17
+
+_1 de septiembre de 2026_
+
+![Corregir](../assets/fix.svg) **Sincronización de catálogo más rápida para tiendas con múltiples vistas de tiendas**- [!DNL Adobe Commerce Optimizer Connector] ahora filtra productos y categorías por vista de tienda antes de extraer datos de fuente, en lugar de extraer cada vista de tienda y descartar los resultados irrelevantes posteriormente. Esta actualización reduce significativamente el tiempo de sincronización y resincronización de los catálogos con muchas vistas de tiendas. <!--MDEE-1441-->
+
 ### Versión 1.0.16
 
 _7 de agosto de 2026_
 
 ![Corrección](../assets/fix.svg) **La sincronización del catálogo ya no se detiene en una configuración no válida**-Se ha corregido un problema por el que la sincronización del catálogo podría ejecutarse indefinidamente si faltaba la configuración de [!DNL Adobe Commerce Optimizer Connector] o no era válida. La sincronización ahora se completa y registra una advertencia en lugar de seguir ejecutándose. <!--MDEE-1413-->
-![Corregir](../assets/fix.svg) **Solicitudes de administrador [!DNL Adobe Commerce Optimizer] más confiables**-Se corrigió un problema en el que [!DNL Adobe Commerce Optimizer Connector] podría usar una dirección URL incorrecta para [!DNL Adobe Commerce Optimizer] solicitudes de administrador, lo que podría provocar que esas solicitudes fallaran. <!--COMOPT-2288-->
+
+![Corregir](../assets/fix.svg) **Solicitudes de administrador [!DNL Adobe Commerce Optimizer] más confiables**-Se corrigió un problema en el que [!DNL Adobe Commerce Optimizer Connector] podría usar una dirección URL incorrecta para [!DNL Adobe Commerce Optimizer] solicitudes de administrador, lo que podría provocar que esas solicitudes no se completen correctamente. <!--COMOPT-2288-->
+
 ![Corrección](../assets/fix.svg) **Operaciones de actualización y revisión más fiables**: se ha corregido un problema por el que las operaciones de actualización y revisión podrían dirigirse al entorno incorrecto, lo que podría provocar un error en las solicitudes. <!--COMOPT-2288-->
 
 ### Versión 1.0.15
