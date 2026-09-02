@@ -39,7 +39,7 @@ Para obtener más información acerca de los datos de comportamiento que recopil
 
 Si es cliente de atención médica y ha instalado la extensión [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), que se incluye con la extensión [Data Connection](../data-connection/overview.md), [!DNL Product Recommendations] deja de recopilar datos de evento de tienda porque se generan en el lado del cliente.
 
-Para reanudar la recopilación y el envío de datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Product Recommendations]. Para obtener más información, consulte [Configuración general](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
+Para reanudar la recopilación y el envío de datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Product Recommendations]. Para obtener más información, consulte [Configuración general](https://experienceleague.adobe.com/es/docs/commerce-admin/config/general/general#data-services).
 
 ## Tipos de datos y eventos
 
@@ -104,4 +104,4 @@ Si la recopilación de datos de entrada no es suficiente, los siguientes tipos d
 
 >[!NOTE]
 >
->Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
+>Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) está habilitado, Adobe Commerce no recopilará datos de comportamiento hasta que el comprador acepte el uso de cookies. Si el modo de restricción de cookies está deshabilitado, Adobe Commerce recopila datos de comportamiento de forma predeterminada.
