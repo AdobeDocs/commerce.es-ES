@@ -70,7 +70,7 @@ Las recomendaciones de productos le permiten:
 
 Para obtener información acerca de [!DNL Product Recommendations], vea este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449961?captions=spa&quality=12)
 
 ## Política de retención de datos del catálogo
 
