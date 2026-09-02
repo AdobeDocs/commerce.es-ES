@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2105
+source-wordcount: 2114
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Antes de iniciar la migración:
 
 1. Haga una copia de seguridad de la base de datos y del código.
 1. Documentar las personalizaciones actuales.
-1. Revise [Límites y límites](boundaries-limits.md) para asegurarse de que el widget PLP satisfaga sus necesidades.
+1. Para asegurarse de que el widget PLP satisfaga sus necesidades, revise [Límites y límites](boundaries-limits.md).
 1. Programar migración durante un período de poco tráfico.
-1. Notificar a las partes interesadas de posibles cambios en el comportamiento de la tienda.
+1. Para preparar a las partes interesadas, notifíqueles los posibles cambios en el comportamiento de la tienda.
 
 **Revisar la implementación actual**:
 
@@ -95,7 +95,7 @@ Se requiere trabajo adicional si la implementación presenta CUALQUIERA de los s
 - Diseños PLP personalizados que anulan las plantillas de Luma.
 - CSS o JavaScript personalizados que segmentan elementos específicos de adaptadores de búsqueda.
 - Modificaciones de plantilla personalizadas al PLP o archivos relacionados.
-- La temática no hereda de Luma (por ejemplo, la temática personalizada desde cero).
+- La temática no hereda de Luma (por ejemplo, la temática personalizada se crea de forma independiente).
 
 **Atributos de producto personalizados**:
 
@@ -131,7 +131,7 @@ Para implementaciones sin personalizaciones especiales, siga estos pasos:
 
 ### Paso 1: Actualización [!DNL Live Search]
 
-Actualice la extensión [!DNL Live Search] a la versión 4.0 o superior para acceder al widget PLP.
+Para acceder al widget PLP, actualice la extensión [!DNL Live Search] a la versión 4.0 o superior.
 
 **Rol**: Comerciante o socio
 
@@ -147,7 +147,7 @@ Actualice la extensión [!DNL Live Search] a la versión 4.0 o superior para acc
    bin/magento module:enable Magento_AdvancedSearch
    ```
 
-1. Actualizar `composer.json` para requerir [!DNL Live Search] 4.0 o superior:
+1. Para requerir [!DNL Live Search] 4.0 o superior, actualice `composer.json`:
 
    ```json
    "require": {
@@ -180,7 +180,7 @@ Configure el widget PLP en el administrador de Commerce.
 
 **Rol**: Comerciante
 
-El widget PLP está habilitado de manera predeterminada para las nuevas instalaciones de [!DNL Live Search] 4.0.0+. Si actualiza desde una versión anterior:
+[!DNL Live Search] 4.0.0+ habilita el widget PLP de forma predeterminada para las nuevas instalaciones. Si actualiza desde una versión anterior:
 
 1. Vaya a **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]**.
 1. Vaya a **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
@@ -280,7 +280,7 @@ En esta situación, tiene plantillas o diseños personalizados que anulan el com
 
 ### Atributos de producto con modelos de origen personalizados
 
-En esta situación, hay facetas que utilizan atributos de producto con modelos de origen personalizados que no son compatibles con el adaptador de búsqueda pero que sí con el widget PLP.
+En este escenario, las facetas se basan en atributos de producto con modelos de origen personalizados. Aunque el adaptador de búsqueda no es compatible con estos modelos de origen, el widget PLP sí lo es.
 
 **Rol**: Comerciante (configuración de administración)
 
@@ -366,7 +366,7 @@ En esta situación, tiene una tienda sin encabezado o de PWA que requiere una re
    - Prueba de flujos de datos de evento en Adobe Commerce.
 
 1. **Configurar ordenación de facetas**:
-   - En implementaciones sin encabezado, las facetas se pueden ordenar por recuento.
+   - En el caso de implementaciones sin encabezado, puede ordenar las facetas por recuento.
    - Configurar en el espacio de trabajo **[!UICONTROL Live Search]** > **[!UICONTROL Facets]**.
    - Establezca **[!UICONTROL Sort Type]** en **Count** para una mejor experiencia de usuario.
 
@@ -423,20 +423,20 @@ Tenga en cuenta estas limitaciones al migrar:
 **Diferencias de características del adaptador de búsqueda**:
 
 - **Muestras de color**: el atributo `color` debe escribirse exactamente como `color` (no como &quot;color&quot; o nombres personalizados) para que las muestras funcionen correctamente.
-- **Estilo de tema**: el widget no hereda las clases de tema personalizadas; deben segmentarse en clases CSS específicas del widget.
+- **Estilo del tema**: el widget no hereda clases de temas personalizados. Debe segmentar clases CSS específicas de los widgets.
 - **Tipos de productos personalizados**: no compatible con el widget.
 
 **Consideraciones de rendimiento**:
 
-- Los catálogos grandes (más de 50 000 productos) pueden experimentar cargas de página iniciales más largas.
+- Los catálogos grandes (más de 50 000 productos) experimentan cargas de página iniciales más largas.
 - Varias facetas con muchos valores pueden afectar al rendimiento.
-- El rendimiento del dispositivo móvil puede variar en función del tamaño del catálogo.
+- El rendimiento del dispositivo móvil varía en función del tamaño del catálogo.
 
 **Problemas de compatibilidad**:
 
 - Problema de compatibilidad del Administrador de etiquetas de Google (consulte [Escenario de GTM](#google-tag-manager-gtm-integration)).
-- Algunas extensiones de terceros pueden entrar en conflicto con el widget PLP.
-- Es posible que las extensiones de cierre de compra personalizadas necesiten actualizaciones.
+- Algunas extensiones de terceros entran en conflicto con el widget PLP.
+- Las extensiones de cierre de compra personalizadas requieren actualizaciones.
 
 ## Obtención de ayuda
 
@@ -458,7 +458,7 @@ Se debe contactar con **socios de desarrollo/integradores de sistemas** para:
 - Implementaciones sin encabezado o de PWA
 - Seguimiento de eventos personalizado
 
-Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Para ponerse en contacto con el soporte técnico de Adobe, consulte la [Guía del usuario del Centro de ayuda de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQ
 
@@ -482,7 +482,7 @@ R: Sí, todas las reglas, sinónimos y facetas de comercialización de búsqueda
 
 **Q: ¿Debo volver a configurar mis facetas?**
 
-R: Por lo general, no, pero si estaba limitado por atributos del modelo de origen personalizados con el adaptador de búsqueda, ahora puede utilizarlos con el widget PLP.
+R: No. Puede seguir utilizando la configuración de faceta existente. Sin embargo, si el adaptador de búsqueda limitaba anteriormente el uso de atributos de producto con modelos de origen personalizados, ahora puede utilizar esos atributos con el widget PLP.
 
 **Q: ¿Qué sucede con mi CSS personalizado?**
 

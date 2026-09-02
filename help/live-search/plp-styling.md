@@ -12,24 +12,26 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # Widget de página de lista de productos
 
-[!DNL Live Search Product Listing Page Widget] (PLP) utiliza la plataforma de servicios de Commerce para proporcionar una página de lista de productos con rendimiento, en la que se pueden realizar búsquedas y facetas. En este tema se describe cómo habilitar y aplicar estilo al widget PLP.
+[!DNL Live Search Product Listing Page Widget] (PLP) utiliza Commerce Services Platform para proporcionar una página de lista de productos con rendimiento, en la que se pueden realizar búsquedas y facetas. En este tema se describe cómo habilitar y aplicar estilo al widget PLP.
 
 ## Activación del widget PLP
 
 Cuando se instala el servicio [!DNL Live Search], la funcionalidad de búsqueda predeterminada se convierte automáticamente en [!DNL Live Search].
 
-El widget PLP [!DNL Live Search] está habilitado de manera predeterminada para las nuevas instalaciones.
+Las nuevas instalaciones habilitan el widget PLP [!DNL Live Search] de forma predeterminada.
 
-Si está actualizando [!DNL Live Search] y el widget PLP ya se ha desactivado, seguirá siéndolo.
+Si actualiza [!DNL Live Search] mientras el widget PLP está deshabilitado, permanecerá deshabilitado después de la actualización.
+
+
 
 >[!NOTE]
 >
@@ -42,7 +44,7 @@ Para activar el widget PLP:
 1. Haga clic en la sección [!UICONTROL Storefront Features].
 1. Set [!UICONTROL Enable Product Listing Widget] = Sí
 1. Guardar configuración
-1. Si se le solicita, vacíe la caché ( vaya a Sistema > Herramientas > Administración de caché > [!UICONTROL Flush Magento Cache]).
+1. Si se le solicita, vacíe la caché (vaya a Sistema > Herramientas > Administración de caché > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -50,7 +52,7 @@ Para activar el widget PLP:
 
 ## Funciones de widget
 
-El widget PLP proporciona las siguientes funciones integradas:
+El widget PLP proporciona las siguientes funciones estándar:
 
 - Botones Añadir al carrito: disponible solo para productos simples.
 - Varias imágenes por producto: la imagen puede cambiar cuando se elige un color diferente para un producto configurable.
@@ -58,7 +60,7 @@ El widget PLP proporciona las siguientes funciones integradas:
 
 ### Personalización del widget
 
-Además de las funciones integradas del widget PLP, puede personalizarlo aún más para incluir las siguientes funciones:
+Además de las funciones estándar del widget PLP, puede personalizarlo para incluir las siguientes funciones:
 
 - Filtrado por atributos
 - Compatibilidad con varios idiomas
@@ -76,7 +78,7 @@ Puede personalizar el aspecto del widget PLP para que coincida con su sitio medi
 
 >[!NOTE]
 >
->Los elementos con clases personalizadas dentro de una temática de Adobe Commerce no se heredan. Estos elementos deben estar dirigidos por su clase específica para que coincidan con las clases personalizadas; las clases de acción principales no funcionarán en un botón de widget. Se heredan los elementos de destino genéricos dentro de CSS; `button` se aplica a los botones del widget.
+>Los elementos con clases personalizadas dentro de una temática de Adobe Commerce no se heredan. Oriente estos elementos según su clase específica para que coincidan con las clases personalizadas; las clases de acción principales no son efectivas en un botón de widget. Se heredan los elementos de destino genéricos dentro de CSS; `button` se aplica a los botones del widget.
 
 Los divs resaltados contienen la clase de destino `ds-sdk-product-item__product-name`.
 
@@ -196,10 +198,10 @@ Personalice el nombre del producto añadiendo una regla para que esté en mayús
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![Producto](assets/plp-css-product.png)
 

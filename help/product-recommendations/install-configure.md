@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 578
+source-wordcount: 554
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Consulte [Uso de [!DNL Product Recommendations] con contenido de Page Builder](p
 
 ### Agregar tipo de recomendación de similitud visual {#vissimsupport}
 
-El tipo de recomendación _Similitud visual_ le permite implementar una unidad de recomendación en la página de detalles del producto que muestra productos [visualmente similares](type.md#visualsim) al producto que se está viendo. Este tipo de recomendación es más útil cuando las imágenes y los aspectos visuales de los productos son partes importantes de la experiencia de compra. Instale el tipo de recomendación _Visual similarity_ ejecutando el siguiente comando:
+El tipo de recomendación _Similitud visual_ muestra productos [visualmente similares](type.md#visualsim) al producto visualizado en una página de detalles de producto. Resulta muy útil cuando las imágenes y el aspecto del producto son importantes para la experiencia de compra. Para instalarlo, ejecute el siguiente comando:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -73,11 +73,11 @@ composer require magento/module-visual-product-recommendations
 
 1. Después de instalar el módulo `magento/product-recommendations`, configure [Commerce Services Connector](../landing/saas.md) especificando las claves de API y seleccionando un espacio de datos SaaS.
 
-   La configuración de esta conexión permite la sincronización de datos y la comunicación entre la instancia de Commerce, el servicio de catálogo y otros servicios de soporte. La sincronización de datos está controlada por la [extensión de exportación de datos SaaS](../data-export/overview.md).
+   La configuración de esta conexión permite la sincronización de datos y la comunicación entre la instancia de Commerce, el servicio de catálogo y otros servicios de soporte. La [extensión de exportación de datos SaaS](../data-export/overview.md) administra la sincronización de datos.
 
 1. Para garantizar que la exportación del catálogo se pueda ejecutar correctamente, confirme que los trabajos [cron](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) y los [indexadores](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers) se están ejecutando y que el indexador `Product Feed` está establecido en `Update by Schedule`.
 
-Después de vincular correctamente la aplicación de Commerce a los servicios de Commerce y especificar el [espacio de datos SaaS](../landing/saas.md#saas-configuration), se inicia la sincronización del catálogo. Entonces puedes [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) que los datos de comportamiento se están enviando a tu tienda.
+Después de vincular correctamente la aplicación de Commerce a los servicios de Commerce y especificar el [espacio de datos SaaS](../landing/saas.md#saas-configuration), se inicia la sincronización del catálogo. Entonces puedes [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) que los datos de comportamiento se están enviando a tu tienda.
 
 ## Monitorización y solución de problemas de sincronización de datos
 
@@ -103,7 +103,7 @@ Para actualizar a una versión principal, como de la 5.0 a la 6.0, debe editar e
 }
 ```
 
-Vamos a pasar la versión principal de `5.0` a `6.0`:
+Actualizar la versión principal de `5.0` a `6.0`:
 
 ```json
 "require": {

@@ -15,7 +15,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -40,10 +40,10 @@ Para asegurarse de que cada área funcional del espacio de trabajo contiene los 
 1. Luma: la recopilación de datos está disponible de forma predeterminada.
 1. Sin encabezado: la recopilación de datos debe configurarse manualmente, según la implementación de la tienda.
 
-Si utiliza una tienda sin encabezado, consulte la siguiente documentación para obtener más información sobre los eventos necesarios que debe agregar:
+Para obtener más información sobre los eventos necesarios que debe agregar si utiliza una tienda sin encabezado, consulte la siguiente documentación:
 
 - [Eventos requeridos](events.md) para el panel de recomendaciones de productos.
-- [Recopilador de eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que debe agregarse como requisito previo.
+- [Recopilador de eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework) que debe agregarse como requisito previo.
 - [Ejemplos](https://github.com/adobe/commerce-events/tree/main/examples) de la estructura de eventos.
 
 ## Establecer el ámbito

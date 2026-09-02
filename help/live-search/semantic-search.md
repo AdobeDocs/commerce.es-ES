@@ -3,9 +3,9 @@ title: Búsqueda semántica
 description: Habilite la búsqueda semántica de IA para  [!DNL Live Search]  desde Configuración. No se requiere configuración de atributos ni cambios de tienda.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >La búsqueda semántica está disponible para los comerciantes que utilizan las versiones 2.4.4 y posteriores de Adobe Commerce.
 
-La búsqueda semántica utiliza IA para comprender qué significan los compradores, no solo las palabras exactas que escriben. Consultas como &quot;vestido para una boda en la playa&quot; o &quot;zapatos cómodos para estar de pie todo el día&quot; pueden devolver productos relevantes incluso cuando su catálogo no utiliza esas frases exactas.
+La búsqueda semántica utiliza IA para comprender qué significan los compradores, no solo las palabras que escriben. Consultas como &quot;vestido para una boda en la playa&quot; o &quot;zapatos cómodos para estar de pie todo el día&quot; pueden devolver productos relevantes incluso cuando su catálogo no utiliza esas frases exactas.
 
 [!DNL Live Search] combina la coincidencia semántica y de palabras clave en una experiencia de búsqueda. No se administran modos semánticos y de palabra clave independientes en la tienda. [!DNL Live Search] no ofrece controles semánticos avanzados (por ejemplo, reguladores de ampliación o de similitud) en el administrador. Puede habilitar o deshabilitar la búsqueda semántica.
 
@@ -33,7 +33,7 @@ La búsqueda semántica se administra desde el área de trabajo **Settings** del
 
 ## Cómo funciona
 
-Cuando la búsqueda semántica está habilitada, [!DNL Live Search] usa atributos de catálogo predefinidos elegidos por el sistema (como el nombre y la descripción del producto) para interpretar el significado de la consulta junto con la búsqueda de palabras clave tradicional. No selecciona ni prioriza atributos en el Administrador.
+Para interpretar el significado de la consulta junto con la búsqueda de palabras clave tradicional cuando la búsqueda semántica está habilitada, [!DNL Live Search] usa atributos de catálogo predefinidos elegidos por el sistema (como el nombre y la descripción del producto). No selecciona ni prioriza atributos en el Administrador.
 
 Por ejemplo:
 
@@ -74,13 +74,13 @@ Los comerciantes locales y de Adobe Commerce en la nube deben habilitar manualme
 
 ### Para [!DNL Adobe Commerce as a Cloud Service] clientes
 
-[!DNL Adobe Commerce as a Cloud Service] clientes usan el mismo espacio de trabajo de **Configuración** en el administrador de [!DNL Live Search]. La búsqueda semántica está **habilitada de manera predeterminada** para los catálogos en inglés aptos. Confirme que **[!UICONTROL Semantic search]** está habilitado o desactívelo si no desea que haya coincidencia semántica en la tienda.
+[!DNL Adobe Commerce as a Cloud Service] clientes usan el mismo espacio de trabajo de **Configuración** en el administrador de [!DNL Live Search]. Adobe Commerce habilita la búsqueda semántica de forma predeterminada para catálogos en inglés aptos. Confirme que **[!UICONTROL Semantic search]** está habilitado o desactívelo si no desea que haya coincidencia semántica en la tienda.
 
 No necesita una configuración de tienda o paso de publicación independiente después de guardar un cambio.
 
 ## Validar después de la activación
 
-Una vez que la búsqueda semántica esté activa y la indexación se complete, Adobe recomienda validar el rendimiento de la búsqueda. Use el área de trabajo de [Rendimiento](performance.md) para revisar las métricas y las consultas de prueba que importan a su negocio. Esto se aplica si la búsqueda semántica estaba habilitada de forma predeterminada o si la habilitó manualmente.
+Una vez que la búsqueda semántica esté activa y la indexación se complete, Adobe recomienda validar el rendimiento de la búsqueda. Use el área de trabajo de [Rendimiento](performance.md) para revisar las métricas y las consultas de prueba que importan a su negocio. Esto se aplica si el sistema habilitó la búsqueda semántica de forma predeterminada o si la habilitó manualmente.
 
 1. Revise los términos más buscados en el informe **Búsquedas únicas**.
 1. Probar consultas históricas de resultados cero a partir del informe **Resultados cero** en la tienda.
@@ -90,7 +90,7 @@ Una vez que la búsqueda semántica esté activa y la indexación se complete, A
 ## Prácticas recomendadas
 
 - Utilice nombres y descripciones de productos claros y descriptivos (idealmente 50-100 palabras) para que tanto la palabra clave como la coincidencia semántica tengan texto de catálogo sólido con el que trabajar.
-- Use [sinónimos](synonyms.md) específicos de la marca o muy técnicos donde la búsqueda semántica pueda no cubrir términos especializados.
+- Use [sinónimos](synonyms.md) específicos de la marca o muy técnicos donde la búsqueda semántica no cubra términos especializados.
 
 ## Resolución de problemas
 

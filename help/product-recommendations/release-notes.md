@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 2233
+source-wordcount: 2260
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Las actualizaciones incluyen:
 ![Corrección](../assets/fix.svg) Correcciones y mejoras
 ![Error](../assets/bug.svg) Problemas conocidos
 
-Consulte la documentación para desarrolladores para [obtener más información sobre la compatibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
+[Más información sobre la compatibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
 
 ## Actualizaciones de servicios alojados
 
@@ -52,7 +52,7 @@ _28 de abril de 2026_
 
 _19 de febrero de 2026_
 
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los productos mostrados en el tipo de recomendación _Vistos recientemente_ se eliminaban en un orden inesperado cuando se alcanzaba el límite de productos de la unidad de recomendación. Ahora, los productos se eliminan en el orden de entrada y salida (FIFO) en el que se vieron.
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los productos mostrados en el tipo de recomendación _Vistos recientemente_ se eliminaban en un orden inesperado cuando se alcanzaba el límite de productos de la unidad de recomendación. Ahora, los productos se eliminan en el orden FIFO (primero en entrar y primero en salir) en el que se vieron.
 
 _19 de noviembre de 2025_
 
@@ -64,7 +64,7 @@ _1 de octubre de 2025_
 
 _31 de enero de 2025_
 
-![Nuevo](../assets/new.svg): hay una nueva directiva de retención de datos para los datos de catálogo no consultados en su entorno de prueba. [Más información](overview.md#catalog-data-retention-policy).
+![Nuevo](../assets/new.svg): hay una nueva directiva de retención de datos para los datos de catálogo no consultados en el entorno de prueba. [Más información](overview.md#catalog-data-retention-policy).
 
 _28 de junio de 2024_
 
@@ -73,11 +73,11 @@ _28 de junio de 2024_
 
 _18 de julio de 2023_
 
-![Nuevo](../assets/new.svg) [!DNL Product Recommendations] tiene ahora una consulta de GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/).
+![Nuevo](../assets/new.svg) [!DNL Product Recommendations] tiene ahora una consulta de GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations).
 
 _25 de abril de 2023_
 
-![Nuevos](../assets/new.svg) clientes de [!DNL Product Recommendations] ahora pueden aprovechar la [indexación de precios SaaS](../price-index/price-indexing.md).
+![Nuevos](../assets/new.svg) [!DNL Product Recommendations] clientes ahora pueden usar [indexación de precios SaaS](../price-index/price-indexing.md).
 
 ## Versión principal actual
 
@@ -194,7 +194,7 @@ _15 de septiembre de 2023_
 
 ![Nuevo](../assets/new.svg) Se agregaron nuevos módulos para admitir el [Indizador de precios Saas](../price-index/price-indexing.md).
 ![Nuevo](../assets/new.svg) Se agregaron nuevos módulos de exportación de datos para admitir la exportación de más tipos de productos, incluidos productos agrupados y tarjetas regalo.
-![Corrección](../assets/fix.svg) El tamaño de tabla de las fuentes Products y Price se ha reducido considerablemente. Las tablas `catalog_data_exporter_products` y `catalog_data_exporter_product_prices` deberían ver una reducción de tamaño sustancial.
+![Corrección](../assets/fix.svg) El tamaño de tabla de las fuentes Products y Price se ha reducido considerablemente. Las tablas `catalog_data_exporter_products` y `catalog_data_exporter_product_prices` ven una reducción de tamaño sustancial.
 
 #### Limitaciones conocidas
 
@@ -252,9 +252,9 @@ _20 de marzo de 2023_
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
 ![Nuevo](../assets/new.svg) agregó [tipos de recomendación](type.md) nuevos: Conversión (ver al carro de compras), Conversión (ver para comprar) y Vistos recientemente. Estos nuevos tipos de recomendación están disponibles en el módulo 3.2.2 y versiones posteriores de `magento/product-recommendations`.
-![Corregir](../assets/fix.svg) Se corrigió un problema en el cual Firewall de aplicaciones web de Fastly (WAF) bloqueaba incorrectamente una cookie
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los productos asignados a la vista de tienda no predeterminada no se mostraban en el panel _Vista previa de productos de Recommendations_ al crear una recomendación para esa vista de tienda específica
-![Corregir](../assets/fix.svg) Se ha corregido un problema por el cual algunos nombres de unidades de recomendación en Page Builder impedían que se mostrara la unidad de recomendación en la tienda
+![Corregir](../assets/fix.svg) Se corrigió un problema en el cual el firewall de aplicaciones web (WAF) de Fastly bloqueaba incorrectamente una cookie.
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los productos asignados a la vista de tienda no predeterminada no se mostraban en el panel _Vista previa de productos de Recommendations_ al crear una recomendación para esa vista de tienda específica.
+![Corregir](../assets/fix.svg) Se ha corregido un problema por el cual algunos nombres de unidades de recomendación en Page Builder impedían que se mostrara la unidad de recomendación en la tienda.
 
 ### 3.3.2 de magento/product-recommendations
 
@@ -272,7 +272,7 @@ _20 de marzo de 2023_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Nuevo](../assets/new.svg) Se agregó compatibilidad con la capa de datos del cliente de Adobe para estandarizar la recopilación de datos de comportamiento en las características y servicios de Adobe Commerce. Consulte [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) para obtener más información.
+![Nuevo](../assets/new.svg) Se agregó compatibilidad con la capa de datos del cliente de Adobe para estandarizar la recopilación de datos de comportamiento en las características y servicios de Adobe Commerce. Para obtener más información, consulte [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
 
 ### 3.2.6 de magento/product-recommendations
 
@@ -297,15 +297,15 @@ _20 de marzo de 2023_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Corrección](../assets/fix.svg) Se corrigió el error &quot;No se pueden recuperar los datos de las opciones de productos configurables&quot; durante la sincronización del catálogo
-![Corregir](../assets/fix.svg) Se corrigió un problema en el cual el código de tienda no se estaba configurando correctamente al habilitar la configuración &quot;Agregar código de tienda a URL&quot;
-![Corrección](../assets/fix.svg) Se ha mejorado la detección de los cambios de configuración del Panel de administración para garantizar que estos cambios se reflejen en los datos de sincronización de catálogos
+![Corrección](../assets/fix.svg) Se corrigió el error &quot;No se pueden recuperar los datos de opciones de productos configurables&quot; durante la sincronización de catálogos.
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el cual el código de tienda no se establecía correctamente al habilitar la configuración &quot;Agregar código de tienda a URL&quot;.
+![Corrección](../assets/fix.svg) Se ha mejorado la detección de los cambios de configuración del Panel de administración para garantizar que estos cambios se reflejen en los datos de sincronización de catálogos.
 
 ### 3.2.2 de magento/product-recommendations
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Nuevo](../assets/new.svg) agregó la capacidad de [previsualizar resultados de recomendaciones](create.md) en el momento de la creación. Esto puede requerir que actualice el módulo a la versión más reciente.
+![Nuevo](../assets/new.svg) agregó la capacidad de [previsualizar resultados de recomendaciones](create.md) en el momento de la creación. Esta actualización requiere que actualice el módulo a la versión más reciente.
 ![Nuevo](../assets/new.svg) agregó la capacidad para [supervisar y administrar](https://experienceleague.adobe.com/es/docs/commerce/user-guides/data-services/catalog-sync) el proceso de sincronización del catálogo desde el administrador.
 ![Nuevo](../assets/new.svg) agregó [filtros](filters.md) para controlar qué productos se muestran en las recomendaciones.
 ![Nuevo](../assets/new.svg) agregó el tipo de recomendación [Similitud visual](type.md#visualsim).
@@ -346,7 +346,7 @@ _20 de marzo de 2023_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
-![Corrección](../assets/fix.svg) Se ha corregido el error &quot;No se pueden recuperar los datos de las opciones del producto&quot; que se podía producir durante la exportación del catálogo.
+![Corrección](../assets/fix.svg) Se corrigió el error &quot;No se pueden recuperar los datos de las opciones del producto&quot; que se produjo durante la exportación del catálogo.
 ![Corrección](../assets/fix.svg) El símbolo de moneda de la columna _Ingresos_ del panel _[!DNL Product Recommendations]_&#x200B;ahora refleja correctamente la moneda base configurada.
 
 ### 3.0.4 de magento/product-recommendations

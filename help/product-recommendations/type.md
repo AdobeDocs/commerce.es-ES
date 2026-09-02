@@ -13,16 +13,16 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2045
+source-wordcount: 2001
 ht-degree: 0%
 
 ---
 
 # Tipos de recomendación
 
-Adobe Commerce proporciona un gran conjunto de recomendaciones que puede implementar en varias páginas del sitio. Todos los tipos de recomendación están basados en datos. Se basan en datos de comportamiento, datos de atributos de productos y métricas. Para facilitar la referencia, los tipos de recomendación se agrupan de la siguiente manera:
+Adobe Commerce proporciona un gran conjunto de recomendaciones que puede implementar en varias páginas del sitio. Todos los tipos de recomendación están basados en datos. Los datos de comportamiento, los datos de atributos del producto y las métricas los alimentan. Para facilitar la referencia, los tipos de recomendación se agrupan de la siguiente manera:
 
 - [Personalizado](#personalized)
 - [Venta cruzada y mejora de ventas](#crossup)
@@ -35,7 +35,7 @@ Como práctica recomendada, Adobe recomienda las siguientes directrices al utili
 
 - No implemente las mismas recomendaciones en la página del carro de compras y en la página de confirmación de pedidos. Considere utilizar `Most Added to Cart` para la página del carro de compras y `Bought This, Bought That` para la página de confirmación de pedido.
 
-- Mantenga su sitio ordenado. No implemente más de tres unidades de recomendación en la misma página.
+- Mantenga la configuración de su sitio. No implemente más de tres unidades de recomendación en la misma página.
 
 - Si su tienda vende ropa, la recomendación `More like this` puede sugerir productos específicos del sexo que no coincidan con el sexo del producto que se está viendo. Considere utilizar este tipo de recomendación solo para categorías que no sean de ropa.
 
@@ -49,7 +49,7 @@ Recomendaciones de productos es un sistema basado en datos que se basa en los da
 
 >[!IMPORTANT]
 >
->La mayoría de los tipos de recomendación requieren datos de comportamiento suficientes (como vistas de producto, acciones de complemento al carro de compras y compras) para generar resultados significativos. El sistema suele necesitar varios días de actividad activa del comprador para crear recomendaciones precisas. Consulte [indicadores de preparación](create.md#readiness-indicators) para obtener información sobre cómo el tráfico del sitio ayuda a rellenar los distintos tipos de recomendaciones.
+>La mayoría de los tipos de recomendación requieren datos de comportamiento suficientes (como vistas de producto, acciones de complemento al carro de compras y compras) para generar resultados significativos. El sistema suele necesitar varios días de actividad activa del comprador para crear recomendaciones precisas. Para saber cómo ayuda el tráfico del sitio a rellenar los distintos tipos de recomendaciones, consulte [indicadores de preparación](create.md#readiness-indicators).
 
 ### Qué sucede si los datos son insuficientes
 
@@ -61,7 +61,7 @@ Cuando no hay suficientes datos de evento para generar recomendaciones, el siste
 
 ## Personalizado {#personalized}
 
-Estos tipos de recomendación recomiendan productos basados en el historial de comportamiento del comprador específico en el sitio. Por ejemplo, si un comprador ya ha buscado una chaqueta o ha comprado una en su sitio web, estas recomendaciones esencialmente recogen lo que dejaron y recomiendan otras chaquetas o productos similares.
+Estos tipos de recomendación recomiendan productos basados en el historial de comportamiento del comprador específico en el sitio. Por ejemplo: si un comprador ha buscado o comprado anteriormente una chaqueta en su sitio, estas recomendaciones continúan desde su actividad anterior y recomiendan otras chaquetas o productos similares.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Estos tipos de recomendación recomiendan productos basados en el historial de c
 
 ## Venta cruzada y mejora de ventas {#crossup}
 
-Estos tipos de recomendación están orientados a la prueba social para ayudar a los compradores a encontrar lo que les gustó a otros o están impulsados por productos para ayudarles a encontrar otros productos similares. Los productos recomendados suelen complementar el producto seleccionado.
+Estos tipos de recomendación están protegidos por normas sociales para ayudar a los compradores a encontrar lo que a otros les gustaba. También se basan en productos para ayudarles a encontrar otros productos similares. Los productos recomendados suelen complementar el producto seleccionado.
 
 ### Contexto de página para recomendaciones
 
@@ -82,15 +82,15 @@ Los tipos de recomendación Venta cruzada y Venta ascendente utilizan el context
 
 - **Página de detalles del producto** — Utiliza el SKU del producto que el comprador está viendo.
 - **Página de carro de compras**: Utiliza los SKU de los productos del carro de compras.
-- **Página de confirmación de pedido**: Utiliza los SKU de la compra que acaba de completar el comprador.
+- **Página de confirmación de pedido**: Utiliza los SKU de la compra que completó el comprador.
 
 El mismo tipo de recomendación puede producir diferentes resultados según el lugar en el que se implemente. Por ejemplo, *vio esto, vio que* en una página de detalles del producto usa el producto visualizado como contexto. En la página del carro de compras, se utiliza el contenido del carro de compras. En la página de confirmación del pedido, se utiliza el pedido completado.
 
 >[!NOTE]
 >
->Los tipos de recomendación &quot;visto esto, visto aquello&quot;, &quot;visto esto, comprado aquello&quot; y &quot;comprado esto, comprado aquello&quot; no usan una métrica de ocurrencia simple, sino un algoritmo de filtrado colaborativo más sofisticado que busca *similitudes interesantes* que no se desvíen hacia productos populares. Los datos utilizados para informar a estos tipos de recomendaciones se basan en el comportamiento agregado del comprador derivado de varias sesiones del sitio. Los datos no se basan en el comportamiento del comprador derivado de una sola incidencia en la sesión en el sitio. Estos tipos de recomendación ayudan a los compradores a encontrar aquellos productos adyacentes que podrían no ser obvios de emparejar con el producto que se está viendo en ese momento.
+>Los tipos de recomendación &quot;visto esto, visto aquello&quot;, &quot;visto aquello, comprado aquello&quot; y &quot;comprado aquello, comprado aquello&quot; utilizan un sofisticado algoritmo de filtrado colaborativo para identificar _similitudes interesantes_ sin hacer demasiado hincapié en los productos populares. El algoritmo utiliza el comportamiento agregado de los compradores en varias sesiones del sitio, en lugar del comportamiento de una sola interacción en la sesión. Estos tipos de recomendación ayudan a los compradores a descubrir productos relacionados que pueden no ser emparejamientos obvios con el producto que están viendo.
 >
->Estos tipos de recomendación requieren datos de interacción interproductos sustanciales para identificar correlaciones significativas. Las tiendas con una diversidad de catálogos de productos limitada o poco tráfico pueden ver menos recomendaciones hasta que surjan patrones de comportamiento suficientes.
+>Estos tipos de recomendación requieren datos de interacción interproductos sustanciales para identificar correlaciones significativas. Las tiendas con una diversidad de catálogos de productos limitada o poco tráfico ven menos recomendaciones hasta que surjan patrones de comportamiento suficientes.
 
 | Tipo | Descripción |
 |---|---|
@@ -106,7 +106,7 @@ Estos tipos de recomendación recomiendan productos que son los más populares o
 
 >[!NOTE]
 >
->Las recomendaciones basadas en popularidad requieren datos de evento suficientes de tu tienda. Si su tienda es nueva o tiene poco tráfico, estos tipos de recomendación pueden devolver resultados limitados o nulos hasta que se hayan recopilado los datos de comportamiento adecuados. Supervise su [indicador de preparación de datos](workspace.md) para garantizar un rendimiento óptimo.
+>Las recomendaciones basadas en popularidad requieren datos de evento suficientes de tu tienda. Si su tienda es nueva o tiene poco tráfico, estos tipos de recomendación devuelven resultados limitados o ningún resultado hasta que se hayan recopilado los datos de comportamiento adecuados. Para garantizar un rendimiento óptimo, monitorice su [indicador de preparación de datos](workspace.md).
 
 | Tipo | Descripción |
 |---|---|
@@ -121,7 +121,7 @@ Estos tipos de recomendación recomiendan productos de mayor rendimiento según 
 
 >[!NOTE]
 >
->Los tipos de recomendación de alto rendimiento dependen de los datos de conversión (compras y acciones de complemento al carro de compras). Es posible que los nuevos almacenes o las tiendas con volúmenes de conversión bajos tengan que recopilar datos durante 7-14 días antes de que estas recomendaciones entren en vigor.
+>Los tipos de recomendación de alto rendimiento dependen de los datos de conversión (compras y acciones de complemento al carro de compras). Los nuevos almacenes o las tiendas con volúmenes de conversión bajos deben recopilar datos durante 7-14 días antes de que estas recomendaciones entren en vigor.
 
 | Tipo | Descripción |
 |---|---|
@@ -153,7 +153,7 @@ Adobe AI utiliza IA para procesar y analizar las imágenes del catálogo y crear
 >
 > Actualmente, las imágenes de producto deben tener un tamaño de 10 MB o menos.
 
-Debido a que este tipo de recomendación no es aplicable a la mayoría de los catálogos, no está habilitado de forma predeterminada. Debe habilitar explícitamente este tipo de recomendación.
+Como este tipo de recomendación no es aplicable a la mayoría de los catálogos, el sistema no lo habilita de forma predeterminada. Habilite explícitamente este tipo de recomendación.
 
 ### Habilitar tipo de recomendación de similitud visual
 

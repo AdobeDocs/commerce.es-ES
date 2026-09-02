@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 08c4badb4cae27a2cefb9fcb8eb5589bc8264467
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1170
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Con [!DNL Live Search], puede:
 
 >[!IMPORTANT]
 >
->Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Antes de la implementación, revisa la información de [Límites y límites](boundaries-limits.md) para asegurarte de que [!DNL Live Search] se adapte a tus necesidades comerciales.
+>Para asegurarse de que [!DNL Live Search] sea adecuado para sus necesidades comerciales, revise la información de [Límites y límites](boundaries-limits.md) antes de la implementación.
 
 ## Arquitectura
 
@@ -46,7 +46,7 @@ La parte de Adobe Commerce de la arquitectura incluye alojar la búsqueda *Admin
 
 ## Recorrido rápido
 
-Con un enfoque en la velocidad, relevancia y facilidad de uso, [!DNL Live Search] cambia las reglas del juego tanto para los compradores como para los comerciantes. Vea el siguiente vídeo y haga un recorrido rápido por [!DNL Live Search] desde la tienda.
+Con un enfoque en la velocidad, relevancia y facilidad de uso, [!DNL Live Search] es una mejora significativa tanto para los compradores como para los comerciantes. Vea el siguiente vídeo y haga un recorrido rápido por [!DNL Live Search] desde la tienda.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452572?captions=spa&learn=on)
 
@@ -80,7 +80,7 @@ Además de la lógica de búsqueda difusa, también se contabilizan las transpos
 
 ### Filtros frente a facetas
 
-[!DNL Live Search] puede filtrar los resultados por cualquier atributo que esté indexado como filtrable. Una faceta es simplemente un atributo filtrable que se ha configurado para mostrarse como un filtro orientado al comprador en la tienda (por ejemplo, Marca, Color, Precio).
+[!DNL Live Search] puede filtrar los resultados por cualquier atributo que esté indexado como filtrable. Una faceta es un atributo que se puede filtrar y que se ha configurado para mostrarse como un filtro orientado al comprador en la tienda (por ejemplo, Marca, Color, Precio).
 
 Algunos campos internos, como `inStock`, se pueden filtrar, pero no facetear:
 
@@ -89,13 +89,13 @@ Algunos campos internos, como `inStock`, se pueden filtrar, pero no facetear:
 
 ### Búsqueda filtrada con facetas
 
-La búsqueda filtrada usa varias dimensiones de valores de atributo o [facetas](facets.md) como criterios de búsqueda. La selección de filtros la define el comerciante y cambia según los productos devueltos, con las facetas más utilizadas ancladas en la parte superior de la lista.
+La búsqueda filtrada usa varias dimensiones de valores de atributo o [facetas](facets.md) como criterios de búsqueda. El comerciante define la selección de filtros, que cambia según los productos devueltos, con las facetas más utilizadas ancladas en la parte superior de la lista.
 
-Use facetas como parámetros de URL:`http://yourwebsite.com?color=red` y Live Search filtra los resultados en función de estos valores de atributo.
+Use facetas como parámetros de URL: `https://www.mywebsite.com/?color=red` y Live Search filtra los resultados en función de estos valores de atributo.
 
 ### Sinónimos
 
-[Sinónimos](synonyms.md) amplían el alcance y acentúan el enfoque de las consultas al incluir palabras que los compradores podrían usar y que difieren de las del catálogo. Puede ajustar el diccionario de sinónimos para mantener a los compradores comprometidos y en el camino de compra.
+[Sinónimos](synonyms.md) amplían el alcance y acentúan el enfoque de las consultas al incluir palabras que utilizan los compradores y que difieren de las del catálogo. Para mantener a los compradores comprometidos y en el camino de compra, ajuste el diccionario de sinónimos.
 
 ### Reglas de comercialización
 
@@ -103,7 +103,7 @@ Las [reglas](rules.md) de comercialización dan forma a la experiencia de compra
 
 ## Componentes de Live Search
 
-- [!DNL Live Search] [widget de ventana emergente](storefront-popover.md) es el cuadro que se abre debajo del campo de búsqueda que contiene los resultados de la búsqueda.
+- [!DNL Live Search]: el widget [ventana emergente](storefront-popover.md) es el cuadro que se abre debajo del campo de búsqueda que contiene los resultados de la búsqueda.
 - [El widget de página de lista de productos](plp-styling.md) (PLP) proporciona una página de lista de productos en la que se pueden buscar con soporte para facetas y sinónimos. El widget se instala y habilita en Live Search 4.0.0+ y reemplaza al adaptador de búsqueda.
 - (**Obsoleto**) El adaptador de búsqueda era el precursor del widget PLP y se instaló con Live Search &lt; 4.0.0. Si utiliza una versión de Live Search anterior a la 4.0.0, Commerce recomienda actualizar para recibir las ventajas de las funciones del widget PLP y las mejoras futuras. Consulte la [guía de migración](migrate-to-plp.md) para obtener información detallada sobre la migración al widget PLP.
 
@@ -117,14 +117,14 @@ El [!DNL Live Search] [espacio de trabajo](workspace.md) es el área del adminis
 
 ## Política de retención de datos del catálogo
 
-Si no envía una consulta de búsqueda de los datos del catálogo en el entorno de prueba durante 90 días consecutivos, los datos del catálogo se establecen en modo de hibernación y no se devuelve ningún dato para ninguna consulta de búsqueda. Esta directiva no afecta a los datos de catálogo del entorno de producción.
+Si no envía una consulta de búsqueda para el entorno de prueba durante 90 días, los datos del catálogo entran en modo de hibernación y no devuelven resultados. Esta directiva no afecta a los datos del catálogo en el entorno de producción.
 
 ### Entorno de prueba inactivo
 
-Para reactivar los datos del catálogo en su entorno de prueba, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con el título: &quot;Reactivar [!DNL Live Search]&quot; e incluya los identificadores de entorno. Los datos del catálogo en el entorno de prueba deben restaurarse en un par de horas.
+Para reactivar los datos del catálogo en su entorno de prueba, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con el título: &quot;Reactivar [!DNL Live Search]&quot; e incluya los identificadores de entorno. Los datos del catálogo en el entorno de prueba deben restaurarse en un plazo de dos horas.
 
 ### Catálogo vacío
 
-Si su entorno tiene un catálogo vacío 45 días después de crearse, los datos del catálogo se establecen en modo de hibernación y no se devuelve ningún dato para ninguna consulta de búsqueda. Esto incluye tanto los entornos de producción como los de prueba.
+Si su entorno tiene un catálogo vacío 45 días después de crearse, los datos del catálogo se establecen en modo de hibernación y no se devuelve ningún dato para ninguna consulta de búsqueda. Esto incluye entornos de producción y prueba.
 
-Para reactivar los datos del catálogo en su entorno, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con el título: &quot;Reactivar [!DNL Live Search]&quot; e incluya los identificadores de entorno. Los datos del catálogo de su entorno deben restaurarse en un par de horas.
+Para reactivar los datos del catálogo en su entorno, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con el título: &quot;Reactivar [!DNL Live Search]&quot; e incluya los identificadores de entorno. Los datos del catálogo de su entorno deben restaurarse en un plazo de dos horas.

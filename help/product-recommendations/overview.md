@@ -17,16 +17,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: 737
 ht-degree: 0%
 
 ---
 
 # ¿Qué son [!DNL Product Recommendations]?
 
-[!DNL Product Recommendations] te ayuda a mostrar recomendaciones de productos personalizadas en tiendas Adobe Commerce usando [Adobe AI](https://business.adobe.com/es/ai.html) y aprendizaje automático en el comportamiento agregado del comprador y tu catálogo. Esta descripción general abarca las restricciones de servicio (incluida la HIPAA), los datos y la privacidad, donde aparecen las unidades de recomendación, las rutas de implementación de tienda, cómo las recomendaciones complementan las relaciones de producto y la retención de datos de catálogo.
+[!DNL Product Recommendations] usa [Adobe AI](https://business.adobe.com/es/ai.html) y aprendizaje automático entrenado en el comportamiento agregado del comprador y los datos del catálogo para ofrecer recomendaciones personalizadas en tiendas Adobe Commerce. Esta descripción general cubre las restricciones de servicio (incluida la HIPAA), la privacidad de datos, la ubicación de la unidad de recomendación, las opciones de implementación de tienda, la integración de relaciones de producto y la retención de datos del catálogo.
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ Elija la documentación que coincida con su tienda:
 
 ## Recomendaciones de productos frente a relaciones de productos
 
-Dadas las complejidades cambiantes de las compras en línea, lo que mejor funciona para su tienda a menudo es una combinación de múltiples tecnologías clave. El uso de [!DNL Product Recommendations] y [relaciones de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) le proporciona más flexibilidad al promocionar productos. Puede aprovechar [!DNL Product Recommendations] con tecnología de Adobe AI para automatizar de manera inteligente sus recomendaciones a escala. Entonces, puede aprovechar [reglas de productos relacionadas](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) cuando tenga que intervenir manualmente y asegurarse de que se hace una recomendación específica a un segmento de destinatario o cuando se deban cumplir ciertos objetivos comerciales.
+Dadas las complejidades cambiantes de las compras en línea, lo que mejor funciona para su tienda a menudo es una combinación de múltiples tecnologías clave. El uso de [!DNL Product Recommendations] y [relaciones de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) le proporciona más flexibilidad al promocionar productos. Para automatizar las recomendaciones a escala, puede aprovechar [!DNL Product Recommendations] con tecnología de Adobe AI. Entonces, puede aprovechar [reglas de productos relacionadas](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) cuando tenga que intervenir manualmente y asegurarse de que se hace una recomendación específica a un segmento de destinatario o cuando se deban cumplir ciertos objetivos comerciales.
 
 Las recomendaciones de productos le permiten:
 
@@ -68,18 +68,18 @@ Las recomendaciones de productos le permiten:
 
 ## Demostración de recomendaciones de productos
 
-Vea este vídeo para obtener más información sobre [!DNL Product Recommendations]:
+Para obtener información acerca de [!DNL Product Recommendations], vea este vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3449961?captions=spa&quality=12)
 
 ## Política de retención de datos del catálogo
 
-El servicio [!DNL Product Recommendations] depende de los datos del catálogo que permanecen sincronizados con su entorno de Adobe Commerce. Los catálogos o entornos inactivos que dejan de consultar esos datos pueden entrar en hibernación, lo que afecta a lo que devuelve el servicio hasta que se reactiva.
+El servicio [!DNL Product Recommendations] depende de los datos del catálogo que permanecen sincronizados con su entorno de Adobe Commerce. Catálogos o entornos inactivos que dejan de consultar que los datos pueden quedar inactivos, lo que afecta a lo que el servicio devuelve hasta que se reactiva.
 
-Si no envía una consulta para los datos del catálogo en su entorno **testing** durante 90 días consecutivos, los datos del catálogo se establecerán en modo de hibernación y no se devolverá ningún dato para ninguna consulta. Los datos del catálogo en su entorno **production** no se ven afectados por la regla de 90 días.
+Si no envía una consulta para los datos del catálogo en su entorno **testing** durante 90 días consecutivos, los datos del catálogo se establecerán en modo inactivo y no se devolverá ningún dato para ninguna consulta. La regla de 90 días no afecta los datos del catálogo en su entorno **production**.
 
-Si su entorno tiene un **catálogo vacío** 45 días después de crearse, los datos del catálogo se establecen en modo de hibernación y no se devuelven datos para ninguna consulta. Esto se aplica tanto a los entornos de producción como de prueba.
+Si su entorno tiene un **catálogo vacío** 45 días después de crearse, los datos del catálogo se establecen en modo inactivo y no se devuelven datos para ninguna consulta. Esto se aplica tanto a los entornos de producción como de prueba.
 
 ### Reactivar datos de catálogo
 
-Para restaurar los datos del catálogo después de la hibernación, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con el título &quot;Reactivar [!DNL Product Recommendations]&quot; e incluya los identificadores de entorno. Los datos del catálogo deben restaurarse en un par de horas.
+Para restaurar los datos del catálogo cuando estén inactivos, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con el título &quot;Reactivar [!DNL Product Recommendations]&quot; e incluya los identificadores de entorno. Los datos del catálogo deben restaurarse en un plazo de dos horas.
