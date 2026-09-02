@@ -3,21 +3,13 @@ title: Headless
 description: Aprenda a integrar [!DNL Product Recommendations] en una tienda sin encabezado.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
 TQID: https://experienceleague.adobe.com/J3qXs-SWuDCz7pQwzGm0VcOOFoU1QM2M4qwsTxxPwE8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 363
+source-wordcount: 365
 ht-degree: 0%
 
 ---
@@ -32,11 +24,11 @@ Los integradores personalizados y sin encabezado deben consultar estas instrucci
 
 >[!NOTE]
 >
->Las instancias sin encabezado deben implementar eventos para activar el panel Recomendaciones de productos.
+>Las instancias sin encabezado deben implementar eventos para admitir el panel de recomendaciones de productos.
 
 Para integrar [!DNL Product Recommendations] en una tienda sin encabezado, debes:
 
-1. Envíe datos de comportamiento a Adobe AI para analizar y calcular los resultados de recomendaciones de productos. También puede enviar datos adicionales para habilitar la recomendación de productos [informes de métricas](workspace.md).
+1. Envíe datos de comportamiento a Adobe AI para analizar y calcular los resultados de recomendaciones de productos. Para habilitar la recomendación de productos [métricas que generan informes](workspace.md), también puede enviar datos adicionales.
 
 1. Busque resultados de recomendaciones de productos y procese esos resultados en la página.
 
@@ -44,7 +36,7 @@ Puede realizar ambas acciones utilizando los SDK disponibles como se describe en
 
 1. [Instalar](install-configure.md) el módulo [!DNL Product Recommendations].
 
-1. Instale y use [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) para activar [eventos de comportamiento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
+1. Para activar los [eventos de comportamiento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations), instale y use [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
    El mínimo de eventos requeridos para devolver [!DNL Product Recommendations] resultados:
 
@@ -63,10 +55,10 @@ Puede realizar ambas acciones utilizando los SDK disponibles como se describe en
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | recommendation-unit (si hay un botón &quot;Agregar al carro de compras&quot; en la plantilla de recomendaciones) |
 
-1. Cuando se activen los eventos, usa el [Recopilador de eventos de Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) para controlar los eventos y enviarlos a Adobe AI.
+1. Cuando se activen los eventos, usa el [Recopilador de eventos de Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/) para controlar los eventos y enviarlos a Adobe AI.
 
 1. Una vez recopilados los datos de comportamiento, puede [crear](create.md) [!DNL Product Recommendations] en el administrador.
 
 1. Use [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) para recuperar las unidades de recomendación en la tienda. SDK devuelve los datos de producto necesarios para procesar las unidades de recomendación en una página.
 
-1. Aprenda a utilizar la consulta de GraphQL [`recommendations` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.
+1. Aprenda a utilizar la consulta de GraphQL [`recommendations` ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.
