@@ -13,9 +13,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 2001
+source-wordcount: 2026
 ht-degree: 0%
 
 ---
@@ -132,6 +132,10 @@ Estos tipos de recomendación recomiendan productos de mayor rendimiento según 
 
 El tipo de recomendación _Similitud visual_ recomienda productos de aspecto similar al producto que se está viendo. Este tipo de recomendación es más útil cuando las imágenes y los aspectos visuales de los productos son partes importantes de la experiencia de compra.
 
+>[!NOTE]
+>
+>Como este tipo de recomendación no es aplicable a la mayoría de los catálogos, el sistema no lo habilita de forma predeterminada. [habilitar explícitamente este tipo de recomendación](#enable-visual-similarity-recommendation-type).
+
 ### Cómo funciona
 
 El tipo de recomendación _Similitud visual_ ofrece recomendaciones para otros productos del catálogo que tengan una similitud visual con las imágenes que se están viendo en ese momento. La similitud visual incluye aspectos como:
@@ -145,15 +149,11 @@ El tipo de recomendación _Similitud visual_ ofrece recomendaciones para otros p
 
 Adobe AI utiliza IA para procesar y analizar las imágenes del catálogo y crear atributos utilizados para determinar similitudes visuales.
 
->[!NOTE]
->
-> Si está probando este tipo de recomendación en un entorno que no es de producción, asegúrese de que las URL de la imagen sean accesibles públicamente.
+#### Consideraciones especiales
 
->[!NOTE]
->
-> Actualmente, las imágenes de producto deben tener un tamaño de 10 MB o menos.
-
-Como este tipo de recomendación no es aplicable a la mayoría de los catálogos, el sistema no lo habilita de forma predeterminada. Habilite explícitamente este tipo de recomendación.
+- Si está probando este tipo de recomendación en un entorno que no es de producción, asegúrese de que las URL de la imagen sean accesibles públicamente.
+- Actualmente, las imágenes de producto deben tener un tamaño de 10 MB o menos.
+- El módulo [Fastly Image Optimization](install-configure.md#fastlysupport) opcional puede aplicar parámetros de Fastly Image Optimization a [!DNL Product Recommendations] direcciones URL de imagen. Consulte [Agregar compatibilidad con Fastly Image Optimization](install-configure.md#fastlysupport) para obtener más información.
 
 ### Habilitar tipo de recomendación de similitud visual
 

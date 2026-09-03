@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 2260
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ Las notas de la versión describen actualizaciones de los siguientes [!DNL Produ
 * [!DNL Product Recommendations] metapaquete: `magento/product-recommendations`
 * Compatibilidad con Page Builder en el módulo [!DNL Product Recommendations] (opcional): `magento/module-page-builder-product-recommendations`
 * Compatibilidad de tipo de recomendación de similitud visual para el módulo [!DNL Product Recommendations] (opcional): `magento/module-visual-product-recommendations`
+* Compatibilidad con la optimización rápida de imágenes para el módulo [!DNL Product Recommendations] (opcional): `magento/module-fastly-recommendations`
 
 Adobe es compatible con la última versión de Product Recommendations lanzada. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
 
@@ -80,6 +81,14 @@ _25 de abril de 2023_
 ![Nuevos](../assets/new.svg) [!DNL Product Recommendations] clientes ahora pueden usar [indexación de precios SaaS](../price-index/price-indexing.md).
 
 ## Versión principal actual
+
+### 6.8.0 de magento/module-fastly-recommendations
+
+_3 de septiembre de 2026_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
+
+![Nuevo](../assets/new.svg) agregó compatibilidad opcional con Fastly Image Optimization para [!DNL Product Recommendations]. Este módulo aplica los parámetros [Fastly Image Optimization](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/fastly) a las direcciones URL de [!DNL Product Recommendations] imágenes. Consulte [Agregar compatibilidad con la optimización de imágenes de Fastly](install-configure.md#fastlysupport) para obtener instrucciones de instalación.
 
 ### 6.7.0 magento/product-recommendations
 
