@@ -5,23 +5,14 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 554
+source-wordcount: 600
 ht-degree: 0%
 
 ---
@@ -57,7 +48,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Al habilitar [!DNL Product Recommendations] en Page Builder, puede agregar una [unidad de recomendación](https://experienceleague.adobe.com/es/docs/commerce-admin/page-builder/add-content/recommendations) activa y existente a cualquier contenido creado en Page Builder, como páginas, bloques y bloques dinámicos.
+Al habilitar [!DNL Product Recommendations] en Page Builder, puede agregar una [unidad de recomendación](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) activa y existente a cualquier contenido creado en Page Builder, como páginas, bloques y bloques dinámicos.
 
 Consulte [Uso de [!DNL Product Recommendations] con contenido de Page Builder](page-builder.md) para obtener más instrucciones.
 
@@ -69,13 +60,21 @@ El tipo de recomendación _Similitud visual_ muestra productos [visualmente simi
 composer require magento/module-visual-product-recommendations
 ```
 
+### Añadir compatibilidad con Optimización de imágenes rápida {#fastlysupport}
+
+La compatibilidad con la optimización rápida de imágenes para [!DNL Product Recommendations] es un módulo opcional y se instala por separado. Este módulo aplica los parámetros [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) a las direcciones URL de [!DNL Product Recommendations] imágenes. Para instalarlo, ejecute el siguiente comando:
+
+```bash
+composer require magento/module-fastly-recommendations
+```
+
 ## Configurar [!DNL Product Recommendations] {#configure}
 
 1. Después de instalar el módulo `magento/product-recommendations`, configure [Commerce Services Connector](../landing/saas.md) especificando las claves de API y seleccionando un espacio de datos SaaS.
 
    La configuración de esta conexión permite la sincronización de datos y la comunicación entre la instancia de Commerce, el servicio de catálogo y otros servicios de soporte. La [extensión de exportación de datos SaaS](../data-export/overview.md) administra la sincronización de datos.
 
-1. Para garantizar que la exportación del catálogo se pueda ejecutar correctamente, confirme que los trabajos [cron](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) y los [indexadores](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers) se están ejecutando y que el indexador `Product Feed` está establecido en `Update by Schedule`.
+1. Para garantizar que la exportación del catálogo se pueda ejecutar correctamente, confirme que los trabajos [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) y los [indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) se están ejecutando y que el indexador `Product Feed` está establecido en `Update by Schedule`.
 
 Después de vincular correctamente la aplicación de Commerce a los servicios de Commerce y especificar el [espacio de datos SaaS](../landing/saas.md#saas-configuration), se inicia la sincronización del catálogo. Entonces puedes [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) que los datos de comportamiento se están enviando a tu tienda.
 
@@ -135,4 +134,4 @@ Para permitir que Product Recommendations pase a través de un firewall, agregue
 
 ## Desinstalar [!DNL Product Recommendations] {#uninstall}
 
-Si es necesario, puede [desinstalar](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) el módulo de recomendaciones de productos.
+Si es necesario, puede [desinstalar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) el módulo de recomendaciones de productos.
