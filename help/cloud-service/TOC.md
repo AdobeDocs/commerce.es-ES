@@ -7,10 +7,10 @@ recommendations: noDisplay, noCatalog
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
+source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
 workflow-type: tm+mt
-source-wordcount: 224
-ht-degree: 4%
+source-wordcount: 226
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 4%
       - [Ejecución de una migración masiva de datos](migration/bulk-data/migration-guide.md)
       - [Tutorial de vídeo](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Herramienta de evaluación de migración](migration/assessment.md)
-    - [Herramientas de codificación](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+    - [Herramientas de codificación](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc}[Servicio RAG de documentación](migration/doc-rag.md)
 - [Iniciar sesión como cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Puntos finales REST de la cuenta de tarjeta regalo](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}

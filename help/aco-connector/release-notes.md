@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
+source-git-commit: 4a3bb899f05e489cbd5b5c46909085e204751dc5
 workflow-type: tm+mt
-source-wordcount: 514
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ Estas notas de la versión describen todas las versiones para [!DNL Adobe Commer
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
 ## Versiones de 2026
+
+### Versión 1.1.0
+
+_2 de septiembre de 2026_
+
+![Nuevos](../assets/new.svg) **atributos de categoría ahora incluidos en la sincronización de catálogos**- [!DNL Adobe Commerce Optimizer Connector] ahora sincroniza los atributos de categoría y sus metadatos con [!DNL Adobe Commerce Optimizer], por lo que los atributos de categoría personalizados están disponibles para la comercialización. <!--MDEE-1373-->
 
 ### Versión 1.0.17
 
