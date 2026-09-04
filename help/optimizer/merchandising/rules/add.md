@@ -1,7 +1,7 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización para búsquedas, listados de productos predeterminados y páginas de categorías.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -265,7 +265,7 @@ O los eventos se pueden configurar manualmente:
 
 >[!AVAILABILITY]
 >
->Esta característica está en [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Esta característica está en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **La clasificación de atributos** aplica automáticamente una acción **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a cada producto que coincide con una o más condiciones de atributo, sin que sea necesario seleccionar SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con [Clasificación inteligente](#intelligent-ranking) y [Clasificación manual](#manual-ranking), y está disponible para la regla de **Todos los productos**, **reglas de búsqueda** y **reglas de categoría**. Utilícelo para escalar la comercialización en catálogos grandes, por ejemplo, impulsando cada producto de una marca determinada o enterrando cada producto en un color discontinuado.
 
