@@ -16,16 +16,20 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 3ee9822b069504343f69f5b1dd36713e7dcbf3d8
+source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
 workflow-type: tm+mt
-source-wordcount: 3378
+source-wordcount: 4183
 ht-degree: 0%
 
 ---
 
 # Crear y administrar reglas
 
-Para generar una regla, abra el editor de reglas, elija un **tipo de regla** (condiciones de búsqueda, lista predeterminada o páginas de categoría), luego defina las condiciones y la clasificación donde se apliquen, pruebe los resultados y publique la regla.
+Para generar y publicar una regla:
+
+1. En Optimizer Studio, abra el editor de reglas, elija un **tipo de regla** (condiciones de búsqueda, listado predeterminado, páginas de categoría o atributos de producto) y luego defina las condiciones y la clasificación donde se apliquen.
+1. Pruebe los resultados.
+1. Publique la regla.
 
 ## Crear una regla {#create-a-rule}
 
@@ -77,7 +81,7 @@ Las condiciones son los requisitos para almacenar en déclencheur un evento. Una
 1. Para probar otras consultas, cambia el texto de la consulta en el cuadro de búsqueda *Probar la regla* y pulsa **Devolver**.
 Inicialmente, el panel de prueba procesa la consulta desde el cuadro de búsqueda Condiciones. Pero ahora está procesando la consulta desde el cuadro de consulta de prueba. El panel de prueba procesa solo una consulta a la vez.
 1. Si te gusta el resultado, actualiza el texto en el cuadro de búsqueda *Condiciones*. A continuación, haga clic en cualquier lugar de la página para actualizar los resultados en el panel de pruebas.
-1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
+1. De manera opcional, establezca [Clasificación inteligente](#intelligent-ranking), [Clasificación manual](#manual-ranking) o [Clasificación de atributos](#attribute-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
 
 **Varias condiciones**
 
@@ -96,7 +100,7 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
    En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas independientes que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activa con más frecuencia en la tienda que la otra.
 
 1. Para agregar otra condición, haga clic en **Agregar condición** y repita el proceso.
-1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
+1. De manera opcional, establezca [Clasificación inteligente](#intelligent-ranking), [Clasificación manual](#manual-ranking) o [Clasificación de atributos](#attribute-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
 
 >[!TAB Regla de categoría]
 
@@ -125,10 +129,9 @@ Cuando varias categorías tengan nombres similares, utilice la ruta de acceso a 
    - **Aplicar a subcategorías**: aplica la regla a subcategorías que aún no tienen definida una regla de comercialización activa.
    - **Vista previa**: muestra cómo aparecería la página de la categoría en tu tienda.
 
-   ![Menú de acción de categoría](../../assets/category-action-menu.png)
+1. De manera opcional, establezca [Clasificación inteligente](#intelligent-ranking), [Clasificación manual](#manual-ranking) o [Clasificación de atributos](#attribute-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las reglas de búsqueda, con cualquier diferencia destacada.
 
-1. Verifique la ruta de categoría mostrada para cada categoría seleccionada para confirmar que seleccionó la correcta.
-1. Defina la [clasificación inteligente](#intelligent-ranking) y la [clasificación manual](#manual-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las reglas de búsqueda, con cualquier diferencia destacada.
+   ![Menú de acción de categoría](../../assets/category-action-menu.png)
 
 >[!ENDTABS]
 
@@ -148,6 +151,20 @@ Los propietarios de tiendas pueden definir estrategias como las siguientes. Las 
 - **Ninguno**: para la búsqueda y los listados predeterminados, los productos se solicitan por **Relevancia**. Para **reglas de categoría**, utiliza el orden de comercialización predeterminado para la categoría cuando no elige otra estrategia inteligente.
 
 Seleccione la estrategia para la regla. El panel **[!UICONTROL Test your rule]** muestra los resultados esperados para las reglas orientadas a la búsqueda; **reglas de categoría** utilizan la vista previa de categoría.
+
+#### Señales de comportamiento para productos y variantes configurables {#behavioral-signals-variants}
+
+La clasificación inteligente recopila señales de comportamiento, como vistas, eventos de adición al carro de compras y compras, en relación con el producto específico con el que interactúa un comprador. Para un producto configurable, esto significa que las señales se registran en el nivel **variante** (producto simple), no contra el elemento principal configurable.
+
+Al clasificar un producto configurable, la clasificación inteligente agrega las señales de comportamiento recopiladas de todas sus variantes y las desplaza hasta el elemento principal configurable. La puntuación de clasificación de un producto configurable refleja las señales combinadas de cada variante, no solo una.
+
+Esta agregación se produce dentro del ámbito de la categoría que se está explorando. Una variante solo contribuye con sus señales de comportamiento a la puntuación de clasificación del elemento principal configurable para las categorías a las que está asignada esa **variante**. Si falta una variante en una categoría, sus señales no se contabilizan en la clasificación del elemento principal en esa categoría, incluso cuando el elemento principal configurable en sí mismo está asignado allí.
+
+**Práctica recomendada:** Revise las asignaciones de categorías de todas las variantes de productos, especialmente en catálogos que usan estructuras de categorías específicas del tamaño, el color u otras variantes, para confirmar que cada variante está asignada a cada categoría en la que se espera que aparezca e influya en la clasificación.
+
+**Ejemplo:**
+
+Un comerciante organiza un catálogo en subcategorías según el tamaño, como **200g** y **500g**. Un producto configurable tiene dos variantes, una para cada tamaño. Si solo se asigna la variante 200g a la categoría 200g, las compras y vistas de la variante 500g no contribuyen a la puntuación de clasificación del producto configurable en esa página. Esto es cierto incluso si la variante de 500g se vende bien en otros lugares. El producto configurable puede clasificarse por debajo de lo esperado, o fuera del paso con el rendimiento de ventas real, en la página de categoría 200g. Asignar ambas variantes a sus respectivas categorías resuelve la discrepancia.
 
 #### Aumento de clasificación inteligente {#intelligent-ranking-boost}
 
@@ -210,6 +227,7 @@ Consulte [reglas de búsqueda](./best-practice.md#tips-to-optimize-search-rules)
 #### Advertencias
 
 - Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
+- Si los resultados de clasificación inteligente no se correlacionan con las ventas reales o el rendimiento de visualización, confirme que todas las variantes de producto relevantes se asignan a la categoría que se está revisando. Las asignaciones de categoría de variante que faltan son una causa común y fácilmente ignorada de comportamiento de clasificación inesperado. Vea [Señales de comportamiento para productos y variantes configurables](#behavioral-signals-variants).
 - Para garantizar que la clasificación inteligente funcione correctamente en **search**, asegúrate de que **Search Weight** para cualquier atributo que se use para la búsqueda o el filtrado (facetas) sea `5` o menos. (Esta guía se aplica a la indexación de búsqueda, no a los flujos de comercialización solo de categoría).
 
 Para obtener información acerca de cómo establecer pesos de búsqueda, consulte la [API de metadatos](https://developer.adobe.com/commerce/services/reference/rest/).
@@ -218,10 +236,10 @@ Para obtener información acerca de cómo establecer pesos de búsqueda, consult
 
 **La clasificación manual** eventos ajusta el orden del producto para **resultados de búsqueda** (cuando se cumplen las condiciones de la regla), para **listados de productos predeterminados** y para **listados de páginas de categorías**. Una sola regla puede tener hasta 25 eventos.
 
-- **Aumentar**: mueve un producto a una posición superior en el listado.
-- **Enterrar**: mueve un SKU a una posición inferior en el anuncio.
-- **Anclar un producto**: corrige un producto en la posición seleccionada del listado.
-- **Ocultar un producto**: excluye un SKU de los resultados (orientado a la búsqueda; confirme el comportamiento de las reglas de categoría en el editor).
+- **[!UICONTROL Boost]**: mueve un SKU a una posición superior en el anuncio.
+- **[!UICONTROL Bury]**: mueve un SKU a una posición inferior en el anuncio.
+- **[!UICONTROL Pin a product]**: corrige un SKU en la posición seleccionada del anuncio.
+- **[!UICONTROL Hide a product]**: excluye un SKU de los resultados (orientado a la búsqueda; confirme el comportamiento de las reglas de categoría en el editor).
 
 La forma más sencilla de anclar un producto es arrastrando y soltando.
 
@@ -239,9 +257,48 @@ O los eventos se pueden configurar manualmente:
 
 1. En *Eventos*, elija el **Evento** que se llevará a cabo cuando se cumplan las condiciones asociadas.
 
-   Por ejemplo, elija `Hide a product`. A continuación, introduzca el nombre del producto que desea ocultar. Los productos se sugieren a medida que escribe.
+   Por ejemplo, elija **[!UICONTROL Hide a product]**. A continuación, introduzca la frase que coincida con parte o el nombre completo o SKU del producto que desea ocultar.
 
 1. Para varios eventos, elija cualquier otro evento que desee almacenar en déclencheur cuando se cumplan las condiciones.
+
+### Clasificación de atributos {#attribute-ranking}
+
+>[!AVAILABILITY]
+>
+>Esta característica está en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+
+**La clasificación de atributos** aplica automáticamente una acción **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a cada producto que coincide con una o más condiciones de atributo, sin que sea necesario seleccionar SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con [Clasificación inteligente](#intelligent-ranking) y [Clasificación manual](#manual-ranking), y está disponible para la regla de **Todos los productos**, **reglas de búsqueda** y **reglas de categoría**. Utilícelo para escalar la comercialización en catálogos grandes, por ejemplo, impulsando cada producto de una marca determinada o enterrando cada producto en un color discontinuado.
+
+![Clasificación de atributos](../../assets/attribute-rank-rule.png)
+
+1. En el editor de reglas, expanda **[!UICONTROL Attribute ranking]**.
+1. Haga clic en **[!UICONTROL Add attribute]** para agregar una condición de atributo.
+1. En el menú desplegable situado en la parte superior de la condición, seleccione la acción que se aplicará a los productos que coincidan: **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]**.
+1. En **[!UICONTROL Attribute]**, seleccione el atributo de producto que coincida, como **Marca**, **Categoría**, **País**, **Fabricante** o **Modelo**. Solo están disponibles los atributos filtrables basados en texto.
+1. En **[!UICONTROL Value]**, escriba un valor y presione **Devolver** para agregarlo. Repita para agregar más valores. Cada valor aparece como una etiqueta extraíble en **[!UICONTROL Selected values]**. Un producto coincide con la condición si tiene cualquiera de los valores enumerados.
+
+   >[!NOTE]
+   >
+   >El campo **[!UICONTROL Value]** acepta texto libre y distingue entre mayúsculas y minúsculas. Después de agregar un valor, compruebe el panel de prueba para confirmar que coincide con los productos esperados.
+
+1. Para **[!UICONTROL Boost]** y **[!UICONTROL Bury]**, arrastre el control deslizante **[!UICONTROL Boost strength]** para establecer la fuerza con la que la acción mueve los productos coincidentes.
+1. Para agregar otra condición, haga clic en **[!UICONTROL Add attribute]** y repita los pasos anteriores.
+
+El anclaje no está disponible en la clasificación de atributos, ya que el anclaje asigna un producto a una posición exacta, mientras que una condición de atributo puede coincidir con muchos productos a la vez. Para fijar un producto específico, usa [la clasificación manual](#manual-ranking) directamente en ese SKU.
+
+#### Interacción de la clasificación de atributos con la clasificación inteligente
+
+Cuando una regla combina una estrategia de clasificación inteligente con una o más condiciones de atributo, la acción de atributo tiene prioridad para cualquier producto que coincida. La clasificación inteligente sigue encargando el resto de los productos sin coincidencias.
+
+#### Cuando las condiciones de atributo entran en conflicto entre sí
+
+Un solo producto puede coincidir con más de una condición de atributo, ya sea dentro de la misma regla o entre reglas diferentes. Cuando las condiciones de coincidencia especifican acciones conflictivas para el mismo producto, **[!UICONTROL Hide]** tiene prioridad sobre **[!UICONTROL Boost]** y **[!UICONTROL Bury]**.
+
+Por ejemplo, una condición aumenta todos los productos con `season = Christmas` y otra oculta todos los productos con `brand = Nike`. Un producto con `season = Christmas` y `brand = Nike` está oculto, porque **[!UICONTROL Hide]** tiene prioridad sobre **[!UICONTROL Boost]**.
+
+#### Límites
+
+Una sola regla puede tener hasta 25 condiciones de atributo, el mismo límite que los eventos de clasificación manuales.
 
 ### Finalización de la regla {#finalizing-the-rule}
 
@@ -289,7 +346,7 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 ### Condiciones (si)
 
 | Condición | Descripción |
-|--- |--- |
+| --- | --- |
 | La consulta de búsqueda contiene | Un carácter o cadena de texto que se incluye en la consulta del comprador. La consulta del comprador debe coincidir con un solo carácter para cumplir esta condición. |
 | La consulta de búsqueda es | Carácter o cadena de texto que coincide exactamente con la consulta del comprador. Las consultas complejas con varias condiciones no se pueden crear cuando se utiliza esta condición. |
 | La consulta de búsqueda comienza con | La consulta del comprador comienza con este carácter o cadena de texto. |
@@ -298,25 +355,34 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 ### Operadores lógicos
 
 | Operador | Descripción |
-|--- |--- |
+| --- | --- |
 | O | (Predeterminado) El operador lógico `OR` compara dos condiciones y cumple los requisitos para almacenar en déclencheur un evento si al menos una condición es verdadera. |
 | Y | El operador lógico `AND` compara dos condiciones y cumple los requisitos para almacenar en déclencheur un evento si ambas condiciones son verdaderas. |
 
 ### Operadores de coincidencia
 
 | Operador | Descripción |
-|--- |--- |
+| --- | --- |
 | Cualquiera | Cambia todos los operadores lógicos de la regla a `OR` y devuelve el conjunto de productos coincidentes. |
 | Todo | Cambia todos los operadores lógicos de la regla a `AND` y devuelve el conjunto de productos coincidentes. |
 
 ### Eventos de clasificación manual
 
 | Evento | Descripción |
-|--- |--- |
-| Aumentar | Sube un SKU o un rango de SKU en el anuncio (búsqueda o categoría). Cada uno está marcado con un distintivo de vista previa &quot;potenciado&quot; en los resultados de la prueba. |
-| Enterrar | Mueve un SKU o un rango de SKU a una posición inferior del anuncio. Cada una está marcada con un distintivo de vista previa &quot;enterrado&quot; en los resultados de la prueba. |
-| Fijar un producto | Adjunta un único SKU a una posición específica del anuncio. El producto está marcado con un distintivo de vista previa &quot;anclado&quot; en los resultados de la prueba. |
-| Ocultar un producto | Excluye un SKU o un rango de SKU de los resultados (orientado a la búsqueda; confirme las reglas de categoría en el editor). |
+| --- | --- |
+| [!UICONTROL Boost] | Sube un SKU o un rango de SKU en el anuncio (búsqueda o categoría). Cada uno está marcado con un distintivo de vista previa &quot;potenciado&quot; en los resultados de la prueba. |
+| [!UICONTROL Bury] | Mueve un SKU o un rango de SKU a una posición inferior del anuncio. Cada una está marcada con un distintivo de vista previa &quot;enterrado&quot; en los resultados de la prueba. |
+| [!UICONTROL Pin a product] | Adjunta un único SKU a una posición específica del anuncio. El producto está marcado con un distintivo de vista previa &quot;anclado&quot; en los resultados de la prueba. |
+| [!UICONTROL Hide a product] | Excluye un SKU o un rango de SKU de los resultados (orientado a la búsqueda; confirme las reglas de categoría en el editor). |
+
+### Condiciones de clasificación de atributos
+
+| Campo | Descripción |
+| --- | --- |
+| Acción | La acción se aplicó a todos los productos que coinciden con la condición: **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]**. |
+| [!UICONTROL Attribute] | El atributo de producto filtrable y basado en texto identifica los destinos de condición, como **Marca**, **Categoría**, **País**, **Fabricante** o **Modelo**. |
+| [!UICONTROL Value] | Uno o más valores de atributo que un producto debe tener para coincidir con la condición. Escriba un valor y pulse Intro para añadirlo como etiqueta; un producto coincide si tiene alguno de los valores enumerados. |
+| [!UICONTROL Boost strength] | Para **[!UICONTROL Boost]** y **[!UICONTROL Bury]**, un control deslizante que controla la intensidad con la que la acción mueve los productos coincidentes. Se muestra solo para **[!UICONTROL Boost]** y **[!UICONTROL Bury]**, no para **[!UICONTROL Hide]**. |
 
 ### Controles inteligentes de clasificación
 
@@ -327,7 +393,7 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 ### Detalles
 
 | Campo | Descripción |
-|--- |--- |
+| --- | --- |
 | Nombre | Nombre de la regla. Los nombres de las reglas deben ser únicos. |
 | Tipo de regla | **Predeterminado** (todas las listas de productos), **Consulta** (condiciones de búsqueda específicas) o **Categoría** (páginas de categoría), según **La regla se aplica a**. |
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |

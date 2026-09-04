@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
 workflow-type: tm+mt
-source-wordcount: 1506
+source-wordcount: 1561
 ht-degree: 0%
 
 ---
@@ -31,6 +31,20 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 * Actualizaciones a la [API de REST de ingesta de datos](https://developer.adobe.com/commerce/services/reference/rest/) y a la [API de GraphQL para la recuperación de datos del catálogo de tiendas](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Septiembre de 2026
+
+>[!BEGINSHADEBOX]
+
+_3 de septiembre de 2026_
+
+### Clasificación de atributos (beta)
+
+Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten [**clasificación de atributos**](./merchandising/rules/add.md#attribute-ranking) para **todas las listas de productos**, **regla de categoría** y **regla de búsqueda**. Aplicar automáticamente una acción **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a cada producto que coincida con una o más condiciones de atributo, como marca o categoría, sin seleccionar SKU individuales. La clasificación de atributos está en versión beta. [Más información](./merchandising/rules/add.md#attribute-ranking).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Agosto de 2026
 
