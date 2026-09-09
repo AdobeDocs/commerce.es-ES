@@ -2,20 +2,15 @@
 title: Políticas
 description: Obtenga información sobre cómo crear y administrar directivas en  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +56,28 @@ Las directivas con un **origen de valor** de **DÉCLENCHEUR** se denominan direc
 - `AC-Policy-Model`
 
 Si el comprador hace clic en la lista desplegable **Marca**, el encabezado de la llamada de API contiene `AC-Policy-Brand`, que está configurado para mostrar únicamente los productos específicos de la directiva `AC-Policy-Brand`.
+
+### Déclencheur de encabezado HTTP de varios valores {#multi-value-http-header-triggers}
+
+Una directiva de déclencheur que use el tipo de transporte `HTTP_HEADER` puede recibir varios valores en un solo encabezado. Los valores deben separarse con comas y el operador de filtro debe ser `IN`. Cada valor se trata como una coincidencia aceptable. Los valores se evalúan con `OR` semántica.
+
+Por ejemplo, un filtro de directiva que usa `IN` con el siguiente encabezado:
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+coincide con productos cuyo atributo `vehicle` es `UNIVERSAL` o `veh-bolt-mammoth-limited-2025`.
+
+Mientras que un operador de filtro de `EQUALS`, `GREATER_THAN_EQUAL` o `LESS_THAN_EQUAL` se rechaza con un error de validación.
+
+#### Notas de sintaxis
+
+- El nombre del encabezado coincide con el nombre del déclencheur que configuró, por ejemplo `AC-Policy-Vehicle`.
+- Las comas separan los valores individuales dentro del encabezado. Si el mismo encabezado `AC-Policy-_Name_` aparece más de una vez, sus valores se combinarán en un único valor de encabezado separado por comas
+- El operador de filtro es `IN`.
+- Un filtro de directiva con **origen de valor** establecido en `TRIGGER`.
+- Un déclencheur cuyo **tipo de transporte** es `HTTP_HEADER`.
 
 ## Crear política
 
