@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten
 ## Agosto de 2026
 
 >[!BEGINSHADEBOX]
+
+_9 de septiembre de 2026_
+
+![Nuevas](../assets/new.svg) **políticas de déclencheur de encabezado HTTP de varios valores**: las políticas de Déclencheur que usan el tipo de transporte `HTTP_HEADER` ahora pueden recibir varios valores separados por comas en un solo encabezado (por ejemplo, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Los filtros de directiva que usan `IN` evalúan los valores con semántica de `OR`. Los filtros que utilizan `EQUALS`, `GREATER_THAN_EQUAL` o `LESS_THAN_EQUAL` rechazan la solicitud con un error de validación si el encabezado contiene varios valores. Este comportamiento sólo se aplica a las directivas de déclencheur que utilizan el transporte `HTTP_HEADER`. [Más información](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _7 de agosto de 2026_
 
