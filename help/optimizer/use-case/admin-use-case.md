@@ -3,29 +3,18 @@ title: Caso de uso completo del administrador de catálogos y tiendas
 description: Aprenda a usar [!DNL Adobe Commerce Optimizer] para administrar su catálogo mediante vistas de catálogo y directivas, y a configurar su tienda en función de la configuración de su catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2205
-ht-degree: 0%
+source-wordcount: 2232
+ht-degree: 1%
 
 ---
 
@@ -44,23 +33,23 @@ Este caso de uso está diseñado para administradores y desarrolladores que dese
 Antes de comenzar este tutorial, asegúrese de que dispone de los siguientes requisitos previos:
 
 - **[!DNL Adobe Commerce Optimizer]instancia**
-   - Acceso a una instancia de prueba en Cloud Manager
-   - Consulte [Introducción](../get-started.md) para obtener instrucciones de configuración
+  - Acceso a una instancia de prueba en Cloud Manager
+  - Consulte [Introducción](../get-started.md) para obtener instrucciones de configuración
 
 - **Permisos de usuario**
-   - Acceso de administrador a Adobe Admin Console
-   - Consulte [Administración de usuarios](../user-management.md) para configurar la cuenta
-   - Si no tiene acceso, póngase en contacto con el representante de su cuenta de Adobe.
+  - Acceso de administrador a Adobe Admin Console
+  - Consulte [Administración de usuarios](../user-management.md) para configurar la cuenta
+  - Si no tiene acceso, póngase en contacto con el representante de su cuenta de Adobe.
 
 - **Datos de ejemplo**
-   - Datos del catálogo de Carvelo Automobile cargados en su instancia
-   - Siga las instrucciones del [Repositorio de ingesta de datos del catálogo de muestra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Puede eliminar los datos de ejemplo una vez finalizados mediante el script `reset.js` incluido
+  - Datos del catálogo de Carvelo Automobile cargados en su instancia
+  - Siga las instrucciones del [Repositorio de ingesta de datos del catálogo de muestra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+  - Puede eliminar los datos de ejemplo una vez finalizados mediante el script `reset.js` incluido
 
 - **Entorno De Tienda**
-   - Entorno de desarrollo local con Node.js
-   - Proyecto de plantillas de tienda clonado y configurado
-   - Consulte [Configuración de tienda](../storefront.md) para obtener instrucciones detalladas
+  - Entorno de desarrollo local con Node.js
+  - Proyecto de plantillas de tienda clonado y configurado
+  - Consulte [Configuración de tienda](../storefront.md) para obtener instrucciones detalladas
 
 ## Vamos a empezar.
 
@@ -72,7 +61,7 @@ En este caso de uso, está trabajando con lo siguiente:
 
 >[!NOTE]
 >
-> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=es) en la documentación de Adobe Commerce Storefront.
+> Para obtener más información acerca de los archivos de configuración de tiendas, revisa el tema [Explorar las plantillas](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) en la documentación de Adobe Commerce Storefront.
 
 ### ‌Lecciones clave
 
@@ -248,8 +237,8 @@ Cree una nueva vista de catálogo para el distribuidor *Celport* y vincule las s
 
    - **Nombre** = *Celport*
    - **Orígenes de catálogo** = *en-US*
-   - **Políticas** (usar lista desplegable) = *Marcas de East Coast Inc*; *Categorías de partes de Celport*; *Marca*; *Modelo*
-                         
+   - **Políticas** (usar lista desplegable) = *Marcas de East Coast Inc*; *Categorías de piezas de Celport*; *Marca*; *Modelo*
+                              
 1. Haga clic en **[!UICONTROL Add]** para crear la vista de catálogo.
 
    La página Vistas de catálogo se actualiza para mostrar la nueva vista de catálogo.
@@ -466,4 +455,4 @@ Para continuar aprendiendo acerca de [!DNL Adobe Commerce Optimizer]:
 - Obtenga información acerca de [configuraciones de directivas avanzadas](../setup/policies.md)
 - Configurar [vistas de catálogo adicionales](../setup/catalog-view.md) para otros concesionarios
 - Revise la [documentación de API](https://developer.adobe.com/commerce/services/optimizer/) para la administración programática del catálogo
-- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es)
+- Aprenda a configurar componentes desplegables para su tienda Edge Delivery Services a fin de crear experiencias de tienda personalizadas para la detección de productos, recomendaciones y otras capacidades de tienda. Ver la [documentación de la tienda](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)
