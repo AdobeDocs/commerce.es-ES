@@ -335,7 +335,7 @@ Manages custom shipping rate calculations based on customer account tier and ord
     - [Aptitudes e indicaciones](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
     - [Casos de uso](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
   - [Información general de App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-  - [App Builder para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+  - [App Builder para Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
   - Starter kits
     - [Kit de inicio de integración back-end](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
     - [Kit de inicio de compra](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)

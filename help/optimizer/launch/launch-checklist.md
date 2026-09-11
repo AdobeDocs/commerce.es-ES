@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
@@ -55,11 +55,11 @@ La solución suele incluir estos componentes:
 
 Confirme que su entorno de Adobe Commerce en la nube está listo para la producción.
 
-▢: La instancia de nube está [aprovisionada](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project).
+▢: La instancia de nube está [aprovisionada](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/start/new-project).
 ▢: los datos de prueba y ficticios se han eliminado de la instancia.
 ▢ Los datos de producción se han cargado en la instancia.
 ▢ Usted conoce el [extremo de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/).
-▢: la instancia cumple los requisitos de [lista para el lanzamiento](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist).
+▢: la instancia cumple los requisitos de [lista para el lanzamiento](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/launch/checklist).
 
 ## Verificar instancia de Commerce Optimizer {#verify-optimizer}
 
@@ -156,7 +156,7 @@ Confirme la configuración de extensibilidad para producción.
 
 ▢ El área de trabajo de producción incluye todas las configuraciones y servicios necesarios.
 ▢: la aplicación de producción pasa pruebas entre escenarios de compilación.
-Se han revisado y confirmado ▢ límites y límites del producto según la [descripción del producto de Adobe Developer App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} y la [configuración y limitaciones del sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+Se han revisado y confirmado ▢ límites y límites del producto según la [descripción del producto de Adobe Developer App Builder](https://helpx.adobe.com/es/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} y la [configuración y limitaciones del sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢: la aplicación de producción utiliza extremos de producción de App Builder.
 ▢: las extensiones de panel *Admin* personalizadas se han implementado en el espacio de trabajo de producción.
 
@@ -225,7 +225,7 @@ La implementación de ▢ [eventos de tienda](https://github.com/adobe/commerce-
 Confirme los permisos y secretos.
 
 ▢ Se han configurado los permisos adecuados para el contenido de DA y los sitios de EDS. Ver [DA.permisos activos](https://da.live/docs/administration/permissions) y [Configuración de autenticación para la creación](https://www.aem.live/docs/authentication-setup-authoring).
-▢: se ha aprovisionado la integración de imágenes del producto. Consulte [Información general sobre el acceso a AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢: se ha aprovisionado la integración de imágenes del producto. Consulte [Información general sobre el acceso a AEM Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/accessing/overview#).
 ▢ Los vínculos para restablecer la contraseña de las plantillas de correo electrónico coinciden con la configuración de Edge Delivery Services. Ver las preguntas más frecuentes sobre la tienda: [¿Qué debo hacer si mis vínculos de plantillas de correo electrónico se rompen después de migrar a Edge Delivery Services o Helix?](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢: las claves de producción para las integraciones y los proveedores de pago ya están establecidas.
 Los dominios de ▢ están incluidos en la lista de permitidos y funcionan los webhooks back-end.
