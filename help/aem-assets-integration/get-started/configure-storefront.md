@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f901cec90291e264376e3f93e6ebaaccf7c15f0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Para habilitar la integración en tiendas de Commerce con tecnología de Edge De
 
 Los complementos de Commerce detectan automáticamente la configuración de `commerce-assets-enabled` y ajustan la administración de imágenes en consecuencia.
 
-Para obtener más información sobre el uso de AEM Assets con Commerce Storefront con tecnología de Edge Delivery Services, consulte el tema [Integración de AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=es) en la documentación de *Adobe Commerce Storefront*.
+Para obtener más información sobre el uso de AEM Assets con Commerce Storefront con tecnología de Edge Delivery Services, consulte el tema [Integración de AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) en la documentación de *Adobe Commerce Storefront*.
 
 >[!TIP]
 >
@@ -104,7 +104,7 @@ La tienda está conectada a los AEM Assets. Puede examinar e insertar recursos d
 
 ## Documentación relacionada
 
-* [Integración de AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=es){target=_blank} en la documentación de *Adobe Commerce Storefront*: configuración de tienda y comportamiento de administración de imágenes.
+* [Integración de AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} en la documentación de *Adobe Commerce Storefront*: configuración de tienda y comportamiento de administración de imágenes.
 
 * [Integrar AEM Assets al crear contenido para Edge Delivery Services](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} en la documentación de *AEM Assets*.
 

@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Después de crear una recomendación, debe recuperar su ID para implementar la u
 
 1. En la sección **ID de recomendación**, copie el ID.
 
-1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=es) en su tienda de Edge Delivery Services.
+1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
@@ -212,6 +212,6 @@ A continuación se enumeran los posibles motivos y soluciones para puntuaciones 
 - **Basado en estática**: los porcentajes bajos de estos indicadores pueden deberse a la falta de datos de catálogo para los productos que se pueden mostrar. Si son inferiores a lo esperado, una sincronización completa puede solucionar este problema.
 - **Basado en dinámico**: los porcentajes bajos de los indicadores basados en dinámico pueden deberse a:
 
-   - Faltan campos en los [eventos de tienda](../../setup/events/overview.md) necesarios para los tipos de recomendación respectivos (requestId, contexto de producto, etc.).
-   - Poco tráfico al almacén, por lo que el volumen de eventos de comportamiento recibidos es bajo.
-   - La variedad de eventos de comportamiento de la tienda en diferentes productos es baja. Por ejemplo, si solo el diez por ciento de sus productos se ven o se compran la mayor parte del tiempo, los indicadores de preparación respectivos son bajos.
+  - Faltan campos en los [eventos de tienda](../../setup/events/overview.md) necesarios para los tipos de recomendación respectivos (requestId, contexto de producto, etc.).
+  - Poco tráfico al almacén, por lo que el volumen de eventos de comportamiento recibidos es bajo.
+  - La variedad de eventos de comportamiento de la tienda en diferentes productos es baja. Por ejemplo, si solo el diez por ciento de sus productos se ven o se compran la mayor parte del tiempo, los indicadores de preparación respectivos son bajos.

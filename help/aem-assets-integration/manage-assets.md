@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 41c5b4267888595926ae1bae48f73c928e6547ad
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1072
+source-wordcount: 1073
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ La asociación con la imagen seleccionada se almacenará en Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=es#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
+> [DA.live (Creación de documentos)](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} también proporciona un selector de recursos para enriquecer datos.
 
 ## Vídeos del producto
 
