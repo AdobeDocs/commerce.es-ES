@@ -1,21 +1,22 @@
 ---
 title: GraphQL
-description: El espacio de trabajo  [!DNL Live Search] GraphQL le permite generar consultas con sus datos activos.
+description: El espacio de trabajo de GraphQL [!DNL Live Search] le permite generar consultas con los datos activos.
 exl-id: d32edf42-1fb0-40f9-89e5-798b39521b77
 TQID: https://experienceleague.adobe.com/y-aM85yTrJA6JNXlJeacXEOkr8l-Bwij9gdVCgNGEqY
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Metadata
+source-git-commit: 438d00c69044818382ffd22ffb68a4061c59ddbd
 workflow-type: tm+mt
-source-wordcount: 58
+source-wordcount: '59'
 ht-degree: 0%
-
 ---
-
 # GraphQL
 
 El área de trabajo *GraphQL* permite a los administradores crear y probar consultas de GraphQL con sus propios datos.
@@ -26,12 +27,11 @@ Este área de trabajo admite las consultas [`productSearch`](https://developer.a
 
 ```graphql
 query productSearch {
-  productSearch(phrase: "a306") {
+  productSearch(phrase: "") {
     total_count
     items {
-      product {
+      productView {
         sku
-        name
       }
     }
     facets {
