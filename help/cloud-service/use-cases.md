@@ -56,7 +56,7 @@ Antes de intentar cualquiera de estos casos de uso, debe completar los siguiente
 1. [Cree su instancia de Cloud Service](./getting-started.md#create-an-instance) con las siguientes opciones:
    1. Seleccione [!UICONTROL **espacio aislado**] en la lista desplegable [!UICONTROL **Entorno**].
    1. Seleccione [!UICONTROL **Tienda Adobe**] en el menú desplegable [!UICONTROL **Datos de prueba**].
-1. [Inicia sesión en tu cuenta de  [!DNL Adobe Experience Cloud] ](https://experience.adobe.com)
+1. [Inicia sesión en tu cuenta de  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
 1. [Configura tu tienda Cloud Service](./storefront.md) con las siguientes opciones:
    1. Seleccione [!UICONTROL `adobe-commerce/adobe-demo-store`] para la plantilla.
    1. Seleccione [!UICONTROL **Elegir una instancia disponible (Malla -> SaaS)**] para el método de conexión.
