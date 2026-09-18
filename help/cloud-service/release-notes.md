@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] notas de la versión'
-description: Obtenga información acerca de las últimas características y mejoras de  [!DNL Adobe Commerce as a Cloud Service].
+description: Obtenga información sobre las últimas funciones y mejoras de [!DNL Adobe Commerce as a Cloud Service].
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -12,34 +12,48 @@ autotag-review: '2026-06-18T16:04:15.842Z'
 TQID: 'https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d8c738212373283ccf45b16cf91dbafc7a7bd0f8
+source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
 workflow-type: tm+mt
-source-wordcount: 6365
+source-wordcount: '6842'
 ht-degree: 0%
-
 ---
-
 # Notas de la versión
 
 Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Commerce as a Cloud Service].
@@ -48,7 +62,77 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 >
 >Si utiliza Adobe Commerce local o Adobe Commerce en infraestructura en la nube, consulte las [notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview).
 
-## Septiembre de 2026: #1 de la versión {#latest}
+## Septiembre de 2026: #2 de la versión {#latest}
+
+[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Los siguientes elementos estarán disponibles en los entornos de producción el 22 de septiembre de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Adjuntar archivos e imágenes a solicitudes de devolución
+
+Los clientes ahora pueden cargar archivos e imágenes al enviar una solicitud de devolución a través de la mutación de GraphQL de la tienda `requestReturn`. <!-- CCSAAS-5410 -->
+
+### Controlar la apariencia del origen del inventario
+
+Cada origen de inventario ahora incluye una opción [!UICONTROL **Visible en tienda**] en la página de edición de origen en [!DNL Commerce Admin] ([!UICONTROL **Tiendas**] > [!UICONTROL **Inventario**] > [!UICONTROL **Fuentes**]). La consulta de GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) devuelve información de existencias solamente para los orígenes que usted marca como visibles. Las fuentes están ocultas de forma predeterminada. <!-- ACCS-1645 -->
+
+### Guía de envíos de varios orígenes
+
+Cuando un pedido contiene artículos nominados a diferentes fuentes de inventario, la página [!DNL Commerce Admin] [!UICONTROL **Selección de Source**] ahora lo guía automáticamente a través de la selección del origen apropiado para cada artículo. <!-- ACCS-1832 -->
+
+### Detalles de disponibilidad de la fuente de consulta para la tienda
+
+La consulta de GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) ahora devuelve información adicional para las tiendas:
+
+* Cada origen incluye su `name` y una marca `is_pickup_location_active`, de modo que los escaparates pueden mostrar los nombres de origen e identificar las ubicaciones de recogida activas en la tienda. <!-- ACCS-1614 -->
+
+* El tipo `SourceAvailability` ahora incluye `is_saleable` y `backorder_message` campos, de manera que las tiendas pueden bloquear [!UICONTROL Add to Cart] en una verdadera capacidad de venta en lugar de en existencias físicas. <!-- ACCS-1858 -->
+
+### Recuperar permisos de cliente
+
+Un nuevo extremo REST [!DNL Commerce] (`GET /V1/customers/:customerId/companyRoles`) devuelve todos los roles de compañía y los permisos asignados a un cliente. El tipo de GraphQL `CompanyBasicInfo` ahora también incluye `role_id`, `role_name` y datos de permisos, de modo que las integraciones pueden recuperar las asignaciones de funciones de compañía de un usuario en todas las cuentas asociadas en una sola solicitud. <!-- ACCS-1617 -->
+
+### Suscribirse a un webhook de guardado de facturas
+
+El webhook `observer.sales_order_invoice_save_after` le permite ejecutar la lógica después de guardar una factura. <!-- CEXT-6706 -->
+
+### Ver información de origen nominada
+
+Cuando un pedido contiene artículos con un origen de inventario nominado, [!DNL Commerce Admin] ahora etiqueta esos artículos en la página de vista de pedidos y en la pantalla de selección de origen de envío, de modo que los comerciantes puedan satisfacer pedidos desde el origen correcto. <!-- ACCS-941 -->
+
+### Mejoras y correcciones de errores
+
+En esta versión se incluyen las siguientes mejoras, optimizaciones y correcciones de errores seleccionadas:
+
+* Se ha optimizado la carga de precios del nivel de carrito y cierre de compra para evitar problemas con un gran número de catálogos compartidos. <!-- ACCS-1150 -->
+
+* Se ha corregido un problema en el cual no se respetaban los cambios de atributos de archivo. <!-- CCSAAS-5395 -->
+
+* Se ha corregido un problema en el cual los datos de anulación del producto podían ser incoherentes. <!-- ACCS-1844 -->
+
+* Se ha corregido un problema en el cual las solicitudes simultáneas de API de REST podían provocar de forma intermitente un error 401. <!-- CCSAAS-5417 -->
+
+* Se ha corregido un problema en el cual la fecha de inicio o finalización de una regla de precio del carro de compras podía funcionar de forma inesperada cuando no se establecía una hora explícita. <!-- ACCS-1856 -->
+
+* Se ha corregido un problema en el cual una regla de precio del carro de compras aceptaba fechas de inicio y finalización inexistentes. <!-- ACCS-1902 -->
+
+* Se ha corregido un problema que impedía guardar la configuración de [!UICONTROL Catalog]. <!-- CCSAAS-5436 -->
+
+* Se corrigió un problema que se podía producir al realizar solicitudes simultáneas a la API de importación (`POST /V1/import/json`). <!-- ACCS-1053 -->
+
+* Se ha corregido un problema en el cual la cantidad vendible podía informar de una disponibilidad excesiva para los productos con un origen de inventario designado. <!-- ACCS-1103 -->
+
+* Se corrigió un problema en el cual la API de comentarios de pedidos (`POST /V1/orders/{id}/comments`) no respetaba la insensibilidad de mayúsculas y minúsculas. <!-- ACCS-1752 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Septiembre de 2026: #1 de la versión
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -188,8 +272,6 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 * Se ha resuelto un problema que podía afectar a la navegación del administrador. <!-- CCSAAS-5232 -->
 
 * Se ha corregido un problema por el que los carros de compras vacíos podían notificar totales distintos de cero. <!-- ACCS-1730 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
