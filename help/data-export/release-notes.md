@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
+source-git-commit: 42e7ecca6c058ebc4e80b601c6d46b84f601e454
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3446'
 ht-degree: 0%
 ---
 # Notas de la versión [!DNL SaaS Data Export Extension]
@@ -59,7 +59,7 @@ Las actualizaciones incluyen:
 
 _17 de septiembre de 2026_
 
-![Corregir](../assets/fix.svg) **Error de sincronización de etiquetas de atributos**—Se ha corregido un problema por el que una tabla back-end de atributos no válida podría provocar errores de exportación de fuentes durante la resincronización de etiquetas, lo que garantiza que las actualizaciones de etiquetas de atributos se sincronicen de forma fiable.<!--MDEE-1464-->
+![Corrección](../assets/fix.svg) actualizaciones para admitir la integración de Adobe Commerce Optimizer con Adobe Commerce.<!--MDEE-1464-->
 
 ### Versión 103.4.34
 
