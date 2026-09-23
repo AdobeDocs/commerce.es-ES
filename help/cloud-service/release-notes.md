@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
+source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
 workflow-type: tm+mt
-source-wordcount: '6842'
+source-wordcount: '6869'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -64,21 +64,21 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ## Septiembre de 2026: #2 de la versión {#latest}
 
-[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Producción]{type=Neutral tooltip="Los elementos enumerados están disponibles actualmente en entornos de producción."}
 
-Los siguientes elementos estarán disponibles en los entornos de producción el 22 de septiembre de 2026.
+Los siguientes elementos se agregaron a los entornos de producción el 22 de septiembre de 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Adjuntar archivos e imágenes a solicitudes de devolución
 
-Los clientes ahora pueden cargar archivos e imágenes al enviar una solicitud de devolución a través de la mutación de GraphQL de la tienda `requestReturn`. <!-- CCSAAS-5410 -->
+Los clientes ahora pueden cargar archivos e imágenes al enviar una solicitud de devolución a través de la mutación de GraphQL de la tienda [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment). Use las mutaciones [`initiateUpload` y `finishUpload`](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) para cargar el archivo y, a continuación, asigne la clave devuelta a un atributo personalizado de elemento devuelto. <!-- CCSAAS-5410 -->
 
 ### Controlar la apariencia del origen del inventario
 
-Cada origen de inventario ahora incluye una opción [!UICONTROL **Visible en tienda**] en la página de edición de origen en [!DNL Commerce Admin] ([!UICONTROL **Tiendas**] > [!UICONTROL **Inventario**] > [!UICONTROL **Fuentes**]). La consulta de GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) devuelve información de existencias solamente para los orígenes que usted marca como visibles. Las fuentes están ocultas de forma predeterminada. <!-- ACCS-1645 -->
+Cada origen de inventario ahora incluye una opción [!UICONTROL **Visible en tienda**] en la [página de edición de origen](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/sources/sources-add) en [!DNL Commerce Admin] ([!UICONTROL **Tiendas**] > [!UICONTROL **Inventario**] > [!UICONTROL **Fuentes**]). La consulta de GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) devuelve información de existencias solamente para los orígenes que usted marca como visibles. Las fuentes están ocultas de forma predeterminada. <!-- ACCS-1645 -->
 
 ### Guía de envíos de varios orígenes
 
