@@ -1,21 +1,18 @@
 ---
 title: Límites y límites
-description: Conozca los límites y limitaciones de [!DNL Product Recommendations] para asegurarse de que cumple con las necesidades de su empresa.
+description: Obtenga información acerca de los límites y limitaciones de [!DNL Product Recommendations] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # Límites y límites
 
 Revise los límites y limitaciones siguientes para asegurarse de que [!DNL Product Recommendations] cumple con las necesidades de su empresa. Comprender estas restricciones le ayuda a planificar la implementación, configurar filtros y evitar problemas comunes.
 
 ## General
 
-- **Tipos de productos** - Los tipos de productos admitidos son _simples_, _configurables_, _virtuales_, _descargables_ y _tarjetas regalo_. No se admiten los tipos de producto _Paquete_, _agrupado_ y personalizado. Si el catálogo contiene un gran número de tipos de productos no compatibles, recibirá una baja [puntuación de preparación](create.md#readiness-indicators). Ver [Filtrar por tipo de producto](filters.md#type).
 - **SKU con espacios**: las SKU que contienen espacios pueden reducir la relevancia de las recomendaciones y se deben evitar cuando sea posible.
 - **Página del carro de compras**: las recomendaciones de productos no se admiten en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Ver [Crear recomendaciones](create.md).
 - **Productos secundarios**: los productos secundarios de un producto configurable (visibilidad _No visible de forma individual_) no se muestran en una unidad de recomendación. Solo puede aparecer el producto configurable (principal). Ver [Filtrar productos](filters.md#product).

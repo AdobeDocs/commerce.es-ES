@@ -5,21 +5,25 @@ exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+    internal-label: Machine learning
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 1491
+source-wordcount: '1463'
 ht-degree: 0%
-
 ---
-
 # Crear nueva recomendación
 
 Cuando crea una recomendación, crea una _unidad de recomendación_ o widget que contiene _elementos_ del producto recomendado.
@@ -176,7 +180,7 @@ Un porcentaje de preparación bajo indica que no hay muchos productos del catál
 
 >[!IMPORTANT]
 >
->No se admiten los tipos de producto _Paquete_, _agrupado_ y personalizado. Si el catálogo contiene un gran número de estos tipos de productos, puede esperar una puntuación de preparación baja. Además, cualquier SKU con espacios puede reducir la relevancia de las recomendaciones y debe evitarse.
+>Cualquier SKU con espacios puede reducir la relevancia de la recomendación y debe evitarse.
 
 A continuación se enumeran los posibles motivos y soluciones para puntuaciones de preparación bajas comunes:
 

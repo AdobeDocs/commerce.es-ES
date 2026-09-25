@@ -1,28 +1,34 @@
 ---
 title: Crear y administrar reglas
 description: Obtenga información sobre cómo crear y administrar reglas de comercialización para búsquedas, listados de productos predeterminados y páginas de categorías.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+    internal-label: Personalization
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 4183
+source-wordcount: '4182'
 ht-degree: 0%
-
 ---
-
 # Crear y administrar reglas
 
 Para generar y publicar una regla:
@@ -47,7 +53,7 @@ Cada tipo de regla tiene un icono de información en el editor con una breve exp
 | Tipo de regla | Finalidad |
 | --- | --- |
 | **Todos los listados de productos** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
-| **Regla de categoría** | Aplica la comercialización y la clasificación a una o varias categorías seleccionadas y controla el orden de los productos en esas páginas de categorías. |
+| **Regla de categoría** | Aplica la comercialización y la clasificación a una sola categoría, controlando el pedido del producto en esa página de categoría. |
 | **Regla de búsqueda** | Aplica la comercialización y la clasificación cuando los compradores ejecutan una búsqueda que coincide con las condiciones de consulta de la regla. |
 
 En la sección **Generar la regla**, define el nombre de la regla, la programación, si la regla se aplica a todos los listados o a condiciones de búsqueda específicas y los tipos de clasificación.
