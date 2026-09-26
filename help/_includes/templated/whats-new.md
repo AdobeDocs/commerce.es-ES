@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
+source-git-commit: b4bbb596143bdcbb8c55a26386db7a36e2961db9
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1093'
 ht-degree: 1%
 ---
 # Novedades de la plantilla
@@ -9,6 +9,72 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 25 de septiembre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha corregido la documentación de recomendaciones de productos para <a href="https://experienceleague.adobe.com/es/docs/commerce/product-recommendations/boundaries-limits">PaaS</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a> que indicaba incorrectamente que los productos agrupados y agrupados no eran compatibles.</p>
+</td>
+      <td>
+        Comentarios
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 24 de septiembre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha actualizado la <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/migration/overview">descripción general de la migración</a> para explicar cómo Commerce Developer Agent puede ayudar con el proceso de migración.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 23 de septiembre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de producción para Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 17 de septiembre de 2026
 
@@ -352,28 +418,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 de julio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha actualizado la zona protegida <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">comprometer</a></td>
     </tr>
   </tbody>
 </table>
