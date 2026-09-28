@@ -6,21 +6,25 @@ exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
+    internal-label: Administration
+source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
 workflow-type: tm+mt
-source-wordcount: 1784
+source-wordcount: '1839'
 ht-degree: 1%
-
 ---
-
 # Configuración del proyecto de AEM Assets
 
 En este tema se describe cómo configurar el proyecto de AEM Assets para que el espacio de nombres de Commerce, el esquema de metadatos y la ficha [!UICONTROL Commerce] estén disponibles en el entorno de creación de AEM. Para obtener información general sobre estos recursos, consulte [Metadatos de Commerce en AEM Assets](../metadata.md).
@@ -68,6 +72,10 @@ La creación de un programa en Cloud Manager es un proceso de varios pasos: el p
    ![Paso de soluciones y complementos de Cloud Manager con Dynamic Media seleccionado](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
 1. En el paso **[!UICONTROL Add Environment]**, escriba nombres para los entornos **Production** y **Staging** y, a continuación, seleccione una región.
+
+   >[!IMPORTANT]
+   >
+   >[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."} Al crear los entornos de AEM Assets para esta integración, seleccione una región de implementación de AEM compatible geográficamente cerca de su celda de as a Cloud Service de Adobe Commerce.
 
    ![Cuadro de diálogo Agregar entorno de Cloud Manager con detalles de Producción y Ensayo](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
