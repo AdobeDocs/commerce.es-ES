@@ -1,15 +1,13 @@
 ---
-title: Cierre de compra en  [!DNL Payment Services]
-description: Personaliza  [!DNL Payment Services] el pago y envío para adaptarlo a las necesidades de tus clientes.
+title: Cierre de compra en [!DNL Payment Services]
+description: Personalice el cierre de compra [!DNL Payment Services] para adaptarlo a las necesidades de sus clientes.
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '343'
 ht-degree: 0%
-
 ---
-
 
 # Cierre de compra en [!DNL Payment Services]
 
@@ -23,7 +21,7 @@ Aparece un mensaje de error en la página de cierre de compra del comprador. El 
 
 ![Error al comprobar](assets/user-checkout-error.png "Error al desproteger"){width="600" zoomable="yes"}
 
-También se muestra un comentario sobre el pedido cancelado en el Administrador para un [pedido](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en) específico.
+También se muestra un comentario sobre el pedido cancelado en el Administrador para un [pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en) específico.
 
 ![Comentario de pedido cancelado en el administrador del pedido](assets/admin-checkout-error.png "Comentario de pedido cancelado en el administrador del pedido"){width="600" zoomable="yes"}
 
