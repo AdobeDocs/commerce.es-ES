@@ -70,7 +70,7 @@ La comprobación de actualización lee los metadatos de la versión de la secci�
 ```json
 {
   "extra": {
-    "release_notes_url": "https://experienceleague.adobe.com/...",
+    "release_notes_url": "https://experienceleague.adobe.com/es...",
     "release_type": "feature",
     "compatible_commerce_versions": ">=2.4.7 <2.5.0"
   }
