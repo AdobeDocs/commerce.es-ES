@@ -6,30 +6,35 @@ exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
 TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Implementation
+source-git-commit: 47b9ea797cbe18bd866159311486ba1b588ffcd3
 workflow-type: tm+mt
-source-wordcount: 967
-ht-degree: 2%
-
+source-wordcount: '1058'
+ht-degree: 1%
 ---
-
 # Configuración de la integración
 
 Configure la integración conectando Commerce a la instancia de AEM Assets y seleccionando la estrategia de coincidencia para la sincronización de recursos.
 
 Después de identificar el proyecto de AEM Assets, seleccione la regla de coincidencia para sincronizar los recursos entre Adobe Commerce y los AEM Assets.
 
-* **[!UICONTROL Match by product SKU]**: regla predeterminada que coincide con el SKU de los metadatos del recurso con el [SKU del producto de Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/glossary#sku) para garantizar que los recursos estén asociados con los productos correctos.
+* **[!UICONTROL Match by product SKU]**: regla predeterminada que coincide con el SKU de los metadatos del recurso con el [SKU del producto de Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) para garantizar que los recursos estén asociados con los productos correctos.
 
 * **[!UICONTROL Custom match]**: regla de coincidencia para escenarios más complejos o requisitos empresariales específicos que requieren una lógica de coincidencia personalizada. La implementación de la coincidencia personalizada requiere el desarrollo de código personalizado en Adobe Developer App Builder para definir cómo se comparan los recursos con los productos. Próximamente más detalles...
 
@@ -80,7 +85,7 @@ Antes de configurar la integración de AEM Assets, compruebe que ha completado l
 1. Seleccione una de las reglas de coincidencia de recursos para la sincronización de recursos de la lista desplegable **[!UICONTROL Asset matching rule]**.
 
    * Seleccionar **[!UICONTROL Match by SKU]** para [coincidencia automática predeterminada](../synchronize/default-match.md),
-   * Seleccione **[!UICONTROL Custom match]** para [coincidencia automática personalizada](../synchronize/custom-match.md) (requiere [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)).
+   * Seleccione **[!UICONTROL Custom match]** para [coincidencia automática personalizada](../synchronize/custom-match.md) (requiere [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)).
 
 1. Agregue el nombre del campo de metadatos de AEM Assets [definido para las SKU de productos de Commerce en el campo **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` de forma predeterminada.](configure-aem.md#define-the-metadata-profile)
 
@@ -98,6 +103,22 @@ Service level agreement (SLA) para la integración garantiza los siguientes nive
 
 Este nivel de servicio garantiza que las páginas de producto siempre muestren las imágenes más actualizadas, manteniendo el contenido de la tienda preciso y visualmente atractivo.
 
+## Sincronizar texto alternativo localizado
+
+El texto alternativo localizado utiliza el proceso de sincronización de recursos existente. No necesita un nuevo tipo de evento ni una configuración de sincronización independiente.
+
+1. Agregue una o más filas de texto alternativo de vista de tienda en la pestaña **[!UICONTROL Commerce]** del recurso de AEM.
+
+1. Asocie el recurso al SKU del producto de Commerce.
+
+1. Apruebe el recurso en AEM Assets.
+
+1. Espere a que se completen el evento de recursos y el proceso de sincronización.
+
+1. Compruebe el valor localizado en el administrador de Commerce y en la respuesta de la tienda.
+
+Para ver los nombres de campo, las reglas de validación y el resultado de Commerce, consulte [Metadatos de Commerce en AEM Assets](../metadata.md).
+
 ### Configuración del propietario de la visualización
 
 La configuración **Propietario de la visualización** determina qué sistema proporciona imágenes de producto en la integración:
@@ -108,7 +129,7 @@ La configuración **Propietario de la visualización** determina qué sistema pr
 
 El administrador muestra las imágenes disponibles para ese propietario, mientras que el resto de las imágenes aparecen atenuadas y mostradas con la etiqueta **hidden**.
 
-Consulte el tema [establecer detalles de la imagen](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} para obtener detalles sobre el comportamiento de visualización de la imagen.
+Consulte el tema [establecer detalles de la imagen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} para obtener detalles sobre el comportamiento de visualización de la imagen.
 
 >[!TIP]
 >
