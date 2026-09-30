@@ -74,7 +74,7 @@ Este código de paquete añade los siguientes recursos al entorno de creación d
 
 ## Texto alternativo localizado en metadatos de AEM Assets
 
-El multicampo _[!UICONTROL Alt texts]_está disponible en el editor de metadatos de recursos de AEM Assets en la pestaña **[!UICONTROL Commerce]**cuando edita una imagen elegible.
+El multicampo _[!UICONTROL Alt texts]_&#x200B;está disponible en el editor de metadatos de recursos de AEM Assets en la pestaña **[!UICONTROL Commerce]**&#x200B;cuando edita una imagen elegible.
 
 >[!IMPORTANT]
 >
@@ -90,7 +90,7 @@ Seleccione **[!UICONTROL Add]** para agregar más filas para vistas de tienda ad
 
 ![Varios campos de texto alternativo con entradas de código de vista de tienda y texto alternativo](assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
-Al guardar, la validación del lado del cliente bloquea el envío si alguna fila tiene un elemento _[!UICONTROL Store View Code]_vacío o si dos filas utilizan el mismo código de vista de almacén (sin distinción de mayúsculas y minúsculas).
+Al guardar, la validación del lado del cliente bloquea el envío si alguna fila tiene un elemento _[!UICONTROL Store View Code]_&#x200B;vacío o si dos filas utilizan el mismo código de vista de almacén (sin distinción de mayúsculas y minúsculas).
 
 Las entradas de texto alternativas persisten en los metadatos de recursos JCR como dos propiedades `String[]` alineadas con el índice:
 

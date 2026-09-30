@@ -134,7 +134,7 @@ Seleccione la implementación para seguir los pasos necesarios en orden:
 
 [!BADGE Solo SaaS]{type=Positive tooltip="Solo se aplica a proyectos de Adobe Commerce as a Cloud Service (infraestructura de SaaS administrada por Adobe)."}
 
-1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2}; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
+1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2&rbrace;; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
 1. [Configure los permisos de usuario de IMS](get-started/permissions.md) para que el Selector de recursos y los campos **[!UICONTROL Program ID]** y **[!UICONTROL Environment ID]** que se rellenan automáticamente estén disponibles.
 
@@ -146,7 +146,7 @@ Seleccione la implementación para seguir los pasos necesarios en orden:
 
 [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."}
 
-1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2}; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
+1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2&rbrace;; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
 1. [Instale paquetes de Adobe Commerce](get-started/configure-commerce.md) para agregar la extensión y generar las credenciales y conexiones necesarias.
 
@@ -162,7 +162,7 @@ Seleccione la implementación para seguir los pasos necesarios en orden:
 
 [!DNL Adobe Commerce Optimizer]: no tiene una interfaz de usuario de configuración de administración. El Soporte de Adobe configura la integración desde su ticket de incorporación, por lo que debe preparar primero a los AEM Assets.
 
-1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2}; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
+1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2&rbrace;; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
 1. [Envíe el ticket de asistencia para la incorporación](get-started/configure-aco.md#onboarding) con su ID de inquilino, ID de programa de AEM, ID de entorno de AEM, regla de coincidencia, nivel y configuración regional.
 

@@ -283,7 +283,7 @@ El componente de interfaz de usuario de datos del producto se agrega automática
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Opcional. Para sincronizar Commerce Assets aprobado automáticamente cuando se carguen en el entorno de AEM Assets, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_en la ficha `Basic` en `approved`.
+1. Opcional. Para sincronizar Commerce Assets aprobado automáticamente cuando se carguen en el entorno de AEM Assets, establezca el valor predeterminado del campo _[!UICONTROL Review Status]_&#x200B;en la ficha `Basic` en `approved`.
 
 1. Guarde la actualización.
 
