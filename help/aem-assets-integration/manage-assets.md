@@ -6,24 +6,30 @@ exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Digital asset management
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 1073
+source-wordcount: '1236'
 ht-degree: 0%
-
 ---
-
 # Administrar recursos de medios de Commerce
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
@@ -72,6 +78,14 @@ Para obtener información sobre cómo vincular recursos a productos en AEM Asset
 
 * [Coincidencia automática predeterminada](synchronize/default-match.md)
 * [Coincidencia automática personalizada](synchronize/custom-match.md).
+
+### Administrar texto alternativo localizado
+
+El texto alternativo localizado se crea en AEM Assets, no en la galería multimedia del producto de Commerce. Agregue una fila para cada vista de la tienda Commerce en el campo **[!UICONTROL Alt Texts]**. Incluya un valor de texto alternativo para esta imagen, como &quot;Camiseta blanca&quot;, luego haga clic en **[!UICONTROL Save & Close]** para que el proceso de sincronización existente transfiera los valores a Commerce.
+
+Commerce almacena cada valor sincronizado en el campo de la imagen estándar **[!UICONTROL Label]**. La localización de texto alternativo no cambia la asignación de recursos, la función de imagen ni la posición de la galería. Los campos de base de datos creados por el cliente, como `alt_text`, están fuera del ámbito de integración estándar.
+
+![Textos Alt de Adobe Experience Manager](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### SLA de sincronización
 
@@ -182,6 +196,8 @@ Después de configurar el [Selector de recursos de AEM](synchronize/asset-select
 ## Actualizar un recurso
 
 Después de actualizar y aprobar un recurso en AEM Assets, las actualizaciones se envían automáticamente a Adobe Commerce mediante la función de coincidencia automatizada. Este proceso se activa tras la aprobación del recurso. Para asegurarse de que se incluyen todos los cambios finales y las actualizaciones de metadatos, asegúrese de volver a procesar el recurso antes de aprobarlo.
+
+Cuando cambia los valores de rol o posición en un recurso ya sincronizado, Commerce actualiza la asignación de rol existente en lugar de agregar un duplicado. Si un intento de sincronización falla, compruebe los registros de Commerce para ver si hay algún error antes de volver a intentarlo. Una vez completada la actualización, compruebe el cambio en la sección **Imágenes y vídeos** del producto y confirme que el recurso aparece en la función y la posición esperadas en la galería de medios.
 
 Para que el flujo de trabajo del lado de Commerce vincule recursos a productos mediante metadatos, consulte el tema [Coincidencia automática predeterminada](synchronize/default-match.md).
 

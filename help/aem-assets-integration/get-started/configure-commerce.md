@@ -7,21 +7,25 @@ exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Metadata
+source-git-commit: 555a9c9aff3f4d5f60f13374a9f23a70e2111b3b
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1824'
 ht-degree: 0%
-
 ---
-
 # Instalación de paquetes de Adobe Commerce
 
 Esta integración para Commerce permite la sincronización de recursos entre Adobe Commerce y Adobe Experience Manager Assets (AEM Assets). La extensión proporciona un conjunto de herramientas y servicios para administrar la imagen del producto, el vídeo y otros recursos de medios en ambas plataformas.
@@ -60,6 +64,12 @@ Instale el paquete de Adobe Commerce y prepare el entorno de Commerce realizando
 
 Instale la última versión de la extensión de integración de AEM Assets (`aem-assets-integration`) en una instancia de Adobe Commerce con versión Adobe Commerce 2.4.5+. La extensión se entrega como un metapaquete de composición desde el repositorio [repo.magento.com](https://repo.magento.com/admin/dashboard).
 
+De manera predeterminada, `composer require magento/aem-assets-integration` instala la última versión disponible. Para fijar una versión exacta en su lugar (por ejemplo, para mantener varios entornos en la misma versión validada), utilice una restricción exacta como `"magento/aem-assets-integration": "1.4.7"`; utilice `^1.4.7` solo cuando esté previsto un intervalo 1.x compatible.
+
+>[!NOTE]
+>
+>Si actualiza desde una versión anterior a la 1.4.6, Adobe recomienda actualizar directamente a la 1.4.7 o posterior. La versión 1.4.6 introdujo funciones de imagen personalizadas y el comprobador de actualización de extensiones. La versión 1.4.7 corrige un problema en el cual el archivo de `workspace.json` utilizado para [coincidencia automática personalizada](../synchronize/custom-match.md) no se mantenía correctamente cuando la opción Guardar configuración asincrónica de Commerce está habilitada. Si usa un elemento de coincidencia personalizado con Guardar configuración asincrónica habilitada, vuelva a cargar el archivo `workspace.json` después de la actualización. Ver [Guardar configuración asincrónica](../synchronize/custom-match.md#async-config-save).
+
 >[!BEGINTABS]
 
 >[!TAB Infraestructura en la nube]
@@ -78,10 +88,10 @@ Utilice este método para instalar la extensión [!DNL AEM Assets Integration] e
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Añada la extensión AEM Assets Integration para Commerce.
+1. Añada la extensión AEM Assets Integration para Commerce. Omita la restricción de versión para instalar la versión más reciente disponible o fije una versión específica como se muestra aquí.
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. Actualizar dependencias del paquete.
@@ -106,7 +116,7 @@ Utilice este método para instalar la extensión [!DNL AEM Assets Integration] e
 
 Utilice este método para instalar la extensión [!DNL AEM Assets Integration] para una instancia local.
 
-1. Use el Compositor para añadir la extensión Integración de AEM Assets para Commerce a su proyecto:
+1. Use el Compositor para añadir la extensión Integración de AEM Assets para Commerce a su proyecto. Omita la restricción de versión para instalar la última versión disponible o fije una versión específica, como `"^1.4.7"`.
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update

@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # Configuración del proyecto de AEM Assets
@@ -205,6 +205,8 @@ Una vez enviado el vale de soporte, Adobe habilita Dynamic Media con las capacid
 
    * Los SKU del producto y los campos `Eligible for Commerce` están visibles.
 
+   * El multicampo **[!UICONTROL Alt texts]** está disponible con **[!UICONTROL Store View Code]** y **[!UICONTROL Alt Text]** entradas.
+
 ### La pestaña Commerce no está visible en las propiedades
 
 Si la ficha **Commerce** no aparece en las propiedades, debe completar manualmente los pasos siguientes en el Editor de esquemas de metadatos:
@@ -220,6 +222,8 @@ Si la ficha **Commerce** no aparece en las propiedades, debe completar manualmen
 1. Seleccione la casilla de verificación para **mostrar roles** y **mostrar pedido**.
 
 1. Arrastre y suelte un componente **checkbox** en la ficha **Commerce** y asígnelo a la propiedad `commerce:isCommerce`. Defina **Yes** y **No** como las opciones.
+
+1. Agregue el multicampo **[!UICONTROL Alt texts]** a la ficha **Commerce**. Configure sus dos propiedades alineadas con el índice como `commerce:altTextStoreViews` y `commerce:altTextValues`.
 
 Si tiene algún otro problema, cree un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) o póngase en contacto con su representante de ventas de integración de AEM Assets para obtener ayuda.
 

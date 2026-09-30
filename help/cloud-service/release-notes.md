@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
+source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
 workflow-type: tm+mt
-source-wordcount: '6869'
+source-wordcount: '7503'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -62,7 +62,93 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 >
 >Si utiliza Adobe Commerce local o Adobe Commerce en infraestructura en la nube, consulte las [notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview).
 
-## Septiembre de 2026: #2 de la versión {#latest}
+## Octubre de 2026: #1 de la versión {#latest}
+
+[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Los siguientes elementos se agregarán a los entornos de producción el 6 de octubre de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Acceder a los detalles de la empresa en el webhook de tarifas de envío
+
+La carga del gancho web `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` ahora incluye los atributos personalizados de empresa y `company_id` del carro de compras, de modo que las integraciones de envío de [!DNL App Builder] pueden determinar la elegibilidad, como el envío gratuito, sin llamar a [!DNL Commerce]. Asigne los campos `rateRequest.company` en la configuración [!UICONTROL Hook Fields] del gancho web. <!-- CCSAAS-5485 -->
+
+### Administrar las reglas de precios de catálogo en REST
+
+Los nuevos extremos de API de REST permiten que las integraciones administren y busquen [reglas de precio de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) mediante programación. <!-- ACCS-1621 -->
+
+### Protección de las cargas prefirmadas con reCAPTCHA
+
+Ahora puede requerir la validación de [!DNL Google reCAPTCHA] en la mutación de GraphQL [`initiateUpload`](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload) para proteger las cargas de archivos prefirmados. Para habilitar esta configuración en [!DNL Admin], vaya a [!UICONTROL **Habilitar carga con firma previa**] en [!UICONTROL **Tiendas**] > [!UICONTROL **Configuración**] > [!UICONTROL **Seguridad**] > [!UICONTROL **Tienda Google reCAPTCHA**]. <!-- CCSAAS-5490 -->
+
+### Crear atributos personalizados para devoluciones con REST
+
+Los extremos de la API REST `/V1/returns` aceptan atributos personalizados en elementos de devolución (RMA), de modo que las integraciones de back-end, como los sistemas de administración de pedidos, pueden sincronizar los campos de devolución sin utilizar la API de GraphQL de tienda.
+
+Establezca valores de atributo de archivo e imagen con una clave del flujo `/V1/media/initiate-upload` y `finish-upload`. <!-- CCSAAS-5502 -->
+
+### Restringir el registro de empresas invitadas
+
+Una nueva opción de configuración le permite evitar que los clientes invitados no autenticados registren una compañía desde la tienda a través de la mutación de GraphQL `createCompany`.
+
+Esta opción no está disponible en [!DNL Commerce Admin]. Para habilitarlo, establezca el indicador de configuración `btob/company/restrict_guest_company_registration` en `1` con el extremo de API REST [`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config):
+
+```json
+{
+  "config": {
+    "btob/company/restrict_guest_company_registration": "1"
+  }
+}
+```
+
+Cuando está habilitada, [!DNL Commerce] bloquea a los llamadores invitados tanto de la mutación `createCompany` como de la consulta `isCompanyEmailAvailable`. <!-- ACCS-1823 -->
+
+### Auditoría de un pedido a través de GraphQL
+
+El objeto de entrada de GraphQL `CustomerOrdersFilterInput` ahora admite un campo `original_number` que le permite filtrar cualquier número de pedido de una cadena de edición de pedidos. La respuesta devuelve el pedido original y todos los pedidos creados a partir de las ediciones posteriores como una sola cadena, que coinciden con el filtro `order_original_id` en REST. <!-- ACCS-1442 -->
+
+### Programar reglas de precios de catálogo por fecha y hora
+
+Ahora puede establecer la hora del día para que una [regla de precio de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) comience o termine en [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+
+### Aplicar descuentos de envío personalizados mediante la API de REST de administrador
+
+Ahora puede aplicar un descuento por envío arbitrario a un carro de compras a través de la API de REST de administrador, en casos que no se ajusten a una regla de precio de carro de compras.
+
+Use `POST /V1/carts/:cartId/shipping-discount` para establecer el descuento. Se requiere acceso de administrador o de nivel de integración para utilizar este punto de conexión. <!-- ACCS-1156 -->
+
+### Mejoras y correcciones de errores
+
+En esta versión se incluyen las siguientes mejoras, optimizaciones y correcciones de errores seleccionadas:
+
+* El [!DNL Commerce Admin] ahora muestra una advertencia cuando crea o edita un webhook que incluye el encabezado de Adobe I/O Runtime `X-OW-EXTRA-LOGGING` establecido en `on`. El encabezado está diseñado para la depuración y no se recomienda en producción. <!-- CCSAAS-5486 -->
+
+* Los archivos cargados a través de URL de carga de S3 prefirmadas ahora tienen análisis adicionales de malware. <!-- ACCS-1463 -->
+
+* La API por lotes ahora aplica un número máximo de entidades por solicitud. Las solicitudes que exceden el límite devuelven un error. <!-- ACCS-703 -->
+
+* Se ha corregido un problema por el cual la cantidad vendible podría informarse de manera insuficiente para los productos, lo que podría bloquear incorrectamente las comprobaciones de existencias de complementos al carro de compras, REST y GraphQL. <!-- ACCS-1908 -->
+
+* Se corrigió un problema en el cual la cuadrícula del cliente [!DNL Commerce Admin] mostraba filas duplicadas para clientes B2B que pertenecían a una compañía. <!-- ACCS-1143 -->
+
+* Se corrigió un problema en el cual al guardar la configuración de integración de [!DNL AEM Assets] no se registraba el inquilino. <!-- ACAP-1317 -->
+
+* Se ha corregido un problema en el cual un precio especial podía durar más que su fecha de caducidad. <!-- CCSAAS-5499 -->
+
+* Se corrigió un problema en el cual la cuadrícula [!UICONTROL Return Items] podría no cargarse para un retorno pendiente. <!-- CCSAAS-5514 -->
+
+* Se ha corregido un problema en el cual al solicitar los precios o los totales del carro de compras se podía devolver un error cuando el carro contenía un artículo sin existencias. <!-- CEXT-6776 -->
+
+* Se ha resuelto un problema en el cual el consumidor de inventario podía saturar la cola de mensajes al intentar encontrar un SKU que faltaba. <!-- ACCS-1976 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Septiembre de 2026: #2 de la versión
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
