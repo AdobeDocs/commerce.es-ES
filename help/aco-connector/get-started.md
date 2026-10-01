@@ -72,7 +72,7 @@ El usuario [!DNL Adobe Commerce] que configuró la integración debe tener:
 
 * [Acceso desde la línea de comandos al [!DNL Adobe Commerce] servidor de aplicaciones](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Acceso de desarrollador a la [organización de IMS](¿https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Commerce Optimizer].
+* Acceso de desarrollador a la [organización de IMS] (¿https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Commerce Optimizer].
 
 >[!BEGINSHADEBOX]
 

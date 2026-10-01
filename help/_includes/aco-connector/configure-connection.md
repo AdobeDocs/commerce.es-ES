@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 # Obtener detalles de instancia de [!DNL Commerce Optimizer]
 
-Obtenga el _id. de inquilino_ del campo _[!DNL Instance Id]_en la instancia [!DNL Commerce Optimizer] [[!DNL Instance details] página](/help/optimizer/get-started.md#manage-instances), o de la URL utilizada para acceder a la instancia. Por ejemplo, en `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
+Obtenga el _id. de inquilino_ del campo _[!DNL Instance Id]_&#x200B;en la instancia [!DNL Commerce Optimizer] [[!DNL Instance details] página](/help/optimizer/get-started.md#manage-instances), o de la URL utilizada para acceder a la instancia. Por ejemplo, en `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
 
 1. En el Administrador de Commerce, seleccione **[!UICONTROL Adobe Commerce Optimizer]** para mostrar la página de configuración con instrucciones.
 
