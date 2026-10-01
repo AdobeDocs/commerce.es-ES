@@ -1,29 +1,35 @@
 ---
 title: '[!DNL Catalog Service]'
-description: 'Acelere su tienda Adobe Commerce con [!DNL Catalog Service] : una API de GraphQL de alto rendimiento que reduce los tiempos de carga de las páginas de productos, las páginas de categorías y los resultados de búsqueda.'
+description: 'Acelere su tienda Adobe Commerce con [!DNL Catalog Service]: una API de GraphQL de alto rendimiento que reduce los tiempos de carga de las páginas de productos, las páginas de categorías y los resultados de búsqueda.'
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bb09ff54afbba3d0a0e48bfd1a0392cba435ea9a
+    internal-label: Data management
+source-git-commit: fd87417a494987f33009d386019d870b306dcf73
 workflow-type: tm+mt
-source-wordcount: 1493
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # [!DNL Catalog Service] para Adobe Commerce
 
 La extensión [!DNL Catalog Service] para Adobe Commerce mejora los tiempos de carga de las tiendas al proporcionar datos de catálogo optimizados de solo lectura a través de una API de GraphQL dedicada. Este servicio está diseñado específicamente para mejorar las experiencias de página relacionadas con el producto, lo que resulta en cargas de página más rápidas y tasas de conversión mejoradas.
@@ -118,6 +124,12 @@ El esquema reduce la diversidad de tipos de productos a dos casos de uso:
   * Cada componente de producto simple puede tener su propio precio.
   * Los compradores pueden especificar cantidades para productos de componentes individuales.
   * Las opciones de producto (como tamaño, color y material) están unificadas y funcionan de la misma manera independientemente del tipo de producto. Cada selección de opciones apunta a un producto simple específico con sus propios atributos y precios. El producto final permanece sin definir hasta que el comprador selecciona todas las opciones requeridas.
+
+<!--
+>[!NOTE]
+>
+>Custom product types introduced by third-party extensions are not covered by this mapping. For [!DNL Commerce Storefront MCP] deployments (Early Access), a catalog enablement module can represent these custom types as simple products in the catalog data sent to [!DNL Catalog Service]. See [Support for custom product types in SaaS catalog data export](../data-export/custom-product-types.md).
+-->
 
 #### Atributos de vista de producto
 

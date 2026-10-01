@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
+source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
 workflow-type: tm+mt
-source-wordcount: '7503'
+source-wordcount: '7581'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -78,7 +78,16 @@ La carga del gancho web `plugin.out_of_process_shipping_methods.api.shipping_rat
 
 ### Administrar las reglas de precios de catálogo en REST
 
-Los nuevos extremos de API de REST permiten que las integraciones administren y busquen [reglas de precio de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) mediante programación. <!-- ACCS-1621 -->
+Los nuevos extremos de API de REST permiten que las integraciones administren y busquen [reglas de precio de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) mediante programación. <!-- ACCS-1621 -->
+
+Los siguientes extremos están protegidos por el permiso `Magento_CatalogRule::promo_catalog`, que también protege la pantalla Regla de precio del catálogo de administración. Se requiere acceso de administrador o de nivel de integración para utilizar este punto de conexión.
+
+* `GET /V1/catalogPriceRules/metadata`: descubra las acciones de descuento permitidas y los atributos de condición, con sus operadores y orígenes de valor.
+* `GET /V1/catalogPriceRules/search`: lista y reglas de búsqueda con los criterios de búsqueda estándar (filtros, ordenación, paginación).
+* `GET /V1/catalogPriceRules/:ruleId`: obtenga una regla, incluido el árbol de condiciones completo.
+* `POST /V1/catalogPriceRules` - Crear una regla.
+* `PUT /V1/catalogPriceRules/:ruleId` - Actualizar una regla. Envíe únicamente los campos que desee cambiar.
+* `DELETE /V1/catalogPriceRules/:ruleId` - Eliminar una regla.
 
 ### Protección de las cargas prefirmadas con reCAPTCHA
 
@@ -112,7 +121,7 @@ El objeto de entrada de GraphQL `CustomerOrdersFilterInput` ahora admite un camp
 
 ### Programar reglas de precios de catálogo por fecha y hora
 
-Ahora puede establecer la hora del día para que una [regla de precio de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) comience o termine en [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+Ahora puede establecer la hora del día para que una [regla de precio de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) comience o termine en [!DNL Commerce Admin]. <!-- ACCS-1762 -->
 
 ### Aplicar descuentos de envío personalizados mediante la API de REST de administrador
 

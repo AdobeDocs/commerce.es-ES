@@ -1,16 +1,14 @@
 ---
 user-guide-title: Guía de [!DNL Data Export] para servicios SaaS
 breadcrumb-title: '[!DNL Data Export]'
-user-guide-description: Esta guía proporciona instrucciones detalladas para usar la extensión  [!DNL Data Export] para los servicios SaaS de Adobe Commerce.
+user-guide-description: Esta guía proporciona instrucciones detalladas para usar la extensión [!DNL Data Export] para los servicios SaaS de Adobe Commerce.
 role: Admin, Developer
 feature: Services
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: fd87417a494987f33009d386019d870b306dcf73
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '119'
 ht-degree: 2%
-
 ---
-
 # Guía de [!DNL Data Export] para servicios SaaS {#saas-data-export}
 
 - [Información general de guía](overview.md)
@@ -18,6 +16,7 @@ ht-degree: 2%
   - [Funcionamiento de la sincronización](sync-overview.md)
   - [Administrar sincronización](data-sync-manage.md)
   - [Mecanismo de bloqueo de alimentación](feed-lock-mechanism.md)
+  - {hide-from-toc}[Compatibilidad con tipos de productos personalizados (acceso anticipado)](custom-product-types.md)
 - Exportar programación y rendimiento {#performance}
   - [Estimar el volumen de datos y el tiempo de transmisión](estimate-data-volume-sync-time.md)
   - [Mejora del rendimiento de exportación](customize-export-processing.md)
