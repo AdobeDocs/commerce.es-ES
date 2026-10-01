@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Fragmentos de Commerce
 
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >Conecte siempre las instancias de sandbox Optimizer a entornos que no sean de producción y las instancias de producción a entornos de producción. Los entornos no coincidentes producen incoherencias en los datos del catálogo, los resultados de búsqueda y las recomendaciones.
 
+## nota de procesamiento de sincronización de datos de Adobe Commerce Optimizer {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>El procesamiento de la sincronización de datos se inicia en segundo plano en cuanto se completa la configuración. Según el tamaño del catálogo, el proceso de sincronización de datos puede tardar entre unos minutos y varias horas.
 
 ## Servicios de comercialización para Optimizer {#aco-merchandising-services}
 
@@ -110,3 +114,13 @@ Para obtener información sobre las opciones de configuración de identidad, com
 >[!IMPORTANT]
 >
 >La herramienta de migración masiva de datos se encuentra actualmente en Acceso anticipado. El acceso se proporciona exclusivamente a través del proceso de participación de ingeniería implementada de Commerce (CDE). Para obtener una descripción general de la herramienta y sus requisitos de elegibilidad, consulte [Herramienta de migración masiva de datos](../cloud-service/migration/bulk-data/migration-tool.md).
+
+## Instalación de vínculos de extensión {#install-extension-links}
+
+>[!NOTE]
+>
+>Para obtener instrucciones detalladas sobre la instalación de extensiones, consulte las siguientes guías:
+>
+>[Instalar extensión en [!DNL Adobe Commerce] en la infraestructura de nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[Instalar extensión en [!DNL Adobe Commerce] local](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/extensions)

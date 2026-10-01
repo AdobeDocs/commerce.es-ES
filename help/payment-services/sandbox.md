@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -57,9 +57,9 @@ Para completar la incorporación a la zona protegida:
 
    Cuando se apruebe la incorporación a la zona protegida de PayPal, debería ver una notificación que indique que su sistema de pago está actualmente en modo de zona protegida y no está procesando pagos activos.
 
-   >[!IMPORTANT]
-   >
-   >Si revocas el consentimiento de [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar tus pagos (en la configuración de tu cuenta PayPal), los pedidos de tu tienda no se podrán procesar a través de [!DNL Payment Services]. En su página de inicio de Servicios de pago, aparece una alerta sobre el consentimiento revocado. Para descartar la alerta, haga clic en **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>Si revocas el consentimiento de [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar tus pagos (en la configuración de tu cuenta PayPal), los pedidos de tu tienda no se podrán procesar a través de [!DNL Payment Services]. En su página de inicio de Servicios de pago, aparece una alerta sobre el consentimiento revocado. Para descartar la alerta, haga clic en **[!UICONTROL Do not show again]**.
 
 ### Restablecer la cuenta de zona protegida
 
@@ -102,9 +102,9 @@ Para configurar el país del comprador:
 
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 
->[!NOTE]
->
->La configuración de **[!UICONTROL Buyer's country]** solo aparece cuando el método está establecido en `Sandbox`. Esto no afecta a los entornos de producción.
+   >[!NOTE]
+   >
+   >La configuración de **[!UICONTROL Buyer's country]** solo aparece cuando el método está establecido en `Sandbox`. Esto no afecta a los entornos de producción.
 
 ## Realizar pruebas en un entorno limitado
 
