@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Para completar la incorporación a la zona protegida:
       Si creó una cuenta de zona protegida de PayPal durante el proceso de incorporación a la zona protegida de PayPal, debe [restablecer su zona protegida de incorporación](#reset-your-sandbox-account) porque o no puede verificar su correo electrónico.
 
    1. Seleccione **[!UICONTROL Business]** como tipo de cuenta y haga clic en **[!UICONTROL Create]**.
-   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna&#x200B;_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
+   1. En la sección _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos de la columna_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
    1. Haga clic en **[!UICONTROL View/edit account]**.
 
       ![PayPal - Ver/editar cuenta de zona protegida](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -57,9 +57,9 @@ Para completar la incorporación a la zona protegida:
 
    Cuando se apruebe la incorporación a la zona protegida de PayPal, debería ver una notificación que indique que su sistema de pago está actualmente en modo de zona protegida y no está procesando pagos activos.
 
-   >[!IMPORTANT]
-   >
-   >Si revocas el consentimiento de [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar tus pagos (en la configuración de tu cuenta PayPal), los pedidos de tu tienda no se podrán procesar a través de [!DNL Payment Services]. En su página de inicio de Servicios de pago, aparece una alerta sobre el consentimiento revocado. Para descartar la alerta, haga clic en **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>Si revocas el consentimiento de [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar tus pagos (en la configuración de tu cuenta PayPal), los pedidos de tu tienda no se podrán procesar a través de [!DNL Payment Services]. En su página de inicio de Servicios de pago, aparece una alerta sobre el consentimiento revocado. Para descartar la alerta, haga clic en **[!UICONTROL Do not show again]**.
 
 ### Restablecer la cuenta de zona protegida
 
@@ -94,7 +94,7 @@ Para configurar el país del comprador:
 
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL General Configuration]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL General Configuration]_.
 
 1. Establezca **[!UICONTROL Method]** en `Sandbox`.
 
@@ -102,9 +102,9 @@ Para configurar el país del comprador:
 
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 
->[!NOTE]
->
->La configuración de **[!UICONTROL Buyer's country]** solo aparece cuando el método está establecido en `Sandbox`. Esto no afecta a los entornos de producción.
+   >[!NOTE]
+   >
+   >La configuración de **[!UICONTROL Buyer's country]** solo aparece cuando el método está establecido en `Sandbox`. Esto no afecta a los entornos de producción.
 
 ## Realizar pruebas en un entorno limitado
 

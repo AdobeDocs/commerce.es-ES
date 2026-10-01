@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Fragmentos de Commerce
 
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Si la página Estado de sincronización de fuentes de datos no está disponible en Commerce Admin para Commerce en la nube o en implementaciones locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} para habilitarla.
+>Si la página Estado de sincronización de fuentes de datos no está disponible en Commerce Admin para Commerce en la nube o en implementaciones locales, siga las [instrucciones de instalación de extensión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} para habilitarla.
 
 
 ## Alineación del entorno de integración de Adobe Commerce Optimizer {#aco-integration-environment-alignment}
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >Conecte siempre las instancias de sandbox Optimizer a entornos que no sean de producción y las instancias de producción a entornos de producción. Los entornos no coincidentes producen incoherencias en los datos del catálogo, los resultados de búsqueda y las recomendaciones.
 
+## nota de procesamiento de sincronización de datos de Adobe Commerce Optimizer {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>El procesamiento de la sincronización de datos se inicia en segundo plano en cuanto se completa la configuración. Según el tamaño del catálogo, el proceso de sincronización de datos puede tardar entre unos minutos y varias horas.
 
 ## Servicios de comercialización para Optimizer {#aco-merchandising-services}
 
@@ -31,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Para implementaciones que usan [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) para exportar datos del catálogo a [!DNL Adobe Commerce Optimizer], compruebe la sincronización de datos del catálogo mediante la [página Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el administrador de Commerce y la [página de sincronización de datos](../optimizer/setup/data-sync.md) en [!DNL Adobe Commerce Optimizer Studio], no el [panel de administración de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
+>Para implementaciones que usan [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) para exportar datos del catálogo a [!DNL Adobe Commerce Optimizer], compruebe la sincronización de datos del catálogo mediante la [página Estado de sincronización de fuente de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el administrador de Commerce y la [página de sincronización de datos](../optimizer/setup/data-sync.md) en [!DNL Adobe Commerce Optimizer Studio], no el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Nota desplegable de Adobe Commerce Optimizer para actualizaciones de la API {#aco-api-updates-and-dropins}
 
@@ -55,7 +59,7 @@ ht-degree: 0%
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
@@ -83,7 +87,7 @@ ht-degree: 0%
 
 La administración y autenticación de la identidad de Adobe Commerce la administra el sistema Identity Management de Adobe (IMS) a través de Adobe Admin Console.
 
-Para obtener información sobre las opciones de configuración de identidad, como Adobe ID, Enterprise ID y Federated ID, así como las instrucciones para configurar el inicio de sesión único (SSO) para el acceso seguro a las aplicaciones de Adobe, consulte [Configurar la identidad y el inicio de sesión único](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html) en la documentación de *Enterprise Admin Console*.
+Para obtener información sobre las opciones de configuración de identidad, como Adobe ID, Enterprise ID y Federated ID, así como las instrucciones para configurar el inicio de sesión único (SSO) para el acceso seguro a las aplicaciones de Adobe, consulte [Configurar la identidad y el inicio de sesión único](https://helpx.adobe.com/enterprise/using/set-up-identity.html) en la documentación de *Enterprise Admin Console*.
 
 ## Notas de la versión de servicios ACCS y extensibilidad {#accs-release}
 
@@ -110,3 +114,13 @@ Para obtener información sobre las opciones de configuración de identidad, com
 >[!IMPORTANT]
 >
 >La herramienta de migración masiva de datos se encuentra actualmente en Acceso anticipado. El acceso se proporciona exclusivamente a través del proceso de participación de ingeniería implementada de Commerce (CDE). Para obtener una descripción general de la herramienta y sus requisitos de elegibilidad, consulte [Herramienta de migración masiva de datos](../cloud-service/migration/bulk-data/migration-tool.md).
+
+## Instalación de vínculos de extensión {#install-extension-links}
+
+>[!NOTE]
+>
+>Para obtener instrucciones detalladas sobre la instalación de extensiones, consulte las siguientes guías:
+>
+>[Instalar extensión en [!DNL Adobe Commerce] en la infraestructura de nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[Instalar extensión en [!DNL Adobe Commerce] local](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)

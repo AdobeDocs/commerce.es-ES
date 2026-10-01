@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -40,7 +40,7 @@ El comando `saas:resync` del paquete `magento/saas-export` le permite administra
 Adobe no recomienda usar el comando `saas:resync` con regularidad. Los escenarios habituales para utilizar el comando son:
 
 - Sincronización inicial
-- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas)
+- Sincronizar datos a un nuevo espacio de datos después de cambiar el [ID de espacio de datos SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Resolución de problemas
 
 Supervisar operaciones de sincronización en el archivo `var/log/saas-export.log`.
@@ -51,7 +51,7 @@ Supervisar operaciones de sincronización en el archivo `var/log/saas-export.log
 >
 >La sincronización inicial se ejecuta automáticamente cuando Live Search o Product Recommendations están habilitados. No se necesitan comandos manuales.
 >
->Para implementaciones de [!DNL Adobe Commerce Optimizer Connector], el comando `aco:config:init` programa la sincronización completa inicial invalidando todos los indexadores de fuentes de conector. Ver [Habilitar la  [!DNL Commerce Optimizer] integración](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) y [Administrar sincronización con [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md).
+>Para implementaciones de [!DNL Adobe Commerce Optimizer Connector], el comando `aco:config:init` programa la sincronización completa inicial invalidando todos los indexadores de fuentes de conector. Ver [Habilitar la  [!DNL Commerce Optimizer] integración](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) y [Administrar sincronización con [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md).
 
 Al almacenar en déclencheur un(a) `saas:resync` desde la línea de comandos, según el tamaño del catálogo, los datos pueden tardar entre unos minutos y unas pocas horas en actualizarse.
 

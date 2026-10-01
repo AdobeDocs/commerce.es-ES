@@ -23,7 +23,7 @@ topic_v2:
     internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: 7ab078f4780c25e3bb43479eec1fe18e31faf96c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -75,4 +75,4 @@ Puede realizar ambas acciones utilizando los SDK disponibles como se describe en
 
 1. Use [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) para recuperar las unidades de recomendación en la tienda. SDK devuelve los datos de producto necesarios para procesar las unidades de recomendación en una página.
 
-1. Aprenda a utilizar la consulta de GraphQL [`recommendations` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.
+1. Aprenda a utilizar la consulta de GraphQL [`recommendations` ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) para devolver información sobre bloques de recomendaciones de productos para una SKU determinada y mucho más.
