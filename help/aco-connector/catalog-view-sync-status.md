@@ -4,7 +4,7 @@ last-update: 2026-09-03
 description: Utilice la página Estado de Sincronización de Vista de Catálogo para supervisar y reconciliar la vista de catálogo, la política, la referencia del libro de precios y los datos de configuración clave sincronizados con Adobe Commerce Optimizer.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

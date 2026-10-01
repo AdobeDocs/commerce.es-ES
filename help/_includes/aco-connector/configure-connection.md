@@ -12,7 +12,7 @@ Obtenga el _id. de inquilino_ del campo _[!DNL Instance Id]_&#x200B;en la instan
 
    ![[!DNL Commerce Optimizer] página de configuración](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. Desde la línea de comandos, [use SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) para conectarse al entorno de ensayo [!DNL Adobe Commerce].
+1. Desde la línea de comandos, [use SSH](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/secure-connections) para conectarse al entorno de ensayo [!DNL Adobe Commerce].
 
 1. Para configurar la integración, ejecute el siguiente comando CLI [!DNL Adobe Commerce], reemplazando los valores de marcador de posición por los valores de su proyecto [!DNL Commerce Optimizer]:
 
