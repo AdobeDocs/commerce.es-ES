@@ -2,7 +2,7 @@
 title: Introducción a [!DNL Adobe Commerce Optimizer Connector]
 description: Obtenga información sobre cómo instalar [!DNL Adobe Commerce Optimizer Connector], configurar opciones de exportación de ámbito, habilitar la autenticación IMS y comprobar la sincronización de catálogos.
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
@@ -39,8 +39,8 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-09-11
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+last-update: 2026-10-01
+source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Instala y configura [!DNL Adobe Commerce Optimizer Connector] para que sincronic
 
 ## Requisitos para utilizar la integración {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/es/products/magento/magento-commerce.html) 2.4.7+. Para ver los requisitos detallados, consulte [Requisitos del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements).
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Para ver los requisitos detallados, consulte [Requisitos del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 
 * [!DNL Commerce Optimizer] licencia con una instancia de zona protegida aprovisionada.
 
-* [Claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) para descargar el metapaquete de conector mediante Composer.
+* [Claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) para descargar el metapaquete de conector mediante Composer.
 
 * Acceso de administrador a [[!DNL Commerce Optimizer] instancia de zona protegida](../optimizer/get-started.md).
 
@@ -70,9 +70,9 @@ El usuario [!DNL Adobe Commerce] que configuró la integración debe tener:
 
 * Acceso de administrador al administrador de Commerce.
 
-* [Acceso desde la línea de comandos al [!DNL Adobe Commerce] servidor de aplicaciones](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Acceso desde la línea de comandos al [!DNL Adobe Commerce] servidor de aplicaciones](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Acceso de desarrollador a la [organización de IMS] (¿https://experienceleague.adobe.com/es/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Commerce Optimizer].
+* Acceso de desarrollador a la [organización de IMS](¿https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Commerce Optimizer].
 
 >[!BEGINSHADEBOX]
 

@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo verificar la sincronización de da
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -35,8 +35,8 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-last-update: 2026-08-20
-source-git-commit: 77872b44f9b1aeb1ecf00253377802962df04c83
+last-update: 2026-10-01
+source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -66,5 +66,5 @@ Cuando la sincronización parcial y los reintentos automáticos no resuelven los
 > - [Solución de problemas](troubleshooting.md): Diagnostique problemas de exportación de credenciales, sincronización y ámbito
 > - [Personalizar la configuración de exportación de los ámbitos de Commerce](./get-started.md#customize-the-commerce-scopes-export-configuration): configure fuentes por nivel de ámbito, habilite y deshabilite el comportamiento y los pasos de administración
 > - [Módulos de conector y extremos de fuente](reference/connector-reference.md): revise módulos, extremos de API y fuentes admitidas
-> - [Página de estado de sincronización de fuentes de datos en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}: Más información acerca de los campos y las funciones disponibles para supervisar el estado de las fuentes
-> - [Panel de sincronización de datos en [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/data-sync){target="_blank"}: Documentación de referencia para campos y acciones disponibles para supervisar la sincronización de datos del catálogo
+> - [Página de estado de sincronización de fuentes de datos en el administrador de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}: Más información acerca de los campos y las funciones disponibles para supervisar el estado de las fuentes
+> - [Panel de sincronización de datos en [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"}: Documentación de referencia para campos y acciones disponibles para supervisar la sincronización de datos del catálogo
