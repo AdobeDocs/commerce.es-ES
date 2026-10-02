@@ -3,7 +3,7 @@ title: Asignación de campos para fuentes de [!DNL Adobe Commerce Optimizer Conn
 description: Obtenga información acerca de la asignación de campos [!DNL Adobe Commerce Optimizer Connector] desde los datos del catálogo [!DNL Adobe Commerce] a los formatos de API de ingesta [!DNL Adobe Commerce Optimizer] para todas las fuentes.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
+source-git-commit: 1e34df4f07f9043675104fce55c58e0617463b33
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 3%
+source-wordcount: '1023'
+ht-degree: 2%
 ---
 
 # Asignación de campos para fuentes de conector
@@ -51,46 +51,42 @@ Esta página documenta cómo [!DNL Adobe Commerce Optimizer Connector] transform
 
 La fuente `products` envía datos al extremo [Products](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
 
-| [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Notas |
+| [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Detalles de asignación |
 | ----------------------------------------------- | -------------- | ------- |
 | `sku` | `sku` | |
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |
 | `urlKey` | `slug` | |
-| `productId` | `externalIds[0].id` | `origin` se corrigió a `"AdobeCommerce"` |
-| `status` | `status` | En mayúsculas; se establece en `DISABLED` para productos compuestos sin elementos secundarios asignados |
-| `description` | `description` | |
-| `shortDescription` | `shortDescription` | |
-| `visibility` | `visibleIn` | Dividir y asignar valores separados por comas: `Catalog`→`CATALOG`, `Search`→`SEARCH`; valores no asignados quitados |
+| `productId` | `externalIds[0].id` | Establece `origin` en `"AdobeCommerce"` |
+| `status` | `status` | Convierte el estado a mayúsculas. Utiliza `DISABLED` si falta el estado o si un producto configurable o agrupado no tiene valores de opción. |
+| `description` | `description` | Utiliza una cadena vacía si falta la descripción. |
+| `shortDescription` | `shortDescription` | Utiliza una cadena vacía si falta la descripción breve. |
+| `visibility` | `visibleIn` | Divide el valor separado por comas y asigna `Catalog` a `CATALOG` y `Search` a `SEARCH`. Elimina otros valores. |
 | `metaTitle` | `metaTags/title` | |
 | `metaDescription` | `metaTags/description` | |
-| `metaKeyword` | `metaTags/keywords` | Cadena delimitada por una nueva línea dividida en matriz |
-| `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | Objeto con codificación JSON `{inStock, lowStock, weight, weightType}`; siempre presente como la primera entrada de atributo |
-| `attributes[]` | `attributes[]` | Se excluyen todas las entradas asignadas a `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` (van a `aco_ac_attributes`) |
-| `(synthesized)` | `attributes[].code = "ac_assortments"` | Matriz de ID numéricos de los catálogos compartidos personalizados a los que pertenece el producto, deduplicados y ordenados. Los productos sólo del catálogo público no tienen este atributo. [!DNL Commerce Optimizer] directivas filtran este atributo para aplicar la selección de vistas del catálogo privado. |
-| `images[]` | `images[]` | `url`, `label`; funciones estándar asignadas: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; las funciones no estándar van a `customRoles[]` |
-| `categoryData[].categoryPath` | `routes[].path` | |
-| `categoryData[].productPosition` | `routes[].position` | |
+| `metaKeyword` | `metaTags/keywords` | Divide las palabras clave separadas por una nueva línea en una matriz y recorta el espacio en blanco. |
+| `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | Agrega siempre una entrada `aco_ac_attributes` como primer atributo. Su valor JSON incluye `inStock` y `lowStock` como cadenas. Incluye `weight` y `weightType` cuando esos valores están disponibles. |
+| `attributes[]` | `attributes[]` | Asigna cada entrada a su código de atributo, valores de cadena e ID de referencia de variante coincidente cuando está disponible. Omite `inStock`, `lowStock`, `categories`, `weight` y `weightType`. Los valores de inventario se incluyen en `aco_ac_attributes`. Las categorías se exportan como rutas. |
+| `images[]` | `images[]` | Omite imágenes sin dirección URL.<br>Exporta `url`, `label` (vacío si falta) y `sortOrder` (entero, valor predeterminado `0`).<br>Ordena las imágenes por `sortOrder` en orden ascendente.<br>Asigna roles estándar: `image` a `BASE`, `small_image` a `SMALL`, `thumbnail` a `THUMBNAIL` y `swatch_image` a `SWATCH`. Exporta otros roles como `customRoles[]`. |
+| `categoryData[].categoryPath` | `routes[].path` | Omite las entradas con una ruta de categoría vacía. |
+| `categoryData[].productPosition` | `routes[].position` | Usa `0` si falta la posición del producto. |
 | `links[].type` + `links[].sku` | `links[]` | `type` en mayúscula; se perdieron las entradas sin `sku` |
-| `parents[].productType` + `parents[].sku` | `links[]` | Tipo asignado: `configurable`→`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE` |
-| `configurable options` | `configurations[]` | `id`→`attributeCode`, `label`; tipo de opción `SWATCH` cuando `swatchType` está establecido; de lo contrario, `CONFIGURABLE`; variante predeterminada de `isDefault`; los valores incluyen `variantReferenceId`, `label`, `colorHex`, `imageUrl` |
-| `bundle options` | `bundles[]` | `label`→`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; SKU predeterminadas de `isDefault`; los elementos incluyen `sku`, `qty`, `userDefinedQty` (`qtyMutability`) |
+| `parents[].productType` + `parents[].sku` | `links[]` | Asigna a `configurable` a `VARIANT_OF`, y a `bundle` o `bundle_fixed` a `IN_BUNDLE`. Convierte otros tipos de productos a mayúsculas. Omite elementos principales sin SKU. |
+| `configurable options` | `configurations[]` | Exporta opciones que tienen un ID y al menos un valor.<br>Asigna `id` a `attributeCode`. Establece `type` en `SWATCH` cuando `swatchType` está presente y en `CONFIGURABLE` en caso contrario.<br>Utiliza el identificador del valor predeterminado como `defaultVariantReferenceId`.<br>Asigna cada valor a `variantReferenceId`, `label`, `colorHex` y `imageUrl`. |
+| `bundle options` | `bundles[]` | Exporta opciones que contienen al menos un elemento.<br>Utiliza la etiqueta de opción como `group` o `Bundle group` si la etiqueta está vacía. Copia `required` en el resultado.<br>Establece `multiSelect` en `true` para los tipos de procesamiento `checkbox` y `multi`.<br>Muestra los SKU predeterminados en `defaultItemSkus`. Cada elemento incluye `sku`, `qty` (el valor predeterminado es `0`) y `userDefinedQty` (de `qtyMutability`, el valor predeterminado es `false`). |
 
 ## Metadatos de atributos de producto
 
 La fuente `productAttributes` envía datos a [extremo de metadatos](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
 
-
-| [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Notas |
+| [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Detalles de asignación |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
 | `storeViewCode` | `source/locale` | |
 | `label` | `label` | |
 | `dataType` + `frontendInput` | `dataType` | Consulte la tabla de conversión a continuación |
-| `visible` | `visibleIn: "PRODUCT_DETAIL"` | Se agregó a la matriz al `true` |
-| `visibleInSearch` | `visibleIn: "SEARCH_RESULTS"` | Se agregó a la matriz al `true` |
-| `visibleInListing` | `visibleIn: "PRODUCT_LISTING"` | Se agregó a la matriz al `true` |
-| `visibleInCompareList` | `visibleIn: "PRODUCT_COMPARE"` | Se agregó a la matriz al `true` |
+| `dataType` y `frontendInput` | `dataType` | Utiliza las reglas de conversión siguientes. |
+| `visible`, `visibleInSearch`, `visibleInListing`, `visibleInCompareList` | `visibleIn[]` | Cuando un indicador es `true`, agrega su valor correspondiente:<br>`visible` → `PRODUCT_DETAIL`<br>`visibleInSearch` → `SEARCH_RESULTS`<br>`visibleInListing` → `PRODUCT_LISTING`<br>`visibleInCompareList` → `PRODUCT_COMPARE` |
 | `filterable` | `filterable` | |
 | `sortable` | `sortable` | |
 | `searchable` | `searchable` | |
@@ -99,21 +95,21 @@ La fuente `productAttributes` envía datos a [extremo de metadatos](https://deve
 
 ### Conversión de tipo de datos
 
-El conector deriva la API `dataType` de los campos Commerce `dataType` y `frontendInput` de la tabla de asignación anterior. La siguiente tabla muestra las reglas de conversión que aplica el conector.
+Cuando `dataType` es `int`, el conector comprueba `frontendInput`. Para otros tipos de datos, `frontendInput` no afecta a la conversión.
 
-| [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API `dataType` |
-| -------------------- | -------------------------- | ------------------- |
+| Entrada `dataType` | Entrada `frontendInput` | Salida `dataType` |
+| ---------------- | --------------------- | ----------------- |
 | `int` | `boolean` | `BOOLEAN` |
 | `int` | `text` o `select` | `TEXT` |
-| `int` | cualquier otro | `INTEGER` |
-| `decimal` | - | `DECIMAL` |
-| `text`, `varchar`, `static`, `datetime` | - | `TEXT` |
-| `OBJECT` | - | `OBJECT` |
-| cualquier otro | - | `TEXT` |
+| `int` | Cualquier otro valor, incluido un valor que falta | `INTEGER` |
+| `decimal` | No se usa | `DECIMAL` |
+| `text`, `varchar`, `static`, `datetime` | No se usa | `TEXT` |
+| `OBJECT` | No se usa | `OBJECT` |
+| Cualquier otro valor | No se usa | `TEXT` |
 
 >[!NOTE]
 >
->Cuando la `dataType` de un atributo se establece en `OBJECT`, la API de [productos](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} trata el valor del atributo como un objeto estructurado en lugar de como una cadena sin formato. En el momento de la consulta, la API intenta analizar el valor almacenado como JSON. Si el análisis se realiza correctamente, el resultado se devuelve como un objeto anidado en la respuesta. **Este comportamiento es especialmente útil** cuando se proporcionan atributos personalizados de forma dinámica, por ejemplo, para transportar datos estructurados o de varios campos que no se pueden representar como un valor escalar. Para obtener instrucciones, consulte [Agregar atributos de producto dinámicamente](../../data-export/add-attribute-dynamically.md).
+>Cuando un atributo usa el tipo de datos `OBJECT`, la [API de productos](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} intenta analizar su valor almacenado como JSON. Si el análisis se realiza correctamente, la API devuelve el valor como un objeto anidado. Use `OBJECT` para datos de atributos estructurados que no se puedan representar como un valor único. Para obtener instrucciones, consulte [Agregar atributos de producto dinámicamente](../../data-export/add-attribute-dynamically.md).
 
 ## Libros de precios
 
@@ -121,51 +117,58 @@ La fuente `priceBooks` envía datos al [extremo de libros de precios](https://de
 
 A diferencia de otras fuentes de conector, la fuente `priceBooks` no la recopila un indizador [!DNL SaaS Data Export] en [!DNL Adobe Commerce]. El conector genera esta fuente a partir del sitio web y la configuración del grupo de clientes en el Administrador.
 
-Se crea un **libro de precios base** por sitio web, más un **libro de precios secundario** por par de grupo de sitio web-cliente.
+Para cada sitio web, el conector crea un libro de precios base y un libro de precios secundario para cada grupo de clientes.
 
-**Fórmula de id. de libro de precios:**
+Usar estas fórmulas para `priceBookId`:
 
-- **Base** (precios normales): `priceBookId = websiteCode`
-- **Secundario** (grupo de clientes o catálogo compartido): `priceBookId = websiteCode::sha1(customerGroupId)` donde `sha1(customerGroupId)` es el resumen hexadecimal SHA-1 del identificador entero del grupo de clientes
+- Libros de precios base para precios regulares: `priceBookId = websiteCode`.
+- Libros de precios secundarios para grupos de clientes: `priceBookId = websiteCode::sha1(customerGroupId)`, donde `sha1(customerGroupId)` es el resumen hexadecimal SHA-1 del identificador entero del grupo de clientes.
 
-La fuente de precios utiliza la misma fórmula al resolver a qué libro de precios pertenece una entrada de precio. Para saber cómo resuelven las tiendas el(la) `priceBookId` de una sesión de cliente, consulte [Integración de tiendas sin encabezado](../headless-storefront.md#graphql-commerceoptimizer-query).
+La fuente de precios utiliza la misma fórmula para asignar cada entrada de precio a un libro de precios. Para obtener información sobre cómo resuelve una tienda `priceBookId` para una sesión de cliente, consulte [Integración de tienda sin encabezado](../headless-storefront.md#graphql-commerceoptimizer-query).
 
-| Campo generado | Campo de API [!DNL Commerce Optimizer] | Notas |
+
+| Campo o valor de Source | Campo de API [!DNL Commerce Optimizer] | Detalles de asignación |
 | ---------------- | -------------- | ------- |
-| `websiteCode`, `customerGroupId` | `priceBookId` | |
-| Nombre del sitio web | `name` | Precio base libro: nombre del sitio web. Secundario: `"Group Name (Website Name)"` |
+| `websiteCode` | `parentId` | Añade este campo a los libros de precios secundarios. Su valor identifica el libro de precios base. |
+| Nombre del sitio web | `name` | Utiliza el nombre del sitio web para los libros de precios base. Utiliza `Customer group name (Website name)` para los libros de precios secundarios. |
 | `websiteCode` | `parentId` | Presente solo en libros de precios para niños; señala al libro de precios base |
-| Moneda base del sitio web | `currency` | Presente solo en libros de precio base; heredado por los niños |
+| Moneda base del sitio web | `currency` | Incluye este campo sólo en los libros de precio base. Los libros de precios para niños lo omiten. |
 
 ## Precios
 
-La fuente `prices` envía datos al extremo [Prices](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+La fuente `prices` envía datos de [!DNL Adobe Commerce] al extremo [Prices](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
 
-| [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Notas |
+| Campo de entrada de fuente | Campo de API [!DNL Commerce Optimizer] | Detalles de asignación |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
-| `sku` | `sku` | |
-| `websiteCode`, `customerGroupId` | `priceBookId` | |
-| `regular` | `regular` | |
-| `discounts[]` | `discounts[]` | ejemplo de descuentos: precio especial, precio de regla de catálogo, precio de catálogo compartido |
-| `tierPrices[]` | `tierPrices[]` | |
+| `sku` | `sku` | Pasa el SKU sin cambiar. |
+| `websiteCode`, `customerGroupCode` | `priceBookId` | Combina `websiteCode` con el hash SHA-1 del identificador del grupo de clientes en `customerGroupCode`. Si `customerGroupCode` es `0`, solo usa `websiteCode`. |
+| `regular` | `regular` | Pasa el precio normal sin cambiar. |
+| `discounts[]` | `discounts[]` | Si el valor de origen es `null`, exporta una matriz vacía.<br>Para las entradas con `code` establecido en `special_price` y un `percentage`, establece `percentage` en `100 - percentage` cuando el valor está entre `0` y `100`. Lo establece en `0` dentro o fuera de ese intervalo.<br>Pasa sin cambios otras entradas, incluidos los precios especiales basados en precios. |
+| `tierPrices[]` | `tierPrices[]` | Usa una matriz vacía si falta el valor de origen o `null`. |
 
 ## Categorías
 
-La fuente `categories` envía datos al extremo [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
+La fuente `categories` envía datos de [!DNL Adobe Commerce] al extremo [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Los elementos con un `urlPath` vacío (categorías raíz lógicas) se omiten y nunca se envían.
 
-| [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Notas |
+| [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Detalles de asignación |
 | --------------- | -------------- | ------- |
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |
 | `urlPath` | `slug` | |
 | `description` | `description` | |
+| `position` | `position` | Exporta la posición de la categoría cuando está presente. Omite el campo cuando falta. |
 | `metaTitle` | `metaTags/title` | |
 | `metaDescription` | `metaTags/description` | |
 | `metaKeywords` | `metaTags/keywords` | Cadena delimitada por una nueva línea dividida en matriz |
 | `image` | `images[].url` | Matriz de un solo elemento; `roles: ["BASE"]` |
 | `isActive` + `includeInMenu` | `families` | `["top_menu"]` cuando ambos `true`, `[]` en caso contrario |
+
+| `metaKeywords` | `metaTags/keywords` | Divide las palabras clave delimitadas por una nueva línea en una matriz y recorta el espacio en blanco. |
+| `image` | `images[].url` | Cuando `image` está presente, exporta una imagen con el rol `BASE`. Exporta una matriz vacía cuando la imagen está vacía o falta. |
+| `isActive` + `includeInMenu` | `families` | Agrega `top_menu` solo cuando ambos valores son `true`. De lo contrario, exporta una matriz vacía. |
+| `attributes[]` | `attributes[]` | Exporta entradas con un `attributeCode` no vacío como `{code, values[]}`. Convierte los valores en cadenas. Omite `attributes` cuando no existen entradas aptas. |
 
 >[!MORELIKETHIS]
 >
