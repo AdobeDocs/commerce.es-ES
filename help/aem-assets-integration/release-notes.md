@@ -3,9 +3,9 @@ title: Notas de la versión de AEM Assets Integration
 description: Revise las notas de la versión para obtener información acerca de todas las versiones de integración de AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # Notas de la versión de AEM Assets Integration
@@ -42,11 +42,11 @@ _18 de septiembre de 2026_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} con Adobe Commerce versión 2.4.5 y versiones posteriores.
 
-![Se ha corregido un problema](../assets/fix.svg)<!-- Issue ACAP-1317 --> Se ha corregido un problema por el cual el archivo `workspace.json` cargado para [coincidencia automática personalizada](synchronize/custom-match.md) no se mantenía correctamente cuando la opción Guardar configuración asincrónica de Commerce está habilitada. Anteriormente, la solicitud de administración ponía en cola solo los metadatos de carga en lugar del contenido del archivo, por lo que, cuando el consumidor de configuración asincrónica procesaba el guardado, ya no se podía leer el archivo de carga temporal. Como resultado, la configuración parecía guardarse correctamente, mientras que los valores de OAuth de App Builder permanecían sin cambios. Las credenciales de App Builder cargadas ahora sobreviven al límite de la cola y el consumidor asincrónico las procesa correctamente.
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue ACAP-1317 --> que causaba que al guardar la configuración de **[!UICONTROL AEM Assets Integration]**, incluida su carga de `workspace.json` con `Commerce Async Config Save` (introducido en Adobe Commerce 2.4.7) habilitado, no se pudiera registrar ni actualizar el inquilino con ARES. La configuración parecía guardarse correctamente, pero los valores de OAuth de App Builder permanecían sin cambios. El consumidor asincrónico ahora procesa correctamente las credenciales cargadas.
 
 >[!IMPORTANT]
 >
->Si usa un elemento de coincidencia personalizado con la opción Guardar configuración asincrónica habilitada, vuelva a cargar el archivo `workspace.json` después de actualizar a esta versión. Para obtener instrucciones de carga, consulta [Guardar configuración asincrónica](synchronize/custom-match.md#async-config-save).
+>Si usa un elemento de coincidencia personalizado con Guardar configuración asincrónica habilitada, vuelva a cargar el archivo `workspace.json` después de la actualización. Para obtener instrucciones, consulte [Guardar configuración asincrónica](synchronize/custom-match.md#async-config-save).
 
 ## Versión 1.4.6
 
