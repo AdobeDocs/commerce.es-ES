@@ -66,7 +66,7 @@ En la ficha [!UICONTROL Catalog View], cada fila representa una vista de catálo
 | **Retirándose** | Ha eliminado el catálogo compartido en [!DNL Adobe Commerce]. La vista de catálogo sigue siendo accesible hasta que caduque el periodo de gracia de eliminación. El período de gracia predeterminado es de siete días. Puede modificar el valor predeterminado actualizando la [configuración de sincronización de la vista de catálogo](#configure-aco-catalog-view-sync-settings). |
 | **Huérfano** | La vista o clave del catálogo se creó directamente en [!DNL Adobe Commerce Optimizer] Studio, no por el conector. Ver [Revisar entradas huérfanas y eliminadas](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] y [!UICONTROL Deleted] son estados informativos que no requieren ninguna acción. Consulte [Valores de estado de sincronización](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} en la *Guía de administración de Commerce* para obtener la lista completa.
+[!UICONTROL Healthy], [!UICONTROL Pending] y [!UICONTROL Deleted] son estados informativos que no requieren ninguna acción. Consulte [Valores de estado de sincronización](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} en la *Guía de administración de Commerce* para obtener la lista completa.
 
 ### Configuración de sincronización de vista de catálogo ACO {#configure-aco-catalog-view-sync-settings}
 

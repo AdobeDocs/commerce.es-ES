@@ -60,7 +60,7 @@ Puede asignar una clave a la vista de catálogo desde la cuadrícula Catálogo c
 
 >[!NOTE]
 >
->Para obtener una referencia a los campos de esta página, [Administración de claves de acceso restringido](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} en la *Guía de administración de Commerce*.—>
+>Para obtener una referencia a los campos de esta página, [Administración de claves de acceso restringido](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} en la *Guía de administración de Commerce*.—>
 
 ## Cuando necesite algo más que la clave automática {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +159,7 @@ La rotación automática de claves aún no está disponible.
 
 >[!MORELIKETHIS]
 >
-> - [Administrar claves de acceso restringido](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referencia de campo completo para esta página, en la *Guía de administración de Commerce* —>
+> - [Administrar claves de acceso restringido](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referencia de campo completo para esta página, en la *Guía de administración de Commerce* —>
 > - [Supervisar sincronización de vista de catálogo](catalog-view-sync-status.md) — Supervisar las vistas de catálogo que estas claves protegen
 > - [Vistas de catálogo privado](/help/optimizer/setup/private-catalog-view.md) — Descubra qué es una vista de catálogo privado administrada por conectores
 > - [Claves de acceso restringido](/help/optimizer/setup/restricted-access-keys.md): aprenda cómo funciona el flujo de claves manual basado en ACO Studio para casos de uso que no son B2B
