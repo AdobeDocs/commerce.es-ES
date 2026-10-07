@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -129,6 +129,38 @@ Ahora puede aplicar un descuento por envío arbitrario a un carro de compras a t
 
 Use `POST /V1/carts/:cartId/shipping-discount` para establecer el descuento. Se requiere acceso de administrador o de nivel de integración para utilizar este punto de conexión. <!-- ACCS-1156 -->
 
+### Agregar artículos al carro de compras a un precio personalizado
+
+Ahora puede establecer un precio personalizado en un elemento del carro de compras agregando el atributo de extensión `custom_price` a los extremos REST de elemento del carro de compras estándar agregados o actualizados (`POST /V1/carts/:cartId/items` y `PUT /V1/carts/:cartId/items/:itemId`). Debe proporcionar un token de administración o integración para establecer un precio personalizado. Se rechazan las solicitudes con un precio negativo o un tipo de producto no admitido, como un producto agrupado con precios dinámicos. <!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+Los extremos `GET /V1/carts/:cartId` y `GET /V1/carts/:cartId/items` también devuelven el valor `custom_price`.
+
+### Aislar los carros de compras creados por el administrador de los carros de compras
+
+Una función de inclusión, deshabilitada de forma predeterminada, aísla los carros de compras que los administradores y las integraciones pueden crear a través de la API de REST del carro de compras activo del cliente. Cuando está habilitado, `POST /V1/customers/:customerId/carts` siempre crea un nuevo carro de compras inactivo que el administrador y los llamadores de integración pueden administrar a través de los extremos REST del carro de compras sin cambiar el carro de la tienda del comprador. <!-- ACCS-1153 -->
+
+Para habilitarlo, póngase en contacto con el administrador de satisfacción del cliente de Adobe Commerce o cree un ticket de asistencia.
+
+### Envío de correos electrónicos transaccionales a través de plataformas de terceros
+
+Los nuevos eventos le permiten enviar correos electrónicos transaccionales desde una plataforma de correo electrónico de terceros, como [!DNL Salesforce Marketing Cloud], a través de [!DNL App Builder]. Suscribirse a los siguientes eventos a través de [!DNL Adobe I/O Events]: <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after`: se ha guardado un saldo de crédito de tienda. Agregue una regla de suscripción en la que `notify_by_email` sea igual a `1` para recibir un evento por correo electrónico de notificación de crédito de tienda.
+* `observer.giftcard_item_email_send_after` - Se envía un correo electrónico de tarjeta regalo por un artículo de pedido. La carga útil incluye todos los códigos de tarjeta regalo del artículo.
+* `plugin.customer.api.account_management.activate`: un cliente confirma su cuenta.
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Se ha rechazado un presupuesto negociable.
+
 ### Mejoras y correcciones de errores
 
 En esta versión se incluyen las siguientes mejoras, optimizaciones y correcciones de errores seleccionadas:
@@ -152,6 +184,22 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 * Se ha corregido un problema en el cual al solicitar los precios o los totales del carro de compras se podía devolver un error cuando el carro contenía un artículo sin existencias. <!-- CEXT-6776 -->
 
 * Se ha resuelto un problema en el cual el consumidor de inventario podía saturar la cola de mensajes al intentar encontrar un SKU que faltaba. <!-- ACCS-1976 -->
+
+* La consulta de GraphQL `customerDownloadableProducts` ahora devuelve metadatos de archivo para productos descargables configurados con una dirección URL externa, de modo que las tiendas pueden determinar el tipo de archivo y si se debe abrir o descargar el recurso. <!-- ACCS-1735 -->
+
+* La consulta de GraphQL `sourceAvailability` ahora aplica los permisos de categoría y catálogo compartido B2B, de modo que los compradores reciben existencias por origen solamente para los productos que pueden ver. <!-- ACCS-1888 -->
+
+* Se ha corregido un problema en el cual los clientes no podían establecer una contraseña desde el vínculo de correo electrónico de bienvenida y los clientes recién creados no aparecían en la cuadrícula del cliente [!DNL Commerce Admin]. <!-- ACCS-1979 -->
+
+* Se ha corregido un problema en el cual los pedidos editados mediante la API REST de edición de pedidos podían guardar elementos con el precio incorrecto. <!-- ACCS-1982 -->
+
+* Se ha corregido un problema por el cual los productos eliminados del catálogo compartido de una empresa permanecían visibles en la tienda y se eliminaban del carro de compras de forma silenciosa. <!-- CCSAAS-5544 -->
+
+* Se ha corregido un problema por el cual un producto de catálogo compartido de una categoría denegada al grupo de clientes aparecía en la tienda, pero no se podía agregar al carro de compras. Un permiso de denegación de categoría tiene ahora prioridad sobre la pertenencia a catálogos compartidos. <!-- CCSAAS-5549 -->
+
+* Se ha corregido un problema en el cual al realizar un pedido a través de GraphQL se podía devolver un error cuando un elemento de impuestos de envío no tenía título. <!-- CCSAAS-5552 -->
+
+* Se ha corregido un problema en el cual el extremo REST `GET /V1/customers/:customerId/companyRoles` devolvía permisos vacíos para un administrador de la empresa. <!-- ACCS-1998 -->
 
 {{accs-release}}
 
