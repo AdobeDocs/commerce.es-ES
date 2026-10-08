@@ -219,7 +219,7 @@ Los siguientes elementos se agregaron a los entornos de producción el 22 de sep
 
 ### Adjuntar archivos e imágenes a solicitudes de devolución
 
-Los clientes ahora pueden cargar archivos e imágenes al enviar una solicitud de devolución a través de la mutación de GraphQL de la tienda [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment). Use la mutación [`initiateUpload` ](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation) para cargar el archivo y, a continuación, asigne la clave devuelta a un atributo personalizado de elemento devuelto. <!-- CCSAAS-5410 -->
+Los clientes ahora pueden cargar archivos e imágenes al enviar una solicitud de devolución a través de la mutación de GraphQL de la tienda [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment). Use la mutación [`initiateUpload` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation) para cargar el archivo y, a continuación, asigne la clave devuelta a un atributo personalizado de elemento devuelto. <!-- CCSAAS-5410 -->
 
 ### Controlar la apariencia del origen del inventario
 
@@ -495,7 +495,7 @@ Todos los extremos de `custom-email` requieren acceso al `Marketing > Communicat
 >
 >Esta función es experimental y debe habilitarse poniéndose en contacto con el administrador de éxito del cliente de Adobe Commerce o creando un ticket de asistencia.
 
-Los nuevos extremos de la API REST [`orderChain` ](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) permiten que las integraciones modifiquen un pedido con su ID y resuelvan automáticamente la cadena completa de pedidos editados:
+Los nuevos extremos de la API REST [`orderChain` &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) permiten que las integraciones modifiquen un pedido con su ID y resuelvan automáticamente la cadena completa de pedidos editados:
 
 | Método | Extremo | Descripción |
 | --- | --- | --- |
@@ -944,7 +944,7 @@ El límite del número de sitios web, tiendas y vistas de tiendas estaba limitad
 
 ### Personalizar mensajes de autenticación de tienda con códigos de error estructurados
 
-La mutación de GraphQL [`generateCustomerToken` ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"} ahora devuelve códigos de error escritos junto con mensajes de error, lo que permite que las tiendas muestren mensajes específicos de la interfaz de usuario por motivo de error. Los códigos de error disponibles incluyen: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` y `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+La mutación de GraphQL [`generateCustomerToken` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"} ahora devuelve códigos de error escritos junto con mensajes de error, lo que permite que las tiendas muestren mensajes específicos de la interfaz de usuario por motivo de error. Los códigos de error disponibles incluyen: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` y `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Enviar recordatorios automáticos por correo electrónico sobre la inactividad del carro de compras y la lista de deseos
 
@@ -1134,7 +1134,7 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 
 * Se agregaron los extremos `POST /V1/customers` y `PUT /V1/customers/{customerId}` a la [API de REST](https://developer.adobe.com/commerce/webapi/rest/reference/) para crear y actualizar clientes. Estos extremos requieren la autorización de IMS. <!-- CCSAAS-3112 -->
 
-* Se ha agregado la mutación [`exchangeOtpForCustomerToken` ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token), que requiere una dirección de correo electrónico y una contraseña de un solo uso (OTP) para el comprador, y a cambio recibe un token de cliente. Esta mutación se utiliza generalmente en situaciones en las que un cliente necesita autenticarse mediante un OTP enviado a su correo electrónico o teléfono.
+* Se ha agregado la mutación [`exchangeOtpForCustomerToken` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token), que requiere una dirección de correo electrónico y una contraseña de un solo uso (OTP) para el comprador, y a cambio recibe un token de cliente. Esta mutación se utiliza generalmente en situaciones en las que un cliente necesita autenticarse mediante un OTP enviado a su correo electrónico o teléfono.
 
 * Si una dirección definida en la pantalla de configuración [!UICONTROL **Almacenar direcciones de correo electrónico**] en el administrador contiene un valor que termina con `example.com`, Commerce no envía correos electrónicos a esta dirección. En su lugar, el sistema registra que no se ha enviado el correo electrónico.  <!-- CCSAAS-3533 -->
 
