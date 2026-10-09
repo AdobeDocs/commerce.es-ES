@@ -2,7 +2,8 @@
 title: Configuración del conector para B2B Commerce
 description: Obtenga información sobre cómo instalar el conector B2B, seleccionar ámbitos de Commerce, sincronizar datos de catálogo compartidos, comprobar vistas de catálogo y supervisar el estado de la proyección.
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +20,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: e126554b-28f9-4290-b58c-10b888b88174
     internal-label: IMS integration
@@ -37,8 +40,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-10-01
-source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -52,11 +54,11 @@ Los comerciantes que usen [!DNL Adobe Commerce] catálogos compartidos B2B puede
 
 ## Requisitos para utilizar la integración {#requirements-to-use-the-integration}
 
-* Adobe Commerce 2.4.8+ con [Commerce B2B versión 1.5.3+](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/install) instalado y habilitado.
+* Adobe Commerce 2.4.8+ con [Commerce B2B versión 1.5.3+](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install) instalado y habilitado.
 
 * Licencia de [!DNL Commerce Optimizer] con instancia de zona protegida aprovisionada.
 
-* [Claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) para descargar el metapaquete del conector mediante Composer.
+* [Claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) para descargar el metapaquete del conector mediante Composer.
 
 * Acceso de administrador a [[!DNL Commerce Optimizer] instancia de zona protegida](../optimizer/get-started.md).
 
@@ -64,9 +66,9 @@ El usuario [!DNL Adobe Commerce] que configuró la integración debe tener:
 
 * Acceso de administrador al administrador de Commerce.
 
-* [Acceso desde la línea de comandos al [!DNL Adobe Commerce] servidor de aplicaciones](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Acceso desde la línea de comandos al [!DNL Adobe Commerce] servidor de aplicaciones](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Acceso de desarrollador a la [organización de IMS] (¿https://experienceleague.adobe.com/es/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Commerce Optimizer].
+* Acceso de desarrollador a la [organización de IMS](¿https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) donde se aprovisiona el proyecto [!DNL Commerce Optimizer].
 
 ### Requisitos de aplicación
 
