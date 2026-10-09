@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
+source-git-commit: dee10a97e03a115bcd758171082061e95bb6adcc
 workflow-type: tm+mt
-source-wordcount: '8005'
+source-wordcount: '8064'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -64,11 +64,11 @@ Las siguientes notas de la versión contienen actualizaciones de [!DNL Adobe Com
 
 ## Octubre de 2026: #1 de la versión {#latest}
 
-[!BADGE espacio aislado]{type=Caution tooltip="Actualmente, los elementos enumerados solo están disponibles en entornos de espacio aislado. Adobe hace que las nuevas versiones estén disponibles primero en entornos limitados para proporcionar tiempo a las pruebas de los próximos cambios antes de que el lanzamiento esté disponible en los entornos de producción."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Producción]{type=Neutral tooltip="Los elementos enumerados están disponibles actualmente en entornos de producción."}
 
-Los siguientes elementos se agregarán a los entornos de producción el 6 de octubre de 2026.
+Los siguientes elementos se lanzaron a los entornos de producción el 7 de octubre de 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -78,7 +78,7 @@ La carga del gancho web `plugin.out_of_process_shipping_methods.api.shipping_rat
 
 ### Administrar las reglas de precios de catálogo en REST
 
-Los nuevos extremos de API de REST permiten que las integraciones administren y busquen [reglas de precio de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) mediante programación. <!-- ACCS-1621 -->
+Los nuevos [extremos de API REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules) permiten que las integraciones administren y busquen [reglas de precios de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) mediante programación. <!-- ACCS-1621 -->
 
 Los siguientes extremos están protegidos por el permiso `Magento_CatalogRule::promo_catalog`, que también protege la pantalla Regla de precio del catálogo de administración. Se requiere acceso de administrador o de nivel de integración para utilizar este punto de conexión.
 
@@ -125,13 +125,13 @@ Ahora puede establecer la hora del día para que una [regla de precio de catálo
 
 ### Aplicar descuentos de envío personalizados mediante la API de REST de administrador
 
-Ahora puede aplicar un descuento por envío arbitrario a un carro de compras a través de la API de REST de administrador, en casos que no se ajusten a una regla de precio de carro de compras.
+Ahora puede aplicar un [descuento en el envío](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts) arbitrario a un carro de compras a través de la API de REST de administrador en casos que no se ajusten a una regla de precio de carro de compras.
 
 Use `POST /V1/carts/:cartId/shipping-discount` para establecer el descuento. Se requiere acceso de administrador o de nivel de integración para utilizar este punto de conexión. <!-- ACCS-1156 -->
 
 ### Agregar artículos al carro de compras a un precio personalizado
 
-Ahora puede establecer un precio personalizado en un elemento del carro de compras agregando el atributo de extensión `custom_price` a los extremos REST de elemento del carro de compras estándar agregados o actualizados (`POST /V1/carts/:cartId/items` y `PUT /V1/carts/:cartId/items/:itemId`). Debe proporcionar un token de administración o integración para establecer un precio personalizado. Se rechazan las solicitudes con un precio negativo o un tipo de producto no admitido, como un producto agrupado con precios dinámicos. <!-- ACCS-1155 -->
+Ahora puede establecer un [precio personalizado en un elemento del carro de compras](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) agregando el atributo de extensión `custom_price` a los extremos REST de los elementos estándar del carro de compras o de adiciones (`POST /V1/carts/:cartId/items` y `PUT /V1/carts/:cartId/items/:itemId`). Debe proporcionar un token de administración o integración para establecer un precio personalizado. Se rechazan las solicitudes con un precio negativo o un tipo de producto no admitido, como un producto agrupado con precios dinámicos. <!-- ACCS-1155 -->
 
 ```json
 {
@@ -161,6 +161,10 @@ Los nuevos eventos le permiten enviar correos electrónicos transaccionales desd
 * `plugin.customer.api.account_management.activate`: un cliente confirma su cuenta.
 * `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Se ha rechazado un presupuesto negociable.
 
+### Límites de API masivos
+
+La [API en bloque](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) ahora aplica un número máximo de entidades por solicitud. Las solicitudes que exceden el límite devuelven un error. El campo [!UICONTROL Maximum Entities Per Bulk Request] no configurable en la [Referencia de configuración](https://experienceleague.adobe.com/es/docs/commerce-admin/config/general/bulk-api) muestra el límite. Para obtener más información, consulte [Seguridad de API](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints). <!-- ACCS-703 -->
+
 ### Mejoras y correcciones de errores
 
 En esta versión se incluyen las siguientes mejoras, optimizaciones y correcciones de errores seleccionadas:
@@ -168,8 +172,6 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 * El [!DNL Commerce Admin] ahora muestra una advertencia cuando crea o edita un webhook que incluye el encabezado de Adobe I/O Runtime `X-OW-EXTRA-LOGGING` establecido en `on`. El encabezado está diseñado para la depuración y no se recomienda en producción. <!-- CCSAAS-5486 -->
 
 * Los archivos cargados a través de URL de carga de S3 prefirmadas ahora tienen análisis adicionales de malware. <!-- ACCS-1463 -->
-
-* La API por lotes ahora aplica un número máximo de entidades por solicitud. Las solicitudes que exceden el límite devuelven un error. <!-- ACCS-703 -->
 
 * Se ha corregido un problema por el cual la cantidad vendible podría informarse de manera insuficiente para los productos, lo que podría bloquear incorrectamente las comprobaciones de existencias de complementos al carro de compras, REST y GraphQL. <!-- ACCS-1908 -->
 
@@ -217,7 +219,7 @@ Los siguientes elementos se agregaron a los entornos de producción el 22 de sep
 
 ### Adjuntar archivos e imágenes a solicitudes de devolución
 
-Los clientes ahora pueden cargar archivos e imágenes al enviar una solicitud de devolución a través de la mutación de GraphQL de la tienda [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment). Use las mutaciones [`initiateUpload` y `finishUpload`](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) para cargar el archivo y, a continuación, asigne la clave devuelta a un atributo personalizado de elemento devuelto. <!-- CCSAAS-5410 -->
+Los clientes ahora pueden cargar archivos e imágenes al enviar una solicitud de devolución a través de la mutación de GraphQL de la tienda [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment). Use la mutación [`initiateUpload` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation) para cargar el archivo y, a continuación, asigne la clave devuelta a un atributo personalizado de elemento devuelto. <!-- CCSAAS-5410 -->
 
 ### Controlar la apariencia del origen del inventario
 
