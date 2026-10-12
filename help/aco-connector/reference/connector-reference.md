@@ -1,39 +1,49 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector] módulos y extremos de fuente'
-description: Obtenga información sobre  [!DNL Adobe Commerce Optimizer Connector] módulos, puntos finales de API de fuentes de catálogo, límites de lotes y rutas de configuración core_config_data para [!DNL Adobe Commerce].
+description: Obtenga información acerca de los módulos [!DNL Adobe Commerce Optimizer Connector], los extremos de la API de fuentes de catálogo, los límites por lotes y las rutas de configuración core_config_data para [!DNL Adobe Commerce].
 feature: Integration, Configuration
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
+    internal-label: Metadata
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 301
+source-wordcount: '327'
 ht-degree: 1%
-
 ---
-
 # Módulos de conector y extremos de fuente para el conector de Adobe Commerce Optimizer
 
 Esta referencia enumera los paquetes de módulos [!DNL Adobe Commerce Optimizer Connector], los extremos de API de fuentes compatibles y las rutas de acceso de claves de configuración almacenados en `core_config_data`. Para saber cómo funcionan juntos estos componentes durante la sincronización, consulte [Canalización de sincronización de conectores](../connector-sync-pipeline.md).
 
 ## Módulos
 
-El conector incluye varios módulos de Magento que recopilan datos de catálogo, asignan datos de fuente al formato admitido por la API [!DNL Commerce Optimizer] y administran el envío y el control de ámbito. La siguiente tabla resume cada módulo y su función.
+El conector incluye varios módulos Magento que recopilan datos de catálogo, asignan datos de fuente al formato admitido por la API [!DNL Commerce Optimizer] y administran el envío y el control de ámbito. La siguiente tabla resume cada módulo y su función.
 
 | Módulo | Rol |
 | ------ | ---- |

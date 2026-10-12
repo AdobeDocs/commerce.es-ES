@@ -1,27 +1,35 @@
 ---
-title: Crear una audiencia en Real-Time CDP con  [!DNL Commerce] datos de evento
-description: Aprenda a utilizar  [!DNL Commerce] datos de evento para crear una audiencia en Real-Time CDP
+title: Crear una audiencia en Real-Time CDP usando [!DNL Commerce] datos de evento
+description: Aprenda a utilizar los datos de evento de [!DNL Commerce] para crear una audiencia en Real-Time CDP
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 0e9d286b-c459-44db-bbf8-2cb46e21739d
-TQID: https://experienceleague.adobe.com/f8XYzoWJCecwuEaNBA17-bf6gtGBLxpDQPJBqDk07-0
+TQID: 'https://experienceleague.adobe.com/f8XYzoWJCecwuEaNBA17-bf6gtGBLxpDQPJBqDk07-0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+    internal-label: Customer profiles
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1107
+source-wordcount: '1109'
 ht-degree: 0%
-
 ---
-
 # Crear audiencias en Real-Time CDP utilizando [!DNL Commerce] datos de evento
 
 Utilice los datos de evento capturados del almacén de [!DNL Commerce] para crear audiencias en Real-Time CDP. Los datos capturados se basan en el comportamiento de navegación, compras anteriores, atributos de perfil, tendencias de conversión o cancelación, estado de lealtad, valor de cliente alto y bajo, etc.
