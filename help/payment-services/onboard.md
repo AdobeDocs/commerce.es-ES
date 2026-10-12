@@ -1,17 +1,35 @@
 ---
-title: Flujo  [!DNL Payment Services] de incorporación
-description: Conecte su instancia a  [!DNL Payment Services] completando la incorporación para su implementación de Adobe Commerce, con pasos de zona protegida y producción para PaaS, local y SaaS.
+title: Incorporando flujo de [!DNL Payment Services]
+description: Conecte su instancia a [!DNL Payment Services] completando la incorporación para su implementación de Adobe Commerce, con pasos de zona protegida y producción para PaaS, local y SaaS.
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '633'
 ht-degree: 0%
-
 ---
-
 # Incorporando flujo de [!DNL Payment Services]
 
 Para empezar a usar [!DNL Payment Services], debe completar algunos pasos de incorporación. Para obtener instrucciones precisas, seleccione la opción de Adobe Commerce que se ajuste mejor a la instancia y la versión de su organización.
@@ -42,7 +60,7 @@ Este diagrama de flujo muestra el proceso de incorporación de la zona protegida
 1. [Configuración del servicio de zona protegida](sandbox.md#sandbox-onboarding)
 1. Probar pagos en un entorno [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/es/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Producción]
 
@@ -83,7 +101,7 @@ Este diagrama de flujo muestra los pasos de la zona protegida necesarios para in
 1. [Configuración del servicio de zona protegida](sandbox.md#sandbox-onboarding)
 1. Probar pagos en un entorno [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/es/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![más información](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Producción]
 
@@ -110,8 +128,8 @@ Este diagrama de flujo muestra el proceso general para habilitar [!DNL Payment S
 
 >[!MORELIKETHIS]
 >
-> * [Solucionar problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26826)
-> * [Cuenta de zona protegida de PayPal no verificada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26836)
-> * [Datos de informe [!DNL Payment Services] aplazados](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26837)
-> * [La tarjeta de crédito de prueba falla con PayPal al procesar pagos en un entorno limitado](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26825)
-> * [Deshabilitar la [!DNL Payment Services] extensión](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [Solucionar problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [Cuenta de zona protegida de PayPal no verificada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Datos de informe [!DNL Payment Services] aplazados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [La tarjeta de crédito de prueba falla con PayPal al procesar pagos en un entorno limitado](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825)
+> * [Deshabilitar la [!DNL Payment Services] extensión](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

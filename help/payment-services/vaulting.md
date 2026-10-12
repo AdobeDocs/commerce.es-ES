@@ -3,13 +3,30 @@ title: Bóveda de tarjeta de crédito
 description: Los compradores pueden guardar los datos de su tarjeta de crédito para futuras compras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
-
 ---
-
 # Bóveda de tarjeta de crédito
 
 Convierta a los compradores únicos en clientes fieles con depósito de tarjetas de crédito. Los clientes que iniciaron sesión pueden guardar (o &quot;guardar&quot;) las credenciales de su tarjeta de crédito para usarlas en una compra posterior para la misma tienda, u otra, dentro de la misma cuenta de comerciante.
@@ -32,7 +49,7 @@ Los clientes que iniciaron sesión pueden proteger un método de pago en el pane
 
 1. Vaya a **[!UICONTROL Stored Payment Methods]** en el panel de navegación izquierdo para ver todos sus métodos de pago almacenados.
 
-   Consulte [Métodos de pago almacenados](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obtener más información.
+   Consulte [Métodos de pago almacenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obtener más información.
 
 1. El cliente hace clic en **[!UICONTROL Add New Card]** para almacenar una tarjeta nueva.
 
@@ -73,10 +90,10 @@ Solo puede utilizar tarjetas abovedadas en el administrador si el cliente tiene 
 
 Para crear un pedido en Admin para un cliente con su tarjeta de crédito:
 
-1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
-1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**&#x200B;como método de pago.
+1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
+1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**como método de pago.
 1. Seleccione el método de pago de tarjeta de crédito abovedado que desee.
-1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
+1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Usar tarjeta de crédito abovedada en el administrador para el cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

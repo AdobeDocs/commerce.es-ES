@@ -23,6 +23,8 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
     internal-label: Build system
@@ -37,7 +39,7 @@ level_v2:
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
     internal-label: System architecture
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%

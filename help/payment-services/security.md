@@ -3,8 +3,25 @@ title: Seguridad y cumplimiento
 description: Revise los requisitos de seguridad y cumplimiento del sitio.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=es
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 0%
@@ -17,13 +34,13 @@ La seguridad es de suma importancia en [!DNL Payment Services] y no se pasa info
 
 [!DNL Adobe Commerce] y [!DNL Magento Open Source] incluyen compatibilidad con varias características de seguridad.
 
-Consulte [Seguridad](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security){target="_blank"} en la guía del usuario principal para revisar las prácticas recomendadas de seguridad, y aprender a administrar las sesiones de administración y las credenciales, implementar CAPTCHA y administrar las restricciones del sitio web.
+Consulte [Seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} en la guía del usuario principal para revisar las prácticas recomendadas de seguridad, y aprender a administrar las sesiones de administración y las credenciales, implementar CAPTCHA y administrar las restricciones del sitio web.
 
 ## Conformidad con PCI
 
 La industria de tarjetas de pago (PCI) estableció un conjunto de requisitos para las empresas que aceptan pagos con tarjeta de crédito a través de Internet. Además de mantener un entorno seguro, los comerciantes que gestionan la información de las tarjetas de crédito de los clientes son responsables de cumplir algunas directrices estándar.
 
-Consulte [Directrices de cumplimiento de PCI](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} para obtener más información.
+Consulte [Directrices de cumplimiento de PCI](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} para obtener más información.
 
 Los comerciantes pueden completar un [cuestionario de autoevaluación (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, que es una herramienta de autovalidación para evaluar la seguridad de los datos del titular de la tarjeta.
 

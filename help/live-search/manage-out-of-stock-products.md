@@ -1,16 +1,33 @@
 ---
-title: Administrar productos sin existencias en  [!DNL Live Search]
-description: Obtenga información sobre cómo administrar productos sin existencias en  [!DNL Live Search] for Adobe Commerce. Configure la visualización del inventario, el filtro inStock y el filtrado de la API de GraphQL.
+title: Administrar productos sin existencias en [!DNL Live Search]
+description: Obtenga información sobre cómo administrar productos sin existencias en [!DNL Live Search] para Adobe Commerce. Configure la visualización del inventario, el filtro inStock y el filtrado de la API de GraphQL.
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # Administración de productos sin existencias
 
 Puede controlar cómo se muestran los productos sin existencias en los resultados de búsqueda y categoría de [!DNL Live Search] mediante la configuración del inventario, los filtros de tiempo de consulta y los indicadores de características de backend opcionales. Estas opciones tienen límites importantes, que se explican en este tema.
@@ -64,7 +81,7 @@ Utilice este método cuando no enrute la solicitud a través de [Live Search PLP
 Para mantener los productos sin existencias en el conjunto de resultados, pero siempre después de los productos en existencias, al ordenarlos por relevancia, Adobe puede habilitar un indicador de funciones interno para su entorno.
 
 - Esta marca de característica no se expone en la interfaz de usuario del administrador de [!DNL Live Search].
-- Para solicitarlo, [comuníquese con la atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} y haga referencia a la función para mover los productos sin existencias al final de los resultados de búsqueda.
+- Para solicitarlo, [comuníquese con la atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} y haga referencia a la función para mover los productos sin existencias al final de los resultados de búsqueda.
 
 >[!NOTE]
 >
@@ -87,4 +104,4 @@ Para ocultar o quitar la prioridad a los productos sin existencias en el catálo
 >[!MORELIKETHIS]
 >
 > - [Buscar reglas de comercialización](rules.md)
-> - [Configurar las opciones globales de Inventory management](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/configuration/configuration)
+> - [Configurar las opciones globales de Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)

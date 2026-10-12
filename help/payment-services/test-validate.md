@@ -1,15 +1,32 @@
 ---
 title: Probar y validar
-description: Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] las funciones funcionan según lo esperado y proporcionan las mejores opciones de pago para sus clientes
+description: Las pruebas y la validación ayudan a garantizar que las funciones de [!DNL Payment Services] funcionen según lo esperado y proporcionan las mejores opciones de pago para sus clientes
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '806'
 ht-degree: 0%
-
 ---
-
 # Probar y validar
 
 Antes de exponer [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] a los compradores, es aconsejable probar _y_ en producción en el entorno de espacio aislado. Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] funcione según lo esperado y proporcionan las mejores opciones de pago para su tienda y clientes.
@@ -19,7 +36,7 @@ Antes de exponer [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Mage
 Probar [!DNL Payment Services] en un entorno de espacio aislado es un paso de validación importante, aunque sea un entorno simulado conectado únicamente al espacio aislado de PayPal, no a bancos y comerciantes reales.
 
 1. Completa un pago y envío correcto desde tu tienda, ya sea con [Campos de tarjeta de crédito](payments-options.md#credit-card-fields) o cualquiera de los [botones de pago de PayPal](payments-options.md#paypal-payment-buttons). Ver [Credenciales de prueba](#testing-credentials) para obtener más información acerca del uso de tarjetas de crédito falsas para realizar pruebas.
-1. Capture (cuando su acción de pago esté [establecida en `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [reembolso](refunds.md) o [anule](voids.md) el pedido que acaba de completar. También puede [crear una factura](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para un pedido si la acción de pago está establecida en `Authorize` en lugar de en `Authorize and Capture`.
+1. Capture (cuando su acción de pago esté [establecida en `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [reembolso](refunds.md) o [anule](voids.md) el pedido que acaba de completar. También puede [crear una factura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para un pedido si la acción de pago está establecida en `Authorize` en lugar de en `Authorize and Capture`.
 1. En un plazo de 24 a 48 horas, consulta la transacción y otra información en el [informe de pagos](payouts.md).
 1. Ver los detalles del pedido en el [informe de estado de pago del pedido](order-payment-status.md).
 

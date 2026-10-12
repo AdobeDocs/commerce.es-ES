@@ -3,7 +3,7 @@ title: Administración de claves de acceso restringido para catálogos compartid
 description: Obtenga información sobre cómo administrar las claves de acceso restringido que utiliza el conector de Adobe Commerce Optimizer para proteger las proyecciones de catálogos compartidos B2B.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -34,7 +36,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -42,7 +44,7 @@ ht-degree: 0%
 
 # Administración de claves de acceso restringido para catálogos compartidos B2B
 
-[!BADGE Private Beta]{type=Caution tooltip="Requiere la extensión B2B del conector de Adobe Commerce Optimizer, que actualmente se encuentra en versión beta privada."}
+[!BADGE Private beta]{type=Caution tooltip="Requiere la extensión B2B del conector de Adobe Commerce Optimizer, que actualmente se encuentra en versión beta privada."}
 
 Si utiliza [!DNL Adobe Commerce] catálogos compartidos B2B con [!DNL Adobe Commerce Optimizer Connector B2B extension], la extensión genera y asigna automáticamente la primera clave de acceso restringido cuando se crea una vista de catálogo. Utilice la página [!UICONTROL Restricted Access Keys] del administrador de Commerce para ver esa clave y crear, asignar o eliminar claves adicionales.
 
@@ -60,7 +62,7 @@ Puede asignar una clave a la vista de catálogo desde la cuadrícula Catálogo c
 
 >[!NOTE]
 >
->Para obtener una referencia a los campos de esta página, [Administración de claves de acceso restringido](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} en la *Guía de administración de Commerce*.—>
+>Para obtener una referencia a los campos de esta página, [Administración de claves de acceso restringido](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} en la *Guía de administración de Commerce*.—>
 
 ## Cuando necesite algo más que la clave automática {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +161,7 @@ La rotación automática de claves aún no está disponible.
 
 >[!MORELIKETHIS]
 >
-> - [Administrar claves de acceso restringido](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referencia de campo completo para esta página, en la *Guía de administración de Commerce* —>
+> - [Administrar claves de acceso restringido](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referencia de campo completo para esta página, en la *Guía de administración de Commerce* —>
 > - [Supervisar sincronización de vista de catálogo](catalog-view-sync-status.md) — Supervisar las vistas de catálogo que estas claves protegen
 > - [Vistas de catálogo privado](/help/optimizer/setup/private-catalog-view.md) — Descubra qué es una vista de catálogo privado administrada por conectores
 > - [Claves de acceso restringido](/help/optimizer/setup/restricted-access-keys.md): aprenda cómo funciona el flujo de claves manual basado en ACO Studio para casos de uso que no son B2B

@@ -2,35 +2,46 @@
 title: Lista de comprobación de preparación del cliente
 description: Obtenga información sobre cómo prepararse para una migración de datos masiva a Adobe Commerce as a Cloud Service con una lista de comprobación de preparación que incluya la participación, la máquina, el origen y el destinatario.
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
 TQID: 'https://experienceleague.adobe.com/728hkK-dzIPzyuBhuNyOqEE9FxlVGdVc9R2wIRcXobk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: '1171'
 ht-degree: 0%
-
 ---
-
 # Lista de comprobación de preparación del cliente
 
 {{bulk-data-early-access}}
@@ -64,7 +75,7 @@ La herramienta de migración se ejecuta en una máquina que controla, como un cu
 - **Directorio de trabajo grabable**: el usuario de migración debe poder escribir completamente en el directorio donde se extrae la herramienta de migración. La herramienta escribe registros, caché, dependencias [!DNL Composer] y archivos generados durante la ejecución.
 - **Espacio en disco suficiente**: garantice espacio en disco suficiente para los datos extraídos, las imágenes de [!DNL Docker] y la salida de registro. Los requisitos de espacio varían según el tamaño de la base de datos de origen.
 - **Orígenes locales: conectividad directa de la base de datos desde la máquina de migración**: para las instancias de origen locales, la máquina de migración debe tener acceso directo de red a la base de datos de origen. La herramienta no establece automáticamente la conectividad de la base de datos local. Antes de ejecutar cualquier comando de migración, confirme que el host, el puerto y las credenciales están accesibles desde el equipo de migración.
-- **CLI de nube instalada y clave SSH registrada**: para [!DNL Adobe Commerce on Cloud] instancias de origen, [CLI de nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) debe estar instalado en el equipo de migración. Su clave pública SSH también debe estar registrada en su cuenta. Consulte la [Guía de conexiones seguras](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obtener instrucciones.
+- **CLI de nube instalada y clave SSH registrada**: para [!DNL Adobe Commerce on Cloud] instancias de origen, [CLI de nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) debe estar instalado en el equipo de migración. Su clave pública SSH también debe estar registrada en su cuenta. Consulte la [Guía de conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obtener instrucciones.
 
 ### Instancia de Source
 

@@ -4,34 +4,43 @@ description: Descubra qué datos captura cada evento de back office.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
+TQID: 'https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 3716
+source-wordcount: '3716'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection] eventos de Back Office
 
 A continuación se enumeran los eventos de back office de Commerce disponibles al instalar la extensión [!DNL Data Connection]. Los datos que estos eventos recopilan se envían a Adobe Experience Platform. También puede crear [eventos personalizados](custom-events.md) para recopilar datos adicionales que no se proporcionen de forma predeterminada.
 
-Además de los datos que recopilan los eventos siguientes, también recibirá [otros datos](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/js-overview) proporcionados por Adobe Experience Platform Web SDK.
+Además de los datos que recopilan los eventos siguientes, también recibirá [otros datos](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) proporcionados por Adobe Experience Platform Web SDK.
 
 Los eventos del back office contienen datos del lado del servidor. Estos datos incluyen [información sobre el estado del pedido](#order-status), por ejemplo, si se hizo, canceló, reembolsó, envió o completó un pedido. Los datos del lado del servidor también incluyen información sobre [eventos de perfil del cliente](#customer-profile-events), como si se creó, actualizó o eliminó una cuenta.
 
 >[!NOTE]
 >
->Todos los eventos de back office incluyen el campo [`identityMap`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/field-groups/profile/identitymap), que incluye la dirección de correo electrónico del comprador, cuando está disponible, y el ECID.
+>Todos los eventos de back office incluyen el campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), que incluye la dirección de correo electrónico del comprador, cuando está disponible, y el ECID.
 
 ## Estado del pedido
 
@@ -418,7 +427,7 @@ Los eventos de perfil capturados del lado del servidor incluyen información de 
 
 >[!NOTE]
 >
->Cada evento de perfil de cliente también incluye el campo [`identityMap`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/field-groups/profile/identitymap), que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario. [Obtenga información](custom-identities.md) sobre cómo crear atributos de identidad personalizados para mejorar la identificación del perfil del cliente.
+>Cada evento de perfil de cliente también incluye el campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario. [Obtenga información](custom-identities.md) sobre cómo crear atributos de identidad personalizados para mejorar la identificación del perfil del cliente.
 
 ### accountCreated
 

@@ -3,24 +3,41 @@ title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
-
 ---
-
 
 # Conectar su instancia
 
 La instancia de Commerce se conecta mediante una clave de API y una clave privada, y se especifica el espacio de datos en la configuración mediante [Commerce Services Connector](../landing/saas.md). **Solo configuró esta conexión una vez.**
 
->[!VIDEO](https://video.tv.adobe.com/v/3448020?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >
-> Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obtener más información.
+> Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obtener más información.
 
 * Si ya ha conectado *su instancia*, al obtener y utilizar sus credenciales de la API y configurar los servicios de Commerce, puede continuar con [la configuración de su zona protegida de pruebas](sandbox.md).
 * Si todavía *necesita conectar su instancia*, vea la información en este tema sobre [obtención de credenciales de API](#obtain-api-credentials) y [configuración de los servicios de Commerce](#configure-commerce-services).
@@ -32,11 +49,11 @@ La instancia de Commerce se conecta mediante una clave de API y una clave privad
 
 ## Obtener credenciales de API
 
-Para consumir un servicio SaaS de Commerce, debe usar las claves de API de su instancia (clave de API pública de Commerce y clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Panel de Mi cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://experienceleague.adobe.com/es/docs/commerce-admin/config/services/saas) se puede crear para una cuenta de Commerce (una para zona protegida y otra para producción), aunque solo se puede usar activamente un par a la vez.
+Para consumir un servicio SaaS de Commerce, debe usar las claves de API de su instancia (clave de API pública de Commerce y clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Panel de Mi cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) se puede crear para una cuenta de Commerce (una para zona protegida y otra para producción), aunque solo se puede usar activamente un par a la vez.
 
 >[!NOTE]
 >
->¿Necesita ayuda para acceder a su panel de [!UICONTROL My Account]? Consulte [Crear una cuenta de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-create).
+>¿Necesita ayuda para acceder a su panel de [!UICONTROL My Account]? Consulte [Crear una cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Una vez creada, siempre encontrará una clave de API pública en el panel de Mi cuenta. Se puede copiar o eliminar según sea necesario. La clave de API privada se vuelve visible al crear una clave de API pública para simulación de pruebas o producción; solo está disponible para copiarla o guardarla en el cuadro de diálogo siguiente y no se puede acceder a ella posteriormente.
 
@@ -73,7 +90,7 @@ Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el e
 
    >[!INFO]
    >
-   > Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) para obtener más información.
+   > Vea nuestro vídeo de [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) para obtener más información.
 
 ## Extremo
 
