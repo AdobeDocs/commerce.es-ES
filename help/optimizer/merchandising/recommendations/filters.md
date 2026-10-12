@@ -1,7 +1,7 @@
 ---
 title: Filtros de recomendación
 description: Aprenda a utilizar filtros para controlar qué productos aparecen en [!DNL Adobe Commerce Optimizer] recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # Filtrar productos
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - Si hay valores de atributo vacíos o condiciones no válidas, las recomendaciones no se representan en la tienda o en el panel de vista previa.
 - Los valores de los atributos deben coincidir exactamente con lo que se encuentra en el catálogo. Esto incluye espacios y mayúsculas y minúsculas.
 - Si ninguno de los productos cumple los criterios de filtro, las recomendaciones no se representan en la tienda o en el panel de vista previa.
+
+### Agotado
+
+El siguiente filtro de exclusión puede filtrar los productos en función del estado de stock:
+
+- Agotado: (solo exclusión) Excluye los productos sin existencias.
+
+![Filtro de estado de stock](../../assets/filter-stock-status.png)
