@@ -369,7 +369,7 @@ _20 de marzo de 2023_
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.x y posteriores
 
 ![Corrección](../assets/fix.svg) Se corrigió el error &quot;No se pueden recuperar los datos de las opciones del producto&quot; que se produjo durante la exportación del catálogo.
-![Corrección](../assets/fix.svg) El símbolo de moneda de la columna _Ingresos_ del panel _[!DNL Product Recommendations]_ahora refleja correctamente la moneda base configurada.
+![Corrección](../assets/fix.svg) El símbolo de moneda de la columna _Ingresos_ del panel _[!DNL Product Recommendations]_&#x200B;ahora refleja correctamente la moneda base configurada.
 
 ### 3.0.4 de magento/product-recommendations
 

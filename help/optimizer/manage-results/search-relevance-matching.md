@@ -96,7 +96,7 @@ La relevancia no está determinada únicamente por la coincidencia de frases. In
 
 Debido a que estas señales interactúan, un producto que coincide solamente en el nivel más amplio a veces puede clasificarse por encima de una coincidencia de frase más ajustada; por ejemplo, cuando **los pesos de búsqueda** o la frecuencia de término en un campo de alto peso superan a una coincidencia de frase más débil en cualquier otra parte.
 
-**Ejemplo:** Si **pantalones rojos** aparece como una frase en **descripción** con **peso de búsqueda = 1**, pero **pantalones rojos** y **11} aparecen por separado en** nombre **y** color **con** peso de búsqueda = 10 **, es posible que la frase que coincida en** descripción **no supere la coincidencia dividida, dependiendo de la puntuación general.**
+**Ejemplo:** Si **pantalones rojos** aparece como una frase en **descripción** con **peso de búsqueda = 1**, pero **pantalones rojos** y **11&rbrace; aparecen por separado en** nombre **y** color **con** peso de búsqueda = 10 **, es posible que la frase que coincida en** descripción **no supere la coincidencia dividida, dependiendo de la puntuación general.**
 
 Las reglas **pin** y **bury** manuales siguen siendo sólidas; las reglas **boost** pueden requerir un ajuste para superar los nuevos aumentos de frase y del mismo campo. Valide consultas importantes después de cambiar pesos o reglas.
 
