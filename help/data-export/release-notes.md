@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # Notas de la versión [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ Las actualizaciones incluyen:
 >La extensión [!DNL SaaS data export] es una colección de módulos que se instalan automáticamente con [!DNL Live Search], [!DNL Product Recommendations] y [!DNL Catalog Service]. Puede comprobar la versión instalada en el sistema mediante [!DNL Composer]. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026 {#release-notes-2026}
+
+### Versión 103.5.0
+
+_13 de octubre de 2026_
+
+![Corrección](../assets/fix.svg) **Visibilidad precisa de atributos en los metadatos exportados**: se ha corregido un problema por el que el campo de visibilidad de atributos exportaba la configuración de visibilidad del administrador en lugar de la configuración de visibilidad de la tienda. Los servicios de Commerce conectados ahora reciben la visibilidad correcta para cada atributo. <!--MDEE-932-->
+
+![Nuevos](../assets/new.svg) **filtros de rango para atributos numéricos de producto**: se han actualizado los atributos de producto para que admitan el tipo de entrada **Number**. Este tipo de entrada se aplica a los atributos que almacenan valores decimales, incluidos números negativos, sin mostrar un símbolo de moneda. Se exportan con metadatos que permiten a [!DNL Live Search] generar facetas de intervalo, de modo que los compradores pueden filtrar por medidas como la temperatura de funcionamiento. <!--MDEE-1416-->
+
+![Corrección](../assets/fix.svg) **Los valores de atributo de precio personalizado coherente**-Los valores de atributo de precio personalizado ahora se exportan con dos decimales, en la moneda predeterminada del almacén, de modo que el formato de precio del escaparate coincide con el formato de datos de precio.<!--MDEE-1459-->
 
 ### Versión 103.4.35
 
