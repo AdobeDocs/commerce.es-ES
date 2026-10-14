@@ -42,7 +42,7 @@ Los elementos de línea están habilitados de manera predeterminada para [!DNL P
 
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL Line Items]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL Line Items]_.
 
 1. Para **[!UICONTROL Line Items Enabled]**, seleccione `Yes` para habilitar (predeterminado) o `No` para deshabilitar elementos de línea.
 
@@ -160,7 +160,7 @@ Consulta [Documentación para desarrolladores de PayPal sobre artículos de lín
 
 ## Administrar elementos de línea
 
-Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede causar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
+Adobe Commerce [calcula los impuestos en función del importe total de cada fila](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, lo que puede causar problemas de redondeo si se solicitan varias cantidades del mismo artículo o si se muestran precios que incluyen impuestos en el catálogo. En estos casos, la cantidad total puede dividirse en dos líneas, pero la cantidad equivale al total de artículos pedidos.
 
 > Ejemplo de artículos de línea con problemas de redondeo en la vista del panel de comerciantes
 
