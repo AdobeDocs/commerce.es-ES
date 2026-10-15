@@ -1,25 +1,29 @@
 ---
 title: Configuración de Live Search
-description: El área de trabajo  [!DNL Live Search] se usa para configurar, administrar y supervisar el rendimiento de la búsqueda.
+description: El área de trabajo [!DNL Live Search] se usa para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
 TQID: https://experienceleague.adobe.com/RQ6BKo7AknERkwrXylYHNAuD-FDxLvG74nU1YvuVgwE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
-source-wordcount: 2360
+source-wordcount: '2361'
 ht-degree: 0%
-
 ---
-
 # Configuración de Live Search
 
 En el área de trabajo es donde se configura, administra y supervisa el rendimiento de [!DNL Live Search]. El menú de la parte superior proporciona acceso a las herramientas de cada área funcional. Las funciones disponibles reflejan la selección actual del menú.
@@ -41,11 +45,11 @@ Para obtener más información sobre los eventos necesarios que debe agregar par
 
 ### Clientes sanitarios
 
-Si es cliente de atención médica e instaló la extensión HIPAA de [servicios de datos](../data-connection/hipaa-readiness.md#installation), que forma parte de la extensión [Conexión de datos](../data-connection/overview.md), [!DNL Live Search] ya no captura los datos de eventos de tienda. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Live Search]. Para obtener más información, consulte [configuración general](https://experienceleague.adobe.com/es/docs/commerce-admin/config/general/general#data-services).
+Si es cliente de atención médica e instaló la extensión HIPAA de [servicios de datos](../data-connection/hipaa-readiness.md#installation), que forma parte de la extensión [Conexión de datos](../data-connection/overview.md), [!DNL Live Search] ya no captura los datos de eventos de tienda. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Live Search]. Para obtener más información, consulte [configuración general](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Establecer el ámbito
 
-Inicialmente, el [ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) de toda la configuración de [!DNL Live Search] se ha establecido en `Default Store View`. Si su instalación de [!DNL Commerce] incluye varias vistas de tienda, establezca **Ámbito** en la [vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views) donde se aplique la configuración de faceta.
+Inicialmente, el [ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) de toda la configuración de [!DNL Live Search] se ha establecido en `Default Store View`. Si su instalación de [!DNL Commerce] incluye varias vistas de tienda, establezca **Ámbito** en la [vista de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) donde se aplique la configuración de faceta.
 
 ## Opciones de menú
 
@@ -61,7 +65,7 @@ Inicialmente, el [ámbito](https://experienceleague.adobe.com/es/docs/commerce-a
 
 ## Definir atributos como en los que se puede buscar
 
-Para generar resultados de alto nivel de segmentación, revise el conjunto de atributos de producto [en los que se puede buscar](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`). Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, las camisas aparecen en los resultados de búsqueda.
+Para generar resultados de alto nivel de segmentación, revise el conjunto de atributos de producto [en los que se puede buscar](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`). Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, las camisas aparecen en los resultados de búsqueda.
 
 Para permitir que se puedan buscar los atributos, complete los siguientes pasos:
 
@@ -69,7 +73,7 @@ Para permitir que se puedan buscar los atributos, complete los siguientes pasos:
 1. Seleccione el atributo en el que desea que se puedan realizar búsquedas, como `color`.
 1. Seleccione **Propiedades de tienda** y establezca **Usar en búsqueda** en `yes`.
 
-[!DNL Live Search] también respeta el [peso](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) de un atributo de producto, tal como se establece en Adobe Commerce. Los atributos con un peso mayor aparecen más arriba en los resultados de búsqueda.
+[!DNL Live Search] también respeta el [peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) de un atributo de producto, tal como se establece en Adobe Commerce. Los atributos con un peso mayor aparecen más arriba en los resultados de búsqueda.
 
 Siempre se pueden buscar los atributos siguientes:
 
@@ -128,9 +132,9 @@ Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqu
 
 #### Implementación
 
-1. Para que se pueda buscar un atributo de producto, vaya al Administrador y [establezca un atributo de producto](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
+1. Para que se pueda buscar un atributo de producto, vaya al Administrador y [establezca un atributo de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
 
-   Consulte la lista de [atributos](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/attributes-input-types) en los que se pueden realizar búsquedas.
+   Consulte la lista de [atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) en los que se pueden realizar búsquedas.
 
 1. Especifique la capacidad de búsqueda para ese atributo, como **Contiene** (predeterminado) o **Comienza con**. Puede especificar un máximo de seis atributos que se habilitarán para **Contiene** y seis atributos que se habilitarán para **Comienza con**. Además, para la indexación **Contiene**, la longitud de la cadena está limitada a 50 caracteres o menos.
 
@@ -207,7 +211,7 @@ Los precios de la página Widget de Lista de Productos y de la ventana emergente
 
 ## Valores de atributo predeterminados
 
-Los atributos de producto siguientes tienen [propiedades de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/product-attributes/product-attributes) que [!DNL Live Search] usa y habilita de manera predeterminada.
+Los atributos de producto siguientes tienen [propiedades de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) que [!DNL Live Search] usa y habilita de manera predeterminada.
 
 | Propiedad | Propiedad Storefront | Atributo |
 |---|---|---|

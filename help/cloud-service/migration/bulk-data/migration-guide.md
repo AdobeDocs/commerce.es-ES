@@ -2,7 +2,7 @@
 title: Ejecución de una migración masiva de datos
 description: Obtenga información sobre cómo configurar y ejecutar una migración de datos en lotes desde una Adobe Commerce PaaS o una instancia local a Adobe Commerce as a Cloud Service con la CLI.
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -66,7 +66,7 @@ Antes de empezar, confirme que ha completado todos los elementos de la [lista de
 
 Configure el entorno para la migración masiva de datos:
 
->[!VIDEO](https://video.tv.adobe.com/v/3496125?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3496121)
 
 1. Extraiga el contenido de `ccsaas-migration-tools.tar.gz`.
 
@@ -109,7 +109,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Configurar credenciales de OAuth de origen
 
->[!VIDEO](https://video.tv.adobe.com/v/3496145?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3496142)
 
 Estos cuatro valores firman solicitudes desde la herramienta de migración a las API del almacén de origen. Para obtenerlas, abra el origen [!UICONTROL Admin] y vaya a [!UICONTROL **Sistema**] > [!UICONTROL **Extensiones**] > [!UICONTROL **Integraciones**]. Cree o abra una integración y copie los valores en `.env`:
 
@@ -142,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Si es la primera vez que utiliza la CLI de nube, también debe agregar su clave pública SSH a la cuenta. Consulte la [Guía de conexiones seguras](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obtener instrucciones.
+>Si es la primera vez que utiliza la CLI de nube, también debe agregar su clave pública SSH a la cuenta. Consulte la [Guía de conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obtener instrucciones.
 
 ### Alinear configuración de administración de Commerce
 
@@ -154,7 +154,7 @@ Antes de la migración, asegúrese de que las siguientes configuraciones sean co
 
 ### Configuración de las credenciales de SaaS e IMS de Target
 
->[!VIDEO](https://video.tv.adobe.com/v/3496170?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3496167)
 
 Estas son las configuraciones de IMS y API de [!DNL Adobe Commerce as a Cloud Service] para el destino. Necesita el ID de inquilino, el ID de organización, las credenciales de servidor a servidor de IMS OAuth y el host de IMS correcto para su entorno. Coordine con su equipo de Adobe el acceso a la organización, al inquilino y al perfil. No intente inferir ni estimar valores sensibles.
 
@@ -259,7 +259,7 @@ CDMS_PORT=443
 
 ## Configurar el archivo de conexión a base de datos
 
->[!VIDEO](https://video.tv.adobe.com/v/3496160?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3496152)
 
 El archivo `.my.cnf` proporciona la configuración de conexión [!DNL MySQL] para la extracción de la herramienta de migración. Créelo copiando `.my.cnf.example` a `.my.cnf` en la raíz del proyecto. El nombre de sección debe coincidir con `SOURCE_CONNECTION_NAME` en `.env`.
 
