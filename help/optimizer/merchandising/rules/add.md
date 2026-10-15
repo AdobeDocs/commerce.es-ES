@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
 workflow-type: tm+mt
-source-wordcount: '4182'
+source-wordcount: '4111'
 ht-degree: 0%
 ---
 # Crear y administrar reglas
@@ -40,7 +40,7 @@ Para generar y publicar una regla:
 ## Crear una regla {#create-a-rule}
 
 1. En el carril izquierdo, vaya a _Reglas de comercialización_ > **Reglas de comercialización**.
-1. (Opcional) Utilice la lista desplegable **Vista de catálogo** para seleccionar la vista de catálogo donde se debe aplicar la regla. La regla que cree se vinculará a la vista seleccionada (o a todas las vistas de catálogo si está seleccionada la opción **Todas las vistas**). Consulte [Seleccionar vista de catálogo](workspace.md#select-catalog-view) para ver cómo funciona el ámbito de la vista de catálogo.
+1. (Opcional) Seleccione la vista de catálogo en la que se aplica la regla mediante la lista desplegable **Vista de catálogo**. La regla que cree se vinculará a la vista seleccionada (o a todas las vistas de catálogo si está seleccionada la opción **Todas las vistas**). Consulte [Seleccionar vista de catálogo](workspace.md#select-catalog-view) para ver cómo funciona el ámbito de la vista de catálogo.
 
 1. Haga clic en **[!UICONTROL Create rule]** para iniciar el editor de reglas.
 
@@ -48,7 +48,7 @@ Para generar y publicar una regla:
 
 ### Tipos de reglas
 
-Cada tipo de regla tiene un icono de información en el editor con una breve explicación. Utilice el tipo que coincida con el lugar en el que los compradores deben ver la lógica de comercialización:
+Cada tipo de regla tiene un icono de información en el editor con una breve explicación. Utilice el tipo que coincida con el lugar donde los compradores ven la lógica de comercialización:
 
 | Tipo de regla | Finalidad |
 | --- | --- |
@@ -82,7 +82,7 @@ Las condiciones son los requisitos para almacenar en déclencheur un evento. Una
    - La consulta de búsqueda comienza con: introduzca un carácter o cadena de texto que debe estar al principio de la consulta del comprador.
    - La consulta de búsqueda termina con: introduzca un carácter o cadena de texto que debe estar al final de la consulta del comprador.
 
-   Los resultados aparecen inmediatamente en el panel *Probar la regla* y están numerados por prioridad. Puede usar el control deslizante *Resultados por fila* en la esquina superior derecha para cambiar el número de productos en cada fila.
+   El panel *Probar la regla* muestra los resultados inmediatamente, numerados por prioridad. Puede usar el control deslizante *Resultados por fila* en la esquina superior derecha para cambiar el número de productos en cada fila.
 
 1. Para probar otras consultas, cambia el texto de la consulta en el cuadro de búsqueda *Probar la regla* y pulsa **Devolver**.
 Inicialmente, el panel de prueba procesa la consulta desde el cuadro de búsqueda Condiciones. Pero ahora está procesando la consulta desde el cuadro de consulta de prueba. El panel de prueba procesa solo una consulta a la vez.
@@ -110,13 +110,13 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
 
 >[!TAB Regla de categoría]
 
-Las reglas de categoría controlan cómo se ordenan los productos en **páginas de categoría**. Combinas **reglas de categoría** con **clasificación inteligente** (incluidas las señales controladas por IA) y **acciones manuales** como fijar, impulsar y enterrar, para que puedas revisar la detección, ejecutar promociones y alinear las páginas de categoría con tu estrategia sin depender de herramientas externas.
+Las reglas de categoría controlan cómo se ordenan los productos en **páginas de categoría**. Combine **reglas de categoría** con **clasificación inteligente** y **acciones manuales** para revisar la detección, ejecutar promociones y alinear páginas de categoría con su estrategia.
 
 **Seleccionar categorías**
 
-En **Categorías**, seleccione una o más categorías a las que se debe aplicar la regla. Las categorías seleccionadas aparecen debajo del control para que pueda confirmar el ámbito. Seleccione las categorías de cualquiera de las siguientes maneras:
+En **Categorías**, seleccione una o más categorías para la regla. Las categorías seleccionadas aparecen debajo del control para que pueda confirmar el ámbito. Seleccione las categorías de cualquiera de las siguientes maneras:
 
-- **Examinar el árbol de categorías**: expanda una categoría para cargar sus categorías secundarias inmediatas. Para ir a un nivel más profundo, expanda la categoría secundaria. El árbol carga un nivel a la vez.
+- **Examine el árbol de categorías**. Para cargar categorías secundarias inmediatas, expanda una categoría. Para ir a un nivel más profundo, expanda la categoría secundaria. El árbol carga un nivel a la vez.
 - **Buscar por nombre de categoría** - Escriba un nombre de categoría en el campo **Buscar y seleccionar categorías**. Los resultados de búsqueda incluyen nombres de categoría coincidentes de todo el catálogo, incluidas las categorías fuera de la rama expandida actualmente. La búsqueda no coincide con el texto de ruta de categoría.
 
 Cuando varias categorías tengan nombres similares, utilice la ruta de acceso a la categoría mostrada con cada resultado (por ejemplo, `brakes/aurora`) para seleccionar la categoría correcta.
@@ -127,13 +127,13 @@ Cuando varias categorías tengan nombres similares, utilice la ruta de acceso a 
 
 >[!TIP]
 >
->Si una categoría secundaria no está visible, expanda su categoría principal para cargar el siguiente nivel. Si conoce el nombre de la categoría, utilice el campo de búsqueda en lugar de navegar por el árbol. Esto resulta útil para catálogos grandes, ya que los niveles de categoría se cargan bajo demanda.
+>Si una categoría secundaria no está visible, expanda su categoría principal para cargar el siguiente nivel. Si conoce el nombre de la categoría, utilice el campo de búsqueda en lugar de navegar por el árbol. Este comportamiento es útil para catálogos grandes, ya que los niveles de categoría se cargan bajo demanda.
 
 1. En la lista de categorías seleccionadas, haga clic en los tres puntos junto a una categoría y seleccione:
 
    - **Eliminar** - Elimina la categoría de la regla.
    - **Aplicar a subcategorías**: aplica la regla a subcategorías que aún no tienen definida una regla de comercialización activa.
-   - **Vista previa**: muestra cómo aparecería la página de la categoría en tu tienda.
+   - **Vista previa** - Muestra cómo aparece la página de categoría en tu tienda.
 
 1. De manera opcional, establezca [Clasificación inteligente](#intelligent-ranking), [Clasificación manual](#manual-ranking) o [Clasificación de atributos](#attribute-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las reglas de búsqueda, con cualquier diferencia destacada.
 
@@ -145,7 +145,7 @@ Cuando varias categorías tengan nombres similares, utilice la ruta de acceso a 
 
 La clasificación inteligente ordena los productos mediante **señales de comportamiento** y, cuando corresponde, IA. Se aplica a **reglas de búsqueda**, **todas las listas de productos** (reglas predeterminadas) y **reglas de categoría** (páginas de categoría). Para las **búsquedas** del comprador, la clasificación también pesa **relevancia textual** para la consulta; las **páginas de categoría** no utilizan el texto de consulta de la misma manera: el editor se centra en estrategias de comportamiento.
 
-Los propietarios de tiendas pueden definir estrategias como las siguientes. Las etiquetas exactas y las ventanas de tiempo coinciden con el editor de reglas y pueden diferir ligeramente por tipo de regla.
+Los propietarios de tiendas pueden definir estrategias como las siguientes. Las etiquetas exactas y las ventanas de tiempo coinciden con el editor de reglas y difieren ligeramente por tipo de regla.
 
 ![Clasificaciones inteligentes](../../assets/rule-intelligent-ranking.png)
 
@@ -160,13 +160,13 @@ Seleccione la estrategia para la regla. El panel **[!UICONTROL Test your rule]**
 
 #### Señales de comportamiento para productos y variantes configurables {#behavioral-signals-variants}
 
-La clasificación inteligente recopila señales de comportamiento, como vistas, eventos de adición al carro de compras y compras, en relación con el producto específico con el que interactúa un comprador. Para un producto configurable, esto significa que las señales se registran en el nivel **variante** (producto simple), no contra el elemento principal configurable.
+La clasificación inteligente recopila señales de comportamiento contra el producto específico con el que interactúa un comprador. Para un producto configurable, esto significa que las señales se registran en el nivel **variante** (producto simple), no contra el elemento principal configurable.
 
 Al clasificar un producto configurable, la clasificación inteligente agrega las señales de comportamiento recopiladas de todas sus variantes y las desplaza hasta el elemento principal configurable. La puntuación de clasificación de un producto configurable refleja las señales combinadas de cada variante, no solo una.
 
 Esta agregación se produce dentro del ámbito de la categoría que se está explorando. Una variante solo contribuye con sus señales de comportamiento a la puntuación de clasificación del elemento principal configurable para las categorías a las que está asignada esa **variante**. Si falta una variante en una categoría, sus señales no se contabilizan en la clasificación del elemento principal en esa categoría, incluso cuando el elemento principal configurable en sí mismo está asignado allí.
 
-**Práctica recomendada:** Revise las asignaciones de categorías de todas las variantes de productos, especialmente en catálogos que usan estructuras de categorías específicas del tamaño, el color u otras variantes, para confirmar que cada variante está asignada a cada categoría en la que se espera que aparezca e influya en la clasificación.
+**Práctica recomendada:** Revise las asignaciones de categoría de todas las variantes de producto para confirmar que cada variante se asigna a cada categoría en la que influye en la clasificación.
 
 **Ejemplo:**
 
@@ -180,8 +180,8 @@ Use este control para equilibrar la fuerza con la que las **señales de comporta
 
 | Comportamiento | Detalle |
 | --- | --- |
-| Predeterminado | `5` (equivalente al multiplicador de comportamiento fijo anterior). |
-| Intervalo | Desde `1` (influencia de comportamiento más suave) hasta `100` (influencia más fuerte). El límite superior puede cambiar en una versión futura. |
+| Predeterminado | `50`. |
+| Intervalo | Desde `1` (influencia de comportamiento más suave) hasta `1000` (influencia más fuerte). |
 | Ámbito | Solo se aplica a consultas o listados a los que se dirige la regla. Otras reglas conservan sus propios valores de ampliación. |
 | Vista previa | La previsualización de regla utiliza el mismo aumento que los resultados en directo para esa regla. |
 | Indexación | Aplicado a las **consultas**; no necesita una resincronización del catálogo ni una reindexación completa solamente porque ha cambiado esta configuración. |
@@ -222,7 +222,7 @@ Un comerciante usa la estrategia de clasificación inteligente &quot;Más vistos
 
 - **Vela de Texas** (primera posición): tiene un nombre de producto más corto y limpio que crea una puntuación de relevancia de texto muy alta. Aunque tiene menos vistas que **YAN-K-E-512**, su coincidencia de texto superior supera el impulso de comportamiento.
 
-- **YAN-K-E-512** (posición inferior): a pesar de tener el percentil de vista más alto en los datos de comportamiento &quot;Más visitados&quot;, su nombre complejo basado en SKU genera una puntuación de relevancia de texto más baja. En el valor predeterminado **[!UICONTROL Intelligent Ranking Boost]** (`5`), es posible que la influencia de comportamiento no sea suficiente para superar ese espacio de texto. Si aumenta el aumento, se puede aumentar **YAN-K-E-512** entre los productos que ya coinciden con la consulta. **YAN-K-E-512** también debe coincidir con la consulta: al menos un atributo que se pueda buscar para ese SKU debe incluir **candle** o no aparecerá en los resultados y no se aplicará el aumento.
+- **YAN-K-E-512** (posición inferior): a pesar de tener el percentil de vista más alto en los datos de comportamiento &quot;Más visitados&quot;, su nombre complejo basado en SKU genera una puntuación de relevancia de texto más baja. En el valor predeterminado **[!UICONTROL Intelligent Ranking Boost]** (`50`), es posible que la influencia de comportamiento no sea suficiente para superar ese espacio de texto. Si aumenta el aumento, se puede aumentar **YAN-K-E-512** entre los productos que ya coinciden con la consulta. **YAN-K-E-512** también debe coincidir con la consulta: al menos un atributo que se pueda buscar para ese SKU debe incluir **candle** o no aparecerá en los resultados y no se aplicará el aumento.
 
 **Ejemplo (consulta amplia):**
 
@@ -394,7 +394,7 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 
 | Campo | Descripción |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | Cuando se selecciona una estrategia inteligente distinta de **None**, esta opción controla la fuerza con que las señales de comportamiento influyen en la clasificación de esa regla. Predeterminado `5`; intervalo permitido `1`-`100`. Se aplica en el momento de la consulta; la previsualización de regla coincide con el comportamiento en directo de la regla configurada. |
+| [!UICONTROL Intelligent Ranking Boost] | Cuando se selecciona una estrategia inteligente distinta de **None**, esta opción controla la fuerza con que las señales de comportamiento influyen en la clasificación de esa regla. Predeterminado `50`; intervalo permitido `1`-`1000`. Se aplica en el momento de la consulta; la previsualización de regla coincide con el comportamiento en directo de la regla configurada. |
 
 ### Detalles
 
