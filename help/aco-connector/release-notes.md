@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '602'
 ht-degree: 0%
 ---
 # Notas de la versión de Adobe Commerce Optimizer Connector
@@ -52,6 +52,13 @@ Estas notas de la versión describen todas las versiones para [!DNL Adobe Commer
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
 ## Versiones de 2026
+
+### Versión 1.2.0
+
+_13 de octubre de 2026_
+
+![Corrección](../assets/fix.svg) Habilitar la fuente de tiendas para el servicio de pago. <!--MDEE-1459-->
+![Corregir](../assets/fix.svg) Los vídeos del producto ahora se sincronizan con [!DNL Adobe Commerce Optimizer], conservando su orden configurado. <!--DATA-7320-->
 
 ### Versión 1.1.1
 
