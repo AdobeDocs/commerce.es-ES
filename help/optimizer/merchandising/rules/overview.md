@@ -1,29 +1,33 @@
 ---
 title: Reglas de comercialización
 description: '[!DNL Adobe Commerce Optimizer] reglas de comercialización combinan lógica con acciones para dar forma a los resultados de búsqueda, listados de productos predeterminados y páginas de categorías.'
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+    internal-label: Personalization
+source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '821'
 ht-degree: 0%
-
 ---
-
 # Reglas de comercialización
 
-Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** (**Todos los listados de productos**) y en **páginas de categorías**. Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales.
+Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** a través de la **regla de búsqueda predeterminada** y en **páginas de categoría**. Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales.
 
 Cada **regla de búsqueda** tiene tres componentes principales:
 
@@ -33,7 +37,7 @@ Cada **regla de búsqueda** tiene tres componentes principales:
 
 **Las reglas de categoría** utilizan **selección de categoría** en lugar de las condiciones de consulta de búsqueda; la clasificación inteligente y la clasificación manual funcionan de la misma manera que para la búsqueda, con diferencias indicadas en [Crear y administrar reglas](add.md).
 
-Puede combinar varias condiciones y acciones para las reglas de búsqueda y programar cualquier regla para que esté activa durante un periodo. También puede establecer una **regla predeterminada** (**Todos los listados de productos**) que se aplique cuando no se aplique ninguna regla de categoría o búsqueda más específica.
+Puede combinar varias condiciones y acciones para las reglas de búsqueda y programar cualquier regla para que esté activa durante un periodo. También puede establecer una **regla de búsqueda predeterminada** que se aplique cuando no se aplique una regla de categoría o búsqueda más específica.
 
 ## Reglas de categoría {#category-rules}
 
@@ -68,7 +72,7 @@ Al componer una regla compleja, puede resultar útil escribirla con sangría par
 
 ## Regla predeterminada
 
-Puede establecer una regla predeterminada (**Todos los listados de productos**) que se aplique cuando no se proporcione ningún término de búsqueda o cuando no se pueda aplicar ninguna otra regla de búsqueda. Si establece la regla predeterminada en Más compradas, las consultas predeterminadas corresponden a ese tipo de clasificación a menos que se las sustituya por un término de búsqueda más específico. No se puede establecer ningún término de búsqueda para la regla predeterminada. **Las reglas de categoría** son independientes: sólo se aplican a las categorías que seleccione y no reemplazan la regla de listado predeterminada.
+Puede establecer una **regla de búsqueda predeterminada** que se aplique cuando no se proporciona ningún término de búsqueda o cuando no se puede aplicar ninguna otra regla de búsqueda. Si establece la regla predeterminada en Más compradas, las consultas predeterminadas corresponden a ese tipo de clasificación a menos que se las sustituya por un término de búsqueda más específico. No se puede establecer ningún término de búsqueda para la regla predeterminada. **Las reglas de categoría** son independientes: sólo se aplican a las categorías que seleccione y no reemplazan la regla de listado predeterminada.
 
 ## Orden de prioridad con varias reglas
 

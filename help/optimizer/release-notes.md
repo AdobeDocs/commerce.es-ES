@@ -4,7 +4,7 @@ description: Información de versión mensual de [!DNL Adobe Commerce Optimizer]
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: 'https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo'
 product_v2:
@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _3 de septiembre de 2026_
 
 ### Clasificación de atributos (beta)
 
-Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten [**clasificación de atributos**](./merchandising/rules/add.md#attribute-ranking) para **todas las listas de productos**, **regla de categoría** y **regla de búsqueda**. Aplicar automáticamente una acción **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a cada producto que coincida con una o más condiciones de atributo, como marca o categoría, sin seleccionar SKU individuales. La clasificación de atributos está en versión beta. [Más información](./merchandising/rules/add.md#attribute-ranking).
+Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten [**clasificación de atributos**](./merchandising/rules/add.md#attribute-ranking) para **regla de búsqueda predeterminada**, **regla de categoría** y **regla de búsqueda**. Aplicar automáticamente una acción **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a cada producto que coincida con una o más condiciones de atributo, como marca o categoría, sin seleccionar SKU individuales. La clasificación de atributos está en versión beta. [Más información](./merchandising/rules/add.md#attribute-ranking).
 
 {{aco-release}}
 
@@ -165,7 +165,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Se requiere el agrupamiento de solicitudes** — La API de GraphQL ahora aplica un máximo de 100 SKU por solicitud al recuperar los datos del catálogo. Ver [límites y límites documentados](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Se requiere el agrupamiento de solicitudes** — La API de GraphQL ahora aplica un máximo de 100 SKU por solicitud al recuperar los datos del catálogo. Ver [límites y límites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
