@@ -1,7 +1,7 @@
 ---
-source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
+source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1250'
 ht-degree: 1%
 ---
 # Novedades de la plantilla
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 16 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha actualizado la documentación de reglas de comercialización para cambiar el nombre del tipo de regla All products listings por Regla de búsqueda predeterminada en <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/overview">Información general sobre reglas de comercialización</a>, <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add">Crear y administrar reglas</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/release-notes">Notas de la versión</a>, coincidiendo con la opción renombrada en el menú de tipo de regla de administración.</p>
+</td>
+      <td>
+        Comentarios
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 14 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se han corregido los valores predeterminados y de intervalo documentados para [!UICONTROL Intelligent Ranking Boost] en <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Crear y administrar reglas de comercialización</a>: el valor predeterminado es <code>50</code> (anteriormente documentado como <code>5</code>) y el intervalo máximo es <code>1000</code> (anteriormente documentado como <code>100</code>).</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado documentación para el nuevo filtro de exclusión de existencias para unidades de recomendación en <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/recommendations/filters">Filtros</a>, que excluye de Recommendations los productos sin existencias.</p>
+</td>
+      <td>
+        Comentarios, actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Referencia de códigos de registro de exportación de datos</a> desde la última <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">fuente log-codes.md</a>.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 8 de octubre de 2026
 
@@ -388,36 +462,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes">notas de la versión</a> de producción para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Los comerciantes ahora pueden utilizar la incorporación de una cuenta PayPal diferente en el ámbito del sitio web directamente desde el administrador de Commerce. Consulta <a href="https://experienceleague.adobe.com/es/docs/commerce/payment-services/configure/connect-website-account">Conectar una cuenta PayPal diferente para un sitio web</a> para obtener más información.</p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">comprometer</a></td>
     </tr>
   </tbody>
 </table>

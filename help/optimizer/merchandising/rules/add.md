@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
-source-wordcount: '4111'
+source-wordcount: '4108'
 ht-degree: 0%
 ---
 # Crear y administrar reglas
@@ -52,7 +52,7 @@ Cada tipo de regla tiene un icono de información en el editor con una breve exp
 
 | Tipo de regla | Finalidad |
 | --- | --- |
-| **Todos los listados de productos** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
+| **Regla de búsqueda predeterminada** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
 | **Regla de categoría** | Aplica la comercialización y la clasificación a una sola categoría, controlando el pedido del producto en esa página de categoría. |
 | **Regla de búsqueda** | Aplica la comercialización y la clasificación cuando los compradores ejecutan una búsqueda que coincide con las condiciones de consulta de la regla. |
 
@@ -143,7 +143,7 @@ Cuando varias categorías tengan nombres similares, utilice la ruta de acceso a 
 
 ### Clasificación inteligente {#intelligent-ranking}
 
-La clasificación inteligente ordena los productos mediante **señales de comportamiento** y, cuando corresponde, IA. Se aplica a **reglas de búsqueda**, **todas las listas de productos** (reglas predeterminadas) y **reglas de categoría** (páginas de categoría). Para las **búsquedas** del comprador, la clasificación también pesa **relevancia textual** para la consulta; las **páginas de categoría** no utilizan el texto de consulta de la misma manera: el editor se centra en estrategias de comportamiento.
+La clasificación inteligente ordena los productos mediante **señales de comportamiento** y, cuando corresponde, IA. Se aplica a **reglas de búsqueda**, **reglas de búsqueda predeterminadas** y **reglas de categoría** (páginas de categoría). Para las **búsquedas** del comprador, la clasificación también pesa **relevancia textual** para la consulta; las **páginas de categoría** no utilizan el texto de consulta de la misma manera: el editor se centra en estrategias de comportamiento.
 
 Los propietarios de tiendas pueden definir estrategias como las siguientes. Las etiquetas exactas y las ventanas de tiempo coinciden con el editor de reglas y difieren ligeramente por tipo de regla.
 
@@ -401,7 +401,7 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 | Campo | Descripción |
 | --- | --- |
 | Nombre | Nombre de la regla. Los nombres de las reglas deben ser únicos. |
-| Tipo de regla | **Predeterminado** (todas las listas de productos), **Consulta** (condiciones de búsqueda específicas) o **Categoría** (páginas de categoría), según **La regla se aplica a**. |
+| Tipo de regla | **Regla de búsqueda predeterminada**, **Consulta** (condiciones de búsqueda específicas) o **Categoría** (páginas de categoría), según **La regla se aplica a**. |
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |
 | Fecha de finalización | La fecha de finalización de la regla, si está programada. |
 | Descripción | Breve descripción de la regla. |
