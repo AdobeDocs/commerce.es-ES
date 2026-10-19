@@ -153,7 +153,7 @@ La fuente `prices` envía datos de [!DNL Adobe Commerce] al extremo [Prices](htt
 La fuente `categories` envía datos de [!DNL Adobe Commerce] al extremo [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 El conector identifica los registros de fuentes de categoría por ruta de URL y código de vista de tienda.
-- 
+- &#x200B;
   - Cuando una categoría se mueve a un elemento principal diferente en el árbol de categorías, la sincronización envía las nuevas rutas de acceso para esa categoría y sus descendientes y quita las rutas de acceso anteriores de [!DNL Adobe Commerce Optimizer].
 - Los elementos con un `urlPath` vacío (categorías raíz lógicas) se omiten y nunca se envían.
 
