@@ -3,7 +3,7 @@ title: Asignación de campos para fuentes de [!DNL Adobe Commerce Optimizer Conn
 description: Obtenga información acerca de la asignación de campos [!DNL Adobe Commerce Optimizer Connector] desde los datos del catálogo [!DNL Adobe Commerce] a los formatos de API de ingesta [!DNL Adobe Commerce Optimizer] para todas las fuentes.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ La fuente `prices` envía datos de [!DNL Adobe Commerce] al extremo [Prices](htt
 
 La fuente `categories` envía datos de [!DNL Adobe Commerce] al extremo [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
-Los elementos con un `urlPath` vacío (categorías raíz lógicas) se omiten y nunca se envían.
+El conector identifica los registros de fuentes de categoría por ruta de URL y código de vista de tienda.
+- 
+  - Cuando una categoría se mueve a un elemento principal diferente en el árbol de categorías, la sincronización envía las nuevas rutas de acceso para esa categoría y sus descendientes y quita las rutas de acceso anteriores de [!DNL Adobe Commerce Optimizer].
+- Los elementos con un `urlPath` vacío (categorías raíz lógicas) se omiten y nunca se envían.
 
 | [!DNL Adobe Commerce] campo | Campo de API [!DNL Commerce Optimizer] | Detalles de asignación |
 | --------------- | -------------- | ------- |
