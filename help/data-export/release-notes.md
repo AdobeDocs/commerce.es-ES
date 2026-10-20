@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # Notas de la versión [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ Las actualizaciones incluyen:
 >La extensión [!DNL SaaS data export] es una colección de módulos que se instalan automáticamente con [!DNL Live Search], [!DNL Product Recommendations] y [!DNL Catalog Service]. Puede comprobar la versión instalada en el sistema mediante [!DNL Composer]. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026 {#release-notes-2026}
+
+### Versión 103.5.2
+
+_19 de octubre de 2026_
+
+![Corrección](../assets/fix.svg) **Identificación coherente de la categoría**: se ha restaurado la identificación de la fuente de categoría mediante el identificador de categoría y el código de vista de tienda en la [API de GraphQL del servicio de catálogo para servicios de tienda](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"} compatible con Adobe Commerce as a Cloud Service, Adobe Commerce en la nube y de forma local. Esta actualización evita que los movimientos de categoría marquen incorrectamente las categorías como eliminadas. <!--MDEE-1473-->
+
+![Corregir](../assets/fix.svg) **Procesamiento confiable de opciones de atributos en PHP 8.5**—Se corrigió la administración de valores de opciones de atributos para evitar errores de exportación de fuentes de productos cuando las etiquetas de opciones hacen referencia a un almacén que falta. <!--MDEE-1472-->
+
+![Corregir](../assets/fix.svg) **Sincronización de productos configurables y confiables en PHP 8.5**—Se corrigió un problema en el cual los valores de atributos secundarios nulos impedían que los productos configurables se sincronizaran correctamente. <!--MDEE-1474-->
 
 ### Versión 103.5.1
 
