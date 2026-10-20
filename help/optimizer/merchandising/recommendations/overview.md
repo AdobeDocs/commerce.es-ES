@@ -33,6 +33,6 @@ Las recomendaciones aparecen en la tienda como unidades con etiquetas como, por 
 
 ## Privacidad
 
-La recopilación de datos a los efectos de Recommendations no incluye información de identificación personal (PII). Además, todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Para obtener más información, consulte la [Política de privacidad de Adobe](https://www.adobe.com/privacy/policy.html).
+La recopilación de datos a los efectos de Recommendations no incluye información de identificación personal (PII). Además, todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Para obtener más información, consulte la [Política de privacidad de Adobe](https://www.adobe.com/es/privacy/policy.html).
 
 Los usuarios de Recommendations pueden consultar la página [Sincronización de datos](../../setup/data-sync.md) para obtener más datos sobre la sincronización de datos.

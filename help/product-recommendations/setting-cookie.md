@@ -97,7 +97,7 @@ Para probar cómo se comportan las recomendaciones de productos con las restricc
 
 ## Cumplimiento de privacidad
 
-La recopilación de datos de Recommendations del producto no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan. Para obtener más información, consulte la [Política de privacidad de Adobe](https://www.adobe.com/privacy/policy.html).
+La recopilación de datos de Recommendations del producto no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan. Para obtener más información, consulte la [Política de privacidad de Adobe](https://www.adobe.com/es/privacy/policy.html).
 
 >[!TIP]
 >
