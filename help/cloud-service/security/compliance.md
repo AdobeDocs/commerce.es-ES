@@ -63,7 +63,7 @@ Adobe mantiene un conjunto completo de certificaciones y autenticaciones para la
 
 - **RGPD y CCPA**: Adobe proporciona herramientas y documentación para ayudar a los clientes a cumplir con sus obligaciones según las regulaciones de privacidad de datos.
 
-Para obtener una lista completa de las certificaciones y la documentación de conformidad de Adobe, visite el [Centro de confianza de Adobe](https://www.adobe.com/trust/compliance/compliance-list.html){target="_blank"}.
+Para obtener una lista completa de las certificaciones y la documentación de conformidad de Adobe, visite el [Centro de confianza de Adobe](https://www.adobe.com/es/trust/compliance/compliance-list.html){target="_blank"}.
 
 ## Certificación para profesionales
 

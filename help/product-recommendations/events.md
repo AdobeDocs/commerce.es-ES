@@ -47,7 +47,7 @@ Para obtener más información acerca de los datos de comportamiento que recopil
 
 >[!NOTE]
 >
->La recopilación de datos a los efectos de [!DNL Product Recommendations] no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Más información [más](https://www.adobe.com/privacy/experience-cloud.html).
+>La recopilación de datos a los efectos de [!DNL Product Recommendations] no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Más información [más](https://www.adobe.com/es/privacy/experience-cloud.html).
 
 ## Clientes sanitarios
 

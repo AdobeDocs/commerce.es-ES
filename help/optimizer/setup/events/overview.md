@@ -36,7 +36,7 @@ Los eventos son una herramienta esencial para mejorar la experiencia de compra y
 
 >[!NOTE]
 >
->La recopilación de datos no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/privacy/experience-cloud.html).
+>La recopilación de datos no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/es/privacy/experience-cloud.html).
 
 La página **Eventos** le permite observar los datos de evento de tienda que se están recopilando. Ver la recopilación de datos de evento permite a los comerciantes comprobar que han implementado correctamente los eventos de tienda y que estos se han capturado correctamente. Los comerciantes pueden utilizar esta página para identificar posibles problemas y tomar medidas para resolver cualquier problema de evento.
 
