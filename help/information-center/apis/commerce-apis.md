@@ -100,7 +100,7 @@ Ingesta datos de catálogo y precio de una plataforma de comercio de terceros, P
 
 Utilice API Mesh para orquestar las API de Adobe Commerce con API privadas o de terceros. Utilice Adobe Developer App Builder para crear aplicaciones e integraciones personalizadas. Para obtener instrucciones de extensibilidad de Commerce relacionadas, consulte [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/) y [Adobe Commerce extensibility](https://developer.adobe.com/commerce/extensibility/).
 
-Para integraciones impulsadas por eventos específicamente, consulte [Adobe I/O Events para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events).
+Para integraciones impulsadas por eventos específicamente, consulte [Adobe I/O Events para Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events).
 
 
 ### Entrega del carro y cierre de compra

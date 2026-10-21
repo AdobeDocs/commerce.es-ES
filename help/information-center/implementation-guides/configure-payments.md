@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## Primeros pasos
 
-1. Compruebe la disponibilidad del país y la versión del producto en [Compatibilidad con los servicios de pago](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility).
+1. Compruebe la disponibilidad del país y la versión del producto en [Compatibilidad con los servicios de pago](https://experienceleague.adobe.com/es/docs/commerce/payment-services/compatibility).
 
 1. Siga el [flujo de servicios de pago de incorporación](/help/payment-services/onboard.md).
 

@@ -51,9 +51,9 @@ ht-degree: 0%
 La siguiente documentación proporciona patrones de arquitectura de referencia para plataformas y servicios de Adobe Commerce en diferentes modelos de implementación y casos de uso.
 
 - [Arquitectura de Adobe Commerce as a Cloud Service](/help/cloud-service/overview.md#architecture)
-- [Arquitectura de referencia empresarial de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint){target="_blank"}
+- [Arquitectura de referencia empresarial de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint){target="_blank"}
 - [arquitectura de tienda de Adobe Commerce](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/){target="_blank"}
-- [Adobe Commerce sobre la arquitectura de la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture){target="_blank"}
+- [Adobe Commerce sobre la arquitectura de la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture){target="_blank"}
 
 ## Tienda con tecnología de Edge Delivery Services
 

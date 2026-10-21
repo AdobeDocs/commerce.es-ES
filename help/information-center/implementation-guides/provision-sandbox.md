@@ -49,7 +49,7 @@ La forma de aprovisionar una zona protegida depende del producto de Adobe Commer
 
 - **[!DNL Adobe Commerce as a Cloud Service]**: utilice el portal de aprovisionamiento de autoservicio de Commerce Cloud Manager para iniciar instancias de zona protegida y producción. Consulte [Introducción a Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
 
-- **Adobe Commerce en la nube (socios)**: envíe solicitudes de zona protegida a través de la asistencia de Adobe. Consulte [Solicitudes de espacio aislado de Adobe Commerce asociado en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests).
+- **Adobe Commerce en la nube (socios)**: envíe solicitudes de zona protegida a través de la asistencia de Adobe. Consulte [Solicitudes de espacio aislado de Adobe Commerce asociado en la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests).
 
 - **Servicios de Commerce**: use claves de API de espacio aislado con [Commerce Services Connector](/help/landing/saas.md) para probar integraciones de servicios antes de conectar una instancia de producción.
 

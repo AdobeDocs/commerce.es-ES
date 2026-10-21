@@ -51,7 +51,7 @@ La documentación exhaustiva y autorizada de cada producto sigue existiendo en s
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Aprendizaje y recursos</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/overview" target="_blank">Tutoriales</a> - <a href="https://experienceleague.adobe.com/en/playlists?solution=Commerce" target="_blank">Listas de reproducción de vídeo</a> - <a href="https://helpx.adobe.com/legal/product-descriptions.html" target="_blank">Descripciones de productos</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Certificaciones</a>
+<a href="https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/overview" target="_blank">Tutoriales</a> - <a href="https://experienceleague.adobe.com/es/playlists?solution=Commerce" target="_blank">Listas de reproducción de vídeo</a> - <a href="https://helpx.adobe.com/es/legal/product-descriptions.html" target="_blank">Descripciones de productos</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Certificaciones</a>
 
 </td>
 <td><strong>Recursos para desarrolladores</strong><br/>
