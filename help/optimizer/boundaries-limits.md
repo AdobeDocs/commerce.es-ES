@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # Límites y límites
@@ -118,7 +118,6 @@ El uso de Dynamic Media hace un seguimiento de las solicitudes de API que llegan
 | Políticas por vista de catálogo | Número de filtros de datos permitidos | 10 | No |
 | Valores de atributo en una directiva | Número de características del producto que se pueden configurar para el filtrado | 100 | No |
 | [Asignación restringida de clave de acceso](setup/private-catalog-view.md) | Número de claves de acceso restringido que se pueden asignar a una sola vista de catálogo | 3 | No |
-| [Claves de acceso restringido](setup/restricted-access-keys.md) | Número de claves por entorno | Máximo de 100 | No |
 | Tamaño de clave RSA (claves de acceso restringido) | Se acepta la seguridad mínima y máxima de una clave de acceso restringido. | Mínimo de 2048 bits, máximo de 8192 bits | No |
 | Claves de acceso restringido | Retraso de propagación de revocación de claves | Hasta 5 minutos debido al almacenamiento en caché. Los tokens firmados con una clave eliminada se deniegan una vez transcurrido el tiempo de espera. | No aplicable |
 
