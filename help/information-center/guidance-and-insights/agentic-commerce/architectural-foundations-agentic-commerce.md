@@ -136,4 +136,4 @@ El comercio electrónico ya no se limita a las tiendas y los resultados de búsq
 * [Políticas](/help/optimizer/setup/policies.md)
 * [Herramientas para desarrolladores de codificación de IA para Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [API de Commerce](../../apis/commerce-apis.md)
-* [Lista de reproducción de Commerce Developer Agent](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent): vea vídeos técnicos sobre la configuración y el uso de Commerce Developer Agent.
+* [Lista de reproducción de Commerce Developer Agent](https://experienceleague.adobe.com/es/playlists/commerce-developer-agent): vea vídeos técnicos sobre la configuración y el uso de Commerce Developer Agent.

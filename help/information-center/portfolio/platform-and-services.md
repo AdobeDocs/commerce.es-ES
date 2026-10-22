@@ -90,15 +90,15 @@ Los servicios disponibles con cada oferta varían. Revise la documentación del 
 
 ### Comercio B2C y B2B
 
-Adobe Commerce admite modelos empresariales B2C y B2B, incluidos ambos modelos en una sola instancia de Commerce. [Introducción a Adobe Commerce B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/introduction)
+Adobe Commerce admite modelos empresariales B2C y B2B, incluidos ambos modelos en una sola instancia de Commerce. [Introducción a Adobe Commerce B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/introduction)
 
-Las capacidades de B2B varían según la oferta. Para Adobe Commerce en infraestructura en la nube y local, Adobe Commerce B2B es una extensión que requiere una licencia e instalación independientes. Adobe Commerce as a Cloud Service incluye funciones principales B2B, como administración de la empresa y cotización de forma predeterminada. Consulte [Adobe Commerce B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/extensions).
+Las capacidades de B2B varían según la oferta. Para Adobe Commerce en infraestructura en la nube y local, Adobe Commerce B2B es una extensión que requiere una licencia e instalación independientes. Adobe Commerce as a Cloud Service incluye funciones principales B2B, como administración de la empresa y cotización de forma predeterminada. Consulte [Adobe Commerce B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/start/resources/extensions).
 
 ### Adobe Commerce as a Cloud Service
 
 Adobe Commerce as a Cloud Service es una oferta de software como servicio (SaaS) nativa de la nube y totalmente administrada. Adobe administra la aplicación, la infraestructura y las actualizaciones principales de Commerce. Sus componentes incluyen la base de Commerce, Commerce Storefront con tecnología de Edge Delivery Services, servicios de comercialización, elementos visuales de producto y herramientas para desarrolladores.
 
-Ver [descripción general de Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
+Ver [descripción general de Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview).
 
 ### Adobe Commerce Optimizer
 
@@ -106,7 +106,7 @@ Adobe Commerce Optimizer es una solución SaaS para mejorar las experiencias de 
 
 Adobe Commerce Optimizer puede introducir datos de catálogo de fuentes de terceros. Las integraciones de carro de compras y cierre de compra con sistemas de terceros utilizan herramientas de integración como API Mesh y App Builder.
 
-Ver [¿Qué es Adobe Commerce Optimizer?](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview).
+Ver [¿Qué es Adobe Commerce Optimizer?](https://experienceleague.adobe.com/es/docs/commerce/optimizer/overview).
 
 >[!NOTE]
 >
@@ -116,13 +116,13 @@ Ver [¿Qué es Adobe Commerce Optimizer?](https://experienceleague.adobe.com/en/
 
 Adobe Commerce local está alojado por el comerciante o su proveedor de alojamiento. El comerciante o proveedor administra el entorno de alojamiento, la infraestructura y los servicios de plataforma.
 
-Consulte [Descripción general de la instalación local](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview).
+Consulte [Descripción general de la instalación local](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/overview).
 
 ### Adobe Commerce en la infraestructura en la nube
 
 Adobe Commerce en la infraestructura en la nube es una implementación de plataforma como servicio (PaaS). Adobe administra la plataforma alojada, mientras que el comerciante conserva la responsabilidad del mantenimiento de nivel de aplicación, el código personalizado, la configuración y otras tareas de responsabilidad compartida.
 
-Ver [Commerce en la infraestructura de nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) y [Migrar a Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview).
+Ver [Commerce en la infraestructura de nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview) y [Migrar a Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/migration/overview).
 
 ## Servicios que amplían Commerce
 
@@ -142,7 +142,7 @@ Los servicios de Adobe Commerce para experiencias de tienda y producto incluyen:
 
 **Servicios de pago** proporciona métodos de pago y vistas en el procesamiento de pagos, pedidos y facturas. La disponibilidad depende del producto y la implementación de Commerce.
 
-Ver [Servicios de pago](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview).
+Ver [Servicios de pago](https://experienceleague.adobe.com/es/docs/commerce/payment-services/guide-overview).
 
 ### Servicios de datos e integración
 
@@ -162,7 +162,7 @@ Consulte la [documentación para desarrolladores de Adobe Commerce](https://deve
 
 ### Disponibilidad del servicio
 
-Utilice esta comparación para identificar la ruta de servicio del producto de Commerce. Revise [Adobe Commerce Feature comparison](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison) y cada guía de servicio para ver las versiones compatibles, las licencias y los requisitos de configuración.
+Utilice esta comparación para identificar la ruta de servicio del producto de Commerce. Revise [Adobe Commerce Feature comparison](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/feature-comparison) y cada guía de servicio para ver las versiones compatibles, las licencias y los requisitos de configuración.
 
 | Servicio o capacidad | Disponibilidad |
 | --- | --- |
