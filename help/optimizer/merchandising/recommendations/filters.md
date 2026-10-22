@@ -1,7 +1,7 @@
 ---
 title: Filtros de recomendación
 description: Aprenda a utilizar filtros para controlar qué productos aparecen en [!DNL Adobe Commerce Optimizer] recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # Filtrar productos
@@ -225,6 +225,14 @@ Un filtro de atributos difiere de un [filtro de productos](#product) en que se d
 #### Configuración de un filtro de atributos
 
 Siga estos pasos para agregar una regla de inclusión o exclusión de atributos a una unidad de recomendación.
+
+>[!TIP]
+>
+>Para cualquier atributo que quiera filtrar, use la [API de metadatos](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) para establecer el parámetro `filterable`:
+>
+>{&quot;filtrable&quot;: true}
+>
+>El atributo estará disponible en el menú **Atributos** la próxima vez que el catálogo se sincronice con [!DNL Adobe Commerce Optimizer].
 
 1. Mientras [crea o edita](create.md) una unidad de recomendación, vaya a **[!UICONTROL Filter products]**.
 1. Seleccione la ficha **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**. El distintivo de cada pestaña muestra cuántos filtros de ese tipo están habilitados.
