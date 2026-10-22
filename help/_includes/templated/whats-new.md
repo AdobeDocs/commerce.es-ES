@@ -1,7 +1,7 @@
 ---
-source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1254'
 ht-degree: 1%
 ---
 # Novedades de la plantilla
@@ -360,7 +360,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó la guía <a href="https://experienceleague.adobe.com/es/docs/commerce/insights/overview">Commerce Insights</a>, una nueva página de inicio para la implementación estratégica y las pautas de seguridad de Adobe Commerce Product Management and Engineering.</p>
+      <td><p>Se agregó la guía <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>, una nueva página de inicio para la implementación estratégica y las pautas de seguridad de Adobe Commerce Product Management and Engineering.</p>
 </td>
       <td>
         Nuevo tema
