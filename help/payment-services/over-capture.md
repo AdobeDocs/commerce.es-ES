@@ -35,7 +35,7 @@ Antes de habilitar la captura excesiva:
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Seleccione el sitio web que desea configurar mediante el selector de ámbito de tienda.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. En la sección _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL General Configuration]_.
+1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL General Configuration]_.
 1. Establezca **[!UICONTROL Over Capture Enabled]** en `Yes`.
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y, a continuación, haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
