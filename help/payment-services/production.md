@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # Habilitar [!DNL Payment Services] para producción
@@ -48,10 +48,10 @@ Después de [configurar los servicios de Commerce](connect.md#configure-commerce
 
    Esta opción está visible si aún no ha configurado [!DNL Payment Services] como método de pago para uno o más sitios web.
 
-   Se le dirigirá al área de configuración en la vista Inicio con las opciones relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), donde puede habilitar las opciones de [!DNL Payment Services] como su [método de pago](https://experienceleague.adobe.com/es/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
+   Se le dirigirá al área de configuración en la vista Inicio con las opciones relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), donde puede habilitar las opciones de [!DNL Payment Services] como su [método de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
-1. En _[!UICONTROL General Configuration]_, establezca **[!UICONTROL Enable]**&#x200B;en `Yes`.
-1. Establezca **[!UICONTROL Payment Action]**, tanto para _[!UICONTROL Credit Card Fields]_&#x200B;como para&#x200B;_[!UICONTROL PayPal payment buttons]_, en una de las siguientes opciones:
+1. En _[!UICONTROL General Configuration]_, establezca **[!UICONTROL Enable]**en `Yes`.
+1. Establezca **[!UICONTROL Payment Action]**, tanto para _[!UICONTROL Credit Card Fields]_como para_[!UICONTROL PayPal payment buttons]_, en una de las siguientes opciones:
 
    | Configuración | Descripción |
    |---|---|
@@ -62,9 +62,11 @@ Después de [configurar los servicios de Commerce](connect.md#configure-commerce
    >
    >[!DNL Payment Services] admite capturas parciales. Un comerciante puede capturar parcialmente (facturar) partes de un pedido. Por ejemplo, puede capturar cada elemento de forma individual, o un elemento ahora y el resto más tarde.
 
+   Los comerciantes elegibles con un acuerdo de captura excesiva de PayPal también pueden habilitar la [captura excesiva](over-capture.md) en [!DNL Payment Services] 2.17.0 o posterior. La captura excesiva requiere que **[!UICONTROL Payment Action]** se establezca en `Authorize`, con una captura realizada más tarde durante la facturación.
+
 1. Haga clic en **[!UICONTROL Save]**.
 1. Haga clic en **[!UICONTROL Go to Payment Services]** para que se le dirija de nuevo a la página de inicio de [!DNL Payment Services].
-1. [Borra tu caché](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management).
+1. [Borra tu caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 
    La limpieza debe realizarse después de cada cambio de configuración.
 
@@ -126,7 +128,7 @@ Una vez seleccionado el país:
 
 1. En la barra lateral de Administración, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   El botón _[!UICONTROL Live onboarding]_&#x200B;ya no está visible y verá un cuadro de texto &quot;[!UICONTROL Live payments pending]&quot;.
+   El botón _[!UICONTROL Live onboarding]_ya no está visible y verá un cuadro de texto &quot;[!UICONTROL Live payments pending]&quot;.
 
    En ese cuadro de texto, también se le puede pedir que confirme su dirección de correo electrónico con PayPal para completar la incorporación.
 
@@ -152,7 +154,7 @@ Para permitir que tus tiendas se activen, solicita el derecho de pagos de Adobe 
 1. Complete el formulario.
 1. Un miembro del equipo de ventas se pondrá en contacto con usted.
 
-También puede solicitar el derecho de pago a Adobe en [business.adobe.com](https://business.adobe.com/es/resources/payment-services.html).
+También puede solicitar el derecho de pago a Adobe en [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -176,9 +178,9 @@ Activar pagos activos:
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. En Inicio, haga clic en **[!UICONTROL Settings]** en la parte superior derecha de la página. Ver [Hogar](payments-home.md) para obtener más información.
-1. En la sección _[!UICONTROL General Configuration]_, establezca **[!UICONTROL Payment mode]**&#x200B;en `Production`.
+1. En la sección _[!UICONTROL General Configuration]_, establezca **[!UICONTROL Payment mode]**en `Production`.
 1. Haga clic en **[!UICONTROL Save]**.
-1. [Borra tu caché](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Borra tu caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

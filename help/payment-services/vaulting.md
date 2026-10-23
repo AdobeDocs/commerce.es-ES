@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Bóveda de tarjeta de crédito
@@ -49,7 +49,7 @@ Los clientes que iniciaron sesión pueden proteger un método de pago en el pane
 
 1. Vaya a **[!UICONTROL Stored Payment Methods]** en el panel de navegación izquierdo para ver todos sus métodos de pago almacenados.
 
-   Consulte [Métodos de pago almacenados](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obtener más información.
+   Consulte [Métodos de pago almacenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obtener más información.
 
 1. El cliente hace clic en **[!UICONTROL Add New Card]** para almacenar una tarjeta nueva.
 
@@ -90,13 +90,15 @@ Solo puede utilizar tarjetas abovedadas en el administrador si el cliente tiene 
 
 Para crear un pedido en Admin para un cliente con su tarjeta de crédito:
 
-1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
-1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**&#x200B;como método de pago.
+1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
+1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**como método de pago.
 1. Seleccione el método de pago de tarjeta de crédito abovedado que desee.
-1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
+1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Usar tarjeta de crédito abovedada en el administrador para el cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Seguridad
 
 La información mínima de la tarjeta de crédito se comparte con el comprador; solo ve los últimos cuatro dígitos, la fecha de caducidad y la marca de su tarjeta de crédito abovedada. La información de la tarjeta de crédito se almacena con el proveedor de pagos para cumplir con los estándares de cumplimiento de [PCI](security.md#pci-compliance).
+
+En [!DNL Payment Services] 2.17.0 o posterior, se puede pedir a los compradores que paguen con una tarjeta de crédito guardada que completen un [desafío de autenticación 3D Secure (3DS)](security.md#3ds) requerido por el emisor de la tarjeta. Al guardar una tarjeta, no se omite la autenticación requerida por el emisor.

@@ -1,19 +1,17 @@
 ---
 user-guide-title: Guía de [!DNL Payment Services]
 breadcrumb-title: '[!DNL Payment Services]'
-user-guide-description: Esta guía proporciona información detallada sobre cómo instalar y configurar [!DNL Payment Services] para tu tienda [!DNL Adobe Commerce] o [!DNL Magento Open Source] Store.
+user-guide-description: Esta guía proporciona información detallada acerca de cómo instalar y configurar [!DNL Payment Services] para el almacén [!DNL Adobe Commerce] o [!DNL Magento Open Source].
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '121'
 ht-degree: 2%
-
 ---
-
 
 # [!DNL Payment Services] para Commerce {#payment-services}
 
@@ -23,7 +21,7 @@ ht-degree: 2%
 - [Notas de la versión](release-notes.md)
 - Incorporar [!DNL Payment Services] {#get-started}
   - [Resumen de incorporación](onboard.md)
-  - [Instalar la extensión  [!DNL Payment Services] &#x200B;](install.md)
+  - [Instalar la extensión  [!DNL Payment Services] ](install.md)
   - [Conecte la instancia](connect.md)
   - [Configuración de la zona protegida de pruebas](sandbox.md)
   - [Activar para producción](production.md)
@@ -39,6 +37,7 @@ ht-degree: 2%
   - [Cierre de compra en  [!DNL Payment Services]](checkout.md)
   - Administración de pagos {#manage}
     - [Elementos de línea para  [!DNL Payment Services]](line-items.md)
+    - [Capturar En Exceso](over-capture.md)
     - [Reembolsos](refunds.md)
     - [Vacíos](voids.md)
   - [Cree un pedido en Admin](create-order.md)
@@ -52,4 +51,4 @@ ht-degree: 2%
 - Seguridad y cumplimiento {#security-compliance}
   - [Seguridad](security.md)
   - [Protección contra fraudes significativa](fraud-protection.md)
-- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
+- [Volver al inicio de servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
