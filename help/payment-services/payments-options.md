@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Opciones de pago
@@ -167,6 +167,17 @@ Los clientes pueden pagar con facilidad y confianza usando el botón PayPal.
 
 El botón [!DNL PayPal] está visible desde las vistas de página de producto, minicarrito, carro de compras y cierre de compra.
 
+#### Página de revisión de PayPal Express
+
+En [!DNL Payment Services] 2.17.0 o posterior, los comerciantes pueden configurar una página de revisión de comerciante opcional para el pago y envío de PayPal Express. Esta página es independiente del modo de pago de PayPal y permite a los compradores revisar el total final del pedido y los términos y condiciones aplicables antes de realizar un pedido.
+
+Usa **[!UICONTROL Skip Review]** en la [configuración de botones de pago de PayPal](configure-admin.md#paypal-payment-buttons) para controlar este paso:
+
+* `No`: el comprador vuelve a la página de revisión del comerciante después de completar el modal de pago de PayPal y confirma el pedido antes de que se realice.
+* `Yes`: se omite la página de revisión del comerciante.
+
+La configuración de la página de revisión no reemplaza la responsabilidad del comerciante de cumplir con los requisitos regulatorios aplicables. La configuración de [página de revisión de Google Pay](configure-admin.md#google-pay) existente se configura por separado.
+
 #### [!DNL Venmo] botón
 
 Los clientes pueden cerrar la compra con el botón [Venmo](https://venmo.com/).
@@ -201,7 +212,7 @@ Obtenga información sobre cómo deshabilitar o habilitar la mensajería de [!DN
 
 Los métodos de pago PayPal, PayAfter y Venmo usan una [devolución de llamada de envío del lado del servidor](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) que permite a PayPal comunicarse directamente con tu instancia de Commerce para recuperar las opciones de envío y calcular los totales en tiempo real.
 
-Este enfoque del lado del servidor permite que [!DNL Payment Services] omita la ventana emergente de confirmación de pedido, lo que ofrece una experiencia de compra más rápida y optimizada. Como los gastos de envío y los impuestos se calculan dinámicamente mediante la devolución de llamadas, el comprador ve los totales exactos directamente en la página de revisión de PayPal o Venmo.
+Debido a que los costos de envío y los impuestos se calculan dinámicamente a través de las llamadas de retorno, el comprador ve opciones de envío actualizadas y totales directamente en el modo de pago PayPal o Venmo. Para el pago y envío de PayPal Express, la [página de revisión de comerciante](#paypal-express-review-page) opcional es un paso independiente después del modal de pago de PayPal, controlado por **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ Con Adobe Commerce y Magento Open Source [!DNL Payment Services], tiene disponib
 
 ### Recalculación de pedidos
 
-Cuando un cliente introduce el flujo de cierre de compra desde el minicarrito, el carro de compras o la página de producto, se le dirige a una página de revisión de pedidos donde puede ver la dirección de envío seleccionada en una ventana emergente de PayPal. Una vez que el cliente selecciona el método de envío, el importe del pedido se vuelve a calcular correctamente y el cliente puede ver los costes e impuestos de envío.
+Cuando un cliente introduce el flujo de pago de PayPal desde el minicarrito, el carro de compras o la página de producto, puede revisar la dirección de envío seleccionada en el modal de pago de PayPal. Una vez que el cliente selecciona el método de envío, se vuelve a calcular el importe del pedido y el cliente puede ver los costes e impuestos de envío. Para el pago y envío de PayPal Express, la [página de revisión del comerciante](#paypal-express-review-page) opcional permite que el cliente revise el total final y los términos y condiciones aplicables antes de realizar el pedido.
 
 Cuando un cliente introduce el flujo de cierre de compra desde la página de cierre de compra, el sistema ya tiene conocimiento de la dirección de envío y de la cantidad calculada final, y los totales se representan correctamente.
 

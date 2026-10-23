@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # Habilitar [!DNL Payment Services] para producción
@@ -61,6 +61,8 @@ Después de [configurar los servicios de Commerce](connect.md#configure-commerce
    >[!IMPORTANT]
    >
    >[!DNL Payment Services] admite capturas parciales. Un comerciante puede capturar parcialmente (facturar) partes de un pedido. Por ejemplo, puede capturar cada elemento de forma individual, o un elemento ahora y el resto más tarde.
+
+   Los comerciantes elegibles con un acuerdo de captura excesiva de PayPal también pueden habilitar la [captura excesiva](over-capture.md) en [!DNL Payment Services] 2.17.0 o posterior. La captura excesiva requiere que **[!UICONTROL Payment Action]** se establezca en `Authorize`, con una captura realizada más tarde durante la facturación.
 
 1. Haga clic en **[!UICONTROL Save]**.
 1. Haga clic en **[!UICONTROL Go to Payment Services]** para que se le dirija de nuevo a la página de inicio de [!DNL Payment Services].

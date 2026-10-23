@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '3767'
+source-wordcount: '3911'
 ht-degree: 0%
 ---
 # Configuración de [!DNL Payment Services]
@@ -59,6 +59,7 @@ Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchan
 
 1. PayPal proporciona automáticamente sus valores de **[!UICONTROL PayPal Merchant ID]** y **[!UICONTROL PayPal Merchant Status]** cuando visita el panel de [!DNL Payment Services] por primera vez.
 1. Para **Descriptor suave** (valores personalizados que se muestran en los extractos bancarios de las transacciones de los clientes para delimitar entre tiendas/marcas/catálogos), agregue el texto personalizado (hasta 22 caracteres) en el campo de texto, reemplazando `Soft descriptor` o el valor existente.
+1. Para los comerciantes elegibles que usen [!DNL Payment Services] 2.17.0 o posterior, establezca **[!UICONTROL Over Capture Enabled]** en `Yes` para habilitar [overcapture](over-capture.md). Se requiere un acuerdo de captura en exceso de PayPal, y el método de pago **[!UICONTROL Payment Action]** debe establecerse en `Authorize`.
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y, a continuación, haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
 
@@ -67,6 +68,7 @@ Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchan
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Enable] | sitio web | Habilite o deshabilite [!DNL Payment Services] para su sitio web. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Over Capture Enabled] | sitio web | Activa o desactiva [overcapture](over-capture.md) para los comerciantes elegibles con un acuerdo de overcapture de PayPal. Requiere [!DNL Payment Services] 2.17.0 o posterior y una acción de pago de `Authorize`. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Predeterminado: `[!UICONTROL No]`. |
 | [!UICONTROL Method] | vista de tienda | Defina el método o el entorno para su tienda. Opciones: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | vista de tienda | El ID de comerciante de la zona protegida, que se genera automáticamente durante la incorporación a la zona protegida. |
 | [!UICONTROL Payment Services Production ID] | vista de tienda | Su ID de comerciante de producción, que se genera automáticamente durante la incorporación de la producción (en directo). |
@@ -304,12 +306,15 @@ Configurar [!DNL PayPal payment buttons]
 
 Puede activar y configurar las opciones de pago de los botones de pago de PayPal en Admin:
 
+En [!DNL Payment Services] 2.17.0 o posterior, **[!UICONTROL Skip Review]** controla si el proceso de pago y envío de PayPal Express incluye una página de revisión de comerciante después de que el comprador abandone el modal de pago de PayPal. Esta página de revisión es independiente del modo de pago de PayPal. Consulte la [página de revisión de PayPal Express](payments-options.md#paypal-express-review-page) para obtener más información.
+
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 1. En la sección _[!UICONTROL Payment Services]_, expanda la sección&#x200B;_[!UICONTROL PayPal payment buttons]_.
 1. Para cambiar el nombre de la forma de pago como se muestra durante el cierre de compra, edite el campo _[!UICONTROL Title]_.
 1. Para [establecer la acción de pago](production.md#set-payment-services-as-payment-method), seleccione **[!UICONTROL Authorize]** o **[!UICONTROL Authorize and Capture]**.
+1. Para el pago y envío de PayPal Express, establece **[!UICONTROL Skip Review]** en `No` para mostrar la página de revisión del comerciante antes de que el comprador realice el pedido o `Yes` para omitirlo.
 1. Para priorizar un método de pago en la página de cierre de compra, proporcione un valor `Numeric Only` en el campo **[!UICONTROL Sort order]**.
 1. Para habilitar/deshabilitar la [mensajería de pago posterior](payments-options.md#pay-later-button), seleccione `Yes`/`No` para **[!UICONTROL Display Pay Later Message]**.
 
@@ -334,6 +339,7 @@ Puede activar y configurar las opciones de pago de los botones de pago de PayPal
 |---|---|---|
 | [!UICONTROL Title] | vista de tienda | Agrega el texto que se mostrará como título para esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: campo de texto |
 | [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/es/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Skip Review] | vista de tienda | En [!DNL Payment Services] 2.17.0 o posterior, controla la página de revisión de comerciantes para el pago y envío de PayPal Express. Configúrelo en `[!UICONTROL No]` para mostrar la página después del modal de pago de PayPal o en `[!UICONTROL Yes]` para omitirla. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Predeterminado: `[!UICONTROL Yes]`. |
 | [!UICONTROL Display Pay Later Message] | sitio web | Activa o desactiva la mensajería PayPal Más tarde en el carro de compras, la página de productos, el minicarrito y durante el flujo de pago. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | vista de tienda | Modifica los estilos de mensajería PayPal más tarde. Opciones: `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal payment buttons] en la página de cierre de compra. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |

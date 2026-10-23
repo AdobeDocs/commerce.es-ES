@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Bóveda de tarjeta de crédito
@@ -100,3 +100,5 @@ Para crear un pedido en Admin para un cliente con su tarjeta de crédito:
 ## Seguridad
 
 La información mínima de la tarjeta de crédito se comparte con el comprador; solo ve los últimos cuatro dígitos, la fecha de caducidad y la marca de su tarjeta de crédito abovedada. La información de la tarjeta de crédito se almacena con el proveedor de pagos para cumplir con los estándares de cumplimiento de [PCI](security.md#pci-compliance).
+
+En [!DNL Payment Services] 2.17.0 o posterior, se puede pedir a los compradores que paguen con una tarjeta de crédito guardada que completen un [desafío de autenticación 3D Secure (3DS)](security.md#3ds) requerido por el emisor de la tarjeta. Al guardar una tarjeta, no se omite la autenticación requerida por el emisor.
