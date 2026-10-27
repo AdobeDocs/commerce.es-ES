@@ -1,5 +1,5 @@
 ---
-title: '[!Data Exportar] referencia de códigos de registro'
+title: '[ !Data Exportar] referencia de códigos de registro'
 description: Lista de referencia de códigos de registro de exportación de datos, mensajes y niveles de gravedad para solucionar problemas de sincronización y decidir cuándo se requiere una resincronización parcial o completa.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
