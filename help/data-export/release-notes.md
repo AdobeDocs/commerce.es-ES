@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
+source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3763'
 ht-degree: 0%
 ---
 # Notas de la versión [!DNL SaaS Data Export Extension]
@@ -60,6 +60,12 @@ Las actualizaciones incluyen:
 >La extensión [!DNL SaaS data export] es una colección de módulos que se instalan automáticamente con [!DNL Live Search], [!DNL Product Recommendations] y [!DNL Catalog Service]. Puede comprobar la versión instalada en el sistema mediante [!DNL Composer]. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versiones de 2026 {#release-notes-2026}
+
+### Versión 103.6.0
+
+_21 de octubre de 2026_
+
+![Nuevos](../assets/new.svg) **atributos de resumen de revisión del producto**: se agregaron atributos de producto administrados por el sistema para el recuento de revisiones aprobadas (`ac_review_count`) y la clasificación promedio (`ac_rating_summary`). Cuando la sincronización de resumen de revisión está habilitada, estos valores se exportan al servicio de catálogo para que las tiendas puedan mostrar recuentos de revisiones y clasificaciones en estrellas. <!--MDEE-1414-->
 
 ### Versión 103.5.2
 
