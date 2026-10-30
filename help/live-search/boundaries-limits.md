@@ -1,6 +1,6 @@
 ---
 title: Límites y límites
-description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
+description: Obtenga información acerca de los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
@@ -28,13 +28,11 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 1409
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # Límites y límites
 
 Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Para asegurarse de que [!DNL Live Search] y [!DNL Catalog Service] satisfacen las necesidades de su empresa, revise los límites y límites siguientes. Si necesita funcionalidades de búsqueda avanzadas como búsqueda de contenido, traer su propio algoritmo (BYOA) o comercialización basada en atributos, considere una solución de búsqueda de terceros.
@@ -68,7 +66,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Para asegurarse
 
 ## Facetas
 
-- Desde el conjunto de atributos filtrables definidos, puede configurar hasta 100 atributos como facetas.
+- De forma predeterminada, se pueden configurar hasta 100 atributos filtrables como facetas. Los comerciantes elegibles pueden solicitar un aumento de hasta un máximo de 500 facetas a través de [Soporte de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; la aprobación está sujeta a la elegibilidad y a la evaluación del rendimiento.
 - Dentro de una faceta, se puede devolver un máximo de 100 contenedores. Si necesita devolver más de 100 contenedores, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para que Adobe pueda analizar el impacto en el rendimiento y determinar si es factible aumentar este límite para su entorno.
 - Las facetas dinámicas pueden causar problemas de rendimiento en índices grandes e índices con una alta ordinalidad. Si ha creado facetas dinámicas y observa algún deterioro del rendimiento o si la página no se carga con errores de tiempo de espera, intente cambiar las facetas a ancladas para determinar si esto resuelve el problema de rendimiento.
 - El estado de las existencias (`quantity_and_stock_status`) no se admite como faceta. En el Administrador, puede establecer [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] para filtrar los productos sin existencias. Esta funcionalidad se admite de forma nativa en el módulo `[PLP Widget](plp-styling.md)`. Para obtener más información, consulte [Administrar productos sin existencias](manage-out-of-stock-products.md).

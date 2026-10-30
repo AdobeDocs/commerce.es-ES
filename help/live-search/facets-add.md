@@ -1,6 +1,6 @@
 ---
 title: Agregar facetas
-description: Aprenda a agregar atributos de producto filtrables como  [!DNL Live Search] facetas.
+description: Aprenda a agregar atributos de producto filtrables como facetas de [!DNL Live Search].
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 TQID: https://experienceleague.adobe.com/6mX3QWuZRFuDb1eDnUlPj1yvXZ2qGIdQ4oScxfHjNWY
 product_v2:
@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # Agregar facetas
 
 Cualquier atributo de producto filtrable se puede usar como faceta excepto el estado de las existencias (`quantity_and_stock_status`). El panel *[!UICONTROL Add facets]* enumera las facetas actuales y facilita la asignación de atributos de producto adicionales como facetas. Durante este proceso de tres pasos, se elige un atributo para utilizarlo como faceta, las propiedades se editan si es necesario y los cambios se publican en la tienda.
@@ -42,7 +40,7 @@ Cualquier atributo de producto filtrable se puede usar como faceta excepto el es
    * Para buscar un atributo de producto específico, escriba los primeros caracteres del nombre del atributo en el cuadro *Buscar*. A continuación, haga clic en **Agregar**.
 
      Para configurar intervalos y agrupaciones de facetas de precios, consulte [Configuración](settings.md). Para obtener más información, ve a [Tipos de facetas](facets-type.md).
-La faceta se agrega al final de la lista *Facetas dinámicas* y el botón *Publicar cambios* pasa a estar disponible.
+     La faceta se agrega a la lista *Facetas dinámicas* en orden ascendente y el botón *Publicar cambios* pasa a estar disponible.
 
 1. Si la faceta que desea agregar no se encuentra, vaya a **Tiendas** > Atributos > **Producto** y compruebe que el atributo tiene las [propiedades requeridas](facets.md) para utilizarlo como faceta. Si es necesario, actualice las siguientes propiedades de tienda del atributo:
 
