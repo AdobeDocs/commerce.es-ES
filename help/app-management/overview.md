@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # Información general de [!DNL App Management]
@@ -37,7 +37,7 @@ En conjunto, estas capacidades crean un modelo de extensibilidad escalable que p
 
 ## Lo que [!DNL App Management] ofrece
 
-* **Un lugar para todas tus aplicaciones**. Asocie, configure y administre aplicaciones desde **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Buscar, filtrar y adquirir aplicaciones](manage-app.md) desde la misma vista.
+* **Un lugar para todas tus aplicaciones**. Asocie, instale, configure, actualice y administre aplicaciones desde **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Buscar, filtrar y adquirir aplicaciones](manage-app.md) desde la misma vista.
 * **Configuración que coincide con su empresa**. Aplique diferentes configuraciones por sitio web, tienda o vista de tienda para configuraciones de varias regiones o marcas.
 * **Sincronización automática de almacén**. Los sitios web, las tiendas y las vistas de tiendas de Commerce se importan al asociar una aplicación.
 * **Experiencia nativa de administrador**. Trabaje con aplicaciones de Adobe Exchange o implementaciones personalizadas sin salir de Commerce.
@@ -45,22 +45,24 @@ En conjunto, estas capacidades crean un modelo de extensibilidad escalable que p
 ## ¿Quién usa [!DNL App Management]?
 
 | Rol | Caso de uso |
-|------|----------|
-| **Administradores de aplicaciones** | Asocie aplicaciones, configure configuraciones y administre aplicaciones en toda la instancia de Commerce. |
+| --- | --- |
+| **Administradores de aplicaciones** | Revise los detalles de la aplicación, asocie e instale aplicaciones, configure las opciones y administre las actualizaciones en la instancia de Commerce. |
 | **administradores de Commerce** | Controle las configuraciones y los permisos de las aplicaciones en toda la organización. |
 | **Arquitectos técnicos** | Asegúrese de que las aplicaciones estén correctamente configuradas para implementaciones de varias tiendas o regiones. |
 
 ## Qué puede hacer
 
 * **Asociar una aplicación**. Vincule una aplicación de App Builder a la instancia de Commerce seleccionando el proyecto y el espacio de trabajo.
+* **Revisar e instalar una aplicación**. Inspeccione los casos de uso empresarial y la configuración de la aplicación, complete las instrucciones previas a la instalación y supervise el progreso de la instalación.
 * **Configurar opciones**. Ajuste la configuración de la aplicación mediante el formulario generado automáticamente; anule los valores por tienda o región cuando sea necesario.
 * **Administrar ámbitos**. Mantenga la jerarquía de la tienda sincronizada con las aplicaciones y aplique la configuración en el nivel correcto.
-* **Anular la asociación de una aplicación**. Elimine una aplicación al retirar una integración o limpiar configuraciones de prueba.
+* **Actualizar una aplicación**. Revise e inicie actualizaciones cuando el desarrollador implemente una nueva versión. Los desarrolladores también pueden habilitar actualizaciones automáticas experimentales.
+* **Anular la asociación de una aplicación**. Revise los componentes afectados y los requisitos de limpieza antes de eliminar una aplicación cuando retire una integración o limpie las configuraciones de prueba.
 
 ## Pasos siguientes
 
 * [Instalar](install.md). Asegúrese de que se cumplan los requisitos previos y acceda a [!DNL App Management].
-* [Administrar tu aplicación](manage-app.md). Asocie, configure y desasocie aplicaciones.
+* [Administrar tu aplicación](manage-app.md). Revise, asocie, instale, configure, actualice y cancele la asociación de aplicaciones.
 
 ## Para desarrolladores
 
