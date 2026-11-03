@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
+source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
 workflow-type: tm+mt
-source-wordcount: '9823'
+source-wordcount: '9775'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -147,10 +147,6 @@ Los siguientes elementos se lanzaron a los entornos de producción el 28 de octu
 ### Adición de variables personalizadas para ordenar correos electrónicos de comentarios
 
 El `observer.email_order_comment_set_template_vars_before` [gancho web](https://developer.adobe.com/commerce/extensibility/webhooks/) ya está disponible. Utilícelo para añadir o cambiar variables de plantilla en el correo electrónico de comentarios del pedido antes de que se represente el correo electrónico. <!-- ACCS-2087 -->
-
-### Exportar clasificaciones de productos
-
-Cuando las revisiones de productos están habilitadas, el recuento de revisiones aprobadas y la clasificación promedio de cada producto se exportan a [!DNL Catalog Service] como atributos de producto del sistema `ac_review_count` y `ac_rating_summary`. Las tiendas pueden usar estos atributos para mostrar las clasificaciones de los productos. La fuente del producto se actualiza cuando cambian los resúmenes de revisión. Las revisiones de producto están deshabilitadas de forma predeterminada. <!-- ACCS-2196 -->
 
 ### Devolución de crédito de tienda
 
