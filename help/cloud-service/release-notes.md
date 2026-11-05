@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
+source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9964'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -92,7 +92,9 @@ Los siguientes elementos se lanzarán a los entornos de producción el 10 de nov
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### Aplicar atributos personalizados al agregar productos al carro de compras
+
+Ahora puede aplicar atributos personalizados a los elementos del carro de compras con la mutación [`addProductsToCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products) especificando una matriz de pares clave/valor en el campo `CartItemInput.custom_attributes`. <!-- ACCS-1980 -->
 
 ### Cambiar atributos de artículos de devolución
 
@@ -100,6 +102,10 @@ El nuevo `observer.rma_save_before` [webhook](https://developer.adobe.com/commer
 
 * La carga útil incluye elementos devueltos cuando al guardar se crean o editan elementos, como cuando se crea una devolución en [!DNL Commerce Admin], a través de REST o a través de la mutación de GraphQL `requestReturn`.
 * El webhook se ejecuta como parte del proceso de guardar la devolución. Si falla un webhook requerido, la devolución no se guarda.
+
+### Excluir artículos de los envíos
+
+El nuevo `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [gancho web](https://developer.adobe.com/commerce/extensibility/webhooks/) le permite excluir artículos de pedidos de nuevos envíos, como los artículos que cumple un tercero. <!-- ACCS-2088 -->
 
 ### Incluir direcciones de envío
 
@@ -113,6 +119,14 @@ Para crear un pedido sin dirección de envío:
 ### Recuperar [!DNL AEM Assets] imágenes de categoría
 
 Los tipos de GraphQL `CategoryInterface` y `CategoryTree` ahora incluyen un campo `asset_role_image` que devuelve la imagen de categoría asignada desde [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Recuperar saldos acreedores del almacén de clientes
+
+El nuevo extremo REST `GET /V1/customers/:customerId/balance` devuelve el saldo de crédito de almacén de un cliente. Este extremo requiere el permiso [!UICONTROL Manage Store Credit Balances]. <!-- CCSAAS-5274 -->
+
+### Recuperar totales de filas de artículos de factura
+
+El tipo de GraphQL `InvoiceItemInterface` ahora incluye un campo `row_total` que devuelve el subtotal de fila almacenado para un elemento de factura. <!-- USF-4460 -->
 
 ### Mejoras y correcciones de errores
 
@@ -129,6 +143,16 @@ En esta versión se incluyen las siguientes mejoras, optimizaciones y correccion
 * Se corrigió un problema en el cual la mutación de GraphQL `requestReturn` fallaba cuando se enviaba un atributo personalizado de elemento de retorno opcional con un valor vacío. <!-- CCSAAS-5628 -->
 
 * Se ha corregido un problema en el cual el procesamiento de inventario se podía detener cuando los productos se eliminaban después de una acción masiva de [!UICONTROL Update attributes]. <!-- CCSAAS-5713 -->
+
+* Se ha corregido un problema en el cual los correos electrónicos de recordatorio de carrito abandonados podían enviar correos electrónicos de recordatorio adicionales. <!-- CCSAAS-5707 -->
+
+* Se ha corregido un problema por el cual no se enviaban correos electrónicos de alerta de precios y de disponibilidad. <!-- ACCS-2268 -->
+
+* Se ha corregido un problema en el cual el webhook `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` podía omitir `custom_attributes`. <!-- CEXT-6870, CEXT-6959 -->
+
+* Se ha corregido un problema en el cual la mutación de GraphQL `addProductsToCart` podía devolver un error al usar el recopilador de totales fuera de proceso. <!-- ACCS-2263, CEXT-6986 -->
+
+* Se corrigió un problema en el cual las consultas y mutaciones del carro de compras de GraphQL podían devolver un error después de que se eliminara un producto configurable de un carro de compras.<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 

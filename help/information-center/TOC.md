@@ -18,9 +18,9 @@ feature_v2:
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
     internal-label: Commerce ecosystem
 nudge: true
-source-git-commit: 3a8ed13a905395f131f79f12bd1d500e60c6a175
+source-git-commit: bce3bdd8831e24398a04dd5be0088f421d0253e8
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 3%
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 3%
 - Explorar las plataformas y servicios de Commerce {#explore-platforms-and-services}
   - [Plataformas y servicios](portfolio/platform-and-services.md)
   - [Elija una opción de Commerce.](portfolio/choose-commerce-option.md)
+  - [Operaciones administradas](portfolio/managed-operations.md)
   - [Tiendas](storefronts/overview.md)
   - [Integración de AEM Assets para Commerce](aem-assets/aem-assets-integration.md)
   - [API](apis/commerce-apis.md)
