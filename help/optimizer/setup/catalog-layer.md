@@ -3,7 +3,7 @@ title: Capas de catálogo
 description: Descubra cómo las capas de catálogo le permiten modificar los datos de producto sin cambiar los datos de origen originales, para que pueda personalizar con seguridad y revertir los cambios en cualquier momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # Capas de catálogo
 
 Las capas de catálogo permiten modificar los datos del producto sin cambiar los datos de origen originales. Las capas modifican los atributos del producto, como el nombre, la descripción, las imágenes, los vínculos y los metadatos, mediante la creación de una capa sobre el catálogo base. Los datos originales del producto permanecen intactos, lo que permite personalizar los productos de forma segura y revertir los cambios en cualquier momento.
@@ -67,8 +65,6 @@ Las capas de catálogo se utilizan comúnmente para:
 * **Imágenes de producto**: aplique las imágenes de producto de los AEM Assets como una capa sobre el catálogo base.
 
 ## AEM-Assets layer
-
-Al habilitar [Imágenes del producto](product-visuals.md), la integración de AEM Assets crea y administra automáticamente una capa de catálogo dedicada exclusivamente al contenido de los AEM Assets. El nombre de capa predeterminado es `AEM-Assets`; sin embargo, puede especificar un nombre personalizado durante la [incorporación en la integración de AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
 
 Esta capa contiene imágenes de productos sincronizadas desde los AEM Assets. Al igual que otras capas de catálogo, se rellena mediante la [API de capas de producto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. El servicio de integración de Assets transforma los metadatos de recursos de AEM y las direcciones URL de entrega en el formato API y envía los datos automáticamente cuando los recursos se aprueban en los AEM Assets.
 
