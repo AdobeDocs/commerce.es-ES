@@ -38,7 +38,7 @@ _Unidad de recomendación_
 
 Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](../../manage-results/recommendation-performance.md) para medir impresiones, vistas, clics, etc. La tabla Recommendations muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundadas.
 
-1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**para mostrar el área de trabajo de_ Recommendations _.
+1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**&#x200B;para mostrar el área de trabajo de_ Recommendations _.
 
 1. En el campo **Vista de catálogo**, seleccione la vista de catálogo en la que desea que la recomendación esté disponible. Más información acerca de [usar vistas de catálogo para recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
