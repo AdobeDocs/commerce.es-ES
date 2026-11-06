@@ -4,9 +4,9 @@ breadcrumb-title: Integración de [!DNL AEM Assets]
 user-guide-description: Información completa sobre la integración de AEM Assets para administradores de Adobe Commerce y Magento Open Source y especialistas en marketing de comercio electrónico.
 feature: CMS, Page Content
 nudge: true
-source-git-commit: 7db47b2b78642d47b0f38c3933bd87a0a2b6e127
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 3%
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 3%
   - [Buscar actualizaciones de la extensión](get-started/check-for-updates.md)
   - [Configuración de la integración](get-started/setup-synchronization.md)
   - [Configuración de permisos de usuario de IMS](get-started/permissions.md)
-  - [Configuración de Commerce Optimizer](get-started/configure-aco.md)
   - [Configurar tu tienda](get-started/configure-storefront.md)
   - [Visualización y administración de registros](get-started/logs.md)
   - [Ver estado de sincronización de AEM Assets](get-started/sync-status.md)

@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,6 @@ ht-degree: 0%
 Product Visuals permite administrar imágenes de productos a través de Adobe Experience Manager (AEM) Assets. Configure los AEM Assets de Commerce Optimizer para habilitar los elementos visuales del producto. Una vez finalizada la configuración, utilice AEM Assets como solución de administración centralizada de recursos digitales para las imágenes de sus productos, con flujos de trabajo automatizados de revisión y administración de recursos que mantengan las imágenes sincronizadas con su catálogo de Commerce Optimizer. La integración hace coincidir los recursos con los productos por SKU. Las actualizaciones fluyen por los servicios de integración de Adobe para que las tiendas reflejen los medios más recientes sin tener que volver a cargarlas manualmente.
 
 - [Imágenes del producto con AEM Assets](../setup/product-visuals.md)
-- [Configuración de AEM Assets para Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 

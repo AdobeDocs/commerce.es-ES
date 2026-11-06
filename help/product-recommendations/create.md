@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # Crear nueva recomendación
@@ -48,6 +48,8 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 1. Haga clic en **Crear recomendación**.
 
 1. En la sección _Asigne un nombre a la recomendación_, escriba un nombre descriptivo para la referencia interna, como `Home page most popular`.
+
+1. [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a proyectos de Adobe Commerce as a Cloud Service (infraestructura de SaaS administrada por Adobe)."} En la sección **Referencia de tienda**, escribe una clave de referencia para identificar esta unidad de recomendación en tu configuración de tienda. Después de crear la recomendación, puede [copiar su valor](#get-the-storefront-reference-key) de **Detalles de la unidad de recomendación** y utilizarlo como `referenceKey` en el bloque de recomendaciones. La clave de referencia es para la configuración de tienda; la etiqueta de visualización de tienda es el texto que ven los compradores.
 
 1. En la sección _Seleccionar tipo de página_, seleccione la página en la que desea que aparezca la recomendación entre las siguientes opciones:
 
@@ -101,6 +103,20 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 >[!IMPORTANT]
 >
 >Algunos exploradores pueden bloquear los scripts esenciales que impiden que las recomendaciones de productos funcionen según lo esperado.
+
+## Obtener la clave de referencia de tienda
+
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a proyectos de Adobe Commerce as a Cloud Service (infraestructura de SaaS administrada por Adobe)."} Después de crear una recomendación, usa su clave de referencia para configurar la unidad de recomendación en tu tienda.
+
+1. Abra los detalles de una recomendación de producto.
+
+   ![Obtener ID de recomendación](./assets/get-ref-id.png)
+
+1. Copie el valor de la sección **Clave de referencia**.
+
+   Las recomendaciones más antiguas podrían mostrar **[!UICONTROL Unit ID]** en lugar de **[!UICONTROL Reference Key]**. Puede seguir usando **[!UICONTROL Unit ID]** en su tienda, pero [!DNL Adobe Commerce] recomienda actualizar las recomendaciones existentes para usar **[!UICONTROL Reference Key]**.
+
+1. En el bloque de la tienda `product-recommendations`, usa esta clave de referencia para configurar la [entrega de recomendaciones](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) en tu tienda de Edge Delivery Services.
 
 ## Indicadores de preparación
 
