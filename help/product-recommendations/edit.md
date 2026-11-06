@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Editar recomendación
 
 La página Editar recomendación permite ajustar la configuración individual que compone la recomendación. Todos los ajustes se pueden editar excepto el tipo de página y el tipo de recomendación. Se pueden editar las siguientes opciones de configuración:
 
 - [Nombre de recomendación](#name)
+- [Clave de referencia](#reference-key)
 - [Etiqueta de tienda](#label)
 - [Número de productos](#number)
 - [Ubicación y posición](#placement)
@@ -51,6 +50,10 @@ La vista previa en la parte derecha de la página muestra cómo puede aparecer l
 Elija un nombre descriptivo que indique el propósito de la recomendación. El nombre es para referencia interna y no aparece en la tienda.
 
 ![Editar nombre](assets/edit-name.png)
+
+### Clave de referencia {#reference-key}
+
+La clave utilizada para identificar la unidad de recomendación en la configuración de tienda.
 
 ### Etiqueta de tienda {#label}
 

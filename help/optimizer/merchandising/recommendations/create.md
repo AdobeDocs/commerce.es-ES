@@ -1,7 +1,7 @@
 ---
 title: Crear y administrar recomendaciones
 description: Obtenga información sobre cómo crear y administrar recomendaciones.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
 product_v2:
@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # Crear y administrar recomendaciones
@@ -38,7 +38,7 @@ _Unidad de recomendación_
 
 Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](../../manage-results/recommendation-performance.md) para medir impresiones, vistas, clics, etc. La tabla Recommendations muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundadas.
 
-1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**&#x200B;para mostrar el área de trabajo de_ Recommendations _.
+1. En la barra lateral de _[!DNL Adobe Commerce Optimizer]_, ve a_ Comercialización _>**Recommendations**para mostrar el área de trabajo de_ Recommendations _.
 
 1. En el campo **Vista de catálogo**, seleccione la vista de catálogo en la que desea que la recomendación esté disponible. Más información acerca de [usar vistas de catálogo para recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -47,6 +47,8 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
    La recomendación que cree estará disponible en la vista de catálogo seleccionada anteriormente.
 
 1. En la sección _Asigne un nombre a la recomendación_, escriba un nombre descriptivo para la referencia interna, como `Home page most popular`.
+
+1. En la sección **Referencia de tienda**, escribe una clave de referencia para identificar esta unidad de recomendación en tu configuración de tienda. Después de crear la recomendación, puede [copiar su valor](#get-the-storefront-reference-key) de **Detalles de la unidad de recomendación** y utilizarlo como `referenceKey` en el bloque de recomendaciones. La clave de referencia es para la configuración de tienda; la etiqueta de visualización de tienda es el texto que ven los compradores.
 
 1. En la sección _Seleccionar tipo de recomendación_, especifique el [tipo de recomendación](types.md) que desee en función de su estrategia.
 
@@ -66,7 +68,7 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
    - **Activar** para habilitar la unidad de recomendación en tu tienda.
 
-   La recomendación aparecerá en el área de trabajo de Recommendations. Para usar tu recomendación en tu tienda, necesitas encontrar la [ID de recomendación](#get-recommendation-id).
+   La recomendación aparecerá en el área de trabajo de Recommendations. Para usar tu recomendación en tu tienda, necesitas el [ID de recomendación o la clave de referencia](#get-the-recommendation-id-or-reference-key).
 
 >[!NOTE]
 >
@@ -98,21 +100,17 @@ A medida que cree su unidad de recomendación, experimente con el tipo de recome
 
 Para configuraciones de varias tiendas, idiomas o marcas, puede configurar si cada recomendación se aplica a todas las vistas de catálogo (globales) o a una sola [vista de catálogo](../../setup/catalog-view.md). Obtenga más información sobre cómo [establecer la vista de catálogo](../../manage-results/recommendation-performance.md#select-catalog-view) al trabajar con recomendaciones.
 
-## Obtener ID de recomendación
+## Obtener la clave de referencia de tienda
 
-Después de crear una recomendación, debe recuperar su ID para implementar la unidad de recomendación en la tienda.
+Después de crear una recomendación, use su clave de referencia para configurar la unidad de recomendación en la tienda.
 
-1. En la página **Recommendations**, seleccione la recomendación.
+1. En la página **Recommendations**, haga clic en el icono de información (![icono de información](../../assets/info-icon.png)) situado junto al nombre de la recomendación para abrir la página **Detalles de la unidad de recomendación**.
 
-1. Haga clic en el icono de información (![icono de información](../../assets/info-icon.png)) junto al nombre de la recomendación.
+   ![Obtener ID de recomendación](../../assets/get-ref-id.png)
 
-   Se muestra la página **Detalles de unidad de recomendación**.
+1. Copie el valor de la sección **Clave de referencia de tienda**.
 
-   ![Obtener ID de recomendación](../../assets/get-rec-id.png)
-
-1. En la sección **ID de recomendación**, copie el ID.
-
-1. Use este identificador para configurar la [recomendación &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) en su tienda de Edge Delivery Services.
+1. En el bloque de la tienda `product-recommendations`, usa esta clave de referencia para configurar la [entrega de recomendaciones](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) en tu tienda de Edge Delivery Services.
 
 ## Administrar recomendaciones existentes
 
@@ -127,6 +125,7 @@ Puede editar, desactivar o eliminar una recomendación existente.
 1. En el menú, puedes **Desactivar**, **Eliminar** o **Editar** la recomendación. Si selecciona **Editar**, puede ajustar la siguiente configuración según sea necesario:
 
    - Nombre de recomendación
+   - Clave de referencia
    - Etiqueta de tienda
    - Número de productos
    - Filtrar productos

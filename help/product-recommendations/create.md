@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # Crear nueva recomendación
@@ -39,28 +39,30 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 1. En la barra lateral de _Admin_, ve a **Marketing** > _Promociones_ > **Recomendaciones de productos** para mostrar el espacio de trabajo de _Recomendaciones de productos_.
 
-1. Especifique la [Vista de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views) donde desea que se muestren las recomendaciones.
+1. Especifique la [Vista de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) donde desea que se muestren las recomendaciones.
 
    >[!NOTE]
    >
-   > Las unidades de recomendación de Page Builder deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre cómo crear recomendaciones de productos con Page Builder, consulte [Agregar contenido: recomendaciones de productos](https://experienceleague.adobe.com/es/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Las unidades de recomendación de Page Builder deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre cómo crear recomendaciones de productos con Page Builder, consulte [Agregar contenido: recomendaciones de productos](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Haga clic en **Crear recomendación**.
 
 1. En la sección _Asigne un nombre a la recomendación_, escriba un nombre descriptivo para la referencia interna, como `Home page most popular`.
 
+1. [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a proyectos de Adobe Commerce as a Cloud Service (infraestructura de SaaS administrada por Adobe)."} En la sección **Referencia de tienda**, escribe una clave de referencia para identificar esta unidad de recomendación en tu configuración de tienda. Después de crear la recomendación, puede [copiar su valor](#get-the-storefront-reference-key) de **Detalles de la unidad de recomendación** y utilizarlo como `referenceKey` en el bloque de recomendaciones. La clave de referencia es para la configuración de tienda; la etiqueta de visualización de tienda es el texto que ven los compradores.
+
 1. En la sección _Seleccionar tipo de página_, seleccione la página en la que desea que aparezca la recomendación entre las siguientes opciones:
 
    >[!NOTE]
    >
-   > Las recomendaciones de productos no se admiten en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Las recomendaciones de productos no se admiten en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página principal
    * Categoría
    * Detalles del producto
    * Carrito
    * Confirmación
-   * [Page Builder](https://experienceleague.adobe.com/es/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Puede crear hasta 50 unidades de recomendación activas para cada tipo de página. El tipo de página aparece atenuado cuando se alcanza el límite.
 
@@ -101,6 +103,20 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 >[!IMPORTANT]
 >
 >Algunos exploradores pueden bloquear los scripts esenciales que impiden que las recomendaciones de productos funcionen según lo esperado.
+
+## Obtener la clave de referencia de tienda
+
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a proyectos de Adobe Commerce as a Cloud Service (infraestructura de SaaS administrada por Adobe)."} Después de crear una recomendación, usa su clave de referencia para configurar la unidad de recomendación en tu tienda.
+
+1. Abra los detalles de una recomendación de producto.
+
+   ![Obtener ID de recomendación](./assets/get-ref-id.png)
+
+1. Copie el valor de la sección **Clave de referencia**.
+
+   Las recomendaciones más antiguas podrían mostrar **[!UICONTROL Unit ID]** en lugar de **[!UICONTROL Reference Key]**. Puede seguir usando **[!UICONTROL Unit ID]** en su tienda, pero [!DNL Adobe Commerce] recomienda actualizar las recomendaciones existentes para usar **[!UICONTROL Reference Key]**.
+
+1. En el bloque de la tienda `product-recommendations`, usa esta clave de referencia para configurar la [entrega de recomendaciones](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) en tu tienda de Edge Delivery Services.
 
 ## Indicadores de preparación
 
