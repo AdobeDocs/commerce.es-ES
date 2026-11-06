@@ -3,7 +3,7 @@ title: Imágenes del producto con AEM Assets
 description: Aprenda a utilizar AEM Assets para imágenes de productos en [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -33,7 +33,7 @@ Product Visuals permite que [!DNL Adobe Commerce Optimizer] comerciantes adminis
 
 >[!NOTE]
 >
->**Product Visuals** es el nombre del paquete proporcionado con [!DNL Adobe Commerce as a Cloud Service] y [!DNL Adobe Commerce Optimizer]. Combina [Dynamic Media con funciones OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) y [Prime para AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>**Product Visuals** es el nombre del paquete proporcionado con [!DNL Adobe Commerce as a Cloud Service] y [!DNL Adobe Commerce Optimizer]. Combina [Dynamic Media con funciones OpenAPI](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) y [Prime para AEM Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
 >Los clientes con una licencia de AEM Assets diferente (por ejemplo, **AEM Assets Ultimate**) pueden usar la misma integración; solo la versión de AEM afecta a los pasos de incorporación, no al tipo de licencia.
 
@@ -89,4 +89,4 @@ Para mostrar imágenes de AEM Assets en tu tienda, [asigna la capa `AEM-Assets` 
 * [Capas de catálogo](catalog-layer.md)
 * [Vistas de catálogo](catalog-view.md)
 * [Guía de integración de AEM Assets](../../aem-assets-integration/overview.md)
-* [Límites y límites en la visualización del producto](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [Límites y límites en la visualización del producto](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
