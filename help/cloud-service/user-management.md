@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1961'
 ht-degree: 0%
 ---
 # Usuario y Identity Management
@@ -54,6 +54,8 @@ Este proceso requiere una organización de IMS con acceso a [!DNL Adobe Commerce
 ## Explicación de funciones
 
 Los roles siguientes están disponibles para [!DNL Adobe Commerce as a Cloud Service]. Para ver o editar estos roles, en el Administrador de Commerce, vaya a [!UICONTROL **Sistema**] > [!UICONTROL **Permisos**] > [!UICONTROL **Roles de usuario**].
+
+Puede crear funciones personalizadas en Commerce Admin para proporcionar a los usuarios permisos más granulares que las funciones estándar de Adobe Admin Console. Las funciones y asignaciones personalizadas de Commerce se conservan cuando los usuarios inician sesión a través de Adobe IMS. Los usuarios aún deben tener acceso a la instancia de Adobe Commerce as a Cloud Service a través de Adobe Admin Console. Para crear roles personalizados, [defina los roles en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
 * **Usuarios**: los usuarios tienen acceso de administrador al administrador de Commerce, pero no pueden administrar el acceso de nivel de producto en Admin Console. Los usuarios también pueden usar créditos para [crear instancias](./getting-started.md#create-an-instance) en [!DNL Commerce Cloud Manager].
 
@@ -134,6 +136,8 @@ Para obtener información detallada sobre los permisos concedidos a cada funció
 ## Adición de usuarios
 
 Las siguientes instrucciones proporcionan información sobre cómo agregar usuarios a [!DNL Commerce Cloud Manager] y al administrador de Commerce. La interfaz [!DNL Commerce Cloud Manager] le permite crear y administrar sus instancias de Commerce. Este proceso es necesario para todos los usuarios, incluidos desarrolladores y administradores.
+
+Para crear funciones personalizadas, en lugar de usar las funciones más amplias definidas en Adobe Admin Console, puede [definir funciones en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
 >[!NOTE]
 >
