@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Antes de exponer [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Mage
 Probar [!DNL Payment Services] en un entorno de espacio aislado es un paso de validación importante, aunque sea un entorno simulado conectado únicamente al espacio aislado de PayPal, no a bancos y comerciantes reales.
 
 1. Completa un pago y envío correcto desde tu tienda, ya sea con [Campos de tarjeta de crédito](payments-options.md#credit-card-fields) o cualquiera de los [botones de pago de PayPal](payments-options.md#paypal-payment-buttons). Ver [Credenciales de prueba](#testing-credentials) para obtener más información acerca del uso de tarjetas de crédito falsas para realizar pruebas.
-1. Capture (cuando su acción de pago esté [establecida en `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [reembolso](refunds.md) o [anule](voids.md) el pedido que acaba de completar. También puede [crear una factura](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para un pedido si la acción de pago está establecida en `Authorize` en lugar de en `Authorize and Capture`.
+1. Capture (cuando su acción de pago esté [establecida en `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [reembolso](refunds.md) o [anule](voids.md) el pedido que acaba de completar. También puede [crear una factura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para un pedido si la acción de pago está establecida en `Authorize` en lugar de en `Authorize and Capture`.
 1. En un plazo de 24 a 48 horas, consulta la transacción y otra información en el [informe de pagos](payouts.md).
 1. Ver los detalles del pedido en el [informe de estado de pago del pedido](order-payment-status.md).
 
@@ -64,7 +64,7 @@ Para exponer su entorno local:
 
 1. Restaure la configuración de la URL base original cuando se haya completado la prueba.
 
-Si el tiempo de respuesta del extremo es inferior a 5 segundos, PayPal muestra un mensaje de error en la ventana emergente.
+Si el tiempo de respuesta del extremo es superior a 5 segundos, PayPal muestra un mensaje de error en la ventana emergente.
 
 #### Desarrollo local de Apple Pay
 
