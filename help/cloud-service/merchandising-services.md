@@ -75,7 +75,7 @@ En este tema se explican los cambios que se producen con CCDM, las funciones que
 
 ## ¿Qué cambios introduce CCDM?
 
-El modelo de catálogo original utiliza el servicio de catálogo para ofrecer datos de productos a las tiendas, con Live Search y Product Recommendations que proporcionan funciones de búsqueda, comercialización y recomendaciones. En este modelo, Commerce sincroniza usando [exportación de datos SaaS](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
+El modelo de catálogo original utiliza el servicio de catálogo para ofrecer datos de productos a las tiendas, con Live Search y Product Recommendations que proporcionan funciones de búsqueda, comercialización y recomendaciones. En este modelo, Commerce sincroniza usando [exportación de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/overview).
 
 Con CCDM, estas funciones funcionan en la misma base de catálogo que alimenta Adobe Commerce Optimizer. [Vistas de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) y [políticas](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definen el contexto de catálogo disponible para una tienda. Las políticas determinan la variedad de productos y las reglas de comercialización pueden aplicarse en todas las vistas de catálogo o adaptarse a una vista específica.
 
@@ -126,7 +126,7 @@ Revise las aplicaciones y extensiones de terceros que leen datos de catálogo o 
 
 ### Experiencia del administrador
 
-Adobe Commerce as a Cloud Service con CCDM usa [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe lanzó Unified Shell por separado del CCDM. Las instancias existentes en el modelo de servicios de catálogo original conservan el acceso a Classic y Unified Shell.
+Adobe Commerce as a Cloud Service con CCDM usa [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe lanzó Unified Shell por separado del CCDM. Las instancias existentes en el modelo de servicios de catálogo original conservan el acceso a Classic y Unified Shell.
 
 ### Límites
 
