@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b2859807f154770698ad4bcc8fd1acbc81c0114f
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1467'
 ht-degree: 0%
 ---
 # Casos de uso
@@ -71,7 +71,7 @@ Este flujo de trabajo muestra el proceso de cierre de compra de un cliente que c
 
 ### Habilitar servicios de pago
 
-1. En el Administrador de Commerce, vaya a [!UICONTROL **Tiendas**] > [!UICONTROL Settings] > [!UICONTROL **Configuración**] > [!UICONTROL **Métodos de pago**].
+1. En el Administrador de Commerce, vaya a [!UICONTROL **Tiendas**] > [!UICONTROL **Métodos de pago**].
 
 1. En la sección [!UICONTROL **Configuración general**], escriba sus `Payment Services Sandbox ID` y `Payment Services Sandbox Key`. Puede obtener estos identificadores siguiendo los pasos descritos en [Incorporación a espacio aislado](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}
 

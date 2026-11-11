@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
+source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1959'
 ht-degree: 0%
 ---
 # Usuario y Identity Management
@@ -53,7 +53,7 @@ Este proceso requiere una organización de IMS con acceso a [!DNL Adobe Commerce
 
 ## Explicación de funciones
 
-Los roles siguientes están disponibles para [!DNL Adobe Commerce as a Cloud Service]. Para ver o editar estos roles, en el Administrador de Commerce, vaya a [!UICONTROL **Sistema**] > [!UICONTROL **Permisos**] > [!UICONTROL **Roles de usuario**].
+Los roles siguientes están disponibles para [!DNL Adobe Commerce as a Cloud Service]. Para ver o editar estos roles, en el Administrador de Commerce, vaya a [!UICONTROL **Sistema**] > [!UICONTROL **Roles de usuario**].
 
 Puede crear funciones personalizadas en Commerce Admin para proporcionar a los usuarios permisos más granulares que las funciones estándar de Adobe Admin Console. Las funciones y asignaciones personalizadas de Commerce se conservan cuando los usuarios inician sesión a través de Adobe IMS. Los usuarios aún deben tener acceso a la instancia de Adobe Commerce as a Cloud Service a través de Adobe Admin Console. Para crear roles personalizados, [defina los roles en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
@@ -203,7 +203,7 @@ Para agregar desarrolladores y administradores de perfiles de producto, repita e
 
 ## Recursos de roles
 
-En la lista siguiente se describen los recursos a los que los roles predeterminados tienen permiso de acceso dentro del administrador de [!DNL Adobe Commerce]. Para editar los permisos predeterminados de cada función, vaya a [!UICONTROL **Sistema**] > [!UICONTROL **Permisos**] > [!UICONTROL **Roles de usuario**] en el administrador de Commerce.
+En la lista siguiente se describen los recursos a los que los roles predeterminados tienen permiso de acceso dentro del administrador de [!DNL Adobe Commerce]. Para editar los permisos predeterminados de cada rol, vaya a [!UICONTROL **Sistema**] > [!UICONTROL **Roles de usuario**] en el Administrador de Commerce.
 
 **Usuarios**
 

@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1418'
 ht-degree: 0%
 ---
 # Información general de [!DNL Adobe Commerce as a Cloud Service]
@@ -89,7 +89,7 @@ En la tabla siguiente se destacan los productos que alimentan [!DNL Adobe Commer
       <img src="../assets/icon-checkmark-circle-outline.svg" alt="marca de verificación" align="center"> <strong>Servicios de comercialización</strong>
     </td>
     <td align="left">
-      Servicios back-end que administran catálogos de productos, precios e inventario
+      Servicios back-end que administran catálogos de productos y precios. De forma predeterminada, las nuevas organizaciones utilizan el modelo de datos de catálogo maquetable (CCDM).
     </td>
   </tr>
   <tr>
@@ -124,25 +124,20 @@ Este diagrama ilustra el flujo de datos entre [!DNL Adobe Commerce as a Cloud Se
 
 Para crear experiencias enriquecidas en minutos con la creación simple basada en documentos o la edición visual con [!DNL Storefront Builder], usa [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) de Adobe con tecnología [!DNL Edge Delivery Services].
 
-[!DNL Commerce Storefront] carece totalmente de encabezado con una arquitectura disociada que proporciona todos los servicios y datos de Adobe Merchandising a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
+[!DNL Commerce Storefront] no tiene encabezado con una arquitectura disociada que proporciona datos y servicios de comercialización a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de Commerce Foundation, lo que proporciona la agilidad para crear y probar nuevos puntos de contacto con tecnologías emergentes.
 
 >[!NOTE]
 >
 >[!DNL Adobe Commerce as a Cloud Service] no admite tiendas Luma. Si está migrando desde [!DNL Adobe Commerce on Cloud] o local, consulte [escaparates existentes](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts) para obtener instrucciones sobre la transición.
 
-## Servicios de Adobe Merchandising y servicios de pago
+## Servicios de comercialización y pago
 
-Adobe proporciona un completo conjunto de servicios de comercialización inteligentes y componibles para ayudarle a lograr sus objetivos comerciales clave. Estos servicios también proporcionan API esenciales para optimizar el rendimiento a escala.
+Servicios de comercialización admite dos modelos de datos de catálogo en [!DNL Adobe Commerce as a Cloud Service]:
 
-- [[!DNL Live Search]](../live-search/overview.md): ofrece resultados más inteligentes, rápidos y relevantes a los compradores con esta herramienta de búsqueda con tecnología de IA. Para obtener instrucciones de configuración, consulte [Configuración [!DNL Live Search]](../live-search/workspace.md).
-- [[!DNL Product Recommendations]](../product-recommendations/overview.md): agregue recomendaciones alimentadas por IA en función del comportamiento del comprador, las tendencias populares, la similitud del producto y mucho más. Para obtener instrucciones de configuración, consulte [[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md).
-- [Servicio de catálogo](../catalog-service/guide-overview.md): ofrezca a sus clientes una experiencia de producto optimizada a la vez que aumenta el rendimiento, mejora la escalabilidad y aumenta las conversiones.
+- **Modelo de servicios de catálogo**: Utiliza [!DNL Catalog Service] con [!DNL Live Search] y [!DNL Product Recommendations] para proporcionar datos de catálogo, búsquedas y recomendaciones a las tiendas.
+- [**Modelo de datos de catálogo maquetable (CCDM)**(merchandising-services.md)]: utiliza vistas de catálogo, directivas, fuentes de catálogo y libros de precios para definir los productos y los precios disponibles para las tiendas. CCDM también es la base del catálogo para [!DNL Adobe Commerce Optimizer].
 
-  >[!NOTE]
-  >
-  >El servicio de catálogo se incluye automáticamente con [!DNL Live Search] y [!DNL Product Recommendations].
-
-- [Servicios de pago](../payment-services/guide-overview.md): Mejore la satisfacción del cliente ofreciendo varios métodos de pago, incluidos pagos a plazos sin intereses, y una sola vista del procesamiento, los pedidos y las facturas. Para obtener instrucciones de configuración, consulte [Página principal de servicios de pago](../payment-services/payments-home.md).
+[Servicios de pago](../payment-services/guide-overview.md) admite métodos de pago y proporciona una vista del procesamiento de pagos, pedidos y facturas. Para obtener instrucciones de configuración, consulte [Página principal de servicios de pago](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -238,7 +233,7 @@ Las funciones principales incluyen:
 
 ### Incorporación simplificada
 
-Inicie las instancias de zona protegida y producción en minutos con el portal de aprovisionamiento de autoservicio [!UICONTROL Commerce Cloud Manager]. Todo lo que necesita, incluidos los servicios de comercialización, una instancia de Commerce sin encabezado y [!DNL App Builder], se configura e integra automáticamente en sus instancias.
+Inicie las instancias de zona protegida y producción en minutos con el portal de aprovisionamiento de autoservicio [!UICONTROL Commerce Cloud Manager]. La infraestructura que necesita, incluidos los servicios de comercialización, una instancia de Commerce sin encabezado y [!DNL App Builder], se configura automáticamente y se integra con sus instancias.
 
 Consulte [Introducción](getting-started.md) para aprender a crear y administrar instancias de Commerce.
 

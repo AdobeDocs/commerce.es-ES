@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92240ffdb1444d600679ad8392902f543b0d84e3
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1111'
 ht-degree: 0%
 ---
 # Comparación de características
@@ -98,7 +98,10 @@ En la tabla siguiente se describen las características y las soluciones de reem
         <tr>
             <td>Comercialización en catálogo</td>
             <td><a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/staging/content-staging">Ensayo de contenido</a>, <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
-            <td><a href="../catalog-service/overview.md">Servicio de catálogo</a></td>
+            <td>
+                <p><strong>Modelo de datos de catálogo compuesto (CCDM):</strong> <a href="../optimizer/setup/catalog-view.md">Servicios de comercialización</a> usa vistas de catálogo, directivas, orígenes de catálogo y libros de precios para definir el contexto del catálogo de tienda.</p>
+                <p><strong>Modelo de servicios de catálogo original:</strong> <a href="../catalog-service/guide-overview.md">Servicio de catálogo</a> proporciona datos de catálogo junto con Live Search y Recomendaciones de productos.</p>
+            </td>
         </tr>
         <tr>
             <td>Pagos</td>
@@ -214,8 +217,8 @@ En la tabla siguiente se comparan las funciones de plataforma y las funciones de
         </tr>
         <tr>
             <td>App Marketplace</td>
-            <td>[Magento Marketplace](https://marketplace.magento.com/) (extensiones PHP) y [Exchange Marketplace](https://commercemarketplace.adobe.com) para [!DNL App Builder] aplicaciones (recomendado)</td>
-            <td>[!DNL App Builder] aplicaciones de [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)</td>
+            <td><a href="https://marketplace.magento.com/">Magento Marketplace</a> (extensiones PHP) y <a href="https://commercemarketplace.adobe.com">Exchange Marketplace</a> para aplicaciones de [!DNL App Builder] (recomendado)</td>
+            <td>[!DNL App Builder] aplicaciones de <a href="https://commercemarketplace.adobe.com">[!DNL Exchange Marketplace]</a></td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Datos y almacenamiento</strong></td>
@@ -256,4 +259,3 @@ En la tabla siguiente se comparan las funciones de plataforma y las funciones de
 >- Considere [!DNL API Mesh] para ampliar la funcionalidad de la API.
 >- Monitorice la evolución continua de la plataforma de Adobe y las nuevas versiones de capacidades.
 >- Evaluar los requisitos del modelo de datos específico del sector con respecto a las opciones de extensibilidad disponibles.
-
