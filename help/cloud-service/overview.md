@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
+source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 ---
 # Información general de [!DNL Adobe Commerce as a Cloud Service]
@@ -135,7 +135,7 @@ Para crear experiencias enriquecidas en minutos con la creación simple basada e
 Servicios de comercialización admite dos modelos de datos de catálogo en [!DNL Adobe Commerce as a Cloud Service]:
 
 - **Modelo de servicios de catálogo**: Utiliza [!DNL Catalog Service] con [!DNL Live Search] y [!DNL Product Recommendations] para proporcionar datos de catálogo, búsquedas y recomendaciones a las tiendas.
-- [**Modelo de datos de catálogo maquetable (CCDM)**(merchandising-services.md)]: utiliza vistas de catálogo, directivas, fuentes de catálogo y libros de precios para definir los productos y los precios disponibles para las tiendas. CCDM también es la base del catálogo para [!DNL Adobe Commerce Optimizer].
+- [**Modelo de datos de catálogo maquetable (CCDM)**](merchandising-services.md): utiliza vistas de catálogo, directivas, orígenes de catálogo y libros de precios para definir los productos y los precios disponibles para las tiendas. CCDM también es la base del catálogo para [!DNL Adobe Commerce Optimizer].
 
 [Servicios de pago](../payment-services/guide-overview.md) admite métodos de pago y proporciona una vista del procesamiento de pagos, pedidos y facturas. Para obtener instrucciones de configuración, consulte [Página principal de servicios de pago](../payment-services/payments-home.md).
 
