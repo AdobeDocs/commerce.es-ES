@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
 source-wordcount: '3191'
 ht-degree: 0%
@@ -352,7 +352,7 @@ Se aplica a:
 
 Versión principal: [modelo de datos de catálogo maquetable](https://developer.adobe.com/commerce/services/optimizer/) para tiendas sin encabezado, administración de encabezados y administración de datos de productos.
 
-![Nuevo](../assets/new.svg) **Modelo de datos de catálogo maquetable (CCDM)**: admite clientes que usen el catálogo maquetable para tiendas sin encabezado. Los nuevos extremos aceptan la vista de catálogo y los ID de directiva (compatible con versiones anteriores). Detalles y precios configurables del producto con paginación integrada.<!--DATA-6018, DATA-6288-->
+![Nuevo](../assets/new.svg) **modelo de datos de catálogo maquetable (CCDM)**: admite clientes que usen el catálogo maquetable para tiendas sin encabezado. Los nuevos extremos aceptan la vista de catálogo y los ID de directiva (compatible con versiones anteriores). Detalles y precios configurables del producto con paginación integrada.<!--DATA-6018, DATA-6288-->
 
 ![Nuevo](../assets/new.svg) **Administración de encabezado**-`AC-Locale` cambió el nombre a `AC-Scope-Locale` para operaciones de API de catálogo maquetable; se especificaron la asignación de encabezado y los valores predeterminados.<!--DATA-6303, DATA-6078-->
 

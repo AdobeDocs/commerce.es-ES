@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
-description: Obtenga información acerca del uso de la extensión  [!DNL data export] para servicios SaaS de Adobe Commerce que sincroniza datos entre Adobe Commerce y los servicios de Commerce conectados.
+description: Obtenga información sobre el uso de la extensión [!DNL data export] para los servicios SaaS de Adobe Commerce, que sincroniza datos entre Adobe Commerce y los servicios de Commerce conectados.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
@@ -29,20 +29,18 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
-source-wordcount: 402
-ht-degree: 0%
-
+source-wordcount: '403'
+ht-degree: 5%
 ---
-
 # Guía de [!DNL SaaS Data Export]
 
 [!DNL SaaS data export] sincroniza datos entre una instancia de Adobe Commerce y los servicios de Commerce conectados. Al agregar Live Search, Product Recommendations, el servicio de catálogo o [!DNL Adobe Commerce Optimizer Connector] a una instalación de Adobe Commerce, la extensión [!DNL Data Export] se instala automáticamente.
 
 >[!NOTE]
 >
->Si instala [!DNL Adobe Commerce Optimizer Connector], la misma extensión [!DNL Data Export] recopila las fuentes de catálogo y de precios de [!DNL Adobe Commerce]. A continuación, el conector asigna y envía esas fuentes a [!DNL Adobe Commerce Optimizer] mediante el Modelo de datos de catálogo maquetable (CCDM). Consulte [[!DNL Adobe Commerce Optimizer Connector] descripción general](../aco-connector/overview.md) para la configuración y arquitectura, y [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md) para ver el comportamiento de sincronización después de la exportación.
+>Si instala [!DNL Adobe Commerce Optimizer Connector], la misma extensión [!DNL Data Export] recopila las fuentes de catálogo y de precios de [!DNL Adobe Commerce]. A continuación, el conector asigna y envía esas fuentes a [!DNL Adobe Commerce Optimizer] mediante el modelo de datos de catálogo maquetable (CCDM). Consulte [[!DNL Adobe Commerce Optimizer Connector] descripción general](../aco-connector/overview.md) para la configuración y arquitectura, y [Canalización de sincronización de conectores](../aco-connector/connector-sync-pipeline.md) para ver el comportamiento de sincronización después de la exportación.
 
 La exportación de datos SaaS recopila y exporta varios tipos de datos, denominados _fuentes_, que agregan tipos de información específicos. Según los servicios de Commerce que estén instalados, las fuentes de exportación de datos SaaS incluyen:
 
