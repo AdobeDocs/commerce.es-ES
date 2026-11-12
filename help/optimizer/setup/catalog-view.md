@@ -4,7 +4,7 @@ description: Conozca cuáles son las vistas de catálogo y cómo crearlas para o
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y  [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
 product_v2:
@@ -30,35 +30,25 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 nudge: true
-source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
+source-git-commit: d081e975b03805a0f46d5194f8c3cd46e3c86839
 workflow-type: tm+mt
-source-wordcount: 1317
+source-wordcount: '733'
 ht-degree: 0%
-
 ---
-
 # Vistas de catálogo de Servicios de comercialización
 
-Una vista de catálogo define los productos y los precios que un cliente puede recuperar. Combina fuentes de catálogo, capas de catálogo, directivas y libros de precios para admitir diferentes marcas, regiones, unidades de negocio o canales.
+{{$include /help/_includes/ccdm-shared/setup/catalog-view.md}}
 
-## ¿Qué son las vistas de catálogo?
+## Administrar vistas de catálogo
 
-Las vistas de catálogo definen cómo se organiza y muestra el catálogo de productos. Actúan como filtros que determinan lo siguiente:
+Siga estas instrucciones para administrar las vistas de catálogo:
 
-- **Qué productos son visibles** según la estructura de la empresa (marcas, regiones, distribuidores)
-- **Qué precios se muestran** a través de los libros de precios vinculados
-- **Cómo se filtran los productos** mediante directivas (atributos como marca, modelo y categoría)
-- **El [origen del catálogo](catalog-sources.md) que se usa** según atributos como la configuración regional
-- **Quién puede tener acceso a los datos de la vista** mediante [Protección de catálogo](private-catalog-view.md) y [claves de acceso restringido](restricted-access-keys.md)
+- [Crear una vista de catálogo](#create-a-catalog-view): defina el nombre, el origen del catálogo, las directivas y el libro de precios. A continuación, [especifique la vista de catálogo para las recomendaciones y las reglas de detección de productos](#specify-catalog-views-for-recommendations-and-product-discovery-rules), revise [las capas de catálogo](#catalog-layers) que anulan los atributos de producto o [haga que la vista de catálogo sea privada](#make-a-catalog-view-private).
+- [Editar una vista de catálogo](#edit-a-catalog-view): actualice sus orígenes, directivas, libro de precios y configuración de protección.
+- [Eliminar una vista de catálogo](#delete-a-catalog-view): elimine una vista de catálogo que ya no necesite.
+- [Ver detalles de vista de catálogo](#view-catalog-view-details): revise la configuración de una vista de catálogo desde la tabla Vistas de catálogo.
 
-Por ejemplo, puede crear vistas de catálogo independientes para:
-
-- Una marca o unidad de negocio
-- Una región geográfica
-- Un distribuidor o canal de socios
-- Un segmento de clientes con precios específicos
-
-## Creación de una vista de catálogo
+### Creación de una vista de catálogo
 
 Antes de crear una vista de catálogo, prepare los siguientes elementos según sea necesario:
 
@@ -68,7 +58,7 @@ Antes de crear una vista de catálogo, prepare los siguientes elementos según s
 - [Libros de precios](pricebooks.md) para los precios mostrados en la vista
 - [Claves de acceso restringido](restricted-access-keys.md) si desea crear una vista de catálogo privado
 
-### Configuración
+#### Configuración
 
 En esta sección, crea una vista de catálogo, selecciona una [política](policies.md) y un [libro de precios](pricebooks.md).
 
@@ -102,25 +92,21 @@ La página Vistas de catálogo se actualiza para mostrar la nueva vista de catá
 
 Después de completar estos pasos, la vista de catálogo ahora está configurada para mostrar productos y precios en función de las fuentes y directivas seleccionadas.
 
-### Especificar vistas de catálogo para recomendaciones y reglas de descubrimiento de productos
+#### Especificar vistas de catálogo para recomendaciones y reglas de descubrimiento de productos
 
 Puede especificar una vista de catálogo al [crear unidades de recomendación](../merchandising/recommendations/create.md) o [reglas de comercialización](../merchandising/rules/add.md).
 
-## Capas de catálogo
+#### Capas de catálogo
 
 Las capas de catálogo permiten anular los atributos de producto seleccionados sin cambiar los datos del catálogo de origen. Utilice capas para personalizar nombres, descripciones, imágenes, vínculos o metadatos para una vista de catálogo.
 
 Ver [capas de catálogo](catalog-layer.md).
 
-## Hacer privada una vista de catálogo
+#### Hacer privada una vista de catálogo
 
 De forma predeterminada, una vista de catálogo es pública para las aplicaciones cliente que pueden acceder a la API de comercialización de GraphQL. Para restringir el acceso, habilite **[!UICONTROL Catalog Protection]** para configurar una vista de catálogo privado.
 
 Para obtener información sobre cómo proteger una vista de catálogo y comprobar que el acceso es obligatorio, consulte [Vistas de catálogo privadas](private-catalog-view.md).
-
-## Administrar vistas de catálogo
-
-Para actualizar o ver las propiedades de vistas de catálogo existentes, siga estas instrucciones.
 
 ### Edición de una vista de catálogo
 
@@ -143,7 +129,7 @@ Para actualizar o ver las propiedades de vistas de catálogo existentes, siga es
 
 Esta opción proporciona una forma rápida de ver todos los parámetros de vista de catálogo mientras se mantiene en la tabla **[!UICONTROL Catalog views]**.
 
-En el área de trabajo **[!UICONTROL Catalog views]**, seleccione el ![icono de información](../assets/info-icon.png) de una vista de catálogo para ver los detalles de configuración.
+En el área de trabajo **[!UICONTROL Catalog views]**, seleccione el ![icono de información](/help/assets/ccdm-shared/recommendations/info-icon.png) de una vista de catálogo para ver los detalles de configuración.
 
 ![Detalles de vista de catálogo](../assets/catalog-view-details.png)
 
@@ -157,82 +143,3 @@ Desde aquí puede ver los detalles de configuración de la vista de catálogo, c
 - Datos modificados
 
 Algunos de estos ajustes de configuración son necesarios al configurar la tienda o utilizar la API de ingesta de datos.
-
-## Descripción general de arquitectura
-
-Las vistas de catálogo forman parte del marco de servicios de comercialización que reemplaza el marco de sitio web, tienda y vista de tienda utilizado en las fundaciones de Adobe Commerce por un modelo más flexible:
-
-![[!DNL Merchandising Services] arquitectura](../assets/merchandising-svcs-architecture.png)
-
-### Cómo funciona
-
-**1. Ingesta de datos**
-Los datos de catálogo de PIM, ERP y otros sistemas se incorporan al marco de servicios de comercialización. Cada SKU contiene información de configuración regional y atributos de producto que se asignan a vistas de catálogo, políticas y configuraciones regionales. Para obtener más información sobre la ingesta de datos, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/).
-
-**2. Catálogo base unificado**
-Los datos introducidos crean un catálogo base unificado en la canalización de datos del servicio de catálogo. Esta fuente única elimina la duplicación de datos entre unidades empresariales.
-
-**3. Vistas de catálogo**
-Varias vistas de catálogo representan diferentes unidades de negocio (por ejemplo, Texas Retail, Texas Retail Seasonal). Las configuraciones regionales, las directivas y los libros de precios se pueden compartir en las vistas de catálogo para mayor flexibilidad.
-
-**4. Entrega multicanal**
-Los datos del catálogo filtrado se envían a destinos como Edge Delivery Services, mercados, plataformas publicitarias y microtiendas personalizadas. Para obtener más información sobre la entrega de datos del catálogo, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/).
-
-Cuando una vista de catálogo tiene **[!UICONTROL Catalog Protection]** habilitado, la entrega a ese destino requiere un token firmado válido de una [clave de acceso restringido](restricted-access-keys.md) asignada; se deniegan las solicitudes no autorizadas en lugar de recibir los datos del catálogo.
-
-### Componentes clave
-
-| Componente | Finalidad | Ejemplo |
-|---|---|---|
-| **Vista de catálogo** | Unidad de negocio o canal de distribución | Red de distribuidores, Tienda regional |
-| **Directiva** | Filtro de productos basado en atributos | Marca, modelo y categoría |
-| **Configuración regional** | Configuración de idioma/región | en-US, fr-CA, es-MX |
-| **Libro de precios** | Estructura de precios | Comercial, Mayorista, Empleado |
-| **Clave de acceso restringido** | Credencial de token firmado que comunica el acceso a una vista de catálogo protegida | Clave del portal de socios, clave de precios B2B |
-
-### Flujo de datos
-
-1. **Ingesta**: datos de productos de sistemas PIM/ERP
-2. **Proceso**: aplicar vistas de catálogo, directivas y precios
-3. **Enviar**: sirve el catálogo filtrado a tiendas, mercados, etc.
-
-## Características principales
-
-| Función | Beneficio |
-|---|---|
-| **Catálogo base único** | Eliminar la duplicación de datos entre unidades empresariales |
-| **Precios flexibles** | Varios libros de precios por SKU para diferentes segmentos de clientes |
-| **Escalable** | Gestione más de 200 millones de SKU de forma eficaz |
-| **Canal múltiple** | Ofrecer catálogos a tiendas, mercados y plataformas publicitarias. |
-| **Actualizaciones en tiempo real** | Actualización rápida de los datos de catálogo para promociones y campañas |
-| **Vistas del catálogo privado** | Restringir una vista de catálogo a clientes autorizados mediante la validación de token firmado |
-
-## Casos de uso
-
-### Conglomerado multimarca
-
-**Desafío**: administra varias marcas, países e idiomas<br>
-**Solución**: catálogo único con vistas de catálogo para cada combinación de marca y región
-
-### Distribuidor de piezas de automóviles
-
-**Desafío**: 3.000 distribuidores con los mismos productos pero precios diferentes<br>
-**Solución**: Un catálogo con vistas de catálogo y libros de precios específicos del distribuidor
-
-### Retailer con varias ubicaciones
-
-**Desafío**: Diferentes precios e inventarios por ubicación<br>
-**Solución**: vistas de catálogo basadas en ubicación con directivas específicas de región
-
->[!NOTE]
->
->Para obtener información detallada acerca de la ingesta y entrega de datos de catálogo, consulte la [documentación para desarrolladores](https://developer.adobe.com/commerce/services/optimizer/).
-
-## Más parecido a esto
-
-- [Fuentes de catálogo](catalog-sources.md): defina el ámbito autorizado de productos, atributos y categorías para el comportamiento de búsqueda, filtrado y ordenación
-- [Capas de catálogo](catalog-layer.md): aprenda a modificar los datos de productos sin cambiar el origen original
-- [Vistas de catálogo privado](private-catalog-view.md): cree una vista de catálogo privado para restringir el acceso a los clientes autorizados
-- [Claves de acceso restringido](restricted-access-keys.md): cree, asigne y gire las claves utilizadas para firmar tokens para la protección del catálogo
-- [Directivas](policies.md): cree directivas para filtrar productos en las vistas de catálogo
-- [Libros de precios](pricebooks.md): administre estructuras de precios para diferentes segmentos de clientes
