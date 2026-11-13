@@ -1,7 +1,7 @@
 ---
 title: Tipos de recomendación
 description: Obtenga información acerca de las recomendaciones que puede implementar en varias páginas del sitio.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
 TQID: https://experienceleague.adobe.com/GRGSFrVMS8gSjkpvnirUZQR4qaxGMBMrMeu2t21Yk6Y
 product_v2:
@@ -26,7 +26,8 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 01037ab53a431cbec3b90c4a9e3f08daebcae3e1
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%

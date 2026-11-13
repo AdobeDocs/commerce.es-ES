@@ -1,7 +1,7 @@
 ---
 title: Resumen de facetas
 description: Obtenga información sobre las facetas de [!DNL Adobe Commerce Optimizer] y cómo mejoran los resultados de búsqueda.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
 TQID: https://experienceleague.adobe.com/-LxTEulpf87FieM4mQCsoIkbPfGKDOzceX2fg9z5cSg
 product_v2:
@@ -24,7 +24,8 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 962b2e3fa94abc7684d5d66ec36d8edd3ce7a5ad
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '39'
 ht-degree: 0%
