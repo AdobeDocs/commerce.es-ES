@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1470'
 ht-degree: 0%
 ---
+# Capas de catálogo
+
 Las capas de catálogo permiten modificar los datos del producto sin cambiar los datos de origen originales. Las capas modifican los atributos del producto, como el nombre, la descripción, las imágenes, los vínculos y los metadatos, mediante la creación de una capa sobre el catálogo base. Los datos originales del producto permanecen intactos, lo que permite personalizar los productos de forma segura y revertir los cambios en cualquier momento.
 
 ![Capas de catálogo](/help/assets/ccdm-shared/setup/catalog-layers.png)

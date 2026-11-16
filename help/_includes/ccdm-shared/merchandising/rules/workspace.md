@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '962'
 ht-degree: 1%
 ---
+# Workspace de reglas de comercialización
+
 El área de trabajo *Reglas de comercialización* enumera la selección actual de reglas y su estado, y proporciona acceso a las herramientas que necesita para crear y administrar reglas. Puede asignar el ámbito de las reglas a todas las [vistas de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-view) (globales) o a una sola vista de catálogo. Consulte [Seleccionar vista de catálogo](#select-catalog-view) para ver cómo filtrar por vista de catálogo y crear reglas por vista de catálogo. Desde el espacio de trabajo puede:
 
 - Buscar reglas

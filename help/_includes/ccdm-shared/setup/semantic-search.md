@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '567'
 ht-degree: 0%
 ---
+# Búsqueda semántica
+
 La búsqueda semántica utiliza IA para comprender qué significan los compradores, no solo las palabras exactas que escriben. Consultas como &quot;vestido para una boda en la playa&quot; o &quot;zapatos cómodos para estar de pie todo el día&quot; pueden devolver productos relevantes incluso cuando su catálogo no utiliza esas frases exactas.
 
 El sistema de detección de productos combina la coincidencia de palabras clave y la coincidencia semántica en una experiencia de búsqueda. No se administran modos semánticos y de palabra clave independientes en la tienda.

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1559'
 ht-degree: 0%
 ---
+# Crear y administrar recomendaciones
+
 Cuando crea una recomendación, crea una _unidad de recomendación_ o widget que contiene _elementos_ del producto recomendado.
 
 ![Unidad de recomendación](/help/assets/ccdm-shared/recommendations/unit.png)

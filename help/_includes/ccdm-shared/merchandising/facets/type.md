@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '209'
 ht-degree: 0%
 ---
+# Tipos de facetas
+
 Las facetas vienen en una variedad de tipos y aparecen en la lista *Filtros* solo cuando son relevantes. La lista de facetas disponibles cambia según los productos devueltos. Las siguientes características afectan su presentación y comportamiento:
 
 - Facetas ancladas: las facetas más utilizadas se pueden anclar en la parte superior de la lista. Las facetas restantes se enumeran en *Tipo de orden* después de las facetas ancladas.

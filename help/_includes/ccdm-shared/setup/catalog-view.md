@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '740'
 ht-degree: 0%
 ---
+# Información general sobre las vistas de catálogo de los servicios Adobe Merchandising
+
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 Una vista de catálogo define los productos y los precios que un cliente puede recuperar. Combina fuentes de catálogo, capas de catálogo, directivas y libros de precios para admitir diferentes marcas, regiones, unidades de negocio o canales.

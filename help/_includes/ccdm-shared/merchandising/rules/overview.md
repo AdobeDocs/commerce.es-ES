@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 0%
 ---
+# Reglas de comercialización
+
 Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** a través de la **regla de búsqueda predeterminada** y en **páginas de categoría**. Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales.
 
 Cada **regla de búsqueda** tiene tres componentes principales:

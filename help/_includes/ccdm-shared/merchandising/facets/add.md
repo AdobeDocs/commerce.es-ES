@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 ---
+# Crear y administrar facetas
+
 Cualquier atributo de producto filtrable puede utilizarse como faceta. Las facetas ayudan a los clientes a filtrar y encontrar productos más fácilmente en su tienda. Este artículo explica cómo agregar, administrar y configurar facetas en la tienda.
 
 ![Crear una faceta](/help/assets/ccdm-shared/facets/create-facet.png)

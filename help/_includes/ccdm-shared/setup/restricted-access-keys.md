@@ -1,7 +1,7 @@
 ---
-source-git-commit: b6b737220a6dadf55b03da54e8d74226ed578cd0
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1633'
 ht-degree: 0%
 ---
 # Claves de acceso restringido
@@ -62,7 +62,7 @@ Seleccione la pestaña de la herramienta que utiliza para administrar claves: Co
 
 Los clientes que utilizan Adobe Commerce as a Cloud Service con CCDM o Adobe Commerce Optimizer conectado a Adobe Commerce a través del conector pueden generar pares de claves RSA desde el administrador de Commerce. Ver [Administrar claves de acceso restringido](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
->[!TAB Adobe Commerce Optimizer Studio: administración manual de claves]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 Los clientes que utilizan Adobe Commerce Optimizer Studio deben generar y administrar sus propios pares de claves RSA y luego agregar la clave pública al sistema. Este es el flujo de trabajo necesario para Adobe Commerce Optimizer con un back-end de terceros. Los clientes que utilizan el conector también pueden utilizar este flujo de trabajo en lugar del administrador de Commerce.
 
@@ -136,7 +136,7 @@ Seleccione la pestaña de la herramienta que utiliza para administrar claves: Co
 
 Ver [Selección y rotación de clave](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Esto se aplica a Adobe Commerce as a Cloud Service con CCDM y a los proyectos de Adobe Commerce integrados con Adobe Commerce Optimizer a través del conector de Adobe Commerce Optimizer.
 
->[!TAB Adobe Commerce Optimizer Studio (administración manual de claves)]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 Este procedimiento es necesario para Adobe Commerce Optimizer con un servidor de terceros. Los clientes que utilizan el conector también pueden utilizarlo en lugar del administrador de Commerce.
 
@@ -154,3 +154,4 @@ Ver [límites de directivas y vistas de catálogo](https://experienceleague.adob
 ## Más parecido a esto
 
 - [Vistas de catálogo privado](private-catalog-view.md): aprenda a proteger una vista de catálogo con claves de acceso restringido.
+

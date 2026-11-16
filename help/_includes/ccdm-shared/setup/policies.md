@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '993'
 ht-degree: 0%
 ---
+# Políticas
+
 Las directivas definen los filtros que se aplican a los productos en una vista de catálogo. Ayudan a adaptar el surtido de productos que se devuelve a una tienda o canal. Esto garantiza que el contenido correcto se envíe al destino correcto. Por ejemplo, tiendas físicas, mercados y canales publicitarios como Google, Facebook e Instagram.
 
 Las directivas utilizan atributos de producto como marca, modelo o categoría de artículo para adaptar los datos del catálogo a los requisitos empresariales. &#x200B;

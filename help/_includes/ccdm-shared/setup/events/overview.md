@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# Eventos
+
 Los eventos son una herramienta esencial para mejorar la experiencia de compra y dirigir las conversiones mediante el aprovechamiento de las perspectivas de datos en tiempo real.
 
 Los servicios de comercialización con el modelo de datos de catálogo maquetable (CCDM) implementan eventos de tienda en el sitio automáticamente. Estos eventos capturan datos de las interacciones de los compradores en el sitio. Estos datos anónimos alimentan [recomendaciones](../../manage-results/recommendation-performance.md), [descubrimiento de productos](../../manage-results/search-performance.md) y [métricas de éxito](../../manage-results/success-metrics.md).

@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
+source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 0%
 ---
 # Límites y límites
@@ -151,7 +151,7 @@ Los límites siguientes se aplican a la configuración de búsqueda de productos
 | Atributos de búsqueda | El número de características del producto que se pueden indexar para la búsqueda en el catálogo | 200 | No |
 | Atributos ordenables | El número de características del producto disponibles como opciones de ordenación en las páginas de búsqueda y categoría. | 50 | No |
 | Profundidad de paginación de búsqueda | Máximo de productos accesibles a través de la paginación de búsqueda (por ejemplo, página 100 × 100 productos/página) | 10K | No |
-| Facetas | El número de atributos de producto filtrables (como marca, color, tamaño y precio) que se pueden configurar para ayudar a los compradores a refinar los resultados de búsqueda y examinar las categorías | 100<p>Deben ser atributos filtrables</p> | No |
+| Facetas | El número de atributos de producto filtrables (como marca, color, tamaño y precio) que se pueden configurar para ayudar a los compradores a refinar los resultados de búsqueda y examinar las categorías | 100<p>Deben ser atributos filtrables</p> | Sí<p>Puede aumentar mediante una solicitud de asistencia</p> |
 | Opciones por faceta | El número de valores de atributos de producto filtrables que los compradores pueden seleccionar dentro de una faceta (por ejemplo, &quot;Rojo&quot;, &quot;Azul&quot; para Color; &quot;Pequeño&quot;, &quot;Medium&quot; para Tamaño) | 100 | Sí<p>Puede aumentar mediante una solicitud de asistencia</p> |
 
 {style="table-layout:auto"}

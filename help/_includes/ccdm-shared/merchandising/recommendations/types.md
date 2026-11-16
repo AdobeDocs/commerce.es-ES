@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1599'
 ht-degree: 0%
 ---
+# Tipos de recomendación
+
 [!DNL Product Recommendations] proporciona un gran conjunto de recomendaciones que puede implementar en varias páginas del sitio. Todos los tipos de recomendación están basados en datos. Se basan en datos de comportamiento, datos de atributos del producto y métricas. Para facilitar la referencia, los tipos de recomendación se agrupan de la siguiente manera:
 
 - [Personalizado](#personalized)

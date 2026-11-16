@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+source-git-commit: d112f591ea46e4f3bdc081566a9a036df4ccfe5a
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5695'
 ht-degree: 0%
 ---
 
@@ -131,6 +131,13 @@ _28 de junio de 2021_
 >
 > Las versiones se producen con frecuencia para ofrecer nuevas funciones y correcciones según sea necesario. La programación de versiones no está fija.
 
+## Versión 2.17.1
+
+_16 de noviembre de 2026_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.6 y posteriores
+
+![Problema solucionado](../assets/fix.svg)<!-- PAY-7254 --> Se ha corregido un problema por el que la casilla de verificación de los términos y condiciones se borraba tras la aprobación del pago mediante PayPal, lo que impedía a los compradores completar el cierre de compra.
 
 ## Versión 2.17.0
 
@@ -543,7 +550,7 @@ _27 de septiembre de 2023_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"} versiones de Adobe Commerce 2.4.4 y posteriores
 
-![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-4870 --> que causaba que el nuevo atributo de encabezado se rellenara incorrectamente en Storefront al enviar la versión de extensión con la última versión. Anteriormente, con la versión `1.3.0` del conector de servicios de Commerce, no se podía extender `User-Agent header` desde la extensión [!DNL Payment Services].
+<!-- Issue PAY-4870 --> Se ha corregido un problema que llenaba incorrectamente el nuevo atributo de encabezado en Storefront al enviar la versión de extensión con la última versión. Anteriormente, con la versión `1.3.0` del conector de servicios de Commerce, no se podía extender `User-Agent header` desde la extensión [!DNL Payment Services].
 
 ## Versión 2.2.0
 

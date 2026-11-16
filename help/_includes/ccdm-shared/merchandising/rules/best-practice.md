@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# Prácticas recomendadas de reglas de comercialización
+
 Para optimizar la conversión y los ingresos, implemente **reglas de búsqueda** efectivas, una regla de **listado predeterminado** sólida y **[reglas de categoría](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Ajuste las clasificaciones con los datos de ventas, las existencias, las promociones y la [clasificación inteligente](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
 
 Es crucial establecer una **regla predeterminada** bien pensada. Su [regla predeterminada](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/overview#default-rule) determina cómo se ordenan inicialmente los resultados de búsqueda cuando no se aplica ninguna regla de búsqueda más específica, lo que mejora la probabilidad de detección y compra. Revíselo regularmente para que siga el ritmo de las necesidades y campañas del comprador.

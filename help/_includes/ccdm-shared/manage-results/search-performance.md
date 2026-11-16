@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 0%
 ---
+# Rendimiento de búsqueda
+
 La página *Rendimiento de la búsqueda* proporciona a insight los términos de búsqueda que usan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. La página Rendimiento de la búsqueda proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
 
 - Búsquedas únicas
@@ -66,7 +68,7 @@ Existen varios factores clave que determinan la relevancia y eficacia de los res
 
 Para optimizar los resultados de búsqueda, supervise los indicadores clave de rendimiento (KPI) relevantes, como las consultas únicas, la posición de clic promedio, las tasas de pulsaciones, la tasa de conversión y la tasa de resultados cero, para comprender las interacciones de búsqueda del comprador. Estos datos le guían para actualizar y perfeccionar las reglas de búsqueda regularmente.
 
-- **Búsquedas únicas**: El recuento de consultas de búsqueda distintas realizadas en el sitio. El sistema contabiliza cada búsqueda única solo una vez, incluso si el mismo comprador o diferentes compradores lo repiten varias veces. Esta métrica le ayuda a comprender la diversidad de términos de búsqueda utilizados por los clientes y proporciona información sobre los productos o la información que buscan los compradores. El seguimiento de búsquedas únicas le permite:
+- **Búsquedas únicas**: El número de búsquedas únicas realizadas en el sitio durante el intervalo de fechas seleccionado. Las búsquedas múltiples realizadas por el mismo comprador para la misma consulta se consideran únicas si se envían con más de una hora de diferencia. Utilice esta métrica junto con el informe Búsquedas únicas para comprender la actividad de búsqueda e identificar los productos o la información que buscan los compradores. El seguimiento de búsquedas únicas le permite:
 
   - Identificar las tendencias de búsqueda populares y los elementos buscados con frecuencia.
   - Detecte posibles lagunas en el catálogo de productos o en el contenido.

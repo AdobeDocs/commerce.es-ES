@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# Métricas de éxito
+
 Esta página proporciona información general sobre las métricas de rendimiento clave para su tienda. El objetivo es comprender los resultados de la implementación de los servicios de comercialización con el modelo de datos de catálogo componible (CCDM) para identificar oportunidades de crecimiento y áreas de optimización.
 
 ![Informe de métricas de éxito](/help/assets/ccdm-shared/manage-results/success-metrics.png)
