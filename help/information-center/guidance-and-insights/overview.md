@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '265'
 ht-degree: 0%
 ---
 
@@ -58,6 +58,7 @@ Desarrolladores, arquitectos, líderes técnicos, estrategas comerciales y equip
 ## Empiece a explorar
 
 - [Diseña una plataforma comercial para compradores y agentes de IA](agentic-commerce/architectural-foundations-agentic-commerce.md)—Aprende a servir a las personas y a los agentes de IA desde una sola fuente de verdad. El artículo cubre un catálogo creado para el razonamiento automático, el Protocolo de contexto de modelo (MCP) y los protocolos de comercio agéntico abierto, y la telemetría que muestra cómo los agentes representan su marca.
+- [Comercio agéntico en 2027: cinco prioridades para los líderes del comercio](agentic-commerce/five-priorities-commerce-leaders-2027.md): prepárese para las compras asistidas por IA con prioridades para los datos de productos, la capacidad de detección, la infraestructura, la medición y la experimentación.
 - [Mejore la detección de productos con Adobe Commerce Live Search](catalog-management/improve-product-discovery-live-search.md): aprenda a usar perspectivas de rendimiento de búsqueda y búsqueda semántica para ayudar a los compradores a encontrar productos relevantes.
 
 Los artículos se añaden a esta sección a medida que se publican. Vuelva a consultar las perspectivas de los expertos, las estrategias de implementación y las recomendaciones que puede poner a disposición de inmediato.

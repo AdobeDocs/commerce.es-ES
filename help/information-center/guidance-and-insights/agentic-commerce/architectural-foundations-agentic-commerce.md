@@ -49,23 +49,21 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f54c816fd23786ec519d5c890bc2664c3dcf8c6f
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1323'
 ht-degree: 0%
 ---
 
 # Diseño de una plataforma de comercio para compradores y agentes de IA
+
+![Ilustración heroica de una plataforma de comercio auténtica donde los seres humanos y los agentes de IA interactúan con una única fuente de verdad](../../assets/guidance-and-insights/agentic-commerce-hero.png "Los fundamentos arquitectónicos de una plataforma de comercio auténtica"){width="800"}
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
    <td valign="middle" style="vertical-align: middle;"><img alt="Retrato de Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>Gerente principal de mercadotecnia del producto</em></td>
 </tr>
 </table>
-
-![Ilustración heroica de una plataforma de comercio auténtica donde los seres humanos y los agentes de IA interactúan con una única fuente de verdad](../../assets/guidance-and-insights/agentic-commerce-hero.png "Los fundamentos arquitectónicos de una plataforma de comercio auténtica")
-
-*Diseñando una plataforma de comercio donde los humanos y los agentes de IA interactúen con una única fuente de verdad.*
 
 Commerce está experimentando un cambio estructural. Los clientes ya no dependen únicamente de los motores de búsqueda o de la navegación por las tiendas para explorar sus opciones. En su lugar, están recurriendo a interfaces con tecnología LLM, asistentes basados en chat y herramientas de compra auténticas para hacer preguntas, comparar productos entre minoristas y acelerar la toma de decisiones en las primeras etapas.
 
@@ -136,4 +134,4 @@ El comercio electrónico ya no se limita a las tiendas y los resultados de búsq
 * [Políticas](/help/optimizer/setup/policies.md)
 * [Herramientas para desarrolladores de codificación de IA para Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [API de Commerce](../../apis/commerce-apis.md)
-* [Lista de reproducción de Commerce Developer Agent](https://experienceleague.adobe.com/es/playlists/commerce-developer-agent): vea vídeos técnicos sobre la configuración y el uso de Commerce Developer Agent.
+* [Lista de reproducción de Commerce Developer Agent](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent): vea vídeos técnicos sobre la configuración y el uso de Commerce Developer Agent.
