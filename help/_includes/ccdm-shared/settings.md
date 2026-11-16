@@ -118,7 +118,7 @@ Una vez habilitada la búsqueda semántica, puede ajustar lo siguiente en la mis
 
 - **[!UICONTROL Semantic boost]**: para priorizar los resultados semánticamente relevantes en la clasificación, aplique un impulso. Aumente el valor cuando las coincidencias semánticas deban tener un mayor peso en el conjunto de resultados; bájelo cuando los resultados sean demasiado amplios.
 - **[!UICONTROL Similarity threshold]**: establezca la puntuación de similitud mínima (como porcentaje) para una coincidencia semántica. Los valores más bajos devuelven más resultados (mayor recuperación), pero pueden incluir coincidencias más débiles. Los valores más altos devuelven menos coincidencias y más ajustadas (mayor precisión).
-- **[!UICONTROL Fuzzy search]**: para buscar coincidencias cercanas para las consultas de búsqueda y corregir errores tipográficos y variaciones menores, active **2}.**
+- **[!UICONTROL Fuzzy search]**: para buscar coincidencias cercanas para las consultas de búsqueda y corregir errores tipográficos y variaciones menores, active **2&rbrace;.**
 - **[!UICONTROL Fuzzy search similarity threshold]**: establezca la similitud mínima (como porcentaje) necesaria para que aparezcan las coincidencias aproximadas. Los umbrales más bajos devuelven coincidencias más aproximadas; eleve el umbral si los resultados difusos parecen demasiado amplios.
 
 >[!NOTE]
