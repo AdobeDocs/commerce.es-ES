@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # Revisar registros y solucionar problemas
@@ -42,7 +42,7 @@ La extensión [!DNL data export] proporciona registros para realizar un seguimie
 
 >[!NOTE]
 >
->También puede realizar un seguimiento del estado y el rendimiento de las fuentes de exportación de datos para los datos de productos y categorías desde el [panel Estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el Administrador.
+>También puede realizar un seguimiento del estado y el rendimiento de las fuentes de exportación de datos para los datos de productos y categorías desde el [panel Estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) en el Administrador.
 
 ## Registros
 
@@ -159,7 +159,7 @@ Si faltan datos o estos son incorrectos en Commerce Services, compruebe en los r
 - El registro de errores de exportación de datos (`commerce-data-export-errors.log`) captura los errores que se producen durante la fase de recopilación.
 - El registro de errores de exportación de SaaS (`saas-export-errors.log`) registra los errores que se producen durante la fase de transmisión.
 
-Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) con la mayor información posible.
+Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) con la mayor información posible.
 
 ### Resolver problemas de sincronización del catálogo {#resolvesync}
 
@@ -181,7 +181,7 @@ Una vez finalizada la operación, la carga útil de fuente está disponible para
 
 ### Conservar carga útil en tabla de índice de fuentes
 
-Para la extensión de exportación de datos SaaS de Commerce (`magento/module-data-exporter`) 103.3.0 y posterior, las fuentes de exportación inmediatas mantienen solamente los datos mínimos requeridos en la tabla de índice. Las fuentes incluyen todas las fuentes de estado de stock de catálogo e inventario.
+Para la extensión de exportación de datos SaaS de Commerce (`magento/module-data-exporter`) 103.3.0 y posterior, las fuentes de exportación inmediatas mantienen solamente los datos mínimos requeridos en la tabla de índice. Las fuentes incluyen todas las fuentes de catálogo.
 
 No se recomienda conservar los datos de carga útil en la tabla de índices en los entornos de producción, pero puede resultar útil en un entorno de desarrollo. Incluya la carga útil de la fuente en el índice agregando la variable de entorno `PERSIST_EXPORTED_FEED=1` al resincronizar la fuente.
 
