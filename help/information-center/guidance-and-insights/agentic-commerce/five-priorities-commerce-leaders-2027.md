@@ -168,7 +168,7 @@ El futuro del comercio no se trata solo de dónde compran los clientes. Se trata
 
 **¿Listo para preparar su negocio para el comercio con tecnología de IA?**
 
-[Explore Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html) y descubra cómo Adobe puede ayudarle a crear experiencias de compra más inteligentes y conectadas.
+[Explore Adobe Commerce as a Cloud Service](https://business.adobe.com/es/products/commerce.html) y descubra cómo Adobe puede ayudarle a crear experiencias de compra más inteligentes y conectadas.
 
 >[!ENDSHADEBOX]
 
