@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '740'
 ht-degree: 0%
 ---
+# Información general sobre las vistas de catálogo de los servicios Adobe Merchandising
+
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 Una vista de catálogo define los productos y los precios que un cliente puede recuperar. Combina fuentes de catálogo, capas de catálogo, directivas y libros de precios para admitir diferentes marcas, regiones, unidades de negocio o canales.
@@ -38,7 +40,7 @@ Los datos de catálogo de un servidor de Adobe Commerce u otro servidor de terce
 
 - **backend de Adobe Commerce**: el sistema exporta fuentes de catálogo de Commerce, las asigna al formato esperado por la API de REST de ingesta de datos y sincroniza los datos de fuente con la capa de datos de Adobe Merchandising Services. En este modelo, Adobe Commerce administra la sincronización inicial y las actualizaciones posteriores. Las fuentes incluyen productos, categorías, atributos de productos, precios y libros de precios.
 
-- **Sistema de origen o back-end de terceros**: un conector o servicio de integración recupera datos de catálogo de la fuente a través de API, eventos o fuentes de exportación, y luego los asigna y valida con el esquema del modelo de datos de catálogo maquetable (CCDM), y sincroniza los datos con la capa de servicios de Adobe Merchandising a través de la API de ingesta de datos. La integración es responsable de la carga inicial y de enviar los cambios posteriores. Un conector específico de la plataforma, como [Salesforce Commerce Connector](https://experienceleague.adobe.com/es/docs/commerce/optimizer/developer/salesforce-connector) de Adobe, puede proporcionar un punto de partida.
+- **Sistema de origen o back-end de terceros**: un conector o servicio de integración recupera datos de catálogo de la fuente a través de API, eventos o fuentes de exportación, y luego los asigna y valida con el esquema del modelo de datos de catálogo maquetable (CCDM), y sincroniza los datos con la capa de servicios de Adobe Merchandising a través de la API de ingesta de datos. La integración es responsable de la carga inicial y de enviar los cambios posteriores. Un conector específico de la plataforma, como [Salesforce Commerce Connector](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector) de Adobe, puede proporcionar un punto de partida.
 
 **2. Catálogo base unificado**
 Los datos introducidos crean un catálogo base unificado en la canalización de datos del servicio de catálogo. Esta fuente única elimina la duplicación de datos entre unidades empresariales.

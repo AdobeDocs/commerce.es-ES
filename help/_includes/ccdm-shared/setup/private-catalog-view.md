@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# Vistas del catálogo privado
+
 De manera predeterminada, [la vista de catálogo](catalog-view.md) es pública. Restrinja el acceso a una vista de catálogo para que solo las solicitudes con un token firmado válido puedan recuperar sus datos.
 
 Una vista de catálogo se vuelve privada de una de las dos maneras siguientes:
@@ -96,7 +98,7 @@ Si [!UICONTROL Catalog Protection] está habilitado y todas las claves asignadas
 
 >[!NOTE]
 >
->Para implementaciones de Adobe Commerce B2B que usan los servicios de comercialización con CCDM, administra las claves de acceso desde la página del administrador de Commerce **Claves de acceso restringido** (**Sistema** > **Transferencia de datos**). Para obtener más información, consulte [Administración restringida de claves de acceso](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) en la *[!DNL Adobe Commerce Optimizer Connector]Guía de integración*.
+>Para implementaciones de Adobe Commerce B2B que usan los servicios de comercialización con CCDM, administra las claves de acceso desde la página del administrador de Commerce **Claves de acceso restringido** (**Sistema** > **Transferencia de datos**). Para obtener más información, consulte [Administración restringida de claves de acceso](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) en la *[!DNL Adobe Commerce Optimizer Connector]Guía de integración*.
 
 ## Más parecido a esto
 

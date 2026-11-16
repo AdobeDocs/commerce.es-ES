@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 0%
 ---
+# Adobe Merchandising
+
 Aprenda a crear experiencias personalizadas para sus compradores mediante la detección de productos y recomendaciones.
 
 Estos servicios de Adobe Merchandising se basan en el modelo de datos de catálogo maquetable (CCDM), que separa *datos de producto* del *contexto de producto*. Los datos del producto incluyen SKU, atributos, metadatos, activos y precios. El contexto del producto define cómo se entregan esos datos, incluidas las [vistas de catálogo](/help/optimizer/setup/catalog-view.md), las [políticas de acceso a datos](/help/optimizer/setup/policies.md) y las [fuentes de catálogo](/help/optimizer/setup/catalog-sources.md) (configuraciones regionales). Dado que las vistas de catálogo y las políticas controlan los datos de tienda, puede crear catálogos personalizados para los modelos B2B, B2C y D2C y adaptar las experiencias de compra sin duplicar los datos base.

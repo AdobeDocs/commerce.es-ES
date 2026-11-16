@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '177'
 ht-degree: 1%
 ---
+# Workspace de facetas
+
 El área de trabajo *Facetas* enumera todas las facetas que están disponibles actualmente y proporciona acceso a las herramientas que necesita para configurar y administrar facetas. Las facetas ancladas aparecen primero en la lista de facetas existentes, seguidas de las facetas dinámicas. Puede buscar en la lista de facetas.
 
 ![Workspace de faceta](/help/assets/ccdm-shared/facets/facet-workspace.png)

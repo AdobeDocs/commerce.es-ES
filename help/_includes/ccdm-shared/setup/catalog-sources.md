@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 0%
 ---
+# Fuentes de catálogo
+
 Los orígenes de catálogo representan ámbitos autorizados de productos, atributos y categorías. Suelen asignarse a los límites del idioma, la audiencia o el sistema de origen y determinan el comportamiento de búsqueda, filtrado y ordenación.
 
 ## Fuentes de catálogo frente a conceptos relacionados

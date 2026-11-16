@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# Configuración de comercialización
+
 Use el área de trabajo *Configuración* para configurar la búsqueda y la detección de productos en su tienda. Las pestañas disponibles son las siguientes:
 
 - **Facetas**: configure los grupos de intervalos de precios y los intervalos utilizados como filtros de búsqueda.
@@ -116,7 +118,7 @@ Una vez habilitada la búsqueda semántica, puede ajustar lo siguiente en la mis
 
 - **[!UICONTROL Semantic boost]**: para priorizar los resultados semánticamente relevantes en la clasificación, aplique un impulso. Aumente el valor cuando las coincidencias semánticas deban tener un mayor peso en el conjunto de resultados; bájelo cuando los resultados sean demasiado amplios.
 - **[!UICONTROL Similarity threshold]**: establezca la puntuación de similitud mínima (como porcentaje) para una coincidencia semántica. Los valores más bajos devuelven más resultados (mayor recuperación), pero pueden incluir coincidencias más débiles. Los valores más altos devuelven menos coincidencias y más ajustadas (mayor precisión).
-- **[!UICONTROL Fuzzy search]**: para buscar coincidencias cercanas para las consultas de búsqueda y corregir errores tipográficos y variaciones menores, active **2&rbrace;.**
+- **[!UICONTROL Fuzzy search]**: para buscar coincidencias cercanas para las consultas de búsqueda y corregir errores tipográficos y variaciones menores, active **2}.**
 - **[!UICONTROL Fuzzy search similarity threshold]**: establezca la similitud mínima (como porcentaje) necesaria para que aparezcan las coincidencias aproximadas. Los umbrales más bajos devuelven coincidencias más aproximadas; eleve el umbral si los resultados difusos parecen demasiado amplios.
 
 >[!NOTE]

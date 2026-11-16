@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# Rendimiento de Recommendations
+
 La página Rendimiento de las Recomendaciones muestra una lista de recomendaciones configuradas junto con métricas clave para ayudarle a evaluar su eficacia. Puede configurar la vista para que muestre las métricas del día, la semana o el mes pasados. Estas perspectivas muestran la frecuencia con la que se visualiza o se hace clic en cada unidad de recomendación, lo que le ayuda a evaluar el rendimiento e identificar oportunidades para la optimización.
 
 >[!INFO]
