@@ -10,7 +10,7 @@ Las claves de acceso restringidas permiten que las aplicaciones cliente autoriza
 
 Las claves de acceso restringido se aprovisionan de una de las dos maneras siguientes:
 
-- **Automáticamente, para catálogos compartidos B2B**: el sistema aprovisiona y asigna la clave inicial para las vistas de catálogo asociadas a un catálogo compartido B2B. A continuación, administre las claves y la asignación de claves desde el administrador de Commerce. Consulte [Autenticación de vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) en la *Guía de administración de Commerce*. El aprovisionamiento automático está disponible en las siguientes implementaciones:
+- **Automáticamente, para catálogos compartidos B2B**: el sistema aprovisiona y asigna la clave inicial para las vistas de catálogo asociadas a un catálogo compartido B2B. A continuación, administre las claves y la asignación de claves desde el administrador de Commerce. Consulte [Autenticación de vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) en la *Guía de administración de Commerce*. El aprovisionamiento automático está disponible en las siguientes implementaciones:
 
   - **Adobe Commerce as a Cloud Service con CCDM** para Adobe Commerce B2B.
   - **Adobe Commerce en la nube o local** integrado con Adobe Commerce Optimizer a través de [!DNL Adobe Commerce Optimizer Connector for B2B]. Se requiere la extensión B2B para el conector.
@@ -50,7 +50,7 @@ La forma de abrir el espacio de trabajo de claves de acceso restringido depende 
 
 >[!NOTE]
 >
->Esta sección y las dos siguientes describen el proceso manual para administrar las claves de acceso restringido. Para los catálogos compartidos B2B con el aprovisionamiento automático de claves, administre las claves desde el administrador de Commerce. Ver [Claves de acceso restringido](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+>Esta sección y las dos siguientes describen el proceso manual para administrar las claves de acceso restringido. Para los catálogos compartidos B2B con el aprovisionamiento automático de claves, administre las claves desde el administrador de Commerce. Ver [Claves de acceso restringido](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 ### Añadir una clave de acceso restringido
 
@@ -60,7 +60,7 @@ Seleccione la pestaña de la herramienta que utiliza para administrar claves: Co
 
 >[!TAB Administrador de Adobe Commerce]
 
-Los clientes que utilizan Adobe Commerce as a Cloud Service con CCDM o Adobe Commerce Optimizer conectado a Adobe Commerce a través del conector pueden generar pares de claves RSA desde el administrador de Commerce. Ver [Administrar claves de acceso restringido](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+Los clientes que utilizan Adobe Commerce as a Cloud Service con CCDM o Adobe Commerce Optimizer conectado a Adobe Commerce a través del conector pueden generar pares de claves RSA desde el administrador de Commerce. Ver [Administrar claves de acceso restringido](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -113,7 +113,7 @@ Una clave de acceso restringido solo autentica el acceso después de asignarla a
 
 Las claves de acceso restringido se administran de una de las dos maneras siguientes, en función de cómo utilice la protección del catálogo:
 
-- **De forma automática, para los catálogos compartidos B2B**: para las implementaciones B2B de Adobe Commerce que usan Servicios de comercialización con CCDM y para las implementaciones de Adobe Commerce Optimizer integradas a través de [!DNL Adobe Commerce Optimizer Connector for B2B] (que requiere la extensión B2B), el servicio genera y asigna automáticamente la primera clave de acceso restringido cuando se crea una vista de catálogo. Cada vista del catálogo obtiene su propia clave. Después, puede administrar cada clave desde las páginas Catálogo compartido o Cuenta de compañía. También puede ver y administrar claves desde la página Administrador de Commerce **Claves de acceso restringido** (**Sistema** > **Transferencia de datos**). Consulte [Administrar configuración de vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
+- **De forma automática, para los catálogos compartidos B2B**: para las implementaciones B2B de Adobe Commerce que usan Servicios de comercialización con CCDM y para las implementaciones de Adobe Commerce Optimizer integradas a través de [!DNL Adobe Commerce Optimizer Connector for B2B] (que requiere la extensión B2B), el servicio genera y asigna automáticamente la primera clave de acceso restringido cuando se crea una vista de catálogo. Cada vista del catálogo obtiene su propia clave. Después, puede administrar cada clave desde las páginas Catálogo compartido o Cuenta de compañía. También puede ver y administrar claves desde la página Administrador de Commerce **Claves de acceso restringido** (**Sistema** > **Transferencia de datos**). Consulte [Administrar configuración de vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
 
   Cada combinación de un catálogo compartido y una vista de tienda se proyecta como una vista de catálogo independiente. Una proyección es la vista de catálogo, la directiva, la referencia del libro de precios y los datos de configuración de clave de acceso restringido que se exportan a la capa de datos de Servicios de comercialización para esa combinación. Por lo tanto, un catálogo compartido asignado a varias vistas de tienda produce varias vistas de catálogo, cada una con su propia clave. Edite o gire una clave para una vista de catálogo sin afectar a las demás.
 
@@ -134,7 +134,7 @@ Seleccione la pestaña de la herramienta que utiliza para administrar claves: Co
 
 >[!TAB Administrador de Adobe Commerce]
 
-Ver [Selección y rotación de clave](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Esto se aplica a Adobe Commerce as a Cloud Service con CCDM y a los proyectos de Adobe Commerce integrados con Adobe Commerce Optimizer a través del conector de Adobe Commerce Optimizer.
+Ver [Selección y rotación de clave](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Esto se aplica a Adobe Commerce as a Cloud Service con CCDM y a los proyectos de Adobe Commerce integrados con Adobe Commerce Optimizer a través del conector de Adobe Commerce Optimizer.
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -149,7 +149,7 @@ Este procedimiento es necesario para Adobe Commerce Optimizer con un servidor de
 
 ## Límites
 
-Ver [límites de directivas y vistas de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+Ver [límites de directivas y vistas de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits).
 
 ## Más parecido a esto
 

@@ -98,7 +98,7 @@ Si [!UICONTROL Catalog Protection] está habilitado y todas las claves asignadas
 
 >[!NOTE]
 >
->Para implementaciones de Adobe Commerce B2B que usan los servicios de comercialización con CCDM, administra las claves de acceso desde la página del administrador de Commerce **Claves de acceso restringido** (**Sistema** > **Transferencia de datos**). Para obtener más información, consulte [Administración restringida de claves de acceso](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) en la *[!DNL Adobe Commerce Optimizer Connector]Guía de integración*.
+>Para implementaciones de Adobe Commerce B2B que usan los servicios de comercialización con CCDM, administra las claves de acceso desde la página del administrador de Commerce **Claves de acceso restringido** (**Sistema** > **Transferencia de datos**). Para obtener más información, consulte [Administración restringida de claves de acceso](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) en la *[!DNL Adobe Commerce Optimizer Connector]Guía de integración*.
 
 ## Más parecido a esto
 

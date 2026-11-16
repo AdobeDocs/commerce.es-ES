@@ -58,13 +58,13 @@ En este ejemplo, la palabra clave para coincidir es &quot;pantalones&quot; y el 
 
 | Campo | Descripción |
 |--- |--- |
-| [Tipo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | Determina si los sinónimos tienen el mismo significado que la palabra clave o si son un subconjunto de la palabra clave. Opciones: <br />Dos vías (predeterminado): términos que tienen el mismo significado que la palabra clave y devuelven los mismos resultados de búsqueda<br />Unidireccional: términos que son un subconjunto de la palabra clave. Los sinónimos unidireccionales devuelven una lista más estrecha de productos específicos. |
+| [Tipo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/synonyms/type) | Determina si los sinónimos tienen el mismo significado que la palabra clave o si son un subconjunto de la palabra clave. Opciones: <br />Dos vías (predeterminado): términos que tienen el mismo significado que la palabra clave y devuelven los mismos resultados de búsqueda<br />Unidireccional: términos que son un subconjunto de la palabra clave. Los sinónimos unidireccionales devuelven una lista más estrecha de productos específicos. |
 | Palabra clave | Una palabra que comúnmente se asocia con una selección de productos en su catálogo. |
 | Expansión | Términos adicionales que tengan un significado igual o similar al de la palabra clave. |
 
 ## Administrar sinónimos
 
-Siga estas instrucciones para administrar los [sinónimos](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview) existentes.
+Siga estas instrucciones para administrar los [sinónimos](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/synonyms/overview) existentes.
 
 ## Buscar sinónimo
 

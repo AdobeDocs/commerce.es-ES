@@ -14,13 +14,13 @@ Cada **regla de búsqueda** tiene tres componentes principales:
 - **Eventos**: las acciones que tienen lugar cuando se cumplen las condiciones (clasificación manual y eventos relacionados).
 - **Detalles**: el nombre de la regla, el lapso de tiempo y la descripción opcionales.
 
-**Las reglas de categoría** utilizan **selección de categoría** en lugar de las condiciones de consulta de búsqueda; la clasificación inteligente y la clasificación manual funcionan de la misma manera que para la búsqueda, con diferencias indicadas en [Crear y administrar reglas](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+**Las reglas de categoría** utilizan **selección de categoría** en lugar de las condiciones de consulta de búsqueda; la clasificación inteligente y la clasificación manual funcionan de la misma manera que para la búsqueda, con diferencias indicadas en [Crear y administrar reglas](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add).
 
 Puede combinar varias condiciones y acciones para las reglas de búsqueda y programar cualquier regla para que esté activa durante un periodo. También puede establecer una **regla de búsqueda predeterminada** que se aplique cuando no se aplique una regla de categoría o búsqueda más específica.
 
 ## Reglas de categoría {#category-rules}
 
-**Reglas de categoría** controlan el pedido de productos en **páginas de categoría**. Selecciona una o más categorías y, a continuación, aplica una clasificación inteligente (por ejemplo, más visitados, tendencias) y acciones manuales como anclar, aumentar y enterrar. No utilizan condiciones de consulta de búsqueda. Para ver los pasos de configuración, los tipos de reglas y cómo se aplica la clasificación en la categoría en comparación con la búsqueda, consulte [Crear y administrar reglas](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+**Reglas de categoría** controlan el pedido de productos en **páginas de categoría**. Selecciona una o más categorías y, a continuación, aplica una clasificación inteligente (por ejemplo, más visitados, tendencias) y acciones manuales como anclar, aumentar y enterrar. No utilizan condiciones de consulta de búsqueda. Para ver los pasos de configuración, los tipos de reglas y cómo se aplica la clasificación en la categoría en comparación con la búsqueda, consulte [Crear y administrar reglas](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add).
 
 ## Requisitos
 
@@ -55,7 +55,7 @@ Puede establecer una **regla de búsqueda predeterminada** que se aplique cuando
 
 ## Orden de prioridad con varias reglas
 
-Lo siguiente se aplica a **reglas de búsqueda** y a cómo interactúan para una búsqueda determinada. Se aplican **reglas de categoría** por categoría; consulte [Crear y administrar reglas](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add) para ver cómo se ajustan a las reglas predeterminadas y de búsqueda.
+Lo siguiente se aplica a **reglas de búsqueda** y a cómo interactúan para una búsqueda determinada. Se aplican **reglas de categoría** por categoría; consulte [Crear y administrar reglas](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add) para ver cómo se ajustan a las reglas predeterminadas y de búsqueda.
 
 Solo se aplica una regla de búsqueda a un término de búsqueda al mismo tiempo.
 Si se encuentran varias reglas aplicables a una frase de búsqueda, se aplican todas estas reglas. Si hay un conflicto entre dos reglas (`rule 1` que aumenta sku1 pero `rule 2` oculta el mismo SKU), entonces la regla aplicada más recientemente (`rule 2`) tiene prioridad.

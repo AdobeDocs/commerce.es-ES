@@ -6,7 +6,7 @@ ht-degree: 1%
 ---
 # Workspace de reglas de comercialización
 
-El área de trabajo *Reglas de comercialización* enumera la selección actual de reglas y su estado, y proporciona acceso a las herramientas que necesita para crear y administrar reglas. Puede asignar el ámbito de las reglas a todas las [vistas de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (globales) o a una sola vista de catálogo. Consulte [Seleccionar vista de catálogo](#select-catalog-view) para ver cómo filtrar por vista de catálogo y crear reglas por vista de catálogo. Desde el espacio de trabajo puede:
+El área de trabajo *Reglas de comercialización* enumera la selección actual de reglas y su estado, y proporciona acceso a las herramientas que necesita para crear y administrar reglas. Puede asignar el ámbito de las reglas a todas las [vistas de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-view) (globales) o a una sola vista de catálogo. Consulte [Seleccionar vista de catálogo](#select-catalog-view) para ver cómo filtrar por vista de catálogo y crear reglas por vista de catálogo. Desde el espacio de trabajo puede:
 
 - Buscar reglas
 - Ver detalles de la regla
@@ -66,7 +66,7 @@ El panel de detalles muestra el nombre de la regla, el estado, las condiciones y
 | Control | Descripción |
 |--- |--- |
 | Añadir regla | Abre el [editor de reglas](add.md). |
-| Vista de catálogo | Filtra la tabla a las reglas que se aplican a la vista de catálogo seleccionada. También establece el ámbito cuando [crea una regla](add.md). Opciones: *Todas las vistas* o una [vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) específica. Ver [Seleccionar vista de catálogo](#select-catalog-view). |
+| Vista de catálogo | Filtra la tabla a las reglas que se aplican a la vista de catálogo seleccionada. También establece el ámbito cuando [crea una regla](add.md). Opciones: *Todas las vistas* o una [vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-view) específica. Ver [Seleccionar vista de catálogo](#select-catalog-view). |
 | Estado | Filtra la lista de reglas por estado. Opciones: Todo, Activo, Inactivo, Programado |
 | ![Selector de columna](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | Especifica las columnas visibles en la cuadrícula. Opciones: Última actualización, Fecha de inicio, Fecha de finalización, Estado |
 | Buscar | Busca una regla por nombre completo o coincidencia parcial. |
@@ -89,7 +89,7 @@ El panel de detalles muestra el nombre de la regla, el estado, las condiciones y
 El selector **[!UICONTROL Catalog view]** de la página Reglas de comercialización hace dos cosas:
 
 1. **Filtra la tabla**: muestra solo las reglas (y sus detalles) que se aplican a la vista de catálogo seleccionada.
-1. **Establece el ámbito de las nuevas reglas**: cuando [crea una regla](add.md), la vista de catálogo seleccionada se usa como ámbito de la regla. Las opciones son *Todas las vistas* o una [vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) específica.
+1. **Establece el ámbito de las nuevas reglas**: cuando [crea una regla](add.md), la vista de catálogo seleccionada se usa como ámbito de la regla. Las opciones son *Todas las vistas* o una [vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/catalog-view) específica.
 
    - **Todas las vistas** - La regla se aplica a todas las vistas del catálogo. El comportamiento de búsqueda y clasificación es el mismo en todas las tiendas que usan el catálogo.
    - **Vista de catálogo**: la regla se aplica solamente a la vista de catálogo seleccionada (por ejemplo, una tienda, región, concesionario o marca). Utilícelo cuando las distintas vistas de catálogo necesiten lógicas de comercialización diferentes.
@@ -104,7 +104,7 @@ Cree reglas por vista de catálogo cuando diferentes tiendas, regiones o marcas 
 - **Varias regiones**: vistas de catálogo por separado para la UE, EE. UU. u otras regiones con reglas de comercialización específicas de la región.
 - **Varias marcas**: cada marca tiene su propia vista de catálogo y usted desea reglas específicas de la marca (por ejemplo, diferentes productos promocionados o de clasificación predeterminada por cada marca).
 
-Los datos de comportamiento que alimentan la [clasificación inteligente](add.md#intelligent-ranking) (como los más vistos, los más comprados y las tendencias) se calculan por vista de catálogo de forma predeterminada. Por lo tanto, las reglas que utilizan la clasificación inteligente reflejan el comportamiento del comprador en la vista de catálogo. Cuando su cuenta tiene un gran número de vistas de catálogo, el sistema puede acumular datos de comportamiento globalmente para mantener el rendimiento; en ese caso, la clasificación puede verse más afectada por las vistas de catálogo de alto tráfico, y la relevancia para las vistas de poco tráfico puede reducirse. Consulte [Límites y límites](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) para conocer los límites actuales.
+Los datos de comportamiento que alimentan la [clasificación inteligente](add.md#intelligent-ranking) (como los más vistos, los más comprados y las tendencias) se calculan por vista de catálogo de forma predeterminada. Por lo tanto, las reglas que utilizan la clasificación inteligente reflejan el comportamiento del comprador en la vista de catálogo. Cuando su cuenta tiene un gran número de vistas de catálogo, el sistema puede acumular datos de comportamiento globalmente para mantener el rendimiento; en ese caso, la clasificación puede verse más afectada por las vistas de catálogo de alto tráfico, y la relevancia para las vistas de poco tráfico puede reducirse. Consulte [Límites y límites](https://experienceleague.adobe.com/es/docs/commerce/optimizer/boundaries-limits) para conocer los límites actuales.
 
 ### Configuración de una regla por vista de catálogo
 

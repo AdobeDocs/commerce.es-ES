@@ -199,6 +199,6 @@ Siga estas recomendaciones al trabajar con capas de catálogo:
 ## Más parecido a esto
 
 * [Vistas de catálogo](catalog-view.md): configure las vistas de catálogo para diferentes tiendas
-* [Imágenes del producto](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals): utilice AEM Assets para las imágenes del producto
+* [Imágenes del producto](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/product-visuals): utilice AEM Assets para las imágenes del producto
 * [Oportunidades](../manage-results/opportunities.md): obtenga información acerca de la optimización con tecnología de IA mediante capas de catálogo
 * [Claves de acceso restringido](restricted-access-keys.md): proteja una vista de catálogo con autenticación de token firmado

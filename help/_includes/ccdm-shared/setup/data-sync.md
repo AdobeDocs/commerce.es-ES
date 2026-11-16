@@ -51,4 +51,4 @@ Si no ve productos específicos en la página **Sincronización de datos**, debe
 
 ## Compruebe que la sincronización de datos funciona
 
-En el caso de los proyectos que utilizan Adobe Commerce como origen de datos de flujo ascendente, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la página Estado de sincronización de fuente de datos. Para obtener más información, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+En el caso de los proyectos que utilizan Adobe Commerce como origen de datos de flujo ascendente, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la página Estado de sincronización de fuente de datos. Para obtener más información, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).

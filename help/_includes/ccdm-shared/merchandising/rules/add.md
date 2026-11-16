@@ -210,7 +210,7 @@ Para mejorar la búsqueda de productos mediante reglas, consulte [reglas de bús
 
 Para obtener información acerca de cómo establecer pesos de búsqueda:
 
-- Para todas las implementaciones de Adobe Commerce, consulte [Resultados de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) en la _Guía de administración de catálogos_.
+- Para todas las implementaciones de Adobe Commerce, consulte [Resultados de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results) en la _Guía de administración de catálogos_.
 - Para implementaciones independientes de Adobe Commerce Optimizer, consulte la [API de REST de metadatos](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) en la _Guía para desarrolladores de servicios de comercialización_.
 
 ### Clasificación manual {#manual-ranking}
@@ -246,7 +246,7 @@ O los eventos se pueden configurar manualmente:
 
 >[!AVAILABILITY]
 >
->Esta característica está en [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Esta característica está en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **La clasificación de atributos** aplica automáticamente una acción **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a cada producto que coincide con una o más condiciones de atributo, sin que sea necesario seleccionar SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con [Clasificación inteligente](#intelligent-ranking) y [Clasificación manual](#manual-ranking), y está disponible para la regla de **Todos los productos**, **reglas de búsqueda** y **reglas de categoría**. Utilícelo para escalar la comercialización en catálogos grandes, por ejemplo, impulsando cada producto de una marca determinada o enterrando cada producto en un color discontinuado.
 
@@ -297,7 +297,7 @@ Una sola regla puede tener hasta 25 condiciones de atributo, el mismo límite qu
 
 ## Editar, ver y eliminar reglas {#edit-view-and-delete-rules}
 
-Para actualizar las propiedades de las reglas existentes, siga estas instrucciones. No se puede cambiar la vista de catálogo (ámbito) de una regla una vez creada; el ámbito se establece al crear la regla. Ver [Seleccionar vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Para actualizar las propiedades de las reglas existentes, siga estas instrucciones. No se puede cambiar la vista de catálogo (ámbito) de una regla una vez creada; el ámbito se establece al crear la regla. Ver [Seleccionar vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Editar regla
 

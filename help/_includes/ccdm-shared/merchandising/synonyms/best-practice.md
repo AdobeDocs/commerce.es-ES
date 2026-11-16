@@ -8,7 +8,7 @@ ht-degree: 0%
 
 A continuación se proporciona una lista de prácticas recomendadas al crear sinónimos.
 
-- El sistema gestiona los errores ortográficos de forma predeterminada. Para incluir palabras que los compradores puedan usar, configure sinónimos. Estas palabras difieren de las especificadas en el catálogo. Usted no quiere perder una venta porque alguien está buscando un &quot;sofá&quot; mientras que su producto aparece como un &quot;sofá&quot;. Capturar una amplia gama de términos de búsqueda introduciendo todas las palabras posibles que los clientes podrían utilizar para encontrar sus productos. Para mejorar los resultados, [establezca los sinónimos como unidireccionales o bidireccionales](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
+- El sistema gestiona los errores ortográficos de forma predeterminada. Para incluir palabras que los compradores puedan usar, configure sinónimos. Estas palabras difieren de las especificadas en el catálogo. Usted no quiere perder una venta porque alguien está buscando un &quot;sofá&quot; mientras que su producto aparece como un &quot;sofá&quot;. Capturar una amplia gama de términos de búsqueda introduciendo todas las palabras posibles que los clientes podrían utilizar para encontrar sus productos. Para mejorar los resultados, [establezca los sinónimos como unidireccionales o bidireccionales](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
 
 - Asigne nombres de marcas y abreviaturas a sus nombres completos, como &quot;HP&quot; a &quot;Hewlett-Packard&quot; y apodos de productos comunes, como &quot;iPhone&quot; a &quot;Apple iPhone&quot;.
 
