@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
+source-git-commit: 80794cd843b054e043bae4129e1092e31b6e5730
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2045'
 ht-degree: 0%
 ---
 # Usuario y Identity Management
@@ -200,6 +200,14 @@ Para agregar desarrolladores y administradores de perfiles de producto, repita e
 >Asigne a los desarrolladores la función Usuario antes de agregarlos como desarrolladores. La función Usuario es necesaria para los permisos básicos de Commerce.
 
 ![Opciones de la ficha Desarrolladores y administradores en Admin Console](./assets/tab-select.png){width="600" zoomable="yes"}
+
+### Resolución de problemas de funciones
+
+Si inicia sesión en el administrador de Adobe Commerce y solo ve la sección [!UICONTROL **Catálogo**], probablemente se le asigne el rol **Usuario**. Si necesita acceder a otras áreas del administrador, debe [agregarse como **desarrollador**](#add-developers-and-product-profile-admins) en Admin Console.
+
+Si no tiene acceso a Admin Console, póngase en contacto con el administrador de perfiles de producto o del sistema de su organización y solicite que le proporcionen los permisos adecuados.
+
+Revise [recursos de rol](#role-resources) para obtener información sobre los permisos concedidos a cada rol.
 
 ## Recursos de roles
 
