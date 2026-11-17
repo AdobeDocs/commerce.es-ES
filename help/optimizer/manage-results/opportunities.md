@@ -1,7 +1,7 @@
 ---
 title: Oportunidades
 description: Identifique oportunidades para impulsar el tráfico, la participación y las conversiones mediante la integración con Adobe Sites Optimizer para mejorar el sitio de forma inteligente y basada en datos.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura de SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura de SaaS administrada por Adobe)."
 TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -39,8 +39,8 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-11-12
-source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
+last-update: 2026-11-16
+source-git-commit: e0c7b4c2eba10c12f0ce728decad6f9be8bae14f
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 0%

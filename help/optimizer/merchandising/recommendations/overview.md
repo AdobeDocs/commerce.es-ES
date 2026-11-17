@@ -2,7 +2,7 @@
 title: Introducción a Recommendations
 description: Recommendations es una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
 TQID: https://experienceleague.adobe.com/dTvy4IlHTOcCHpytRxFkGXCZqUvQwYz4-5q1BXjywII
 product_v2:
@@ -27,8 +27,8 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-last-update: 2026-11-12
-source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
+last-update: 2026-11-16
+source-git-commit: e0c7b4c2eba10c12f0ce728decad6f9be8bae14f
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
