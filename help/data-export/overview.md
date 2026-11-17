@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # Guía de [!DNL SaaS Data Export]
@@ -47,7 +47,6 @@ La exportación de datos SaaS recopila y exporta varios tipos de datos, denomina
 - **Fuentes de entidades de catálogo** datos de productos agregados. Los datos incluyen productos, atributos de productos, precios de productos, variaciones de productos, categorías, permisos de categorías y permisos de productos.
 - La fuente **Ámbitos** agrega datos para grupos de clientes, sitios web, tiendas y vistas de tiendas.
 - **Fuente de pedidos de ventas** agrega datos de pedidos, incluidas las entidades relacionadas como facturas, envíos, notas de abono, etc.
-- **Fuente de inventario de varios Source** agrega datos sobre los elementos de estado de inventario de stock.
 
 La exportación de datos SaaS se entrega como una extensión PHP que admite sincronización automática y manual:
 

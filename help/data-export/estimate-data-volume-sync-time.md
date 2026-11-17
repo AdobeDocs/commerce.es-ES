@@ -1,6 +1,6 @@
 ---
 title: Estimar el volumen de datos y el tiempo de transmisión
-description: Aprenda a calcular el volumen de datos y el tiempo de transmisión necesarios para que la herramienta  [!DNL data export]  sincronice los datos de fuente entre Adobe Commerce y los servicios conectados.
+description: Aprenda a calcular el volumen de datos y el tiempo de transmisión necesarios para que la herramienta [!DNL data export] sincronice los datos de fuente entre Adobe Commerce y los servicios conectados.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
@@ -27,13 +27,11 @@ role_v2:
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Calcular el volumen de datos y el tiempo de transmisión para la sincronización de datos
 
 Adobe recomienda estimar el volumen de datos y el tiempo de sincronización antes de iniciar cualquier sincronización de fuente de datos para garantizar una programación sin problemas y evitar interrupciones en las operaciones del sitio. Esta estimación es importante a la hora de planificar sincronizaciones iniciales o actualizaciones de catálogos a gran escala, como cambios masivos de precios.
@@ -72,7 +70,6 @@ Utilice los valores y las fórmulas de la tabla siguiente para calcular el volum
 | Anulaciones de productos | Productos con permisos o en catálogo compartido (P): 10000, Grupos de clientes afectados (CG): 5, Sitios web asignados WS: 2 | P \* WS * CG = 100000 | 100000 / Tamaño del lote (100) = 1000 solicitudes | (1000 solicitudes * 0,5 segundos por solicitud) / 60 = 8,3 minutos |
 | Variantes del producto | Variantes (productos secundarios) asignadas a productos configurables (PV): 100000 | PV = 100000 | 100000 / Tamaño del lote (100) = 1000 solicitudes | (1000 solicitudes * 0,5 segundos por solicitud) / 60 = 8,3 minutos |
 | Permisos de categoría | Recuento de todos los permisos de categoría + 4 registros de reserva (CP): 10000 | CP = 10000 | 10000 / Tamaño del lote (100) = 100 solicitudes | (100 solicitudes * 0,5 segundos por solicitud) / 60 = 0,8 minutos (50 segundos) |
-| Estado de stock de inventario | Productos (P): 10000, Existencias Productos asignados a (S): 5 (suponiendo que cada producto se asigna a cada stock) | P * S = 50000 | 50000 / Tamaño del lote (100) = 500 solicitudes | (500 solicitudes * 0,5 segundos por solicitud) / 60 = 4,2 minutos |
 | Pedidos de venta | Todos los registros de pedidos (facturas, envíos, etc.) (PC): 10000 | SO = 10000 | 10000 / Tamaño del lote (100) = 100 solicitudes | (100 solicitudes * 0,5 segundos por solicitud) / 60 = 0,8 minutos (50 segundos) |
 
 >[!MORELIKETHIS]
