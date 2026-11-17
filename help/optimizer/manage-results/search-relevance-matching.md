@@ -3,7 +3,7 @@ title: Coincidencia y clasificación de búsqueda
 description: Aprenda cómo [!DNL Adobe Commerce Optimizer] prioriza las coincidencias exactas y cercanas, las coincidencias del mismo campo y las coincidencias entre campos, y cómo la clasificación interactúa con los pesos de búsqueda, la clasificación inteligente y las reglas de comercialización.
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce as a Cloud Service y a [!DNL Adobe Commerce Optimizer] proyectos (infraestructura SaaS administrada por Adobe)."
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
