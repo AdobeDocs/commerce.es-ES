@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/settings.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Configuración de comercialización
 
 Use el área de trabajo *Configuración* para configurar la búsqueda y la detección de productos en su tienda. Las pestañas disponibles son las siguientes:
@@ -118,7 +128,7 @@ Una vez habilitada la búsqueda semántica, puede ajustar lo siguiente en la mis
 
 - **[!UICONTROL Semantic boost]**: para priorizar los resultados semánticamente relevantes en la clasificación, aplique un impulso. Aumente el valor cuando las coincidencias semánticas deban tener un mayor peso en el conjunto de resultados; bájelo cuando los resultados sean demasiado amplios.
 - **[!UICONTROL Similarity threshold]**: establezca la puntuación de similitud mínima (como porcentaje) para una coincidencia semántica. Los valores más bajos devuelven más resultados (mayor recuperación), pero pueden incluir coincidencias más débiles. Los valores más altos devuelven menos coincidencias y más ajustadas (mayor precisión).
-- **[!UICONTROL Fuzzy search]**: para buscar coincidencias cercanas para las consultas de búsqueda y corregir errores tipográficos y variaciones menores, active **2&rbrace;.**
+- **[!UICONTROL Fuzzy search]**: para buscar coincidencias cercanas para las consultas de búsqueda y corregir errores tipográficos y variaciones menores, active **2}.**
 - **[!UICONTROL Fuzzy search similarity threshold]**: establezca la similitud mínima (como porcentaje) necesaria para que aparezcan las coincidencias aproximadas. Los umbrales más bajos devuelven coincidencias más aproximadas; eleve el umbral si los resultados difusos parecen demasiado amplios.
 
 >[!NOTE]

@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Sincronización de catálogo
 
 La página **Sincronización de datos** muestra una descripción general del estado de sincronización de los datos de producto transferidos desde la fuente de datos (el catálogo de Commerce, el sistema de administración de información de producto (PIM), el sistema de planificación de recursos empresariales (ERP), etc. existentes) a la capa de datos de los servicios de comercialización.
@@ -51,4 +61,4 @@ Si no ve productos específicos en la página **Sincronización de datos**, debe
 
 ## Compruebe que la sincronización de datos funciona
 
-En el caso de los proyectos que utilizan Adobe Commerce como origen de datos de flujo ascendente, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la página Estado de sincronización de fuente de datos. Para obtener más información, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+En el caso de los proyectos que utilizan Adobe Commerce como origen de datos de flujo ascendente, puede supervisar el proceso de exportación de datos e iniciar operaciones de resincronización desde la página Estado de sincronización de fuente de datos. Para obtener más información, consulte [Supervisión del estado de sincronización de fuentes de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).

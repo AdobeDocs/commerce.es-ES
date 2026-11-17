@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '2823'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Métricas de éxito
 
 Esta página proporciona información general sobre las métricas de rendimiento clave para su tienda. El objetivo es comprender los resultados de la implementación de los servicios de comercialización con el modelo de datos de catálogo componible (CCDM) para identificar oportunidades de crecimiento y áreas de optimización.
@@ -68,7 +78,7 @@ Los metadatos de C2PA son evidentes y legibles por el equipo y se basan en el [e
 
 ![Inspeccionar muestra](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-Más información sobre [Transparencia del contenido de IA generativa](https://experienceleague.adobe.com/es/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+Más información sobre [Transparencia del contenido de IA generativa](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Uso conjunto de métricas de éxito y Sites Optimizer
 
