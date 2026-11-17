@@ -6,7 +6,7 @@ ht-degree: 10%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
+https://github.com/Adobe-Enterprise-Docs/commerce.es-ES/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -22,7 +22,7 @@ Los servicios de comercialización con el modelo de datos de catálogo maquetabl
 
 >[!NOTE]
 >
->La recopilación de datos no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/privacy/experience-cloud.html).
+>La recopilación de datos no incluye información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/es/privacy/experience-cloud.html).
 
 La página **Eventos** le permite observar los datos de evento de tienda que se están recopilando. Ver la recopilación de datos de evento permite a los comerciantes comprobar que han implementado correctamente los eventos de tienda y que estos se han capturado correctamente. Los comerciantes pueden utilizar esta página para identificar posibles problemas y tomar medidas para resolver cualquier problema de evento.
 
@@ -184,4 +184,4 @@ En esta tabla se describen los eventos utilizados por cada tipo de recomendació
 
 ## Asistencia
 
-Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Si nota discrepancias en los datos o si las recomendaciones y los resultados de la búsqueda no funcionan según lo esperado, [envíe un vale de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

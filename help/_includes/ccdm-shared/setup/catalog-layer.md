@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/catalog-layer.md
+https://github.com/Adobe-Enterprise-Docs/commerce.es-ES/blob/main/help/_includes/ccdm-shared/setup/catalog-layer.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -209,6 +209,6 @@ Siga estas recomendaciones al trabajar con capas de catálogo:
 ## Más parecido a esto
 
 * [Vistas de catálogo](catalog-view.md): configure las vistas de catálogo para diferentes tiendas
-* [Imágenes del producto](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals): utilice AEM Assets para las imágenes del producto
+* [Imágenes del producto](https://experienceleague.adobe.com/es/docs/commerce/optimizer/setup/product-visuals): utilice AEM Assets para las imágenes del producto
 * [Oportunidades](../manage-results/opportunities.md): obtenga información acerca de la optimización con tecnología de IA mediante capas de catálogo
 * [Claves de acceso restringido](restricted-access-keys.md): proteja una vista de catálogo con autenticación de token firmado
