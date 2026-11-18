@@ -99,7 +99,7 @@ Una regla de supresión de búsqueda bloquea los resultados de las consultas que
 
 1. Complete [los pasos de programación y publicación](#schedule-publish-search-suppression).
 
-Para ver el ámbito y las interacciones con otras reglas, consulte [Reglas de supresión de búsqueda](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+Para ver el ámbito y las interacciones con otras reglas, consulte [Reglas de supresión de búsqueda](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
 
 >[!TAB Regla de categoría]
 
@@ -170,7 +170,7 @@ El ámbito de la vista de catálogo no se puede cambiar después de crearlo. Par
 1. Seleccione **Deshabilitar regla** para detener la aplicación de la restricción de búsqueda o **Habilitar regla** para aplicarla según sus fechas configuradas.
 1. Confirme el estado de la regla en el espacio de trabajo.
 
-Al deshabilitar una regla se conserva su configuración. Para cambiar sus condiciones o programación, edite y publique la regla. Consulte [Workspace de reglas de comercialización](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace) para obtener más información.
+Al deshabilitar una regla se conserva su configuración. Para cambiar sus condiciones o programación, edite y publique la regla. Consulte [Workspace de reglas de comercialización](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/workspace) para obtener más información.
 
 ### Clasificación inteligente {#intelligent-ranking}
 
@@ -269,7 +269,7 @@ Para mejorar la búsqueda de productos mediante reglas, consulte [reglas de bús
 
 Para obtener información acerca de cómo establecer pesos de búsqueda:
 
-- Para todas las implementaciones de Adobe Commerce, consulte [Resultados de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) en la _Guía de administración de catálogos_.
+- Para todas las implementaciones de Adobe Commerce, consulte [Resultados de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/search/search-results) en la _Guía de administración de catálogos_.
 - Para implementaciones independientes de Adobe Commerce Optimizer, consulte la [API de REST de metadatos](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) en la _Guía para desarrolladores de servicios de comercialización_.
 
 ### Clasificación manual {#manual-ranking}
@@ -307,7 +307,7 @@ Cuando **[!UICONTROL Hide a product]** está configurado en la **regla de búsqu
 
 >[!AVAILABILITY]
 >
->Esta característica está en [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Esta característica está en [beta](https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **La clasificación de atributos** aplica automáticamente una acción **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a cada producto que coincide con una o más condiciones de atributo, sin que sea necesario seleccionar SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con [Clasificación inteligente](#intelligent-ranking) y [Clasificación manual](#manual-ranking), y está disponible para la regla de **Todos los productos**, **reglas de búsqueda** y **reglas de categoría**. Utilícelo para escalar la comercialización en catálogos grandes, por ejemplo, impulsando cada producto de una marca determinada o enterrando cada producto en un color discontinuado.
 
@@ -362,7 +362,7 @@ Para las reglas de supresión de búsqueda, sigue [Programar y publicar una regl
 
 ## Editar, ver y eliminar reglas {#edit-view-and-delete-rules}
 
-Para actualizar las propiedades de las reglas existentes, siga estas instrucciones. No se puede cambiar la vista de catálogo (ámbito) de una regla una vez creada; el ámbito se establece al crear la regla. Ver [Seleccionar vista de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Para actualizar las propiedades de las reglas existentes, siga estas instrucciones. No se puede cambiar la vista de catálogo (ámbito) de una regla una vez creada; el ámbito se establece al crear la regla. Ver [Seleccionar vista de catálogo](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Editar regla
 
