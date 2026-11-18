@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4826'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.es-ES/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# Crear y administrar reglas
-
-La creación de una regla requiere la selección de la vista de catálogo en la que se aplica la regla, la configuración de la descripción, el tipo, la definición de sus condiciones y clasificación, la prueba de los resultados y la publicación de la regla.
+La creación de una regla requiere la selección de la vista de catálogo en la que se aplica la regla, la configuración de la descripción y el tipo de la regla (búsqueda, supresión de búsqueda, búsqueda predeterminada o categoría), la definición de sus condiciones y clasificación cuando corresponda, la prueba de los resultados si hay una vista previa disponible y la publicación de la regla. Las reglas de supresión de búsqueda no muestran una previsualización.
 
 ## Crear una regla {#create-a-rule}
 
@@ -37,8 +25,9 @@ Cada tipo de regla tiene un icono de información en el editor con una breve exp
 | **Regla de búsqueda predeterminada** | Clasificación y comercialización predeterminadas en todas las listas de productos cuando no se aplica ninguna regla de categoría o búsqueda más específica. Solo puede crear una de estas reglas; no puede contener condiciones. |
 | **Regla de categoría** | Aplica la comercialización y la clasificación a una sola categoría, controlando el pedido del producto en esa página de categoría. |
 | **Regla de búsqueda** | Aplica la comercialización y la clasificación cuando los compradores ejecutan una búsqueda que coincide con las condiciones de consulta de la regla. |
+| **Regla de supresión de búsqueda** | Evita que las consultas de búsqueda coincidentes devuelvan productos, por lo que la tienda muestra una página de resultados de búsqueda con cero productos. La visibilidad del producto a través de la navegación de categorías, páginas de comercialización, recomendaciones y direcciones URL directas del producto no se ve afectada. |
 
-En la sección **Generar la regla**, define el nombre de la regla, la programación, si la regla se aplica a todos los listados o a condiciones de búsqueda específicas y los tipos de clasificación.
+En la sección **Genere su regla**, define el nombre de la regla, la programación, el tipo de regla y cualquier condición y clasificación aplicables. Las reglas de supresión de búsqueda bloquean las consultas de coincidencia en lugar de clasificar los productos.
 
 1. En el campo **[!UICONTROL Name]**, escriba un nombre para la regla. Todos los nombres de reglas deben ser únicos.
 1. En el campo **[!UICONTROL Description]**, escriba una descripción para la regla.
@@ -90,6 +79,28 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
 1. Para agregar otra condición, haga clic en **Agregar condición** y repita el proceso.
 1. De manera opcional, establezca [Clasificación inteligente](#intelligent-ranking), [Clasificación manual](#manual-ranking) o [Clasificación de atributos](#attribute-ranking) tal como se describe en las secciones siguientes. Los mismos controles se aplican a las páginas de categorías, con todas las diferencias.
 
+>[!TAB Regla de supresión de búsqueda]
+
+Una regla de supresión de búsqueda bloquea los resultados de las consultas que cumplen sus condiciones. No requiere acciones de clasificación a nivel de producto. Las consultas coincidentes no devuelven ningún producto y la tienda muestra una página de resultados de búsqueda sin ningún producto.
+
+>[!NOTE]
+>
+>No se muestra una vista previa de las reglas de supresión de búsqueda. Revise las condiciones de la consulta antes de publicar y, a continuación, compruebe las búsquedas coincidentes y no coincidentes en la tienda después de que la regla se active.
+
+1. En **[!UICONTROL Rule applies to]**, seleccione **regla de supresión de búsqueda**.
+1. Seleccione una condición de consulta e introduzca el texto que desea que coincida:
+
+   | Condición | Cuando la consulta está bloqueada | Ejemplo |
+   | --- | --- | --- |
+   | **La consulta es** | Toda la consulta coincide con el texto especificado. | `restricted item` bloquea esa consulta exacta. |
+   | **La consulta contiene** | La consulta incluye el texto especificado. | `restricted brand` bloques `buy restricted brand shoes`. |
+   | **La consulta comienza con** | La consulta comienza con el texto especificado. | `restricted brand` bloques `restricted brand accessories`. |
+   | **La consulta finaliza con** | La consulta finaliza con el texto especificado. | `restricted item` bloques `discount restricted item`. |
+
+1. Complete [los pasos de programación y publicación](#schedule-publish-search-suppression).
+
+Para ver el ámbito y las interacciones con otras reglas, consulte [Reglas de supresión de búsqueda](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+
 >[!TAB Regla de categoría]
 
 Las reglas de categoría controlan cómo se ordenan los productos en **páginas de categoría**. Combine **reglas de categoría** con **clasificación inteligente** y **acciones manuales** para revisar la detección, ejecutar promociones y alinear páginas de categoría con su estrategia.
@@ -122,6 +133,44 @@ Cuando varias categorías tengan nombres similares, utilice la ruta de acceso a 
    ![Menú de acción de categoría](/help/assets/ccdm-shared/rules/category-action-menu.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+### Crear y administrar reglas de supresión de búsqueda {#search-suppression-rules}
+
+Utilice este flujo de trabajo para bloquear los términos de búsqueda sin cambiar la visibilidad del producto en ninguna otra parte de la tienda.
+
+1. Abra **Reglas de comercialización** > **Reglas de comercialización**.
+1. Seleccione **Todas las vistas** o la **Vista de catálogo** específica donde la restricción sea necesaria.
+1. Haga clic en **[!UICONTROL Create rule]**.
+1. Escriba un **Nombre** único y una **Descripción** que explique la restricción.
+1. En **[!UICONTROL Rule applies to]**, seleccione **regla de supresión de búsqueda**.
+1. Configurar **La consulta es**, **La consulta contiene**, **La consulta comienza con** o **La consulta termina con**, como se describe en la ficha **Regla de supresión de búsqueda** anterior.
+1. Complete [los pasos de programación y publicación](#schedule-publish-search-suppression).
+
+#### Programar y publicar una regla de supresión de búsqueda {#schedule-publish-search-suppression}
+
+1. En **[!UICONTROL Date range]**, establezca la fecha de inicio y, si es necesario, la fecha de finalización de la restricción. Utilice una fecha de inicio futura para programar la regla.
+1. Revise las condiciones de la consulta.
+1. Haga clic en **Guardar y publicar**.
+1. Busque la regla en el área de trabajo de *Reglas de comercialización* y confirme su estado y fechas. Una regla programada surte efecto durante su intervalo de fechas configurado cuando está habilitada.
+1. Una vez que la regla se active, confirme que la búsqueda de tienda coincidente muestre una página de resultados de búsqueda con cero productos. Los resultados de las consultas en caché pueden tardar hasta 15 minutos en actualizarse.
+
+#### Editar una regla de supresión de búsqueda
+
+1. En el área de trabajo *Reglas de comercialización*, busque la regla y abra **Más** (...) > **Editar**.
+1. Actualice las condiciones, el nombre, la descripción o el intervalo de fechas de la consulta según sea necesario.
+1. Revise las condiciones de consulta actualizadas.
+1. Haga clic en **Guardar y publicar** para publicar los cambios.
+1. Una vez que la regla actualizada se active, comprueba las búsquedas coincidentes y no coincidentes en la tienda. Los resultados de las consultas en caché pueden tardar hasta 15 minutos en actualizarse.
+
+El ámbito de la vista de catálogo no se puede cambiar después de crearlo. Para aplicar la restricción a otro ámbito, cree una regla en esa vista de catálogo.
+
+#### Habilitar o deshabilitar una regla de supresión de búsqueda
+
+1. En el área de trabajo *Reglas de comercialización*, busque la regla y abra **Más** (...) menú.
+1. Seleccione **Deshabilitar regla** para detener la aplicación de la restricción de búsqueda o **Habilitar regla** para aplicarla según sus fechas configuradas.
+1. Confirme el estado de la regla en el espacio de trabajo.
+
+Al deshabilitar una regla se conserva su configuración. Para cambiar sus condiciones o programación, edite y publique la regla. Consulte [Workspace de reglas de comercialización](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/workspace) para obtener más información.
 
 ### Clasificación inteligente {#intelligent-ranking}
 
@@ -252,6 +301,8 @@ O los eventos se pueden configurar manualmente:
 
 1. Para varios eventos, elija cualquier otro evento que desee almacenar en déclencheur cuando se cumplan las condiciones.
 
+Cuando **[!UICONTROL Hide a product]** está configurado en la **regla de búsqueda predeterminada**, los productos excluidos también se eliminan de **sugerencias de búsqueda y autocompletar**. Para bloquear una consulta completa en lugar de los productos seleccionados, usa una [regla de supresión de búsqueda](#search-suppression-rules).
+
 ### Clasificación de atributos {#attribute-ranking}
 
 >[!AVAILABILITY]
@@ -277,6 +328,8 @@ O los eventos se pueden configurar manualmente:
 
 El anclaje no está disponible en la clasificación de atributos, ya que el anclaje asigna un producto a una posición exacta, mientras que una condición de atributo puede coincidir con muchos productos a la vez. Para fijar un producto específico, usa [la clasificación manual](#manual-ranking) directamente en ese SKU.
 
+Las condiciones de clasificación de atributos también se denominan **Eventos de comercialización basados en atributos**. Los productos excluidos por una acción **[!UICONTROL Hide]** en la **regla de búsqueda predeterminada** también se excluyen de las **sugerencias de búsqueda y autocompletar**, al igual que las exclusiones manuales en esa regla. Estas exclusiones de nivel de producto difieren de la [supresión de búsqueda](#search-suppression-rules), que bloquea todos los resultados de una consulta coincidente.
+
 #### Interacción de la clasificación de atributos con la clasificación inteligente
 
 Cuando una regla combina una estrategia de clasificación inteligente con una o más condiciones de atributo, la acción de atributo tiene prioridad para cualquier producto que coincida. La clasificación inteligente sigue encargando el resto de los productos sin coincidencias.
@@ -293,6 +346,8 @@ Una sola regla puede tener hasta 25 condiciones de atributo, el mismo límite qu
 
 ### Finalización de la regla {#finalizing-the-rule}
 
+Para las reglas de supresión de búsqueda, sigue [Programar y publicar una regla de supresión de búsqueda](#schedule-publish-search-suppression) en su lugar. Estas reglas no muestran una previsualización.
+
 1. Examine los resultados de la regla en el panel de prueba.
 1. Si la regla tiene varias consultas, pruebe cada una de ellas que pueda verse afectada por la regla.
 1. Una vez finalizado, haga clic en **Guardar y publicar**.
@@ -303,7 +358,7 @@ Una sola regla puede tener hasta 25 condiciones de atributo, el mismo límite qu
 
 >[!NOTE]
 >
->Las reglas y los productos clasificados manualmente se aplican a los resultados de **search** cuando se selecciona el criterio de ordenación predeterminado, &quot;Ordenar por: Más relevante&quot;. Si un comprador cambia el criterio de ordenación a algo parecido a ordenar por nombre, las reglas y las clasificaciones manuales ya no estarán en vigor. Para los anuncios de **category**, el comportamiento de ordenación predeterminada se describe en [Clasificación manual](#manual-ranking).
+>Las reglas de clasificación y los productos clasificados manualmente se aplican a los resultados de **search** cuando se selecciona el criterio de ordenación predeterminado, &quot;Ordenar por: Más relevante&quot;. Si un comprador cambia el criterio de ordenación a algo como ordenar por nombre, las reglas de clasificación y las clasificaciones manuales ya no están en vigor. Este comportamiento de clasificación no permite que una consulta bloqueada omita la supresión de la búsqueda. Para los anuncios de **category**, el comportamiento de ordenación predeterminada se describe en [Clasificación manual](#manual-ranking).
 
 ## Editar, ver y eliminar reglas {#edit-view-and-delete-rules}
 
@@ -313,9 +368,9 @@ Para actualizar las propiedades de las reglas existentes, siga estas instruccion
 
 1. En el área de trabajo *Reglas de comercialización*, busque la regla en la cuadrícula que desea editar y haga clic en **Más** (...) opciones.
 1. Haga clic en **Editar** para acceder al editor de reglas.
-1. Actualice las condiciones, los operadores y los eventos según sea necesario.
+1. Actualice las condiciones, los operadores y los eventos según corresponda al tipo de regla. Las reglas de supresión de búsqueda utilizan condiciones de consulta en lugar de eventos de clasificación.
 1. Actualice los campos Nombre, Fecha de inicio y finalización y Descripción según sea necesario. Todos los nombres de reglas deben ser únicos.
-1. Pruebe la regla.
+1. Prueba de la regla si hay una previsualización disponible. Para las reglas de supresión de búsqueda, revise las condiciones de consulta en su lugar y verifique las búsquedas de tienda una vez que la regla actualizada se haya activado.
 1. Publique los cambios.
 La regla se agrega a la lista del área de trabajo *Reglas*. Aunque las reglas activas entran en vigor inmediatamente, los resultados de las consultas en caché de la tienda pueden tardar hasta 15 minutos en actualizarse.
 
@@ -386,7 +441,7 @@ Esta opción proporciona una forma rápida de ver todos los parámetros de regla
 | Campo | Descripción |
 | --- | --- |
 | Nombre | Nombre de la regla. Los nombres de las reglas deben ser únicos. |
-| Tipo de regla | **Regla de búsqueda predeterminada**, **Consulta** (condiciones de búsqueda específicas) o **Categoría** (páginas de categoría), según **La regla se aplica a**. |
+| Tipo de regla | **Regla de búsqueda predeterminada**, **Consulta** (condiciones de búsqueda específicas), **Regla de supresión de búsqueda** (bloques que coinciden con consultas) o **Categoría** (páginas de categoría), según **La regla se aplica a**. |
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |
 | Fecha de finalización | La fecha de finalización de la regla, si está programada. |
 | Descripción | Breve descripción de la regla. |

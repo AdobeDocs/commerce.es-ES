@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '1209'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.es-ES/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# Reglas de comercialización
-
-Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** a través de la **regla de búsqueda predeterminada** y en **páginas de categoría**. Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales.
+Las reglas de comercialización combinan lógica con acciones para dar forma al aspecto de los productos en **resultados de búsqueda**, en **listados de productos predeterminados** a través de la **regla de búsqueda predeterminada** y en **páginas de categoría**. Puedes aumentar, enterrar, fijar u ocultar productos y aplicar **clasificación inteligente** para que los anuncios reflejen tus objetivos comerciales. Use **reglas de supresión de búsqueda** para evitar que las consultas de búsqueda coincidentes devuelvan resultados.
 
 Cada **regla de búsqueda** tiene tres componentes principales:
 
@@ -26,7 +14,26 @@ Cada **regla de búsqueda** tiene tres componentes principales:
 
 **Las reglas de categoría** utilizan **selección de categoría** en lugar de las condiciones de consulta de búsqueda; la clasificación inteligente y la clasificación manual funcionan de la misma manera que para la búsqueda, con diferencias indicadas en [Crear y administrar reglas](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add).
 
-Puede combinar varias condiciones y acciones para las reglas de búsqueda y programar cualquier regla para que esté activa durante un periodo. También puede establecer una **regla de búsqueda predeterminada** que se aplique cuando no se aplique una regla de categoría o búsqueda más específica.
+Puede combinar varias condiciones y acciones para reglas de búsqueda y programar reglas para que estén activas durante un periodo. Las reglas de supresión de búsqueda utilizan condiciones de consulta para bloquear resultados en lugar de clasificar productos. También puede establecer una **regla de búsqueda predeterminada** que se aplique cuando no se aplique una regla de categoría o búsqueda más específica.
+
+## Reglas de supresión de búsqueda {#search-suppression-rules}
+
+Las reglas de supresión de búsqueda son un tipo de regla de comercialización que bloquea los resultados de las consultas de comprador coincidentes. Estas búsquedas no devuelven ningún producto en la tienda. Una vez que la regla se active, verifique la presentación real sin resultados de la tienda.
+
+Utilice la supresión de búsqueda para restricciones de búsqueda reglamentarias, restricciones de marca o términos específicos que no deban devolver resultados. Las condiciones admiten **La consulta es**, **La consulta contiene**, **La consulta comienza con** y **La consulta termina con**. Para ver los pasos de configuración y administración, consulte [Crear y administrar reglas de supresión de búsqueda](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Para ver ejemplos, consulte [Prácticas recomendadas](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/best-practice#search-suppression-best-practices).
+
+La supresión de la búsqueda afecta únicamente a la experiencia de búsqueda. No cambia la visibilidad del producto a través de la navegación por categorías, páginas de comercialización, recomendaciones ni direcciones URL directas del producto. No sustituye a los controles de acceso o a la visibilidad del producto en todo el catálogo.
+
+### Interacción con otras capacidades de comercialización
+
+| Capacidad | Interacción con la supresión de búsqueda |
+| --- | --- |
+| Buscar reglas | Para una consulta que coincide con una regla de supresión de búsqueda activa, la tienda muestra una página de resultados de búsqueda con cero productos. Las acciones de clasificación en una regla de búsqueda no anulan la supresión. Las consultas que no están bloqueadas siguen utilizando reglas de comercialización aplicables. |
+| Reglas de categoría | La navegación por categorías y la comercialización de categorías no se ven afectadas por la supresión de búsquedas. Un producto puede permanecer visible en una categoría incluso cuando se bloquea una consulta de búsqueda. |
+| Regla de búsqueda predeterminada | La supresión de la búsqueda bloquea las consultas que coinciden, mientras que la regla de búsqueda predeterminada define la clasificación predeterminada y las exclusiones de productos. La clasificación predeterminada no restaura los resultados de una consulta bloqueada. |
+| Eventos de comercialización basados en atributos | Estos eventos aplican acciones a productos que cumplen las condiciones de los atributos, tal como se describe en [Clasificación de atributos](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking). En su lugar, la supresión de la búsqueda bloquea los resultados de una consulta coincidente, independientemente de qué productos coincidirían. |
+
+Los productos excluidos por la **regla de búsqueda predeterminada**, a través de exclusiones manuales o de **Eventos de comercialización basados en atributos** con una acción **Ocultar**, también se excluyen de **sugerencias de búsqueda y autocompletar**. Esto mantiene la coherencia de las exclusiones de productos en toda la experiencia de búsqueda y es independiente del bloqueo de consultas con una regla de supresión de búsqueda.
 
 ## Reglas de categoría {#category-rules}
 
@@ -65,7 +72,7 @@ Puede establecer una **regla de búsqueda predeterminada** que se aplique cuando
 
 ## Orden de prioridad con varias reglas
 
-Lo siguiente se aplica a **reglas de búsqueda** y a cómo interactúan para una búsqueda determinada. Se aplican **reglas de categoría** por categoría; consulte [Crear y administrar reglas](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add) para ver cómo se ajustan a las reglas predeterminadas y de búsqueda.
+En esta sección se explica cómo se aplican las reglas de búsqueda de clasificación a la consulta de un comprador y cómo interactúan entre sí. La clasificación de reglas de búsqueda no anula la supresión de búsqueda: cuando una regla de supresión activa coincide con una consulta, la tienda no devuelve ningún producto para esa búsqueda. Las reglas de categoría se aplican a las categorías seleccionadas. Consulte [Crear y administrar reglas](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add) para obtener detalles acerca de la búsqueda, la categoría y las reglas de búsqueda predeterminadas.
 
 Solo se aplica una regla de búsqueda a un término de búsqueda al mismo tiempo.
 Si se encuentran varias reglas aplicables a una frase de búsqueda, se aplican todas estas reglas. Si hay un conflicto entre dos reglas (`rule 1` que aumenta sku1 pero `rule 2` oculta el mismo SKU), entonces la regla aplicada más recientemente (`rule 2`) tiene prioridad.

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: e3be9274ca8db80d3559b24a5c8be36f5d61b2ba
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 1%
+source-wordcount: '1154'
+ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
@@ -23,6 +23,8 @@ El área de trabajo *Reglas de comercialización* enumera la selección actual d
 - Activar/desactivar reglas
 - Eliminar reglas
 - Acceso al editor de reglas
+
+El área de trabajo también incluye **[reglas de supresión de búsqueda](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**. Utilice los mismos controles de administración de reglas para editar, programar, habilitar o deshabilitar estas reglas. Para configurar las condiciones de consulta y publicar cambios, vea [Crear y administrar reglas de supresión de búsqueda](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). No se muestra una vista previa de las reglas de supresión de búsqueda.
 
 ![Workspace de reglas de comercialización](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -60,6 +62,14 @@ El panel de detalles muestra el nombre de la regla, el estado, las condiciones y
    - Editar regla
    - Eliminar regla
    - Activar/Desactivar regla
+
+## Habilitar o deshabilitar una regla {#enable-disable-rule}
+
+1. Busque la regla en el área de trabajo de *Reglas de comercialización*.
+1. Abrir **Más** (...) y seleccione **Habilitar regla** o **Deshabilitar regla**. También puede usar el control **Enabled** en el panel de detalles.
+1. Confirme el estado actualizado. Una regla habilitada con una fecha de inicio futura permanece programada hasta esa fecha.
+
+Para una **regla de supresión de búsqueda**, al deshabilitar la regla se impide que esa regla bloquee consultas coincidentes sin eliminar sus condiciones. Otras reglas de supresión activas pueden seguir bloqueando esas consultas. Para cambiar las condiciones o fechas de la regla, selecciona **Editar**, revisa los cambios y haz clic en **Guardar y publicar**.
 
 ## Descripciones de columna
 
@@ -124,6 +134,6 @@ Los datos de comportamiento que alimentan la [clasificación inteligente](add.md
    La regla que cree se aplicará a la vista de catálogo seleccionada.
 1. Genere la regla en el [editor de reglas](add.md).
 
-   En el editor, defina las condiciones, los eventos y los detalles. La regla solo se aplica a los resultados de búsqueda en esa vista de catálogo.
+   En el editor, defina las condiciones, los eventos y los detalles que se aplican al tipo de regla. Las reglas de supresión de búsqueda utilizan condiciones de consulta para bloquear los resultados solo en la vista de catálogo seleccionada. No cambian la visibilidad del producto a través de la navegación por categorías, páginas de comercialización, recomendaciones o direcciones URL directas del producto.
 
 Una vez creada una regla, no se puede cambiar la vista de catálogo (ámbito). Para aplicar una lógica similar a otra vista de catálogo, cree una nueva regla y seleccione esa vista de catálogo antes de crear.
