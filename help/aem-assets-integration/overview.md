@@ -142,7 +142,7 @@ Seleccione la implementación para seguir los pasos necesarios en orden:
 
 [!BADGE Solo SaaS]{type=Positive tooltip="Solo se aplica a proyectos de Adobe Commerce as a Cloud Service (infraestructura de SaaS administrada por Adobe)."}
 
-1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2}; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
+1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2&rbrace;; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
 1. [Configure los permisos de usuario de IMS](get-started/permissions.md) para el Selector de recursos y la selección de dominios y el entorno de AEM.
 
@@ -154,7 +154,7 @@ Seleccione la implementación para seguir los pasos necesarios en orden:
 
 [!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."}
 
-1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2}; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
+1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2&rbrace;; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
 1. [Instale paquetes de Adobe Commerce](get-started/configure-commerce.md) para agregar la extensión y generar las credenciales y conexiones necesarias.
 
