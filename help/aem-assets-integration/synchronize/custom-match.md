@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Coincidencia automática personalizada
 
-Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
+Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
+
+>[!NOTE]
+>
+>Si la integración personalizada de emparejador o Adobe Developer App Builder requiere que las API de AEM Assets administren recursos o metadatos mediante programación, se requiere el derecho de Ultimate de AEM Assets. Este requisito depende de las API que utilice la aplicación, no solo del uso de App Builder. Consulte [Límites de imágenes de productos](../../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Configurar la coincidencia automática personalizada
 
-1. En el Administrador de Commerce, vaya a **[!UICONTROL Store]** > Configuración > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Desde Commerce Admin, vaya a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Seleccione **[!UICONTROL Custom Matcher]** como regla coincidente.
 
@@ -129,11 +133,15 @@ Puede descargar el archivo de `workspace.json` desde [Adobe Developer Console](h
 
 1. Haga clic en **[!UICONTROL Save Config]**.
 
+Una vez aplicada la configuración, [verifique la integración](../get-started/setup-synchronization.md#verify-the-integration) con un recurso aprobado y un producto que su emparejador personalizado asocie con él.
+
+[!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} Si la sincronización falla, revise los [registros de integración](../get-started/logs.md).
+
 ## Guardar configuración asíncrona
 
-Si la instancia de Commerce tiene habilitada la opción [Guardar configuración asincrónica](https://experienceleague.adobe.com/es/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save), un consumidor asincrónico pone en cola y aplica los cambios de configuración en lugar de guardarlos inmediatamente en la misma solicitud. Para cargar un archivo de `workspace.json` para la coincidencia automática personalizada en este modo, complete los siguientes pasos en orden:
+Si la instancia de Commerce tiene habilitada la opción [Guardar configuración asincrónica](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save), un consumidor asincrónico pone en cola y aplica los cambios de configuración en lugar de guardarlos inmediatamente en la misma solicitud. Para cargar un archivo de `workspace.json` para la coincidencia automática personalizada en este modo, complete los siguientes pasos en orden:
 
-1. Confirme que Guardar configuración asincrónica de Commerce está [habilitado](https://experienceleague.adobe.com/es/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
+1. Confirme que Guardar configuración asincrónica de Commerce está [habilitado](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
 
 1. Desde el administrador, vaya a **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
 
@@ -167,7 +175,7 @@ Si la instancia de Commerce tiene habilitada la opción [Guardar configuración 
 
 ## Extremos de API de emparejador personalizados
 
-Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
+Cuando crea una aplicación de emparejador personalizada usando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, la aplicación debe exponer los siguientes extremos:
 
 * **Extremo de recurso de App Builder a dirección URL del producto**
 * Extremo de **App Builder product to asset URL**
@@ -336,7 +344,7 @@ El parámetro `asset_matches` contiene los atributos siguientes:
 | Atributo | Tipo de datos | Descripción |
 | --- | --- | --- |
 | `asset_id` | Cadena | ID del recurso. |
-| `asset_roles` | Matriz | Funciones de los recursos. Utiliza los [roles de recurso de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) admitidos, como `thumbnail`, `image`, `small_image` y `swatch_image`. Con la extensión de integración de AEM Assets 1.4.6 y versiones posteriores, también se aceptan las funciones de imagen personalizadas (como `hero` o `custom_role_1`). |
+| `asset_roles` | Matriz | Funciones de los recursos. Utiliza los [roles de recurso de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) admitidos, como `thumbnail`, `image`, `small_image` y `swatch_image`. Con la extensión de integración de AEM Assets 1.4.6 y versiones posteriores, también se aceptan las funciones de imagen personalizadas (como `hero` o `custom_role_1`). |
 | `asset_format` | Cadena | El formato del recurso. Los valores posibles son `image` y `video`. |
 | `asset_position` | Número | La posición del recurso en la galería de productos. |
 
