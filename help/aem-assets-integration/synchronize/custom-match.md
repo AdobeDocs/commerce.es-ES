@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Coincidencia automática personalizada
 
 Si la estrategia de coincidencia automática predeterminada (**coincidencia automática OOTB**) no está alineada con los requisitos comerciales específicos, seleccione la opción de coincidencia personalizada. Esta opción admite el uso de [Adobe Developer App Builder](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) para desarrollar una aplicación de emparejamiento personalizada que administre lógicas de emparejamiento complejas o recursos procedentes de un sistema de terceros que no puedan rellenar metadatos en los AEM Assets.
 
+>[!NOTE]
+>
+>Si la integración personalizada de emparejador o Adobe Developer App Builder requiere que las API de AEM Assets administren recursos o metadatos mediante programación, se requiere el derecho de Ultimate de AEM Assets. Este requisito depende de las API que utilice la aplicación, no solo del uso de App Builder. Consulte [Límites de imágenes de productos](../../optimizer/boundaries-limits.md#product-visuals-limits).
+
 ## Configurar la coincidencia automática personalizada
 
-1. En el Administrador de Commerce, vaya a **[!UICONTROL Store]** > Configuración > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Desde Commerce Admin, vaya a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Seleccione **[!UICONTROL Custom Matcher]** como regla coincidente.
 
@@ -128,6 +132,10 @@ Puede descargar el archivo de `workspace.json` desde [Adobe Developer Console](h
 1. Seleccione las acciones de tiempo de ejecución adecuadas en los menús desplegables para cada flujo.
 
 1. Haga clic en **[!UICONTROL Save Config]**.
+
+Una vez aplicada la configuración, [verifique la integración](../get-started/setup-synchronization.md#verify-the-integration) con un recurso aprobado y un producto que su emparejador personalizado asocie con él.
+
+[!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} Si la sincronización falla, revise los [registros de integración](../get-started/logs.md).
 
 ## Guardar configuración asíncrona
 

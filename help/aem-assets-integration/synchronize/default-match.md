@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # Coincidencia automática predeterminada
@@ -33,13 +33,13 @@ La integración de AEM Assets para Commerce proporciona un mecanismo de coincide
 
 ## Configuración del mecanismo de coincidencia automática
 
-1. En el Administrador de Commerce, vaya a **[!UICONTROL Store]** > Configuración > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Desde Commerce Admin, vaya a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Especifique **[!UICONTROL Match by SKU]** como regla coincidente.
+1. Especifique **[!UICONTROL Match by product SKU]** como regla coincidente.
 
-   ![regla de coincidencia automatizada predeterminada](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![Coincidencia por regla de SKU del producto y nombre de propiedad de metadatos](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. Introduzca el nombre del campo de metadatos utilizado para la identificación del recurso en los AEM Assets.
+1. En **[!UICONTROL Match by product SKU attribute name]**, escriba el [nombre de propiedad de metadatos](../metadata.md) que almacena SKU de productos en AEM Assets, no un valor de SKU real.
 
    >[!NOTE]
    >
@@ -69,4 +69,6 @@ Cuando la regla de coincidencia **[!UICONTROL Match by product SKU]** está conf
 
    ![Metadatos de ejemplo](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-Este método garantiza que los recursos digitales se vinculen y muestren correctamente en Adobe Commerce. También permite a los comerciantes y especialistas en marketing administrar las funciones y el posicionamiento de recursos directamente en los AEM Assets, lo que proporciona un mecanismo coherente y centralizado para la selección y el orden de las imágenes en todos los canales de participación.
+Después de aprobar el recurso, [compruebe la asociación del producto, el resultado de la sincronización y la visualización de la tienda](../get-started/setup-synchronization.md#verify-the-integration). Si el recurso no aparece, revise [Estado de sincronización](../get-started/sync-status.md). Para Adobe Commerce Optimizer, usa el [flujo de trabajo de verificación del optimizador](../get-started/configure-aco.md#match-by-sku-workflow-example); el estado de sincronización no está disponible.
+
+[!BADGE Solo PaaS]{type=Informative tooltip="Solo se aplica a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe)."} Para obtener más información sobre la solución de problemas de sincronización, revise los [registros de integración](../get-started/logs.md).

@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1900'
 ht-degree: 1%
 ---
 # Configuración del proyecto de AEM Assets
@@ -65,6 +65,10 @@ En las versiones de AEM admitidas, se habilita la integración de Commerce desde
 
   Tanto la instancia de Commerce como el entorno de creación de AEM Assets deben estar en la misma organización de IMS.
 
+>[!NOTE]
+>
+>Los entornos de ensayo y desarrollo de AEM Assets requieren AEM Assets de Ultimate. Revise [Límites en las visualizaciones de productos](../../optimizer/boundaries-limits.md#product-visuals-limits) antes de planificar estos entornos. Este requisito se aplica a los entornos de AEM Assets, no a los entornos de zonas protegidas de Commerce.
+
 ### Paso 1: Crear el programa y los entornos
 
 La creación de un programa en Cloud Manager es un proceso de varios pasos: el programa y sus entornos se configuran en varios pasos y se guardan juntos.
@@ -77,7 +81,7 @@ La creación de un programa en Cloud Manager es un proceso de varios pasos: el p
 
    ![Paso de soluciones y complementos de Cloud Manager con Dynamic Media seleccionado](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. En el paso **[!UICONTROL Add Environment]**, escriba nombres para los entornos **Production** y **Staging** y, a continuación, seleccione una región.
+1. En el paso **[!UICONTROL Add Environment]**, escriba el nombre de entorno **Production** y, a continuación, seleccione una región. Si su derecho incluye un entorno de ensayo, introduzca también el nombre del entorno de ensayo **Staging**.
 
    >[!IMPORTANT]
    >

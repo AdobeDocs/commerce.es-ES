@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1708'
 ht-degree: 0%
 ---
 # Límites y límites
@@ -77,9 +77,11 @@ En las tablas siguientes se resumen los límites de licencia y de sistema por á
 
 ### [!DNL Product Visuals] límites
 
+Los Visuales del producto admiten casos de uso de administración de recursos centrados en Commerce, incluida la administración de recursos de productos, metadatos de Commerce y la entrega de recursos. Las operaciones de carga masiva y metadatos por lotes compatibles no requieren, por sí solas, Ultimate por parte de los AEM Assets. La administración programática de recursos y metadatos que requiere API de AEM Assets tiene requisitos de derechos independientes.
+
 | **Capacidad** | **Descripción** | **Asignación base** | **Ampliable?** |
 | --- | --- | --- | --- |
-| Imágenes del producto Usuarios avanzados | Usuario con licencia con capacidades completas de administración de recursos digitales, incluidas herramientas de IA, integraciones de [!DNL Adobe Express]/[!DNL Firefly] y uso compartido de Content Hub, que gestiona tareas principales de DAM y funciones avanzadas nativas de la nube para lograr una eficacia óptima. | 2 | Sí<p>Actualizar a la licencia [!DNL AEM Assets]</p> |
+| Imágenes del producto Usuarios avanzados | Usuario con licencia con las funciones de administración de recursos incluidas en las imágenes del producto, incluidas las herramientas de IA, las integraciones de [!DNL Adobe Express]/[!DNL Firefly] y el uso compartido de Content Hub. | 2 | Sí<p>Actualizar a la licencia [!DNL AEM Assets]</p> |
 | Visuales del producto Usuarios de Collaborator | Acceda a los recursos y trabaje con ellos a través de la integración de AEM Commerce, cree y edite contenido con [!DNL Adobe Express] y [!DNL Firefly] y, si está habilitado, aproveche los recursos aprobados a través del portal de Content Hub. | 2 | Sí<p>Actualizar a la licencia [!DNL AEM Assets]</p> |
 | Almacenamiento de imágenes del producto | Espacio de almacenamiento asignado para recursos | Almacenamiento de 1 TB | Sí<p>Actualizar a la licencia [!DNL AEM Assets]</p> |
 | Uso de Dynamic Media | Asignación para operaciones de procesamiento de medios dinámicos, que incluye:<ul><li>Entrega de imágenes</li><li>Imágenes inteligentes</li><li>Entrega de vídeo</li></ul><p>Para obtener más información, consulte *Calcular el uso de Dynamic Media* a continuación. | Basado en GMV (valor bruto de mercancía)<p>Asignación mínima: 5M operaciones/mes</p> | Sí<ul><li>Licencia de compra para operaciones adicionales</li><li>Actualizar a la licencia [!DNL AEM Assets]</li></ul> |
@@ -108,7 +110,25 @@ El uso de Dynamic Media hace un seguimiento de las solicitudes de API que llegan
 
 >[!NOTE]
 >
->Los límites anteriores cubren las asignaciones de capacidad y uso. Para obtener información general sobre las características visuales de productos y las restricciones funcionales, vea [Imágenes de productos con AEM Assets](setup/product-visuals.md).
+>Esta sección cubre la capacidad, las asignaciones de uso y los límites de los derechos. Para obtener información general sobre la característica de elementos visuales del producto, consulte [Elementos visuales del producto con AEM Assets](setup/product-visuals.md).
+
+#### ¿Cuándo se requiere Ultimate para AEM Assets?
+
+>[!IMPORTANT]
+>
+>Los elementos visuales del producto no incluyen acceso a las API de autor de AEM Assets. Si una integración o aplicación personalizada requiere acceso a la API de autor para administrar recursos o metadatos mediante programación, compre un SKU del complemento Ultimate de AEM Assets. Ultimate no se incluye en las imágenes del producto. Póngase en contacto con su representante de cuentas de Adobe para obtener licencias y aprovisionamiento.
+
+AEM Assets Ultimate es necesario para:
+
+- Acceso a la API de autor de AEM Assets.
+- Integraciones de metadatos basadas en API, incluida la entrada y salida de metadatos.
+- Integraciones personalizadas y automatización que requieren que las API de AEM Assets administren recursos o metadatos mediante programación.
+- Integraciones de Adobe Developer App Builder que dependen de estas API de AEM Assets.
+- AEM Assets Entornos de ensayo y desarrollo.
+
+Estos requisitos no excluyen Dynamic Media con las funciones de OpenAPI incluidas en los elementos visuales del producto para la entrega de recursos. El uso de App Builder por sí solo no requiere Ultimate de AEM Assets; el requisito depende de las API de AEM Assets que utilice la aplicación.
+
+Para conocer los requisitos más amplios de DAM empresarial, API, extensibilidad y de la cadena de suministro de contenido más allá de los aspectos visuales del producto, consulte [Ultimate de AEM Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview).
 
 ### Vistas de catálogo y políticas
 

@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1641'
 ht-degree: 0%
 ---
 # Información general de [!DNL Adobe Commerce as a Cloud Service]
@@ -141,31 +141,36 @@ Servicios de comercialización admite dos modelos de datos de catálogo en [!DNL
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
-La visualización de productos ayuda a simplificar la administración de recursos mediante un sistema de administración de recursos digitales (DAM) que se integra con Adobe Experience Manager para administrar contenido con medios enriquecidos.
+Las funciones visuales del producto admiten la administración de recursos digitales (DAM) centrada en Commerce, incluida la administración de recursos de producto, metadatos de Commerce y la entrega de recursos, con tecnología de Adobe Experience Manager Assets.
 
 La integración garantiza que los recursos digitales, como las imágenes de los productos o el contenido de marketing, se vinculen dinámicamente a las entidades de comercialización adecuadas, incluidos los productos y las categorías de Adobe Commerce, en función del SKU u otros atributos clave.
 
-[!DNL Product Visuals] está disponible de forma nativa con [!DNL Adobe Commerce as a Cloud Service], proporcionando algunas de las capacidades de [!DNL AEM Assets].
+[!DNL Product Visuals] se incluye con [!DNL Adobe Commerce as a Cloud Service]. Agrupa a [AEM Assets Prime](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-prime), un DAM ligero, con Dynamic Media y capacidades OpenAPI para la entrega de recursos.
 
 Como alternativa, las capacidades nativas de [!DNL Adobe Commerce as a Cloud Service] proporcionan herramientas básicas de administración de recursos para almacenar y administrar recursos digitales.
 
 Consulte la guía de integración de [AEM Assets](../aem-assets-integration/overview.md) para obtener más información sobre cómo integrar [!DNL Product Visuals powered by AEM Assets] con [!DNL Adobe Commerce as a Cloud Service].
 
-### [!DNL Product Visuals] o [!DNL AEM Assets]
+### [!DNL Product Visuals] o [!DNL AEM Assets Ultimate]
 
-La siguiente comparación le ayuda a seleccionar la mejor opción para su contenido que supply chain necesita:
+La siguiente comparación le ayuda a seleccionar la mejor opción para sus necesidades de supply chain de contenido. Los visuales del producto admiten la administración de recursos centrada en Commerce. [AEM Assets Ultimate](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) admite cadenas de suministro de contenido complejas y DAM empresariales más amplias, incluida la extensibilidad de la interfaz de usuario, la automatización impulsada por API y la implementación de código personalizado.
+
+>[!IMPORTANT]
+>
+>AEM Assets Ultimate no se incluye en las imágenes del producto. Para usar Ultimate, compre un SKU del complemento Ultimate de AEM Assets. Póngase en contacto con su representante de cuentas de Adobe para hablar sobre las licencias y el aprovisionamiento.
 
 <table>
   <tr>
     <td align="left">
       <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
+        <li>Incluido con Adobe Commerce as a Cloud Service</li>
         <li>Imagen de producto y vídeo integrados y automatizados Digital Asset Manager (DAM)</li>
         <li>Cambiar el tamaño, recortar y convertir imágenes</li>
         <li>Entrega de vídeo e imagen de alta velocidad</li>
         <li>Optimizar los formatos, tamaños y calidad de la imagen en función de las funciones del explorador del cliente</li>
         <li>Acceso a Adobe Express y Adobe Firefly</li>
-        <li>Límites de uso para la capacidad de entrega de imágenes/vídeo y el acceso del usuario</li>
+        <li>Límites de uso para el almacenamiento de recursos, la capacidad de entrega de imágenes/vídeo y el acceso de los usuarios</li>
         <li>Selector de recursos integrado</li>
       </ul>
     </td>
@@ -174,13 +179,18 @@ La siguiente comparación le ayuda a seleccionar la mejor opción para su conten
       <img src="../assets/icon-double-chevron-right.svg" alt="cheurón" width="100">
     </td>
     <td align="left">
-      <strong>AEM Assets</strong>
+      <strong>[!DNL AEM Assets Ultimate]</strong>
       <ul>
+        <li>Requiere un SKU de complemento de Ultimate para AEM Assets</li>
         <li>Todas las funciones de las imágenes del producto</li>
         <li>Digital Asset Manager de marketing completo (DAM)</li>
-        <li>Usuarios ilimitados (pago por usuario)</li>
-        <li>Entrega de imágenes y vídeos ilimitada</li>
-        <li>Funcionalidad avanzada de administración de recursos:</li>
+        <li>Acceso de usuario basado en licencias adquiridas</li>
+        <li>Entrega de imágenes y vídeos en función de la capacidad de Dynamic Media con licencia</li>
+        <li>AEM Assets: acceso a la API de creación e integraciones que utilizan las API de AEM Assets para administrar recursos o metadatos mediante programación</li>
+        <li>Integraciones de metadatos basadas en API, incluida la entrada y salida de metadatos</li>
+        <li>Extensibilidad de la interfaz de usuario, automatización impulsada por API e implementación de código personalizado</li>
+        <li>AEM Assets Entornos de ensayo y desarrollo</li>
+        <li>Funcionalidad avanzada de administración de recursos, con funciones de Dynamic Media sujetas a la licencia de complemento aplicable:</li>
         <ul>
           <li>Conjuntos de giros de 360° y visores interactivos</li>
           <li>Compatibilidad con modelos 3D y contenido envolvente</li>
@@ -199,6 +209,10 @@ La siguiente comparación le ayuda a seleccionar la mejor opción para su conten
     </td>
   </tr>
 </table>
+
+>[!NOTE]
+>
+>Las operaciones de carga masiva y metadatos por lotes compatibles no requieren, por sí solas, Ultimate por parte de los AEM Assets. El uso de App Builder por sí solo no requiere Ultimate; el requisito depende de las API de AEM Assets que utilice la aplicación. Los Visuales del producto incluyen Dynamic Media con capacidades OpenAPI para la entrega de recursos. Para ver los derechos de capacidad, la capacidad y las asignaciones de uso, consulte [Límites en los elementos visuales del producto](../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Plataforma de desarrollador
 

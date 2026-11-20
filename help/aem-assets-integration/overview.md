@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1188'
 ht-degree: 1%
 ---
 # Integración de AEM Assets para Commerce
@@ -65,6 +65,8 @@ La integración de AEM Assets aborda este desafío automatizando los flujos de t
 * **Notificaciones de actualización de extensión**: con la extensión de integración de AEM Assets versión 1.4.6 o posterior, Commerce comprueba las nuevas versiones de extensión y notifica a los administradores en el administrador. Consulte [Buscar actualizaciones de la extensión](get-started/check-for-updates.md).
 
 La localización de texto alternativo no cambia la asignación de imágenes de producto ni la asignación de galerías. La disponibilidad de los recursos de vista de tienda es una función independiente y no está cubierta por el flujo de trabajo de texto alternativo.
+
+Las imágenes de producto con tecnología de AEM Assets admiten casos de uso de administración de recursos centrados en Commerce en Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer. Para ver las funciones compatibles, los límites de capacidad y las funciones que requieren AEM Assets Ultimate, consulte [Límites en la visualización del producto](../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Requisitos para utilizar la integración
 
@@ -142,7 +144,7 @@ Seleccione la implementación para seguir los pasos necesarios en orden:
 
 1. Para admitir metadatos de Commerce, [configure el proyecto de AEM Assets](get-started/configure-aem.md). En la versión de AEM `2026.5.26309` y posteriores, use la incorporación de autoservicio [2&rbrace;; en versiones anteriores, instale el paquete `assets-commerce` manualmente.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
-1. [Configure los permisos de usuario de IMS](get-started/permissions.md) para que el Selector de recursos y los campos **[!UICONTROL Program ID]** y **[!UICONTROL Environment ID]** que se rellenan automáticamente estén disponibles.
+1. [Configure los permisos de usuario de IMS](get-started/permissions.md) para el Selector de recursos y la selección de dominios y el entorno de AEM.
 
 1. [Configure la integración en el administrador de Commerce](get-started/setup-synchronization.md).
 
@@ -156,13 +158,17 @@ Seleccione la implementación para seguir los pasos necesarios en orden:
 
 1. [Instale paquetes de Adobe Commerce](get-started/configure-commerce.md) para agregar la extensión y generar las credenciales y conexiones necesarias.
 
-1. [Configure los permisos de usuario de IMS](get-started/permissions.md) para que el Selector de recursos y los campos **[!UICONTROL Program ID]** y **[!UICONTROL Environment ID]** que se rellenan automáticamente estén disponibles.
+1. [Configure los permisos de usuario de IMS](get-started/permissions.md) para el Selector de recursos y la selección de dominios y el entorno de AEM.
 
 1. [Configure la integración en el administrador de Commerce](get-started/setup-synchronization.md).
 
 1. Opcional. [Habilitar la visualización de la imagen del producto](get-started/configure-storefront.md#enable-product-images) para que una tienda con tecnología Edge Delivery Services procese imágenes de productos administrados por AEM.
 
 >[!ENDTABS]
+
+Después de completar la configuración, [verifica la integración](get-started/setup-synchronization.md#verify-the-integration) de un recurso que cumpla los requisitos y que se haya aprobado mediante la asociación de productos y la sincronización con la tienda para mostrarla. Para Adobe Commerce Optimizer, siga el [flujo de trabajo de verificación del optimizador](get-started/configure-aco.md#match-by-sku-workflow-example); el estado de sincronización no está disponible.
+
+Para la asignación y verificación de imágenes de categoría, consulte [Administrar imágenes de categoría](manage-assets.md#category-images).
 
 ## Asistencia
 
