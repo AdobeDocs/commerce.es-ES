@@ -75,9 +75,9 @@ En este tema se explican los cambios que se producen con CCDM, las funciones que
 
 ## ¿Qué cambios introduce CCDM?
 
-El modelo de catálogo original usa el [Servicio de catálogo](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/overview) para entregar los datos de productos en las tiendas, con Live Search y Recomendaciones de productos que proporcionan capacidades de búsqueda, comercialización y recomendaciones. En este modelo, Commerce sincroniza los datos con la capa de servicios mediante [exportación de datos SaaS](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
+El modelo de catálogo original usa el [Servicio de catálogo](https://experienceleague.adobe.com/es/docs/commerce/catalog-service/overview) para entregar los datos de productos en las tiendas, con Live Search y Recomendaciones de productos que proporcionan capacidades de búsqueda, comercialización y recomendaciones. En este modelo, Commerce sincroniza los datos con la capa de servicios mediante [exportación de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/overview).
 
-Con CCDM, estas funciones funcionan en la misma base de catálogo que alimenta Adobe Commerce Optimizer. [Vistas de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) y [políticas](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definen el contexto de catálogo disponible para una tienda. Las políticas determinan la variedad de productos y las reglas de comercialización pueden aplicarse en todas las vistas de catálogo o adaptarse a una vista específica.
+Con CCDM, estas funciones funcionan en la misma base de catálogo que alimenta Adobe Commerce Optimizer. [Vistas de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) y [políticas](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definen el contexto de catálogo disponible para una tienda. Las políticas determinan la variedad de productos y las reglas de comercialización pueden aplicarse en todas las vistas de catálogo o adaptarse a una vista específica.
 
 Esto cambia la forma en que se configura, accede y comercializa el catálogo. CCDM se basa en las funciones de búsqueda, recomendaciones y comercialización del catálogo original de Commerce, a la vez que introduce controles en el nivel de vista de catálogo. A continuación se describen funciones adicionales de administración y creación de informes.
 
@@ -99,9 +99,9 @@ El diagrama siguiente muestra la posición de los servicios de comercialización
 
 ## ¿Qué novedades hay para los comerciantes?
 
-El nuevo modelo permite ampliar el ámbito de las reglas de comercialización existentes a todas las vistas del catálogo o a una vista específica. Esto permite aplicar la comercialización a cada audiencia de la tienda. Aprenda a [ampliar el ámbito de una regla de comercialización a las vistas de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
+El nuevo modelo permite ampliar el ámbito de las reglas de comercialización existentes a todas las vistas del catálogo o a una vista específica. Esto permite aplicar la comercialización a cada audiencia de la tienda. Aprenda a [ampliar el ámbito de una regla de comercialización a las vistas de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-En el Administrador, puede configurar el contexto del catálogo con [!UICONTROL Catalog Views] y [!UICONTROL Policies]. También puede usar [!UICONTROL Success Metrics] para revisar ingresos, conversión, participación, adquisición y tasa de salida hacia otro sitio. Consulte [Métricas de éxito](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) para obtener detalles.
+En el Administrador, puede configurar el contexto del catálogo con [!UICONTROL Catalog Views] y [!UICONTROL Policies]. También puede usar [!UICONTROL Success Metrics] para revisar ingresos, conversión, participación, adquisición y tasa de salida hacia otro sitio. Consulte [Métricas de éxito](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) para obtener detalles.
 
 ## Consideraciones antes de la adopción
 
@@ -126,7 +126,7 @@ Revise las aplicaciones y extensiones de terceros que leen datos de catálogo o 
 
 ### Experiencia del administrador
 
-Adobe Commerce as a Cloud Service con CCDM usa [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe lanzó Unified Shell por separado del CCDM. Las instancias existentes en el modelo de servicios de catálogo original conservan el acceso a Classic y Unified Shell.
+Adobe Commerce as a Cloud Service con CCDM usa [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe lanzó Unified Shell por separado del CCDM. Las instancias existentes en el modelo de servicios de catálogo original conservan el acceso a Classic y Unified Shell.
 
 ### Límites
 
@@ -142,4 +142,4 @@ Las instancias existentes no cambian automáticamente. Con disponibilidad genera
 
 >[!MORELIKETHIS]
 >
->* [Servicios de comercialización con la Guía de administración de Commerce de CCDM](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview)
+>* [Servicios de comercialización con la Guía de administración de Commerce de CCDM](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/overview)
