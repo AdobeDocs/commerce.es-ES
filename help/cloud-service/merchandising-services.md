@@ -1,6 +1,6 @@
 ---
-title: Modelo de datos de catálogo componible y servicios de comercialización
-description: Descubra cómo el modelo de datos de catálogo maquetable cambia la entrega de catálogos en [!DNL Adobe Commerce as a Cloud Service] y qué necesitan saber los comerciantes y los equipos de tienda.
+title: Servicios de comercialización con el modelo de datos de catálogo maquetable
+description: Descubra cómo Servicios de comercialización con el modelo de datos de catálogo componible cambia la entrega de catálogo en [!DNL Adobe Commerce as a Cloud Service] y lo que los comerciantes y equipos de tienda necesitan saber.
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner
@@ -61,13 +61,13 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
+source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '998'
 ht-degree: 0%
 ---
 
-# Servicios de comercialización
+# Servicios de comercialización con el modelo de datos de catálogo maquetable
 
 Adobe Commerce as a Cloud Service ahora es compatible con el modelo de datos de catálogo maquetable (CCDM) a través de Servicios de comercialización. Adobe Commerce Optimizer presentó este modelo de datos y CCDM proporciona a ambos productos una base común para ofrecer funciones de navegación y comercialización en el catálogo de tiendas, mientras que Commerce Foundation sigue administrando productos, precios y transacciones.
 
@@ -75,7 +75,7 @@ En este tema se explican los cambios que se producen con CCDM, las funciones que
 
 ## ¿Qué cambios introduce CCDM?
 
-El modelo de catálogo original utiliza el servicio de catálogo para ofrecer datos de productos a las tiendas, con Live Search y Product Recommendations que proporcionan funciones de búsqueda, comercialización y recomendaciones. En este modelo, Commerce sincroniza usando [exportación de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/overview).
+El modelo de catálogo original usa el [Servicio de catálogo](https://experienceleague.adobe.com/es/docs/commerce/catalog-service/overview) para entregar los datos de productos en las tiendas, con Live Search y Recomendaciones de productos que proporcionan capacidades de búsqueda, comercialización y recomendaciones. En este modelo, Commerce sincroniza los datos con la capa de servicios mediante [exportación de datos SaaS](https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/overview).
 
 Con CCDM, estas funciones funcionan en la misma base de catálogo que alimenta Adobe Commerce Optimizer. [Vistas de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) y [políticas](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definen el contexto de catálogo disponible para una tienda. Las políticas determinan la variedad de productos y las reglas de comercialización pueden aplicarse en todas las vistas de catálogo o adaptarse a una vista específica.
 
@@ -85,7 +85,7 @@ Commerce Foundation sigue siendo la fuente canónica de productos y precios. Los
 
 ## Licencias y aprovisionamiento
 
-Los servicios de comercialización están incluidos en el SKU de Adobe Commerce as a Cloud Service existente. No es un segundo producto o suscripción y no requiere una compra, un derecho o un inquilino de Adobe Commerce Optimizer por separado.
+Los servicios de comercialización con CCDM están incluidos en el SKU de Adobe Commerce as a Cloud Service existente. No es un segundo producto o suscripción y no requiere una compra, un derecho o un inquilino de Adobe Commerce Optimizer por separado.
 
 ## Descripción general de arquitectura
 
@@ -93,7 +93,7 @@ Los servicios de comercialización están incluidos en el SKU de Adobe Commerce 
 
 Las tiendas utilizan servicios de comercialización respaldados por CCDM para recuperar datos de catálogo y contexto para navegación, búsqueda, recomendaciones y comercialización. Las solicitudes utilizan el contexto de catálogo para recuperar productos y precios para la audiencia deseada. Sigue administrando la configuración del sitio web, el almacén y la vista de tienda en [!DNL Commerce].
 
-El diagrama siguiente muestra la posición de los servicios de comercialización en la arquitectura de Adobe Commerce as a Cloud Service más amplia.
+El diagrama siguiente muestra la posición de los servicios de comercialización con CCDM en la arquitectura de Adobe Commerce as a Cloud Service más amplia.
 
 ![Arquitectura de Commerce que muestra el flujo de datos del catálogo a los servicios de comercialización](./assets/data-flow-ccdm.png){zoomable="yes"}
 
@@ -105,7 +105,7 @@ En el Administrador, puede configurar el contexto del catálogo con [!UICONTROL 
 
 ## Consideraciones antes de la adopción
 
-Revise cómo el modelo CCDM afecta a los flujos de trabajo de licencias, integraciones de catálogo, tienda y administración antes de adoptar Merchandising Services.
+Revise cómo afecta el modelo CCDM a los flujos de trabajo de licencias, integraciones de catálogo, tienda y administración antes de adoptar los servicios de comercialización con CCDM.
 
 ### Administración de catálogos e integraciones
 
@@ -134,8 +134,12 @@ El modelo CCDM no cambia los límites de as a Cloud Service de Adobe Commerce. C
 
 ## Disponibilidad y migración
 
-Las organizaciones que empiecen con Adobe Commerce as a Cloud Service después de esta versión reciben Servicios de comercialización de forma predeterminada. Si su organización requiere el modelo de datos del catálogo original, póngase en contacto con el equipo de su cuenta de Adobe para analizar si hay una excepción disponible.
+Las organizaciones que comienzan con Adobe Commerce as a Cloud Service después de la versión del 18 de noviembre de 2026 incluyen servicios de comercialización con CCDM de forma predeterminada. Si su organización requiere el modelo de datos del catálogo original, póngase en contacto con el equipo de su cuenta de Adobe para analizar si hay una excepción disponible.
 
 Las organizaciones que tenían Adobe Commerce as a Cloud Service antes de esta versión pueden elegir cualquiera de los modelos de catálogo al [aprovisionar una nueva instancia](./getting-started.md#create-an-instance). De manera predeterminada, el conmutador [!UICONTROL Enable CCDM] está deshabilitado. Una vez habilitado CCDM, no se puede deshabilitar.
 
 Las instancias existentes no cambian automáticamente. Con disponibilidad general (GA), no puede migrar una instancia de catálogo-servicio original existente a Servicios de comercialización.
+
+>[!MORELIKETHIS]
+>
+>* [Servicios de comercialización con la Guía de administración de Commerce de CCDM](https://experienceleague.adobe.com/es/docs/commerce-admin/merchandising-with-ccdm/overview)

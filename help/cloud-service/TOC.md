@@ -9,16 +9,16 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: af9c81b93d4ad1ff75a0380ec3fd4e3e5f374e3a
+source-git-commit: 5f2f7adbf9b7f87f719fe8010168521ee3981dd5
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '233'
 ht-degree: 3%
 ---
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
-- [Servicios de comercialización](merchandising-services.md)
+- [Servicios de comercialización con CCDM](merchandising-services.md)
 - [Comparación de características](feature-comparison.md)
 - [Primeros pasos](getting-started.md)
 - [Límites y límites](boundaries-limits.md)
