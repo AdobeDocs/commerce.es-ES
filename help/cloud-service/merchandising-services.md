@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
+source-git-commit: ca2330c059ede860c464134878a83babd12eb148
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1115'
 ht-degree: 0%
 ---
 
@@ -118,11 +118,18 @@ La forma en que la tienda recupera los datos del catálogo depende de la impleme
 - **[!DNL Adobe Commerce Storefront]** complementos: los complementos administran la transición. No se requieren cambios en el código. Consulte la [documentación de configuración de tienda](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 - **Escaparates personalizados u otras tiendas**: actualice los encabezados de solicitud de catálogo como se describe en la [referencia de configuración de encabezado](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
 
-Revise las consultas de catálogo y los encabezados de solicitud del modelo basado en CCDM. No dé por hecho que las consultas o encabezados existentes permanecen sin cambios. Las consultas de GraphQL de comercialización difieren de las consultas utilizadas en el modelo de servicios de catálogo original. Las consultas adicionales admiten CCDM. Use la [referencia de la API de GraphQL de comercialización](https://developer.adobe.com/commerce/services/reference/graphql/) y compruebe el contexto de catálogo requerido con la [referencia de encabezado de tienda](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
-
 ### Aplicaciones y extensiones de terceros
 
 Revise las aplicaciones y extensiones de terceros que leen datos de catálogo o consumen eventos de catálogo con su proveedor. La compatibilidad depende de cómo utilice cada aplicación o extensión esas interfaces.
+
+### API de comercialización
+
+Merchandising Services proporciona API para la administración de datos del catálogo back-end y la recuperación del catálogo de tiendas. Utilice la API de REST para administrar los datos del catálogo y la API de GraphQL para recuperar datos para experiencias de tienda.
+
+- **API de REST:** Seguir [Empiece con la API de ingesta de datos](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api) para crear y administrar datos de productos y catálogos desde aplicaciones back-end.
+- **API de GraphQL:** Seguir [Empiece con la API de comercialización](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api) para recuperar datos de catálogo para experiencias de tienda. Configure solicitudes con los encabezados requeridos para su tienda, tal como se describe en la [referencia de encabezado de tienda](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
+
+Revise las consultas de catálogo y los encabezados de solicitud del modelo basado en CCDM. No dé por hecho que las consultas o encabezados existentes permanecen sin cambios. Las consultas de GraphQL de comercialización difieren de las consultas utilizadas en el modelo de servicios de catálogo original. Las consultas adicionales admiten CCDM. Use la [referencia de API de GraphQL de comercialización](https://developer.adobe.com/commerce/services/reference/graphql/) y compruebe el contexto de catálogo requerido con la [referencia de encabezado de integración](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#headers).
 
 ### Experiencia del administrador
 
